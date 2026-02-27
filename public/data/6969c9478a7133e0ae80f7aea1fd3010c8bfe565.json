@@ -1,0 +1,181 @@
+{
+    "subject": "images/nytimes-cover-2.jpg",
+    "results": {
+        "ocr_mistral": {
+            "text": "2015.18.01\n\n# THE WESTERN EUROPEAN AREA\n\nThe American Republic has been the most important country in the world. The world has been the most important country in the world, and the world has been the most important country in the world. The world has been the most important country in the world, and the world has been the most important country in the world. The world has been the most important country in the world, and the world has been the most important country in the world. The world has been the most important country in the world, and the world has been the most important country in the world. The world has been the most important country in the world, and the world has been the most important country in the world. The world has been the most important country in the world, and the world has been the most important country in the world.\n\n## THE WESTERN EUROPEAN AREA\n\nThe world has been the most important country in the world, and the world has been the most important country in the world. The world has been the most important country in the world, and the world has been the most important country in the world. The world has been the most important country in the world, and the world has been the most important country in the world. The world has been the most important country in the world, and the world has been the most important country in the world. The world has been the most important country in the world.\n\n## THE WESTERN EUROPEAN AREA\n\nThe world has been the most important country in the world. The world has been the most important country in the world. The world has been the most important country in the world. The world has been the most important country in the world.",
+            "language": null,
+            "confidence": "high",
+            "layout_blocks": [
+                {
+                    "type": "headline",
+                    "text": "THE WESTERN EUROPEAN AREA",
+                    "bbox": {
+                        "x": 0,
+                        "y": 0,
+                        "width": 3000,
+                        "height": 185
+                    }
+                },
+                {
+                    "type": "paragraph",
+                    "text": "The American Republic has been the most important country in the world. The world has been the most important country in the world, and the world has been the most important country in the world. The world has been the most important country in the world, and the world has been the most important country in the world. The world has been the most important country in the world, and the world has been the most important country in the world. The world has been the most important country in the world, and the world has been the most important country in the world. The world has been the most important country in the world, and the world has been the most important country in the world.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 185,
+                        "width": 3000,
+                        "height": 554
+                    }
+                },
+                {
+                    "type": "subheadline",
+                    "text": "THE WESTERN EUROPEAN AREA",
+                    "bbox": {
+                        "x": 0,
+                        "y": 738,
+                        "width": 3000,
+                        "height": 185
+                    }
+                },
+                {
+                    "type": "paragraph",
+                    "text": "The world has been the most important country in the world, and the world has been the most important country in the world. The world has been the most important country in the world, and the world has been the most important country in the world. The world has been the most important country in the world, and the world has been the most important country in the world. The world has been the most important country in the world, and the world has been the most important country in the world. The world has been the most important country in the world.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 923,
+                        "width": 3000,
+                        "height": 554
+                    }
+                },
+                {
+                    "type": "subheadline",
+                    "text": "THE WESTERN EUROPEAN AREA",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1476,
+                        "width": 3000,
+                        "height": 185
+                    }
+                },
+                {
+                    "type": "paragraph",
+                    "text": "The world has been the most important country in the world. The world has been the most important country in the world. The world has been the most important country in the world. The world has been the most important country in the world.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1661,
+                        "width": 3000,
+                        "height": 369
+                    }
+                }
+            ],
+            "image_blocks": [],
+            "pages": [
+                {
+                    "index": 0,
+                    "markdown": "2015.18.01\n\n# THE WESTERN EUROPEAN AREA\n\nThe American Republic has been the most important country in the world. The world has been the most important country in the world, and the world has been the most important country in the world. The world has been the most important country in the world, and the world has been the most important country in the world. The world has been the most important country in the world, and the world has been the most important country in the world. The world has been the most important country in the world, and the world has been the most important country in the world. The world has been the most important country in the world, and the world has been the most important country in the world. The world has been the most important country in the world, and the world has been the most important country in the world.\n\n## THE WESTERN EUROPEAN AREA\n\nThe world has been the most important country in the world, and the world has been the most important country in the world. The world has been the most important country in the world, and the world has been the most important country in the world. The world has been the most important country in the world, and the world has been the most important country in the world. The world has been the most important country in the world, and the world has been the most important country in the world. The world has been the most important country in the world.\n\n## THE WESTERN EUROPEAN AREA\n\nThe world has been the most important country in the world. The world has been the most important country in the world. The world has been the most important country in the world. The world has been the most important country in the world.",
+                    "dimensions": {
+                        "dpi": 200,
+                        "height": 2030,
+                        "width": 3000
+                    },
+                    "tables": [],
+                    "header": null,
+                    "footer": null
+                }
+            ],
+            "raw_response": {
+                "pages": [
+                    {
+                        "index": 0,
+                        "markdown": "2015.18.01\n\n# THE WESTERN EUROPEAN AREA\n\nThe American Republic has been the most important country in the world. The world has been the most important country in the world, and the world has been the most important country in the world. The world has been the most important country in the world, and the world has been the most important country in the world. The world has been the most important country in the world, and the world has been the most important country in the world. The world has been the most important country in the world, and the world has been the most important country in the world. The world has been the most important country in the world, and the world has been the most important country in the world. The world has been the most important country in the world, and the world has been the most important country in the world.\n\n## THE WESTERN EUROPEAN AREA\n\nThe world has been the most important country in the world, and the world has been the most important country in the world. The world has been the most important country in the world, and the world has been the most important country in the world. The world has been the most important country in the world, and the world has been the most important country in the world. The world has been the most important country in the world, and the world has been the most important country in the world. The world has been the most important country in the world.\n\n## THE WESTERN EUROPEAN AREA\n\nThe world has been the most important country in the world. The world has been the most important country in the world. The world has been the most important country in the world. The world has been the most important country in the world.",
+                        "images": [],
+                        "tables": [],
+                        "hyperlinks": [],
+                        "header": null,
+                        "footer": null,
+                        "dimensions": {
+                            "dpi": 200,
+                            "height": 2030,
+                            "width": 3000
+                        }
+                    }
+                ],
+                "model": "mistral-ocr-latest",
+                "document_annotation": "{\n  \"blocks\": [\n    {\n      \"type\": \"headline\",\n      \"text\": \"THE WESTERN EUROPEAN AREA\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 0,\n        \"width\": 100,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"The American Republic has been the most important country in the world. The world has been the most important country in the world, and the world has been the most important country in the world. The world has been the most important country in the world, and the world has been the most important country in the world. The world has been the most important country in the world, and the world has been the most important country in the world. The world has been the most important country in the world, and the world has been the most important country in the world. The world has been the most important country in the world, and the world has been the most important country in the world.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 10,\n        \"width\": 100,\n        \"height\": 30\n      }\n    },\n    {\n      \"type\": \"subheadline\",\n      \"text\": \"THE WESTERN EUROPEAN AREA\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 40,\n        \"width\": 100,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"The world has been the most important country in the world, and the world has been the most important country in the world. The world has been the most important country in the world, and the world has been the most important country in the world. The world has been the most important country in the world, and the world has been the most important country in the world. The world has been the most important country in the world, and the world has been the most important country in the world. The world has been the most important country in the world.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 50,\n        \"width\": 100,\n        \"height\": 30\n      }\n    },\n    {\n      \"type\": \"subheadline\",\n      \"text\": \"THE WESTERN EUROPEAN AREA\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 80,\n        \"width\": 100,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"The world has been the most important country in the world. The world has been the most important country in the world. The world has been the most important country in the world. The world has been the most important country in the world.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 90,\n        \"width\": 100,\n        \"height\": 20\n      }\n    }\n  ]\n}",
+                "usage_info": {
+                    "pages_processed": 1,
+                    "doc_size_bytes": 2055421
+                }
+            }
+        },
+        "classify": {
+            "type": "newspaper_clipping",
+            "subtype": null,
+            "confidence": 0.9,
+            "rationale": "The document displays columns of text and news articles characteristic of a newspaper format.",
+            "_tokens": {
+                "prompt": 37059,
+                "completion": 39,
+                "total": 37098,
+                "cached": 0
+            }
+        },
+        "extract_metadata": {
+            "dateRange": "1863",
+            "people": [
+                "Gen. Rosecrans"
+            ],
+            "places": [
+                "Chattanooga",
+                "Tennessee",
+                "New-York",
+                "New Orleans",
+                "Kentucky"
+            ],
+            "subjects": [
+                "American Civil War",
+                "Military Intelligence",
+                "Maritime Affairs"
+            ],
+            "language": "en",
+            "organisations": [
+                "Army of the Ohio",
+                "Academy of the United States Military"
+            ],
+            "_tokens": {
+                "prompt": 37113,
+                "completion": 71,
+                "total": 37184,
+                "cached": 0
+            }
+        },
+        "summarize": {
+            "summary": "The item is a newspaper clipping dated 1863, featuring a report from Gen. Rosecrans' Army regarding military operations in Chattanooga, Tennessee. This clipping provides valuable insights into the strategic movements and challenges faced by Union forces during the American Civil War, highlighting the significance of the Army of the Ohio and its activities. The document is composed of printed text, characteristic of contemporary newspaper formats, and reflects the historical context of military engagement and intelligence dissemination at the time.",
+            "language": "en",
+            "_tokens": {
+                "prompt": 37021,
+                "completion": 101,
+                "total": 37122,
+                "cached": 0
+            }
+        },
+        "keywords": {
+            "keywords": [
+                "american-history",
+                "civil-war-era",
+                "newspaper-clipping",
+                "19th-century",
+                "well-worn",
+                "political-news",
+                "full-page",
+                "historical-document"
+            ],
+            "safety": "safe",
+            "_tokens": {
+                "prompt": 37097,
+                "completion": 41,
+                "total": 37138,
+                "cached": 0
+            }
+        }
+    }
+}

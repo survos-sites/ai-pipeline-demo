@@ -122,7 +122,9 @@ final class ProcessImagesCommand extends Command
 
             // Subject (SHA-1 key) = original manifest url (stable, even if relative).
             // image_url input = absolute URL so tasks can actually fetch it.
-            $store     = new JsonFileResultStore($url, $this->dataDir, ['image_url' => $absoluteUrl]);
+            // Extra inputs from the manifest entry (e.g. max_pages) are merged in.
+            $extraInputs = $entry['inputs'] ?? [];
+            $store     = new JsonFileResultStore($url, $this->dataDir, array_merge(['image_url' => $absoluteUrl], $extraInputs));
             $priorKeys = array_keys($store->getAllPrior());
 
             if (!$force && $priorKeys !== []) {

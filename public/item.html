@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Item — AI Pipeline Demo</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+           font-size:14px; background:#0f1117; color:#e2e8f0; line-height:1.6; }
+    a { color:#63b3ed; text-decoration:none; }
+    a:hover { text-decoration:underline; }
+
+    /* ── Top bar ── */
+    .topbar { background:#141720; border-bottom:1px solid #2d3748; padding:10px 20px;
+              display:flex; align-items:center; gap:12px; font-size:13px;
+              position:sticky; top:0; z-index:20; }
+    .topbar .title { color:#e2e8f0; font-weight:600; flex:1; overflow:hidden;
+                     text-overflow:ellipsis; white-space:nowrap; }
+    .topbar .sep { color:#2d3748; }
+
+    /* ── Page ── */
+    .page { max-width:1200px; margin:0 auto; padding:24px 20px 80px; }
+
+    /* ── Pipeline track ── */
+    .pipeline-track { display:flex; flex-wrap:wrap; align-items:center; gap:0; row-gap:6px;
+                      margin-bottom:28px; padding:12px 16px; background:#141720;
+                      border:1px solid #2d3748; border-radius:8px; }
+    .track-step { display:flex; align-items:center; }
+    .track-label { font-size:12px; font-family:monospace; padding:4px 10px; border-radius:5px;
+                   background:#2d3748; color:#a0aec0; cursor:pointer; transition:background .12s;
+                   white-space:nowrap; }
+    .track-label:hover  { background:#3a4a63; color:#e2e8f0; }
+    .track-label.done   { background:#1c4532; color:#9ae6b4; border:1px solid #276749; }
+    .track-label.failed { background:#3b1515; color:#fed7d7; border:1px solid #742a2a; }
+    .track-arrow { font-size:20px; font-weight:700; line-height:1; color:#718096;
+                   padding:0 2px; user-select:none; }
+    .track-arrow.done { color:#48bb78; }
+
+    /* ── Magnifier ── */
+    .magnifier-wrap {
+      position:relative; width:100%; margin-bottom:28px;
+      border:1px solid #2d3748; border-radius:8px; overflow:hidden;
+      background:#141720; cursor:crosshair;
+      max-height:520px;
+    }
+    .magnifier-wrap img.hero {
+      width:100%; max-height:520px; object-fit:contain; display:block;
+    }
+    /* Magnifier lens overlay */
+    .mag-lens {
+      position:absolute; width:200px; height:200px;
+      border:2px solid #4299e1; border-radius:4px;
+      pointer-events:none; display:none;
+      overflow:hidden; box-shadow:0 0 0 1px #1a365d,0 4px 24px #000a;
+    }
+    .mag-lens img {
+      position:absolute;
+      /* width/height/left/top set by JS */
+    }
+    .mag-hint {
+      position:absolute; bottom:8px; right:10px;
+      font-size:11px; color:#4a5568; pointer-events:none;
+    }
+
+    /* ── Task sections ── */
+    .task-section { margin-bottom:36px; scroll-margin-top:56px; }
+    .task-header { display:flex; align-items:baseline; gap:10px; margin-bottom:12px;
+                   padding-bottom:8px; border-bottom:1px solid #2d3748; }
+    .task-name { font-family:monospace; font-size:16px; font-weight:700; color:#90cdf4; }
+    .task-badge { font-size:11px; padding:1px 8px; border-radius:999px; }
+    .badge-done   { background:#1c4532; color:#9ae6b4; border:1px solid #276749; }
+    .badge-failed { background:#3b1515; color:#fed7d7; border:1px solid #742a2a; }
+
+    /* ── Token pill ── */
+    .token-pill { display:inline-flex; gap:14px; background:#1a1f2e; border:1px solid #2d3748;
+                  border-radius:6px; padding:3px 12px; font-size:11px; color:#718096; margin-bottom:12px; }
+    .token-pill strong { color:#a0aec0; }
+
+    /* ── Generic fields ── */
+    .fields { display:flex; flex-direction:column; gap:12px; }
+    .field-label { font-size:11px; color:#718096; text-transform:uppercase; letter-spacing:.05em; margin-bottom:3px; }
+    .field-value { background:#1a1f2e; border:1px solid #2d3748; border-radius:6px;
+                   padding:10px 14px; white-space:pre-wrap; word-break:break-word;
+                   line-height:1.7; font-size:13px; }
+    .chips { display:flex; flex-wrap:wrap; gap:5px; }
+    .chip  { background:#2d3748; border-radius:4px; padding:2px 9px; font-size:12px; color:#e2e8f0; }
+
+    /* ── OCR layout blocks ── */
+    .ocr-blocks { display:flex; flex-direction:column; gap:10px; }
+
+    .block-card {
+      border-radius:6px; padding:10px 14px;
+      border-left:3px solid #2d3748;
+    }
+    .block-card.headline    { border-color:#90cdf4; background:#0d1a2e; }
+    .block-card.subheadline { border-color:#63b3ed; background:#0a1628; }
+    .block-card.byline      { border-color:#718096; background:#141720; font-style:italic; font-size:12px; color:#a0aec0; }
+    .block-card.dateline    { border-color:#718096; background:#141720; font-style:italic; font-size:12px; color:#a0aec0; }
+    .block-card.caption     { border-color:#68d391; background:#0a1a12; font-size:12px; color:#9ae6b4; }
+    .block-card.paragraph,
+    .block-card.column      { border-color:#2d3748; background:#141720; font-size:13px; }
+    .block-card.advertisement { border-color:#d69e2e; background:#1a1400; font-size:12px; color:#fbd38d; }
+    .block-card.other       { border-color:#2d3748; background:#141720; font-size:12px; color:#718096; }
+
+    .block-type-label { font-size:10px; text-transform:uppercase; letter-spacing:.06em;
+                        color:#4a5568; margin-bottom:4px; }
+    .block-headline-text  { font-size:16px; font-weight:700; color:#e2e8f0; line-height:1.3; }
+    .block-sub-text       { font-size:13px; font-weight:600; color:#cbd5e0; line-height:1.4; }
+    .block-body-text      { font-size:13px; color:#a0aec0; line-height:1.7; }
+
+    /* Image blocks from Mistral OCR */
+    .image-blocks { display:flex; flex-wrap:wrap; gap:12px; margin-top:12px; }
+    .image-block-card {
+      border:1px solid #2d3748; border-radius:6px; overflow:hidden;
+      background:#1a1f2e; max-width:300px;
+    }
+    .image-block-card img { width:100%; display:block; }
+    .image-block-caption { padding:5px 10px; font-size:11px; color:#718096; }
+
+    /* ── Multi-page sections ── */
+    .page-section { margin-bottom:28px; border:1px solid #2d3748; border-radius:8px; overflow:hidden; }
+    .page-heading { display:flex; align-items:center; gap:12px; padding:8px 14px;
+                    background:#141720; border-bottom:1px solid #2d3748; }
+    .page-num { font-weight:700; font-size:13px; color:#90cdf4; font-family:monospace; }
+    .page-dim { font-size:11px; color:#4a5568; }
+    .page-section .ocr-blocks,
+    .page-section .image-blocks,
+    .page-section details { padding:12px 14px; }
+
+    /* ── Raw JSON ── */
+    details { margin-top:10px; }
+    details summary { cursor:pointer; color:#63b3ed; font-size:12px; user-select:none; }
+    pre { background:#141720; border:1px solid #2d3748; border-radius:6px;
+          padding:12px 14px; font-size:11px; color:#a0aec0;
+          overflow-x:auto; white-space:pre-wrap; word-break:break-word;
+          margin:8px 0 0; max-height:400px; }
+
+    /* ── Error / loading ── */
+    .error-box { background:#3b151522; border:1px solid #742a2a; border-radius:6px;
+                 padding:12px 16px; color:#fed7d7; }
+    #loading { text-align:center; padding:80px; color:#4a5568; }
+  </style>
+</head>
+<body>
+
+<div class="topbar">
+  <a href="index.html">← Gallery</a>
+  <span class="sep">|</span>
+  <span class="title" id="topTitle">Loading…</span>
+</div>
+
+<div id="loading">Loading…</div>
+
+<div class="page" id="page" style="display:none">
+  <!-- Magnifier image viewer -->
+  <div class="magnifier-wrap" id="magWrap" style="display:none">
+    <img id="heroImg" class="hero" src="" alt="" />
+    <div class="mag-lens" id="magLens">
+      <img id="magLensImg" src="" alt="" />
+    </div>
+    <span class="mag-hint">Hover to magnify</span>
+  </div>
+
+  <div class="pipeline-track" id="pipelineTrack"></div>
+  <div id="taskSections"></div>
+</div>
+
+<script type="module">
+// ── Utils ──────────────────────────────────────────────────────────────────────
+async function sha1hex(str) {
+  const buf  = new TextEncoder().encode(str);
+  const hash = await crypto.subtle.digest('SHA-1', buf);
+  return Array.from(new Uint8Array(hash)).map(b=>b.toString(16).padStart(2,'0')).join('');
+}
+const esc = s => String(s??'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+const isImg = url => /\.(jpe?g|png|gif|webp|avif)(\?.*)?$/i.test(url) || url.includes('/iiif/');
+const isPdf = url => /\.pdf(\?.*)?$/i.test(url);
+const dispUrl = url => url; // relative paths work from public/
+
+// ── Magnifier ──────────────────────────────────────────────────────────────────
+function initMagnifier(wrap, hero, lens, lensImg, zoom=4) {
+  const lensW = lens.offsetWidth  || 200;
+  const lensH = lens.offsetHeight || 200;
+
+  wrap.addEventListener('mouseenter', () => { lens.style.display='block'; });
+  wrap.addEventListener('mouseleave', () => { lens.style.display='none'; });
+
+  wrap.addEventListener('mousemove', e => {
+    const rect   = wrap.getBoundingClientRect();
+    const scaleX = hero.naturalWidth  / hero.clientWidth;
+    const scaleY = hero.naturalHeight / hero.clientHeight;
+
+    // Cursor position relative to the hero image (accounting for object-fit:contain letterboxing)
+    const heroRect = hero.getBoundingClientRect();
+    const cx = e.clientX - heroRect.left;
+    const cy = e.clientY - heroRect.top;
+
+    // Position lens centered on cursor, clamped to wrap
+    let lx = e.clientX - rect.left - lensW/2;
+    let ly = e.clientY - rect.top  - lensH/2;
+    lx = Math.max(0, Math.min(rect.width  - lensW, lx));
+    ly = Math.max(0, Math.min(rect.height - lensH, ly));
+    lens.style.left = lx + 'px';
+    lens.style.top  = ly + 'px';
+
+    // Inside the lens: show the image zoomed, offset so cursor point stays centred
+    const imgW = hero.clientWidth  * zoom;
+    const imgH = hero.clientHeight * zoom;
+    const imgLeft = -(cx * zoom - lensW/2);
+    const imgTop  = -(cy * zoom - lensH/2);
+
+    lensImg.style.width  = imgW  + 'px';
+    lensImg.style.height = imgH  + 'px';
+    lensImg.style.left   = imgLeft + 'px';
+    lensImg.style.top    = imgTop  + 'px';
+  });
+}
+
+// ── OCR rendering ──────────────────────────────────────────────────────────────
+
+const BLOCK_RANK = {headline:0, subheadline:1, byline:2, dateline:2,
+                    column:3, paragraph:3, caption:4, image:5, advertisement:6, other:7};
+
+function renderBlocksForPage(layoutBlocks, imageBlocks, pageIndex) {
+  const frag = document.createDocumentFragment();
+
+  const pageBlocks = (layoutBlocks ?? []).filter(b => (b.page ?? 0) === pageIndex);
+  if (pageBlocks.length) {
+    const blocksEl = document.createElement('div');
+    blocksEl.className = 'ocr-blocks';
+    const sorted = [...pageBlocks].sort((a,b) => (a.bbox?.y??0) - (b.bbox?.y??0));
+    for (const block of sorted) {
+      if (block.type === 'image' || !block.text?.trim()) continue;
+      const card = document.createElement('div');
+      card.className = `block-card ${block.type}`;
+      const typeLabel = `<div class="block-type-label">${esc(block.type)}</div>`;
+      let textHtml;
+      if (block.type === 'headline') {
+        textHtml = `<div class="block-headline-text">${esc(block.text)}</div>`;
+      } else if (block.type === 'subheadline') {
+        textHtml = `<div class="block-sub-text">${esc(block.text)}</div>`;
+      } else {
+        textHtml = `<div class="block-body-text">${esc(block.text)}</div>`;
+      }
+      card.innerHTML = typeLabel + textHtml;
+      blocksEl.appendChild(card);
+    }
+    frag.appendChild(blocksEl);
+  }
+
+  // Image crops for this page
+  const pageImgs = (imageBlocks ?? []).filter(b => (b.page ?? 0) === pageIndex && b.image_base64);
+  if (pageImgs.length) {
+    const imgWrap = document.createElement('div');
+    imgWrap.className = 'image-blocks';
+    for (const img of pageImgs) {
+      const card = document.createElement('div');
+      card.className = 'image-block-card';
+      const w = img.bottom_right_x - img.top_left_x;
+      const h = img.bottom_right_y - img.top_left_y;
+      card.innerHTML = `
+        <img src="data:image/jpeg;base64,${img.image_base64}" alt="${esc(img.id)}" />
+        <div class="image-block-caption">
+          ${esc(img.id)}${img.annotation ? ` — ${esc(img.annotation)}` : ''}
+          <span style="float:right;color:#4a5568">${w}×${h}px</span>
+        </div>`;
+      imgWrap.appendChild(card);
+    }
+    frag.appendChild(imgWrap);
+  }
+
+  return frag;
+}
+
+function renderLayoutBlocks(layoutBlocks, imageBlocks, pages) {
+  const wrap = document.createElement('div');
+
+  // Multi-page: group by page with headers + markdown
+  if (pages?.length > 1) {
+    for (const page of pages) {
+      const pi = page.index ?? 0;
+      const section = document.createElement('div');
+      section.className = 'page-section';
+
+      const heading = document.createElement('div');
+      heading.className = 'page-heading';
+      const dim = page.dimensions ? `${page.dimensions.width}×${page.dimensions.height}px` : '';
+      heading.innerHTML = `<span class="page-num">Page ${pi + 1}</span>${dim ? `<span class="page-dim">${esc(dim)}</span>` : ''}`;
+      section.appendChild(heading);
+
+      // Layout blocks + image crops for this page
+      const blockFrag = renderBlocksForPage(layoutBlocks, imageBlocks, pi);
+      if (blockFrag.childNodes.length) {
+        section.appendChild(blockFrag);
+      }
+
+      // Markdown text (collapsed for long pages)
+      if (page.markdown?.trim()) {
+        const md = page.markdown.trim();
+        const details = document.createElement('details');
+        details.open = md.length < 800;
+        details.innerHTML = `<summary>Markdown text (${md.length.toLocaleString()} chars)</summary>
+          <pre style="max-height:400px;overflow-y:auto">${esc(md)}</pre>`;
+        section.appendChild(details);
+      }
+
+      wrap.appendChild(section);
+    }
+    return wrap;
+  }
+
+  // Single image — original layout
+  wrap.appendChild(renderBlocksForPage(layoutBlocks, imageBlocks, 0));
+  return wrap;
+}
+
+// ── Field rendering ────────────────────────────────────────────────────────────
+const FIELD_ORDER = ['title','alternativeTitles','type','subtype','rationale',
+  'summary','description','text','transcription','language','confidence',
+  'dateRange','people','places','organisations','subjects','names','dates',
+  'keywords','physicalAttributes','safety','notes','translation'];
+
+function renderField(key, val) {
+  if (val==null||val===''||(Array.isArray(val)&&!val.length)) return '';
+  const label = `<div class="field-label">${esc(key)}</div>`;
+  if (Array.isArray(val)) {
+    const chips = val.map(v=>`<span class="chip">${esc(typeof v==='object'?JSON.stringify(v):v)}</span>`).join('');
+    return `<div>${label}<div class="chips">${chips}</div></div>`;
+  }
+  if (typeof val==='object') {
+    return `<div>${label}<div class="field-value" style="font-size:11px">${esc(JSON.stringify(val,null,2))}</div></div>`;
+  }
+  return `<div>${label}<div class="field-value">${esc(String(val))}</div></div>`;
+}
+
+function renderTaskResult(taskName, result, imageUrl) {
+  const el = document.createElement('div');
+  el.className = 'task-section';
+  el.id = `task-${taskName}`;
+
+  const failed = result.error || result.failed;
+  const badge  = failed
+    ? `<span class="task-badge badge-failed">failed</span>`
+    : `<span class="task-badge badge-done">done</span>`;
+
+  const header = `<div class="task-header"><span class="task-name">${esc(taskName)}</span>${badge}</div>`;
+
+  if (failed) {
+    el.innerHTML = header + `<div class="error-box">${esc(result.error??'Unknown error')}</div>`;
+    return el;
+  }
+
+  let tokensHtml = '';
+  if (result._tokens) {
+    const t = result._tokens;
+    tokensHtml = `<div class="token-pill">
+      <span>prompt <strong>${t.prompt?.toLocaleString()}</strong></span>
+      <span>completion <strong>${t.completion?.toLocaleString()}</strong></span>
+      <span>total <strong>${t.total?.toLocaleString()}</strong></span>
+      ${t.cached?`<span>cached <strong>${t.cached.toLocaleString()}</strong></span>`:''}
+    </div>`;
+  }
+
+  el.innerHTML = header + tokensHtml;
+
+  if (taskName === 'ocr_mistral') {
+    el.appendChild(renderLayoutBlocks(result.layout_blocks, result.image_blocks, result.pages));
+  } else {
+    const fields = document.createElement('div');
+    fields.className = 'fields';
+    const seen = new Set(['_tokens','raw_response','blocks','layout_blocks','image_blocks','pages','error','failed','skipped']);
+    for (const key of FIELD_ORDER) {
+      if (result[key]==null) continue;
+      seen.add(key);
+      fields.innerHTML += renderField(key, result[key]);
+    }
+    for (const [key,val] of Object.entries(result)) {
+      if (!seen.has(key)) fields.innerHTML += renderField(key, val);
+    }
+    el.appendChild(fields);
+  }
+
+  const stripped = Object.fromEntries(Object.entries(result).filter(([k])=>k!=='_tokens'&&k!=='image_blocks'));
+  const details = document.createElement('details');
+  details.innerHTML = `<summary>Raw JSON</summary><pre>${esc(JSON.stringify(stripped,null,2))}</pre>`;
+  el.appendChild(details);
+  return el;
+}
+
+// ── Main ───────────────────────────────────────────────────────────────────────
+async function main() {
+  const params  = new URL(location.href).searchParams;
+  const subject = params.get('url');
+  const dataDir = params.get('data') ?? 'data';
+
+  if (!subject) {
+    document.getElementById('loading').innerHTML =
+      '<p>No <code>?url=</code> parameter. <a href="index.html">← Gallery</a></p>';
+    return;
+  }
+
+  // Load manifest for title + pipeline order
+  let entry = null;
+  try {
+    const r = await fetch(`${dataDir}/images.json`);
+    if (r.ok) { const all = await r.json(); entry = all.find(e=>e.url===subject)??null; }
+  } catch(_) {}
+
+  // Load result file
+  const hash = await sha1hex(subject);
+  let data;
+  try {
+    const r = await fetch(`${dataDir}/${hash}.json`);
+    if (!r.ok) throw new Error(`HTTP ${r.status}`);
+    data = await r.json();
+  } catch(e) {
+    document.getElementById('loading').innerHTML =
+      `<p>Results not found.</p><p>${esc(e.message)}</p>
+       <p>Run <code>bin/console app:process</code> first.</p>
+       <p><a href="index.html">← Gallery</a></p>`;
+    return;
+  }
+
+  document.getElementById('loading').style.display = 'none';
+  document.getElementById('page').style.display    = 'block';
+
+  const title    = entry?.title ?? subject;
+  const pipeline = entry?.pipeline ?? Object.keys(data.results??{});
+  const results  = data.results ?? {};
+  const imageUrl = dispUrl(subject);
+
+  document.title = title + ' — AI Pipeline Demo';
+  document.getElementById('topTitle').textContent = title;
+
+  // Hero image with magnifier (images only) or PDF embed
+  if (isImg(subject)) {
+    const wrap    = document.getElementById('magWrap');
+    const hero    = document.getElementById('heroImg');
+    const lens    = document.getElementById('magLens');
+    const lensImg = document.getElementById('magLensImg');
+    hero.src      = imageUrl;
+    lensImg.src   = imageUrl;
+    wrap.style.display = 'block';
+    hero.onload = () => initMagnifier(wrap, hero, lens, lensImg, 4);
+  } else if (isPdf(subject)) {
+    const wrap = document.getElementById('magWrap');
+    wrap.style.display = 'block';
+    wrap.style.maxHeight = '600px';
+    wrap.style.cursor = 'default';
+    wrap.innerHTML = `<object data="${esc(imageUrl)}" type="application/pdf"
+        style="width:100%;height:600px;display:block">
+        <p style="padding:20px;color:#718096">
+          PDF preview not available in this browser.
+          <a href="${esc(imageUrl)}" target="_blank">Open PDF ↗</a>
+        </p>
+      </object>`;
+  }
+
+  // Pipeline track
+  const track = document.getElementById('pipelineTrack');
+  pipeline.forEach((taskName, i) => {
+    const r   = results[taskName];
+    const cls = !r ? '' : (r.error||r.failed) ? 'failed' : 'done';
+    const btn = document.createElement('span');
+    btn.className = 'track-step';
+    btn.innerHTML = `<span class="track-label ${cls}" id="track-${taskName}"
+        onclick="document.getElementById('task-${taskName}')?.scrollIntoView({behavior:'smooth'})"
+      >${esc(taskName)}</span>${i<pipeline.length-1?`<span class="track-arrow ${cls}">→</span>`:''}`;
+    track.appendChild(btn);
+  });
+
+  // Task sections in pipeline order
+  const sectionsEl = document.getElementById('taskSections');
+  const rendered   = new Set();
+  for (const taskName of pipeline) {
+    if (!results[taskName]) continue;
+    sectionsEl.appendChild(renderTaskResult(taskName, results[taskName], imageUrl));
+    rendered.add(taskName);
+  }
+  for (const [taskName,result] of Object.entries(results)) {
+    if (!rendered.has(taskName))
+      sectionsEl.appendChild(renderTaskResult(taskName, result, imageUrl));
+  }
+}
+
+main();
+</script>
+</body>
+</html>

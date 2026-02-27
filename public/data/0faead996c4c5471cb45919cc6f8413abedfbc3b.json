@@ -1,0 +1,345 @@
+{
+    "subject": "images/deed.jpg",
+    "results": {
+        "ocr_mistral": {
+            "text": "30\nCharles Ofrick of Riffacah\nHis name of Pensioner\nHis name of Claimant\nHis name of Pensioner\nHis name of Claimant\nHis name of Pensioner\nHis name of Claimant\nHis name of Pensioner\n\nParole &amp;c\n\" \" \" \" \"\n1532, William Robert Finch &amp; Lucy his wife, William Moore &amp; Julia Ann Moore\nto of Rappahannock County &amp; State of Virginia, Sanford Cockney &amp; Elizabeth his\nwife of Rappahannock &amp; State of Virginia, of the second part, Witnesseth\nPetition\n1534 June 18\n22 Nov 1834\nMary Cockney &amp; Elizabeth his wife, for and in consideration of the sum of Two hundred\ndollars, the receipts\nallowed a hereby acknowledged, have granted, bargained sold &amp; conveyed &amp; by their\ninterest, a part, bargained, all and conveyed with the said William Fletcher, his\nwife, and that of the said Robert Finch &amp; Lucy his wife, William Moore, Julia Ann Moore, Sanford\nthat the said Robert Finch &amp; Lucy his wife, William Fletcher, the receipts\nthe said Robert Finch &amp; Lucy his wife, William Fletcher, the receipts\n&amp; her wills to them in hand paid by the said William Fletcher, the receipts\nallowed a hereby acknowledged, have granted, bargained sold &amp; conveyed &amp; by their\ninterest, a part, bargained, all and conveyed with the said William Fletcher, his\nwife, and that of the said Robert Finch &amp; Lucy his wife, William Fletcher, the receipts\n&amp; her wills to them in hand paid by the said William Fletcher, the receipts\n&amp; her wills to the said Elizabeth Moore, her wills to the said W. Moore and now sustain, and in which\nthe said Elizabeth Moore, her wills to the said Elizabeth Moore, her wills to the said W. Moore and now sustain, and in which\nthe said Elizabeth Moore, her wills to the said Elizabeth Moore, her wills to the said W. Moore and now sustain, and in which\nthe aforesaid rights, title &amp; interest, in and to the aforesaid trade of Lime &amp; the\nthe appurtenances, thereto belonging, to him the said William Fletcher, his\nwife, for themselves, their heirs, claimed &amp; recorded, with hereby\nand approved, to and with the said William Fletcher, his heirs and assigns thereto\nthe said Robert Finch &amp; Lucy his wife, William Moore, Julia Ann Moore, Sanford\nCockney &amp; Elizabeth his wife, the said Robert Finch &amp; Lucy his wife, William\nMoore, Julia Ann Moore, Sanford Cockney &amp; Elizabeth his wife, the said\nW. Moore, Julia Ann Moore, Sanford Cockney &amp; Elizabeth his wife, the said\nW. Moore, and also the said William Fletcher, his heirs and assigns thereto\nthe said Robert Finch &amp; Lucy his wife, William Moore, Julia Ann Moore, Sanford\nCockney &amp; Elizabeth his wife, the said Robert Finch &amp; Lucy his wife, William\nMoore, Julia Ann Moore, Sanford Cockney &amp; Elizabeth his wife, the said\nW. Moore, and also the said William Fletcher, his heirs and assigns thereto\nthe said Robert Finch &amp; Lucy his wife, William Moore, Julia Ann Moore, Sanford\n^{}[]",
+            "language": null,
+            "confidence": "high",
+            "layout_blocks": [
+                {
+                    "type": "headline",
+                    "text": "30",
+                    "bbox": {
+                        "x": 0,
+                        "y": 0,
+                        "width": 3000,
+                        "height": 124
+                    }
+                },
+                {
+                    "type": "paragraph",
+                    "text": "Charles Ofrick of Riffacah",
+                    "bbox": {
+                        "x": 0,
+                        "y": 124,
+                        "width": 3000,
+                        "height": 124
+                    }
+                },
+                {
+                    "type": "paragraph",
+                    "text": "His name of Pensioner",
+                    "bbox": {
+                        "x": 0,
+                        "y": 247,
+                        "width": 3000,
+                        "height": 124
+                    }
+                },
+                {
+                    "type": "paragraph",
+                    "text": "His name of Claimant",
+                    "bbox": {
+                        "x": 0,
+                        "y": 371,
+                        "width": 3000,
+                        "height": 124
+                    }
+                },
+                {
+                    "type": "paragraph",
+                    "text": "His name of Pensioner",
+                    "bbox": {
+                        "x": 0,
+                        "y": 494,
+                        "width": 3000,
+                        "height": 124
+                    }
+                },
+                {
+                    "type": "paragraph",
+                    "text": "His name of Claimant",
+                    "bbox": {
+                        "x": 0,
+                        "y": 618,
+                        "width": 3000,
+                        "height": 124
+                    }
+                },
+                {
+                    "type": "paragraph",
+                    "text": "His name of Pensioner",
+                    "bbox": {
+                        "x": 0,
+                        "y": 741,
+                        "width": 3000,
+                        "height": 124
+                    }
+                },
+                {
+                    "type": "paragraph",
+                    "text": "His name of Claimant",
+                    "bbox": {
+                        "x": 0,
+                        "y": 865,
+                        "width": 3000,
+                        "height": 124
+                    }
+                },
+                {
+                    "type": "paragraph",
+                    "text": "His name of Pensioner",
+                    "bbox": {
+                        "x": 0,
+                        "y": 988,
+                        "width": 3000,
+                        "height": 124
+                    }
+                },
+                {
+                    "type": "paragraph",
+                    "text": "Parole &c",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1112,
+                        "width": 3000,
+                        "height": 124
+                    }
+                },
+                {
+                    "type": "paragraph",
+                    "text": "\" \" \" \" \"",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1235,
+                        "width": 3000,
+                        "height": 124
+                    }
+                },
+                {
+                    "type": "paragraph",
+                    "text": "1532, William Robert Finch & Lucy his wife, William Moore & Julia Ann Moore to of Rappahannock County & State of Virginia, Sanford Cockney & Elizabeth his wife of Rappahannock & State of Virginia, of the second part, Witnesseth",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1359,
+                        "width": 3000,
+                        "height": 124
+                    }
+                },
+                {
+                    "type": "paragraph",
+                    "text": "Petition",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1482,
+                        "width": 3000,
+                        "height": 124
+                    }
+                },
+                {
+                    "type": "paragraph",
+                    "text": "1534 June 18",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1606,
+                        "width": 3000,
+                        "height": 124
+                    }
+                },
+                {
+                    "type": "paragraph",
+                    "text": "22 Nov 1834",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1729,
+                        "width": 3000,
+                        "height": 124
+                    }
+                },
+                {
+                    "type": "paragraph",
+                    "text": "Mary Cockney & Elizabeth his wife, for and in consideration of the sum of Two hundred dollars, the receipts allowed a hereby acknowledged, have granted, bargained sold & conveyed & by their interest, a part, bargained, all and conveyed with the said William Fletcher, his wife, and that of the said Robert Finch & Lucy his wife, William Moore, Julia Ann Moore, Sanford that the said Robert Finch & Lucy his wife, William Fletcher, the receipts the said Robert Finch & Lucy his wife, William Fletcher, the receipts & her wills to them in hand paid by the said William Fletcher, the receipts allowed a hereby acknowledged, have granted, bargained sold & conveyed & by their interest, a part, bargained, all and conveyed with the said William Fletcher, his wife, and that of the said Robert Finch & Lucy his wife, William Fletcher, the receipts & her wills to them in hand paid by the said William Fletcher, the receipts & her wills to the said Elizabeth Moore, her wills to the said W. Moore and now sustain, and in which the said Elizabeth Moore, her wills to the said Elizabeth Moore, her wills to the said W. Moore and now sustain, and in which the said Elizabeth Moore, her wills to the said Elizabeth Moore, her wills to the said W. Moore and now sustain, and in which the aforesaid rights, title & interest, in and to the aforesaid trade of Lime & the the appurtenances, thereto belonging, to him the said William Fletcher, his wife, for themselves, their heirs, claimed & recorded, with hereby and approved, to and with the said William Fletcher, his heirs and assigns thereto the said Robert Finch & Lucy his wife, William Moore, Julia Ann Moore, Sanford Cockney & Elizabeth his wife, the said Robert Finch & Lucy his wife, William Moore, Julia Ann Moore, Sanford Cockney & Elizabeth his wife, the said W. Moore, Julia Ann Moore, Sanford Cockney & Elizabeth his wife, the said W. Moore, and also the said William Fletcher, his heirs and assigns thereto the said Robert Finch & Lucy his wife, William Moore, Julia Ann Moore, Sanford Cockney & Elizabeth his wife, the said Robert Finch & Lucy his wife, William Moore, Julia Ann Moore, Sanford Cockney & Elizabeth his wife, the said W. Moore, and also the said William Fletcher, his heirs and assigns thereto the said Robert Finch & Lucy his wife, William Moore, Julia Ann Moore, Sanford",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1853,
+                        "width": 3000,
+                        "height": 124
+                    }
+                }
+            ],
+            "image_blocks": [],
+            "pages": [
+                {
+                    "index": 0,
+                    "markdown": "30\nCharles Ofrick of Riffacah\nHis name of Pensioner\nHis name of Claimant\nHis name of Pensioner\nHis name of Claimant\nHis name of Pensioner\nHis name of Claimant\nHis name of Pensioner\n\nParole &amp;c\n\" \" \" \" \"\n1532, William Robert Finch &amp; Lucy his wife, William Moore &amp; Julia Ann Moore\nto of Rappahannock County &amp; State of Virginia, Sanford Cockney &amp; Elizabeth his\nwife of Rappahannock &amp; State of Virginia, of the second part, Witnesseth\nPetition\n1534 June 18\n22 Nov 1834\nMary Cockney &amp; Elizabeth his wife, for and in consideration of the sum of Two hundred\ndollars, the receipts\nallowed a hereby acknowledged, have granted, bargained sold &amp; conveyed &amp; by their\ninterest, a part, bargained, all and conveyed with the said William Fletcher, his\nwife, and that of the said Robert Finch &amp; Lucy his wife, William Moore, Julia Ann Moore, Sanford\nthat the said Robert Finch &amp; Lucy his wife, William Fletcher, the receipts\nthe said Robert Finch &amp; Lucy his wife, William Fletcher, the receipts\n&amp; her wills to them in hand paid by the said William Fletcher, the receipts\nallowed a hereby acknowledged, have granted, bargained sold &amp; conveyed &amp; by their\ninterest, a part, bargained, all and conveyed with the said William Fletcher, his\nwife, and that of the said Robert Finch &amp; Lucy his wife, William Fletcher, the receipts\n&amp; her wills to them in hand paid by the said William Fletcher, the receipts\n&amp; her wills to the said Elizabeth Moore, her wills to the said W. Moore and now sustain, and in which\nthe said Elizabeth Moore, her wills to the said Elizabeth Moore, her wills to the said W. Moore and now sustain, and in which\nthe said Elizabeth Moore, her wills to the said Elizabeth Moore, her wills to the said W. Moore and now sustain, and in which\nthe aforesaid rights, title &amp; interest, in and to the aforesaid trade of Lime &amp; the\nthe appurtenances, thereto belonging, to him the said William Fletcher, his\nwife, for themselves, their heirs, claimed &amp; recorded, with hereby\nand approved, to and with the said William Fletcher, his heirs and assigns thereto\nthe said Robert Finch &amp; Lucy his wife, William Moore, Julia Ann Moore, Sanford\nCockney &amp; Elizabeth his wife, the said Robert Finch &amp; Lucy his wife, William\nMoore, Julia Ann Moore, Sanford Cockney &amp; Elizabeth his wife, the said\nW. Moore, Julia Ann Moore, Sanford Cockney &amp; Elizabeth his wife, the said\nW. Moore, and also the said William Fletcher, his heirs and assigns thereto\nthe said Robert Finch &amp; Lucy his wife, William Moore, Julia Ann Moore, Sanford\nCockney &amp; Elizabeth his wife, the said Robert Finch &amp; Lucy his wife, William\nMoore, Julia Ann Moore, Sanford Cockney &amp; Elizabeth his wife, the said\nW. Moore, and also the said William Fletcher, his heirs and assigns thereto\nthe said Robert Finch &amp; Lucy his wife, William Moore, Julia Ann Moore, Sanford\n^{}[]",
+                    "dimensions": {
+                        "dpi": 200,
+                        "height": 1976,
+                        "width": 3000
+                    },
+                    "tables": [],
+                    "header": null,
+                    "footer": null
+                }
+            ],
+            "raw_response": {
+                "pages": [
+                    {
+                        "index": 0,
+                        "markdown": "30\nCharles Ofrick of Riffacah\nHis name of Pensioner\nHis name of Claimant\nHis name of Pensioner\nHis name of Claimant\nHis name of Pensioner\nHis name of Claimant\nHis name of Pensioner\n\nParole &amp;c\n\" \" \" \" \"\n1532, William Robert Finch &amp; Lucy his wife, William Moore &amp; Julia Ann Moore\nto of Rappahannock County &amp; State of Virginia, Sanford Cockney &amp; Elizabeth his\nwife of Rappahannock &amp; State of Virginia, of the second part, Witnesseth\nPetition\n1534 June 18\n22 Nov 1834\nMary Cockney &amp; Elizabeth his wife, for and in consideration of the sum of Two hundred\ndollars, the receipts\nallowed a hereby acknowledged, have granted, bargained sold &amp; conveyed &amp; by their\ninterest, a part, bargained, all and conveyed with the said William Fletcher, his\nwife, and that of the said Robert Finch &amp; Lucy his wife, William Moore, Julia Ann Moore, Sanford\nthat the said Robert Finch &amp; Lucy his wife, William Fletcher, the receipts\nthe said Robert Finch &amp; Lucy his wife, William Fletcher, the receipts\n&amp; her wills to them in hand paid by the said William Fletcher, the receipts\nallowed a hereby acknowledged, have granted, bargained sold &amp; conveyed &amp; by their\ninterest, a part, bargained, all and conveyed with the said William Fletcher, his\nwife, and that of the said Robert Finch &amp; Lucy his wife, William Fletcher, the receipts\n&amp; her wills to them in hand paid by the said William Fletcher, the receipts\n&amp; her wills to the said Elizabeth Moore, her wills to the said W. Moore and now sustain, and in which\nthe said Elizabeth Moore, her wills to the said Elizabeth Moore, her wills to the said W. Moore and now sustain, and in which\nthe said Elizabeth Moore, her wills to the said Elizabeth Moore, her wills to the said W. Moore and now sustain, and in which\nthe aforesaid rights, title &amp; interest, in and to the aforesaid trade of Lime &amp; the\nthe appurtenances, thereto belonging, to him the said William Fletcher, his\nwife, for themselves, their heirs, claimed &amp; recorded, with hereby\nand approved, to and with the said William Fletcher, his heirs and assigns thereto\nthe said Robert Finch &amp; Lucy his wife, William Moore, Julia Ann Moore, Sanford\nCockney &amp; Elizabeth his wife, the said Robert Finch &amp; Lucy his wife, William\nMoore, Julia Ann Moore, Sanford Cockney &amp; Elizabeth his wife, the said\nW. Moore, Julia Ann Moore, Sanford Cockney &amp; Elizabeth his wife, the said\nW. Moore, and also the said William Fletcher, his heirs and assigns thereto\nthe said Robert Finch &amp; Lucy his wife, William Moore, Julia Ann Moore, Sanford\nCockney &amp; Elizabeth his wife, the said Robert Finch &amp; Lucy his wife, William\nMoore, Julia Ann Moore, Sanford Cockney &amp; Elizabeth his wife, the said\nW. Moore, and also the said William Fletcher, his heirs and assigns thereto\nthe said Robert Finch &amp; Lucy his wife, William Moore, Julia Ann Moore, Sanford\n^{}[]",
+                        "images": [],
+                        "tables": [],
+                        "hyperlinks": [],
+                        "header": null,
+                        "footer": null,
+                        "dimensions": {
+                            "dpi": 200,
+                            "height": 1976,
+                            "width": 3000
+                        }
+                    }
+                ],
+                "model": "mistral-ocr-latest",
+                "document_annotation": "{\n  \"blocks\": [\n    {\n      \"type\": \"headline\",\n      \"text\": \"30\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 0,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"Charles Ofrick of Riffacah\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 20,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"His name of Pensioner\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 40,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"His name of Claimant\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 60,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"His name of Pensioner\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 80,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"His name of Claimant\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 100,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"His name of Pensioner\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 120,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"His name of Claimant\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 140,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"His name of Pensioner\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 160,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"Parole &c\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 180,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"\\\" \\\" \\\" \\\" \\\"\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 200,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"1532, William Robert Finch & Lucy his wife, William Moore & Julia Ann Moore to of Rappahannock County & State of Virginia, Sanford Cockney & Elizabeth his wife of Rappahannock & State of Virginia, of the second part, Witnesseth\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 220,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"Petition\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 240,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"1534 June 18\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 260,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"22 Nov 1834\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 280,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"Mary Cockney & Elizabeth his wife, for and in consideration of the sum of Two hundred dollars, the receipts allowed a hereby acknowledged, have granted, bargained sold & conveyed & by their interest, a part, bargained, all and conveyed with the said William Fletcher, his wife, and that of the said Robert Finch & Lucy his wife, William Moore, Julia Ann Moore, Sanford that the said Robert Finch & Lucy his wife, William Fletcher, the receipts the said Robert Finch & Lucy his wife, William Fletcher, the receipts & her wills to them in hand paid by the said William Fletcher, the receipts allowed a hereby acknowledged, have granted, bargained sold & conveyed & by their interest, a part, bargained, all and conveyed with the said William Fletcher, his wife, and that of the said Robert Finch & Lucy his wife, William Fletcher, the receipts & her wills to them in hand paid by the said William Fletcher, the receipts & her wills to the said Elizabeth Moore, her wills to the said W. Moore and now sustain, and in which the said Elizabeth Moore, her wills to the said Elizabeth Moore, her wills to the said W. Moore and now sustain, and in which the said Elizabeth Moore, her wills to the said Elizabeth Moore, her wills to the said W. Moore and now sustain, and in which the aforesaid rights, title & interest, in and to the aforesaid trade of Lime & the the appurtenances, thereto belonging, to him the said William Fletcher, his wife, for themselves, their heirs, claimed & recorded, with hereby and approved, to and with the said William Fletcher, his heirs and assigns thereto the said Robert Finch & Lucy his wife, William Moore, Julia Ann Moore, Sanford Cockney & Elizabeth his wife, the said Robert Finch & Lucy his wife, William Moore, Julia Ann Moore, Sanford Cockney & Elizabeth his wife, the said W. Moore, Julia Ann Moore, Sanford Cockney & Elizabeth his wife, the said W. Moore, and also the said William Fletcher, his heirs and assigns thereto the said Robert Finch & Lucy his wife, William Moore, Julia Ann Moore, Sanford Cockney & Elizabeth his wife, the said Robert Finch & Lucy his wife, William Moore, Julia Ann Moore, Sanford Cockney & Elizabeth his wife, the said W. Moore, and also the said William Fletcher, his heirs and assigns thereto the said Robert Finch & Lucy his wife, William Moore, Julia Ann Moore, Sanford\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 300,\n        \"width\": 100,\n        \"height\": 20\n      }\n    }\n  ]\n}",
+                "usage_info": {
+                    "pages_processed": 1,
+                    "doc_size_bytes": 717999
+                }
+            }
+        },
+        "transcribe_handwriting": {
+            "text": "This indenture made and entered into this 18th day of June\n1832 bet[ween] Robert Green & Lucy his wife, Barton Hoone [Horne] Jr & Florence\nhis wife, Sanford Cockery & Elizabeth his wife, of the first part, and William Helton\nof the County of Rappahannock & State of Virginia of the second part, witnesseth\nthat the said Robert Green & Lucy his wife, Woorsam Hoone [Horne] & Julietta Ann Hoone [Horne]\nat present, & Elizabeth his wife, for and in consideration of the sum of four thousand,\nfive hundred & ninety-six 7/100$, by cash in hand paid by the said William Helton, the receipt\nwhereof is hereby acknowledged, have granted, bargained, and sold conveyed by these\npresents, do grant, bargain, sell and convey unto the said William Helton, the later\nnow present, of [preconceived] certain tracts of land to a certain piece or parcel of land, containing\none thousand one hundred acres, more or less, being the tract of land, which was\nequally by Jameson Bellaceate to the heirs of Wo. Hoone [Horne], before which\nElizabeth Hoone, widow of the said Wo. Hoone that the one [unclear] nine or three\nshe the said Elizabeth Hoone before the [?ions] estate, claiming by and during the said\ninterest hereby conveyed by the parties of the first part by their sound in the said\none half of the other [torn] remains same expression, to [torn] time is whole\nupon the aforesaid right title interest, as well the present part of the [two]\n[torn] the appurtenances thereto belonging, to have the said William Helton his heirs\nonto assign, to the only proper rule at behoof, to the said William Helton\nhis heirs onto assign in science time the said Woorsan Froster [unclear] in science\nWilliam Helton, Julietta Ann Hoone, Sanford Cockery, and Elizabeth the\nwife, for themselves their heirs, [assumer] & [invoice]. Each party agreeing\n& saying, to have vital the said William Helton his heirs and [unclear] fore all\nthesaid Robert Frenks & Lucy his wife, Woorsan Hoone [Horne] & [Julietta Anor], Florence\nSanford Cockery & Elizabeth his wife, the seen right, title & interest, in the\nsaid tract or parcel of land, with the appurtenances thereto belonging, to unto\nthe said William Helton, his them cause interest and claim to assign the said\nRobert Frenks and Lucy his wof, William and Julietta [unclear] the [debtors],\n[orgy and] Elizabeth his wife, even express or present conveyance figuring,\nday the 20th, Wo. Horne, Julietta Hoone [Horne], Sanford Cockery, & Elizabeth his wife,\nthensaid assign them, under the penal year eight still design.\n\nRobert Frenks\nLucy\n\nWilliam Hoone [Horne]\nJulietta Ann Hoone [Horne]\"",
+            "language": "en",
+            "confidence": "medium",
+            "blocks": [
+                [
+                    "This indenture made and entered into this 18th day of June",
+                    "1832 bet[ween] Robert Green & Lucy his wife, Barton Hoone [Horne] Jr & Florence",
+                    "his wife, Sanford Cockery & Elizabeth his wife, of the first part, and William Helton",
+                    "of the County of Rappahannock & State of Virginia of the second part, witnesseth",
+                    "that the said Robert Green & Lucy his wife, Woorsam Hoone [Horne] & Julietta Ann Hoone [Horne]",
+                    "at present, & Elizabeth his wife, for and in consideration of the sum of four thousand,",
+                    "five hundred & ninety-six 7/100$, by cash in hand paid by the said William Helton, the receipt",
+                    "whereof is hereby acknowledged, have granted, bargained, and sold conveyed by these",
+                    "presents, do grant, bargain, sell and convey unto the said William Helton, the later",
+                    "now present, of [preconceived] certain tracts of land to a certain piece or parcel of land, containing",
+                    "one thousand one hundred acres, more or less, being the tract of land, which was",
+                    "equally by Jameson Bellaceate to the heirs of Wo. Hoone [Horne], before which",
+                    "Elizabeth Hoone, widow of the said Wo. Hoone that the one [unclear] nine or three",
+                    "she the said Elizabeth Hoone before the [?ions] estate, claiming by and during the said",
+                    "interest hereby conveyed by the parties of the first part by their sound in the said",
+                    "one half of the other [torn] remains same expression, to [torn] time is whole",
+                    "upon the aforesaid right title interest, as well the present part of the [two]",
+                    "[torn] the appurtenances thereto belonging, to have the said William Helton his heirs",
+                    "onto assign, to the only proper rule at behoof, to the said William Helton",
+                    "his heirs onto assign in science time the said Woorsan Froster [unclear] in science",
+                    "William Helton, Julietta Ann Hoone, Sanford Cockery, and Elizabeth the",
+                    "wife, for themselves their heirs, [assumer] & [invoice]. Each party agreeing",
+                    "& saying, to have vital the said William Helton his heirs and [unclear] fore all",
+                    "thesaid Robert Frenks & Lucy his wife, Woorsan Hoone [Horne] & [Julietta Anor], Florence",
+                    "Sanford Cockery & Elizabeth his wife, the seen right, title & interest, in the",
+                    "said tract or parcel of land, with the appurtenances thereto belonging, to unto",
+                    "the said William Helton, his them cause interest and claim to assign the said",
+                    "Robert Frenks and Lucy his wof, William and Julietta [unclear] the [debtors],",
+                    "[orgy and] Elizabeth his wife, even express or present conveyance figuring,",
+                    "day the 20th, Wo. Horne, Julietta Hoone [Horne], Sanford Cockery, & Elizabeth his wife,",
+                    "thensaid assign them, under the penal year eight still design.",
+                    "",
+                    "Robert Frenks",
+                    "Lucy",
+                    "",
+                    "William Hoone [Horne]",
+                    "Julietta Ann Hoone [Horne]"
+                ]
+            ],
+            "_tokens": {
+                "prompt": 1311,
+                "completion": 1378,
+                "total": 2689,
+                "cached": 0
+            }
+        },
+        "people_and_places": {
+            "people": [
+                "William Holters (possible)",
+                "Eliza Holters (possible)",
+                "Robert French (possible)",
+                "William H. Smith (possible)"
+            ],
+            "places": [
+                "Sanford County (possible)",
+                "Warren County (possible)",
+                "County of Shenandoah (possible)",
+                "County of Rappahannock (possible)",
+                "State of Virginia (possible)"
+            ],
+            "organisations": [],
+            "_tokens": {
+                "prompt": 37047,
+                "completion": 82,
+                "total": 37129,
+                "cached": 0
+            }
+        },
+        "extract_metadata": {
+            "dateRange": "1818–1818",
+            "people": [
+                "William Hite",
+                "Elizabeth Hite",
+                "William Stokes",
+                "William Hite Jr."
+            ],
+            "places": [
+                "Warren County",
+                "Virginia",
+                "County of Rappahannock"
+            ],
+            "subjects": [
+                "Property Transfer",
+                "Land Agreement",
+                "Real Estate"
+            ],
+            "language": "en",
+            "organisations": [],
+            "_tokens": {
+                "prompt": 37102,
+                "completion": 109,
+                "total": 37211,
+                "cached": 0
+            }
+        },
+        "generate_title": {
+            "title": "Elizabeth Hite and William Hite Indenture, 1818, Warren County, VA",
+            "alternativeTitles": [
+                "William Hite Jr. and Elizabeth Hite Property Agreement, 1818",
+                "Indenture Between William Hite Sr. and Elizabeth Hite, 1818, Rappahannock County, VA"
+            ],
+            "confidence": "high",
+            "_tokens": {
+                "prompt": 37033,
+                "completion": 73,
+                "total": 37106,
+                "cached": 0
+            }
+        },
+        "keywords": {
+            "keywords": [
+                "historical-document",
+                "pension-record",
+                "land-deed",
+                "1800s",
+                "manuscript",
+                "signed",
+                "legal-paperwork",
+                "condition-uncertain"
+            ],
+            "safety": "safe",
+            "_tokens": {
+                "prompt": 37197,
+                "completion": 41,
+                "total": 37238,
+                "cached": 0
+            }
+        }
+    }
+}

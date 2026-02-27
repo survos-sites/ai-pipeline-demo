@@ -5,11 +5,61 @@
             "text": "all Lands as by his Majesty's Commission and Royal Instructions to me are directed Lim Hod and appointed in the 99th. 100th. 101st. 102nd. and 103rd Articles of the same Instructions whereof I have given you a copy Givt. under my hand and seal at New York the second day of May in the Twelfth year of his Majesty's Prize Armory Dominick our thousand seven hundred and twenty six\n\nBy his Excellency's Command.\n\nP. Robin, Deputy\n\nRecd. Tuesday 24. May 1726. P. B.",
             "language": null,
             "confidence": "high",
-            "blocks": [
+            "layout_blocks": [
                 {
-                    "text": "all Lands as by his Majesty's Commission and Royal Instructions to me are directed Lim Hod and appointed in the 99th. 100th. 101st. 102nd. and 103rd Articles of the same Instructions whereof I have given you a copy Givt. under my hand and seal at New York the second day of May in the Twelfth year of his Majesty's Prize Armory Dominick our thousand seven hundred and twenty six\n\nBy his Excellency's Command.\n\nP. Robin, Deputy\n\nRecd. Tuesday 24. May 1726. P. B.",
-                    "type": "page",
-                    "index": 0
+                    "type": "paragraph",
+                    "text": "all Lands as by his Majesty's Commission and Royal Instructions to me are directed Lim Hod and appointed in the 99th. 100th. 101st. 102nd. and 103rd Articles of the same Instructions whereof I have given you a copy Givt. under my hand and seal at New York the second day of May in the Twelfth year of his Majesty's Prize Armory Dominick our thousand seven hundred and twenty six",
+                    "bbox": {
+                        "x": 0,
+                        "y": 0,
+                        "width": 2250,
+                        "height": 660
+                    }
+                },
+                {
+                    "type": "byline",
+                    "text": "By his Excellency's Command.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 660,
+                        "width": 2250,
+                        "height": 330
+                    }
+                },
+                {
+                    "type": "byline",
+                    "text": "P. Robin, Deputy",
+                    "bbox": {
+                        "x": 0,
+                        "y": 990,
+                        "width": 2250,
+                        "height": 330
+                    }
+                },
+                {
+                    "type": "other",
+                    "text": "Recd. Tuesday 24. May 1726. P. B.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1320,
+                        "width": 2250,
+                        "height": 330
+                    }
+                }
+            ],
+            "image_blocks": [],
+            "pages": [
+                {
+                    "index": 0,
+                    "markdown": "all Lands as by his Majesty's Commission and Royal Instructions to me are directed Lim Hod and appointed in the 99th. 100th. 101st. 102nd. and 103rd Articles of the same Instructions whereof I have given you a copy Givt. under my hand and seal at New York the second day of May in the Twelfth year of his Majesty's Prize Armory Dominick our thousand seven hundred and twenty six\n\nBy his Excellency's Command.\n\nP. Robin, Deputy\n\nRecd. Tuesday 24. May 1726. P. B.",
+                    "dimensions": {
+                        "dpi": 200,
+                        "height": 1650,
+                        "width": 2250
+                    },
+                    "tables": [],
+                    "header": null,
+                    "footer": null
                 }
             ],
             "raw_response": {
@@ -30,7 +80,7 @@
                     }
                 ],
                 "model": "mistral-ocr-latest",
-                "document_annotation": null,
+                "document_annotation": "{\n  \"blocks\": [\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"all Lands as by his Majesty's Commission and Royal Instructions to me are directed Lim Hod and appointed in the 99th. 100th. 101st. 102nd. and 103rd Articles of the same Instructions whereof I have given you a copy Givt. under my hand and seal at New York the second day of May in the Twelfth year of his Majesty's Prize Armory Dominick our thousand seven hundred and twenty six\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 0,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"byline\",\n      \"text\": \"By his Excellency's Command.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 20,\n        \"width\": 100,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"byline\",\n      \"text\": \"P. Robin, Deputy\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 30,\n        \"width\": 100,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"other\",\n      \"text\": \"Recd. Tuesday 24. May 1726. P. B.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 40,\n        \"width\": 100,\n        \"height\": 10\n      }\n    }\n  ]\n}",
                 "usage_info": {
                     "pages_processed": 1,
                     "doc_size_bytes": 1262296
@@ -125,6 +175,25 @@
                 "completion": 48,
                 "total": 37036,
                 "cached": 1024
+            }
+        },
+        "keywords": {
+            "keywords": [
+                "historical-document",
+                "royal-commission",
+                "colonial-america",
+                "handwritten",
+                "18th-century",
+                "document-condition",
+                "signatures",
+                "new-york"
+            ],
+            "safety": "safe",
+            "_tokens": {
+                "prompt": 37172,
+                "completion": 41,
+                "total": 37213,
+                "cached": 0
             }
         }
     }

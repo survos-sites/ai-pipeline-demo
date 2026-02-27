@@ -37,12 +37,14 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+        with:
+          lfs: true       # pull Git LFS files (images)
 
       - name: Set up PHP
         uses: shivammathur/setup-php@v2
         with:
           php-version: '8.2'
-          extensions: ctype, iconv, curl
+          extensions: ctype, iconv, curl, gd
           coverage: none
 
       - name: Cache Composer dependencies
@@ -55,6 +57,9 @@ jobs:
       - name: Install dependencies
         run: composer install --no-interaction --prefer-dist --optimize-autoloader
 
+      # Entries with local-only files (file:// would resolve to missing paths in CI)
+      # are skipped automatically by ProcessImagesCommand's accessibility check.
+      # No special handling needed — the command warns and skips unreadable local files.
       - name: Run pipeline
         env:
           APP_ENV: prod
@@ -87,6 +92,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           ref: main          # pick up the commit made by the process job
+          lfs: true          # pull Git LFS files (images) for the static site
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3

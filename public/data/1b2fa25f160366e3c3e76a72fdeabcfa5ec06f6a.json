@@ -1,0 +1,214 @@
+{
+    "subject": "images/nytimes-cover.jpg",
+    "results": {
+        "ocr_mistral": {
+            "text": "The New York Times, Friday, September 18, 1903\n\n# THE EUROPEAN NEWS.\n\n## Continued from First Page.\n\nAnd that Great Britain was about to become the first international economic to exist in the state of Latin America, and to remain the first ever Portugal states of Western. It is expected for the first time that the country and their great country, and the world, are now the first to exist in the country, and could have sufficient facts to support the war. The first step that the British government has, would have sufficient facts to support the war, is to make it clear, in the early stages, that the country is not the only country in which the war is concerned. The first step is to make a clear, in the early stages, that the country is not the only country in which the war is concerned. The second step is to make a clear, in the early stages, that the country is not the only country in which the war is concerned. The first step is to make a clear, in the early stages, that the country is not the only country in which the war is concerned. The second step is to make a clear, in the early stages, that the country is not the only country in which the war is concerned. The first step is to make a clear, in the early stages, that the country is not the only country in which the war is concerned. The second step is to make a clear, in the early stages, that the country is not the only country in which the war is concerned. The second step is to make a clear, in the early stages, that the country is not the only country in which the war is concerned. The second step is to make a clear, in the early stages, that the country is not the only country in which the war is concerned. The second step is to make a clear, in the early stages, that the country is not the only country in which the war is concerned. The second step is to make a clear, in the early stages, that the country is not the only country in which the war is concerned. The second step is to make a clear, in the early stages, that the country is not the only country in which the war is concerned. The second step is to make a clear, in the early stages, that the country is not the only country in which the war is concerned. The second step is to make a clear, in the early stages, that the country is not the only country in which the war is concerned. The second step is to make a clear, in the early stages, that the country is not the only country in which the war is concerned. The second step is to make a clear, in the early stages, that the country is not the only country in which the war is concerned. The second step is to make a clear, in the early stages, that the country is not the only country in which the war is concerned. The second step is to make a clear, in the early stages, that the country is not the only country in which the war is concerned. The second step is to make a clear, in the early stages, that the country is not the only country in which the war is concerned.\n\n## THE ARMY OF THE POSOMAR.\n\n### Attempt of the Enemy to Re-cross the Rapidan.\n\n#### The Passage of General Maude to be Dispused.\n\n#### Rebel Report of the Fighting as Culpepper.\n\n##### Wannover, Tuesday, Sept. 17.\n\nThe rebels, according to the meeting of the American Congress, were asked to take the Supreme Minister to the United States, and the United States, to take the Supreme Minister to the United States. The United States, and the United States, were asked to take the Supreme Minister to the United States. The United States, and the United States, were asked to take the Supreme Minister to the United States. The United States, and the United States, were asked to take the Supreme Minister to the United States. The United States, and the United States, were asked to take the Supreme Minister to the United States. The United States, and the United States, were asked to take the Supreme Minister to the United States. The United States, and the United States, were asked to take the Supreme Minister to the United States. The United States, and the United States, were asked to take the Supreme Minister to the United States. The United States, and the United States, were asked to take the Supreme Minister to the United States. The United States, and the United States, were asked to take the Supreme Minister to the United States. The United States, and the United States, were asked to take the Supreme Minister to the United States. The United States, and the United States, were asked to take the Supreme Minister to the United States.\n\nThe United States, and the United States, were asked to take the Supreme Minister to the United States. The United States, and the United States, were asked to take the Supreme Minister to the United States. The United States, and the United States, were asked to take the Supreme Minister to the United States. The United States, and the United States, were asked to take the Supreme Minister to the United States. The United States, and the United States, were asked to take the Supreme Minister to the United States.",
+            "language": null,
+            "confidence": "high",
+            "layout_blocks": [
+                {
+                    "type": "headline",
+                    "text": "THE EUROPEAN NEWS.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 0,
+                        "width": 3000,
+                        "height": 109
+                    }
+                },
+                {
+                    "type": "subheadline",
+                    "text": "Continued from First Page.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 109,
+                        "width": 3000,
+                        "height": 65
+                    }
+                },
+                {
+                    "type": "paragraph",
+                    "text": "And that Great Britain was about to become the first international economic to exist in the state of Latin America, and to remain the first ever Portugal states of Western. It is expected for the first time that the country and their great country, and the world, are now the first to exist in the country, and could have sufficient facts to support the war. The first step that the British government has, would have sufficient facts to support the war, is to make it clear, in the early stages, that the country is not the only country in which the war is concerned. The first step is to make a clear, in the early stages, that the country is not the only country in which the war is concerned. The second step is to make a clear, in the early stages, that the country is not the only country in which the war is concerned. The first step is to make a clear, in the early stages, that the country is not the only country in which the war is concerned. The second step is to make a clear, in the early stages, that the country is not the only country in which the war is concerned. The second step is to make a clear, in the early stages, that the country is not the only country in which the war is concerned. The second step is to make a clear, in the early stages, that the country is not the only country in which the war is concerned. The second step is to make a clear, in the early stages, that the country is not the only country in which the war is concerned. The second step is to make a clear, in the early stages, that the country is not the only country in which the war is concerned. The second step is to make a clear, in the early stages, that the country is not the only country in which the war is concerned. The second step is to make a clear, in the early stages, that the country is not the only country in which the war is concerned. The second step is to make a clear, in the early stages, that the country is not the only country in which the war is concerned. The second step is to make a clear, in the early stages, that the country is not the only country in which the war is concerned. The second step is to make a clear, in the early stages, that the country is not the only country in which the war is concerned. The second step is to make a clear, in the early stages, that the country is not the only country in which the war is concerned. The second step is to make a clear, in the early stages, that the country is not the only country in which the war is concerned. The second step is to make a clear, in the early stages, that the country is not the only country in which the war is concerned.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 174,
+                        "width": 3000,
+                        "height": 652
+                    }
+                },
+                {
+                    "type": "headline",
+                    "text": "THE ARMY OF THE POSOMAR.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 825,
+                        "width": 3000,
+                        "height": 109
+                    }
+                },
+                {
+                    "type": "subheadline",
+                    "text": "Attempt of the Enemy to Re-cross the Rapidan.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 934,
+                        "width": 3000,
+                        "height": 65
+                    }
+                },
+                {
+                    "type": "subheadline",
+                    "text": "The Passage of General Maude to be Dispused.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 999,
+                        "width": 3000,
+                        "height": 65
+                    }
+                },
+                {
+                    "type": "subheadline",
+                    "text": "Rebel Report of the Fighting as Culpepper.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1064,
+                        "width": 3000,
+                        "height": 65
+                    }
+                },
+                {
+                    "type": "byline",
+                    "text": "Wannover, Tuesday, Sept. 17.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1129,
+                        "width": 3000,
+                        "height": 65
+                    }
+                },
+                {
+                    "type": "paragraph",
+                    "text": "The rebels, according to the meeting of the American Congress, were asked to take the Supreme Minister to the United States, and the United States, to take the Supreme Minister to the United States. The United States, and the United States, were asked to take the Supreme Minister to the United States. The United States, and the United States, were asked to take the Supreme Minister to the United States. The United States, and the United States, were asked to take the Supreme Minister to the United States. The United States, and the United States, were asked to take the Supreme Minister to the United States. The United States, and the United States, were asked to take the Supreme Minister to the United States. The United States, and the United States, were asked to take the Supreme Minister to the United States. The United States, and the United States, were asked to take the Supreme Minister to the United States. The United States, and the United States, were asked to take the Supreme Minister to the United States. The United States, and the United States, were asked to take the Supreme Minister to the United States. The United States, and the United States, were asked to take the Supreme Minister to the United States. The United States, and the United States, were asked to take the Supreme Minister to the United States. The United States, and the United States, were asked to take the Supreme Minister to the United States. The United States, and the United States, were asked to take the Supreme Minister to the United States. The United States, and the United States, were asked to take the Supreme Minister to the United States. The United States, and the United States, were asked to take the Supreme Minister to the United States. The United States, and the United States, were asked to take the Supreme Minister to the United States. The United States, and the United States, were asked to take the Supreme Minister to the United States.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1194,
+                        "width": 3000,
+                        "height": 652
+                    }
+                }
+            ],
+            "image_blocks": [],
+            "pages": [
+                {
+                    "index": 0,
+                    "markdown": "The New York Times, Friday, September 18, 1903\n\n# THE EUROPEAN NEWS.\n\n## Continued from First Page.\n\nAnd that Great Britain was about to become the first international economic to exist in the state of Latin America, and to remain the first ever Portugal states of Western. It is expected for the first time that the country and their great country, and the world, are now the first to exist in the country, and could have sufficient facts to support the war. The first step that the British government has, would have sufficient facts to support the war, is to make it clear, in the early stages, that the country is not the only country in which the war is concerned. The first step is to make a clear, in the early stages, that the country is not the only country in which the war is concerned. The second step is to make a clear, in the early stages, that the country is not the only country in which the war is concerned. The first step is to make a clear, in the early stages, that the country is not the only country in which the war is concerned. The second step is to make a clear, in the early stages, that the country is not the only country in which the war is concerned. The first step is to make a clear, in the early stages, that the country is not the only country in which the war is concerned. The second step is to make a clear, in the early stages, that the country is not the only country in which the war is concerned. The second step is to make a clear, in the early stages, that the country is not the only country in which the war is concerned. The second step is to make a clear, in the early stages, that the country is not the only country in which the war is concerned. The second step is to make a clear, in the early stages, that the country is not the only country in which the war is concerned. The second step is to make a clear, in the early stages, that the country is not the only country in which the war is concerned. The second step is to make a clear, in the early stages, that the country is not the only country in which the war is concerned. The second step is to make a clear, in the early stages, that the country is not the only country in which the war is concerned. The second step is to make a clear, in the early stages, that the country is not the only country in which the war is concerned. The second step is to make a clear, in the early stages, that the country is not the only country in which the war is concerned. The second step is to make a clear, in the early stages, that the country is not the only country in which the war is concerned. The second step is to make a clear, in the early stages, that the country is not the only country in which the war is concerned. The second step is to make a clear, in the early stages, that the country is not the only country in which the war is concerned. The second step is to make a clear, in the early stages, that the country is not the only country in which the war is concerned.\n\n## THE ARMY OF THE POSOMAR.\n\n### Attempt of the Enemy to Re-cross the Rapidan.\n\n#### The Passage of General Maude to be Dispused.\n\n#### Rebel Report of the Fighting as Culpepper.\n\n##### Wannover, Tuesday, Sept. 17.\n\nThe rebels, according to the meeting of the American Congress, were asked to take the Supreme Minister to the United States, and the United States, to take the Supreme Minister to the United States. The United States, and the United States, were asked to take the Supreme Minister to the United States. The United States, and the United States, were asked to take the Supreme Minister to the United States. The United States, and the United States, were asked to take the Supreme Minister to the United States. The United States, and the United States, were asked to take the Supreme Minister to the United States. The United States, and the United States, were asked to take the Supreme Minister to the United States. The United States, and the United States, were asked to take the Supreme Minister to the United States. The United States, and the United States, were asked to take the Supreme Minister to the United States. The United States, and the United States, were asked to take the Supreme Minister to the United States. The United States, and the United States, were asked to take the Supreme Minister to the United States. The United States, and the United States, were asked to take the Supreme Minister to the United States. The United States, and the United States, were asked to take the Supreme Minister to the United States.\n\nThe United States, and the United States, were asked to take the Supreme Minister to the United States. The United States, and the United States, were asked to take the Supreme Minister to the United States. The United States, and the United States, were asked to take the Supreme Minister to the United States. The United States, and the United States, were asked to take the Supreme Minister to the United States. The United States, and the United States, were asked to take the Supreme Minister to the United States.",
+                    "dimensions": {
+                        "dpi": 200,
+                        "height": 1846,
+                        "width": 3000
+                    },
+                    "tables": [],
+                    "header": null,
+                    "footer": null
+                }
+            ],
+            "raw_response": {
+                "pages": [
+                    {
+                        "index": 0,
+                        "markdown": "The New York Times, Friday, September 18, 1903\n\n# THE EUROPEAN NEWS.\n\n## Continued from First Page.\n\nAnd that Great Britain was about to become the first international economic to exist in the state of Latin America, and to remain the first ever Portugal states of Western. It is expected for the first time that the country and their great country, and the world, are now the first to exist in the country, and could have sufficient facts to support the war. The first step that the British government has, would have sufficient facts to support the war, is to make it clear, in the early stages, that the country is not the only country in which the war is concerned. The first step is to make a clear, in the early stages, that the country is not the only country in which the war is concerned. The second step is to make a clear, in the early stages, that the country is not the only country in which the war is concerned. The first step is to make a clear, in the early stages, that the country is not the only country in which the war is concerned. The second step is to make a clear, in the early stages, that the country is not the only country in which the war is concerned. The first step is to make a clear, in the early stages, that the country is not the only country in which the war is concerned. The second step is to make a clear, in the early stages, that the country is not the only country in which the war is concerned. The second step is to make a clear, in the early stages, that the country is not the only country in which the war is concerned. The second step is to make a clear, in the early stages, that the country is not the only country in which the war is concerned. The second step is to make a clear, in the early stages, that the country is not the only country in which the war is concerned. The second step is to make a clear, in the early stages, that the country is not the only country in which the war is concerned. The second step is to make a clear, in the early stages, that the country is not the only country in which the war is concerned. The second step is to make a clear, in the early stages, that the country is not the only country in which the war is concerned. The second step is to make a clear, in the early stages, that the country is not the only country in which the war is concerned. The second step is to make a clear, in the early stages, that the country is not the only country in which the war is concerned. The second step is to make a clear, in the early stages, that the country is not the only country in which the war is concerned. The second step is to make a clear, in the early stages, that the country is not the only country in which the war is concerned. The second step is to make a clear, in the early stages, that the country is not the only country in which the war is concerned. The second step is to make a clear, in the early stages, that the country is not the only country in which the war is concerned.\n\n## THE ARMY OF THE POSOMAR.\n\n### Attempt of the Enemy to Re-cross the Rapidan.\n\n#### The Passage of General Maude to be Dispused.\n\n#### Rebel Report of the Fighting as Culpepper.\n\n##### Wannover, Tuesday, Sept. 17.\n\nThe rebels, according to the meeting of the American Congress, were asked to take the Supreme Minister to the United States, and the United States, to take the Supreme Minister to the United States. The United States, and the United States, were asked to take the Supreme Minister to the United States. The United States, and the United States, were asked to take the Supreme Minister to the United States. The United States, and the United States, were asked to take the Supreme Minister to the United States. The United States, and the United States, were asked to take the Supreme Minister to the United States. The United States, and the United States, were asked to take the Supreme Minister to the United States. The United States, and the United States, were asked to take the Supreme Minister to the United States. The United States, and the United States, were asked to take the Supreme Minister to the United States. The United States, and the United States, were asked to take the Supreme Minister to the United States. The United States, and the United States, were asked to take the Supreme Minister to the United States. The United States, and the United States, were asked to take the Supreme Minister to the United States. The United States, and the United States, were asked to take the Supreme Minister to the United States.\n\nThe United States, and the United States, were asked to take the Supreme Minister to the United States. The United States, and the United States, were asked to take the Supreme Minister to the United States. The United States, and the United States, were asked to take the Supreme Minister to the United States. The United States, and the United States, were asked to take the Supreme Minister to the United States. The United States, and the United States, were asked to take the Supreme Minister to the United States.",
+                        "images": [],
+                        "tables": [],
+                        "hyperlinks": [],
+                        "header": null,
+                        "footer": null,
+                        "dimensions": {
+                            "dpi": 200,
+                            "height": 1846,
+                            "width": 3000
+                        }
+                    }
+                ],
+                "model": "mistral-ocr-latest",
+                "document_annotation": "{\n  \"blocks\": [\n    {\n      \"type\": \"headline\",\n      \"text\": \"THE EUROPEAN NEWS.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 0,\n        \"width\": 100,\n        \"height\": 5\n      }\n    },\n    {\n      \"type\": \"subheadline\",\n      \"text\": \"Continued from First Page.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 5,\n        \"width\": 100,\n        \"height\": 3\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"And that Great Britain was about to become the first international economic to exist in the state of Latin America, and to remain the first ever Portugal states of Western. It is expected for the first time that the country and their great country, and the world, are now the first to exist in the country, and could have sufficient facts to support the war. The first step that the British government has, would have sufficient facts to support the war, is to make it clear, in the early stages, that the country is not the only country in which the war is concerned. The first step is to make a clear, in the early stages, that the country is not the only country in which the war is concerned. The second step is to make a clear, in the early stages, that the country is not the only country in which the war is concerned. The first step is to make a clear, in the early stages, that the country is not the only country in which the war is concerned. The second step is to make a clear, in the early stages, that the country is not the only country in which the war is concerned. The second step is to make a clear, in the early stages, that the country is not the only country in which the war is concerned. The second step is to make a clear, in the early stages, that the country is not the only country in which the war is concerned. The second step is to make a clear, in the early stages, that the country is not the only country in which the war is concerned. The second step is to make a clear, in the early stages, that the country is not the only country in which the war is concerned. The second step is to make a clear, in the early stages, that the country is not the only country in which the war is concerned. The second step is to make a clear, in the early stages, that the country is not the only country in which the war is concerned. The second step is to make a clear, in the early stages, that the country is not the only country in which the war is concerned. The second step is to make a clear, in the early stages, that the country is not the only country in which the war is concerned. The second step is to make a clear, in the early stages, that the country is not the only country in which the war is concerned. The second step is to make a clear, in the early stages, that the country is not the only country in which the war is concerned. The second step is to make a clear, in the early stages, that the country is not the only country in which the war is concerned. The second step is to make a clear, in the early stages, that the country is not the only country in which the war is concerned.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 8,\n        \"width\": 100,\n        \"height\": 30\n      }\n    },\n    {\n      \"type\": \"headline\",\n      \"text\": \"THE ARMY OF THE POSOMAR.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 38,\n        \"width\": 100,\n        \"height\": 5\n      }\n    },\n    {\n      \"type\": \"subheadline\",\n      \"text\": \"Attempt of the Enemy to Re-cross the Rapidan.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 43,\n        \"width\": 100,\n        \"height\": 3\n      }\n    },\n    {\n      \"type\": \"subheadline\",\n      \"text\": \"The Passage of General Maude to be Dispused.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 46,\n        \"width\": 100,\n        \"height\": 3\n      }\n    },\n    {\n      \"type\": \"subheadline\",\n      \"text\": \"Rebel Report of the Fighting as Culpepper.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 49,\n        \"width\": 100,\n        \"height\": 3\n      }\n    },\n    {\n      \"type\": \"byline\",\n      \"text\": \"Wannover, Tuesday, Sept. 17.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 52,\n        \"width\": 100,\n        \"height\": 3\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"The rebels, according to the meeting of the American Congress, were asked to take the Supreme Minister to the United States, and the United States, to take the Supreme Minister to the United States. The United States, and the United States, were asked to take the Supreme Minister to the United States. The United States, and the United States, were asked to take the Supreme Minister to the United States. The United States, and the United States, were asked to take the Supreme Minister to the United States. The United States, and the United States, were asked to take the Supreme Minister to the United States. The United States, and the United States, were asked to take the Supreme Minister to the United States. The United States, and the United States, were asked to take the Supreme Minister to the United States. The United States, and the United States, were asked to take the Supreme Minister to the United States. The United States, and the United States, were asked to take the Supreme Minister to the United States. The United States, and the United States, were asked to take the Supreme Minister to the United States. The United States, and the United States, were asked to take the Supreme Minister to the United States. The United States, and the United States, were asked to take the Supreme Minister to the United States. The United States, and the United States, were asked to take the Supreme Minister to the United States. The United States, and the United States, were asked to take the Supreme Minister to the United States. The United States, and the United States, were asked to take the Supreme Minister to the United States. The United States, and the United States, were asked to take the Supreme Minister to the United States. The United States, and the United States, were asked to take the Supreme Minister to the United States. The United States, and the United States, were asked to take the Supreme Minister to the United States.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 55,\n        \"width\": 100,\n        \"height\": 30\n      }\n    }\n  ]\n}",
+                "usage_info": {
+                    "pages_processed": 1,
+                    "doc_size_bytes": 1585253
+                }
+            }
+        },
+        "classify": {
+            "type": "newspaper_clipping",
+            "subtype": null,
+            "confidence": 0.9,
+            "rationale": "The document is a page from 'The New-York Times' dated September 18, 1863, featuring news articles and advertisements typical of a newspaper format.",
+            "_tokens": {
+                "prompt": 37059,
+                "completion": 57,
+                "total": 37116,
+                "cached": 0
+            }
+        },
+        "extract_metadata": {
+            "dateRange": "1863",
+            "people": [
+                "Gen. Meade",
+                "Gen. Maun",
+                "General Meade"
+            ],
+            "places": [
+                "Culpepper",
+                "Rapidan",
+                "Washington"
+            ],
+            "subjects": [
+                "American Civil War",
+                "Military engagements",
+                "European news"
+            ],
+            "language": "en",
+            "organisations": [
+                "The New-York Times"
+            ],
+            "_tokens": {
+                "prompt": 37113,
+                "completion": 66,
+                "total": 37179,
+                "cached": 0
+            }
+        },
+        "summarize": {
+            "summary": "The item is a newspaper clipping from The New-York Times, dated September 18, 1863, covering significant events during the American Civil War. It provides insights into military engagements around Culpepper and the Rapidan, as well as discussions regarding General Meade's actions and the implications of European news on the conflict. The clipping features text on aged paper, detailing military reports and news coverage relevant to that period, reflecting the newspaper's role in documenting contemporary wartime events.",
+            "language": "en",
+            "_tokens": {
+                "prompt": 37019,
+                "completion": 105,
+                "total": 37124,
+                "cached": 0
+            }
+        },
+        "keywords": {
+            "keywords": [
+                "newspaper-clipping",
+                "historical-ephemera",
+                "civil-war",
+                "1860s",
+                "full-color",
+                "well-worn",
+                "americana",
+                "newsprint",
+                "advertisement",
+                "vintage-ad",
+                "periodical",
+                "historical-news"
+            ],
+            "safety": "safe",
+            "_tokens": {
+                "prompt": 37097,
+                "completion": 55,
+                "total": 37152,
+                "cached": 0
+            }
+        }
+    }
+}

@@ -78,19 +78,37 @@
       color: #718096;
       margin: 0 0 8px;
     }
-    .pipeline-chips {
+    .pipeline-steps {
       display: flex;
       flex-wrap: wrap;
-      gap: 4px;
+      align-items: center;
+      gap: 0;
+      row-gap: 6px;
+      margin-top: 4px;
     }
-    .chip {
+    .pipeline-step {
+      display: flex;
+      align-items: center;
+    }
+    .step-label {
       font-size: 10px;
-      padding: 1px 7px;
-      border-radius: 999px;
+      padding: 2px 8px;
+      border-radius: 3px;
       background: #2d3748;
       color: #a0aec0;
+      white-space: nowrap;
     }
-    .chip.done { background: #276749; color: #9ae6b4; }
+    .step-label.done    { background: #1c4532; color: #9ae6b4; border: 1px solid #276749; }
+    .step-label.failed  { background: #3b1515; color: #fed7d7; border: 1px solid #742a2a; }
+    .step-arrow {
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 1;
+      color: #718096;
+      padding: 0 1px;
+      user-select: none;
+    }
+    .step-arrow.done { color: #48bb78; }
 
     .status-bar {
       font-size: 11px;
@@ -159,7 +177,7 @@ async function load() {
   return resp.json();
 }
 
-function makeCard(entry) {
+function makeCard(entry, results) {
   const url        = entry.url ?? '';
   const title      = entry.title ?? url;
   const collection = entry.collection ?? '';
@@ -168,16 +186,22 @@ function makeCard(entry) {
   const resultFile = entry.result_file ?? null;
 
   const viewerUrl = resultFile
-    ? `viewer.html?url=${encodeURIComponent(url)}&data=data`
+    ? `item.html?url=${encodeURIComponent(url)}&data=data`
     : null;
 
   const thumb = isImageUrl(url)
     ? `<img class="card-thumb" src="${esc(displayUrl(url))}" alt="${esc(title)}" loading="lazy" />`
     : `<div class="card-thumb placeholder">📄</div>`;
 
-  const chips = pipeline.map(t =>
-    `<span class="chip ${status === 'complete' ? 'done' : ''}">${esc(t)}</span>`
-  ).join('');
+  // Build ordered pipeline steps with arrows, colouring each by its result status
+  const steps = pipeline.map((t, i) => {
+    const r = results?.[t];
+    const cls = !r ? '' : r.error ? 'failed' : 'done';
+    const arrow = i < pipeline.length - 1
+      ? `<span class="step-arrow ${cls}">→</span>`
+      : '';
+    return `<span class="pipeline-step"><span class="step-label ${cls}">${esc(t)}</span>${arrow}</span>`;
+  }).join('');
 
   const statusLabel = status === 'complete'
     ? `<div class="status-bar complete">✓ Pipeline complete</div>`
@@ -190,7 +214,7 @@ function makeCard(entry) {
     <div class="card-body">
       <div class="card-title" title="${esc(title)}">${esc(title)}</div>
       ${collection ? `<div class="card-collection">${esc(collection)}</div>` : ''}
-      <div class="pipeline-chips">${chips}</div>
+      <div class="pipeline-steps">${steps}</div>
     </div>
     ${statusLabel}
   `;
@@ -218,7 +242,15 @@ async function main() {
     }
 
     for (const entry of entries) {
-      galleryEl.appendChild(makeCard(entry));
+      // Load per-item results if available, for per-task status colouring
+      let results = null;
+      if (entry.result_file) {
+        try {
+          const r = await fetch(`data/${entry.result_file}`);
+          if (r.ok) results = (await r.json()).results ?? null;
+        } catch (_) {}
+      }
+      galleryEl.appendChild(makeCard(entry, results));
     }
   } catch (e) {
     loadEl.style.display = 'none';

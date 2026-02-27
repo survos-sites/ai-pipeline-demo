@@ -38,5 +38,76 @@
         ],
         "result_file": "017934c64c997fed8e1ab3ed636f5f91eebff71a.json",
         "status": "complete"
+    },
+    {
+        "url": "images/nytimes-cover.jpg",
+        "title": "New York Times — front page (broadsheet)",
+        "collection": "Local",
+        "pipeline": [
+            "ocr_mistral",
+            "classify",
+            "extract_metadata",
+            "summarize",
+            "keywords"
+        ],
+        "result_file": "1b2fa25f160366e3c3e76a72fdeabcfa5ec06f6a.json",
+        "status": "complete"
+    },
+    {
+        "url": "images/nytimes-cover-2.jpg",
+        "title": "New York Times — front page 2 (broadsheet)",
+        "collection": "Local",
+        "pipeline": [
+            "ocr_mistral",
+            "classify",
+            "extract_metadata",
+            "summarize",
+            "keywords"
+        ],
+        "result_file": "6969c9478a7133e0ae80f7aea1fd3010c8bfe565.json",
+        "status": "complete"
+    },
+    {
+        "url": "images/deed.jpg",
+        "title": "Handwritten deed",
+        "collection": "Local",
+        "pipeline": [
+            "ocr_mistral",
+            "transcribe_handwriting",
+            "people_and_places",
+            "extract_metadata",
+            "generate_title"
+        ],
+        "result_file": "0faead996c4c5471cb45919cc6f8413abedfbc3b.json",
+        "status": "complete"
+    },
+    {
+        "url": "images/moc-postcard.jpg",
+        "title": "Postcard",
+        "collection": "Local",
+        "pipeline": [
+            "ocr_mistral",
+            "classify",
+            "basic_description",
+            "keywords"
+        ],
+        "result_file": "f8feef484956a451044ef5f07898d928690deafa.json",
+        "status": "complete"
+    },
+    {
+        "url": "images/sim_soviet-life_1961-02_2.pdf",
+        "title": "Soviet Life Magazine, February 1961",
+        "collection": "Marxists Internet Archive",
+        "pipeline": [
+            "ocr_mistral",
+            "classify",
+            "summarize",
+            "keywords"
+        ],
+        "inputs": {
+            "max_pages": 8
+        },
+        "result_file": "726674523798b68af0e5f858f7547d8bbe32bcd4.json",
+        "status": "complete"
     }
 ]
