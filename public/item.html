@@ -124,9 +124,22 @@
                     background:#141720; border-bottom:1px solid #2d3748; }
     .page-num { font-weight:700; font-size:13px; color:#90cdf4; font-family:monospace; }
     .page-dim { font-size:11px; color:#4a5568; }
-    .page-section .ocr-blocks,
-    .page-section .image-blocks,
-    .page-section details { padding:12px 14px; }
+
+    /* Side-by-side: layout blocks left, markdown right */
+    .page-body { display:grid; grid-template-columns:1fr 1fr; gap:0; }
+    .page-col { padding:14px; }
+    .page-col + .page-col { border-left:1px solid #2d3748; }
+    .page-col-label { font-size:10px; text-transform:uppercase; letter-spacing:.07em;
+                      color:#4a5568; margin-bottom:10px; }
+    /* Markdown-only page (no blocks) — full width */
+    .page-body.full-width { grid-template-columns:1fr; }
+
+    /* Markdown rendered as readable prose, not <pre> */
+    .md-prose { font-size:13px; color:#a0aec0; line-height:1.8; white-space:pre-wrap;
+                word-break:break-word; }
+    .md-prose h1,.md-prose h2,.md-prose h3 { color:#e2e8f0; margin:0 0 6px; }
+
+    .page-section .image-blocks { padding:12px 14px; }
 
     /* ── Raw JSON ── */
     details { margin-top:10px; }
@@ -273,36 +286,98 @@ function renderBlocksForPage(layoutBlocks, imageBlocks, pageIndex) {
   return frag;
 }
 
+/** A page is blank if it has no useful content. */
+function isBlankPage(page, layoutBlocks, imageBlocks) {
+  const pi  = page.index ?? 0;
+  const md  = (page.markdown ?? '').trim();
+  const hasText   = md.length > 10;
+  const hasBlocks = (layoutBlocks ?? []).some(b => (b.page ?? 0) === pi && b.text?.trim());
+  const hasImgs   = (imageBlocks  ?? []).some(b => (b.page ?? 0) === pi);
+  return !hasText && !hasBlocks && !hasImgs;
+}
+
 function renderLayoutBlocks(layoutBlocks, imageBlocks, pages) {
   const wrap = document.createElement('div');
 
-  // Multi-page: group by page with headers + markdown
+  // Multi-page: one section per non-blank page
   if (pages?.length > 1) {
     for (const page of pages) {
+      if (isBlankPage(page, layoutBlocks, imageBlocks)) continue;
+
       const pi = page.index ?? 0;
+      const md = (page.markdown ?? '').trim();
+
       const section = document.createElement('div');
       section.className = 'page-section';
 
+      // ── Heading ──
       const heading = document.createElement('div');
       heading.className = 'page-heading';
       const dim = page.dimensions ? `${page.dimensions.width}×${page.dimensions.height}px` : '';
       heading.innerHTML = `<span class="page-num">Page ${pi + 1}</span>${dim ? `<span class="page-dim">${esc(dim)}</span>` : ''}`;
       section.appendChild(heading);
 
-      // Layout blocks + image crops for this page
-      const blockFrag = renderBlocksForPage(layoutBlocks, imageBlocks, pi);
-      if (blockFrag.childNodes.length) {
-        section.appendChild(blockFrag);
+      // ── Body: layout blocks + markdown side by side ──
+      const pageBlocks = (layoutBlocks ?? []).filter(b => (b.page ?? 0) === pi && b.type !== 'image' && b.text?.trim());
+      const hasBlocks  = pageBlocks.length > 0;
+      const hasMd      = md.length > 0;
+
+      const body = document.createElement('div');
+      body.className = 'page-body' + (hasBlocks ? '' : ' full-width');
+
+      if (hasBlocks) {
+        // Left column: structured layout blocks
+        const leftCol = document.createElement('div');
+        leftCol.className = 'page-col';
+        leftCol.innerHTML = `<div class="page-col-label">Layout blocks</div>`;
+        const blocksEl = document.createElement('div');
+        blocksEl.className = 'ocr-blocks';
+        const sorted = [...pageBlocks].sort((a,b) => (a.bbox?.y??0) - (b.bbox?.y??0));
+        for (const block of sorted) {
+          const card = document.createElement('div');
+          card.className = `block-card ${block.type}`;
+          const typeLabel = `<div class="block-type-label">${esc(block.type)}</div>`;
+          let textHtml;
+          if (block.type === 'headline')         textHtml = `<div class="block-headline-text">${esc(block.text)}</div>`;
+          else if (block.type === 'subheadline') textHtml = `<div class="block-sub-text">${esc(block.text)}</div>`;
+          else                                   textHtml = `<div class="block-body-text">${esc(block.text)}</div>`;
+          card.innerHTML = typeLabel + textHtml;
+          blocksEl.appendChild(card);
+        }
+        leftCol.appendChild(blocksEl);
+        body.appendChild(leftCol);
       }
 
-      // Markdown text (collapsed for long pages)
-      if (page.markdown?.trim()) {
-        const md = page.markdown.trim();
-        const details = document.createElement('details');
-        details.open = md.length < 800;
-        details.innerHTML = `<summary>Markdown text (${md.length.toLocaleString()} chars)</summary>
-          <pre style="max-height:400px;overflow-y:auto">${esc(md)}</pre>`;
-        section.appendChild(details);
+      if (hasMd) {
+        // Right column (or full width): markdown as readable prose
+        const rightCol = document.createElement('div');
+        rightCol.className = 'page-col';
+        rightCol.innerHTML = `<div class="page-col-label">${hasBlocks ? 'Markdown (OCR text)' : 'OCR text'}</div>
+          <div class="md-prose">${esc(md)}</div>`;
+        body.appendChild(rightCol);
+      }
+
+      section.appendChild(body);
+
+      // ── Extracted images for this page ──
+      const pageImgs = (imageBlocks ?? []).filter(b => (b.page ?? 0) === pi && b.image_base64);
+      if (pageImgs.length) {
+        const imgWrap = document.createElement('div');
+        imgWrap.className = 'image-blocks';
+        for (const img of pageImgs) {
+          const card = document.createElement('div');
+          card.className = 'image-block-card';
+          const w = img.bottom_right_x - img.top_left_x;
+          const h = img.bottom_right_y - img.top_left_y;
+          card.innerHTML = `
+            <img src="${img.image_base64}" alt="${esc(img.id)}" />
+            <div class="image-block-caption">
+              ${esc(img.id)}${img.annotation ? ` — ${esc(img.annotation)}` : ''}
+              <span style="float:right;color:#4a5568">${w}×${h}px</span>
+            </div>`;
+          imgWrap.appendChild(card);
+        }
+        section.appendChild(imgWrap);
       }
 
       wrap.appendChild(section);
@@ -310,7 +385,7 @@ function renderLayoutBlocks(layoutBlocks, imageBlocks, pages) {
     return wrap;
   }
 
-  // Single image — original layout
+  // Single image — layout blocks only (original behaviour)
   wrap.appendChild(renderBlocksForPage(layoutBlocks, imageBlocks, 0));
   return wrap;
 }
