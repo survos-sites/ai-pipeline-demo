@@ -260,7 +260,7 @@ function renderBlocksForPage(layoutBlocks, imageBlocks, pageIndex) {
       const w = img.bottom_right_x - img.top_left_x;
       const h = img.bottom_right_y - img.top_left_y;
       card.innerHTML = `
-        <img src="data:image/jpeg;base64,${img.image_base64}" alt="${esc(img.id)}" />
+        <img src="${img.image_base64}" alt="${esc(img.id)}" />
         <div class="image-block-caption">
           ${esc(img.id)}${img.annotation ? ` — ${esc(img.annotation)}` : ''}
           <span style="float:right;color:#4a5568">${w}×${h}px</span>
