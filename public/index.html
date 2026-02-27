@@ -145,6 +145,14 @@ function thumbUrl(url) {
   return url;
 }
 
+/** Resolve a manifest url to a browser-displayable src.
+ *  Relative paths (images/foo.jpg) are served from the same origin. */
+function displayUrl(url) {
+  if (url.startsWith('http://') || url.startsWith('https://')) return thumbUrl(url);
+  // Relative path — served from public/ root
+  return url;
+}
+
 async function load() {
   const resp = await fetch('data/images.json').catch(e => { throw new Error(e.message); });
   if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
@@ -164,7 +172,7 @@ function makeCard(entry) {
     : null;
 
   const thumb = isImageUrl(url)
-    ? `<img class="card-thumb" src="${esc(thumbUrl(url))}" alt="${esc(title)}" loading="lazy" />`
+    ? `<img class="card-thumb" src="${esc(displayUrl(url))}" alt="${esc(title)}" loading="lazy" />`
     : `<div class="card-thumb placeholder">📄</div>`;
 
   const chips = pipeline.map(t =>

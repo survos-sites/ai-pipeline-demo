@@ -223,6 +223,11 @@ function isImageUrl(url) {
   return /\.(jpe?g|png|gif|webp|avif)(\?.*)?$/i.test(url) || url.includes('/iiif/');
 }
 
+function displayUrl(url) {
+  if (url.startsWith('http://') || url.startsWith('https://')) return url;
+  return url; // relative paths served from public/ root
+}
+
 // ── Artifact detection ────────────────────────────────────────────────────────
 
 function extractArtifacts(result, dataDir) {
@@ -359,7 +364,7 @@ async function load(subject, dataDir) {
 
   const imgEl = document.getElementById('subjectImg');
   if (isImageUrl(subject)) {
-    imgEl.src = subject;
+    imgEl.src = displayUrl(subject);
     imgEl.style.display = 'block';
   }
 

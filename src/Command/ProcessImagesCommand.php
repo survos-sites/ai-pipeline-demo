@@ -8,12 +8,12 @@ use Survos\AiPipelineBundle\Task\AiPipelineRunner;
 use Survos\AiPipelineBundle\Task\AiTaskRegistry;
 use Symfony\Component\Console\Attribute\AsCommand;
 use Symfony\Component\Console\Command\Command;
-use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Style\SymfonyStyle;
 use Symfony\Component\DependencyInjection\Attribute\Autowire;
+use Symfony\Contracts\HttpClient\HttpClientInterface;
 
 /**
  * Reads public/data/images.json, runs the configured pipeline for each entry,
@@ -32,10 +32,13 @@ use Symfony\Component\DependencyInjection\Attribute\Autowire;
 final class ProcessImagesCommand extends Command
 {
     public function __construct(
-        private readonly AiPipelineRunner $runner,
-        private readonly AiTaskRegistry   $registry,
+        private readonly AiPipelineRunner  $runner,
+        private readonly AiTaskRegistry    $registry,
+        private readonly HttpClientInterface $httpClient,
         #[Autowire('%kernel.project_dir%/public/data')]
         private readonly string $dataDir,
+        #[Autowire('%kernel.project_dir%/public')]
+        private readonly string $publicDir,
     ) {
         parent::__construct();
     }
@@ -106,9 +109,20 @@ final class ProcessImagesCommand extends Command
                 continue;
             }
 
+            // Resolve relative paths (e.g. "images/foo.jpg") to absolute URLs
+            // so the AI tasks receive something fetchable.
+            $absoluteUrl = $this->resolveUrl($url);
+
+            // Warn and skip if the image is not accessible.
+            if (!$this->isAccessible($absoluteUrl, $io)) {
+                continue;
+            }
+
             $io->section(sprintf('[%d/%d] %s', $i + 1, count($entries), $title));
 
-            $store     = new JsonFileResultStore($url, $this->dataDir);
+            // Subject (SHA-1 key) = original manifest url (stable, even if relative).
+            // image_url input = absolute URL so tasks can actually fetch it.
+            $store     = new JsonFileResultStore($url, $this->dataDir, ['image_url' => $absoluteUrl]);
             $priorKeys = array_keys($store->getAllPrior());
 
             if (!$force && $priorKeys !== []) {
@@ -167,5 +181,51 @@ final class ProcessImagesCommand extends Command
             return $path;
         }
         return $this->dataDir . '/' . ltrim($path, '/');
+    }
+
+    /**
+     * Convert a manifest url to something tasks can fetch.
+     *
+     * - Absolute URLs (http/https) are returned as-is.
+     * - Relative paths (e.g. "images/foo.jpg") are resolved against public/
+     *   and converted to a file:// URL so HttpClient can read local files.
+     */
+    private function resolveUrl(string $url): string
+    {
+        if (str_starts_with($url, 'http://') || str_starts_with($url, 'https://')) {
+            return $url;
+        }
+        // Relative → absolute local path
+        $localPath = rtrim($this->publicDir, '/') . '/' . ltrim($url, '/');
+        return 'file://' . $localPath;
+    }
+
+    /**
+     * Return true if the URL is reachable (HTTP 2xx) or is a readable local file.
+     * Logs a warning and returns false otherwise.
+     */
+    private function isAccessible(string $url, SymfonyStyle $io): bool
+    {
+        if (str_starts_with($url, 'file://')) {
+            $path = substr($url, 7);
+            if (!is_readable($path)) {
+                $io->warning("Local file not found: {$path} — skipping.");
+                return false;
+            }
+            return true;
+        }
+
+        try {
+            $response = $this->httpClient->request('HEAD', $url, ['timeout' => 10]);
+            $status   = $response->getStatusCode();
+            if ($status >= 200 && $status < 300) {
+                return true;
+            }
+            $io->warning("Image returned HTTP {$status}: {$url} — skipping.");
+            return false;
+        } catch (\Throwable $e) {
+            $io->warning("Image not accessible ({$e->getMessage()}): {$url} — skipping.");
+            return false;
+        }
     }
 }
