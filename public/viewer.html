@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pipeline Viewer — AI Pipeline Demo</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 14px;
+      background: #0f1117;
+      color: #e2e8f0;
+      line-height: 1.6;
+    }
+    a { color: #63b3ed; }
+
+    /* ── Top bar ─────────────────────────────────────────────────────── */
+    .topbar {
+      background: #141720;
+      border-bottom: 1px solid #2d3748;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 13px;
+    }
+    .topbar a { color: #718096; }
+    .topbar a:hover { color: #e2e8f0; }
+    .topbar .sep { color: #2d3748; }
+    .topbar .subject-label { color: #a0aec0; flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+    /* ── Layout ──────────────────────────────────────────────────────── */
+    .shell {
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      min-height: calc(100vh - 41px);
+    }
+    @media (max-width: 640px) {
+      .shell { grid-template-columns: 1fr; }
+    }
+
+    /* ── Sidebar ─────────────────────────────────────────────────────── */
+    .sidebar {
+      background: #141720;
+      border-right: 1px solid #2d3748;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      overflow-y: auto;
+    }
+    .sidebar-label { font-size: 11px; color: #718096; text-transform: uppercase; letter-spacing: .05em; margin-bottom: 4px; }
+    .subject-img {
+      width: 100%;
+      border-radius: 6px;
+      border: 1px solid #2d3748;
+      background: #1a1f2e;
+    }
+    .subject-url { font-size: 11px; color: #718096; word-break: break-all; }
+
+    /* ── Task nav ────────────────────────────────────────────────────── */
+    .task-nav { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 3px; }
+    .task-nav li button {
+      width: 100%;
+      text-align: left;
+      background: none;
+      border: none;
+      padding: 6px 10px;
+      border-radius: 6px;
+      cursor: pointer;
+      color: #e2e8f0;
+      font-size: 13px;
+      font-family: monospace;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: background .12s;
+    }
+    .task-nav li button:hover  { background: #1e2535; }
+    .task-nav li button.active { background: #1a365d; color: #90cdf4; }
+    .task-badge {
+      margin-left: auto;
+      font-size: 10px;
+      padding: 1px 6px;
+      border-radius: 999px;
+    }
+    .badge-done    { background: #276749; color: #9ae6b4; }
+    .badge-skipped { background: #553c00; color: #fbd38d; }
+    .badge-failed  { background: #742a2a; color: #fed7d7; }
+
+    /* ── Main ────────────────────────────────────────────────────────── */
+    .main { padding: 24px 28px; overflow-y: auto; }
+
+    .task-card { display: none; }
+    .task-card.visible { display: block; }
+    .task-card h2 {
+      font-size: 18px;
+      margin: 0 0 14px;
+      font-family: monospace;
+      color: #90cdf4;
+    }
+
+    /* ── Tokens ──────────────────────────────────────────────────────── */
+    .token-pill {
+      display: inline-flex;
+      gap: 14px;
+      background: #1a1f2e;
+      border: 1px solid #2d3748;
+      border-radius: 6px;
+      padding: 4px 12px;
+      font-size: 12px;
+      color: #718096;
+      margin-bottom: 14px;
+    }
+    .token-pill strong { color: #a0aec0; }
+
+    /* ── Field ───────────────────────────────────────────────────────── */
+    .field { margin-bottom: 18px; }
+    .field-label { font-size: 11px; color: #718096; text-transform: uppercase; letter-spacing: .05em; margin-bottom: 4px; }
+    .field-value {
+      background: #1a1f2e;
+      border: 1px solid #2d3748;
+      border-radius: 6px;
+      padding: 10px 14px;
+      white-space: pre-wrap;
+      word-break: break-word;
+      line-height: 1.7;
+    }
+    .chips { display: flex; flex-wrap: wrap; gap: 5px; }
+    .chip  { background: #2d3748; border-radius: 4px; padding: 2px 9px; font-size: 12px; }
+
+    /* ── Artifacts ───────────────────────────────────────────────────── */
+    .artifacts-section { margin-top: 22px; }
+    .artifacts-section h3 { font-size: 12px; color: #718096; text-transform: uppercase; letter-spacing: .05em; margin: 0 0 10px; }
+    .artifact-grid { display: flex; flex-wrap: wrap; gap: 12px; }
+    .artifact-card {
+      border: 1px solid #2d3748;
+      border-radius: 8px;
+      overflow: hidden;
+      background: #1a1f2e;
+      max-width: 200px;
+      cursor: pointer;
+      transition: border-color .15s;
+    }
+    .artifact-card:hover { border-color: #4299e1; }
+    .artifact-card img { width: 100%; display: block; }
+    .artifact-caption { padding: 5px 9px; font-size: 11px; color: #718096; }
+    .artifact-bbox    { font-size: 10px; color: #4a5568; }
+
+    /* ── Raw JSON ────────────────────────────────────────────────────── */
+    details { margin-top: 14px; }
+    details summary { cursor: pointer; color: #63b3ed; font-size: 12px; user-select: none; }
+    pre {
+      background: #141720;
+      border: 1px solid #2d3748;
+      border-radius: 6px;
+      padding: 12px 14px;
+      font-size: 12px;
+      color: #a0aec0;
+      overflow-x: auto;
+      white-space: pre-wrap;
+      word-break: break-word;
+      margin: 8px 0 0;
+    }
+
+    /* ── Error / empty ───────────────────────────────────────────────── */
+    .error-box {
+      background: #742a2a22;
+      border: 1px solid #742a2a;
+      border-radius: 8px;
+      padding: 14px 18px;
+      color: #fed7d7;
+    }
+    #empty { padding: 60px 28px; color: #4a5568; text-align: center; }
+    #empty h2 { color: #718096; }
+  </style>
+</head>
+<body>
+
+<div class="topbar">
+  <a href="index.html">← Gallery</a>
+  <span class="sep">|</span>
+  <span class="subject-label" id="topbarSubject"></span>
+</div>
+
+<div class="shell">
+  <aside class="sidebar">
+    <div>
+      <div class="sidebar-label">Subject</div>
+      <img id="subjectImg" class="subject-img" src="" alt="" style="display:none" />
+      <div id="subjectUrl" class="subject-url"></div>
+    </div>
+    <div>
+      <div class="sidebar-label">Tasks</div>
+      <ul class="task-nav" id="taskNav"></ul>
+    </div>
+  </aside>
+
+  <main class="main">
+    <div id="empty">
+      <h2>No results loaded</h2>
+      <p>Add <code>?url=…</code> to the address, or click an item in the <a href="index.html">gallery</a>.</p>
+    </div>
+    <div id="taskCards"></div>
+  </main>
+</div>
+
+<script type="module">
+// ── Utilities ─────────────────────────────────────────────────────────────────
+
+async function sha1hex(str) {
+  const buf  = new TextEncoder().encode(str);
+  const hash = await crypto.subtle.digest('SHA-1', buf);
+  return Array.from(new Uint8Array(hash)).map(b => b.toString(16).padStart(2,'0')).join('');
+}
+
+const esc = s => String(s ?? '')
+  .replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+
+function isImageUrl(url) {
+  return /\.(jpe?g|png|gif|webp|avif)(\?.*)?$/i.test(url) || url.includes('/iiif/');
+}
+
+// ── Artifact detection ────────────────────────────────────────────────────────
+
+function extractArtifacts(result, dataDir) {
+  const out = [];
+
+  // Mistral OCR bbox images
+  for (const page of result?.raw_response?.pages ?? []) {
+    for (const img of page.images ?? []) {
+      out.push({
+        id:  img.id,
+        src: img.image_base64
+          ? `data:image/jpeg;base64,${img.image_base64}`
+          : `${dataDir}/${img.id}`,
+        bbox: img.top_left_x != null
+          ? `x ${img.top_left_x}–${img.bottom_right_x}, y ${img.top_left_y}–${img.bottom_right_y}`
+          : null,
+      });
+    }
+  }
+
+  // Generic artifacts array
+  for (const a of result?.artifacts ?? []) {
+    out.push({ id: a.id ?? 'artifact', src: a.src ?? a.url ?? `${dataDir}/${a.id}`, bbox: null });
+  }
+
+  return out;
+}
+
+function renderArtifacts(artifacts, dataDir) {
+  if (!artifacts.length) return '';
+  const cards = artifacts.map(a => {
+    const link = `viewer.html?url=${encodeURIComponent(a.src)}&data=${encodeURIComponent(dataDir)}`;
+    return `<div class="artifact-card" onclick="location.href='${esc(link)}'">
+      <img src="${esc(a.src)}" alt="${esc(a.id)}" />
+      <div class="artifact-caption">
+        <strong>${esc(a.id)}</strong>
+        ${a.bbox ? `<div class="artifact-bbox">${esc(a.bbox)}</div>` : ''}
+      </div>
+    </div>`;
+  }).join('');
+  return `<div class="artifacts-section">
+    <h3>Extracted artifacts (${artifacts.length})</h3>
+    <div class="artifact-grid">${cards}</div>
+  </div>`;
+}
+
+// ── Field rendering ───────────────────────────────────────────────────────────
+
+const KNOWN = ['text','transcription','description','title','summary','type',
+  'keywords','physicalAttributes','language','confidence','safety',
+  'people','places','subjects','dates','names','translation','notes'];
+
+function renderCard(taskName, result, dataDir) {
+  if (result.failed)  return `<div class="error-box"><strong>Failed</strong><br>${esc(result.error ?? '')}</div>`;
+  if (result.skipped) return `<p style="color:#718096">Skipped — ${esc(result.reason ?? 'supports() = false')}</p>`;
+
+  let html = '';
+
+  if (result._tokens) {
+    const t = result._tokens;
+    html += `<div class="token-pill">
+      <span>prompt <strong>${t.prompt?.toLocaleString()}</strong></span>
+      <span>completion <strong>${t.completion?.toLocaleString()}</strong></span>
+      <span>total <strong>${t.total?.toLocaleString()}</strong></span>
+      ${t.cached ? `<span>cached <strong>${t.cached?.toLocaleString()}</strong></span>` : ''}
+    </div>`;
+  }
+
+  for (const key of KNOWN) {
+    const val = result[key];
+    if (val == null || val === '') continue;
+    if (Array.isArray(val)) {
+      if (!val.length) continue;
+      html += `<div class="field">
+        <div class="field-label">${esc(key)}</div>
+        <div class="chips">${val.map(v => `<span class="chip">${esc(v)}</span>`).join('')}</div>
+      </div>`;
+    } else {
+      html += `<div class="field">
+        <div class="field-label">${esc(key)}</div>
+        <div class="field-value">${esc(String(val))}</div>
+      </div>`;
+    }
+  }
+
+  html += renderArtifacts(extractArtifacts(result, dataDir), dataDir);
+
+  const stripped = Object.fromEntries(Object.entries(result).filter(([k]) => k !== '_tokens'));
+  html += `<details><summary>Raw JSON</summary><pre>${esc(JSON.stringify(stripped, null, 2))}</pre></details>`;
+
+  return html;
+}
+
+// ── Badge ─────────────────────────────────────────────────────────────────────
+
+function badge(result) {
+  if (result?.failed)  return '<span class="task-badge badge-failed">failed</span>';
+  if (result?.skipped) return '<span class="task-badge badge-skipped">skipped</span>';
+  return '<span class="task-badge badge-done">done</span>';
+}
+
+// ── Nav ───────────────────────────────────────────────────────────────────────
+
+window.showCard = function(id) {
+  document.querySelectorAll('.task-card').forEach(c => c.classList.remove('visible'));
+  document.querySelectorAll('.task-nav button').forEach(b => b.classList.remove('active'));
+  document.getElementById(id)?.classList.add('visible');
+  document.getElementById(`nav-${id}`)?.classList.add('active');
+};
+
+// ── Loader ────────────────────────────────────────────────────────────────────
+
+async function load(subject, dataDir) {
+  const hash    = await sha1hex(subject);
+  const jsonUrl = `${dataDir}/${hash}.json`;
+
+  let data;
+  try {
+    const r = await fetch(jsonUrl);
+    if (!r.ok) throw new Error(`HTTP ${r.status} — ${jsonUrl}`);
+    data = await r.json();
+  } catch (e) {
+    document.getElementById('empty').innerHTML = `
+      <h2>Results not found</h2>
+      <p>${esc(e.message)}</p>
+      <p>Run <code>bin/console app:process</code> to generate results.</p>
+      <p><a href="index.html">← Back to gallery</a></p>`;
+    return;
+  }
+
+  document.getElementById('empty').style.display = 'none';
+  document.getElementById('topbarSubject').textContent = subject;
+  document.getElementById('subjectUrl').textContent = subject;
+
+  const imgEl = document.getElementById('subjectImg');
+  if (isImageUrl(subject)) {
+    imgEl.src = subject;
+    imgEl.style.display = 'block';
+  }
+
+  const nav   = document.getElementById('taskNav');
+  const cards = document.getElementById('taskCards');
+  nav.innerHTML   = '';
+  cards.innerHTML = '';
+
+  let firstId = null;
+  for (const [taskName, result] of Object.entries(data.results ?? {})) {
+    const id = `card-${taskName}`;
+    firstId  = firstId ?? id;
+
+    const li = document.createElement('li');
+    li.innerHTML = `<button id="nav-${id}" onclick="showCard('${id}')">${esc(taskName)} ${badge(result)}</button>`;
+    nav.appendChild(li);
+
+    const div = document.createElement('div');
+    div.className = 'task-card';
+    div.id        = id;
+    div.innerHTML = `<h2>${esc(taskName)}</h2>${renderCard(taskName, result, dataDir)}`;
+    cards.appendChild(div);
+  }
+
+  if (firstId) showCard(firstId);
+}
+
+// ── Entry point ───────────────────────────────────────────────────────────────
+
+const params  = new URL(location.href).searchParams;
+const subject = params.get('url');
+const dataDir = params.get('data') ?? 'data';
+
+if (subject) {
+  load(subject, dataDir);
+}
+</script>
+</body>
+</html>

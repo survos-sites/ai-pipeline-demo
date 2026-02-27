@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Pipeline Demo</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 14px;
+      background: #0f1117;
+      color: #e2e8f0;
+      line-height: 1.6;
+    }
+    a { color: #63b3ed; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    header {
+      background: #141720;
+      border-bottom: 1px solid #2d3748;
+      padding: 18px 32px;
+      display: flex;
+      align-items: baseline;
+      gap: 16px;
+    }
+    header h1 { margin: 0; font-size: 20px; color: #90cdf4; }
+    header p  { margin: 0; font-size: 13px; color: #718096; }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 20px;
+      padding: 28px 32px;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background: #141720;
+      border: 1px solid #2d3748;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: border-color .2s, transform .15s;
+      cursor: pointer;
+    }
+    .card:hover {
+      border-color: #4299e1;
+      transform: translateY(-2px);
+    }
+    .card-thumb {
+      width: 100%;
+      aspect-ratio: 4/3;
+      object-fit: cover;
+      display: block;
+      background: #1a1f2e;
+    }
+    .card-thumb.placeholder {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 32px;
+      color: #2d3748;
+    }
+    .card-body { padding: 12px 14px 14px; }
+    .card-title {
+      font-size: 14px;
+      font-weight: 600;
+      color: #e2e8f0;
+      margin: 0 0 4px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .card-collection {
+      font-size: 11px;
+      color: #718096;
+      margin: 0 0 8px;
+    }
+    .pipeline-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+    }
+    .chip {
+      font-size: 10px;
+      padding: 1px 7px;
+      border-radius: 999px;
+      background: #2d3748;
+      color: #a0aec0;
+    }
+    .chip.done { background: #276749; color: #9ae6b4; }
+
+    .status-bar {
+      font-size: 11px;
+      padding: 4px 14px 10px;
+      color: #718096;
+    }
+    .status-bar.complete { color: #9ae6b4; }
+    .status-bar.pending  { color: #fbd38d; }
+
+    #loading {
+      text-align: center;
+      padding: 80px 32px;
+      color: #4a5568;
+    }
+    #error {
+      display: none;
+      margin: 32px;
+      padding: 16px 20px;
+      background: #742a2a22;
+      border: 1px solid #742a2a;
+      border-radius: 8px;
+      color: #fed7d7;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>AI Pipeline Demo</h1>
+  <p>Powered by <a href="https://packagist.org/packages/survos/ai-pipeline-bundle">survos/ai-pipeline-bundle</a></p>
+</header>
+
+<div id="loading">Loading manifest…</div>
+<div id="error"></div>
+<div class="gallery" id="gallery" style="display:none"></div>
+
+<script type="module">
+function esc(s) {
+  return String(s ?? '')
+    .replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+function isImageUrl(url) {
+  return /\.(jpe?g|png|gif|webp|avif)(\?.*)?$/i.test(url) || url.includes('/iiif/');
+}
+
+function thumbUrl(url) {
+  // Downscale IIIF images to a small thumbnail
+  if (url.includes('/iiif/2/')) {
+    return url.replace(/\/full\/[^/]+\/0\/default\.jpg/, '/full/,300/0/default.jpg');
+  }
+  return url;
+}
+
+async function load() {
+  const resp = await fetch('data/images.json').catch(e => { throw new Error(e.message); });
+  if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+  return resp.json();
+}
+
+function makeCard(entry) {
+  const url        = entry.url ?? '';
+  const title      = entry.title ?? url;
+  const collection = entry.collection ?? '';
+  const pipeline   = entry.pipeline ?? [];
+  const status     = entry.status ?? 'pending';
+  const resultFile = entry.result_file ?? null;
+
+  const viewerUrl = resultFile
+    ? `viewer.html?url=${encodeURIComponent(url)}&data=data`
+    : null;
+
+  const thumb = isImageUrl(url)
+    ? `<img class="card-thumb" src="${esc(thumbUrl(url))}" alt="${esc(title)}" loading="lazy" />`
+    : `<div class="card-thumb placeholder">📄</div>`;
+
+  const chips = pipeline.map(t =>
+    `<span class="chip ${status === 'complete' ? 'done' : ''}">${esc(t)}</span>`
+  ).join('');
+
+  const statusLabel = status === 'complete'
+    ? `<div class="status-bar complete">✓ Pipeline complete</div>`
+    : `<div class="status-bar pending">⏳ Not yet processed</div>`;
+
+  const card = document.createElement('div');
+  card.className = 'card';
+  card.innerHTML = `
+    ${thumb}
+    <div class="card-body">
+      <div class="card-title" title="${esc(title)}">${esc(title)}</div>
+      ${collection ? `<div class="card-collection">${esc(collection)}</div>` : ''}
+      <div class="pipeline-chips">${chips}</div>
+    </div>
+    ${statusLabel}
+  `;
+
+  if (viewerUrl) {
+    card.addEventListener('click', () => { window.location.href = viewerUrl; });
+  }
+
+  return card;
+}
+
+async function main() {
+  const loadEl   = document.getElementById('loading');
+  const errorEl  = document.getElementById('error');
+  const galleryEl = document.getElementById('gallery');
+
+  try {
+    const entries = await load();
+    loadEl.style.display = 'none';
+    galleryEl.style.display = 'grid';
+
+    if (entries.length === 0) {
+      galleryEl.innerHTML = '<p style="color:#718096;grid-column:1/-1">No entries in images.json yet.</p>';
+      return;
+    }
+
+    for (const entry of entries) {
+      galleryEl.appendChild(makeCard(entry));
+    }
+  } catch (e) {
+    loadEl.style.display = 'none';
+    errorEl.style.display = 'block';
+    errorEl.textContent = 'Could not load data/images.json: ' + e.message;
+  }
+}
+
+main();
+</script>
+</body>
+</html>

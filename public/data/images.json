@@ -1,0 +1,42 @@
+[
+    {
+        "url": "https://iiif.digitalcommonwealth.org/iiif/2/commonwealth:pz50hp570/full/,1200/0/default.jpg",
+        "title": "Stars & Stripes / Burbee Gum trading card",
+        "collection": "Digital Commonwealth",
+        "pipeline": [
+            "ocr_mistral",
+            "classify",
+            "basic_description",
+            "keywords"
+        ],
+        "result_file": "e3fac887c1195d4dc268db7696df1d1282b9ea8b.json",
+        "status": "complete"
+    },
+    {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/04/William_Burnett_Letter_May_24%2C_1726_-_NARA_-_193049.jpg",
+        "title": "Handwritten letter, New York, 1726 (NARA)",
+        "collection": "Wikimedia Commons / NARA",
+        "pipeline": [
+            "ocr_mistral",
+            "transcribe_handwriting",
+            "people_and_places",
+            "generate_title"
+        ],
+        "result_file": "e908eec95286143bdb63b761d6c31134ab0ef0d7.json",
+        "status": "complete"
+    },
+    {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Broadside_of_Revolutionary_War_period-_%28Proclamation_by_Gen._Howe_against_assisting_Rebels._Boston%2C_Mar_10%2C_1776%29_LCCN2005696233.jpg",
+        "title": "Broadside — Gen. Howe Proclamation, Boston, 1776",
+        "collection": "Wikimedia Commons / LOC",
+        "pipeline": [
+            "ocr_mistral",
+            "classify",
+            "extract_metadata",
+            "summarize",
+            "keywords"
+        ],
+        "result_file": "017934c64c997fed8e1ab3ed636f5f91eebff71a.json",
+        "status": "complete"
+    }
+]

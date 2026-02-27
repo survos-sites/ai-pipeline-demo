@@ -1,0 +1,6 @@
+Estimate the collector market value of this item.
+{% if description %}Description: {{ description }}{% endif %}
+{% if type %}Type: {{ type }}{% endif %}
+{% if ocr_text %}Text on item: "{{ ocr_text|slice(0, 300) }}"{% endif %}
+
+Return only JSON.

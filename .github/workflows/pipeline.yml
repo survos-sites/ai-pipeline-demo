@@ -1,0 +1,98 @@
+name: Run pipelines & deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'public/data/images.json'   # re-run when manifest changes
+      - 'src/**'
+      - 'config/**'
+  schedule:
+    - cron: '0 4 * * 1'             # weekly refresh every Monday 04:00 UTC
+  workflow_dispatch:                 # manual trigger from GitHub UI
+    inputs:
+      force:
+        description: 'Re-run all tasks even if results exist (--force)'
+        type: boolean
+        default: false
+      limit:
+        description: 'Process only N entries (leave blank for all)'
+        type: string
+        default: ''
+
+# Allow the workflow to commit result JSON files back to the repo
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  process:
+    name: Run AI pipelines
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.2'
+          extensions: ctype, iconv, curl
+          coverage: none
+
+      - name: Cache Composer dependencies
+        uses: actions/cache@v4
+        with:
+          path: vendor
+          key: composer-${{ hashFiles('composer.lock') }}
+          restore-keys: composer-
+
+      - name: Install dependencies
+        run: composer install --no-interaction --prefer-dist --optimize-autoloader
+
+      - name: Run pipeline
+        env:
+          APP_ENV: prod
+          APP_SECRET: ${{ secrets.APP_SECRET }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
+        run: |
+          ARGS=""
+          if [ "${{ inputs.force }}" = "true" ]; then ARGS="$ARGS --force"; fi
+          if [ -n "${{ inputs.limit }}" ]; then ARGS="$ARGS --limit=${{ inputs.limit }}"; fi
+          bin/console app:process $ARGS --no-interaction -v
+
+      - name: Commit updated results
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add public/data/
+          git diff --cached --quiet || git commit -m "chore: update pipeline results [skip ci]"
+          git push
+
+  deploy:
+    name: Deploy to GitHub Pages
+    needs: process
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main          # pick up the commit made by the process job
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: public/
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

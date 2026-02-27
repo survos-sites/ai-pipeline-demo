@@ -1,0 +1,51 @@
+ai:
+    platform:
+        openai:
+            api_key: '%env(OPENAI_API_KEY)%'
+        mistral:
+            api_key: '%env(MISTRAL_API_KEY)%'
+
+    agent:
+        # Standard vision OCR via gpt-4o
+        # Used by: OcrTask
+        ocr:
+            platform: 'ai.platform.openai'
+            model: 'gpt-4o'
+            prompt:
+                text: 'You are an expert OCR engine. Return structured JSON only.'
+            tools: false
+
+        # Vision + OCR for handwriting/historical documents
+        # Used by: TranscribeHandwritingTask
+        # Note: using OpenAI gpt-4o for reliable base64 image handling;
+        #   Mistral vision models reject large base64 payloads with 429 errors
+        mistral_vision:
+            platform: 'ai.platform.openai'
+            model: 'gpt-4o'
+            prompt:
+                text: 'You are an expert at reading historical documents, handwriting, and complex page layouts. Return structured JSON only.'
+            tools: false
+
+        # Classification — cheap model is fine
+        classify:
+            platform: 'ai.platform.openai'
+            model: 'gpt-4o-mini'
+            prompt:
+                text: 'You are an expert document classifier. Return structured JSON only.'
+            tools: false
+
+        # Visual description
+        description:
+            platform: 'ai.platform.openai'
+            model: 'gpt-4o-mini'
+            prompt:
+                text: 'You are a museum archivist generating visual descriptions. Return structured JSON only.'
+            tools: false
+
+        # Metadata extraction, NER, title, summarize
+        metadata:
+            platform: 'ai.platform.openai'
+            model: 'gpt-4o-mini'
+            prompt:
+                text: 'You are a specialist archivist extracting structured metadata. Return structured JSON only.'
+            tools: false

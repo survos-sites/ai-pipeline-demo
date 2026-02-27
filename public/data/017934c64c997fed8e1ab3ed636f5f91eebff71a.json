@@ -1,0 +1,151 @@
+{
+    "subject": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Broadside_of_Revolutionary_War_period-_%28Proclamation_by_Gen._Howe_against_assisting_Rebels._Boston%2C_Mar_10%2C_1776%29_LCCN2005696233.jpg",
+    "results": {
+        "ocr_mistral": {
+            "text": "# BY HIS EXCELLENCY\n\n## WILLIAM HOWE,\n\nMAJOR GENERAL, &amp;c. &amp;c. &amp;c.\n\nA S Linnen and Woolen Goods are Articles much wanted by the Rebels, and would aid and assist them in their Rebellion, the Commander in Chief expects that all good Subjects will use their utmost Endeavors to have all such Articles convey’d from this Place: Any who have not Opportunity to convey their Goods under their own Care, may deliver them on Board the Minerva at Hubbard’s Wharf, to Crean Brush, Esq; mark’d with their Names, who will give a Certificate of the Delivery, and will oblige himself to return them to the Owners, all unavoidable Accidents accepted.\n\nIf after this Notice any Person secretes or keeps in his Possession such Articles, he will be treated as a Favourer of Rebels.\n\nBoston, March 10th, 1776.",
+            "language": null,
+            "confidence": "high",
+            "blocks": [
+                {
+                    "text": "# BY HIS EXCELLENCY\n\n## WILLIAM HOWE,\n\nMAJOR GENERAL, &amp;c. &amp;c. &amp;c.\n\nA S Linnen and Woolen Goods are Articles much wanted by the Rebels, and would aid and assist them in their Rebellion, the Commander in Chief expects that all good Subjects will use their utmost Endeavors to have all such Articles convey’d from this Place: Any who have not Opportunity to convey their Goods under their own Care, may deliver them on Board the Minerva at Hubbard’s Wharf, to Crean Brush, Esq; mark’d with their Names, who will give a Certificate of the Delivery, and will oblige himself to return them to the Owners, all unavoidable Accidents accepted.\n\nIf after this Notice any Person secretes or keeps in his Possession such Articles, he will be treated as a Favourer of Rebels.\n\nBoston, March 10th, 1776.",
+                    "type": "page",
+                    "index": 0
+                }
+            ],
+            "raw_response": {
+                "pages": [
+                    {
+                        "index": 0,
+                        "markdown": "# BY HIS EXCELLENCY\n\n## WILLIAM HOWE,\n\nMAJOR GENERAL, &amp;c. &amp;c. &amp;c.\n\nA S Linnen and Woolen Goods are Articles much wanted by the Rebels, and would aid and assist them in their Rebellion, the Commander in Chief expects that all good Subjects will use their utmost Endeavors to have all such Articles convey’d from this Place: Any who have not Opportunity to convey their Goods under their own Care, may deliver them on Board the Minerva at Hubbard’s Wharf, to Crean Brush, Esq; mark’d with their Names, who will give a Certificate of the Delivery, and will oblige himself to return them to the Owners, all unavoidable Accidents accepted.\n\nIf after this Notice any Person secretes or keeps in his Possession such Articles, he will be treated as a Favourer of Rebels.\n\nBoston, March 10th, 1776.",
+                        "images": [],
+                        "tables": [],
+                        "hyperlinks": [],
+                        "header": null,
+                        "footer": null,
+                        "dimensions": {
+                            "dpi": 200,
+                            "height": 1536,
+                            "width": 1088
+                        }
+                    }
+                ],
+                "model": "mistral-ocr-latest",
+                "document_annotation": null,
+                "usage_info": {
+                    "pages_processed": 1,
+                    "doc_size_bytes": 301293
+                }
+            }
+        },
+        "classify": {
+            "type": "letter",
+            "subtype": null,
+            "confidence": 0.9,
+            "rationale": "The text is a formal communication from William Howe, indicating its nature as a letter or notice regarding goods during a historical conflict.",
+            "_tokens": {
+                "prompt": 37148,
+                "completion": 46,
+                "total": 37194,
+                "cached": 0
+            }
+        },
+        "extract_metadata": {
+            "dateRange": "1776",
+            "people": [
+                "William Howe, Major General",
+                "Crean Brush, Esq."
+            ],
+            "places": [
+                "Boston",
+                "Hubbard's Wharf"
+            ],
+            "subjects": [
+                "American Revolutionary War",
+                "Rebellion",
+                "Supplies"
+            ],
+            "language": "en",
+            "organisations": [],
+            "_tokens": {
+                "prompt": 37308,
+                "completion": 55,
+                "total": 37363,
+                "cached": 0
+            }
+        },
+        "summarize": {
+            "summary": "The item is a letter issued by Major General William Howe, dated March 10, 1776. This document is significant as it reflects the urgent military need for linen and woolen goods to support British forces during the American Revolutionary War, emphasizing the conflict's immediate supply concerns. The letter instructs loyal subjects to assist in the transportation of these supplies, with a designated individual, Crean Brush, Esq., at Hubbard's Wharf to oversee deliveries. The letter is printed with a formal and authoritative tone, characteristic of military communications of the time.",
+            "language": "en",
+            "_tokens": {
+                "prompt": 37105,
+                "completion": 117,
+                "total": 37222,
+                "cached": 0
+            }
+        },
+        "keywords": {
+            "keywords": [
+                "historical-letter",
+                "colonial-america",
+                "patriotic",
+                "revolutionary-war",
+                "18th-century",
+                "military-document",
+                "manuscript",
+                "original-print"
+            ],
+            "safety": "safe",
+            "_tokens": {
+                "prompt": 37179,
+                "completion": 43,
+                "total": 37222,
+                "cached": 0
+            }
+        },
+        "transcribe_handwriting": {
+            "text": "BY HIS EXCELLENCY\n\nWILLIAM HOWE,\n\nMAJOR GENERAL, &c. &c. &c.\n\nAS Linnen and Woolen Goods are Articles\nmuch wanted by the Rebels, and would\naid and assist them in their Rebellion, the Com-\nmander in Chief expects that all good subjects\nwill use their utmost Endeavors to have all such\nArticles convey'd from this Place: Any who have\nnot Opportunity to convey their Goods under their\nown Care, may deliver them on Board the Mi-\nnerva at Hubbard's Wharf, to Crean Brush, Esq; \nmark'd with their Names, who will give a Certifi-\ncate of the Delivery, and will oblige himself to\nreturn them to the Owners, all unavoidable Ac-\ncidents accepted.\n\nIf after this Notice any Person secretes or keeps\nin his Possession such Articles, he will be treated\nas a Favourer of Rebels.\n\nBoston, March 10th, 1776.",
+            "language": "English",
+            "confidence": "high",
+            "blocks": [
+                [
+                    "BY HIS EXCELLENCY"
+                ],
+                [
+                    "WILLIAM HOWE,"
+                ],
+                [
+                    "MAJOR GENERAL, &c. &c. &c."
+                ],
+                [
+                    "AS Linnen and Woolen Goods are Articles",
+                    "much wanted by the Rebels, and would",
+                    "aid and assist them in their Rebellion, the Com-",
+                    "mander in Chief expects that all good subjects",
+                    "will use their utmost Endeavors to have all such",
+                    "Articles convey'd from this Place: Any who have",
+                    "not Opportunity to convey their Goods under their",
+                    "own Care, may deliver them on Board the Mi-",
+                    "nerva at Hubbard's Wharf, to Crean Brush, Esq;",
+                    "mark'd with their Names, who will give a Certifi-",
+                    "cate of the Delivery, and will oblige himself to",
+                    "return them to the Owners, all unavoidable Ac-",
+                    "cidents accepted."
+                ],
+                [
+                    "If after this Notice any Person secretes or keeps",
+                    "in his Possession such Articles, he will be treated",
+                    "as a Favourer of Rebels."
+                ],
+                [
+                    "Boston, March 10th, 1776."
+                ]
+            ],
+            "_tokens": {
+                "prompt": 1318,
+                "completion": 449,
+                "total": 1767,
+                "cached": 0
+            }
+        }
+    }
+}

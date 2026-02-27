@@ -1,0 +1,121 @@
+{
+    "subject": "https://iiif.digitalcommonwealth.org/iiif/2/commonwealth:pz50hp570/full/,1200/0/default.jpg",
+    "results": {
+        "ocr_mistral": {
+            "text": "STARS &amp; STRIPES\nTHE\nBURBEE GUM\nSTARS &amp; STRIPES\nA COMPOSITIVE GUM #000115\n\n![img-0.jpeg](img-0.jpeg)\n\n![img-1.jpeg](img-1.jpeg)",
+            "language": null,
+            "confidence": "high",
+            "blocks": [
+                {
+                    "text": "STARS &amp; STRIPES\nTHE\nBURBEE GUM\nSTARS &amp; STRIPES\nA COMPOSITIVE GUM #000115\n\n![img-0.jpeg](img-0.jpeg)\n\n![img-1.jpeg](img-1.jpeg)",
+                    "type": "page",
+                    "index": 0
+                }
+            ],
+            "raw_response": {
+                "pages": [
+                    {
+                        "index": 0,
+                        "markdown": "STARS &amp; STRIPES\nTHE\nBURBEE GUM\nSTARS &amp; STRIPES\nA COMPOSITIVE GUM #000115\n\n![img-0.jpeg](img-0.jpeg)\n\n![img-1.jpeg](img-1.jpeg)",
+                        "images": [
+                            {
+                                "id": "img-0.jpeg",
+                                "top_left_x": 83,
+                                "top_left_y": 562,
+                                "bottom_right_x": 972,
+                                "bottom_right_y": 1036,
+                                "image_base64": null,
+                                "image_annotation": null
+                            },
+                            {
+                                "id": "img-1.jpeg",
+                                "top_left_x": 1027,
+                                "top_left_y": 222,
+                                "bottom_right_x": 1742,
+                                "bottom_right_y": 980,
+                                "image_base64": null,
+                                "image_annotation": null
+                            }
+                        ],
+                        "tables": [],
+                        "hyperlinks": [],
+                        "header": null,
+                        "footer": null,
+                        "dimensions": {
+                            "dpi": 200,
+                            "height": 1200,
+                            "width": 1888
+                        }
+                    }
+                ],
+                "model": "mistral-ocr-latest",
+                "document_annotation": null,
+                "usage_info": {
+                    "pages_processed": 1,
+                    "doc_size_bytes": 550950
+                }
+            }
+        },
+        "classify": {
+            "type": "photograph",
+            "subtype": "snapshot",
+            "confidence": 0.95,
+            "rationale": "The image depicts various boxes and packets of bubble gum, indicating it is a photograph of product packaging.",
+            "_tokens": {
+                "prompt": 37129,
+                "completion": 42,
+                "total": 37171,
+                "cached": 0
+            }
+        },
+        "basic_description": {
+            "description": "The image features two types of bubble gum packaging: 'Stars & Stripes' and 'Love Is'. The 'Stars & Stripes' packaging is predominantly blue and orange, with the text 'STARS & STRIPES 10¢ BUBBLE GUM' prominently displayed. There are several individual gum wrappers in a red, white, and blue pattern spilling out from the box. The 'Love Is' packaging comes in a black and yellow box decorated with floral and zebra patterns, alongside individual wrappers with vibrant colors. The background is yellow, creating a bright overall contrast, and the condition of the items appears to be clean and intact.",
+            "language": "en",
+            "physicalAttributes": [
+                "bright yellow background",
+                "blue and orange box with text",
+                "red, white, and blue gum wrappers",
+                "black and yellow box with floral pattern",
+                "individually packaged gum in various colors"
+            ],
+            "_tokens": {
+                "prompt": 37012,
+                "completion": 178,
+                "total": 37190,
+                "cached": 0
+            }
+        },
+        "keywords": {
+            "keywords": [
+                "burbee-gum",
+                "bubble-gum",
+                "stars-and-stripes",
+                "1960s",
+                "mint-condition",
+                "full-color",
+                "patriotic",
+                "packaging",
+                "collectible-gum"
+            ],
+            "safety": "safe",
+            "_tokens": {
+                "prompt": 37160,
+                "completion": 46,
+                "total": 37206,
+                "cached": 0
+            }
+        },
+        "transcribe_handwriting": {
+            "text": "",
+            "language": null,
+            "confidence": "high",
+            "blocks": [],
+            "_tokens": {
+                "prompt": 1318,
+                "completion": 15,
+                "total": 1333,
+                "cached": 0
+            }
+        }
+    }
+}

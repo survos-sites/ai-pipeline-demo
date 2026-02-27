@@ -1,0 +1,131 @@
+{
+    "subject": "https://upload.wikimedia.org/wikipedia/commons/0/04/William_Burnett_Letter_May_24%2C_1726_-_NARA_-_193049.jpg",
+    "results": {
+        "ocr_mistral": {
+            "text": "all Lands as by his Majesty's Commission and Royal Instructions to me are directed Lim Hod and appointed in the 99th. 100th. 101st. 102nd. and 103rd Articles of the same Instructions whereof I have given you a copy Givt. under my hand and seal at New York the second day of May in the Twelfth year of his Majesty's Prize Armory Dominick our thousand seven hundred and twenty six\n\nBy his Excellency's Command.\n\nP. Robin, Deputy\n\nRecd. Tuesday 24. May 1726. P. B.",
+            "language": null,
+            "confidence": "high",
+            "blocks": [
+                {
+                    "text": "all Lands as by his Majesty's Commission and Royal Instructions to me are directed Lim Hod and appointed in the 99th. 100th. 101st. 102nd. and 103rd Articles of the same Instructions whereof I have given you a copy Givt. under my hand and seal at New York the second day of May in the Twelfth year of his Majesty's Prize Armory Dominick our thousand seven hundred and twenty six\n\nBy his Excellency's Command.\n\nP. Robin, Deputy\n\nRecd. Tuesday 24. May 1726. P. B.",
+                    "type": "page",
+                    "index": 0
+                }
+            ],
+            "raw_response": {
+                "pages": [
+                    {
+                        "index": 0,
+                        "markdown": "all Lands as by his Majesty's Commission and Royal Instructions to me are directed Lim Hod and appointed in the 99th. 100th. 101st. 102nd. and 103rd Articles of the same Instructions whereof I have given you a copy Givt. under my hand and seal at New York the second day of May in the Twelfth year of his Majesty's Prize Armory Dominick our thousand seven hundred and twenty six\n\nBy his Excellency's Command.\n\nP. Robin, Deputy\n\nRecd. Tuesday 24. May 1726. P. B.",
+                        "images": [],
+                        "tables": [],
+                        "hyperlinks": [],
+                        "header": null,
+                        "footer": null,
+                        "dimensions": {
+                            "dpi": 200,
+                            "height": 1650,
+                            "width": 2250
+                        }
+                    }
+                ],
+                "model": "mistral-ocr-latest",
+                "document_annotation": null,
+                "usage_info": {
+                    "pages_processed": 1,
+                    "doc_size_bytes": 1262296
+                }
+            }
+        },
+        "transcribe_handwriting": {
+            "text": "al[so] Land as by [his] Majesty's Commission and\nRoyal Instructions to me are Directed Limitted\nand Appointed in the 99th no. 101. 102. and 103\narticles of the said Instructions whereof I have\ngiven up on a Copy both under my hand and\nSeal at New York the second day of May in\nthe Twelfth Year of his Majesty's Reign Annoq [Domini]\nDomini one Thousand seven Hundred twenty six\n\nBy his Excellencys Command.\n\n[Signature]\n\n[Signature: A Robin, Dept]\n\nRect. Tues[day] 24. May 1726. R.B.",
+            "language": "en",
+            "confidence": "high",
+            "blocks": [
+                [
+                    "al[so] Land as by [his] Majesty's Commission and"
+                ],
+                [
+                    "Royal Instructions to me are Directed Limitted"
+                ],
+                [
+                    "and Appointed in the 99th no. 101. 102. and 103"
+                ],
+                [
+                    "articles of the said Instructions whereof I have"
+                ],
+                [
+                    "given up on a Copy both under my hand and"
+                ],
+                [
+                    "Seal at New York the second day of May in"
+                ],
+                [
+                    "the Twelfth Year of his Majesty's Reign Annoq [Domini]"
+                ],
+                [
+                    "Domini one Thousand seven Hundred twenty six"
+                ],
+                [
+                    ""
+                ],
+                [
+                    "By his Excellencys Command."
+                ],
+                [
+                    ""
+                ],
+                [
+                    "[Signature]"
+                ],
+                [
+                    ""
+                ],
+                [
+                    "[Signature: A Robin, Dept]"
+                ],
+                [
+                    ""
+                ],
+                [
+                    "Rect. Tues[day] 24. May 1726. R.B."
+                ]
+            ],
+            "_tokens": {
+                "prompt": 1311,
+                "completion": 326,
+                "total": 1637,
+                "cached": 0
+            }
+        },
+        "people_and_places": {
+            "people": [
+                "P. Robin, Deputy"
+            ],
+            "places": [
+                "New York"
+            ],
+            "organisations": [],
+            "_tokens": {
+                "prompt": 37180,
+                "completion": 23,
+                "total": 37203,
+                "cached": 0
+            }
+        },
+        "generate_title": {
+            "title": "Royal Instructions to Richard Smith in New York, 1726",
+            "alternativeTitles": [
+                "Instructions Issued to Richard Smith, 1726",
+                "Appointment of Richard Smith by Royal Authority, 1726"
+            ],
+            "confidence": "high",
+            "_tokens": {
+                "prompt": 36988,
+                "completion": 48,
+                "total": 37036,
+                "cached": 1024
+            }
+        }
+    }
+}

@@ -1,0 +1,9 @@
+survos_ai_pipeline:
+    store_dir: '%kernel.project_dir%/public/data'
+
+    # Disable tasks you don't need in this app.
+    # context_description needs prior extract_metadata to be useful — skip for demos.
+    # translate is not needed unless you have non-English material.
+    disabled_tasks:
+        - context_description
+        - translate
