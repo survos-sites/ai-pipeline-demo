@@ -105,7 +105,7 @@
             "keywords"
         ],
         "inputs": {
-            "max_pages": 8
+            "max_pages": 83
         },
         "result_file": "726674523798b68af0e5f858f7547d8bbe32bcd4.json",
         "status": "complete"
