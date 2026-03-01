@@ -4,7 +4,9 @@ on:
   push:
     branches: [main]
     paths:
-      - 'public/data/images.json'   # re-run when manifest changes
+      - 'public/data/images.json'   # re-run when image manifest changes
+      - 'public/data/pdfs.json'     # re-run when PDF manifest changes
+      - 'public/**/*.html'          # re-deploy when viewer/gallery changes
       - 'src/**'
       - 'config/**'
       - '.github/workflows/**'
@@ -102,6 +104,31 @@ jobs:
           #   curl -fsSL -o public/images/<filename> "<url>"
           curl -fsSL -o public/images/Aaron_Chambers_Pension.pdf \
             "https://omeka-iaamcfh.s3.amazonaws.com/original/466438fd3594c782fcbf172a1fd2cfc66034bbf0.pdf"
+
+      # ── PDF → page JPGs ──────────────────────────────────────────────────
+      # Cached so pages are only re-split when pdfs.json changes.
+      - name: Cache PDF page images
+        uses: actions/cache@v4
+        id: pdf-cache
+        with:
+          path: public/images/pages/
+          key: pdf-pages-${{ hashFiles('public/data/pdfs.json') }}
+
+      - name: Split PDFs into page images
+        if: steps.pdf-cache.outputs.cache-hit != 'true'
+        run: |
+          sudo apt-get install -y poppler-utils imagemagick
+          mkdir -p public/images/pages
+          for pdf in public/images/*.pdf; do
+            [ -f "$pdf" ] || continue
+            base=$(basename "${pdf%.pdf}")
+            echo "Splitting $base..."
+            pdftoppm -jpeg -r 200 "$pdf" "public/images/pages/${base}"
+          done
+          # Auto-crop whitespace borders from scanned pages
+          echo "Cropping whitespace..."
+          mogrify -fuzz 10% -trim +repage public/images/pages/*.jpg
+          echo "Generated $(ls public/images/pages/*.jpg 2>/dev/null | wc -l) page images"
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3

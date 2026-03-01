@@ -95,22 +95,6 @@
         "status": "complete"
     },
     {
-        "url": "images/sim_soviet-life_1961-02_2.pdf",
-        "title": "Soviet Life Magazine, February 1961",
-        "collection": "Marxists Internet Archive",
-        "pipeline": [
-            "ocr_mistral",
-            "classify",
-            "summarize",
-            "keywords"
-        ],
-        "inputs": {
-            "max_pages": 83
-        },
-        "result_file": "726674523798b68af0e5f858f7547d8bbe32bcd4.json",
-        "status": "complete"
-    },
-    {
         "url": "images/tubman-pension.jpg",
         "title": "Harriet Tubman Pension Document",
         "collection": "Local",
@@ -122,20 +106,6 @@
             "generate_title"
         ],
         "result_file": "e4a8887a9d90f6069cadbcc0efb7b0e87dc0c8d9.json",
-        "status": "complete"
-    },
-    {
-        "url": "images/Aaron_Chambers_Pension.pdf",
-        "title": "Aaron Chambers Pension Document",
-        "collection": "Local",
-        "pipeline": [
-            "ocr_mistral",
-            "transcribe_handwriting",
-            "people_and_places",
-            "extract_metadata",
-            "generate_title"
-        ],
-        "result_file": "ce9e060336acc7313261152034bad5b17fc29186.json",
         "status": "complete"
     }
 ]

@@ -46,9 +46,9 @@ final class ProcessImagesCommand extends Command
     protected function configure(): void
     {
         $this
-            ->addOption('manifest', 'm', InputOption::VALUE_REQUIRED,
-                'Path to images.json (absolute, or relative to public/data/)',
-                'images.json')
+            ->addOption('manifest', 'm', InputOption::VALUE_REQUIRED | InputOption::VALUE_IS_ARRAY,
+                'Path to manifest JSON (absolute, or relative to public/data/). Can be specified multiple times.',
+                ['images.json', 'pdfs.json'])
             ->addOption('limit', null, InputOption::VALUE_REQUIRED,
                 'Stop after processing this many entries')
             ->addOption('force', 'f', InputOption::VALUE_NONE,
@@ -64,23 +64,8 @@ final class ProcessImagesCommand extends Command
         $limit    = $input->getOption('limit') !== null ? (int) $input->getOption('limit') : null;
         $taskOver = $input->getOption('tasks');
 
-        // ── Load manifest ─────────────────────────────────────────────────────
-        $manifestPath = $this->resolveManifest((string) $input->getOption('manifest'));
-        if (!is_file($manifestPath)) {
-            $io->error("Manifest not found: {$manifestPath}");
-            return Command::FAILURE;
-        }
-
-        $entries = json_decode(file_get_contents($manifestPath), true);
-        if (!is_array($entries)) {
-            $io->error("Invalid JSON in {$manifestPath}");
-            return Command::FAILURE;
-        }
-
         $io->title('AI Pipeline — Process Images');
-        $io->writeln(sprintf('Manifest : %s (%d entries)', $manifestPath, count($entries)));
         $io->writeln(sprintf('Data dir : %s', $this->dataDir));
-        $io->newLine();
 
         $registered = array_keys($this->registry->getTaskMap());
         if ($registered === []) {
@@ -90,89 +75,112 @@ final class ProcessImagesCommand extends Command
         $io->writeln('Registered tasks: ' . implode(', ', $registered));
         $io->newLine();
 
-        // ── Process each entry ────────────────────────────────────────────────
-        $processed = 0;
+        $manifests   = (array) $input->getOption('manifest');
+        $totalProcessed = 0;
 
-        foreach ($entries as $i => &$entry) {
-            if ($limit !== null && $processed >= $limit) {
-                break;
-            }
-
-            $url      = $entry['url']      ?? null;
-            $title    = $entry['title']    ?? $url;
-            $pipeline = $taskOver
-                ? array_filter(array_map('trim', explode(',', $taskOver)))
-                : ($entry['pipeline'] ?? $registered);
-
-            if ($url === null) {
-                $io->warning("Entry {$i} has no 'url' — skipping.");
+        foreach ($manifests as $manifest) {
+            // ── Load manifest ─────────────────────────────────────────────────
+            $manifestPath = $this->resolveManifest($manifest);
+            if (!is_file($manifestPath)) {
+                $io->warning("Manifest not found: {$manifestPath} — skipping.");
                 continue;
             }
 
-            // Resolve relative paths (e.g. "images/foo.jpg") to absolute URLs
-            // so the AI tasks receive something fetchable.
-            $absoluteUrl = $this->resolveUrl($url);
-
-            // Warn and skip if the image is not accessible.
-            if (!$this->isAccessible($absoluteUrl, $io)) {
+            $entries = json_decode(file_get_contents($manifestPath), true);
+            if (!is_array($entries)) {
+                $io->warning("Invalid JSON in {$manifestPath} — skipping.");
                 continue;
             }
 
-            $io->section(sprintf('[%d/%d] %s', $i + 1, count($entries), $title));
+            $io->section(sprintf('Manifest: %s (%d entries)', basename($manifestPath), count($entries)));
 
-            // Subject (SHA-1 key) = original manifest url (stable, even if relative).
-            // image_url input = absolute URL so tasks can actually fetch it.
-            // Extra inputs from the manifest entry (e.g. max_pages) are merged in.
-            $extraInputs = $entry['inputs'] ?? [];
-            $store     = new JsonFileResultStore($url, $this->dataDir, array_merge(['image_url' => $absoluteUrl], $extraInputs));
-            $priorKeys = array_keys($store->getAllPrior());
+            // ── Process each entry ────────────────────────────────────────────
+            $processed = 0;
 
-            if (!$force && $priorKeys !== []) {
-                $pending = array_diff($pipeline, $priorKeys);
-                if ($pending === []) {
-                    $io->comment('  All tasks already complete — skipping (use --force to rerun).');
-                    $entry['result_file'] = basename($store->getFilePath());
-                    $entry['status']      = 'complete';
-                    continue;
-                }
-                $io->comment(sprintf('  Resuming — %d task(s) remaining: %s', count($pending), implode(', ', $pending)));
-            }
-
-            // Wire progress callbacks
-            $this->runner->onBeforeTask(function (string $task) use ($io): void {
-                $io->write(sprintf('  %-28s ', $task));
-            });
-            $this->runner->onAfterTask(function (string $task, array $result, string $status) use ($io): void {
-                $label = match ($status) {
-                    'done'    => '<info>done</info>',
-                    'skipped' => '<comment>skipped</comment>',
-                    'failed'  => '<error>FAILED: ' . ($result['error'] ?? '') . '</error>',
-                    default   => $status,
-                };
-                $io->writeln($label);
-            });
-
-            $queue = array_values($pipeline);
-            while ($queue !== []) {
-                if ($this->runner->runNext($store, $queue) === null) {
+            foreach ($entries as $i => &$entry) {
+                if ($limit !== null && $totalProcessed >= $limit) {
                     break;
                 }
+
+                $url      = $entry['url']      ?? null;
+                $title    = $entry['title']    ?? $url;
+                $pipeline = $taskOver
+                    ? array_filter(array_map('trim', explode(',', $taskOver)))
+                    : ($entry['pipeline'] ?? $registered);
+
+                if ($url === null) {
+                    $io->warning("Entry {$i} has no 'url' — skipping.");
+                    continue;
+                }
+
+                // Resolve relative paths (e.g. "images/foo.jpg") to absolute URLs
+                // so the AI tasks receive something fetchable.
+                $absoluteUrl = $this->resolveUrl($url);
+
+                // Warn and skip if the image is not accessible.
+                if (!$this->isAccessible($absoluteUrl, $io)) {
+                    continue;
+                }
+
+                $io->writeln(sprintf('  [%d/%d] %s', $i + 1, count($entries), $title));
+
+                // Subject (SHA-1 key) = original manifest url (stable, even if relative).
+                // image_url input = absolute URL so tasks can actually fetch it.
+                // Extra inputs from the manifest entry (e.g. max_pages) are merged in.
+                $extraInputs = $entry['inputs'] ?? [];
+                $store     = new JsonFileResultStore($url, $this->dataDir, array_merge(['image_url' => $absoluteUrl], $extraInputs));
+                $priorKeys = array_keys($store->getAllPrior());
+
+                if (!$force && $priorKeys !== []) {
+                    $pending = array_diff($pipeline, $priorKeys);
+                    if ($pending === []) {
+                        $io->comment('  All tasks already complete — skipping (use --force to rerun).');
+                        $entry['result_file'] = basename($store->getFilePath());
+                        $entry['status']      = 'complete';
+                        continue;
+                    }
+                    $io->comment(sprintf('  Resuming — %d task(s) remaining: %s', count($pending), implode(', ', $pending)));
+                }
+
+                // Wire progress callbacks
+                $this->runner->onBeforeTask(function (string $task) use ($io): void {
+                    $io->write(sprintf('  %-28s ', $task));
+                });
+                $this->runner->onAfterTask(function (string $task, array $result, string $status) use ($io): void {
+                    $label = match ($status) {
+                        'done'    => '<info>done</info>',
+                        'skipped' => '<comment>skipped</comment>',
+                        'failed'  => '<error>FAILED: ' . ($result['error'] ?? '') . '</error>',
+                        default   => $status,
+                    };
+                    $io->writeln($label);
+                });
+
+                $queue = array_values($pipeline);
+                while ($queue !== []) {
+                    if ($this->runner->runNext($store, $queue) === null) {
+                        break;
+                    }
+                }
+
+                $entry['result_file'] = basename($store->getFilePath());
+                $entry['status']      = 'complete';
+                $processed++;
+                $totalProcessed++;
             }
+            unset($entry);
 
-            $entry['result_file'] = basename($store->getFilePath());
-            $entry['status']      = 'complete';
-            $processed++;
+            // ── Write updated manifest ────────────────────────────────────────
+            file_put_contents(
+                $manifestPath,
+                json_encode($entries, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE),
+            );
+
+            $io->comment(sprintf('  %d entries processed in %s.', $processed, basename($manifestPath)));
         }
-        unset($entry);
-
-        // ── Write updated manifest ────────────────────────────────────────────
-        file_put_contents(
-            $manifestPath,
-            json_encode($entries, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE),
-        );
 
         $io->newLine();
-        $io->success(sprintf('Processed %d/%d entries. Manifest updated.', $processed, count($entries)));
+        $io->success(sprintf('Processed %d entries across %d manifest(s).', $totalProcessed, count($manifests)));
 
         return Command::SUCCESS;
     }

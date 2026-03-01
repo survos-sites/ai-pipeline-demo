@@ -1,0 +1,33 @@
+[
+    {
+        "url": "images/sim_soviet-life_1961-02_2.pdf",
+        "title": "Soviet Life Magazine, February 1961",
+        "collection": "Marxists Internet Archive",
+        "pipeline": [
+            "ocr_mistral",
+            "classify",
+            "summarize",
+            "keywords"
+        ],
+        "inputs": {
+            "max_pages": 83
+        },
+        "result_file": "726674523798b68af0e5f858f7547d8bbe32bcd4.json",
+        "status": "complete"
+    },
+    {
+        "url": "images/Aaron_Chambers_Pension.pdf",
+        "title": "Aaron Chambers Pension Document",
+        "collection": "Local",
+        "source_url": "https://omeka-iaamcfh.s3.amazonaws.com/original/466438fd3594c782fcbf172a1fd2cfc66034bbf0.pdf",
+        "pipeline": [
+            "ocr_mistral",
+            "transcribe_handwriting",
+            "people_and_places",
+            "extract_metadata",
+            "generate_title"
+        ],
+        "result_file": "ce9e060336acc7313261152034bad5b17fc29186.json",
+        "status": "complete"
+    }
+]

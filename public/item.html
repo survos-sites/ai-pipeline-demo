@@ -11,7 +11,7 @@
     a { color:#63b3ed; text-decoration:none; }
     a:hover { text-decoration:underline; }
 
-    /* ── Top bar ── */
+    /* -- Top bar -- */
     .topbar { background:#141720; border-bottom:1px solid #2d3748; padding:10px 20px;
               display:flex; align-items:center; gap:12px; font-size:13px;
               position:sticky; top:0; z-index:20; }
@@ -19,10 +19,10 @@
                      text-overflow:ellipsis; white-space:nowrap; }
     .topbar .sep { color:#2d3748; }
 
-    /* ── Page ── */
-    .page { max-width:1200px; margin:0 auto; padding:24px 20px 80px; }
+    /* -- Page -- */
+    .page { max-width:1400px; margin:0 auto; padding:24px 20px 80px; }
 
-    /* ── Pipeline track ── */
+    /* -- Pipeline track -- */
     .pipeline-track { display:flex; flex-wrap:wrap; align-items:center; gap:0; row-gap:6px;
                       margin-bottom:28px; padding:12px 16px; background:#141720;
                       border:1px solid #2d3748; border-radius:8px; }
@@ -37,7 +37,7 @@
                    padding:0 2px; user-select:none; }
     .track-arrow.done { color:#48bb78; }
 
-    /* ── Magnifier ── */
+    /* -- Magnifier (images) -- */
     .magnifier-wrap {
       position:relative; width:100%; margin-bottom:28px;
       border:1px solid #2d3748; border-radius:8px; overflow:hidden;
@@ -47,48 +47,81 @@
     .magnifier-wrap img.hero {
       width:100%; max-height:520px; object-fit:contain; display:block;
     }
-    /* Magnifier lens overlay */
     .mag-lens {
       position:absolute; width:200px; height:200px;
       border:2px solid #4299e1; border-radius:4px;
       pointer-events:none; display:none;
       overflow:hidden; box-shadow:0 0 0 1px #1a365d,0 4px 24px #000a;
     }
-    .mag-lens img {
-      position:absolute;
-      /* width/height/left/top set by JS */
-    }
+    .mag-lens img { position:absolute; }
     .mag-hint {
       position:absolute; bottom:8px; right:10px;
       font-size:11px; color:#4a5568; pointer-events:none;
     }
 
-    /* ── Task sections ── */
-    .task-section { margin-bottom:36px; scroll-margin-top:56px; }
-    .task-header { display:flex; align-items:baseline; gap:10px; margin-bottom:12px;
-                   padding-bottom:8px; border-bottom:1px solid #2d3748; }
-    .task-name { font-family:monospace; font-size:16px; font-weight:700; color:#90cdf4; }
-    .task-badge { font-size:11px; padding:1px 8px; border-radius:999px; }
-    .badge-done   { background:#1c4532; color:#9ae6b4; border:1px solid #276749; }
-    .badge-failed { background:#3b1515; color:#fed7d7; border:1px solid #742a2a; }
+    /* -- PDF page viewer: image + OCR side by side -- */
+    .pdf-page {
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:0;
+      margin-bottom:24px;
+      border:1px solid #2d3748;
+      border-radius:8px;
+      overflow:hidden;
+      background:#141720;
+    }
+    @media (max-width:800px) {
+      .pdf-page { grid-template-columns:1fr; }
+    }
+    .pdf-page-img-col {
+      border-right:1px solid #2d3748;
+      background:#0f1117;
+      display:flex;
+      flex-direction:column;
+      position:relative;
+      cursor:crosshair;
+    }
+    @media (max-width:800px) {
+      .pdf-page-img-col { border-right:none; border-bottom:1px solid #2d3748; }
+    }
+    .pdf-page-img-col img.page-hero {
+      width:100%;
+      display:block;
+    }
+    .pdf-page-img-col .mag-lens {
+      position:absolute; width:220px; height:220px;
+      border:2px solid #4299e1; border-radius:4px;
+      pointer-events:none; display:none;
+      overflow:hidden; box-shadow:0 0 0 1px #1a365d,0 4px 24px #000a;
+      z-index:10;
+    }
+    .pdf-page-img-col .mag-lens img { position:absolute; }
+    .pdf-page-img-col .mag-hint {
+      position:absolute; bottom:6px; right:8px;
+      font-size:10px; color:#4a5568; pointer-events:none;
+    }
+    .pdf-page-ocr-col {
+      padding:16px 18px;
+      overflow-y:auto;
+      max-height:800px;
+    }
+    .pdf-page-heading {
+      display:flex; align-items:center; gap:10px;
+      padding:8px 14px;
+      background:#1a1f2e;
+      border-bottom:1px solid #2d3748;
+    }
+    .pdf-page-num { font-weight:700; font-size:13px; color:#90cdf4; font-family:monospace; }
+    .pdf-page-dim { font-size:11px; color:#4a5568; }
 
-    /* ── Token pill ── */
-    .token-pill { display:inline-flex; gap:14px; background:#1a1f2e; border:1px solid #2d3748;
-                  border-radius:6px; padding:3px 12px; font-size:11px; color:#718096; margin-bottom:12px; }
-    .token-pill strong { color:#a0aec0; }
+    .ocr-text {
+      font-size:13px; color:#a0aec0; line-height:1.8;
+      white-space:pre-wrap; word-break:break-word;
+    }
+    .ocr-text h1,.ocr-text h2,.ocr-text h3 { color:#e2e8f0; margin:0 0 6px; }
 
-    /* ── Generic fields ── */
-    .fields { display:flex; flex-direction:column; gap:12px; }
-    .field-label { font-size:11px; color:#718096; text-transform:uppercase; letter-spacing:.05em; margin-bottom:3px; }
-    .field-value { background:#1a1f2e; border:1px solid #2d3748; border-radius:6px;
-                   padding:10px 14px; white-space:pre-wrap; word-break:break-word;
-                   line-height:1.7; font-size:13px; }
-    .chips { display:flex; flex-wrap:wrap; gap:5px; }
-    .chip  { background:#2d3748; border-radius:4px; padding:2px 9px; font-size:12px; color:#e2e8f0; }
-
-    /* ── OCR layout blocks ── */
+    /* -- OCR layout blocks -- */
     .ocr-blocks { display:flex; flex-direction:column; gap:10px; }
-
     .block-card {
       border-radius:6px; padding:10px 14px;
       border-left:3px solid #2d3748;
@@ -118,30 +151,30 @@
     .image-block-card img { width:100%; display:block; }
     .image-block-caption { padding:5px 10px; font-size:11px; color:#718096; }
 
-    /* ── Multi-page sections ── */
-    .page-section { margin-bottom:28px; border:1px solid #2d3748; border-radius:8px; overflow:hidden; }
-    .page-heading { display:flex; align-items:center; gap:12px; padding:8px 14px;
-                    background:#141720; border-bottom:1px solid #2d3748; }
-    .page-num { font-weight:700; font-size:13px; color:#90cdf4; font-family:monospace; }
-    .page-dim { font-size:11px; color:#4a5568; }
+    /* -- Task sections -- */
+    .task-section { margin-bottom:36px; scroll-margin-top:56px; }
+    .task-header { display:flex; align-items:baseline; gap:10px; margin-bottom:12px;
+                   padding-bottom:8px; border-bottom:1px solid #2d3748; }
+    .task-name { font-family:monospace; font-size:16px; font-weight:700; color:#90cdf4; }
+    .task-badge { font-size:11px; padding:1px 8px; border-radius:999px; }
+    .badge-done   { background:#1c4532; color:#9ae6b4; border:1px solid #276749; }
+    .badge-failed { background:#3b1515; color:#fed7d7; border:1px solid #742a2a; }
 
-    /* Side-by-side: layout blocks left, markdown right */
-    .page-body { display:grid; grid-template-columns:1fr 1fr; gap:0; }
-    .page-col { padding:14px; }
-    .page-col + .page-col { border-left:1px solid #2d3748; }
-    .page-col-label { font-size:10px; text-transform:uppercase; letter-spacing:.07em;
-                      color:#4a5568; margin-bottom:10px; }
-    /* Markdown-only page (no blocks) — full width */
-    .page-body.full-width { grid-template-columns:1fr; }
+    /* -- Token pill -- */
+    .token-pill { display:inline-flex; gap:14px; background:#1a1f2e; border:1px solid #2d3748;
+                  border-radius:6px; padding:3px 12px; font-size:11px; color:#718096; margin-bottom:12px; }
+    .token-pill strong { color:#a0aec0; }
 
-    /* Markdown rendered as readable prose, not <pre> */
-    .md-prose { font-size:13px; color:#a0aec0; line-height:1.8; white-space:pre-wrap;
-                word-break:break-word; }
-    .md-prose h1,.md-prose h2,.md-prose h3 { color:#e2e8f0; margin:0 0 6px; }
+    /* -- Generic fields -- */
+    .fields { display:flex; flex-direction:column; gap:12px; }
+    .field-label { font-size:11px; color:#718096; text-transform:uppercase; letter-spacing:.05em; margin-bottom:3px; }
+    .field-value { background:#1a1f2e; border:1px solid #2d3748; border-radius:6px;
+                   padding:10px 14px; white-space:pre-wrap; word-break:break-word;
+                   line-height:1.7; font-size:13px; }
+    .chips { display:flex; flex-wrap:wrap; gap:5px; }
+    .chip  { background:#2d3748; border-radius:4px; padding:2px 9px; font-size:12px; color:#e2e8f0; }
 
-    .page-section .image-blocks { padding:12px 14px; }
-
-    /* ── Raw JSON ── */
+    /* -- Raw JSON -- */
     details { margin-top:10px; }
     details summary { cursor:pointer; color:#63b3ed; font-size:12px; user-select:none; }
     pre { background:#141720; border:1px solid #2d3748; border-radius:6px;
@@ -149,7 +182,7 @@
           overflow-x:auto; white-space:pre-wrap; word-break:break-word;
           margin:8px 0 0; max-height:400px; }
 
-    /* ── Error / loading ── */
+    /* -- Error / loading -- */
     .error-box { background:#3b151522; border:1px solid #742a2a; border-radius:6px;
                  padding:12px 16px; color:#fed7d7; }
     #loading { text-align:center; padding:80px; color:#4a5568; }
@@ -158,15 +191,15 @@
 <body>
 
 <div class="topbar">
-  <a href="index.html">← Gallery</a>
+  <a href="index.html">&larr; Gallery</a>
   <span class="sep">|</span>
-  <span class="title" id="topTitle">Loading…</span>
+  <span class="title" id="topTitle">Loading...</span>
 </div>
 
-<div id="loading">Loading…</div>
+<div id="loading">Loading...</div>
 
 <div class="page" id="page" style="display:none">
-  <!-- Magnifier image viewer -->
+  <!-- Magnifier image viewer (for non-PDF items) -->
   <div class="magnifier-wrap" id="magWrap" style="display:none">
     <img id="heroImg" class="hero" src="" alt="" />
     <div class="mag-lens" id="magLens">
@@ -175,12 +208,15 @@
     <span class="mag-hint">Hover to magnify</span>
   </div>
 
+  <!-- PDF page-by-page viewer -->
+  <div id="pdfPages" style="display:none"></div>
+
   <div class="pipeline-track" id="pipelineTrack"></div>
   <div id="taskSections"></div>
 </div>
 
 <script type="module">
-// ── Utils ──────────────────────────────────────────────────────────────────────
+// -- Utils -------------------------------------------------------------------
 async function sha1hex(str) {
   const buf  = new TextEncoder().encode(str);
   const hash = await crypto.subtle.digest('SHA-1', buf);
@@ -189,9 +225,8 @@ async function sha1hex(str) {
 const esc = s => String(s??'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
 const isImg = url => /\.(jpe?g|png|gif|webp|avif)(\?.*)?$/i.test(url) || url.includes('/iiif/');
 const isPdf = url => /\.pdf(\?.*)?$/i.test(url);
-const dispUrl = url => url; // relative paths work from public/
 
-// ── Magnifier ──────────────────────────────────────────────────────────────────
+// -- Magnifier ---------------------------------------------------------------
 function initMagnifier(wrap, hero, lens, lensImg, zoom=4) {
   const lensW = lens.offsetWidth  || 200;
   const lensH = lens.offsetHeight || 200;
@@ -201,15 +236,10 @@ function initMagnifier(wrap, hero, lens, lensImg, zoom=4) {
 
   wrap.addEventListener('mousemove', e => {
     const rect   = wrap.getBoundingClientRect();
-    const scaleX = hero.naturalWidth  / hero.clientWidth;
-    const scaleY = hero.naturalHeight / hero.clientHeight;
-
-    // Cursor position relative to the hero image (accounting for object-fit:contain letterboxing)
     const heroRect = hero.getBoundingClientRect();
     const cx = e.clientX - heroRect.left;
     const cy = e.clientY - heroRect.top;
 
-    // Position lens centered on cursor, clamped to wrap
     let lx = e.clientX - rect.left - lensW/2;
     let ly = e.clientY - rect.top  - lensH/2;
     lx = Math.max(0, Math.min(rect.width  - lensW, lx));
@@ -217,7 +247,6 @@ function initMagnifier(wrap, hero, lens, lensImg, zoom=4) {
     lens.style.left = lx + 'px';
     lens.style.top  = ly + 'px';
 
-    // Inside the lens: show the image zoomed, offset so cursor point stays centred
     const imgW = hero.clientWidth  * zoom;
     const imgH = hero.clientHeight * zoom;
     const imgLeft = -(cx * zoom - lensW/2);
@@ -230,14 +259,117 @@ function initMagnifier(wrap, hero, lens, lensImg, zoom=4) {
   });
 }
 
-// ── OCR rendering ──────────────────────────────────────────────────────────────
+// -- PDF page image path -----------------------------------------------------
+/** "images/Aaron_Chambers_Pension.pdf" page 0 -> "images/pages/Aaron_Chambers_Pension-01.jpg" */
+function pageImgSrc(pdfUrl, pageIndex, totalPages) {
+  const base = pdfUrl.replace(/^images\//, '').replace(/\.pdf$/i, '');
+  // pdftoppm names: -1, -2, ... or -01, -02, ... depending on total pages
+  const digits = totalPages > 99 ? 3 : totalPages > 9 ? 2 : 1;
+  const num = String(pageIndex + 1).padStart(digits, '0');
+  return `images/pages/${base}-${num}.jpg`;
+}
 
+// -- PDF page-by-page renderer -----------------------------------------------
+function renderPdfPages(pdfUrl, ocrResult) {
+  const container = document.getElementById('pdfPages');
+  container.style.display = 'block';
+
+  const pages = ocrResult?.pages ?? [];
+  if (!pages.length) {
+    container.innerHTML = '<p style="color:#4a5568;padding:20px">No OCR page data available.</p>';
+    return;
+  }
+
+  const layoutBlocks = ocrResult?.layout_blocks ?? [];
+  const imageBlocks  = ocrResult?.image_blocks ?? [];
+
+  for (const page of pages) {
+    const pi = page.index ?? 0;
+    const md = (page.markdown ?? '').trim();
+
+    // Skip blank pages
+    const hasText   = md.length > 10;
+    const hasBlocks = layoutBlocks.some(b => (b.page ?? 0) === pi && b.text?.trim());
+    if (!hasText && !hasBlocks) continue;
+
+    const section = document.createElement('div');
+    section.className = 'pdf-page';
+
+    // -- Heading --
+    const heading = document.createElement('div');
+    heading.className = 'pdf-page-heading';
+    const dim = page.dimensions ? `${page.dimensions.width}x${page.dimensions.height}` : '';
+    heading.innerHTML = `<span class="pdf-page-num">Page ${pi + 1}</span>${dim ? `<span class="pdf-page-dim">${esc(dim)}</span>` : ''}`;
+    heading.style.gridColumn = '1 / -1';
+    section.appendChild(heading);
+
+    // -- Left: page image with magnifier --
+    const imgCol = document.createElement('div');
+    imgCol.className = 'pdf-page-img-col';
+    const imgSrc = pageImgSrc(pdfUrl, pi, pages.length);
+    const lensId = `mag-lens-${pi}`;
+    const lensImgId = `mag-lens-img-${pi}`;
+    const heroId = `page-hero-${pi}`;
+    imgCol.innerHTML = `<img id="${heroId}" class="page-hero" src="${esc(imgSrc)}" alt="Page ${pi+1}" loading="lazy"
+      onerror="this.outerHTML='<div style=\\'padding:40px;color:#4a5568;text-align:center\\'>Page image not available</div>'" />
+      <div class="mag-lens" id="${lensId}"><img id="${lensImgId}" src="${esc(imgSrc)}" alt="" /></div>
+      <span class="mag-hint">Hover to magnify</span>`;
+    section.appendChild(imgCol);
+
+    // -- Right: OCR text --
+    const ocrCol = document.createElement('div');
+    ocrCol.className = 'pdf-page-ocr-col';
+
+    // Prefer layout blocks if available, fall back to markdown
+    const pageBlocks = layoutBlocks.filter(b => (b.page ?? 0) === pi && b.type !== 'image' && b.text?.trim());
+    if (pageBlocks.length) {
+      const blocksEl = document.createElement('div');
+      blocksEl.className = 'ocr-blocks';
+      const sorted = [...pageBlocks].sort((a,b) => (a.bbox?.y??0) - (b.bbox?.y??0));
+      for (const block of sorted) {
+        const card = document.createElement('div');
+        card.className = `block-card ${block.type}`;
+        const typeLabel = `<div class="block-type-label">${esc(block.type)}</div>`;
+        let textHtml;
+        if (block.type === 'headline')         textHtml = `<div class="block-headline-text">${esc(block.text)}</div>`;
+        else if (block.type === 'subheadline') textHtml = `<div class="block-sub-text">${esc(block.text)}</div>`;
+        else                                   textHtml = `<div class="block-body-text">${esc(block.text)}</div>`;
+        card.innerHTML = typeLabel + textHtml;
+        blocksEl.appendChild(card);
+      }
+      ocrCol.appendChild(blocksEl);
+    } else if (hasText) {
+      const prose = document.createElement('div');
+      prose.className = 'ocr-text';
+      prose.textContent = md;
+      ocrCol.appendChild(prose);
+    }
+
+    section.appendChild(ocrCol);
+    container.appendChild(section);
+
+    // Wire up magnifier after element is in the DOM
+    const heroEl = document.getElementById(heroId);
+    const lensEl = document.getElementById(lensId);
+    const lensImgEl = document.getElementById(lensImgId);
+    if (heroEl && lensEl && lensImgEl) {
+      heroEl.addEventListener('load', () => {
+        initMagnifier(imgCol, heroEl, lensEl, lensImgEl, 3);
+      });
+      // If already loaded (cached)
+      if (heroEl.complete && heroEl.naturalWidth > 0) {
+        initMagnifier(imgCol, heroEl, lensEl, lensImgEl, 3);
+      }
+    }
+  }
+}
+
+// -- OCR rendering for single images (unchanged) ----------------------------
 const BLOCK_RANK = {headline:0, subheadline:1, byline:2, dateline:2,
                     column:3, paragraph:3, caption:4, image:5, advertisement:6, other:7};
 
 function renderBlocksForPage(layoutBlocks, imageBlocks, pageIndex) {
   const frag = document.createDocumentFragment();
-
   const pageBlocks = (layoutBlocks ?? []).filter(b => (b.page ?? 0) === pageIndex);
   if (pageBlocks.length) {
     const blocksEl = document.createElement('div');
@@ -262,7 +394,6 @@ function renderBlocksForPage(layoutBlocks, imageBlocks, pageIndex) {
     frag.appendChild(blocksEl);
   }
 
-  // Image crops for this page
   const pageImgs = (imageBlocks ?? []).filter(b => (b.page ?? 0) === pageIndex && b.image_base64);
   if (pageImgs.length) {
     const imgWrap = document.createElement('div');
@@ -276,7 +407,7 @@ function renderBlocksForPage(layoutBlocks, imageBlocks, pageIndex) {
         <img src="${img.image_base64}" alt="${esc(img.id)}" />
         <div class="image-block-caption">
           ${esc(img.id)}${img.annotation ? ` — ${esc(img.annotation)}` : ''}
-          <span style="float:right;color:#4a5568">${w}×${h}px</span>
+          <span style="float:right;color:#4a5568">${w}x${h}px</span>
         </div>`;
       imgWrap.appendChild(card);
     }
@@ -286,50 +417,37 @@ function renderBlocksForPage(layoutBlocks, imageBlocks, pageIndex) {
   return frag;
 }
 
-/** A page is blank if it has no useful content. */
-function isBlankPage(page, layoutBlocks, imageBlocks) {
-  const pi  = page.index ?? 0;
-  const md  = (page.markdown ?? '').trim();
-  const hasText   = md.length > 10;
-  const hasBlocks = (layoutBlocks ?? []).some(b => (b.page ?? 0) === pi && b.text?.trim());
-  const hasImgs   = (imageBlocks  ?? []).some(b => (b.page ?? 0) === pi);
-  return !hasText && !hasBlocks && !hasImgs;
-}
-
 function renderLayoutBlocks(layoutBlocks, imageBlocks, pages) {
   const wrap = document.createElement('div');
 
-  // Multi-page: one section per non-blank page
   if (pages?.length > 1) {
     for (const page of pages) {
-      if (isBlankPage(page, layoutBlocks, imageBlocks)) continue;
-
-      const pi = page.index ?? 0;
-      const md = (page.markdown ?? '').trim();
+      const pi  = page.index ?? 0;
+      const md  = (page.markdown ?? '').trim();
+      const hasText   = md.length > 10;
+      const hasBlocks = (layoutBlocks ?? []).some(b => (b.page ?? 0) === pi && b.text?.trim());
+      const hasImgs   = (imageBlocks  ?? []).some(b => (b.page ?? 0) === pi);
+      if (!hasText && !hasBlocks && !hasImgs) continue;
 
       const section = document.createElement('div');
       section.className = 'page-section';
+      section.style.cssText = 'margin-bottom:28px;border:1px solid #2d3748;border-radius:8px;overflow:hidden';
 
-      // ── Heading ──
       const heading = document.createElement('div');
-      heading.className = 'page-heading';
-      const dim = page.dimensions ? `${page.dimensions.width}×${page.dimensions.height}px` : '';
-      heading.innerHTML = `<span class="page-num">Page ${pi + 1}</span>${dim ? `<span class="page-dim">${esc(dim)}</span>` : ''}`;
+      heading.style.cssText = 'display:flex;align-items:center;gap:12px;padding:8px 14px;background:#141720;border-bottom:1px solid #2d3748';
+      const dim = page.dimensions ? `${page.dimensions.width}x${page.dimensions.height}px` : '';
+      heading.innerHTML = `<span style="font-weight:700;font-size:13px;color:#90cdf4;font-family:monospace">Page ${pi + 1}</span>${dim ? `<span style="font-size:11px;color:#4a5568">${esc(dim)}</span>` : ''}`;
       section.appendChild(heading);
 
-      // ── Body: layout blocks + markdown side by side ──
       const pageBlocks = (layoutBlocks ?? []).filter(b => (b.page ?? 0) === pi && b.type !== 'image' && b.text?.trim());
-      const hasBlocks  = pageBlocks.length > 0;
-      const hasMd      = md.length > 0;
 
       const body = document.createElement('div');
-      body.className = 'page-body' + (hasBlocks ? '' : ' full-width');
+      body.style.cssText = `display:grid;grid-template-columns:${pageBlocks.length ? '1fr 1fr' : '1fr'};gap:0`;
 
-      if (hasBlocks) {
-        // Left column: structured layout blocks
+      if (pageBlocks.length) {
         const leftCol = document.createElement('div');
-        leftCol.className = 'page-col';
-        leftCol.innerHTML = `<div class="page-col-label">Layout blocks</div>`;
+        leftCol.style.cssText = 'padding:14px';
+        leftCol.innerHTML = `<div style="font-size:10px;text-transform:uppercase;letter-spacing:.07em;color:#4a5568;margin-bottom:10px">Layout blocks</div>`;
         const blocksEl = document.createElement('div');
         blocksEl.className = 'ocr-blocks';
         const sorted = [...pageBlocks].sort((a,b) => (a.bbox?.y??0) - (b.bbox?.y??0));
@@ -348,49 +466,25 @@ function renderLayoutBlocks(layoutBlocks, imageBlocks, pages) {
         body.appendChild(leftCol);
       }
 
-      if (hasMd) {
-        // Right column (or full width): markdown as readable prose
+      if (hasText) {
         const rightCol = document.createElement('div');
-        rightCol.className = 'page-col';
-        rightCol.innerHTML = `<div class="page-col-label">${hasBlocks ? 'Markdown (OCR text)' : 'OCR text'}</div>
-          <div class="md-prose">${esc(md)}</div>`;
+        rightCol.style.cssText = `padding:14px;${pageBlocks.length ? 'border-left:1px solid #2d3748' : ''}`;
+        rightCol.innerHTML = `<div style="font-size:10px;text-transform:uppercase;letter-spacing:.07em;color:#4a5568;margin-bottom:10px">${pageBlocks.length ? 'Markdown (OCR text)' : 'OCR text'}</div>
+          <div class="ocr-text">${esc(md)}</div>`;
         body.appendChild(rightCol);
       }
 
       section.appendChild(body);
-
-      // ── Extracted images for this page ──
-      const pageImgs = (imageBlocks ?? []).filter(b => (b.page ?? 0) === pi && b.image_base64);
-      if (pageImgs.length) {
-        const imgWrap = document.createElement('div');
-        imgWrap.className = 'image-blocks';
-        for (const img of pageImgs) {
-          const card = document.createElement('div');
-          card.className = 'image-block-card';
-          const w = img.bottom_right_x - img.top_left_x;
-          const h = img.bottom_right_y - img.top_left_y;
-          card.innerHTML = `
-            <img src="${img.image_base64}" alt="${esc(img.id)}" />
-            <div class="image-block-caption">
-              ${esc(img.id)}${img.annotation ? ` — ${esc(img.annotation)}` : ''}
-              <span style="float:right;color:#4a5568">${w}×${h}px</span>
-            </div>`;
-          imgWrap.appendChild(card);
-        }
-        section.appendChild(imgWrap);
-      }
-
       wrap.appendChild(section);
     }
     return wrap;
   }
 
-  // Single image — layout blocks only (original behaviour)
   wrap.appendChild(renderBlocksForPage(layoutBlocks, imageBlocks, 0));
   return wrap;
 }
 
-// ── Field rendering ────────────────────────────────────────────────────────────
+// -- Field rendering ---------------------------------------------------------
 const FIELD_ORDER = ['title','alternativeTitles','type','subtype','rationale',
   'summary','description','text','transcription','language','confidence',
   'dateRange','people','places','organisations','subjects','names','dates',
@@ -409,7 +503,7 @@ function renderField(key, val) {
   return `<div>${label}<div class="field-value">${esc(String(val))}</div></div>`;
 }
 
-function renderTaskResult(taskName, result, imageUrl) {
+function renderTaskResult(taskName, result, imageUrl, isPdfItem) {
   const el = document.createElement('div');
   el.className = 'task-section';
   el.id = `task-${taskName}`;
@@ -439,7 +533,14 @@ function renderTaskResult(taskName, result, imageUrl) {
 
   el.innerHTML = header + tokensHtml;
 
-  if (taskName === 'ocr_mistral') {
+  // For PDFs, ocr_mistral is rendered page-by-page above; show summary here
+  if (taskName === 'ocr_mistral' && isPdfItem) {
+    const pageCount = result.pages?.length ?? 0;
+    const summary = document.createElement('div');
+    summary.className = 'field-value';
+    summary.textContent = `${pageCount} page(s) processed. See page-by-page view above.`;
+    el.appendChild(summary);
+  } else if (taskName === 'ocr_mistral') {
     el.appendChild(renderLayoutBlocks(result.layout_blocks, result.image_blocks, result.pages));
   } else {
     const fields = document.createElement('div');
@@ -463,24 +564,36 @@ function renderTaskResult(taskName, result, imageUrl) {
   return el;
 }
 
-// ── Main ───────────────────────────────────────────────────────────────────────
+// -- Main --------------------------------------------------------------------
 async function main() {
-  const params  = new URL(location.href).searchParams;
-  const subject = params.get('url');
-  const dataDir = params.get('data') ?? 'data';
+  const params   = new URL(location.href).searchParams;
+  const subject  = params.get('url');
+  const dataDir  = params.get('data') ?? 'data';
+  const itemType = params.get('type') ?? (isPdf(subject??'') ? 'pdf' : 'image');
 
   if (!subject) {
     document.getElementById('loading').innerHTML =
-      '<p>No <code>?url=</code> parameter. <a href="index.html">← Gallery</a></p>';
+      '<p>No <code>?url=</code> parameter. <a href="index.html">&larr; Gallery</a></p>';
     return;
   }
 
   // Load manifest for title + pipeline order
+  // Try the type-specific manifest first, then fall back
+  const manifestFiles = itemType === 'pdf'
+    ? ['pdfs.json', 'images.json']
+    : ['images.json', 'pdfs.json'];
+
   let entry = null;
-  try {
-    const r = await fetch(`${dataDir}/images.json`);
-    if (r.ok) { const all = await r.json(); entry = all.find(e=>e.url===subject)??null; }
-  } catch(_) {}
+  for (const mf of manifestFiles) {
+    try {
+      const r = await fetch(`${dataDir}/${mf}`);
+      if (r.ok) {
+        const all = await r.json();
+        entry = all.find(e => e.url === subject) ?? null;
+        if (entry) break;
+      }
+    } catch(_) {}
+  }
 
   // Load result file
   const hash = await sha1hex(subject);
@@ -493,7 +606,7 @@ async function main() {
     document.getElementById('loading').innerHTML =
       `<p>Results not found.</p><p>${esc(e.message)}</p>
        <p>Run <code>bin/console app:process</code> first.</p>
-       <p><a href="index.html">← Gallery</a></p>`;
+       <p><a href="index.html">&larr; Gallery</a></p>`;
     return;
   }
 
@@ -503,33 +616,28 @@ async function main() {
   const title    = entry?.title ?? subject;
   const pipeline = entry?.pipeline ?? Object.keys(data.results??{});
   const results  = data.results ?? {};
-  const imageUrl = dispUrl(subject);
+  const isPdfItem = isPdf(subject);
 
   document.title = title + ' — AI Pipeline Demo';
   document.getElementById('topTitle').textContent = title;
 
-  // Hero image with magnifier (images only) or PDF embed
-  if (isImg(subject)) {
+  // -- Render viewer based on type --
+  if (isPdfItem) {
+    // PDF: render page images + OCR side by side
+    const ocrResult = results['ocr_mistral'];
+    if (ocrResult && !ocrResult.error) {
+      renderPdfPages(subject, ocrResult);
+    }
+  } else if (isImg(subject)) {
+    // Image: magnifier viewer
     const wrap    = document.getElementById('magWrap');
     const hero    = document.getElementById('heroImg');
     const lens    = document.getElementById('magLens');
     const lensImg = document.getElementById('magLensImg');
-    hero.src      = imageUrl;
-    lensImg.src   = imageUrl;
+    hero.src      = subject;
+    lensImg.src   = subject;
     wrap.style.display = 'block';
     hero.onload = () => initMagnifier(wrap, hero, lens, lensImg, 4);
-  } else if (isPdf(subject)) {
-    const wrap = document.getElementById('magWrap');
-    wrap.style.display = 'block';
-    wrap.style.maxHeight = '600px';
-    wrap.style.cursor = 'default';
-    wrap.innerHTML = `<object data="${esc(imageUrl)}" type="application/pdf"
-        style="width:100%;height:600px;display:block">
-        <p style="padding:20px;color:#718096">
-          PDF preview not available in this browser.
-          <a href="${esc(imageUrl)}" target="_blank">Open PDF ↗</a>
-        </p>
-      </object>`;
   }
 
   // Pipeline track
@@ -541,7 +649,7 @@ async function main() {
     btn.className = 'track-step';
     btn.innerHTML = `<span class="track-label ${cls}" id="track-${taskName}"
         onclick="document.getElementById('task-${taskName}')?.scrollIntoView({behavior:'smooth'})"
-      >${esc(taskName)}</span>${i<pipeline.length-1?`<span class="track-arrow ${cls}">→</span>`:''}`;
+      >${esc(taskName)}</span>${i<pipeline.length-1?`<span class="track-arrow ${cls}">&rarr;</span>`:''}`;
     track.appendChild(btn);
   });
 
@@ -550,12 +658,12 @@ async function main() {
   const rendered   = new Set();
   for (const taskName of pipeline) {
     if (!results[taskName]) continue;
-    sectionsEl.appendChild(renderTaskResult(taskName, results[taskName], imageUrl));
+    sectionsEl.appendChild(renderTaskResult(taskName, results[taskName], subject, isPdfItem));
     rendered.add(taskName);
   }
   for (const [taskName,result] of Object.entries(results)) {
     if (!rendered.has(taskName))
-      sectionsEl.appendChild(renderTaskResult(taskName, result, imageUrl));
+      sectionsEl.appendChild(renderTaskResult(taskName, result, subject, isPdfItem));
   }
 }
 
