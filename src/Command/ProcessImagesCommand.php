@@ -13,6 +13,8 @@ use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Style\SymfonyStyle;
 use Symfony\Component\DependencyInjection\Attribute\Autowire;
+use Symfony\Component\Process\ExecutableFinder;
+use Symfony\Component\Process\Process;
 use Symfony\Contracts\HttpClient\HttpClientInterface;
 
 /**
@@ -179,10 +181,145 @@ final class ProcessImagesCommand extends Command
             $io->comment(sprintf('  %d entries processed in %s.', $processed, basename($manifestPath)));
         }
 
+        // ── Split PDFs into page images ──────────────────────────────────────
+        $this->splitPdfs($io);
+
         $io->newLine();
         $io->success(sprintf('Processed %d entries across %d manifest(s).', $totalProcessed, count($manifests)));
 
         return Command::SUCCESS;
+    }
+
+    /**
+     * Split PDFs referenced in manifests into per-page JPGs in public/images/pages/.
+     * Uses SHA1(url) as the filename prefix to match the result file naming.
+     * Handles both local and remote PDFs (downloads remote ones to a temp file).
+     * Auto-crops whitespace from scanned pages.
+     * Skips PDFs whose pages already exist.
+     */
+    private function splitPdfs(SymfonyStyle $io): void
+    {
+        $pagesDir = $this->publicDir . '/images/pages';
+
+        $finder   = new ExecutableFinder();
+        $pdftoppm = $finder->find('pdftoppm');
+        if (!$pdftoppm) {
+            $io->warning('pdftoppm not found — install poppler-utils to split PDFs into page images.');
+            return;
+        }
+
+        if (!is_dir($pagesDir)) {
+            mkdir($pagesDir, 0755, true);
+        }
+
+        $mogrify = $finder->find('mogrify');
+
+        // Collect PDF entries from all manifests
+        $pdfEntries = [];
+        foreach (['images.json', 'pdfs.json'] as $manifest) {
+            $path = $this->dataDir . '/' . $manifest;
+            if (!is_file($path)) {
+                continue;
+            }
+            $entries = json_decode(file_get_contents($path), true) ?? [];
+            foreach ($entries as $entry) {
+                $url = $entry['url'] ?? '';
+                if (preg_match('/\.pdf(\?.*)?$/i', $url)) {
+                    $pdfEntries[] = $entry;
+                }
+            }
+        }
+
+        if (!$pdfEntries) {
+            return;
+        }
+
+        $io->section('Splitting PDFs into page images');
+
+        foreach ($pdfEntries as $entry) {
+            $url  = $entry['url'];
+            $sha1 = sha1($url);
+
+            // Skip if pages already exist
+            $existing = glob("{$pagesDir}/{$sha1}-*.jpg");
+            if ($existing) {
+                $io->comment(sprintf('  %s: %d pages exist — skipping.', $entry['title'] ?? $sha1, count($existing)));
+                continue;
+            }
+
+            $io->write(sprintf('  %s... ', $entry['title'] ?? basename($url)));
+
+            // Resolve to a local file path
+            $localPath = $this->resolvePdfToLocal($url);
+            if ($localPath === null) {
+                $io->writeln('<error>cannot access PDF</error>');
+                continue;
+            }
+
+            $process = new Process([$pdftoppm, '-jpeg', '-r', '200', $localPath, "{$pagesDir}/{$sha1}"]);
+            $process->setTimeout(600);
+            $process->run();
+
+            // Clean up temp file for remote PDFs
+            if (!str_starts_with($url, 'file://') && !is_file($this->publicDir . '/' . ltrim($url, '/'))) {
+                @unlink($localPath);
+            }
+
+            if (!$process->isSuccessful()) {
+                $io->writeln('<error>FAILED</error>');
+                $io->warning($process->getErrorOutput());
+                continue;
+            }
+
+            $pageFiles = glob("{$pagesDir}/{$sha1}-*.jpg");
+            $count     = count($pageFiles);
+            $io->write(sprintf('%d pages', $count));
+
+            // Auto-crop whitespace
+            if ($mogrify && $pageFiles) {
+                $cropProcess = new Process(
+                    array_merge([$mogrify, '-fuzz', '10%', '-trim', '+repage'], $pageFiles)
+                );
+                $cropProcess->setTimeout(300);
+                $cropProcess->run();
+
+                $io->writeln($cropProcess->isSuccessful() ? ' <info>(cropped)</info>' : ' <comment>(crop failed)</comment>');
+            } else {
+                $io->writeln($mogrify ? '' : ' <comment>(install imagemagick for auto-crop)</comment>');
+            }
+        }
+    }
+
+    /**
+     * Resolve a PDF URL to a local file path.
+     * Downloads remote PDFs to a temp file.
+     */
+    private function resolvePdfToLocal(string $url): ?string
+    {
+        // Local relative path (e.g. "images/foo.pdf")
+        if (!str_starts_with($url, 'http://') && !str_starts_with($url, 'https://') && !str_starts_with($url, 'file://')) {
+            $path = $this->publicDir . '/' . ltrim($url, '/');
+            return is_readable($path) ? $path : null;
+        }
+
+        // file:// URL
+        if (str_starts_with($url, 'file://')) {
+            $path = substr($url, 7);
+            return is_readable($path) ? $path : null;
+        }
+
+        // Remote URL — download to temp file
+        try {
+            $response = $this->httpClient->request('GET', $url, ['timeout' => 120]);
+            if ($response->getStatusCode() >= 300) {
+                return null;
+            }
+            $tmpFile = tempnam(sys_get_temp_dir(), 'pdf_');
+            file_put_contents($tmpFile, $response->getContent());
+            return $tmpFile;
+        } catch (\Throwable) {
+            return null;
+        }
     }
 
     private function resolveManifest(string $path): string

@@ -102,6 +102,20 @@
       color: #718096;
       margin: 0 0 6px;
     }
+    .card-provenance {
+      font-size: 10px;
+      color: #4a5568;
+      margin: 0 0 6px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .card-provenance a {
+      color: #4a5568;
+    }
+    .card-provenance a:hover {
+      color: #63b3ed;
+    }
     .pipeline-steps {
       display: flex;
       flex-wrap: wrap;
@@ -199,11 +213,18 @@ function displayUrl(url) {
   return url;
 }
 
-/** For PDFs, try to show the first page image from images/pages/ */
-function pdfThumbUrl(url) {
-  // url like "images/Aaron_Chambers_Pension.pdf" -> "images/pages/Aaron_Chambers_Pension-1.jpg"
-  const base = url.replace(/^images\//, '').replace(/\.pdf$/i, '');
-  return `images/pages/${base}-1.jpg`;
+async function sha1hex(str) {
+  const buf  = new TextEncoder().encode(str);
+  const hash = await crypto.subtle.digest('SHA-1', buf);
+  return Array.from(new Uint8Array(hash)).map(b=>b.toString(16).padStart(2,'0')).join('');
+}
+
+/** For PDFs, use the result_file hash (which is sha1 of url) as the page prefix */
+function pdfThumbFromResultFile(resultFile) {
+  if (!resultFile) return null;
+  // result_file is like "ce9e060336acc7313261152034bad5b17fc29186.json"
+  const sha1 = resultFile.replace(/\.json$/, '');
+  return `images/pages/${sha1}-01.jpg`;
 }
 
 async function loadManifest(path) {
@@ -220,6 +241,7 @@ function makeCard(entry, results, type) {
   const url        = entry.url ?? '';
   const title      = entry.title ?? url;
   const collection = entry.collection ?? '';
+  const provenance = entry.provenance ?? '';
   const pipeline   = entry.pipeline ?? [];
   const status     = entry.status ?? 'pending';
   const resultFile = entry.result_file ?? null;
@@ -230,9 +252,11 @@ function makeCard(entry, results, type) {
 
   let thumb;
   if (type === 'pdf') {
-    const src = pdfThumbUrl(url);
-    thumb = `<img class="card-thumb" src="${esc(src)}" alt="${esc(title)}" loading="lazy"
-              onerror="this.outerHTML='<div class=\\'card-thumb placeholder\\'>PDF</div>'" />`;
+    const src = pdfThumbFromResultFile(resultFile);
+    thumb = src
+      ? `<img class="card-thumb" src="${esc(src)}" alt="${esc(title)}" loading="lazy"
+              onerror="this.outerHTML='<div class=\\'card-thumb placeholder\\'>PDF</div>'" />`
+      : `<div class="card-thumb placeholder">PDF</div>`;
   } else if (isImageUrl(url)) {
     thumb = `<img class="card-thumb" src="${esc(displayUrl(url))}" alt="${esc(title)}" loading="lazy" />`;
   } else {
@@ -265,6 +289,7 @@ function makeCard(entry, results, type) {
     <div class="card-body">
       <div class="card-title" title="${esc(title)}">${esc(title)}</div>
       ${collection ? `<div class="card-collection">${esc(collection)}</div>` : ''}
+      ${provenance ? `<div class="card-provenance"><a href="${esc(provenance)}" target="_blank" title="Source" onclick="event.stopPropagation()">${esc(new URL(provenance).hostname)}</a></div>` : ''}
       ${pageInfo}
       <div class="pipeline-steps">${steps}</div>
     </div>

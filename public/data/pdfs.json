@@ -1,7 +1,8 @@
 [
     {
-        "url": "images/sim_soviet-life_1961-02_2.pdf",
-        "title": "Soviet Life Magazine, February 1961",
+        "url": "https://www.marxists.org/history/ussr/culture/soviet-life/full-issues/1958/sim_soviet-life_1958_1.pdf",
+        "provenance": "https://www.marxists.org/history/ussr/culture/soviet-life/index.htm",
+        "title": "Soviet Life Magazine, January 1958",
         "collection": "Marxists Internet Archive",
         "pipeline": [
             "ocr_mistral",
@@ -10,24 +11,25 @@
             "keywords"
         ],
         "inputs": {
-            "max_pages": 83
+            "max_pages": 12
         },
-        "result_file": "726674523798b68af0e5f858f7547d8bbe32bcd4.json",
+        "result_file": "feec63aece11e9121849278bdb053c0b24b5c55d.json",
         "status": "complete"
     },
     {
-        "url": "images/Aaron_Chambers_Pension.pdf",
+        "url": "https://omeka-iaamcfh.s3.amazonaws.com/original/466438fd3594c782fcbf172a1fd2cfc66034bbf0.pdf",
+        "provenance": "https://iaamcfh.omeka.net/s/IAAM_CFH/item/2064",
         "title": "Aaron Chambers Pension Document",
         "collection": "Local",
-        "source_url": "https://omeka-iaamcfh.s3.amazonaws.com/original/466438fd3594c782fcbf172a1fd2cfc66034bbf0.pdf",
         "pipeline": [
             "ocr_mistral",
+            "annotate_handwriting",
             "transcribe_handwriting",
             "people_and_places",
             "extract_metadata",
             "generate_title"
         ],
-        "result_file": "ce9e060336acc7313261152034bad5b17fc29186.json",
+        "result_file": "af1df721c0d61aa66a45e8e86db7f6c77e70d543.json",
         "status": "complete"
     }
 ]

@@ -18,6 +18,9 @@
     .topbar .title { color:#e2e8f0; font-weight:600; flex:1; overflow:hidden;
                      text-overflow:ellipsis; white-space:nowrap; }
     .topbar .sep { color:#2d3748; }
+    .topbar .provenance { font-size:11px; color:#4a5568; white-space:nowrap; }
+    .topbar .provenance a { color:#4a5568; }
+    .topbar .provenance a:hover { color:#63b3ed; }
 
     /* -- Page -- */
     .page { max-width:1400px; margin:0 auto; padding:24px 20px 80px; }
@@ -103,22 +106,66 @@
     .pdf-page-ocr-col {
       padding:16px 18px;
       overflow-y:auto;
-      max-height:800px;
+    }
+    /* When proportional scaling is active, lock height to match the image */
+    .pdf-page-ocr-col.scaled {
+      overflow-y:hidden;
     }
     .pdf-page-heading {
       display:flex; align-items:center; gap:10px;
       padding:8px 14px;
       background:#1a1f2e;
       border-bottom:1px solid #2d3748;
+      flex-wrap:wrap;
     }
     .pdf-page-num { font-weight:700; font-size:13px; color:#90cdf4; font-family:monospace; }
     .pdf-page-dim { font-size:11px; color:#4a5568; }
+    .pdf-page-summary {
+      width:100%;
+      font-size:12px;
+      color:#718096;
+      line-height:1.5;
+      margin-top:4px;
+    }
+    .pdf-page-summary strong { color:#a0aec0; }
+
+    /* Toggle button for proportional scaling */
+    .scale-toggle {
+      margin-left:auto;
+      font-size:11px;
+      padding:2px 10px;
+      border-radius:4px;
+      border:1px solid #2d3748;
+      background:#141720;
+      color:#718096;
+      cursor:pointer;
+      white-space:nowrap;
+    }
+    .scale-toggle:hover { border-color:#4299e1; color:#e2e8f0; }
+    .scale-toggle.active { border-color:#4299e1; color:#90cdf4; background:#1a2332; }
 
     .ocr-text {
-      font-size:13px; color:#a0aec0; line-height:1.8;
+      font-size:16px; color:#a0aec0; line-height:1.8;
       white-space:pre-wrap; word-break:break-word;
     }
     .ocr-text h1,.ocr-text h2,.ocr-text h3 { color:#e2e8f0; margin:0 0 6px; }
+
+    /* Handwritten text annotation */
+    .hw {
+      color:#f6e05e;
+      font-style:italic;
+      font-weight:600;
+      border-bottom:1px dotted #d69e2e44;
+    }
+    /* Low-confidence marker */
+    .uncertain {
+      color:#fc8181;
+      font-size:10px;
+      font-weight:700;
+      vertical-align:super;
+      cursor:help;
+      margin-left:1px;
+    }
 
     /* -- OCR layout blocks -- */
     .ocr-blocks { display:flex; flex-direction:column; gap:10px; }
@@ -226,6 +273,24 @@ const esc = s => String(s??'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replac
 const isImg = url => /\.(jpe?g|png|gif|webp|avif)(\?.*)?$/i.test(url) || url.includes('/iiif/');
 const isPdf = url => /\.pdf(\?.*)?$/i.test(url);
 
+/** Minimal markdown -> HTML (headings, bold, italic, line breaks). */
+function mdToHtml(md) {
+  return esc(md)
+    .split('\n')
+    .map(line => {
+      // Headings
+      if (line.startsWith('### ')) return `<h3>${line.slice(4)}</h3>`;
+      if (line.startsWith('## '))  return `<h2>${line.slice(3)}</h2>`;
+      if (line.startsWith('# '))   return `<h1>${line.slice(2)}</h1>`;
+      // Bold and italic
+      line = line.replace(/\*\*\*(.+?)\*\*\*/g, '<strong><em>$1</em></strong>');
+      line = line.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+      line = line.replace(/\*(.+?)\*/g, '<em>$1</em>');
+      return line;
+    })
+    .join('\n');
+}
+
 // -- Magnifier ---------------------------------------------------------------
 function initMagnifier(wrap, hero, lens, lensImg, zoom=4) {
   const lensW = lens.offsetWidth  || 200;
@@ -259,18 +324,84 @@ function initMagnifier(wrap, hero, lens, lensImg, zoom=4) {
   });
 }
 
+// -- Annotated text rendering ------------------------------------------------
+/**
+ * Convert annotated text with <hw>...</hw> and <?> markers into styled HTML.
+ * Escapes all other HTML, then replaces our markers with styled spans.
+ */
+function renderAnnotatedText(text) {
+  // Escape HTML but preserve our markers by using placeholders
+  const HW_OPEN  = '\x00HW_OPEN\x00';
+  const HW_CLOSE = '\x00HW_CLOSE\x00';
+  const UNCERTAIN = '\x00UNCERTAIN\x00';
+
+  let s = text
+    .replace(/<hw>/gi, HW_OPEN)
+    .replace(/<\/hw>/gi, HW_CLOSE)
+    .replace(/<\?>/g, UNCERTAIN);
+
+  // Escape remaining HTML
+  s = s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+
+  // Replace placeholders with styled markup
+  s = s
+    .replace(new RegExp(HW_OPEN.replace(/\x00/g, '\\x00'), 'g'), '<span class="hw">')
+    .replace(new RegExp(HW_CLOSE.replace(/\x00/g, '\\x00'), 'g'), '</span>')
+    .replace(new RegExp(UNCERTAIN.replace(/\x00/g, '\\x00'), 'g'), '<span class="uncertain" title="Low confidence">?</span>');
+
+  return s;
+}
+
 // -- PDF page image path -----------------------------------------------------
-/** "images/Aaron_Chambers_Pension.pdf" page 0 -> "images/pages/Aaron_Chambers_Pension-01.jpg" */
-function pageImgSrc(pdfUrl, pageIndex, totalPages) {
-  const base = pdfUrl.replace(/^images\//, '').replace(/\.pdf$/i, '');
-  // pdftoppm names: -1, -2, ... or -01, -02, ... depending on total pages
+/** Uses SHA1 hash of the URL as prefix: images/pages/{sha1}-{pagenum}.jpg */
+function pageImgSrc(sha1, pageIndex, totalPages) {
   const digits = totalPages > 99 ? 3 : totalPages > 9 ? 2 : 1;
   const num = String(pageIndex + 1).padStart(digits, '0');
-  return `images/pages/${base}-${num}.jpg`;
+  return `images/pages/${sha1}-${num}.jpg`;
 }
 
 // -- PDF page-by-page renderer -----------------------------------------------
-function renderPdfPages(pdfUrl, ocrResult) {
+/**
+ * Proportional scaling: adjust OCR font-size & line-height so the text
+ * column fills the same vertical space as the page image beside it.
+ */
+function applyProportionalScale(imgEl, ocrCol) {
+  const imgH = imgEl.clientHeight;
+  if (!imgH) return;
+
+  const textEl = ocrCol.querySelector('.ocr-text') ?? ocrCol.querySelector('.ocr-blocks');
+  if (!textEl) return;
+
+  // Count visible lines (newlines in the text content)
+  const text = textEl.textContent ?? '';
+  const lines = text.split('\n').filter(l => l.trim().length > 0);
+  const lineCount = Math.max(lines.length, 1);
+
+  // Target: fill imgH pixels with lineCount lines
+  // lineHeight = imgH / lineCount, fontSize ~ lineHeight * 0.55
+  const targetLineH = imgH / lineCount;
+  const fontSize = Math.max(10, Math.min(28, targetLineH * 0.55));
+  const lineHeight = targetLineH;
+
+  ocrCol.classList.add('scaled');
+  ocrCol.style.height = imgH + 'px';
+  ocrCol.style.padding = '8px 14px';
+  textEl.style.fontSize = fontSize + 'px';
+  textEl.style.lineHeight = lineHeight + 'px';
+}
+
+function removeProportionalScale(ocrCol) {
+  const textEl = ocrCol.querySelector('.ocr-text') ?? ocrCol.querySelector('.ocr-blocks');
+  ocrCol.classList.remove('scaled');
+  ocrCol.style.height = '';
+  ocrCol.style.padding = '';
+  if (textEl) {
+    textEl.style.fontSize = '';
+    textEl.style.lineHeight = '';
+  }
+}
+
+function renderPdfPages(pdfUrl, sha1, ocrResult, annotateResult, allResults) {
   const container = document.getElementById('pdfPages');
   container.style.display = 'block';
 
@@ -283,30 +414,74 @@ function renderPdfPages(pdfUrl, ocrResult) {
   const layoutBlocks = ocrResult?.layout_blocks ?? [];
   const imageBlocks  = ocrResult?.image_blocks ?? [];
 
+  // Build a lookup of annotated text by page index
+  const annotatedByPage = {};
+  if (annotateResult?.pages) {
+    for (const ap of annotateResult.pages) {
+      annotatedByPage[ap.index] = ap.annotated_text ?? '';
+    }
+  }
+
+  // Collect all scale-toggle pairs for the global toggle
+  const scalePairs = [];
+  let scalingOn = false;
+
+  // -- Global toggle at top --
+  const globalBar = document.createElement('div');
+  globalBar.style.cssText = 'display:flex;align-items:center;gap:12px;margin-bottom:16px;padding:8px 14px;background:#141720;border:1px solid #2d3748;border-radius:8px';
+  const globalToggle = document.createElement('button');
+  globalToggle.className = 'scale-toggle';
+  globalToggle.textContent = 'Align text to image';
+  globalToggle.title = 'Scale OCR text so lines roughly match the page image height';
+  globalBar.appendChild(globalToggle);
+
+  const legendEl = document.createElement('span');
+  legendEl.style.cssText = 'font-size:11px;color:#4a5568';
+  legendEl.innerHTML = '<span class="hw">Yellow italic</span> = handwritten &nbsp; <span class="uncertain" title="Low confidence">?</span> = uncertain';
+  globalBar.appendChild(legendEl);
+
+  container.appendChild(globalBar);
+
   for (const page of pages) {
     const pi = page.index ?? 0;
     const md = (page.markdown ?? '').trim();
+    const annotatedText = (annotatedByPage[pi] ?? '').trim();
 
     // Skip blank pages
-    const hasText   = md.length > 10;
+    const hasText   = md.length > 10 || annotatedText.length > 10;
     const hasBlocks = layoutBlocks.some(b => (b.page ?? 0) === pi && b.text?.trim());
     if (!hasText && !hasBlocks) continue;
 
     const section = document.createElement('div');
     section.className = 'pdf-page';
 
-    // -- Heading --
+    // -- Heading (spans both columns) --
     const heading = document.createElement('div');
     heading.className = 'pdf-page-heading';
+    heading.style.gridColumn = '1 / -1';
     const dim = page.dimensions ? `${page.dimensions.width}x${page.dimensions.height}` : '';
     heading.innerHTML = `<span class="pdf-page-num">Page ${pi + 1}</span>${dim ? `<span class="pdf-page-dim">${esc(dim)}</span>` : ''}`;
-    heading.style.gridColumn = '1 / -1';
+
+    // Page-level summary from AI results if available
+    const summary = allResults?.['summarize']?.pages?.[pi]?.summary
+                 ?? allResults?.['summarize']?.summary;  // fall back to doc-level
+    const title   = allResults?.['generate_title']?.pages?.[pi]?.title;
+    if (title || (summary && pages.length <= 10)) {
+      const sumEl = document.createElement('div');
+      sumEl.className = 'pdf-page-summary';
+      let html = '';
+      if (title) html += `<strong>${esc(title)}</strong> `;
+      if (summary && pages.length <= 10) html += esc(summary.slice(0, 200));
+      sumEl.innerHTML = html;
+      heading.appendChild(sumEl);
+    }
+
     section.appendChild(heading);
 
     // -- Left: page image with magnifier --
     const imgCol = document.createElement('div');
     imgCol.className = 'pdf-page-img-col';
-    const imgSrc = pageImgSrc(pdfUrl, pi, pages.length);
+    const imgSrc = pageImgSrc(sha1, pi, pages.length);
     const lensId = `mag-lens-${pi}`;
     const lensImgId = `mag-lens-img-${pi}`;
     const heroId = `page-hero-${pi}`;
@@ -316,52 +491,74 @@ function renderPdfPages(pdfUrl, ocrResult) {
       <span class="mag-hint">Hover to magnify</span>`;
     section.appendChild(imgCol);
 
-    // -- Right: OCR text --
+    // -- Right: OCR text (prefer annotated if available) --
     const ocrCol = document.createElement('div');
     ocrCol.className = 'pdf-page-ocr-col';
+    const ocrColId = `ocr-col-${pi}`;
+    ocrCol.id = ocrColId;
 
-    // Prefer layout blocks if available, fall back to markdown
-    const pageBlocks = layoutBlocks.filter(b => (b.page ?? 0) === pi && b.type !== 'image' && b.text?.trim());
-    if (pageBlocks.length) {
-      const blocksEl = document.createElement('div');
-      blocksEl.className = 'ocr-blocks';
-      const sorted = [...pageBlocks].sort((a,b) => (a.bbox?.y??0) - (b.bbox?.y??0));
-      for (const block of sorted) {
-        const card = document.createElement('div');
-        card.className = `block-card ${block.type}`;
-        const typeLabel = `<div class="block-type-label">${esc(block.type)}</div>`;
-        let textHtml;
-        if (block.type === 'headline')         textHtml = `<div class="block-headline-text">${esc(block.text)}</div>`;
-        else if (block.type === 'subheadline') textHtml = `<div class="block-sub-text">${esc(block.text)}</div>`;
-        else                                   textHtml = `<div class="block-body-text">${esc(block.text)}</div>`;
-        card.innerHTML = typeLabel + textHtml;
-        blocksEl.appendChild(card);
-      }
-      ocrCol.appendChild(blocksEl);
-    } else if (hasText) {
+    if (annotatedText) {
       const prose = document.createElement('div');
       prose.className = 'ocr-text';
-      prose.textContent = md;
+      prose.innerHTML = renderAnnotatedText(annotatedText);
       ocrCol.appendChild(prose);
+    } else {
+      const pageBlocks = layoutBlocks.filter(b => (b.page ?? 0) === pi && b.type !== 'image' && b.text?.trim());
+      if (pageBlocks.length) {
+        const blocksEl = document.createElement('div');
+        blocksEl.className = 'ocr-blocks';
+        const sorted = [...pageBlocks].sort((a,b) => (a.bbox?.y??0) - (b.bbox?.y??0));
+        for (const block of sorted) {
+          const card = document.createElement('div');
+          card.className = `block-card ${block.type}`;
+          let textHtml;
+          if (block.type === 'headline')         textHtml = `<div class="block-headline-text">${esc(block.text)}</div>`;
+          else if (block.type === 'subheadline') textHtml = `<div class="block-sub-text">${esc(block.text)}</div>`;
+          else                                   textHtml = `<div class="block-body-text">${esc(block.text)}</div>`;
+          card.innerHTML = textHtml;
+          blocksEl.appendChild(card);
+        }
+        ocrCol.appendChild(blocksEl);
+      } else if (hasText) {
+        const prose = document.createElement('div');
+        prose.className = 'ocr-text';
+        prose.innerHTML = mdToHtml(md);
+        ocrCol.appendChild(prose);
+      }
     }
 
     section.appendChild(ocrCol);
     container.appendChild(section);
 
-    // Wire up magnifier after element is in the DOM
+    // Wire up magnifier + collect scale pairs
     const heroEl = document.getElementById(heroId);
     const lensEl = document.getElementById(lensId);
     const lensImgEl = document.getElementById(lensImgId);
+
     if (heroEl && lensEl && lensImgEl) {
-      heroEl.addEventListener('load', () => {
+      const initPage = () => {
         initMagnifier(imgCol, heroEl, lensEl, lensImgEl, 3);
-      });
-      // If already loaded (cached)
-      if (heroEl.complete && heroEl.naturalWidth > 0) {
-        initMagnifier(imgCol, heroEl, lensEl, lensImgEl, 3);
-      }
+        scalePairs.push({ imgEl: heroEl, ocrCol });
+        if (scalingOn) applyProportionalScale(heroEl, ocrCol);
+      };
+      heroEl.addEventListener('load', initPage);
+      if (heroEl.complete && heroEl.naturalWidth > 0) initPage();
     }
   }
+
+  // Wire global toggle
+  globalToggle.addEventListener('click', () => {
+    scalingOn = !scalingOn;
+    globalToggle.classList.toggle('active', scalingOn);
+    globalToggle.textContent = scalingOn ? 'Normal text size' : 'Align text to image';
+    for (const { imgEl, ocrCol } of scalePairs) {
+      if (scalingOn) {
+        applyProportionalScale(imgEl, ocrCol);
+      } else {
+        removeProportionalScale(ocrCol);
+      }
+    }
+  });
 }
 
 // -- OCR rendering for single images (unchanged) ----------------------------
@@ -379,7 +576,6 @@ function renderBlocksForPage(layoutBlocks, imageBlocks, pageIndex) {
       if (block.type === 'image' || !block.text?.trim()) continue;
       const card = document.createElement('div');
       card.className = `block-card ${block.type}`;
-      const typeLabel = `<div class="block-type-label">${esc(block.type)}</div>`;
       let textHtml;
       if (block.type === 'headline') {
         textHtml = `<div class="block-headline-text">${esc(block.text)}</div>`;
@@ -388,7 +584,7 @@ function renderBlocksForPage(layoutBlocks, imageBlocks, pageIndex) {
       } else {
         textHtml = `<div class="block-body-text">${esc(block.text)}</div>`;
       }
-      card.innerHTML = typeLabel + textHtml;
+      card.innerHTML = textHtml;
       blocksEl.appendChild(card);
     }
     frag.appendChild(blocksEl);
@@ -533,6 +729,25 @@ function renderTaskResult(taskName, result, imageUrl, isPdfItem) {
 
   el.innerHTML = header + tokensHtml;
 
+  // annotate_handwriting: render with styled markers
+  if (taskName === 'annotate_handwriting' && result.annotated_text) {
+    const prose = document.createElement('div');
+    prose.className = 'ocr-text';
+    prose.innerHTML = renderAnnotatedText(result.annotated_text);
+    el.appendChild(prose);
+
+    const legend = document.createElement('div');
+    legend.style.cssText = 'margin-top:12px;font-size:11px;color:#4a5568';
+    legend.innerHTML = '<span class="hw">Yellow italic = handwritten</span> &nbsp; <span class="uncertain" title="Low confidence">?</span> = uncertain word';
+    el.appendChild(legend);
+
+    const stripped = Object.fromEntries(Object.entries(result).filter(([k])=>k!=='_tokens'&&k!=='image_blocks'));
+    const details = document.createElement('details');
+    details.innerHTML = `<summary>Raw JSON</summary><pre>${esc(JSON.stringify(stripped,null,2))}</pre>`;
+    el.appendChild(details);
+    return el;
+  }
+
   // For PDFs, ocr_mistral is rendered page-by-page above; show summary here
   if (taskName === 'ocr_mistral' && isPdfItem) {
     const pageCount = result.pages?.length ?? 0;
@@ -613,20 +828,36 @@ async function main() {
   document.getElementById('loading').style.display = 'none';
   document.getElementById('page').style.display    = 'block';
 
-  const title    = entry?.title ?? subject;
-  const pipeline = entry?.pipeline ?? Object.keys(data.results??{});
-  const results  = data.results ?? {};
-  const isPdfItem = isPdf(subject);
+  const title      = entry?.title ?? subject;
+  const provenance = entry?.provenance ?? '';
+  const pipeline   = entry?.pipeline ?? Object.keys(data.results??{});
+  const results    = data.results ?? {};
+  const isPdfItem  = isPdf(subject);
 
   document.title = title + ' — AI Pipeline Demo';
   document.getElementById('topTitle').textContent = title;
+
+  // Show provenance link in topbar
+  if (provenance) {
+    const topbar = document.querySelector('.topbar');
+    const provEl = document.createElement('span');
+    provEl.className = 'provenance';
+    try {
+      const host = new URL(provenance).hostname;
+      provEl.innerHTML = `<a href="${esc(provenance)}" target="_blank" title="Source collection">${esc(host)}</a>`;
+    } catch(_) {
+      provEl.innerHTML = `<a href="${esc(provenance)}" target="_blank">Source</a>`;
+    }
+    topbar.appendChild(provEl);
+  }
 
   // -- Render viewer based on type --
   if (isPdfItem) {
     // PDF: render page images + OCR side by side
     const ocrResult = results['ocr_mistral'];
+    const annotateResult = results['annotate_handwriting'];
     if (ocrResult && !ocrResult.error) {
-      renderPdfPages(subject, ocrResult);
+      renderPdfPages(subject, hash, ocrResult, annotateResult, results);
     }
   } else if (isImg(subject)) {
     // Image: magnifier viewer

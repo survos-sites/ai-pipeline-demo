@@ -100,6 +100,7 @@
         "collection": "Local",
         "pipeline": [
             "ocr_mistral",
+            "annotate_handwriting",
             "transcribe_handwriting",
             "people_and_places",
             "extract_metadata",

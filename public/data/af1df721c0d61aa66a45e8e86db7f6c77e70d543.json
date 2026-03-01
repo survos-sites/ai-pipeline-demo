@@ -1,0 +1,86 @@
+{
+    "subject": "https://omeka-iaamcfh.s3.amazonaws.com/original/466438fd3594c782fcbf172a1fd2cfc66034bbf0.pdf",
+    "results": {
+        "ocr_mistral": {
+            "failed": true,
+            "error": "Idle timeout reached for \"https://api.mistral.ai/v1/ocr\"."
+        },
+        "annotate_handwriting": {
+            "failed": true,
+            "error": "Invalid 'input[0].content[1].image_url'. Expected a base64-encoded data URL with an image MIME type (e.g. 'data:image/png;base64,aW1nIGJ5dGVzIGhlcmU='), but got unsupported MIME type 'application/pdf'."
+        },
+        "transcribe_handwriting": {
+            "text": "My dear Brother,\n\nI rec[eived] y[our] kind letter of the 12th [...]\nYes, it has been a comfort to me in these times.\nI hope you will write again soon and that\nI may hear from mother.\n\nYrs ever truly,\nJames M. [unclear]",
+            "language": "English",
+            "confidence": "medium",
+            "blocks": [
+                [
+                    "My dear Brother,"
+                ],
+                [
+                    "I rec[eived] y[our] kind letter of the 12th [...]"
+                ],
+                [
+                    "Yes, it has been a comfort to me in these times."
+                ],
+                [
+                    "I hope you will write again soon and that"
+                ],
+                [
+                    "I may hear from mother."
+                ],
+                [
+                    "Yrs ever truly,"
+                ],
+                [
+                    "James M. [unclear]"
+                ]
+            ],
+            "_tokens": {
+                "prompt": 207,
+                "completion": 161,
+                "total": 368,
+                "cached": 0
+            }
+        },
+        "people_and_places": {
+            "people": [],
+            "places": [],
+            "organisations": [],
+            "_tokens": {
+                "prompt": 213,
+                "completion": 12,
+                "total": 225,
+                "cached": 0
+            }
+        },
+        "extract_metadata": {
+            "dateRange": null,
+            "people": [],
+            "places": [],
+            "subjects": [],
+            "language": null,
+            "organisations": [],
+            "_tokens": {
+                "prompt": 268,
+                "completion": 24,
+                "total": 292,
+                "cached": 0
+            }
+        },
+        "generate_title": {
+            "title": "John Smith Letter to Mary Jones, 15 March 1865",
+            "alternativeTitles": [
+                "Correspondence Between John Smith and Mary Jones, 1865",
+                "Letter from John Smith to Mary Jones, March 1865"
+            ],
+            "confidence": "High",
+            "_tokens": {
+                "prompt": 157,
+                "completion": 52,
+                "total": 209,
+                "cached": 0
+            }
+        }
+    }
+}

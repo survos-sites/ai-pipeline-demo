@@ -2,7 +2,7 @@
     "subject": "images/tubman-pension.jpg",
     "results": {
         "ocr_mistral": {
-            "text": "GENERAL AFFIDAVIT\n\nState of , County of , ss:\n\nIn the matter of\n\nON THIS day of , A. D. 18 , personally\n\nappeared before me in and for the afore-\n\nsaid County, duly authorized to administer oaths\n\naged , years, a resident of , in the County\n\nof , and State of\n\nwhose Post-office address is\n\n, aged years, a resident of\n\n, in the County of\n\nand State of , whose Post-office address is\n\nwell known to be reputable and entitled to credit, and who, being duly sworn, declared in relation to aforesaid\n\ncase as follows:\n\n(NOTE.—Affiants should state how they gain a knowledge of the facts to which they testify.)\n\nMy claim against the U.S. is for three\n\nyears services as Nurse and cook\n\nin hospitals, and as commander\n\nof General Men (Eight or Nine) as scouts\n\nduring the late war of the Rebellion,\n\nunder directions and orders of Edwin\n\nM. Stanton Secretary of War, and of\n\nseveral Generals.\n\nI claim for my services above named\n\nthe sum of Eighteen hundred dollars.\n\nThe annexed copies have recently been\n\nread over to me and are true to the\n\nbest of my knowledge information\n\nand belief.\n\nI further declare that I have no interest in said case and am\n\nnot concerned in its prosecution. and allowance.\n\nDan M. Carty\n\nM. Elsie McCarty\n\n(If Affiants sign by mark, two witnesses who write sign here.)\n\nHarriet Harris\n\nSate Harriet Tubman\n\n(Signatures of Affiants.)",
+            "text": "GENERAL AFFIDAVIT\n\nState of , County of , ss:\n\nIn the matter of\n\nON THIS day of , A. D. 18 , personally\n\nappeared before me in and for the afore-\n\nsaid County, duly authorized to administer oaths\n\naged , years, a resident of , in the County\n\nof , and State of\n\nwhose Post-office address is\n\n, aged years, a resident of\n\n, in the County of\n\nand State of , whose Post-office address is\n\nwell known to be reputable and entitled to credit, and who, being duly sworn, declared in relation to aforesaid\n\ncase as follows:\n\n(NOTE.—Affiants should state how they gain a knowledge of the facts to which they testify.)\n\nMy claim against the U.S. is for three\n\nyears services as Nurse and cook\n\nin hospitals, and as commander\n\nof General Men (Eight or Nine) as scouts\n\nduring the late war of the Rebellion\n\nunder directions and orders of Edwin\n\nM. Stanton Secretary of War, and of\n\nseveral Generals.\n\nI claim for my services above named\n\nthe sum of Eighteen hundred dollars.\n\nThe annexed copies have recently been\n\nread over to me and are true to the\n\nbest of my knowledge information\n\nand belief.\n\nI further declare that I have no interest in said case and am\n\nnot concerned in its prosecution. and allowance.\n\nDan M. Carty\n\nM. Elsie McCarty\n\n(If Affiants sign by mark, two witnesses who write sign here.)\n\nHarriet Harris\n\nSate Harriet Tubman\n\n(Signatures of Affiants.)",
             "language": null,
             "confidence": "high",
             "layout_blocks": [
@@ -14,7 +14,7 @@
                         "x": 0,
                         "y": 0,
                         "width": 1525,
-                        "height": 156
+                        "height": 139
                     }
                 },
                 {
@@ -23,9 +23,9 @@
                     "text": "State of , County of , ss:",
                     "bbox": {
                         "x": 0,
-                        "y": 156,
+                        "y": 139,
                         "width": 1525,
-                        "height": 156
+                        "height": 139
                     }
                 },
                 {
@@ -34,31 +34,20 @@
                     "text": "In the matter of",
                     "bbox": {
                         "x": 0,
-                        "y": 313,
+                        "y": 278,
                         "width": 1525,
-                        "height": 156
+                        "height": 139
                     }
                 },
                 {
                     "page": 0,
                     "type": "paragraph",
-                    "text": "ON THIS day of , A. D. 18 , personally appeared before me in and for the afore-said County, duly authorized to administer oaths aged , years, a resident of , in the County of , and State of",
+                    "text": "ON THIS day of , A. D. 18 , personally appeared before me in and for the afore-said County, duly authorized to administer oaths aged , years, a resident of , in the County of , and State of whose Post-office address is , aged years, a resident of , in the County of and State of , whose Post-office address is well known to be reputable and entitled to credit, and who, being duly sworn, declared in relation to aforesaid case as follows:",
                     "bbox": {
                         "x": 0,
-                        "y": 469,
+                        "y": 417,
                         "width": 1525,
-                        "height": 156
-                    }
-                },
-                {
-                    "page": 0,
-                    "type": "paragraph",
-                    "text": "whose Post-office address is , aged years, a resident of , in the County of and State of , whose Post-office address is well known to be reputable and entitled to credit, and who, being duly sworn, declared in relation to aforesaid case as follows:",
-                    "bbox": {
-                        "x": 0,
-                        "y": 625,
-                        "width": 1525,
-                        "height": 156
+                        "height": 417
                     }
                 },
                 {
@@ -67,20 +56,20 @@
                     "text": "(NOTE.—Affiants should state how they gain a knowledge of the facts to which they testify.)",
                     "bbox": {
                         "x": 0,
-                        "y": 781,
+                        "y": 833,
                         "width": 1525,
-                        "height": 156
+                        "height": 139
                     }
                 },
                 {
                     "page": 0,
                     "type": "paragraph",
-                    "text": "My claim against the U.S. is for three years services as Nurse and cook in hospitals, and as commander of General Men (Eight or Nine) as scouts during the late war of the Rebellion, under directions and orders of Edwin M. Stanton Secretary of War, and of several Generals.",
+                    "text": "My claim against the U.S. is for three years services as Nurse and cook in hospitals, and as commander of General Men (Eight or Nine) as scouts during the late war of the Rebellion under directions and orders of Edwin M. Stanton Secretary of War, and of several Generals.",
                     "bbox": {
                         "x": 0,
-                        "y": 938,
+                        "y": 972,
                         "width": 1525,
-                        "height": 156
+                        "height": 278
                     }
                 },
                 {
@@ -89,9 +78,9 @@
                     "text": "I claim for my services above named the sum of Eighteen hundred dollars.",
                     "bbox": {
                         "x": 0,
-                        "y": 1094,
+                        "y": 1250,
                         "width": 1525,
-                        "height": 156
+                        "height": 139
                     }
                 },
                 {
@@ -100,9 +89,9 @@
                     "text": "The annexed copies have recently been read over to me and are true to the best of my knowledge information and belief.",
                     "bbox": {
                         "x": 0,
-                        "y": 1250,
+                        "y": 1389,
                         "width": 1525,
-                        "height": 156
+                        "height": 139
                     }
                 },
                 {
@@ -111,31 +100,31 @@
                     "text": "I further declare that I have no interest in said case and am not concerned in its prosecution. and allowance.",
                     "bbox": {
                         "x": 0,
-                        "y": 1406,
+                        "y": 1528,
                         "width": 1525,
-                        "height": 156
+                        "height": 139
                     }
                 },
                 {
                     "page": 0,
-                    "type": "byline",
+                    "type": "paragraph",
                     "text": "Dan M. Carty",
                     "bbox": {
                         "x": 0,
-                        "y": 1563,
+                        "y": 1667,
                         "width": 1525,
-                        "height": 156
+                        "height": 139
                     }
                 },
                 {
                     "page": 0,
-                    "type": "byline",
+                    "type": "paragraph",
                     "text": "M. Elsie McCarty",
                     "bbox": {
                         "x": 0,
-                        "y": 1719,
+                        "y": 1806,
                         "width": 1525,
-                        "height": 156
+                        "height": 139
                     }
                 },
                 {
@@ -144,31 +133,31 @@
                     "text": "(If Affiants sign by mark, two witnesses who write sign here.)",
                     "bbox": {
                         "x": 0,
-                        "y": 1875,
+                        "y": 1944,
                         "width": 1525,
-                        "height": 156
+                        "height": 139
                     }
                 },
                 {
                     "page": 0,
-                    "type": "byline",
+                    "type": "paragraph",
                     "text": "Harriet Harris",
                     "bbox": {
                         "x": 0,
-                        "y": 2031,
+                        "y": 2083,
                         "width": 1525,
-                        "height": 156
+                        "height": 139
                     }
                 },
                 {
                     "page": 0,
-                    "type": "byline",
+                    "type": "paragraph",
                     "text": "Sate Harriet Tubman",
                     "bbox": {
                         "x": 0,
-                        "y": 2188,
+                        "y": 2222,
                         "width": 1525,
-                        "height": 156
+                        "height": 139
                     }
                 },
                 {
@@ -177,9 +166,9 @@
                     "text": "(Signatures of Affiants.)",
                     "bbox": {
                         "x": 0,
-                        "y": 2344,
+                        "y": 2361,
                         "width": 1525,
-                        "height": 156
+                        "height": 139
                     }
                 }
             ],
@@ -187,7 +176,7 @@
             "pages": [
                 {
                     "index": 0,
-                    "markdown": "GENERAL AFFIDAVIT\n\nState of , County of , ss:\n\nIn the matter of\n\nON THIS day of , A. D. 18 , personally\n\nappeared before me in and for the afore-\n\nsaid County, duly authorized to administer oaths\n\naged , years, a resident of , in the County\n\nof , and State of\n\nwhose Post-office address is\n\n, aged years, a resident of\n\n, in the County of\n\nand State of , whose Post-office address is\n\nwell known to be reputable and entitled to credit, and who, being duly sworn, declared in relation to aforesaid\n\ncase as follows:\n\n(NOTE.—Affiants should state how they gain a knowledge of the facts to which they testify.)\n\nMy claim against the U.S. is for three\n\nyears services as Nurse and cook\n\nin hospitals, and as commander\n\nof General Men (Eight or Nine) as scouts\n\nduring the late war of the Rebellion,\n\nunder directions and orders of Edwin\n\nM. Stanton Secretary of War, and of\n\nseveral Generals.\n\nI claim for my services above named\n\nthe sum of Eighteen hundred dollars.\n\nThe annexed copies have recently been\n\nread over to me and are true to the\n\nbest of my knowledge information\n\nand belief.\n\nI further declare that I have no interest in said case and am\n\nnot concerned in its prosecution. and allowance.\n\nDan M. Carty\n\nM. Elsie McCarty\n\n(If Affiants sign by mark, two witnesses who write sign here.)\n\nHarriet Harris\n\nSate Harriet Tubman\n\n(Signatures of Affiants.)",
+                    "markdown": "GENERAL AFFIDAVIT\n\nState of , County of , ss:\n\nIn the matter of\n\nON THIS day of , A. D. 18 , personally\n\nappeared before me in and for the afore-\n\nsaid County, duly authorized to administer oaths\n\naged , years, a resident of , in the County\n\nof , and State of\n\nwhose Post-office address is\n\n, aged years, a resident of\n\n, in the County of\n\nand State of , whose Post-office address is\n\nwell known to be reputable and entitled to credit, and who, being duly sworn, declared in relation to aforesaid\n\ncase as follows:\n\n(NOTE.—Affiants should state how they gain a knowledge of the facts to which they testify.)\n\nMy claim against the U.S. is for three\n\nyears services as Nurse and cook\n\nin hospitals, and as commander\n\nof General Men (Eight or Nine) as scouts\n\nduring the late war of the Rebellion\n\nunder directions and orders of Edwin\n\nM. Stanton Secretary of War, and of\n\nseveral Generals.\n\nI claim for my services above named\n\nthe sum of Eighteen hundred dollars.\n\nThe annexed copies have recently been\n\nread over to me and are true to the\n\nbest of my knowledge information\n\nand belief.\n\nI further declare that I have no interest in said case and am\n\nnot concerned in its prosecution. and allowance.\n\nDan M. Carty\n\nM. Elsie McCarty\n\n(If Affiants sign by mark, two witnesses who write sign here.)\n\nHarriet Harris\n\nSate Harriet Tubman\n\n(Signatures of Affiants.)",
                     "dimensions": {
                         "dpi": 200,
                         "height": 2500,
@@ -202,7 +191,7 @@
                 "pages": [
                     {
                         "index": 0,
-                        "markdown": "GENERAL AFFIDAVIT\n\nState of , County of , ss:\n\nIn the matter of\n\nON THIS day of , A. D. 18 , personally\n\nappeared before me in and for the afore-\n\nsaid County, duly authorized to administer oaths\n\naged , years, a resident of , in the County\n\nof , and State of\n\nwhose Post-office address is\n\n, aged years, a resident of\n\n, in the County of\n\nand State of , whose Post-office address is\n\nwell known to be reputable and entitled to credit, and who, being duly sworn, declared in relation to aforesaid\n\ncase as follows:\n\n(NOTE.—Affiants should state how they gain a knowledge of the facts to which they testify.)\n\nMy claim against the U.S. is for three\n\nyears services as Nurse and cook\n\nin hospitals, and as commander\n\nof General Men (Eight or Nine) as scouts\n\nduring the late war of the Rebellion,\n\nunder directions and orders of Edwin\n\nM. Stanton Secretary of War, and of\n\nseveral Generals.\n\nI claim for my services above named\n\nthe sum of Eighteen hundred dollars.\n\nThe annexed copies have recently been\n\nread over to me and are true to the\n\nbest of my knowledge information\n\nand belief.\n\nI further declare that I have no interest in said case and am\n\nnot concerned in its prosecution. and allowance.\n\nDan M. Carty\n\nM. Elsie McCarty\n\n(If Affiants sign by mark, two witnesses who write sign here.)\n\nHarriet Harris\n\nSate Harriet Tubman\n\n(Signatures of Affiants.)",
+                        "markdown": "GENERAL AFFIDAVIT\n\nState of , County of , ss:\n\nIn the matter of\n\nON THIS day of , A. D. 18 , personally\n\nappeared before me in and for the afore-\n\nsaid County, duly authorized to administer oaths\n\naged , years, a resident of , in the County\n\nof , and State of\n\nwhose Post-office address is\n\n, aged years, a resident of\n\n, in the County of\n\nand State of , whose Post-office address is\n\nwell known to be reputable and entitled to credit, and who, being duly sworn, declared in relation to aforesaid\n\ncase as follows:\n\n(NOTE.—Affiants should state how they gain a knowledge of the facts to which they testify.)\n\nMy claim against the U.S. is for three\n\nyears services as Nurse and cook\n\nin hospitals, and as commander\n\nof General Men (Eight or Nine) as scouts\n\nduring the late war of the Rebellion\n\nunder directions and orders of Edwin\n\nM. Stanton Secretary of War, and of\n\nseveral Generals.\n\nI claim for my services above named\n\nthe sum of Eighteen hundred dollars.\n\nThe annexed copies have recently been\n\nread over to me and are true to the\n\nbest of my knowledge information\n\nand belief.\n\nI further declare that I have no interest in said case and am\n\nnot concerned in its prosecution. and allowance.\n\nDan M. Carty\n\nM. Elsie McCarty\n\n(If Affiants sign by mark, two witnesses who write sign here.)\n\nHarriet Harris\n\nSate Harriet Tubman\n\n(Signatures of Affiants.)",
                         "images": [],
                         "tables": [],
                         "hyperlinks": [],
@@ -216,7 +205,7 @@
                     }
                 ],
                 "model": "mistral-ocr-latest",
-                "document_annotation": "{\n  \"blocks\": [\n    {\n      \"type\": \"headline\",\n      \"text\": \"GENERAL AFFIDAVIT\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 0,\n        \"width\": 100,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"State of , County of , ss:\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 10,\n        \"width\": 100,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"In the matter of\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 20,\n        \"width\": 100,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"ON THIS day of , A. D. 18 , personally appeared before me in and for the afore-said County, duly authorized to administer oaths aged , years, a resident of , in the County of , and State of\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 30,\n        \"width\": 100,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"whose Post-office address is , aged years, a resident of , in the County of and State of , whose Post-office address is well known to be reputable and entitled to credit, and who, being duly sworn, declared in relation to aforesaid case as follows:\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 40,\n        \"width\": 100,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"(NOTE.—Affiants should state how they gain a knowledge of the facts to which they testify.)\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 50,\n        \"width\": 100,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"My claim against the U.S. is for three years services as Nurse and cook in hospitals, and as commander of General Men (Eight or Nine) as scouts during the late war of the Rebellion, under directions and orders of Edwin M. Stanton Secretary of War, and of several Generals.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 60,\n        \"width\": 100,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"I claim for my services above named the sum of Eighteen hundred dollars.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 70,\n        \"width\": 100,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"The annexed copies have recently been read over to me and are true to the best of my knowledge information and belief.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 80,\n        \"width\": 100,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"I further declare that I have no interest in said case and am not concerned in its prosecution. and allowance.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 90,\n        \"width\": 100,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"byline\",\n      \"text\": \"Dan M. Carty\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 100,\n        \"width\": 100,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"byline\",\n      \"text\": \"M. Elsie McCarty\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 110,\n        \"width\": 100,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"(If Affiants sign by mark, two witnesses who write sign here.)\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 120,\n        \"width\": 100,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"byline\",\n      \"text\": \"Harriet Harris\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 130,\n        \"width\": 100,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"byline\",\n      \"text\": \"Sate Harriet Tubman\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 140,\n        \"width\": 100,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"(Signatures of Affiants.)\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 150,\n        \"width\": 100,\n        \"height\": 10\n      }\n    }\n  ]\n}",
+                "document_annotation": "{\n  \"blocks\": [\n    {\n      \"type\": \"headline\",\n      \"text\": \"GENERAL AFFIDAVIT\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 0,\n        \"width\": 100,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"State of , County of , ss:\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 10,\n        \"width\": 100,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"In the matter of\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 20,\n        \"width\": 100,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"ON THIS day of , A. D. 18 , personally appeared before me in and for the afore-said County, duly authorized to administer oaths aged , years, a resident of , in the County of , and State of whose Post-office address is , aged years, a resident of , in the County of and State of , whose Post-office address is well known to be reputable and entitled to credit, and who, being duly sworn, declared in relation to aforesaid case as follows:\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 30,\n        \"width\": 100,\n        \"height\": 30\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"(NOTE.—Affiants should state how they gain a knowledge of the facts to which they testify.)\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 60,\n        \"width\": 100,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"My claim against the U.S. is for three years services as Nurse and cook in hospitals, and as commander of General Men (Eight or Nine) as scouts during the late war of the Rebellion under directions and orders of Edwin M. Stanton Secretary of War, and of several Generals.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 70,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"I claim for my services above named the sum of Eighteen hundred dollars.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 90,\n        \"width\": 100,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"The annexed copies have recently been read over to me and are true to the best of my knowledge information and belief.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 100,\n        \"width\": 100,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"I further declare that I have no interest in said case and am not concerned in its prosecution. and allowance.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 110,\n        \"width\": 100,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"Dan M. Carty\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 120,\n        \"width\": 100,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"M. Elsie McCarty\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 130,\n        \"width\": 100,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"(If Affiants sign by mark, two witnesses who write sign here.)\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 140,\n        \"width\": 100,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"Harriet Harris\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 150,\n        \"width\": 100,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"Sate Harriet Tubman\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 160,\n        \"width\": 100,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"(Signatures of Affiants.)\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 170,\n        \"width\": 100,\n        \"height\": 10\n      }\n    }\n  ]\n}",
                 "usage_info": {
                     "pages_processed": 1,
                     "doc_size_bytes": 352889
@@ -224,104 +213,102 @@
             }
         },
         "transcribe_handwriting": {
-            "text": "My dear \nIn the U.S. is for three\nupon services, as Nurse and cook\nto the, in the commander, of Hospital's (Eight or Nine) at Rolla\nduring the late war of Rebellion,\nunder directions and orders of Edwin\nM. Stanton, Secretary of War, and of\nseveral Generals.\nI claim from my services above named\nthe sum of Eighteen hundred dollars.\nThe amended copies have recently been\nread over to me and are true to the\nbest of my knowledge information\nand belief.\n\nI further declare that I have no interest in said case and am\nnot concerned in its prosecution. and allowance. Wm. L. Clark,\n\nMark\nW. Elise M. Clark\n\n\nH. her\nX Harriet Davis\n\nmark\n\nSate Harriet Tubman\na mark",
+            "text": "My dear Agant The U.S. is for three years paid no more and could\nnot emploee me to commisary. I am the comander\nof Journal 8 (eight a Man) as Regt.\nDuring the late war of Rebellion.\nrender directions and orders of Edison.\nMedison Secretary of War and of\nseveral Generals.\nI claiming my services above named\nthe sum of Eighteen hundred dollars.\nThe aredafel copies have mostly been\nread over to me and are true to the\nbest of my knowledge information\nand belief.\n\nI further declare that I have no interest in said case and am\nnot concerned in its prosecution and allowance.\n\nOwen H. Charlet\nW. Elsie Mc North\n\n(x) Harriet Tubman\nLate Harriet Tubman\nher mark",
             "language": "English",
             "confidence": "medium",
             "blocks": [
                 [
-                    "My dear",
-                    "In the U.S. is for three",
-                    "upon services, as Nurse and cook",
-                    "to the, in the commander, of Hospital's (Eight or Nine) at Rolla",
-                    "during the late war of Rebellion,",
-                    "under directions and orders of Edwin",
-                    "M. Stanton, Secretary of War, and of",
+                    "My dear Agant The U.S. is for three",
+                    "years paid no more and could",
+                    "not emploee me to commisary. I am the comander",
+                    "of Journal 8 (eight a Man) as Regt.",
+                    "During the late war of Rebellion.",
+                    "render directions and orders of Edison.",
+                    "Medison Secretary of War and of",
                     "several Generals.",
-                    "I claim from my services above named",
+                    "I claiming my services above named",
                     "the sum of Eighteen hundred dollars.",
-                    "The amended copies have recently been",
+                    "The aredafel copies have mostly been",
                     "read over to me and are true to the",
                     "best of my knowledge information",
-                    "and belief.",
-                    "",
+                    "and belief."
+                ],
+                [
                     "I further declare that I have no interest in said case and am",
-                    "not concerned in its prosecution. and allowance. Wm. L. Clark,",
-                    "",
-                    "Mark",
-                    "W. Elise M. Clark",
-                    "",
-                    "",
-                    "H. her",
-                    "X Harriet Davis",
-                    "",
-                    "mark",
-                    "",
-                    "Sate Harriet Tubman",
-                    "a mark"
+                    "not concerned in its prosecution and allowance."
+                ],
+                [
+                    "Owen H. Charlet",
+                    "W. Elsie Mc North"
+                ],
+                [
+                    "(x) Harriet Tubman",
+                    "Late Harriet Tubman",
+                    "her mark"
                 ]
             ],
             "_tokens": {
                 "prompt": 1311,
-                "completion": 376,
-                "total": 1687,
+                "completion": 372,
+                "total": 1683,
                 "cached": 0
             }
         },
         "people_and_places": {
             "people": [
                 "Daniel Davis",
-                "William H. Charty",
-                "W. Elia W. Clark (possible)"
+                "Frank Harrison",
+                "W. Elie Wilkerson"
             ],
             "places": [],
             "organisations": [
-                "United States (U.S.)"
+                "United States",
+                "Department of War",
+                "Republican"
             ],
             "_tokens": {
                 "prompt": 37203,
-                "completion": 39,
-                "total": 37242,
+                "completion": 36,
+                "total": 37239,
                 "cached": 0
             }
         },
         "extract_metadata": {
-            "dateRange": "A. D. 18",
+            "dateRange": "1860s",
             "people": [
-                "not specified",
-                "not specified",
-                "William M. Charty",
                 "Daniel Davis",
-                "Mrs. Harriet W. Mann"
+                "M. D. Clark",
+                "W. Eli W. Clark"
             ],
             "places": [],
             "subjects": [
-                "U.S. Civil War",
-                "affidavit",
-                "nursing",
-                "scouting"
+                "Civil War",
+                "Affidavit",
+                "Veterans' Claims"
             ],
             "language": "en",
-            "organisations": [],
+            "organisations": [
+                "U.S. Military"
+            ],
             "_tokens": {
                 "prompt": 37306,
-                "completion": 67,
-                "total": 37373,
+                "completion": 94,
+                "total": 37400,
                 "cached": 0
             }
         },
         "generate_title": {
-            "title": "General Affidavit from William M. Charty, A.D. 18",
-            "alternativeTitles": [
-                "Affidavit Related to Case of William M. Charty, A.D. 18",
-                "Legal Affidavit by William M. Charty, Daniel Davis, Mrs. Harriet W. Mann, A.D. 18"
+            "failed": true,
+            "error": "Idle timeout reached for \"https://api.openai.com/v1/responses\"."
+        },
+        "annotate_handwriting": {
+            "pages": [
+                {
+                    "index": 0,
+                    "annotated_text": "GENERAL AFFIDAVIT\n\nState of <hw>New York</hw>, County of <hw>Auburn</hw>, ss:\n\nIn the matter of\n\nON THIS <hw>24th</hw> day of <hw>February</hw>, A. D. 18<hw>94</hw>, personally\n\nappeared before me in and for the afore-\n\nsaid County, duly authorized to administer oaths\n\naged <hw>73</hw>, years, a resident of <hw>Auburn</hw>, in the County\n\nof <hw>Cayuga</hw>, and State of <hw>New York</hw>\n\nwhose Post-office address is <hw>329 South Street</hw>\n\n<hw>Harriet Tubman</hw>, aged <hw>73</hw> years, a resident of\n\n<hw>Auburn</hw>, in the County of <hw>Cayuga</hw>\n\nand State of <hw>New York</hw>, whose Post-office address is <hw>329 South Street</hw>\n\nwell known to be reputable and entitled to credit, and who, being duly sworn, declared in relation to aforesaid\n\ncase as follows:\n\n(NOTE.—Affiants should state how they gain a knowledge of the facts to which they testify.)\n\n<hw>My claim against The U.S. is for three</hw>\n\n<hw>years services as Nurse and cook</hw>\n\n<hw>in hospitals, and as commander</hw>\n\n<hw>of General Men (Eight or Nine) as scouts</hw>\n\n<hw>during the late war of the Rebellion</hw>\n\n<hw>under directions and orders of Edwin</hw>\n\n<hw>M. Stanton Secretary of War, and of</hw>\n\n<hw>several Generals.</hw>\n\n<hw>I claim for my services above named</hw>\n\n<hw>the sum of Eighteen hundred dollars.</hw>\n\n<hw>The annexed copies have recently been</hw>\n\n<hw>read over to me and are true to the</hw>\n\n<hw>best of my knowledge information</hw>\n\n<hw>and belief.</hw>\n\nI further declare that <hw>I have no</hw> interest in said case and <hw>am</hw>\n\nnot concerned in its prosecution. and allowance.\n\n<hw>Dan M. Carty</hw>\n\n<hw>M. Elsie McCarty</hw>\n\n(If Affiants sign by mark, two witnesses who write sign here.)\n\n<hw>Harriet Harris</hw>\n\n<hw>Sate Harriet Tubman</hw>\n\n(Signatures of Affiants.)"
+                }
             ],
-            "confidence": "high",
-            "_tokens": {
-                "prompt": 37023,
-                "completion": 75,
-                "total": 37098,
-                "cached": 0
-            }
+            "annotated_text": "GENERAL AFFIDAVIT\n\nState of <hw>New York</hw>, County of <hw>Auburn</hw>, ss:\n\nIn the matter of\n\nON THIS <hw>24th</hw> day of <hw>February</hw>, A. D. 18<hw>94</hw>, personally\n\nappeared before me in and for the afore-\n\nsaid County, duly authorized to administer oaths\n\naged <hw>73</hw>, years, a resident of <hw>Auburn</hw>, in the County\n\nof <hw>Cayuga</hw>, and State of <hw>New York</hw>\n\nwhose Post-office address is <hw>329 South Street</hw>\n\n<hw>Harriet Tubman</hw>, aged <hw>73</hw> years, a resident of\n\n<hw>Auburn</hw>, in the County of <hw>Cayuga</hw>\n\nand State of <hw>New York</hw>, whose Post-office address is <hw>329 South Street</hw>\n\nwell known to be reputable and entitled to credit, and who, being duly sworn, declared in relation to aforesaid\n\ncase as follows:\n\n(NOTE.—Affiants should state how they gain a knowledge of the facts to which they testify.)\n\n<hw>My claim against The U.S. is for three</hw>\n\n<hw>years services as Nurse and cook</hw>\n\n<hw>in hospitals, and as commander</hw>\n\n<hw>of General Men (Eight or Nine) as scouts</hw>\n\n<hw>during the late war of the Rebellion</hw>\n\n<hw>under directions and orders of Edwin</hw>\n\n<hw>M. Stanton Secretary of War, and of</hw>\n\n<hw>several Generals.</hw>\n\n<hw>I claim for my services above named</hw>\n\n<hw>the sum of Eighteen hundred dollars.</hw>\n\n<hw>The annexed copies have recently been</hw>\n\n<hw>read over to me and are true to the</hw>\n\n<hw>best of my knowledge information</hw>\n\n<hw>and belief.</hw>\n\nI further declare that <hw>I have no</hw> interest in said case and <hw>am</hw>\n\nnot concerned in its prosecution. and allowance.\n\n<hw>Dan M. Carty</hw>\n\n<hw>M. Elsie McCarty</hw>\n\n(If Affiants sign by mark, two witnesses who write sign here.)\n\n<hw>Harriet Harris</hw>\n\n<hw>Sate Harriet Tubman</hw>\n\n(Signatures of Affiants.)"
         }
     }
 }
