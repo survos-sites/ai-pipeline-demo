@@ -1,20 +1,21 @@
 # AI Pipeline Demo
 
-A minimal Symfony application that demonstrates [`survos/ai-pipeline-bundle`](https://packagist.org/packages/survos/ai-pipeline-bundle) by running configurable AI pipelines against a list of images and publishing the results as a static site on **GitHub Pages**.
+A Symfony application that demonstrates [`survos/ai-pipeline-bundle`](https://packagist.org/packages/survos/ai-pipeline-bundle) by running configurable AI pipelines against documents (images and PDFs) and publishing the results as a static site on **GitHub Pages**.
 
-**Live demo:** https://tacman.github.io/ai-pipeline-demo/ _(once GitHub Pages is enabled)_
+**Live demo:** https://survos-sites.github.io/ai-pipeline-demo/
 
 ---
 
 ## What it does
 
-1. You maintain `public/data/images.json` — a list of image URLs, titles, and which pipeline tasks to run on each.
-2. `bin/console app:process` runs each entry through the pipeline and writes `public/data/{sha1}.json` result files.
-3. GitHub Actions runs the command on push (or on a schedule), commits the result files, and deploys `public/` to GitHub Pages.
-4. The static site (`index.html` + `viewer.html`) reads the JSON files via `fetch()` — no server needed.
+1. You maintain manifests (`public/data/images.json` and `public/data/pdfs.json`) listing document URLs, titles, and which pipeline tasks to run.
+2. `bin/console app:add <URL>` fetches metadata from Omeka-S, NARA, or direct URLs and appends to the appropriate manifest.
+3. `bin/console app:process` runs each entry through the pipeline and writes `public/data/{sha1}.json` result files.
+4. GitHub Actions runs the command on push, commits results, splits PDFs into page images, and deploys `public/` to GitHub Pages.
+5. The static site (`index.html` + `item.html`) reads the JSON files via `fetch()` — no server needed.
 
 ```
-images.json  →  app:process  →  {sha1}.json files  →  GitHub Pages  →  browser
+manifests → app:process → {sha1}.json sidecar files → GitHub Pages → browser
 ```
 
 ---
@@ -23,29 +24,87 @@ images.json  →  app:process  →  {sha1}.json files  →  GitHub Pages  →  b
 
 ```
 public/
-├── index.html              ← gallery of all items in images.json
-├── viewer.html             ← per-item pipeline result viewer
-└── data/
-    ├── images.json         ← manifest (source of truth, committed to repo)
-    └── {sha1}.json         ← result files (generated, also committed)
+├── index.html              ← gallery (Documents section on top, Images below)
+├── item.html               ← per-item viewer (magnifier, PDF page viewer, task results)
+├── data/
+│   ├── images.json         ← image manifest (8 entries)
+│   ├── pdfs.json           ← PDF manifest (2+ entries)
+│   ├── {sha1}.json         ← per-item result files (generated, committed)
+│   └── {sha1}-transcript.txt  ← human transcript sidecars (committed)
+└── images/
+    ├── *.jpg               ← local images (committed)
+    └── pages/              ← split PDF page images (gitignored, built in CI)
 
 src/
 ├── Command/
-│   └── ProcessImagesCommand.php   ← bin/console app:process
+│   ├── ProcessImagesCommand.php  ← bin/console app:process
+│   └── AddDocumentCommand.php    ← bin/console app:add
 └── Task/
-    ├── AbstractAgentTask.php
-    ├── OcrMistralTask.php
-    ├── ClassifyTask.php
-    ├── BasicDescriptionTask.php
-    ├── KeywordsTask.php
-    ├── SummarizeTask.php
-    ├── ExtractMetadataTask.php
-    ├── GenerateTitleTask.php
-    ├── PeopleAndPlacesTask.php
-    └── TranscribeHandwritingTask.php
+    └── EstimateValueTask.php     ← example custom task (not in bundle)
+
+config/packages/
+├── ai.yaml                 ← AI agent definitions (openai, mistral)
+└── survos_ai_pipeline.yaml ← bundle config (store_dir, disabled_tasks)
+
+templates/
+├── bundles/SurvosAiPipelineBundle/prompt/
+│   └── keywords/           ← overridden keywords prompt (collectibles focus)
+└── ai/prompt/
+    └── estimate_value/     ← custom task prompt templates
 
 .github/workflows/
-└── pipeline.yml            ← runs app:process + deploys to Pages
+└── pipeline.yml            ← CI: process → split PDFs → deploy to Pages
+```
+
+---
+
+## Commands
+
+### `app:add` — Add documents to the manifest
+
+```bash
+# Omeka-S item page → fetches metadata via API, resolves PDF/image URL
+bin/console app:add https://iaamcfh.omeka.net/s/IAAM_CFH/item/3940
+
+# National Archives catalog → fetches via proxy API, finds page images
+bin/console app:add https://catalog.archives.gov/id/5939992
+
+# Direct PDF or image URL
+bin/console app:add https://example.com/document.pdf
+
+# Preview without writing
+bin/console app:add --dry-run https://iaamcfh.omeka.net/s/IAAM_CFH/item/3940
+```
+
+The command:
+- Detects the URL type (Omeka-S, NARA, direct file)
+- Fetches metadata from the source API (title, description, dates, etc.)
+- Detects video items and rejects them with a message
+- Presents pipeline presets to choose from:
+  - `handwritten_document` — OCR + handwriting annotation + NER + metadata
+  - `printed_document` — OCR + classify + summarize + keywords
+  - `photograph_or_card` — OCR + classify + description + keywords
+  - `full_analysis` — everything
+- Appends to `images.json` or `pdfs.json` based on media type
+- Checks for duplicates
+
+### `app:process` — Run the AI pipeline
+
+```bash
+# Process all manifests (default: images.json + pdfs.json)
+bin/console app:process
+
+# Process only PDFs
+bin/console app:process -m pdfs.json
+
+# Re-run everything from scratch
+bin/console app:process --force
+
+# Process first entry only
+bin/console app:process --limit=1
+
+# Override tasks for all entries
+bin/console app:process --tasks=ocr_mistral,classify
 ```
 
 ---
@@ -55,7 +114,7 @@ src/
 ### 1. Clone and install
 
 ```bash
-git clone https://github.com/tacman/ai-pipeline-demo
+git clone https://github.com/survos-sites/ai-pipeline-demo
 cd ai-pipeline-demo
 composer install
 ```
@@ -64,53 +123,124 @@ composer install
 
 ```bash
 cp .env .env.local
-# edit .env.local:
+# Edit .env.local:
 OPENAI_API_KEY=sk-...
 MISTRAL_API_KEY=...
 ```
 
-### 3. Edit the manifest
+### 3. Add a document
 
-`public/data/images.json` lists subjects and pipelines:
-
-```json
-[
-  {
-    "url": "https://iiif.digitalcommonwealth.org/iiif/2/commonwealth:pz50hp570/full/,1200/0/default.jpg",
-    "title": "Stars & Stripes / Burbee Gum trading card",
-    "collection": "Digital Commonwealth",
-    "pipeline": ["ocr_mistral", "classify", "basic_description", "keywords"]
-  }
-]
+```bash
+bin/console app:add https://iaamcfh.omeka.net/s/IAAM_CFH/item/3940
+# Select pipeline: handwritten_document
 ```
-
-Available tasks: `ocr_mistral`, `classify`, `basic_description`, `keywords`, `summarize`, `extract_metadata`, `generate_title`, `people_and_places`, `transcribe_handwriting`
 
 ### 4. Run the pipeline
 
 ```bash
-# Process all entries (skip already-done tasks)
 bin/console app:process
-
-# Re-run everything from scratch
-bin/console app:process --force
-
-# Process only the first entry
-bin/console app:process --limit=1
-
-# Verbose — show task progress
-bin/console app:process -v
-
-# Override tasks for all entries
-bin/console app:process --tasks=ocr_mistral,classify
 ```
 
 ### 5. View results locally
 
 ```bash
 php -S localhost:8080 -t public/
-# open http://localhost:8080
+# Open http://localhost:8080
 ```
+
+---
+
+## Manifest format
+
+### images.json
+
+```json
+[
+    {
+        "url": "https://example.com/scan.jpg",
+        "title": "My document",
+        "collection": "My archive",
+        "provenance": "https://example.com/item/123",
+        "pipeline": ["ocr_mistral", "classify", "extract_metadata", "generate_title"],
+        "result_file": "abc123...json",
+        "status": "complete"
+    }
+]
+```
+
+### pdfs.json
+
+```json
+[
+    {
+        "url": "https://example.com/document.pdf",
+        "provenance": "https://example.com/item/456",
+        "title": "Historical document",
+        "collection": "Archive Name",
+        "pipeline": ["ocr_mistral", "annotate_handwriting", "transcribe_handwriting"],
+        "metadata": { ... },
+        "transcript_file": "abc123...-transcript.txt",
+        "result_file": "abc123...json",
+        "status": "complete"
+    }
+]
+```
+
+Fields:
+- `url` — direct URL to the image or PDF (required)
+- `provenance` — link back to the source catalog page
+- `title` — display title
+- `collection` — collection name for grouping
+- `pipeline` — ordered list of task names to run
+- `metadata` — structured metadata from the source (Omeka dcterms, NARA fields, etc.)
+- `transcript_file` — path to human transcript sidecar (for comparison with AI OCR)
+- `result_file` — auto-populated by `app:process` (SHA1 of URL + `.json`)
+- `status` — auto-populated (`complete` or `pending`)
+
+---
+
+## Available pipeline tasks
+
+| Task | What it does | Best for |
+|---|---|---|
+| `ocr_mistral` | Mistral OCR — markdown + layout blocks + image crops | All documents |
+| `classify` | Document type classification | Printed docs, photos |
+| `basic_description` | Visual description | Photos, cards |
+| `summarize` | Concise summary | Printed documents |
+| `keywords` | Keyword tags | All documents |
+| `extract_metadata` | Dates, people, places, subjects | All documents |
+| `generate_title` | Archival-style title | All documents |
+| `people_and_places` | Named entity extraction | Historical documents |
+| `transcribe_handwriting` | Handwriting transcription | Handwritten documents |
+| `annotate_handwriting` | Mark `<hw>` handwritten / `<?>` uncertain | After OCR on handwritten docs |
+| `translate` | Translation to English | Non-English documents |
+
+---
+
+## Adding custom tasks
+
+Implement `AiTaskInterface` or extend `AbstractVisionTask`:
+
+```php
+// src/Task/EstimateValueTask.php
+final class EstimateValueTask extends AbstractVisionTask
+{
+    public function __construct(
+        #[Autowire(service: 'ai.agent.metadata')]
+        AgentInterface $agent,
+        TwigEnvironment $twig,
+        HttpClientInterface $httpClient,
+    ) {
+        parent::__construct($agent, $twig, $httpClient);
+    }
+
+    public function getTask(): string { return 'estimate_value'; }
+}
+```
+
+Create prompt templates at `templates/ai/prompt/estimate_value/{system,user}.html.twig`.
+
+The task auto-registers via Symfony autoconfiguration. Add `"estimate_value"` to any manifest entry's `pipeline` array.
 
 ---
 
@@ -118,105 +248,69 @@ php -S localhost:8080 -t public/
 
 ### One-time setup
 
-1. Push the repo to GitHub.
-2. Go to **Settings → Pages → Source** and select **GitHub Actions**.
-3. Add secrets under **Settings → Secrets → Actions**:
-   - `OPENAI_API_KEY`
-   - `MISTRAL_API_KEY`
-   - `APP_SECRET` (any random string, e.g. `openssl rand -hex 16`)
+1. Push to GitHub.
+2. **Settings > Pages > Source**: select **GitHub Actions**.
+3. **Settings > Secrets > Actions**: add `OPENAI_API_KEY`, `MISTRAL_API_KEY`, `APP_SECRET`.
 
-### How it works
+### How the workflow works
 
-The workflow (`.github/workflows/pipeline.yml`) runs on:
-- Every push to `main` that touches `images.json`, `src/`, or `config/`
-- A weekly schedule (Monday 04:00 UTC)
-- Manual dispatch from the GitHub Actions UI (with optional `--force` and `--limit`)
+`.github/workflows/pipeline.yml` triggers on:
+- Push to `main` (when manifests, HTML, src, config, or workflows change)
+- Weekly schedule (Monday 04:00 UTC)
+- Manual dispatch (with optional `--force` and `--limit`)
 
-It:
-1. Installs PHP/Composer dependencies
-2. Runs `bin/console app:process` with the relevant flags
-3. Commits any new/updated `public/data/*.json` files back to `main`
-4. Deploys `public/` to GitHub Pages
-
-### Manual trigger
-
-Go to **Actions → Run pipelines & deploy to GitHub Pages → Run workflow**.
-You can tick "Re-run all tasks" or set a limit for testing.
-
----
-
-## Adding your own images
-
-Edit `public/data/images.json`. Any publicly accessible URL works — IIIF, S3, direct JPEG, etc.
-
-```json
-{
-  "url": "https://example.com/scan.jpg",
-  "title": "My document",
-  "collection": "My archive",
-  "pipeline": ["ocr_mistral", "classify", "extract_metadata", "generate_title"]
-}
-```
-
-Commit and push — the workflow runs automatically.
-
----
-
-## Adding your own tasks
-
-Implement `AiTaskInterface` (or extend `AbstractAgentTask`), register an agent in `config/packages/ai.yaml`, and add the task name to your pipeline entries.
-
-```php
-final class MyCustomTask extends AbstractAgentTask
-{
-    public function __construct(
-        #[Autowire(service: 'ai.agent.my_agent')]
-        AgentInterface $agent,
-    ) { parent::__construct($agent); }
-
-    public function getTask(): string { return 'my_custom'; }
-
-    protected function systemPrompt(array $inputs, array $priorResults): string
-    {
-        return 'You are a specialist. Return JSON: {"result":"..."}.';
-    }
-
-    protected function userPrompt(array $inputs, array $priorResults): string
-    {
-        return 'Analyse this item. Return only JSON.';
-    }
-}
-```
+Steps:
+1. Install PHP 8.4 + Composer
+2. Run `bin/console app:process`
+3. Commit updated `public/data/*.json` back to `main`
+4. Fetch remote assets (PDFs referenced by URL)
+5. Split PDFs into page images with `pdftoppm` + `mogrify` (cached by `pdfs.json` hash)
+6. Deploy `public/` to GitHub Pages
 
 ---
 
 ## The viewer
 
-`public/viewer.html` is a zero-dependency static page. Open it with `?url=<subject-url>`:
+`item.html` is opened with `?url=<subject-url>&type=image|pdf`:
 
-```
-viewer.html?url=https://iiif.example.org/item/full/,1200/0/default.jpg
-```
+**For images**: magnifier overlay (4x zoom on hover) + task result sections below.
 
-It:
-- Computes `sha1(url)` in the browser via Web Crypto API
-- Fetches `data/{sha1}.json`
-- Shows a sidebar with task badges (done / skipped / failed)
-- Renders each task's fields clearly (text, description, keywords, tokens used, etc.)
-- Displays **extracted sub-images** (e.g. regions identified by Mistral OCR) as clickable thumbnails — clicking one opens the viewer for *that* artifact's own pipeline results
+**For PDFs**: page-by-page side-by-side view (page image left, OCR text right) with:
+- Per-page magnifier
+- Proportional text scaling toggle ("Align text to image")
+- Handwriting annotations: `<hw>` yellow italic for handwritten text, `<?>` red superscript for uncertain words
+- Per-page summary in heading dividers
+
+All task results are shown with token usage pills, done/failed badges, and collapsible raw JSON.
+
+---
+
+## Supported metadata sources
+
+| Source | Detection | API used |
+|---|---|---|
+| Omeka-S | `*.omeka.net/s/*/item/*` | `/api/items/{id}` + `/api/media/{id}` |
+| National Archives | `catalog.archives.gov/id/*` | `/proxy/records/search?naId_is=*` |
+| Direct URL | `.pdf`, `.jpg`, `.png`, etc. | None (URL used directly) |
 
 ---
 
 ## Relationship to the bundle
 
-This repo is an example consumer of `survos/ai-pipeline-bundle`. The bundle provides:
-- `AiTaskInterface` and `AiTaskRegistry`
-- `AiPipelineRunner` (stateful, resumable)
+This repo is an example consumer of [`survos/ai-pipeline-bundle`](https://github.com/survos/ai-pipeline-bundle). The bundle provides:
+
+- `AiTaskInterface`, `AiTaskRegistry`, `AiPipelineRunner`
+- 14 built-in tasks (OCR, classify, describe, extract, summarize, etc.)
 - `JsonFileResultStore` / `ArrayResultStore`
-- `ai:pipeline:run` and `ai:pipeline:tasks` console commands
+- `ai:pipeline:run` and `ai:pipeline:tasks` CLI commands
+- Twig prompt templates with app-level override support
 
 This repo adds:
-- Concrete task implementations (`src/Task/`)
-- The `app:process` command that drives the pipeline from `images.json`
-- The static gallery + viewer front-end
-- The GitHub Actions deployment workflow
+- `app:process` — manifest-driven batch processor
+- `app:add` — interactive document ingestion with Omeka/NARA API support
+- `EstimateValueTask` — example custom app-level task
+- Static gallery + viewer front-end
+- GitHub Actions deployment workflow
+- Human transcript sidecars for AI vs human comparison
+
+For integrating the bundle into a database-backed app (like scanstation), see the bundle's [integration guide](https://github.com/survos/ai-pipeline-bundle/blob/main/docs/integration.md).

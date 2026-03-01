@@ -97,15 +97,9 @@ jobs:
           ref: main          # pick up the commit made by the process job
           lfs: true          # pull Git LFS files (images) for the static site
 
-      - name: Fetch remote assets
-        run: |
-          # Downloads listed here are fetched at deploy time so they
-          # don't need to be stored in the repo.  Add new entries as:
-          #   curl -fsSL -o public/images/<filename> "<url>"
-          curl -fsSL -o public/images/Aaron_Chambers_Pension.pdf \
-            "https://omeka-iaamcfh.s3.amazonaws.com/original/466438fd3594c782fcbf172a1fd2cfc66034bbf0.pdf"
-
       # ── PDF → page JPGs ──────────────────────────────────────────────────
+      # Reads pdfs.json, downloads each remote PDF, splits into per-page
+      # JPGs named by SHA1(url) to match what the static viewer expects.
       # Cached so pages are only re-split when pdfs.json changes.
       - name: Cache PDF page images
         uses: actions/cache@v4
@@ -117,17 +111,38 @@ jobs:
       - name: Split PDFs into page images
         if: steps.pdf-cache.outputs.cache-hit != 'true'
         run: |
-          sudo apt-get install -y poppler-utils imagemagick
+          sudo apt-get install -y poppler-utils imagemagick jq
           mkdir -p public/images/pages
-          for pdf in public/images/*.pdf; do
-            [ -f "$pdf" ] || continue
-            base=$(basename "${pdf%.pdf}")
-            echo "Splitting $base..."
-            pdftoppm -jpeg -r 200 "$pdf" "public/images/pages/${base}"
+
+          # Read each PDF entry from the manifest and split using SHA1(url) prefix
+          jq -r '.[].url' public/data/pdfs.json | while read -r url; do
+            sha1=$(echo -n "$url" | sha1sum | cut -d' ' -f1)
+
+            # Skip if pages already exist
+            if ls public/images/pages/${sha1}-*.jpg 1>/dev/null 2>&1; then
+              echo "  ${sha1}: pages exist — skipping"
+              continue
+            fi
+
+            echo "Splitting ${sha1} (${url})..."
+
+            # Download remote PDF to temp file
+            tmpfile=$(mktemp /tmp/pdf_XXXXXX.pdf)
+            if ! curl -fsSL -o "$tmpfile" "$url"; then
+              echo "  ERROR: could not download $url"
+              rm -f "$tmpfile"
+              continue
+            fi
+
+            pdftoppm -jpeg -r 200 "$tmpfile" "public/images/pages/${sha1}"
+            rm -f "$tmpfile"
           done
+
           # Auto-crop whitespace borders from scanned pages
-          echo "Cropping whitespace..."
-          mogrify -fuzz 10% -trim +repage public/images/pages/*.jpg
+          if ls public/images/pages/*.jpg 1>/dev/null 2>&1; then
+            echo "Cropping whitespace..."
+            mogrify -fuzz 10% -trim +repage public/images/pages/*.jpg
+          fi
           echo "Generated $(ls public/images/pages/*.jpg 2>/dev/null | wc -l) page images"
 
       - name: Upload Pages artifact
