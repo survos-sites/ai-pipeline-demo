@@ -7,6 +7,7 @@ on:
       - 'public/data/images.json'   # re-run when manifest changes
       - 'src/**'
       - 'config/**'
+      - '.github/workflows/**'
   schedule:
     - cron: '0 4 * * 1'             # weekly refresh every Monday 04:00 UTC
   workflow_dispatch:                 # manual trigger from GitHub UI
