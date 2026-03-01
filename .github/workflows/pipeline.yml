@@ -94,6 +94,14 @@ jobs:
           ref: main          # pick up the commit made by the process job
           lfs: true          # pull Git LFS files (images) for the static site
 
+      - name: Fetch remote assets
+        run: |
+          # Downloads listed here are fetched at deploy time so they
+          # don't need to be stored in the repo.  Add new entries as:
+          #   curl -fsSL -o public/images/<filename> "<url>"
+          curl -fsSL -o public/images/Aaron_Chambers_Pension.pdf \
+            "https://omeka-iaamcfh.s3.amazonaws.com/original/466438fd3594c782fcbf172a1fd2cfc66034bbf0.pdf"
+
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:

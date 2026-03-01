@@ -16,3 +16,8 @@
 /public/assets/
 /assets/vendor
 
+
+.castor.stub.php
+
+# Fetched at deploy time from public archives — don't store in repo
+/public/images/Aaron_Chambers_Pension.pdf
