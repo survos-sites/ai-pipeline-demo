@@ -1,0 +1,327 @@
+{
+    "subject": "file:///home/tac/g/sites/ai-pipeline-demo/public/images/pages/af1df721c0d61aa66a45e8e86db7f6c77e70d543-03.jpg",
+    "results": {
+        "ocr_mistral": {
+            "text": "certify that I have an interest in the prosecution of this claim. That the foregoing declaration and affidavit were read over to, and understood by, the respective parties before they signed the same.\n\nJ. P. Breckinridge, Clerk\nof the United County Court\n\nNOTE.—If the Clerk of the Court (the Deputy will not answer) takes the Declaration and Affidavit defined of the Judge, he signs the above certificate and places the seal of the Court thereto, and the following certificate then goes unauthenticated, but if the Judge admonitors the oath, he signs the foregoing certificate, and then the Clerk himself authenticated the certificate herein following.\n\nState of\nCounty of\nSS.\n\nI, _________________________, Clerk of the _________________________ Court within and for the County and State aforesaid, do hereby certify that _________________________ before whom the foregoing Pension Declaration and joint affidavit were made, and who has thereunto signed his name, was, at the time of so doing, Judge of the _________________________ Court in and for the County and State above named, duly elected, qualified and sworn; that all his official acts as such are entitled to full faith and credit, and that his said signature, as it above appears, is genuine.\n\nGiven under my hand and seal of _________________________ Court at office in _________________________ this _________________________ day of _________________________ A. D. 18\n\nClerk,\nClerk,\nClerk.\n\nNOTE.—The Deputy Clerk of a Court of Record is prohibited by the Rules and Regulations of the Pension Office from taking Pension Declarations, hence the absolute necessity for the Judge or Clerk of the Court to do so personally, and to his official capacity.\n\nFORWARDED BY _________________________ or _________________________\n\nWIDOW'S APPLICATION\nFOR\nARMY PENSION.\nWAR 1861.\n\nAct of _________________________\nMys. _________________________\nWidow of _________________________\nLate a _________________________ Co. _________________________\nof the _________________________ Regiment of _________________________\n\nPENSION OFFICE CIRCULAR.\nJUL 15, 1861.\nEXTRACT.\nThe forms should be exactly followed in every instance. No affidavit will be required as having had the necessary declaration and affidavits as contemplated by the lawsuits, Section of the Act July 14, 1861, under the terms, as well as the instructions given, on strictly complied with.\n\nJ. P. B. BARRETT, Commissioner.\nAttorney.\n\nINSTRUCTIONS.\n\n1. \"Judge,\" or \"Clerk,\" as the case may be.\n2. Name of the Court.\n3. \"City,\" \"Town,\" \"Deposition,\" or \"County,\" as the case may be.\n4. \"July 14, 1861,\" or any other Act of Congress applicable to the case.\n5. \"Country, Territory, or Artillery (Chemical or ... State give State), ... naming the troops as indicated according to the arm of the service to which they belong. If of the regular service, in place of the foregoing unit: \"United States Infantry,\" \"Carolina,\" or \"Artillery,\" as the case may be.\n6. \"State, or,\" or \"State Understood Town,\" as the case may be.\n7. \"Branch,\" or \"Registrar,\" or \"No Clerk of Regional Dept.\" \"Pensioner,\" \"Rearor,\" \"Elementary,\" \"Chronic Diarrhea,\" \"Dysentery,\" \"Ciclosa Morbus,\" \"Phillip,\" or any other disease, physical disability, or injury, whatever it may be, naming it.\n8. If killed in Battle, add: \"Being killed in Battle of ... date of his death,\" or if dying of wounds after Battle, instead of the foregoing say: \"Received in Battle or Action at ... on the ... day of ... A. D. 18 ...\n9. \"Home, He ..., about between, ... and ... stands, in the City of ... in the County and State aforesaid,\" or if, on the other hand, the applicant resides in the country instead of the city, in place of the foregoing say: \"on the wagon [or rail] road looking from ... to ... about ... miles from ... the County and of ... County, State above named.\"\n10. \"On child law children, time of the above named soldier deceased, who are under the age of sixteen years of the present time, now certain time,\" or if, on the other hand, he has left any child or children, the same, within the age of sixteen years of this time, the full name, dated (DATE) and residence, of each such child, must be here stated.\n11. \"Age,\" or \"male,\" as the case may be.\n12. \"Name,\" or \"month,\" as the case may be.",
+            "language": null,
+            "confidence": "high",
+            "layout_blocks": [
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "certify that I have an interest in the prosecution of this claim. That the foregoing declaration and affidavit were read over to, and understood by, the respective parties before they signed the same.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 0,
+                        "width": 752,
+                        "height": 68
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "byline",
+                    "text": "J. P. Breckinridge, Clerk of the United County Court",
+                    "bbox": {
+                        "x": 0,
+                        "y": 68,
+                        "width": 451,
+                        "height": 41
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "NOTE.—If the Clerk of the Court (the Deputy will not answer) takes the Declaration and Affidavit defined of the Judge, he signs the above certificate and places the seal of the Court thereto, and the following certificate then goes unauthenticated, but if the Judge admonitors the oath, he signs the foregoing certificate, and then the Clerk himself authenticated the certificate herein following.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 108,
+                        "width": 752,
+                        "height": 81
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "State of County of SS. I, _________________________, Clerk of the _________________________ Court within and for the County and State aforesaid, do hereby certify that _________________________ before whom the foregoing Pension Declaration and joint affidavit were made, and who has thereunto signed his name, was, at the time of so doing, Judge of the _________________________ Court in and for the County and State above named, duly elected, qualified and sworn; that all his official acts as such are entitled to full faith and credit, and that his said signature, as it above appears, is genuine.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 189,
+                        "width": 752,
+                        "height": 135
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "Given under my hand and seal of _________________________ Court at office in _________________________ this _________________________ day of _________________________ A. D. 18",
+                    "bbox": {
+                        "x": 0,
+                        "y": 324,
+                        "width": 752,
+                        "height": 68
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "byline",
+                    "text": "Clerk, Clerk, Clerk.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 392,
+                        "width": 226,
+                        "height": 41
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "NOTE.—The Deputy Clerk of a Court of Record is prohibited by the Rules and Regulations of the Pension Office from taking Pension Declarations, hence the absolute necessity for the Judge or Clerk of the Court to do so personally, and to his official capacity.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 432,
+                        "width": 752,
+                        "height": 81
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "FORWARDED BY _________________________ or _________________________",
+                    "bbox": {
+                        "x": 0,
+                        "y": 513,
+                        "width": 451,
+                        "height": 41
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "headline",
+                    "text": "WIDOW'S APPLICATION FOR ARMY PENSION.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 554,
+                        "width": 451,
+                        "height": 41
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "WAR 1861.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 594,
+                        "width": 150,
+                        "height": 41
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "Act of _________________________ Mys. _________________________ Widow of _________________________ Late a _________________________ Co. _________________________ of the _________________________ Regiment of _________________________",
+                    "bbox": {
+                        "x": 0,
+                        "y": 635,
+                        "width": 752,
+                        "height": 68
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "headline",
+                    "text": "PENSION OFFICE CIRCULAR.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 702,
+                        "width": 301,
+                        "height": 41
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "JUL 15, 1861. EXTRACT. The forms should be exactly followed in every instance. No affidavit will be required as having had the necessary declaration and affidavits as contemplated by the lawsuits, Section of the Act July 14, 1861, under the terms, as well as the instructions given, on strictly complied with.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 743,
+                        "width": 752,
+                        "height": 108
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "byline",
+                    "text": "J. P. B. BARRETT, Commissioner. Attorney.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 851,
+                        "width": 376,
+                        "height": 41
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "headline",
+                    "text": "INSTRUCTIONS.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 891,
+                        "width": 226,
+                        "height": 41
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "1. \"Judge,\" or \"Clerk,\" as the case may be. 2. Name of the Court. 3. \"City,\" \"Town,\" \"Deposition,\" or \"County,\" as the case may be. 4. \"July 14, 1861,\" or any other Act of Congress applicable to the case. 5. \"Country, Territory, or Artillery (Chemical or ... State give State), ... naming the troops as indicated according to the arm of the service to which they belong. If of the regular service, in place of the foregoing unit: \"United States Infantry,\" \"Carolina,\" or \"Artillery,\" as the case may be. 6. \"State, or,\" or \"State Understood Town,\" as the case may be. 7. \"Branch,\" or \"Registrar,\" or \"No Clerk of Regional Dept.\" \"Pensioner,\" \"Rearor,\" \"Elementary,\" \"Chronic Diarrhea,\" \"Dysentery,\" \"Ciclosa Morbus,\" \"Phillip,\" or any other disease, physical disability, or injury, whatever it may be, naming it. 8. If killed in Battle, add: \"Being killed in Battle of ... date of his death,\" or if dying of wounds after Battle, instead of the foregoing say: \"Received in Battle or Action at ... on the ... day of ... A. D. 18 ... 9. \"Home, He ..., about between, ... and ... stands, in the City of ... in the County and State aforesaid,\" or if, on the other hand, the applicant resides in the country instead of the city, in place of the foregoing say: \"on the wagon [or rail] road looking from ... to ... about ... miles from ... the County and of ... County, State above named.\" 10. \"On child law children, time of the above named soldier deceased, who are under the age of sixteen years of the present time, now certain time,\" or if, on the other hand, he has left any child or children, the same, within the age of sixteen years of this time, the full name, dated (DATE) and residence, of each such child, must be here stated. 11. \"Age,\" or \"male,\" as the case may be. 12. \"Name,\" or \"month,\" as the case may be.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 932,
+                        "width": 752,
+                        "height": 270
+                    }
+                }
+            ],
+            "image_blocks": [],
+            "pages": [
+                {
+                    "index": 0,
+                    "markdown": "certify that I have an interest in the prosecution of this claim. That the foregoing declaration and affidavit were read over to, and understood by, the respective parties before they signed the same.\n\nJ. P. Breckinridge, Clerk\nof the United County Court\n\nNOTE.—If the Clerk of the Court (the Deputy will not answer) takes the Declaration and Affidavit defined of the Judge, he signs the above certificate and places the seal of the Court thereto, and the following certificate then goes unauthenticated, but if the Judge admonitors the oath, he signs the foregoing certificate, and then the Clerk himself authenticated the certificate herein following.\n\nState of\nCounty of\nSS.\n\nI, _________________________, Clerk of the _________________________ Court within and for the County and State aforesaid, do hereby certify that _________________________ before whom the foregoing Pension Declaration and joint affidavit were made, and who has thereunto signed his name, was, at the time of so doing, Judge of the _________________________ Court in and for the County and State above named, duly elected, qualified and sworn; that all his official acts as such are entitled to full faith and credit, and that his said signature, as it above appears, is genuine.\n\nGiven under my hand and seal of _________________________ Court at office in _________________________ this _________________________ day of _________________________ A. D. 18\n\nClerk,\nClerk,\nClerk.\n\nNOTE.—The Deputy Clerk of a Court of Record is prohibited by the Rules and Regulations of the Pension Office from taking Pension Declarations, hence the absolute necessity for the Judge or Clerk of the Court to do so personally, and to his official capacity.\n\nFORWARDED BY _________________________ or _________________________\n\nWIDOW'S APPLICATION\nFOR\nARMY PENSION.\nWAR 1861.\n\nAct of _________________________\nMys. _________________________\nWidow of _________________________\nLate a _________________________ Co. _________________________\nof the _________________________ Regiment of _________________________\n\nPENSION OFFICE CIRCULAR.\nJUL 15, 1861.\nEXTRACT.\nThe forms should be exactly followed in every instance. No affidavit will be required as having had the necessary declaration and affidavits as contemplated by the lawsuits, Section of the Act July 14, 1861, under the terms, as well as the instructions given, on strictly complied with.\n\nJ. P. B. BARRETT, Commissioner.\nAttorney.\n\nINSTRUCTIONS.\n\n1. \"Judge,\" or \"Clerk,\" as the case may be.\n2. Name of the Court.\n3. \"City,\" \"Town,\" \"Deposition,\" or \"County,\" as the case may be.\n4. \"July 14, 1861,\" or any other Act of Congress applicable to the case.\n5. \"Country, Territory, or Artillery (Chemical or ... State give State), ... naming the troops as indicated according to the arm of the service to which they belong. If of the regular service, in place of the foregoing unit: \"United States Infantry,\" \"Carolina,\" or \"Artillery,\" as the case may be.\n6. \"State, or,\" or \"State Understood Town,\" as the case may be.\n7. \"Branch,\" or \"Registrar,\" or \"No Clerk of Regional Dept.\" \"Pensioner,\" \"Rearor,\" \"Elementary,\" \"Chronic Diarrhea,\" \"Dysentery,\" \"Ciclosa Morbus,\" \"Phillip,\" or any other disease, physical disability, or injury, whatever it may be, naming it.\n8. If killed in Battle, add: \"Being killed in Battle of ... date of his death,\" or if dying of wounds after Battle, instead of the foregoing say: \"Received in Battle or Action at ... on the ... day of ... A. D. 18 ...\n9. \"Home, He ..., about between, ... and ... stands, in the City of ... in the County and State aforesaid,\" or if, on the other hand, the applicant resides in the country instead of the city, in place of the foregoing say: \"on the wagon [or rail] road looking from ... to ... about ... miles from ... the County and of ... County, State above named.\"\n10. \"On child law children, time of the above named soldier deceased, who are under the age of sixteen years of the present time, now certain time,\" or if, on the other hand, he has left any child or children, the same, within the age of sixteen years of this time, the full name, dated (DATE) and residence, of each such child, must be here stated.\n11. \"Age,\" or \"male,\" as the case may be.\n12. \"Name,\" or \"month,\" as the case may be.",
+                    "dimensions": {
+                        "dpi": 200,
+                        "height": 1202,
+                        "width": 752
+                    },
+                    "tables": [],
+                    "header": null,
+                    "footer": null
+                }
+            ],
+            "raw_response": {
+                "pages": [
+                    {
+                        "index": 0,
+                        "markdown": "certify that I have an interest in the prosecution of this claim. That the foregoing declaration and affidavit were read over to, and understood by, the respective parties before they signed the same.\n\nJ. P. Breckinridge, Clerk\nof the United County Court\n\nNOTE.—If the Clerk of the Court (the Deputy will not answer) takes the Declaration and Affidavit defined of the Judge, he signs the above certificate and places the seal of the Court thereto, and the following certificate then goes unauthenticated, but if the Judge admonitors the oath, he signs the foregoing certificate, and then the Clerk himself authenticated the certificate herein following.\n\nState of\nCounty of\nSS.\n\nI, _________________________, Clerk of the _________________________ Court within and for the County and State aforesaid, do hereby certify that _________________________ before whom the foregoing Pension Declaration and joint affidavit were made, and who has thereunto signed his name, was, at the time of so doing, Judge of the _________________________ Court in and for the County and State above named, duly elected, qualified and sworn; that all his official acts as such are entitled to full faith and credit, and that his said signature, as it above appears, is genuine.\n\nGiven under my hand and seal of _________________________ Court at office in _________________________ this _________________________ day of _________________________ A. D. 18\n\nClerk,\nClerk,\nClerk.\n\nNOTE.—The Deputy Clerk of a Court of Record is prohibited by the Rules and Regulations of the Pension Office from taking Pension Declarations, hence the absolute necessity for the Judge or Clerk of the Court to do so personally, and to his official capacity.\n\nFORWARDED BY _________________________ or _________________________\n\nWIDOW'S APPLICATION\nFOR\nARMY PENSION.\nWAR 1861.\n\nAct of _________________________\nMys. _________________________\nWidow of _________________________\nLate a _________________________ Co. _________________________\nof the _________________________ Regiment of _________________________\n\nPENSION OFFICE CIRCULAR.\nJUL 15, 1861.\nEXTRACT.\nThe forms should be exactly followed in every instance. No affidavit will be required as having had the necessary declaration and affidavits as contemplated by the lawsuits, Section of the Act July 14, 1861, under the terms, as well as the instructions given, on strictly complied with.\n\nJ. P. B. BARRETT, Commissioner.\nAttorney.\n\nINSTRUCTIONS.\n\n1. \"Judge,\" or \"Clerk,\" as the case may be.\n2. Name of the Court.\n3. \"City,\" \"Town,\" \"Deposition,\" or \"County,\" as the case may be.\n4. \"July 14, 1861,\" or any other Act of Congress applicable to the case.\n5. \"Country, Territory, or Artillery (Chemical or ... State give State), ... naming the troops as indicated according to the arm of the service to which they belong. If of the regular service, in place of the foregoing unit: \"United States Infantry,\" \"Carolina,\" or \"Artillery,\" as the case may be.\n6. \"State, or,\" or \"State Understood Town,\" as the case may be.\n7. \"Branch,\" or \"Registrar,\" or \"No Clerk of Regional Dept.\" \"Pensioner,\" \"Rearor,\" \"Elementary,\" \"Chronic Diarrhea,\" \"Dysentery,\" \"Ciclosa Morbus,\" \"Phillip,\" or any other disease, physical disability, or injury, whatever it may be, naming it.\n8. If killed in Battle, add: \"Being killed in Battle of ... date of his death,\" or if dying of wounds after Battle, instead of the foregoing say: \"Received in Battle or Action at ... on the ... day of ... A. D. 18 ...\n9. \"Home, He ..., about between, ... and ... stands, in the City of ... in the County and State aforesaid,\" or if, on the other hand, the applicant resides in the country instead of the city, in place of the foregoing say: \"on the wagon [or rail] road looking from ... to ... about ... miles from ... the County and of ... County, State above named.\"\n10. \"On child law children, time of the above named soldier deceased, who are under the age of sixteen years of the present time, now certain time,\" or if, on the other hand, he has left any child or children, the same, within the age of sixteen years of this time, the full name, dated (DATE) and residence, of each such child, must be here stated.\n11. \"Age,\" or \"male,\" as the case may be.\n12. \"Name,\" or \"month,\" as the case may be.",
+                        "images": [],
+                        "tables": [],
+                        "hyperlinks": [],
+                        "header": null,
+                        "footer": null,
+                        "dimensions": {
+                            "dpi": 200,
+                            "height": 1202,
+                            "width": 752
+                        }
+                    }
+                ],
+                "model": "mistral-ocr-latest",
+                "document_annotation": "{\n  \"blocks\": [\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"certify that I have an interest in the prosecution of this claim. That the foregoing declaration and affidavit were read over to, and understood by, the respective parties before they signed the same.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 0,\n        \"width\": 500,\n        \"height\": 50\n      }\n    },\n    {\n      \"type\": \"byline\",\n      \"text\": \"J. P. Breckinridge, Clerk of the United County Court\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 50,\n        \"width\": 300,\n        \"height\": 30\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"NOTE.—If the Clerk of the Court (the Deputy will not answer) takes the Declaration and Affidavit defined of the Judge, he signs the above certificate and places the seal of the Court thereto, and the following certificate then goes unauthenticated, but if the Judge admonitors the oath, he signs the foregoing certificate, and then the Clerk himself authenticated the certificate herein following.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 80,\n        \"width\": 500,\n        \"height\": 60\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"State of County of SS. I, _________________________, Clerk of the _________________________ Court within and for the County and State aforesaid, do hereby certify that _________________________ before whom the foregoing Pension Declaration and joint affidavit were made, and who has thereunto signed his name, was, at the time of so doing, Judge of the _________________________ Court in and for the County and State above named, duly elected, qualified and sworn; that all his official acts as such are entitled to full faith and credit, and that his said signature, as it above appears, is genuine.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 140,\n        \"width\": 500,\n        \"height\": 100\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"Given under my hand and seal of _________________________ Court at office in _________________________ this _________________________ day of _________________________ A. D. 18\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 240,\n        \"width\": 500,\n        \"height\": 50\n      }\n    },\n    {\n      \"type\": \"byline\",\n      \"text\": \"Clerk, Clerk, Clerk.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 290,\n        \"width\": 150,\n        \"height\": 30\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"NOTE.—The Deputy Clerk of a Court of Record is prohibited by the Rules and Regulations of the Pension Office from taking Pension Declarations, hence the absolute necessity for the Judge or Clerk of the Court to do so personally, and to his official capacity.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 320,\n        \"width\": 500,\n        \"height\": 60\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"FORWARDED BY _________________________ or _________________________\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 380,\n        \"width\": 300,\n        \"height\": 30\n      }\n    },\n    {\n      \"type\": \"headline\",\n      \"text\": \"WIDOW'S APPLICATION FOR ARMY PENSION.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 410,\n        \"width\": 300,\n        \"height\": 30\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"WAR 1861.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 440,\n        \"width\": 100,\n        \"height\": 30\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"Act of _________________________ Mys. _________________________ Widow of _________________________ Late a _________________________ Co. _________________________ of the _________________________ Regiment of _________________________\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 470,\n        \"width\": 500,\n        \"height\": 50\n      }\n    },\n    {\n      \"type\": \"headline\",\n      \"text\": \"PENSION OFFICE CIRCULAR.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 520,\n        \"width\": 200,\n        \"height\": 30\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"JUL 15, 1861. EXTRACT. The forms should be exactly followed in every instance. No affidavit will be required as having had the necessary declaration and affidavits as contemplated by the lawsuits, Section of the Act July 14, 1861, under the terms, as well as the instructions given, on strictly complied with.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 550,\n        \"width\": 500,\n        \"height\": 80\n      }\n    },\n    {\n      \"type\": \"byline\",\n      \"text\": \"J. P. B. BARRETT, Commissioner. Attorney.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 630,\n        \"width\": 250,\n        \"height\": 30\n      }\n    },\n    {\n      \"type\": \"headline\",\n      \"text\": \"INSTRUCTIONS.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 660,\n        \"width\": 150,\n        \"height\": 30\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"1. \\\"Judge,\\\" or \\\"Clerk,\\\" as the case may be. 2. Name of the Court. 3. \\\"City,\\\" \\\"Town,\\\" \\\"Deposition,\\\" or \\\"County,\\\" as the case may be. 4. \\\"July 14, 1861,\\\" or any other Act of Congress applicable to the case. 5. \\\"Country, Territory, or Artillery (Chemical or ... State give State), ... naming the troops as indicated according to the arm of the service to which they belong. If of the regular service, in place of the foregoing unit: \\\"United States Infantry,\\\" \\\"Carolina,\\\" or \\\"Artillery,\\\" as the case may be. 6. \\\"State, or,\\\" or \\\"State Understood Town,\\\" as the case may be. 7. \\\"Branch,\\\" or \\\"Registrar,\\\" or \\\"No Clerk of Regional Dept.\\\" \\\"Pensioner,\\\" \\\"Rearor,\\\" \\\"Elementary,\\\" \\\"Chronic Diarrhea,\\\" \\\"Dysentery,\\\" \\\"Ciclosa Morbus,\\\" \\\"Phillip,\\\" or any other disease, physical disability, or injury, whatever it may be, naming it. 8. If killed in Battle, add: \\\"Being killed in Battle of ... date of his death,\\\" or if dying of wounds after Battle, instead of the foregoing say: \\\"Received in Battle or Action at ... on the ... day of ... A. D. 18 ... 9. \\\"Home, He ..., about between, ... and ... stands, in the City of ... in the County and State aforesaid,\\\" or if, on the other hand, the applicant resides in the country instead of the city, in place of the foregoing say: \\\"on the wagon [or rail] road looking from ... to ... about ... miles from ... the County and of ... County, State above named.\\\" 10. \\\"On child law children, time of the above named soldier deceased, who are under the age of sixteen years of the present time, now certain time,\\\" or if, on the other hand, he has left any child or children, the same, within the age of sixteen years of this time, the full name, dated (DATE) and residence, of each such child, must be here stated. 11. \\\"Age,\\\" or \\\"male,\\\" as the case may be. 12. \\\"Name,\\\" or \\\"month,\\\" as the case may be.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 690,\n        \"width\": 500,\n        \"height\": 200\n      }\n    }\n  ]\n}",
+                "usage_info": {
+                    "pages_processed": 1,
+                    "doc_size_bytes": 73284
+                }
+            }
+        },
+        "annotate_handwriting": {
+            "pages": [
+                {
+                    "index": 0,
+                    "annotated_text": "certify that I have an interest in the prosecution of this claim. That the foregoing declaration and affidavit were read over to, and understood by, the respective parties before they signed the same.\n\n<hw>J. P. Breckinridge, Clerk</hw>\n<hw>of Henderson County</hw>\n\nNOTE.—If the Clerk of the Court (the Deputy will not answer) takes the Declaration and Affidavit defined of the Judge, he signs the above certificate and places the seal of the Court thereto, and the following certificate then goes unauthenticated, but if the Judge admonitors the oath, he signs the foregoing certificate, and then the Clerk himself authenticated the certificate herein following.\n\nState of\nCounty of\nSS.\n\nI, <hw>_________________________</hw>, Clerk of the <hw>_________________________</hw> Court within and for the County and State aforesaid, do hereby certify that <hw>_________________________</hw> before whom the foregoing Pension Declaration and joint affidavit were made, and who has thereunto signed his name, was, at the time of so doing, Judge of the <hw>_________________________</hw> Court in and for the County and State above named, duly elected, qualified and sworn; that all his official acts as such are entitled to full faith and credit, and that his said signature, as it above appears, is genuine.\n\nGiven under my hand and seal of <hw>_________________________</hw> Court at office in <hw>_________________________</hw> this <hw>_________________________</hw> day of <hw>_________________________</hw> A. D. 18<hw>__</hw>\n\nClerk,\nClerk,\nClerk.\n\nNOTE.—The Deputy Clerk of a Court of Record is prohibited by the Rules and Regulations of the Pension Office from taking Pension Declarations, hence the absolute necessity for the Judge or Clerk of the Court to do so personally, and to his official capacity.\n\nFORWARDED BY <hw>_________________________</hw> or <hw>_________________________</hw>\n\nWIDOW&#039;S APPLICATION\nFOR\nARMY PENSION.\nWAR 1861.\n\nAct of <hw>_________________________</hw>\n<hw>Mys. _________________________</hw>\nWidow of <hw>_________________________</hw>\nLate a <hw>_________________________</hw> Co. <hw>_________________________</hw>\nof the <hw>_________________________</hw> Regiment of <hw>_________________________</hw>\n\nPENSION OFFICE CIRCULAR.\nJUL 15, 1861.\nEXTRACT.\nThe forms should be exactly followed in every instance. No affidavit will be required as having had the necessary declaration and affidavits as contemplated by the lawsuits, Section of the Act July 14, 1861, under the terms, as well as the instructions given, on strictly complied with.\n\nJ. P. B. BARRETT, Commissioner.\nAttorney.\n\nINSTRUCTIONS.\n\n1. &quot;Judge,&quot; or &quot;Clerk,&quot; as the case may be.\n2. Name of the Court.\n3. &quot;City,&quot; &quot;Town,&quot; &quot;Deposition,&quot; or &quot;County,&quot; as the case may be.\n4. &quot;July 14, 1861,&quot; or any other Act of Congress applicable to the case.\n5. &quot;Country, Territory, or Artillery (Chemical or ... State give State), ... naming the troops as indicated according to the arm of the service to which they belong. If of the regular service, in place of the foregoing unit: &quot;United States Infantry,&quot; &quot;Carolina,&quot; or &quot;Artillery,&quot; as the case may be.\n6. &quot;State, or,&quot; or &quot;State Understood Town,&quot; as the case may be.\n7. &quot;Branch,&quot; or &quot;Registrar,&quot; or &quot;No Clerk of Regional Dept.&quot; &quot;Pensioner,&quot; &quot;Rearor,&quot; &quot;Elementary,&quot; &quot;Chronic Diarrhea,&quot; &quot;Dysentery,&quot; &quot;Ciclosa Morbus,&quot; &quot;Phillip,&quot; or any other disease, physical disability, or injury, whatever it may be, naming it.\n8. If killed in Battle, add: &quot;Being killed in Battle of ... date of his death,&quot; or if dying of wounds after Battle, instead of the foregoing say: &quot;Received in Battle or Action at ... on the ... day of ... A. D. 18 ...\n9. &quot;Home, He ..., about between, ... and ... stands, in the City of ... in the County and State aforesaid,&quot; or if, on the other hand, the applicant resides in the country instead of the city, in place of the foregoing say: &quot;on the wagon [or rail] road looking from ... to ... about ... miles from ... the County and of ... County, State above named.&quot;\n10. &quot;On child law children, time of the above named soldier deceased, who are under the age of sixteen years of the present time, now certain time,&quot; or if, on the other hand, he has left any child or children, the same, within the age of sixteen years of this time, the full name, dated (DATE) and residence, of each such child, must be here stated.\n11. &quot;Age,&quot; or &quot;male,&quot; as the case may be.\n12. &quot;Name,&quot; or &quot;month,&quot; as the case may be."
+                }
+            ],
+            "annotated_text": "certify that I have an interest in the prosecution of this claim. That the foregoing declaration and affidavit were read over to, and understood by, the respective parties before they signed the same.\n\n<hw>J. P. Breckinridge, Clerk</hw>\n<hw>of Henderson County</hw>\n\nNOTE.—If the Clerk of the Court (the Deputy will not answer) takes the Declaration and Affidavit defined of the Judge, he signs the above certificate and places the seal of the Court thereto, and the following certificate then goes unauthenticated, but if the Judge admonitors the oath, he signs the foregoing certificate, and then the Clerk himself authenticated the certificate herein following.\n\nState of\nCounty of\nSS.\n\nI, <hw>_________________________</hw>, Clerk of the <hw>_________________________</hw> Court within and for the County and State aforesaid, do hereby certify that <hw>_________________________</hw> before whom the foregoing Pension Declaration and joint affidavit were made, and who has thereunto signed his name, was, at the time of so doing, Judge of the <hw>_________________________</hw> Court in and for the County and State above named, duly elected, qualified and sworn; that all his official acts as such are entitled to full faith and credit, and that his said signature, as it above appears, is genuine.\n\nGiven under my hand and seal of <hw>_________________________</hw> Court at office in <hw>_________________________</hw> this <hw>_________________________</hw> day of <hw>_________________________</hw> A. D. 18<hw>__</hw>\n\nClerk,\nClerk,\nClerk.\n\nNOTE.—The Deputy Clerk of a Court of Record is prohibited by the Rules and Regulations of the Pension Office from taking Pension Declarations, hence the absolute necessity for the Judge or Clerk of the Court to do so personally, and to his official capacity.\n\nFORWARDED BY <hw>_________________________</hw> or <hw>_________________________</hw>\n\nWIDOW&#039;S APPLICATION\nFOR\nARMY PENSION.\nWAR 1861.\n\nAct of <hw>_________________________</hw>\n<hw>Mys. _________________________</hw>\nWidow of <hw>_________________________</hw>\nLate a <hw>_________________________</hw> Co. <hw>_________________________</hw>\nof the <hw>_________________________</hw> Regiment of <hw>_________________________</hw>\n\nPENSION OFFICE CIRCULAR.\nJUL 15, 1861.\nEXTRACT.\nThe forms should be exactly followed in every instance. No affidavit will be required as having had the necessary declaration and affidavits as contemplated by the lawsuits, Section of the Act July 14, 1861, under the terms, as well as the instructions given, on strictly complied with.\n\nJ. P. B. BARRETT, Commissioner.\nAttorney.\n\nINSTRUCTIONS.\n\n1. &quot;Judge,&quot; or &quot;Clerk,&quot; as the case may be.\n2. Name of the Court.\n3. &quot;City,&quot; &quot;Town,&quot; &quot;Deposition,&quot; or &quot;County,&quot; as the case may be.\n4. &quot;July 14, 1861,&quot; or any other Act of Congress applicable to the case.\n5. &quot;Country, Territory, or Artillery (Chemical or ... State give State), ... naming the troops as indicated according to the arm of the service to which they belong. If of the regular service, in place of the foregoing unit: &quot;United States Infantry,&quot; &quot;Carolina,&quot; or &quot;Artillery,&quot; as the case may be.\n6. &quot;State, or,&quot; or &quot;State Understood Town,&quot; as the case may be.\n7. &quot;Branch,&quot; or &quot;Registrar,&quot; or &quot;No Clerk of Regional Dept.&quot; &quot;Pensioner,&quot; &quot;Rearor,&quot; &quot;Elementary,&quot; &quot;Chronic Diarrhea,&quot; &quot;Dysentery,&quot; &quot;Ciclosa Morbus,&quot; &quot;Phillip,&quot; or any other disease, physical disability, or injury, whatever it may be, naming it.\n8. If killed in Battle, add: &quot;Being killed in Battle of ... date of his death,&quot; or if dying of wounds after Battle, instead of the foregoing say: &quot;Received in Battle or Action at ... on the ... day of ... A. D. 18 ...\n9. &quot;Home, He ..., about between, ... and ... stands, in the City of ... in the County and State aforesaid,&quot; or if, on the other hand, the applicant resides in the country instead of the city, in place of the foregoing say: &quot;on the wagon [or rail] road looking from ... to ... about ... miles from ... the County and of ... County, State above named.&quot;\n10. &quot;On child law children, time of the above named soldier deceased, who are under the age of sixteen years of the present time, now certain time,&quot; or if, on the other hand, he has left any child or children, the same, within the age of sixteen years of this time, the full name, dated (DATE) and residence, of each such child, must be here stated.\n11. &quot;Age,&quot; or &quot;male,&quot; as the case may be.\n12. &quot;Name,&quot; or &quot;month,&quot; as the case may be."
+        },
+        "transcribe_handwriting": {
+            "text": "That the foregoing declarations and affidavits were read over to, and\n\nS. P. Breckinridge Clerk\n\nof Anderson County\n\n\nState of\n\nCounty of\n\nSS.\n\nClerk of the\n\nCourt within and\n\nfor the County and State aforesaid, do hereby certify that...\n\nPension Declaration, and joint affidavit were made, and who has thereunto signed his name, was, at the time of so doing, Judge of the\n\nCourt in and for the County and State above named, duly elected, qualified and\n\nsworn; that all his official acts as such are entitled to full faith and credit, and that his said signature, as it there appears, is genuine.\n\nGiven under my hand and seal of\n\nCourt..A.D. 18\n\nto this...day of\n\nClerk,\n\n\nForwarded by...of\n\n\nWIDOW'S APPLICATION\n\nfor\n\nARMY PENSION.\n\n\nPENSION OFFICE CIRCULAR.\n\nMADISON, WIS.\n\nSept. 5, 1861.\n\nWhere a paper, received at this office, requires the certificate of a Judge or Clerk of the Court, the certificate must be in accordance with the\n\nstatute. The certificate of any other than a Judge, Court or Clerk will not be received. Where any writing purports to be sworn to before any...\n\n\nINSTRUCTIONS.",
+            "language": null,
+            "confidence": "medium",
+            "blocks": [
+                [
+                    "That the foregoing declarations and affidavits were read over to, and"
+                ],
+                [
+                    "S. P. Breckinridge Clerk"
+                ],
+                [
+                    "of Anderson County"
+                ],
+                [
+                    "State of"
+                ],
+                [
+                    "County of"
+                ],
+                [
+                    "SS."
+                ],
+                [
+                    "Clerk of the"
+                ],
+                [
+                    "Court within and"
+                ],
+                [
+                    "for the County and State aforesaid, do hereby certify that..."
+                ],
+                [
+                    "Pension Declaration, and joint affidavit were made, and who has thereunto signed his name, was, at the time of so doing, Judge of the"
+                ],
+                [
+                    "Court in and for the County and State above named, duly elected, qualified and"
+                ],
+                [
+                    "sworn; that all his official acts as such are entitled to full faith and credit, and that his said signature, as it there appears, is genuine."
+                ],
+                [
+                    "Given under my hand and seal of"
+                ],
+                [
+                    "Court..A.D. 18"
+                ],
+                [
+                    "to this...day of"
+                ],
+                [
+                    "Clerk,"
+                ],
+                [
+                    "Forwarded by...of"
+                ],
+                [
+                    "WIDOW'S APPLICATION"
+                ],
+                [
+                    "for"
+                ],
+                [
+                    "ARMY PENSION."
+                ],
+                [
+                    "PENSION OFFICE CIRCULAR."
+                ],
+                [
+                    "MADISON, WIS."
+                ],
+                [
+                    "Sept. 5, 1861."
+                ],
+                [
+                    "Where a paper, received at this office, requires the certificate of a Judge or Clerk of the Court, the certificate must be in accordance with the"
+                ],
+                [
+                    "statute. The certificate of any other than a Judge, Court or Clerk will not be received. Where any writing purports to be sworn to before any..."
+                ],
+                [
+                    "INSTRUCTIONS."
+                ]
+            ],
+            "_tokens": {
+                "prompt": 1311,
+                "completion": 635,
+                "total": 1946,
+                "cached": 0
+            }
+        }
+    }
+}

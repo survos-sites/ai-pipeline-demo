@@ -682,16 +682,16 @@
         },
         {
             "name": "survos/ai-pipeline-bundle",
-            "version": "2.0.115",
+            "version": "2.0.116",
             "source": {
                 "type": "git",
                 "url": "https://github.com/survos/ai-pipeline-bundle.git",
-                "reference": "0c336a581aa8949d3a5cfa346c971cf85c25f654"
+                "reference": "b282666ae7a6ad705b086dfab9434dcbd025f8bc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/survos/ai-pipeline-bundle/zipball/0c336a581aa8949d3a5cfa346c971cf85c25f654",
-                "reference": "0c336a581aa8949d3a5cfa346c971cf85c25f654",
+                "url": "https://api.github.com/repos/survos/ai-pipeline-bundle/zipball/b282666ae7a6ad705b086dfab9434dcbd025f8bc",
+                "reference": "b282666ae7a6ad705b086dfab9434dcbd025f8bc",
                 "shasum": ""
             },
             "require": {
@@ -736,7 +736,7 @@
             ],
             "support": {
                 "issues": "https://github.com/survos/ai-pipeline-bundle/issues",
-                "source": "https://github.com/survos/ai-pipeline-bundle/tree/2.0.115"
+                "source": "https://github.com/survos/ai-pipeline-bundle/tree/2.0.116"
             },
             "funding": [
                 {
@@ -744,7 +744,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-02-27T14:26:29+00:00"
+            "time": "2026-03-02T10:11:40+00:00"
         },
         {
             "name": "symfony/ai-agent",

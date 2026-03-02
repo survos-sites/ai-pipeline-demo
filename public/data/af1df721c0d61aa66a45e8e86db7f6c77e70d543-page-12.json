@@ -1,0 +1,388 @@
+{
+    "subject": "file:///home/tac/g/sites/ai-pipeline-demo/public/images/pages/af1df721c0d61aa66a45e8e86db7f6c77e70d543-12.jpg",
+    "results": {
+        "ocr_mistral": {
+            "text": "SINGLE AFFIDAVIT\nFOR GENERAL PURPOSES IN UNITED STATES CLAIM BUSINESS.\n\nA NEW RULE.\n\nThe Departments of Washington have made a new rule, requiring where a witness signs his or her name to be affidavit by making his or her mark (a), that two persons who can write must attest such statement by signing on the left side of the name of the officer making a mark. For The Officer administering the oath can not be one of the attesting parties. Thus, no example:\n\nAttest:\nJOHN BROWN.\nJOSEPH SMITH.\n\nSworn to, subscribed, &amp;c.,\n\nHENRY HART.\nAMOS RIPLEY,\nJustice of Peace, &amp;c.\n\nState of Kentucky County of Henderson SS.\n\nOn this 21st day of August A.D. 1867, before me H. S. Park, a Notary Public within and for the County and State aforesaid, personally came and appeared\nRoy Chambers, aged Sixty-six years, a resident of the County of\nHenderson in the State of Kentucky, who, being by me duly sworn according to law, on oath declares that she is the true and lawful widow of Aaron Chambers, decd, late a Private Company G 118th U.S.C.T. Infantry, who died in field Hospital State of Virginia on the sixth day of November 1864, from effect of disarrival, incised in his line of duty.\n\nShe further declares she is unable to obtain a certificate from the Surgeon of this Regiment or Company Officer for the reason that they were all mother men and do not reside in the community of her residence and she cannot get the place of their residence or Post Office address, and in lieu of the abovenamed certificate she herewith sends the affidavit of two of his fellow soldiers as to the cause and place of this death, it being the best evidence she is able to obtain.\n\nShe further swears she cannot send Record proof of her marriage with the abovementioned soldier, for the reason that the law of Kentucky did not require a license &amp; a record for the marriage of persons of color but recognized them as man and wife from the act of cohabitation and he (Aaron) &amp; her lived together as man and wife according to the custom in Kentucky for persons of color, in proof of which she herewith sends the affidavit of two disinterested witnesses.\n\nher\nRobert C. Chambers\nmark\n\nAttest\nR. C. Thornton\nJ. L. Weller\n\nSworn to and subscribed before me, this 21st day of August in the year 1867, and I hereby certify that the affiant is a respectable and credible person and resides as stated; that I believe statements are correct and worthy of full faith and credit; that I have no interest in this matter. I further certify that the foregoing affidavit was read over, fully explained to, and understood by the affiant before the signing and execution thereof, and also that the affiant is the identical party represented as making the affidavit.\n\nH. S. Park\nN. P. H. C. K.",
+            "language": null,
+            "confidence": "high",
+            "layout_blocks": [
+                {
+                    "page": 0,
+                    "type": "headline",
+                    "text": "SINGLE AFFIDAVIT FOR GENERAL PURPOSES IN UNITED STATES CLAIM BUSINESS.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 0,
+                        "width": 721,
+                        "height": 32
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "headline",
+                    "text": "A NEW RULE.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 32,
+                        "width": 721,
+                        "height": 32
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "The Departments of Washington have made a new rule, requiring where a witness signs his or her name to be affidavit by making his or her mark (a), that two persons who can write must attest such statement by signing on the left side of the name of the officer making a mark. For The Officer administering the oath can not be one of the attesting parties. Thus, no example:",
+                    "bbox": {
+                        "x": 0,
+                        "y": 65,
+                        "width": 721,
+                        "height": 97
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "Attest:",
+                    "bbox": {
+                        "x": 0,
+                        "y": 162,
+                        "width": 721,
+                        "height": 32
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "JOHN BROWN.",
+                    "bbox": {
+                        "x": 29,
+                        "y": 195,
+                        "width": 721,
+                        "height": 32
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "JOSEPH SMITH.",
+                    "bbox": {
+                        "x": 29,
+                        "y": 227,
+                        "width": 721,
+                        "height": 32
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "Sworn to, subscribed, &c.,",
+                    "bbox": {
+                        "x": 0,
+                        "y": 260,
+                        "width": 721,
+                        "height": 32
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "HENRY HART.",
+                    "bbox": {
+                        "x": 29,
+                        "y": 292,
+                        "width": 721,
+                        "height": 32
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "AMOS RIPLEY,",
+                    "bbox": {
+                        "x": 29,
+                        "y": 325,
+                        "width": 721,
+                        "height": 32
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "Justice of Peace, &c.",
+                    "bbox": {
+                        "x": 29,
+                        "y": 357,
+                        "width": 721,
+                        "height": 32
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "headline",
+                    "text": "State of Kentucky County of Henderson SS.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 390,
+                        "width": 721,
+                        "height": 32
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "On this 21st day of August A.D. 1867, before me H. S. Park, a Notary Public within and for the County and State aforesaid, personally came and appeared Roy Chambers, aged Sixty-six years, a resident of the County of Henderson in the State of Kentucky, who, being by me duly sworn according to law, on oath declares that she is the true and lawful widow of Aaron Chambers, decd, late a Private Company G 118th U.S.C.T. Infantry, who died in field Hospital State of Virginia on the sixth day of November 1864, from effect of disarrival, incised in his line of duty.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 422,
+                        "width": 721,
+                        "height": 130
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "She further declares she is unable to obtain a certificate from the Surgeon of this Regiment or Company Officer for the reason that they were all mother men and do not reside in the community of her residence and she cannot get the place of their residence or Post Office address, and in lieu of the abovenamed certificate she herewith sends the affidavit of two of his fellow soldiers as to the cause and place of this death, it being the best evidence she is able to obtain.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 552,
+                        "width": 721,
+                        "height": 130
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "She further swears she cannot send Record proof of her marriage with the abovementioned soldier, for the reason that the law of Kentucky did not require a license & a record for the marriage of persons of color but recognized them as man and wife from the act of cohabitation and he (Aaron) & her lived together as man and wife according to the custom in Kentucky for persons of color, in proof of which she herewith sends the affidavit of two disinterested witnesses.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 682,
+                        "width": 721,
+                        "height": 130
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "her",
+                    "bbox": {
+                        "x": 0,
+                        "y": 811,
+                        "width": 721,
+                        "height": 32
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "Robert C. Chambers",
+                    "bbox": {
+                        "x": 29,
+                        "y": 844,
+                        "width": 721,
+                        "height": 32
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "mark",
+                    "bbox": {
+                        "x": 29,
+                        "y": 876,
+                        "width": 721,
+                        "height": 32
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "Attest",
+                    "bbox": {
+                        "x": 0,
+                        "y": 909,
+                        "width": 721,
+                        "height": 32
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "R. C. Thornton",
+                    "bbox": {
+                        "x": 29,
+                        "y": 941,
+                        "width": 721,
+                        "height": 32
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "J. L. Weller",
+                    "bbox": {
+                        "x": 29,
+                        "y": 974,
+                        "width": 721,
+                        "height": 32
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "Sworn to and subscribed before me, this 21st day of August in the year 1867, and I hereby certify that the affiant is a respectable and credible person and resides as stated; that I believe statements are correct and worthy of full faith and credit; that I have no interest in this matter. I further certify that the foregoing affidavit was read over, fully explained to, and understood by the affiant before the signing and execution thereof, and also that the affiant is the identical party represented as making the affidavit.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1006,
+                        "width": 721,
+                        "height": 130
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "H. S. Park",
+                    "bbox": {
+                        "x": 29,
+                        "y": 1136,
+                        "width": 721,
+                        "height": 32
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "N. P. H. C. K.",
+                    "bbox": {
+                        "x": 29,
+                        "y": 1169,
+                        "width": 721,
+                        "height": 32
+                    }
+                }
+            ],
+            "image_blocks": [],
+            "pages": [
+                {
+                    "index": 0,
+                    "markdown": "SINGLE AFFIDAVIT\nFOR GENERAL PURPOSES IN UNITED STATES CLAIM BUSINESS.\n\nA NEW RULE.\n\nThe Departments of Washington have made a new rule, requiring where a witness signs his or her name to be affidavit by making his or her mark (a), that two persons who can write must attest such statement by signing on the left side of the name of the officer making a mark. For The Officer administering the oath can not be one of the attesting parties. Thus, no example:\n\nAttest:\nJOHN BROWN.\nJOSEPH SMITH.\n\nSworn to, subscribed, &amp;c.,\n\nHENRY HART.\nAMOS RIPLEY,\nJustice of Peace, &amp;c.\n\nState of Kentucky County of Henderson SS.\n\nOn this 21st day of August A.D. 1867, before me H. S. Park, a Notary Public within and for the County and State aforesaid, personally came and appeared\nRoy Chambers, aged Sixty-six years, a resident of the County of\nHenderson in the State of Kentucky, who, being by me duly sworn according to law, on oath declares that she is the true and lawful widow of Aaron Chambers, decd, late a Private Company G 118th U.S.C.T. Infantry, who died in field Hospital State of Virginia on the sixth day of November 1864, from effect of disarrival, incised in his line of duty.\n\nShe further declares she is unable to obtain a certificate from the Surgeon of this Regiment or Company Officer for the reason that they were all mother men and do not reside in the community of her residence and she cannot get the place of their residence or Post Office address, and in lieu of the abovenamed certificate she herewith sends the affidavit of two of his fellow soldiers as to the cause and place of this death, it being the best evidence she is able to obtain.\n\nShe further swears she cannot send Record proof of her marriage with the abovementioned soldier, for the reason that the law of Kentucky did not require a license &amp; a record for the marriage of persons of color but recognized them as man and wife from the act of cohabitation and he (Aaron) &amp; her lived together as man and wife according to the custom in Kentucky for persons of color, in proof of which she herewith sends the affidavit of two disinterested witnesses.\n\nher\nRobert C. Chambers\nmark\n\nAttest\nR. C. Thornton\nJ. L. Weller\n\nSworn to and subscribed before me, this 21st day of August in the year 1867, and I hereby certify that the affiant is a respectable and credible person and resides as stated; that I believe statements are correct and worthy of full faith and credit; that I have no interest in this matter. I further certify that the foregoing affidavit was read over, fully explained to, and understood by the affiant before the signing and execution thereof, and also that the affiant is the identical party represented as making the affidavit.\n\nH. S. Park\nN. P. H. C. K.",
+                    "dimensions": {
+                        "dpi": 200,
+                        "height": 1201,
+                        "width": 750
+                    },
+                    "tables": [],
+                    "header": null,
+                    "footer": null
+                }
+            ],
+            "raw_response": {
+                "pages": [
+                    {
+                        "index": 0,
+                        "markdown": "SINGLE AFFIDAVIT\nFOR GENERAL PURPOSES IN UNITED STATES CLAIM BUSINESS.\n\nA NEW RULE.\n\nThe Departments of Washington have made a new rule, requiring where a witness signs his or her name to be affidavit by making his or her mark (a), that two persons who can write must attest such statement by signing on the left side of the name of the officer making a mark. For The Officer administering the oath can not be one of the attesting parties. Thus, no example:\n\nAttest:\nJOHN BROWN.\nJOSEPH SMITH.\n\nSworn to, subscribed, &amp;c.,\n\nHENRY HART.\nAMOS RIPLEY,\nJustice of Peace, &amp;c.\n\nState of Kentucky County of Henderson SS.\n\nOn this 21st day of August A.D. 1867, before me H. S. Park, a Notary Public within and for the County and State aforesaid, personally came and appeared\nRoy Chambers, aged Sixty-six years, a resident of the County of\nHenderson in the State of Kentucky, who, being by me duly sworn according to law, on oath declares that she is the true and lawful widow of Aaron Chambers, decd, late a Private Company G 118th U.S.C.T. Infantry, who died in field Hospital State of Virginia on the sixth day of November 1864, from effect of disarrival, incised in his line of duty.\n\nShe further declares she is unable to obtain a certificate from the Surgeon of this Regiment or Company Officer for the reason that they were all mother men and do not reside in the community of her residence and she cannot get the place of their residence or Post Office address, and in lieu of the abovenamed certificate she herewith sends the affidavit of two of his fellow soldiers as to the cause and place of this death, it being the best evidence she is able to obtain.\n\nShe further swears she cannot send Record proof of her marriage with the abovementioned soldier, for the reason that the law of Kentucky did not require a license &amp; a record for the marriage of persons of color but recognized them as man and wife from the act of cohabitation and he (Aaron) &amp; her lived together as man and wife according to the custom in Kentucky for persons of color, in proof of which she herewith sends the affidavit of two disinterested witnesses.\n\nher\nRobert C. Chambers\nmark\n\nAttest\nR. C. Thornton\nJ. L. Weller\n\nSworn to and subscribed before me, this 21st day of August in the year 1867, and I hereby certify that the affiant is a respectable and credible person and resides as stated; that I believe statements are correct and worthy of full faith and credit; that I have no interest in this matter. I further certify that the foregoing affidavit was read over, fully explained to, and understood by the affiant before the signing and execution thereof, and also that the affiant is the identical party represented as making the affidavit.\n\nH. S. Park\nN. P. H. C. K.",
+                        "images": [],
+                        "tables": [],
+                        "hyperlinks": [],
+                        "header": null,
+                        "footer": null,
+                        "dimensions": {
+                            "dpi": 200,
+                            "height": 1201,
+                            "width": 750
+                        }
+                    }
+                ],
+                "model": "mistral-ocr-latest",
+                "document_annotation": "{\n  \"blocks\": [\n    {\n      \"type\": \"headline\",\n      \"text\": \"SINGLE AFFIDAVIT FOR GENERAL PURPOSES IN UNITED STATES CLAIM BUSINESS.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 0,\n        \"width\": 500,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"headline\",\n      \"text\": \"A NEW RULE.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 20,\n        \"width\": 500,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"The Departments of Washington have made a new rule, requiring where a witness signs his or her name to be affidavit by making his or her mark (a), that two persons who can write must attest such statement by signing on the left side of the name of the officer making a mark. For The Officer administering the oath can not be one of the attesting parties. Thus, no example:\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 40,\n        \"width\": 500,\n        \"height\": 60\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"Attest:\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 100,\n        \"width\": 500,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"JOHN BROWN.\",\n      \"bbox\": {\n        \"x\": 20,\n        \"y\": 120,\n        \"width\": 500,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"JOSEPH SMITH.\",\n      \"bbox\": {\n        \"x\": 20,\n        \"y\": 140,\n        \"width\": 500,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"Sworn to, subscribed, &c.,\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 160,\n        \"width\": 500,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"HENRY HART.\",\n      \"bbox\": {\n        \"x\": 20,\n        \"y\": 180,\n        \"width\": 500,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"AMOS RIPLEY,\",\n      \"bbox\": {\n        \"x\": 20,\n        \"y\": 200,\n        \"width\": 500,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"Justice of Peace, &c.\",\n      \"bbox\": {\n        \"x\": 20,\n        \"y\": 220,\n        \"width\": 500,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"headline\",\n      \"text\": \"State of Kentucky County of Henderson SS.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 240,\n        \"width\": 500,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"On this 21st day of August A.D. 1867, before me H. S. Park, a Notary Public within and for the County and State aforesaid, personally came and appeared Roy Chambers, aged Sixty-six years, a resident of the County of Henderson in the State of Kentucky, who, being by me duly sworn according to law, on oath declares that she is the true and lawful widow of Aaron Chambers, decd, late a Private Company G 118th U.S.C.T. Infantry, who died in field Hospital State of Virginia on the sixth day of November 1864, from effect of disarrival, incised in his line of duty.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 260,\n        \"width\": 500,\n        \"height\": 80\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"She further declares she is unable to obtain a certificate from the Surgeon of this Regiment or Company Officer for the reason that they were all mother men and do not reside in the community of her residence and she cannot get the place of their residence or Post Office address, and in lieu of the abovenamed certificate she herewith sends the affidavit of two of his fellow soldiers as to the cause and place of this death, it being the best evidence she is able to obtain.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 340,\n        \"width\": 500,\n        \"height\": 80\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"She further swears she cannot send Record proof of her marriage with the abovementioned soldier, for the reason that the law of Kentucky did not require a license & a record for the marriage of persons of color but recognized them as man and wife from the act of cohabitation and he (Aaron) & her lived together as man and wife according to the custom in Kentucky for persons of color, in proof of which she herewith sends the affidavit of two disinterested witnesses.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 420,\n        \"width\": 500,\n        \"height\": 80\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"her\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 500,\n        \"width\": 500,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"Robert C. Chambers\",\n      \"bbox\": {\n        \"x\": 20,\n        \"y\": 520,\n        \"width\": 500,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"mark\",\n      \"bbox\": {\n        \"x\": 20,\n        \"y\": 540,\n        \"width\": 500,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"Attest\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 560,\n        \"width\": 500,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"R. C. Thornton\",\n      \"bbox\": {\n        \"x\": 20,\n        \"y\": 580,\n        \"width\": 500,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"J. L. Weller\",\n      \"bbox\": {\n        \"x\": 20,\n        \"y\": 600,\n        \"width\": 500,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"Sworn to and subscribed before me, this 21st day of August in the year 1867, and I hereby certify that the affiant is a respectable and credible person and resides as stated; that I believe statements are correct and worthy of full faith and credit; that I have no interest in this matter. I further certify that the foregoing affidavit was read over, fully explained to, and understood by the affiant before the signing and execution thereof, and also that the affiant is the identical party represented as making the affidavit.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 620,\n        \"width\": 500,\n        \"height\": 80\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"H. S. Park\",\n      \"bbox\": {\n        \"x\": 20,\n        \"y\": 700,\n        \"width\": 500,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"N. P. H. C. K.\",\n      \"bbox\": {\n        \"x\": 20,\n        \"y\": 720,\n        \"width\": 500,\n        \"height\": 20\n      }\n    }\n  ]\n}",
+                "usage_info": {
+                    "pages_processed": 1,
+                    "doc_size_bytes": 109906
+                }
+            }
+        },
+        "annotate_handwriting": {
+            "pages": [
+                {
+                    "index": 0,
+                    "annotated_text": "SINGLE AFFIDAVIT\nFOR GENERAL PURPOSES IN UNITED STATES CLAIM BUSINESS.\n\nA NEW RULE.\n\nThe Departments of Washington have made a new rule, requiring where a witness signs his or her name to be affidavit by making his or her mark (a), that two persons who can write must attest such statement by signing on the left side of the name of the officer making a mark. For The Officer administering the oath can not be one of the attesting parties. Thus, no example:\n\nAttest:\nJOHN BROWN.\nJOSEPH SMITH.\n\nSworn to, subscribed, &amp;amp;c.,\n\nHENRY HART.\nAMOS RIPLEY,\nJustice of Peace, &amp;amp;c.\n\nState of <hw>Kentucky</hw> County of <hw>Henderson</hw> SS.\n\nOn this <hw>21st</hw> day of <hw>August</hw> A.D. 18<hw>67</hw>, before me <hw>H. S. Park</hw>, a Notary Public within and for the County and State aforesaid, personally came and appeared <hw>Roy Chambers</hw>, aged <hw>Sixty-six</hw> years, a resident of the County of <hw>Henderson</hw> in the State of <hw>Kentucky</hw>, who, being by me duly sworn according to law, on oath declares that she is the true and lawful widow of <hw>Aaron Chambers</hw>, <hw>decd</hw>, late a Private Company G <hw>118th</hw> U.S.C.T. Infantry, who died in field Hospital State of Virginia on the sixth day of November 1864, from effect of disarrival, incised in his line of duty.\n\nShe further declares she is unable to obtain a certificate from the Surgeon of this Regiment or Company Officer for the reason that they were all mother men and do not reside in the community of her residence and she cannot get the place of their residence or Post Office address, and in lieu of the abovenamed certificate she herewith sends the affidavit of two of his fellow soldiers as to the cause and place of this death, it being the best evidence she is able to obtain.\n\nShe further swears she cannot send Record proof of her marriage with the abovementioned soldier, for the reason that the law of Kentucky did not require a license &amp;amp; a record for the marriage of persons of color but recognized them as man and wife from the act of cohabitation and he (<hw>Aaron</hw>) &amp;amp; her lived together as man and wife according to the custom in Kentucky for persons of color, in proof of which she herewith sends the affidavit of two disinterested witnesses.\n\n<hw>her\nRobert C. Chambers\nmark</hw>\n\nAttest\n<hw>R. C. Thornton\nJ. L. Weller</hw>\n\nSworn to and subscribed before me, this <hw>21st</hw> day of <hw>August</hw> in the year <hw>1867</hw>, and I hereby certify that the affiant is a respectable and credible person and resides as stated; that I believe statements are correct and worthy of full faith and credit; that I have no interest in this matter. I further certify that the foregoing affidavit was read over, fully explained to, and understood by the affiant before the signing and execution thereof, and also that the affiant is the identical party represented as making the affidavit.\n\n<hw>H. S. Park\nN. P. H. C. K.</hw>"
+                }
+            ],
+            "annotated_text": "SINGLE AFFIDAVIT\nFOR GENERAL PURPOSES IN UNITED STATES CLAIM BUSINESS.\n\nA NEW RULE.\n\nThe Departments of Washington have made a new rule, requiring where a witness signs his or her name to be affidavit by making his or her mark (a), that two persons who can write must attest such statement by signing on the left side of the name of the officer making a mark. For The Officer administering the oath can not be one of the attesting parties. Thus, no example:\n\nAttest:\nJOHN BROWN.\nJOSEPH SMITH.\n\nSworn to, subscribed, &amp;amp;c.,\n\nHENRY HART.\nAMOS RIPLEY,\nJustice of Peace, &amp;amp;c.\n\nState of <hw>Kentucky</hw> County of <hw>Henderson</hw> SS.\n\nOn this <hw>21st</hw> day of <hw>August</hw> A.D. 18<hw>67</hw>, before me <hw>H. S. Park</hw>, a Notary Public within and for the County and State aforesaid, personally came and appeared <hw>Roy Chambers</hw>, aged <hw>Sixty-six</hw> years, a resident of the County of <hw>Henderson</hw> in the State of <hw>Kentucky</hw>, who, being by me duly sworn according to law, on oath declares that she is the true and lawful widow of <hw>Aaron Chambers</hw>, <hw>decd</hw>, late a Private Company G <hw>118th</hw> U.S.C.T. Infantry, who died in field Hospital State of Virginia on the sixth day of November 1864, from effect of disarrival, incised in his line of duty.\n\nShe further declares she is unable to obtain a certificate from the Surgeon of this Regiment or Company Officer for the reason that they were all mother men and do not reside in the community of her residence and she cannot get the place of their residence or Post Office address, and in lieu of the abovenamed certificate she herewith sends the affidavit of two of his fellow soldiers as to the cause and place of this death, it being the best evidence she is able to obtain.\n\nShe further swears she cannot send Record proof of her marriage with the abovementioned soldier, for the reason that the law of Kentucky did not require a license &amp;amp; a record for the marriage of persons of color but recognized them as man and wife from the act of cohabitation and he (<hw>Aaron</hw>) &amp;amp; her lived together as man and wife according to the custom in Kentucky for persons of color, in proof of which she herewith sends the affidavit of two disinterested witnesses.\n\n<hw>her\nRobert C. Chambers\nmark</hw>\n\nAttest\n<hw>R. C. Thornton\nJ. L. Weller</hw>\n\nSworn to and subscribed before me, this <hw>21st</hw> day of <hw>August</hw> in the year <hw>1867</hw>, and I hereby certify that the affiant is a respectable and credible person and resides as stated; that I believe statements are correct and worthy of full faith and credit; that I have no interest in this matter. I further certify that the foregoing affidavit was read over, fully explained to, and understood by the affiant before the signing and execution thereof, and also that the affiant is the identical party represented as making the affidavit.\n\n<hw>H. S. Park\nN. P. H. C. K.</hw>"
+        },
+        "transcribe_handwriting": {
+            "text": "State of Kentucky  \nCounty of Henderson  }\n\nOn this 24th day of August A.D. 1867, before me, AL Park\n\nA Notary Public within and for the County and State aforesaid, personally came and appeared\nMrs Elibibath Ethelston aged 30 years, a resident of the Anthestion,\nin Henderson in the State of Kentucky who, being by me duly sworn according to law,\non oath declares that she is the widow of Samuel Westman \nClayton deceased late of ______ & County State of ______\nwho [unclear] died on Miller Computer, late of her marriage\nand fifth day of December 1864 from effect of Gunwsher \nrecived on the first deley of field\n\nand [unclear] further declare ______ she is unable to obtain\na Certificate from the surgeon of regular Regiment &\nCorporal [unclear] as found what has ______[unclear] at Miltons [torn]\nand rate of Where - the [unclear] that theresa and\nshe cannot get the place of their [unclear] is not [unclear]\n        and on the other, to go this [unclear] El\nthen with [torn] the affidavits of two of his fellow Soliers\nas to the Cause and place of [torn] death it being the\nbest evidence she is able to obtain\n              Further declare She Cannot find Record\nproof of her Marriage with the alressman Solid as in hu\nfor reason that tak [unclear] of trusty it will not require a Record\nof a second for the Marriage of [torn] of Clay but required\nthen as Man and wife from the act of Exhibuition [torn] and\nto [unclear] on but could to praide as Man and wife [torn]\nfor the Cause in Kentucky of Proveron Colou. in proof of\nWhat ther mom [unclear] the affidavits of two dis wordthoth\nmitvigate\n                  her name signature\nAttest:\nB. G. Thornton\nJ. A. Wellon\n\nSworn to and subscribed before me, this 24th day of August the year 1867, and I hereby\n\ncertify that the affiant is a respectable and credible person and reliable stated; that I believe ______ [unclear]\n\nare correct and worthy of full faith and credit; that I have no interest in this matter. I further certify that the foregoings\naffidavit was read over, fully explained to, and understood by the affiant before the signing and execution thereof, and\n\nalso that the afiant is the identical party represented as making the affidavit.\n\nAL Park\nN [unclear] C Olly",
+            "language": "English",
+            "confidence": "medium",
+            "blocks": [
+                [
+                    "State of Kentucky",
+                    "County of Henderson  }"
+                ],
+                [
+                    "On this 24th day of August A.D. 1867, before me, AL Park"
+                ],
+                [
+                    "A Notary Public within and for the County and State aforesaid, personally came and appeared",
+                    "Mrs Elibibath Ethelston aged 30 years, a resident of the Anthestion,",
+                    "in Henderson in the State of Kentucky who, being by me duly sworn according to law,",
+                    "on oath declares that she is the widow of Samuel Westman ",
+                    "Clayton deceased late of ______ & County State of ______",
+                    "who [unclear] died on Miller Computer, late of her marriage",
+                    "and fifth day of December 1864 from effect of Gunwsher ",
+                    "recived on the first deley of field"
+                ],
+                [
+                    "and [unclear] further declare ______ she is unable to obtain",
+                    "a Certificate from the surgeon of regular Regiment &",
+                    "Corporal [unclear] as found what has ______[unclear] at Miltons [torn]",
+                    "and rate of Where - the [unclear] that theresa and",
+                    "she cannot get the place of their [unclear] is not [unclear]",
+                    "        and on the other, to go this [unclear] El",
+                    "then with [torn] the affidavits of two of his fellow Soliers",
+                    "as to the Cause and place of [torn] death it being the",
+                    "best evidence she is able to obtain"
+                ],
+                [
+                    "              Further declare She Cannot find Record",
+                    "proof of her Marriage with the alressman Solid as in hu",
+                    "for reason that tak [unclear] of trusty it will not require a Record",
+                    "of a second for the Marriage of [torn] of Clay but required",
+                    "then as Man and wife from the act of Exhibuition [torn] and",
+                    "to [unclear] on but could to praide as Man and wife [torn]",
+                    "for the Cause in Kentucky of Proveron Colou. in proof of",
+                    "What ther mom [unclear] the affidavits of two dis wordthoth",
+                    "mitvigate"
+                ],
+                [
+                    "                  her name signature",
+                    "Attest:",
+                    "B. G. Thornton",
+                    "J. A. Wellon"
+                ],
+                [
+                    "Sworn to and subscribed before me, this 24th day of August the year 1867, and I hereby"
+                ],
+                [
+                    "certify that the affiant is a respectable and credible person and reliable stated; that I believe ______ [unclear]"
+                ],
+                [
+                    "are correct and worthy of full faith and credit; that I have no interest in this matter. I further certify that the foregoings",
+                    "affidavit was read over, fully explained to, and understood by the affiant before the signing and execution thereof, and"
+                ],
+                [
+                    "also that the afiant is the identical party represented as making the affidavit."
+                ],
+                [
+                    "AL Park",
+                    "N [unclear] C Olly"
+                ]
+            ],
+            "_tokens": {
+                "prompt": 1311,
+                "completion": 1197,
+                "total": 2508,
+                "cached": 0
+            }
+        }
+    }
+}

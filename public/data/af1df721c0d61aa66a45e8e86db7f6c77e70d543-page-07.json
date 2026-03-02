@@ -1,0 +1,631 @@
+{
+    "subject": "file:///home/tac/g/sites/ai-pipeline-demo/public/images/pages/af1df721c0d61aa66a45e8e86db7f6c77e70d543-07.jpg",
+    "results": {
+        "ocr_mistral": {
+            "text": "State of Kentucky County of Henderson SS.\n\nI, James P. Breckinridge, Clerk of the County Court within and for the County and State aforesaid, do hereby certify that A. S. Park Esq., before whom the foregoing joint affidavit was made, and who has thereunto signed his name, was at the time of so doing a Notary in and for the County and State above named, duly commissioned, qualified and sworn; that all his official acts as such are entitled to full faith and credit, and that his said signature as it above appears is genuine. I further certify that, to the best of my knowledge and belief, the witnesses subscribing the foregoing affidavit are credible and of good standing in the community in which they reside. That I have no interest in this matter.\n\nTo certify all which I hereunto set my hand and the seal of my said Court at Office in Henderson this 21 day of August A.D. 1867\n\nJ. P. Breckinridge, Clerk\nof Henderson County Court\n\n---\n\nSECTION.—To rate the Deputy Administrator the Clerk's Certificate, evidence may be required to show that the Deputy is duly appointed and authorized to have in open the Clerk's name and are the seal of the Court.—Therefore it is better to have the Clerk's own individual authorization of rates, and these rates the teacher and supervisor of a general authorization certificate respecting the Deputy which might be required if the papers were authenticated by him instead of the Clerk.\n\n---\n\nCERTIFICATE.\nTO ALL WHOM IT MAY CONCERN.\n\nNote.—This Certificate is to be signed by some one known to the Department of Washington, such as the Postmaster of the place where witnesses reside, or a member of Congress, or a United States Commissioner, or a Commissioner Officer of the Army.\n\nIt is hereby certified that the witnesses subscribing the foregoing joint affidavit are credible persons, and of good moral character, and reside as stated.\n\nTo certify which I hereunto set my hand at\n\nin the State of\n\non this\n\nday of\n\nA. D. 186\n\n---\n\nINSTRUCTIONS.\n\n1. \"Clerk,\" \"Town,\" \"Corporation,\" or \"County,\" as rates may be.\n2. Name of the Soldier.\n3. \"Secretary,\" \"Infantry,\" or \"Artillery,\" \"Volunteers of ___ Cents give state ___ manning the troops as indicated according to the arm of the service to which they belong. If at the regular service, in place of the foregoing, add: \"United States Infantry,\" \"Country,\" or \"Artillery,\" as the rates may be.\n4. Here give the issued period of known substitution of which affiants are cognizant.\n5. \"Walls (or\" or \"other discharged from,\" as the rates may be.\n6. \"Honorary Wounds,\" or the \"Affiants of Typhoid Ploats,\" \"Pneumonias,\" \"Measles,\" \"Chronic Diarrhea,\" \"Dymatry,\" \"Chokes Mariner,\" \"Phillains,\" or any other disease, physical disability, or injury, whatever it may be, among it. It is very important to state correctly the cause of death, as it will be most accurately isolated upon by the Pension Office.\n\n---\n\n\"Additional Evidence.\"\n\nCLAIM FOR ARMY PENSION.\n\nAct of A. D.\nMrs.\nWidow of des'd\nLate a in Co.\nof the Regiment of\n\nWITNESSES' AFFIDAVIT.\n\nPRIOR OF\n\n1. Widow's Identity.\n2. Soldier's Identity.\n3. Soldier's Service.\n4. Cohabitation and Heteritly.\n5. Soldier's Physical Condition prior to Enlistment.\n6. Time, Place, and Cause of Death.\n7. Continued Withdrawal of Applicant.\n\nCase No.\n\nEXTRACT.\n\nPension Office Circular, July 21, 1862.\n\n\"If the applicant claims a Pension at a widow of a deceased officer or soldier, she must prove the legality of her marriage, the death of her husband, and that she is still a widow.\"\n\n...Affirmation.\n\nPost Office:",
+            "language": null,
+            "confidence": "high",
+            "layout_blocks": [
+                {
+                    "page": 0,
+                    "type": "headline",
+                    "text": "State of Kentucky County of Henderson SS.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 0,
+                        "width": 751,
+                        "height": 20
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "I, James P. Breckinridge, Clerk of the County Court within and for the County and State aforesaid, do hereby certify that A. S. Park Esq., before whom the foregoing joint affidavit was made, and who has thereunto signed his name, was at the time of so doing a Notary in and for the County and State above named, duly commissioned, qualified and sworn; that all his official acts as such are entitled to full faith and credit, and that his said signature as it above appears is genuine. I further certify that, to the best of my knowledge and belief, the witnesses subscribing the foregoing affidavit are credible and of good standing in the community in which they reside. That I have no interest in this matter.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 20,
+                        "width": 751,
+                        "height": 102
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "To certify all which I hereunto set my hand and the seal of my said Court at Office in Henderson this 21 day of August A.D. 1867",
+                    "bbox": {
+                        "x": 0,
+                        "y": 122,
+                        "width": 751,
+                        "height": 20
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "byline",
+                    "text": "J. P. Breckinridge, Clerk of Henderson County Court",
+                    "bbox": {
+                        "x": 0,
+                        "y": 142,
+                        "width": 751,
+                        "height": 20
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "SECTION.—To rate the Deputy Administrator the Clerk's Certificate, evidence may be required to show that the Deputy is duly appointed and authorized to have in open the Clerk's name and are the seal of the Court.—Therefore it is better to have the Clerk's own individual authorization of rates, and these rates the teacher and supervisor of a general authorization certificate respecting the Deputy which might be required if the papers were authenticated by him instead of the Clerk.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 163,
+                        "width": 751,
+                        "height": 81
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "headline",
+                    "text": "CERTIFICATE.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 244,
+                        "width": 751,
+                        "height": 20
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "TO ALL WHOM IT MAY CONCERN.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 265,
+                        "width": 751,
+                        "height": 20
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "Note.—This Certificate is to be signed by some one known to the Department of Washington, such as the Postmaster of the place where witnesses reside, or a member of Congress, or a United States Commissioner, or a Commissioner Officer of the Army.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 285,
+                        "width": 751,
+                        "height": 61
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "It is hereby certified that the witnesses subscribing the foregoing joint affidavit are credible persons, and of good moral character, and reside as stated.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 346,
+                        "width": 751,
+                        "height": 41
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "To certify which I hereunto set my hand at",
+                    "bbox": {
+                        "x": 0,
+                        "y": 387,
+                        "width": 751,
+                        "height": 20
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "in the State of",
+                    "bbox": {
+                        "x": 0,
+                        "y": 407,
+                        "width": 751,
+                        "height": 20
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "on this",
+                    "bbox": {
+                        "x": 0,
+                        "y": 427,
+                        "width": 751,
+                        "height": 20
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "day of",
+                    "bbox": {
+                        "x": 0,
+                        "y": 448,
+                        "width": 751,
+                        "height": 20
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "A. D. 186",
+                    "bbox": {
+                        "x": 0,
+                        "y": 468,
+                        "width": 751,
+                        "height": 20
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "headline",
+                    "text": "INSTRUCTIONS.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 489,
+                        "width": 751,
+                        "height": 20
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "1. \"Clerk,\" \"Town,\" \"Corporation,\" or \"County,\" as rates may be.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 509,
+                        "width": 751,
+                        "height": 20
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "2. Name of the Soldier.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 529,
+                        "width": 751,
+                        "height": 20
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "3. \"Secretary,\" \"Infantry,\" or \"Artillery,\" \"Volunteers of ___ Cents give state ___ manning the troops as indicated according to the arm of the service to which they belong. If at the regular service, in place of the foregoing, add: \"United States Infantry,\" \"Country,\" or \"Artillery,\" as the rates may be.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 550,
+                        "width": 751,
+                        "height": 61
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "4. Here give the issued period of known substitution of which affiants are cognizant.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 611,
+                        "width": 751,
+                        "height": 20
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "5. \"Walls (or\" or \"other discharged from,\" as the rates may be.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 631,
+                        "width": 751,
+                        "height": 20
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "6. \"Honorary Wounds,\" or the \"Affiants of Typhoid Ploats,\" \"Pneumonias,\" \"Measles,\" \"Chronic Diarrhea,\" \"Dymatry,\" \"Chokes Mariner,\" \"Phillains,\" or any other disease, physical disability, or injury, whatever it may be, among it. It is very important to state correctly the cause of death, as it will be most accurately isolated upon by the Pension Office.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 651,
+                        "width": 751,
+                        "height": 81
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "headline",
+                    "text": "Additional Evidence.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 733,
+                        "width": 751,
+                        "height": 20
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "headline",
+                    "text": "CLAIM FOR ARMY PENSION.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 753,
+                        "width": 751,
+                        "height": 20
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "Act of A. D.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 774,
+                        "width": 751,
+                        "height": 20
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "Mrs.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 794,
+                        "width": 751,
+                        "height": 20
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "Widow of des'd",
+                    "bbox": {
+                        "x": 0,
+                        "y": 814,
+                        "width": 751,
+                        "height": 20
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "Late a in Co.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 835,
+                        "width": 751,
+                        "height": 20
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "of the Regiment of",
+                    "bbox": {
+                        "x": 0,
+                        "y": 855,
+                        "width": 751,
+                        "height": 20
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "headline",
+                    "text": "WITNESSES' AFFIDAVIT.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 875,
+                        "width": 751,
+                        "height": 20
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "PRIOR OF",
+                    "bbox": {
+                        "x": 0,
+                        "y": 896,
+                        "width": 751,
+                        "height": 20
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "1. Widow's Identity.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 916,
+                        "width": 751,
+                        "height": 20
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "2. Soldier's Identity.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 936,
+                        "width": 751,
+                        "height": 20
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "3. Soldier's Service.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 957,
+                        "width": 751,
+                        "height": 20
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "4. Cohabitation and Heteritly.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 977,
+                        "width": 751,
+                        "height": 20
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "5. Soldier's Physical Condition prior to Enlistment.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 997,
+                        "width": 751,
+                        "height": 20
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "6. Time, Place, and Cause of Death.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1018,
+                        "width": 751,
+                        "height": 20
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "7. Continued Withdrawal of Applicant.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1038,
+                        "width": 751,
+                        "height": 20
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "Case No.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1059,
+                        "width": 751,
+                        "height": 20
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "headline",
+                    "text": "EXTRACT.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1079,
+                        "width": 751,
+                        "height": 20
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "Pension Office Circular, July 21, 1862.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1099,
+                        "width": 751,
+                        "height": 20
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "\"If the applicant claims a Pension at a widow of a deceased officer or soldier, she must prove the legality of her marriage, the death of her husband, and that she is still a widow.\"",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1120,
+                        "width": 751,
+                        "height": 41
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "...Affirmation.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1160,
+                        "width": 751,
+                        "height": 20
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "Post Office:",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1181,
+                        "width": 751,
+                        "height": 20
+                    }
+                }
+            ],
+            "image_blocks": [],
+            "pages": [
+                {
+                    "index": 0,
+                    "markdown": "State of Kentucky County of Henderson SS.\n\nI, James P. Breckinridge, Clerk of the County Court within and for the County and State aforesaid, do hereby certify that A. S. Park Esq., before whom the foregoing joint affidavit was made, and who has thereunto signed his name, was at the time of so doing a Notary in and for the County and State above named, duly commissioned, qualified and sworn; that all his official acts as such are entitled to full faith and credit, and that his said signature as it above appears is genuine. I further certify that, to the best of my knowledge and belief, the witnesses subscribing the foregoing affidavit are credible and of good standing in the community in which they reside. That I have no interest in this matter.\n\nTo certify all which I hereunto set my hand and the seal of my said Court at Office in Henderson this 21 day of August A.D. 1867\n\nJ. P. Breckinridge, Clerk\nof Henderson County Court\n\n---\n\nSECTION.—To rate the Deputy Administrator the Clerk's Certificate, evidence may be required to show that the Deputy is duly appointed and authorized to have in open the Clerk's name and are the seal of the Court.—Therefore it is better to have the Clerk's own individual authorization of rates, and these rates the teacher and supervisor of a general authorization certificate respecting the Deputy which might be required if the papers were authenticated by him instead of the Clerk.\n\n---\n\nCERTIFICATE.\nTO ALL WHOM IT MAY CONCERN.\n\nNote.—This Certificate is to be signed by some one known to the Department of Washington, such as the Postmaster of the place where witnesses reside, or a member of Congress, or a United States Commissioner, or a Commissioner Officer of the Army.\n\nIt is hereby certified that the witnesses subscribing the foregoing joint affidavit are credible persons, and of good moral character, and reside as stated.\n\nTo certify which I hereunto set my hand at\n\nin the State of\n\non this\n\nday of\n\nA. D. 186\n\n---\n\nINSTRUCTIONS.\n\n1. \"Clerk,\" \"Town,\" \"Corporation,\" or \"County,\" as rates may be.\n2. Name of the Soldier.\n3. \"Secretary,\" \"Infantry,\" or \"Artillery,\" \"Volunteers of ___ Cents give state ___ manning the troops as indicated according to the arm of the service to which they belong. If at the regular service, in place of the foregoing, add: \"United States Infantry,\" \"Country,\" or \"Artillery,\" as the rates may be.\n4. Here give the issued period of known substitution of which affiants are cognizant.\n5. \"Walls (or\" or \"other discharged from,\" as the rates may be.\n6. \"Honorary Wounds,\" or the \"Affiants of Typhoid Ploats,\" \"Pneumonias,\" \"Measles,\" \"Chronic Diarrhea,\" \"Dymatry,\" \"Chokes Mariner,\" \"Phillains,\" or any other disease, physical disability, or injury, whatever it may be, among it. It is very important to state correctly the cause of death, as it will be most accurately isolated upon by the Pension Office.\n\n---\n\n\"Additional Evidence.\"\n\nCLAIM FOR ARMY PENSION.\n\nAct of A. D.\nMrs.\nWidow of des'd\nLate a in Co.\nof the Regiment of\n\nWITNESSES' AFFIDAVIT.\n\nPRIOR OF\n\n1. Widow's Identity.\n2. Soldier's Identity.\n3. Soldier's Service.\n4. Cohabitation and Heteritly.\n5. Soldier's Physical Condition prior to Enlistment.\n6. Time, Place, and Cause of Death.\n7. Continued Withdrawal of Applicant.\n\nCase No.\n\nEXTRACT.\n\nPension Office Circular, July 21, 1862.\n\n\"If the applicant claims a Pension at a widow of a deceased officer or soldier, she must prove the legality of her marriage, the death of her husband, and that she is still a widow.\"\n\n...Affirmation.\n\nPost Office:",
+                    "dimensions": {
+                        "dpi": 200,
+                        "height": 1201,
+                        "width": 751
+                    },
+                    "tables": [],
+                    "header": null,
+                    "footer": null
+                }
+            ],
+            "raw_response": {
+                "pages": [
+                    {
+                        "index": 0,
+                        "markdown": "State of Kentucky County of Henderson SS.\n\nI, James P. Breckinridge, Clerk of the County Court within and for the County and State aforesaid, do hereby certify that A. S. Park Esq., before whom the foregoing joint affidavit was made, and who has thereunto signed his name, was at the time of so doing a Notary in and for the County and State above named, duly commissioned, qualified and sworn; that all his official acts as such are entitled to full faith and credit, and that his said signature as it above appears is genuine. I further certify that, to the best of my knowledge and belief, the witnesses subscribing the foregoing affidavit are credible and of good standing in the community in which they reside. That I have no interest in this matter.\n\nTo certify all which I hereunto set my hand and the seal of my said Court at Office in Henderson this 21 day of August A.D. 1867\n\nJ. P. Breckinridge, Clerk\nof Henderson County Court\n\n---\n\nSECTION.—To rate the Deputy Administrator the Clerk's Certificate, evidence may be required to show that the Deputy is duly appointed and authorized to have in open the Clerk's name and are the seal of the Court.—Therefore it is better to have the Clerk's own individual authorization of rates, and these rates the teacher and supervisor of a general authorization certificate respecting the Deputy which might be required if the papers were authenticated by him instead of the Clerk.\n\n---\n\nCERTIFICATE.\nTO ALL WHOM IT MAY CONCERN.\n\nNote.—This Certificate is to be signed by some one known to the Department of Washington, such as the Postmaster of the place where witnesses reside, or a member of Congress, or a United States Commissioner, or a Commissioner Officer of the Army.\n\nIt is hereby certified that the witnesses subscribing the foregoing joint affidavit are credible persons, and of good moral character, and reside as stated.\n\nTo certify which I hereunto set my hand at\n\nin the State of\n\non this\n\nday of\n\nA. D. 186\n\n---\n\nINSTRUCTIONS.\n\n1. \"Clerk,\" \"Town,\" \"Corporation,\" or \"County,\" as rates may be.\n2. Name of the Soldier.\n3. \"Secretary,\" \"Infantry,\" or \"Artillery,\" \"Volunteers of ___ Cents give state ___ manning the troops as indicated according to the arm of the service to which they belong. If at the regular service, in place of the foregoing, add: \"United States Infantry,\" \"Country,\" or \"Artillery,\" as the rates may be.\n4. Here give the issued period of known substitution of which affiants are cognizant.\n5. \"Walls (or\" or \"other discharged from,\" as the rates may be.\n6. \"Honorary Wounds,\" or the \"Affiants of Typhoid Ploats,\" \"Pneumonias,\" \"Measles,\" \"Chronic Diarrhea,\" \"Dymatry,\" \"Chokes Mariner,\" \"Phillains,\" or any other disease, physical disability, or injury, whatever it may be, among it. It is very important to state correctly the cause of death, as it will be most accurately isolated upon by the Pension Office.\n\n---\n\n\"Additional Evidence.\"\n\nCLAIM FOR ARMY PENSION.\n\nAct of A. D.\nMrs.\nWidow of des'd\nLate a in Co.\nof the Regiment of\n\nWITNESSES' AFFIDAVIT.\n\nPRIOR OF\n\n1. Widow's Identity.\n2. Soldier's Identity.\n3. Soldier's Service.\n4. Cohabitation and Heteritly.\n5. Soldier's Physical Condition prior to Enlistment.\n6. Time, Place, and Cause of Death.\n7. Continued Withdrawal of Applicant.\n\nCase No.\n\nEXTRACT.\n\nPension Office Circular, July 21, 1862.\n\n\"If the applicant claims a Pension at a widow of a deceased officer or soldier, she must prove the legality of her marriage, the death of her husband, and that she is still a widow.\"\n\n...Affirmation.\n\nPost Office:",
+                        "images": [],
+                        "tables": [],
+                        "hyperlinks": [],
+                        "header": null,
+                        "footer": null,
+                        "dimensions": {
+                            "dpi": 200,
+                            "height": 1201,
+                            "width": 751
+                        }
+                    }
+                ],
+                "model": "mistral-ocr-latest",
+                "document_annotation": "{\n  \"blocks\": [\n    {\n      \"type\": \"headline\",\n      \"text\": \"State of Kentucky County of Henderson SS.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 0,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"I, James P. Breckinridge, Clerk of the County Court within and for the County and State aforesaid, do hereby certify that A. S. Park Esq., before whom the foregoing joint affidavit was made, and who has thereunto signed his name, was at the time of so doing a Notary in and for the County and State above named, duly commissioned, qualified and sworn; that all his official acts as such are entitled to full faith and credit, and that his said signature as it above appears is genuine. I further certify that, to the best of my knowledge and belief, the witnesses subscribing the foregoing affidavit are credible and of good standing in the community in which they reside. That I have no interest in this matter.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 20,\n        \"width\": 100,\n        \"height\": 100\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"To certify all which I hereunto set my hand and the seal of my said Court at Office in Henderson this 21 day of August A.D. 1867\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 120,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"byline\",\n      \"text\": \"J. P. Breckinridge, Clerk of Henderson County Court\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 140,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"SECTION.—To rate the Deputy Administrator the Clerk's Certificate, evidence may be required to show that the Deputy is duly appointed and authorized to have in open the Clerk's name and are the seal of the Court.—Therefore it is better to have the Clerk's own individual authorization of rates, and these rates the teacher and supervisor of a general authorization certificate respecting the Deputy which might be required if the papers were authenticated by him instead of the Clerk.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 160,\n        \"width\": 100,\n        \"height\": 80\n      }\n    },\n    {\n      \"type\": \"headline\",\n      \"text\": \"CERTIFICATE.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 240,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"TO ALL WHOM IT MAY CONCERN.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 260,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"Note.—This Certificate is to be signed by some one known to the Department of Washington, such as the Postmaster of the place where witnesses reside, or a member of Congress, or a United States Commissioner, or a Commissioner Officer of the Army.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 280,\n        \"width\": 100,\n        \"height\": 60\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"It is hereby certified that the witnesses subscribing the foregoing joint affidavit are credible persons, and of good moral character, and reside as stated.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 340,\n        \"width\": 100,\n        \"height\": 40\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"To certify which I hereunto set my hand at\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 380,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"in the State of\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 400,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"on this\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 420,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"day of\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 440,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"A. D. 186\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 460,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"headline\",\n      \"text\": \"INSTRUCTIONS.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 480,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"1. \\\"Clerk,\\\" \\\"Town,\\\" \\\"Corporation,\\\" or \\\"County,\\\" as rates may be.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 500,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"2. Name of the Soldier.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 520,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"3. \\\"Secretary,\\\" \\\"Infantry,\\\" or \\\"Artillery,\\\" \\\"Volunteers of ___ Cents give state ___ manning the troops as indicated according to the arm of the service to which they belong. If at the regular service, in place of the foregoing, add: \\\"United States Infantry,\\\" \\\"Country,\\\" or \\\"Artillery,\\\" as the rates may be.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 540,\n        \"width\": 100,\n        \"height\": 60\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"4. Here give the issued period of known substitution of which affiants are cognizant.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 600,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"5. \\\"Walls (or\\\" or \\\"other discharged from,\\\" as the rates may be.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 620,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"6. \\\"Honorary Wounds,\\\" or the \\\"Affiants of Typhoid Ploats,\\\" \\\"Pneumonias,\\\" \\\"Measles,\\\" \\\"Chronic Diarrhea,\\\" \\\"Dymatry,\\\" \\\"Chokes Mariner,\\\" \\\"Phillains,\\\" or any other disease, physical disability, or injury, whatever it may be, among it. It is very important to state correctly the cause of death, as it will be most accurately isolated upon by the Pension Office.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 640,\n        \"width\": 100,\n        \"height\": 80\n      }\n    },\n    {\n      \"type\": \"headline\",\n      \"text\": \"Additional Evidence.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 720,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"headline\",\n      \"text\": \"CLAIM FOR ARMY PENSION.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 740,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"Act of A. D.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 760,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"Mrs.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 780,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"Widow of des'd\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 800,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"Late a in Co.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 820,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"of the Regiment of\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 840,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"headline\",\n      \"text\": \"WITNESSES' AFFIDAVIT.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 860,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"PRIOR OF\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 880,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"1. Widow's Identity.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 900,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"2. Soldier's Identity.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 920,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"3. Soldier's Service.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 940,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"4. Cohabitation and Heteritly.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 960,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"5. Soldier's Physical Condition prior to Enlistment.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 980,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"6. Time, Place, and Cause of Death.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 1000,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"7. Continued Withdrawal of Applicant.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 1020,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"Case No.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 1040,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"headline\",\n      \"text\": \"EXTRACT.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 1060,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"Pension Office Circular, July 21, 1862.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 1080,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"\\\"If the applicant claims a Pension at a widow of a deceased officer or soldier, she must prove the legality of her marriage, the death of her husband, and that she is still a widow.\\\"\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 1100,\n        \"width\": 100,\n        \"height\": 40\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"...Affirmation.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 1140,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"Post Office:\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 1160,\n        \"width\": 100,\n        \"height\": 20\n      }\n    }\n  ]\n}",
+                "usage_info": {
+                    "pages_processed": 1,
+                    "doc_size_bytes": 86316
+                }
+            }
+        },
+        "annotate_handwriting": {
+            "failed": true,
+            "error": "HTTP/2 stream 5 was not closed cleanly: PROTOCOL_ERROR (err 1) for \"https://api.openai.com/v1/responses\"."
+        },
+        "transcribe_handwriting": {
+            "text": "State of Kentucky          County of Henderson   SS.  \n  I, James P. Breckinridge             Clerk of the County       Court within and \nfor the County and State aforesaid, do hereby certify that H. W. Cook          \nEsq., before whom the foregoing joint affidavit was made, and who has thereunto signed his name, was at the time of so doing a \nNotary                   in and for the County and State above named, duly commissioned, qualified and sworn; that \nall his official acts as such are entitled to full faith and credit, and that his said signature as it above appears is genuine.  \nI further certify that, to the best of my knowledge and belief, the witnesses subscribing the foregoing affidavit are credible \nand of good standing in the community in which they reside.  That I have no interest in the matter.  \nTo certify all which I hereunto set my hand and the seal of my said Court \nat Office in Henderson         this  \n21st  day of August A.D. 1867.  \nJ. P. Breckinridge    Clerk, \nHenderson County      Court.\n\n\nCERTIFICATE.  \nTO ALL WHOM IT MAY CONCERN.  \n  \nIt is hereby certified that the witnesses subscribing the foregoing joint affidavit are credible persons, and of good \nmoral character, and reside as stated.  \n  \nTo certify which I hereunto set my hand at ____________\n  \nin the State of ____________  on this \n_________ day of ____________A.D. 186__\n\nINSTRUCTIONS.\n1. The term “Degree of Dependency” or “Ceiling” as the case may be.\n2. Decrease or Liability.\nNote.—This Certificate is to be signed for one year and beyond in the Department at Washington, usually by the Department of the place where the witness resides or a member of Congress, \nor by a United States Commissioner or a United States Marshal of the District.\n\n\"Additional Evidence.\"\nCLAIM FOR ARMY PENSION.\n\n\nNo.\n\n\n                                        \nAct of                                                                                                                                                  \nCase No.\nMay                                                                                                                                       Attorney.\n        \nof                                                                              District           \n    \n          \nof                                                                                           \n\n  \n  \n        \nMrs.\n          \n          \n          \n          \n          \n                \n        \nWitness’ Affidavit.\n\nINSTRUCTIONS.\n1. Attendance of Soldiers.\n2. State whether disguised.\n3. Where Infantry.\n4. Rank and Regimental Code.\n5. In what Reserves, Battery, or Cabinet.\n6. Command served without exemption.\n7. Regimental Code of Applicants.\n\n\nSEC. 1. ACT. PENSION ACT May 31, 1862.\n\n\n\nAdjutant General's Office and Office of the Army, U.S.A., at Washington, D.C. Duplicate may be returned\n  \nfor any particular where the application or claims in service having been collected may be applied\n \nto the United States Army service before fully executed. Shall not be returned\n\nNote: Pension Office Certificate.\n\n\n\nFirst Officer.\n",
+            "language": "English",
+            "confidence": "medium",
+            "blocks": [
+                [
+                    "State of Kentucky          County of Henderson   SS."
+                ],
+                [
+                    "I, James P. Breckinridge             Clerk of the County       Court within and",
+                    "for the County and State aforesaid, do hereby certify that H. W. Cook          ",
+                    "Esq., before whom the foregoing joint affidavit was made, and who has thereunto signed his name, was at the time of so doing a",
+                    "Notary"
+                ],
+                [
+                    "in and for the County and State above named, duly commissioned, qualified and sworn; that",
+                    "all his official acts as such are entitled to full faith and credit, and that his said signature as it above appears is genuine.",
+                    "I further certify that, to the best of my knowledge and belief, the witnesses subscribing the foregoing affidavit are credible",
+                    "and of good standing in the community in which they reside.  That I have no interest in the matter.",
+                    "To certify all which I hereunto set my hand and the seal of my said Court",
+                    "at Office in Henderson         this",
+                    "21st  day of August A.D. 1867.",
+                    "J. P. Breckinridge    Clerk,",
+                    "Henderson County      Court."
+                ],
+                [
+                    "CERTIFICATE.",
+                    "TO ALL WHOM IT MAY CONCERN."
+                ],
+                [
+                    "It is hereby certified that the witnesses subscribing the foregoing joint affidavit are credible persons, and of good",
+                    "moral character, and reside as stated."
+                ],
+                [
+                    "To certify which I hereunto set my hand at ____________",
+                    "in the State of ____________  on this",
+                    "_________ day of ____________A.D. 186__"
+                ],
+                [
+                    "INSTRUCTIONS.",
+                    "1. The term “Degree of Dependency” or “Ceiling” as the case may be.",
+                    "2. Decrease or Liability.",
+                    "Note.—This Certificate is to be signed for one year and beyond in the Department at Washington, usually by the Department of the place where the witness resides or a member of Congress,",
+                    "or by a United States Commissioner or a United States Marshal of the District."
+                ],
+                [
+                    "\"Additional Evidence.\"",
+                    "CLAIM FOR ARMY PENSION."
+                ],
+                [
+                    "No."
+                ],
+                [
+                    "Act of",
+                    "Case No.",
+                    "May ",
+                    "Attorney."
+                ],
+                [
+                    "of",
+                    "District"
+                ],
+                [
+                    "of"
+                ],
+                [
+                    "Mrs."
+                ],
+                [
+                    "Witness’ Affidavit."
+                ],
+                [
+                    "INSTRUCTIONS.",
+                    "1. Attendance of Soldiers.",
+                    "2. State whether disguised.",
+                    "3. Where Infantry.",
+                    "4. Rank and Regimental Code.",
+                    "5. In what Reserves, Battery, or Cabinet.",
+                    "6. Command served without exemption.",
+                    "7. Regimental Code of Applicants."
+                ],
+                [
+                    "SEC. 1. ACT. PENSION ACT May 31, 1862."
+                ],
+                [
+                    "Adjutant General's Office and Office of the Army, U.S.A., at Washington, D.C. Duplicate may be returned",
+                    "for any particular where the application or claims in service having been collected may be applied",
+                    "to the United States Army service before fully executed. Shall not be returned"
+                ],
+                [
+                    "Note: Pension Office Certificate."
+                ],
+                [
+                    "First Officer."
+                ]
+            ],
+            "_tokens": {
+                "prompt": 1311,
+                "completion": 1324,
+                "total": 2635,
+                "cached": 0
+            }
+        }
+    }
+}

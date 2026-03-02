@@ -1,0 +1,106 @@
+{
+    "subject": "file:///home/tac/g/sites/ai-pipeline-demo/public/images/pages/feec63aece11e9121849278bdb053c0b24b5c55d-01.jpg",
+    "results": {
+        "ocr_mistral": {
+            "text": "# USSR\n\nNo. 1 (16)–20 Cents\n\nSCIENCE PAVES\nTHE ROAD TO\nPROGRESS",
+            "language": null,
+            "confidence": "high",
+            "layout_blocks": [
+                {
+                    "page": 0,
+                    "type": "headline",
+                    "text": "USSR",
+                    "bbox": {
+                        "x": 0,
+                        "y": 0,
+                        "width": 1874,
+                        "height": 595
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "other",
+                    "text": "No. 1 (16)–20 Cents",
+                    "bbox": {
+                        "x": 0,
+                        "y": 595,
+                        "width": 1874,
+                        "height": 298
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "headline",
+                    "text": "SCIENCE PAVES",
+                    "bbox": {
+                        "x": 0,
+                        "y": 893,
+                        "width": 1874,
+                        "height": 595
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "headline",
+                    "text": "THE ROAD TO",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1488,
+                        "width": 1874,
+                        "height": 595
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "headline",
+                    "text": "PROGRESS",
+                    "bbox": {
+                        "x": 0,
+                        "y": 2083,
+                        "width": 1874,
+                        "height": 595
+                    }
+                }
+            ],
+            "image_blocks": [],
+            "pages": [
+                {
+                    "index": 0,
+                    "markdown": "# USSR\n\nNo. 1 (16)–20 Cents\n\nSCIENCE PAVES\nTHE ROAD TO\nPROGRESS",
+                    "dimensions": {
+                        "dpi": 200,
+                        "height": 2678,
+                        "width": 1874
+                    },
+                    "tables": [],
+                    "header": null,
+                    "footer": null
+                }
+            ],
+            "raw_response": {
+                "pages": [
+                    {
+                        "index": 0,
+                        "markdown": "# USSR\n\nNo. 1 (16)–20 Cents\n\nSCIENCE PAVES\nTHE ROAD TO\nPROGRESS",
+                        "images": [],
+                        "tables": [],
+                        "hyperlinks": [],
+                        "header": null,
+                        "footer": null,
+                        "dimensions": {
+                            "dpi": 200,
+                            "height": 2678,
+                            "width": 1874
+                        }
+                    }
+                ],
+                "model": "mistral-ocr-latest",
+                "document_annotation": "{\n  \"blocks\": [\n    {\n      \"type\": \"headline\",\n      \"text\": \"USSR\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 0,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"other\",\n      \"text\": \"No. 1 (16)–20 Cents\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 20,\n        \"width\": 100,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"headline\",\n      \"text\": \"SCIENCE PAVES\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 30,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"headline\",\n      \"text\": \"THE ROAD TO\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 50,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"headline\",\n      \"text\": \"PROGRESS\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 70,\n        \"width\": 100,\n        \"height\": 20\n      }\n    }\n  ]\n}",
+                "usage_info": {
+                    "pages_processed": 1,
+                    "doc_size_bytes": 310994
+                }
+            }
+        }
+    }
+}

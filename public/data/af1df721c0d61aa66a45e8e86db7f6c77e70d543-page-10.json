@@ -1,0 +1,345 @@
+{
+    "subject": "file:///home/tac/g/sites/ai-pipeline-demo/public/images/pages/af1df721c0d61aa66a45e8e86db7f6c77e70d543-10.jpg",
+    "results": {
+        "ocr_mistral": {
+            "text": "No. 152.741 103.072\n\nACT OF JULY 14, 1862.\n\nRice Chambers.\nHenderson Co. Ky.\n\nWidow of\nAaron Chambers.\nPriv. G. 118. U.S.C.T.\nDied at Va.\nNovr. 6th, 1864. \"Dianhea\".\n\nPension Office,\n__________, 186__.\n\nRespectfully referred to the Adjutant\nGeneral, for official evidence of service\nand death.\n\nJoseph H. Barrett\nCommissioner.\n\nReceived, Sept. 24th, 1867.\nClaimant\nHenderson\nKy.\nAttorney.",
+            "language": null,
+            "confidence": "high",
+            "layout_blocks": [
+                {
+                    "page": 0,
+                    "type": "headline",
+                    "text": "No. 152.741 103.072",
+                    "bbox": {
+                        "x": 0,
+                        "y": 0,
+                        "width": 534,
+                        "height": 60
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "headline",
+                    "text": "ACT OF JULY 14, 1862.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 60,
+                        "width": 534,
+                        "height": 60
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "column",
+                    "text": "Rice Chambers.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 120,
+                        "width": 534,
+                        "height": 60
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "column",
+                    "text": "Henderson Co. Ky.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 180,
+                        "width": 534,
+                        "height": 60
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "column",
+                    "text": "Widow of",
+                    "bbox": {
+                        "x": 0,
+                        "y": 240,
+                        "width": 534,
+                        "height": 60
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "column",
+                    "text": "Aaron Chambers.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 301,
+                        "width": 534,
+                        "height": 60
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "column",
+                    "text": "Priv. G. 118. U.S.C.T.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 361,
+                        "width": 534,
+                        "height": 60
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "column",
+                    "text": "Died at Va.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 421,
+                        "width": 534,
+                        "height": 60
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "column",
+                    "text": "Novr. 6th, 1864. \"Dianhea\".",
+                    "bbox": {
+                        "x": 0,
+                        "y": 481,
+                        "width": 534,
+                        "height": 60
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "column",
+                    "text": "Pension Office,",
+                    "bbox": {
+                        "x": 0,
+                        "y": 541,
+                        "width": 534,
+                        "height": 60
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "column",
+                    "text": "__________, 186__.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 601,
+                        "width": 534,
+                        "height": 60
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "Respectfully referred to the Adjutant General, for official evidence of service and death.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 661,
+                        "width": 534,
+                        "height": 120
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "column",
+                    "text": "Joseph H. Barrett",
+                    "bbox": {
+                        "x": 0,
+                        "y": 781,
+                        "width": 534,
+                        "height": 60
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "column",
+                    "text": "Commissioner.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 841,
+                        "width": 534,
+                        "height": 60
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "column",
+                    "text": "Received, Sept. 24th, 1867.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 902,
+                        "width": 534,
+                        "height": 60
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "column",
+                    "text": "Claimant",
+                    "bbox": {
+                        "x": 0,
+                        "y": 962,
+                        "width": 534,
+                        "height": 60
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "column",
+                    "text": "Henderson",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1022,
+                        "width": 534,
+                        "height": 60
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "column",
+                    "text": "Ky.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1082,
+                        "width": 534,
+                        "height": 60
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "column",
+                    "text": "Attorney.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1142,
+                        "width": 534,
+                        "height": 60
+                    }
+                }
+            ],
+            "image_blocks": [],
+            "pages": [
+                {
+                    "index": 0,
+                    "markdown": "No. 152.741 103.072\n\nACT OF JULY 14, 1862.\n\nRice Chambers.\nHenderson Co. Ky.\n\nWidow of\nAaron Chambers.\nPriv. G. 118. U.S.C.T.\nDied at Va.\nNovr. 6th, 1864. \"Dianhea\".\n\nPension Office,\n__________, 186__.\n\nRespectfully referred to the Adjutant\nGeneral, for official evidence of service\nand death.\n\nJoseph H. Barrett\nCommissioner.\n\nReceived, Sept. 24th, 1867.\nClaimant\nHenderson\nKy.\nAttorney.",
+                    "dimensions": {
+                        "dpi": 200,
+                        "height": 1202,
+                        "width": 534
+                    },
+                    "tables": [],
+                    "header": null,
+                    "footer": null
+                }
+            ],
+            "raw_response": {
+                "pages": [
+                    {
+                        "index": 0,
+                        "markdown": "No. 152.741 103.072\n\nACT OF JULY 14, 1862.\n\nRice Chambers.\nHenderson Co. Ky.\n\nWidow of\nAaron Chambers.\nPriv. G. 118. U.S.C.T.\nDied at Va.\nNovr. 6th, 1864. \"Dianhea\".\n\nPension Office,\n__________, 186__.\n\nRespectfully referred to the Adjutant\nGeneral, for official evidence of service\nand death.\n\nJoseph H. Barrett\nCommissioner.\n\nReceived, Sept. 24th, 1867.\nClaimant\nHenderson\nKy.\nAttorney.",
+                        "images": [],
+                        "tables": [],
+                        "hyperlinks": [],
+                        "header": null,
+                        "footer": null,
+                        "dimensions": {
+                            "dpi": 200,
+                            "height": 1202,
+                            "width": 534
+                        }
+                    }
+                ],
+                "model": "mistral-ocr-latest",
+                "document_annotation": "{\n  \"blocks\": [\n    {\n      \"type\": \"headline\",\n      \"text\": \"No. 152.741 103.072\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 0,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"headline\",\n      \"text\": \"ACT OF JULY 14, 1862.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 20,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"column\",\n      \"text\": \"Rice Chambers.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 40,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"column\",\n      \"text\": \"Henderson Co. Ky.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 60,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"column\",\n      \"text\": \"Widow of\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 80,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"column\",\n      \"text\": \"Aaron Chambers.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 100,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"column\",\n      \"text\": \"Priv. G. 118. U.S.C.T.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 120,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"column\",\n      \"text\": \"Died at Va.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 140,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"column\",\n      \"text\": \"Novr. 6th, 1864. \\\"Dianhea\\\".\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 160,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"column\",\n      \"text\": \"Pension Office,\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 180,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"column\",\n      \"text\": \"__________, 186__.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 200,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"Respectfully referred to the Adjutant General, for official evidence of service and death.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 220,\n        \"width\": 100,\n        \"height\": 40\n      }\n    },\n    {\n      \"type\": \"column\",\n      \"text\": \"Joseph H. Barrett\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 260,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"column\",\n      \"text\": \"Commissioner.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 280,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"column\",\n      \"text\": \"Received, Sept. 24th, 1867.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 300,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"column\",\n      \"text\": \"Claimant\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 320,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"column\",\n      \"text\": \"Henderson\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 340,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"column\",\n      \"text\": \"Ky.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 360,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"column\",\n      \"text\": \"Attorney.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 380,\n        \"width\": 100,\n        \"height\": 20\n      }\n    }\n  ]\n}",
+                "usage_info": {
+                    "pages_processed": 1,
+                    "doc_size_bytes": 62497
+                }
+            }
+        },
+        "annotate_handwriting": {
+            "pages": [
+                {
+                    "index": 0,
+                    "annotated_text": "No. <hw>152.741</hw> <hw>103.072</hw>\n\nACT OF JULY 14, 1862.\n\n<hw>Rice Chambers.</hw>\n<hw>Henderson Co. Ky.</hw>\n\nWidow of\n<hw>Aaron Chambers.</hw>\nPriv. G. 118. U.S.C.T.\nDied at <hw>Va.</hw>\n<hw>Novr. 6th, 1864.</hw> \"Dianhea\".\n\nPension Office,\n__________, 186__.\n\nRespectfully referred to the Adjutant\nGeneral, for official evidence of service\nand death.\n\n<hw>Joseph H. Barrett</hw>\nCommissioner.\n\nReceived, <hw>Sept. 24th, 1867.</hw>\n<hw>Claimant</hw>\n<hw>Henderson</hw>\n<hw>Ky.</hw>\nAttorney."
+                }
+            ],
+            "annotated_text": "No. <hw>152.741</hw> <hw>103.072</hw>\n\nACT OF JULY 14, 1862.\n\n<hw>Rice Chambers.</hw>\n<hw>Henderson Co. Ky.</hw>\n\nWidow of\n<hw>Aaron Chambers.</hw>\nPriv. G. 118. U.S.C.T.\nDied at <hw>Va.</hw>\n<hw>Novr. 6th, 1864.</hw> \"Dianhea\".\n\nPension Office,\n__________, 186__.\n\nRespectfully referred to the Adjutant\nGeneral, for official evidence of service\nand death.\n\n<hw>Joseph H. Barrett</hw>\nCommissioner.\n\nReceived, <hw>Sept. 24th, 1867.</hw>\n<hw>Claimant</hw>\n<hw>Henderson</hw>\n<hw>Ky.</hw>\nAttorney."
+        },
+        "transcribe_handwriting": {
+            "text": "No. 152.774     103.872\n\nACT OF JULY 14, 1862.\n\nRose Chambers.\nHenderson Co. Ky.\nWidow of\nAbram Chambers\nPriv. Co. 115 U.S. C. I.\nDied at ___________ Co.\nNov. 6, 1864. \"Planter\"\n\nPension Office,\n\n......................, 186  .\n\nRespectfully referred to the Adjutant\nGeneral, for official evidence of service\nand death.\n\nJoseph H. Barrett\nCommissioner.\n\nReceived, Sept. 24, 1867\n\nClaimant\nHenderson.\nKy.\nAttorney.",
+            "language": "English",
+            "confidence": "high",
+            "blocks": [
+                [
+                    "No. 152.774     103.872"
+                ],
+                [
+                    "ACT OF JULY 14, 1862."
+                ],
+                [
+                    "Rose Chambers."
+                ],
+                [
+                    "Henderson Co. Ky."
+                ],
+                [
+                    "Widow of"
+                ],
+                [
+                    "Abram Chambers"
+                ],
+                [
+                    "Priv. Co. 115 U.S. C. I."
+                ],
+                [
+                    "Died at ___________ Co."
+                ],
+                [
+                    "Nov. 6, 1864. \"Planter\""
+                ],
+                [
+                    "Pension Office,"
+                ],
+                [
+                    "......................, 186  ."
+                ],
+                [
+                    "Respectfully referred to the Adjutant"
+                ],
+                [
+                    "General, for official evidence of service"
+                ],
+                [
+                    "and death."
+                ],
+                [
+                    "Joseph H. Barrett"
+                ],
+                [
+                    "Commissioner."
+                ],
+                [
+                    "Received, Sept. 24, 1867"
+                ],
+                [
+                    "Claimant"
+                ],
+                [
+                    "Henderson."
+                ],
+                [
+                    "Ky."
+                ],
+                [
+                    "Attorney."
+                ]
+            ],
+            "_tokens": {
+                "prompt": 1311,
+                "completion": 340,
+                "total": 1651,
+                "cached": 0
+            }
+        }
+    }
+}

@@ -1,0 +1,216 @@
+{
+    "subject": "file:///home/tac/g/sites/ai-pipeline-demo/public/images/pages/feec63aece11e9121849278bdb053c0b24b5c55d-12.jpg",
+    "results": {
+        "ocr_mistral": {
+            "text": "10\n\nEARTH SATELLITE:\nLink in Over-all\nScientific and\nTechnological\nDevelopment\n\nBy Alexander Topchiev\nSecretary, USSR Academy of Sciences\n\nTHE FIRST SATELLITE to be orbited around the earth was no accidental feat of Soviet science and engineering. Nor was it the product of any single branch of learning. Sputnik reflected the inevitable result of the development of the country's science and technology as a whole.\n\nTheoretical and Experimental Physics\n\nThe greatest headway has been made in the physical sciences. Soviet scientists have done much in developing the theory of relativity, particularly in the aspects of non-stationary solution of Einstein's equation of gravitation and the problem of the law of movement of the system of bodies.\n\nA considerable contribution was made to the development of modern quantum mechanics. An important landmark in this direction was Vladimir Fok's approximate method of resolving the problems of quantum mechanics of many particles.\n\nSoviet scientists propounded the theory of the inception of nuclear forces as the outcome of the exchange of light particles which was essential for the development of our ideas about atomic nuclei. The development of the theory of nuclear forces was also greatly influenced by the liquid-drop model of the nucleus suggested by Yakov Frenkel which was further developed in the theory of fission.\n\nOne of the most significant achievements of the physical sciences is the discovery of the so-called Vavilov-Cherenkov effect that laid the\n\nLEARNING MORE ABOUT OUR PLANET\n\nBy Mikhail Molodensky\nCorresponding Member,\nUSSR Academy of Sciences\n\nOBSERVATIONS of the man-made satellites will lead to important conclusions as to the precise shape of our planet. Even the moon's movement allows us to determine one of the basic features of the earth's structure, namely, the fact that it is compressed at the poles.\n\nAs Sputnik moves in its orbit, it reacts to every change in the earth's gravitational field, with the line of its flight indicating the irregularities. With this new data and the use of modern astronomical and radiolocation methods, the dimensions of our planet can be determined with infinitely greater precision than was previously possible because Sputnik is approximately 50 times closer to the earth's center than the moon.\n\nThe plotting of the trajectories of a number of artificial satellites will finally enable us to determine the exact configuration of the earth, an extremely important element in the study of the origin, history and structure of our planet. By knowing the satellites' speed we shall be able to calculate precise measurements of the distances between various points on the globe, thus making the present data more accurate.\n\nGeochemists have found out much about the earth's chemical composition. But man-made satellites provide the means for many new findings. New data will be available on the chemical composition of the earth and the changes in this composition that are produced as a result of various cosmic radiations.\n\nSputniks open new avenues for research in all the earth sciences—gravimetry and geochemistry, geodesy and geophysics, seismography and hydrology. They will give us important information on the composition of the cosmic dust that floats through interstellar space. Science has thus far merely guessed at its nature and properties, but the satellite laboratory will afford the possibility of undertaking a study of this problem from stage to stage. The supposition that cosmic dust is the material out of which planets are formed testifies to the importance of such a laboratory.",
+            "language": null,
+            "confidence": "high",
+            "layout_blocks": [
+                {
+                    "page": 0,
+                    "type": "headline",
+                    "text": "EARTH SATELLITE: Link in Over-all Scientific and Technological Development",
+                    "bbox": {
+                        "x": 0,
+                        "y": 0,
+                        "width": 1874,
+                        "height": 89
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "byline",
+                    "text": "By Alexander Topchiev\nSecretary, USSR Academy of Sciences",
+                    "bbox": {
+                        "x": 0,
+                        "y": 89,
+                        "width": 1874,
+                        "height": 89
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "THE FIRST SATELLITE to be orbited around the earth was no accidental feat of Soviet science and engineering. Nor was it the product of any single branch of learning. Sputnik reflected the inevitable result of the development of the country's science and technology as a whole.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 179,
+                        "width": 1874,
+                        "height": 179
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "headline",
+                    "text": "Theoretical and Experimental Physics",
+                    "bbox": {
+                        "x": 0,
+                        "y": 357,
+                        "width": 1874,
+                        "height": 89
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "The greatest headway has been made in the physical sciences. Soviet scientists have done much in developing the theory of relativity, particularly in the aspects of non-stationary solution of Einstein's equation of gravitation and the problem of the law of movement of the system of bodies.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 447,
+                        "width": 1874,
+                        "height": 179
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "A considerable contribution was made to the development of modern quantum mechanics. An important landmark in this direction was Vladimir Fok's approximate method of resolving the problems of quantum mechanics of many particles.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 625,
+                        "width": 1874,
+                        "height": 179
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "Soviet scientists propounded the theory of the inception of nuclear forces as the outcome of the exchange of light particles which was essential for the development of our ideas about atomic nuclei. The development of the theory of nuclear forces was also greatly influenced by the liquid-drop model of the nucleus suggested by Yakov Frenkel which was further developed in the theory of fission.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 804,
+                        "width": 1874,
+                        "height": 268
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "One of the most significant achievements of the physical sciences is the discovery of the so-called Vavilov-Cherenkov effect that laid the",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1072,
+                        "width": 1874,
+                        "height": 89
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "headline",
+                    "text": "LEARNING MORE ABOUT OUR PLANET",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1161,
+                        "width": 1874,
+                        "height": 89
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "byline",
+                    "text": "By Mikhail Molodensky\nCorresponding Member,\nUSSR Academy of Sciences",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1250,
+                        "width": 1874,
+                        "height": 179
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "OBSERVATIONS of the man-made satellites will lead to important conclusions as to the precise shape of our planet. Even the moon's movement allows us to determine one of the basic features of the earth's structure, namely, the fact that it is compressed at the poles.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1429,
+                        "width": 1874,
+                        "height": 179
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "As Sputnik moves in its orbit, it reacts to every change in the earth's gravitational field, with the line of its flight indicating the irregularities. With this new data and the use of modern astronomical and radiolocation methods, the dimensions of our planet can be determined with infinitely greater precision than was previously possible because Sputnik is approximately 50 times closer to the earth's center than the moon.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1607,
+                        "width": 1874,
+                        "height": 268
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "The plotting of the trajectories of a number of artificial satellites will finally enable us to determine the exact configuration of the earth, an extremely important element in the study of the origin, history and structure of our planet. By knowing the satellites' speed we shall be able to calculate precise measurements of the distances between various points on the globe, thus making the present data more accurate.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1875,
+                        "width": 1874,
+                        "height": 268
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "Geochemists have found out much about the earth's chemical composition. But man-made satellites provide the means for many new findings. New data will be available on the chemical composition of the earth and the changes in this composition that are produced as a result of various cosmic radiations.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 2143,
+                        "width": 1874,
+                        "height": 179
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "Sputniks open new avenues for research in all the earth sciences—gravimetry and geochemistry, geodesy and geophysics, seismography and hydrology. They will give us important information on the composition of the cosmic dust that floats through interstellar space. Science has thus far merely guessed at its nature and properties, but the satellite laboratory will afford the possibility of undertaking a study of this problem from stage to stage. The supposition that cosmic dust is the material out of which planets are formed testifies to the importance of such a laboratory.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 2322,
+                        "width": 1874,
+                        "height": 357
+                    }
+                }
+            ],
+            "image_blocks": [],
+            "pages": [
+                {
+                    "index": 0,
+                    "markdown": "10\n\nEARTH SATELLITE:\nLink in Over-all\nScientific and\nTechnological\nDevelopment\n\nBy Alexander Topchiev\nSecretary, USSR Academy of Sciences\n\nTHE FIRST SATELLITE to be orbited around the earth was no accidental feat of Soviet science and engineering. Nor was it the product of any single branch of learning. Sputnik reflected the inevitable result of the development of the country's science and technology as a whole.\n\nTheoretical and Experimental Physics\n\nThe greatest headway has been made in the physical sciences. Soviet scientists have done much in developing the theory of relativity, particularly in the aspects of non-stationary solution of Einstein's equation of gravitation and the problem of the law of movement of the system of bodies.\n\nA considerable contribution was made to the development of modern quantum mechanics. An important landmark in this direction was Vladimir Fok's approximate method of resolving the problems of quantum mechanics of many particles.\n\nSoviet scientists propounded the theory of the inception of nuclear forces as the outcome of the exchange of light particles which was essential for the development of our ideas about atomic nuclei. The development of the theory of nuclear forces was also greatly influenced by the liquid-drop model of the nucleus suggested by Yakov Frenkel which was further developed in the theory of fission.\n\nOne of the most significant achievements of the physical sciences is the discovery of the so-called Vavilov-Cherenkov effect that laid the\n\nLEARNING MORE ABOUT OUR PLANET\n\nBy Mikhail Molodensky\nCorresponding Member,\nUSSR Academy of Sciences\n\nOBSERVATIONS of the man-made satellites will lead to important conclusions as to the precise shape of our planet. Even the moon's movement allows us to determine one of the basic features of the earth's structure, namely, the fact that it is compressed at the poles.\n\nAs Sputnik moves in its orbit, it reacts to every change in the earth's gravitational field, with the line of its flight indicating the irregularities. With this new data and the use of modern astronomical and radiolocation methods, the dimensions of our planet can be determined with infinitely greater precision than was previously possible because Sputnik is approximately 50 times closer to the earth's center than the moon.\n\nThe plotting of the trajectories of a number of artificial satellites will finally enable us to determine the exact configuration of the earth, an extremely important element in the study of the origin, history and structure of our planet. By knowing the satellites' speed we shall be able to calculate precise measurements of the distances between various points on the globe, thus making the present data more accurate.\n\nGeochemists have found out much about the earth's chemical composition. But man-made satellites provide the means for many new findings. New data will be available on the chemical composition of the earth and the changes in this composition that are produced as a result of various cosmic radiations.\n\nSputniks open new avenues for research in all the earth sciences—gravimetry and geochemistry, geodesy and geophysics, seismography and hydrology. They will give us important information on the composition of the cosmic dust that floats through interstellar space. Science has thus far merely guessed at its nature and properties, but the satellite laboratory will afford the possibility of undertaking a study of this problem from stage to stage. The supposition that cosmic dust is the material out of which planets are formed testifies to the importance of such a laboratory.",
+                    "dimensions": {
+                        "dpi": 200,
+                        "height": 2679,
+                        "width": 1874
+                    },
+                    "tables": [],
+                    "header": null,
+                    "footer": null
+                }
+            ],
+            "raw_response": {
+                "pages": [
+                    {
+                        "index": 0,
+                        "markdown": "10\n\nEARTH SATELLITE:\nLink in Over-all\nScientific and\nTechnological\nDevelopment\n\nBy Alexander Topchiev\nSecretary, USSR Academy of Sciences\n\nTHE FIRST SATELLITE to be orbited around the earth was no accidental feat of Soviet science and engineering. Nor was it the product of any single branch of learning. Sputnik reflected the inevitable result of the development of the country's science and technology as a whole.\n\nTheoretical and Experimental Physics\n\nThe greatest headway has been made in the physical sciences. Soviet scientists have done much in developing the theory of relativity, particularly in the aspects of non-stationary solution of Einstein's equation of gravitation and the problem of the law of movement of the system of bodies.\n\nA considerable contribution was made to the development of modern quantum mechanics. An important landmark in this direction was Vladimir Fok's approximate method of resolving the problems of quantum mechanics of many particles.\n\nSoviet scientists propounded the theory of the inception of nuclear forces as the outcome of the exchange of light particles which was essential for the development of our ideas about atomic nuclei. The development of the theory of nuclear forces was also greatly influenced by the liquid-drop model of the nucleus suggested by Yakov Frenkel which was further developed in the theory of fission.\n\nOne of the most significant achievements of the physical sciences is the discovery of the so-called Vavilov-Cherenkov effect that laid the\n\nLEARNING MORE ABOUT OUR PLANET\n\nBy Mikhail Molodensky\nCorresponding Member,\nUSSR Academy of Sciences\n\nOBSERVATIONS of the man-made satellites will lead to important conclusions as to the precise shape of our planet. Even the moon's movement allows us to determine one of the basic features of the earth's structure, namely, the fact that it is compressed at the poles.\n\nAs Sputnik moves in its orbit, it reacts to every change in the earth's gravitational field, with the line of its flight indicating the irregularities. With this new data and the use of modern astronomical and radiolocation methods, the dimensions of our planet can be determined with infinitely greater precision than was previously possible because Sputnik is approximately 50 times closer to the earth's center than the moon.\n\nThe plotting of the trajectories of a number of artificial satellites will finally enable us to determine the exact configuration of the earth, an extremely important element in the study of the origin, history and structure of our planet. By knowing the satellites' speed we shall be able to calculate precise measurements of the distances between various points on the globe, thus making the present data more accurate.\n\nGeochemists have found out much about the earth's chemical composition. But man-made satellites provide the means for many new findings. New data will be available on the chemical composition of the earth and the changes in this composition that are produced as a result of various cosmic radiations.\n\nSputniks open new avenues for research in all the earth sciences—gravimetry and geochemistry, geodesy and geophysics, seismography and hydrology. They will give us important information on the composition of the cosmic dust that floats through interstellar space. Science has thus far merely guessed at its nature and properties, but the satellite laboratory will afford the possibility of undertaking a study of this problem from stage to stage. The supposition that cosmic dust is the material out of which planets are formed testifies to the importance of such a laboratory.",
+                        "images": [],
+                        "tables": [],
+                        "hyperlinks": [],
+                        "header": null,
+                        "footer": null,
+                        "dimensions": {
+                            "dpi": 200,
+                            "height": 2679,
+                            "width": 1874
+                        }
+                    }
+                ],
+                "model": "mistral-ocr-latest",
+                "document_annotation": "{\n  \"blocks\": [\n    {\n      \"type\": \"headline\",\n      \"text\": \"EARTH SATELLITE: Link in Over-all Scientific and Technological Development\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 0,\n        \"width\": 500,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"byline\",\n      \"text\": \"By Alexander Topchiev\\nSecretary, USSR Academy of Sciences\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 20,\n        \"width\": 500,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"THE FIRST SATELLITE to be orbited around the earth was no accidental feat of Soviet science and engineering. Nor was it the product of any single branch of learning. Sputnik reflected the inevitable result of the development of the country's science and technology as a whole.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 40,\n        \"width\": 500,\n        \"height\": 40\n      }\n    },\n    {\n      \"type\": \"headline\",\n      \"text\": \"Theoretical and Experimental Physics\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 80,\n        \"width\": 500,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"The greatest headway has been made in the physical sciences. Soviet scientists have done much in developing the theory of relativity, particularly in the aspects of non-stationary solution of Einstein's equation of gravitation and the problem of the law of movement of the system of bodies.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 100,\n        \"width\": 500,\n        \"height\": 40\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"A considerable contribution was made to the development of modern quantum mechanics. An important landmark in this direction was Vladimir Fok's approximate method of resolving the problems of quantum mechanics of many particles.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 140,\n        \"width\": 500,\n        \"height\": 40\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"Soviet scientists propounded the theory of the inception of nuclear forces as the outcome of the exchange of light particles which was essential for the development of our ideas about atomic nuclei. The development of the theory of nuclear forces was also greatly influenced by the liquid-drop model of the nucleus suggested by Yakov Frenkel which was further developed in the theory of fission.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 180,\n        \"width\": 500,\n        \"height\": 60\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"One of the most significant achievements of the physical sciences is the discovery of the so-called Vavilov-Cherenkov effect that laid the\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 240,\n        \"width\": 500,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"headline\",\n      \"text\": \"LEARNING MORE ABOUT OUR PLANET\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 260,\n        \"width\": 500,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"byline\",\n      \"text\": \"By Mikhail Molodensky\\nCorresponding Member,\\nUSSR Academy of Sciences\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 280,\n        \"width\": 500,\n        \"height\": 40\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"OBSERVATIONS of the man-made satellites will lead to important conclusions as to the precise shape of our planet. Even the moon's movement allows us to determine one of the basic features of the earth's structure, namely, the fact that it is compressed at the poles.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 320,\n        \"width\": 500,\n        \"height\": 40\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"As Sputnik moves in its orbit, it reacts to every change in the earth's gravitational field, with the line of its flight indicating the irregularities. With this new data and the use of modern astronomical and radiolocation methods, the dimensions of our planet can be determined with infinitely greater precision than was previously possible because Sputnik is approximately 50 times closer to the earth's center than the moon.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 360,\n        \"width\": 500,\n        \"height\": 60\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"The plotting of the trajectories of a number of artificial satellites will finally enable us to determine the exact configuration of the earth, an extremely important element in the study of the origin, history and structure of our planet. By knowing the satellites' speed we shall be able to calculate precise measurements of the distances between various points on the globe, thus making the present data more accurate.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 420,\n        \"width\": 500,\n        \"height\": 60\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"Geochemists have found out much about the earth's chemical composition. But man-made satellites provide the means for many new findings. New data will be available on the chemical composition of the earth and the changes in this composition that are produced as a result of various cosmic radiations.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 480,\n        \"width\": 500,\n        \"height\": 40\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"Sputniks open new avenues for research in all the earth sciences—gravimetry and geochemistry, geodesy and geophysics, seismography and hydrology. They will give us important information on the composition of the cosmic dust that floats through interstellar space. Science has thus far merely guessed at its nature and properties, but the satellite laboratory will afford the possibility of undertaking a study of this problem from stage to stage. The supposition that cosmic dust is the material out of which planets are formed testifies to the importance of such a laboratory.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 520,\n        \"width\": 500,\n        \"height\": 80\n      }\n    }\n  ]\n}",
+                "usage_info": {
+                    "pages_processed": 1,
+                    "doc_size_bytes": 473805
+                }
+            }
+        }
+    }
+}

@@ -1417,44 +1417,61 @@
         },
         "classify": {
             "type": "magazine_page",
-            "subtype": null,
+            "subtype": "monthly_publication",
             "confidence": 0.95,
-            "rationale": "The text indicates that it is an illustrated monthly publication titled 'USSR', characteristic of a magazine page.",
+            "rationale": "The document contains features typical of a magazine page, including a title, publication details, and content related to articles.",
             "_tokens": {
                 "prompt": 323,
-                "completion": 44,
-                "total": 367,
+                "completion": 48,
+                "total": 371,
                 "cached": 0
             }
         },
         "summarize": {
-            "summary": "The item is an excerpt from the magazine 'USSR', specifically issue No. 1 (16), priced at 20 cents. This publication was notable for being produced under a reciprocal agreement between the United States and the Soviet Union, aimed at fostering cultural exchange during a period of intense geopolitical tension. The document features a layout typical of mid-20th century periodicals, including a standard address and contact information for circulation in Washington, D.C.",
+            "summary": "The item is an excerpt from the magazine titled \"USSR,\" which was published under a reciprocal agreement between the United States and the Soviet Union. This publication served as a medium to promote cultural and scientific exchanges during the Cold War era, reflecting the complexities of diplomatic relations between the two countries. The magazine featured articles on science and progress, emphasizing technological advancements. The page is identified as No. 1 (16) and was sold for 20 cents, indicating its accessibility to the general public and its role in disseminating information.",
             "language": "English",
             "_tokens": {
                 "prompt": 241,
-                "completion": 98,
-                "total": 339,
+                "completion": 114,
+                "total": 355,
                 "cached": 0
             }
         },
         "keywords": {
             "keywords": [
-                "magazine-page",
-                "ussr",
+                "usSR-magazine",
                 "illustrated-monthly",
-                "1960s",
+                "soviet-era",
+                "cold-war",
+                "political-ephemera",
+                "vintage-print",
                 "full-color",
-                "americana",
-                "political-history",
-                "cold-war"
+                "well-worn"
             ],
             "safety": "safe",
             "_tokens": {
                 "prompt": 355,
-                "completion": 38,
-                "total": 393,
+                "completion": 46,
+                "total": 401,
                 "cached": 0
             }
+        },
+        "_pages": {
+            "page_count": 12,
+            "pages": [
+                "feec63aece11e9121849278bdb053c0b24b5c55d-page-01.json",
+                "feec63aece11e9121849278bdb053c0b24b5c55d-page-02.json",
+                "feec63aece11e9121849278bdb053c0b24b5c55d-page-03.json",
+                "feec63aece11e9121849278bdb053c0b24b5c55d-page-04.json",
+                "feec63aece11e9121849278bdb053c0b24b5c55d-page-05.json",
+                "feec63aece11e9121849278bdb053c0b24b5c55d-page-06.json",
+                "feec63aece11e9121849278bdb053c0b24b5c55d-page-07.json",
+                "feec63aece11e9121849278bdb053c0b24b5c55d-page-08.json",
+                "feec63aece11e9121849278bdb053c0b24b5c55d-page-09.json",
+                "feec63aece11e9121849278bdb053c0b24b5c55d-page-10.json",
+                "feec63aece11e9121849278bdb053c0b24b5c55d-page-11.json",
+                "feec63aece11e9121849278bdb053c0b24b5c55d-page-12.json"
+            ]
         }
     }
 }

@@ -1,0 +1,293 @@
+{
+    "subject": "file:///home/tac/g/sites/ai-pipeline-demo/public/images/pages/af1df721c0d61aa66a45e8e86db7f6c77e70d543-04.jpg",
+    "results": {
+        "ocr_mistral": {
+            "text": "Adjutant General's Office\nWashington, D.C.\nOctober 7th, 1867\n\nSir:\n\nI have the honor to acknowledge the receipt from your Office of application for Pension No. 152744, and to return it herewith, with such information as is furnished by the files of this Office.\n\nIt appears from the Rolls on file in this Office, that Aaron Chambers was enrolled on the 19th day of Sept., 1864, at Owensboro, Ky., in Co. \"G\", 118th Regiment of U.S. Cold. Infty Volunteers, to serve three years, or during the war, and mustered into service as a Private on the 19th day of Sept., 1864, at Owensboro, Ky., in Co. \"G\", 118th Regiment of U.S. Cold. Infty Volunteers, to serve three years, or during the war. On the Muster October Roll of Co. \"G\" of that Regiment, dated Whites Ranche, Tx., Feb. 6th, 1866, he is reported \"Hired of disease in field Hospital Co. Nov. 6/64.\"\n\nI am, Sir, very respectfully,\nYour obedient servant,\n\nThe Commissioner of Pensions\nWashington, D.C.\n\nAssistant Adjutant General\nIn charge of Bureau of Pensions\n\nMemoranda\nName of applicant\nAddress\n\nMB 12",
+            "language": null,
+            "confidence": "high",
+            "layout_blocks": [
+                {
+                    "page": 0,
+                    "type": "headline",
+                    "text": "Adjutant General's Office",
+                    "bbox": {
+                        "x": 0,
+                        "y": 0,
+                        "width": 982,
+                        "height": 100
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "column",
+                    "text": "Washington, D.C.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 100,
+                        "width": 982,
+                        "height": 50
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "column",
+                    "text": "October 7th, 1867",
+                    "bbox": {
+                        "x": 0,
+                        "y": 150,
+                        "width": 982,
+                        "height": 50
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "Sir:",
+                    "bbox": {
+                        "x": 0,
+                        "y": 200,
+                        "width": 982,
+                        "height": 50
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "I have the honor to acknowledge the receipt from your Office of application for Pension No. 152744, and to return it herewith, with such information as is furnished by the files of this Office.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 250,
+                        "width": 982,
+                        "height": 150
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "It appears from the Rolls on file in this Office, that Aaron Chambers was enrolled on the 19th day of Sept., 1864, at Owensboro, Ky., in Co. \"G\", 118th Regiment of U.S. Cold. Infty Volunteers, to serve three years, or during the war, and mustered into service as a Private on the 19th day of Sept., 1864, at Owensboro, Ky., in Co. \"G\", 118th Regiment of U.S. Cold. Infty Volunteers, to serve three years, or during the war. On the Muster October Roll of Co. \"G\" of that Regiment, dated Whites Ranche, Tx., Feb. 6th, 1866, he is reported \"Hired of disease in field Hospital Co. Nov. 6/64.\"",
+                    "bbox": {
+                        "x": 0,
+                        "y": 401,
+                        "width": 982,
+                        "height": 301
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "I am, Sir, very respectfully,",
+                    "bbox": {
+                        "x": 0,
+                        "y": 701,
+                        "width": 982,
+                        "height": 50
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "Your obedient servant,",
+                    "bbox": {
+                        "x": 0,
+                        "y": 751,
+                        "width": 982,
+                        "height": 50
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "column",
+                    "text": "The Commissioner of Pensions",
+                    "bbox": {
+                        "x": 0,
+                        "y": 801,
+                        "width": 982,
+                        "height": 50
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "column",
+                    "text": "Washington, D.C.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 851,
+                        "width": 982,
+                        "height": 50
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "column",
+                    "text": "Assistant Adjutant General",
+                    "bbox": {
+                        "x": 0,
+                        "y": 902,
+                        "width": 982,
+                        "height": 50
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "column",
+                    "text": "In charge of Bureau of Pensions",
+                    "bbox": {
+                        "x": 0,
+                        "y": 952,
+                        "width": 982,
+                        "height": 50
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "headline",
+                    "text": "Memoranda",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1002,
+                        "width": 982,
+                        "height": 50
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "column",
+                    "text": "Name of applicant",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1052,
+                        "width": 982,
+                        "height": 50
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "column",
+                    "text": "Address",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1102,
+                        "width": 982,
+                        "height": 50
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "column",
+                    "text": "MB 12",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1152,
+                        "width": 982,
+                        "height": 50
+                    }
+                }
+            ],
+            "image_blocks": [],
+            "pages": [
+                {
+                    "index": 0,
+                    "markdown": "Adjutant General's Office\nWashington, D.C.\nOctober 7th, 1867\n\nSir:\n\nI have the honor to acknowledge the receipt from your Office of application for Pension No. 152744, and to return it herewith, with such information as is furnished by the files of this Office.\n\nIt appears from the Rolls on file in this Office, that Aaron Chambers was enrolled on the 19th day of Sept., 1864, at Owensboro, Ky., in Co. \"G\", 118th Regiment of U.S. Cold. Infty Volunteers, to serve three years, or during the war, and mustered into service as a Private on the 19th day of Sept., 1864, at Owensboro, Ky., in Co. \"G\", 118th Regiment of U.S. Cold. Infty Volunteers, to serve three years, or during the war. On the Muster October Roll of Co. \"G\" of that Regiment, dated Whites Ranche, Tx., Feb. 6th, 1866, he is reported \"Hired of disease in field Hospital Co. Nov. 6/64.\"\n\nI am, Sir, very respectfully,\nYour obedient servant,\n\nThe Commissioner of Pensions\nWashington, D.C.\n\nAssistant Adjutant General\nIn charge of Bureau of Pensions\n\nMemoranda\nName of applicant\nAddress\n\nMB 12",
+                    "dimensions": {
+                        "dpi": 200,
+                        "height": 1202,
+                        "width": 982
+                    },
+                    "tables": [],
+                    "header": null,
+                    "footer": null
+                }
+            ],
+            "raw_response": {
+                "pages": [
+                    {
+                        "index": 0,
+                        "markdown": "Adjutant General's Office\nWashington, D.C.\nOctober 7th, 1867\n\nSir:\n\nI have the honor to acknowledge the receipt from your Office of application for Pension No. 152744, and to return it herewith, with such information as is furnished by the files of this Office.\n\nIt appears from the Rolls on file in this Office, that Aaron Chambers was enrolled on the 19th day of Sept., 1864, at Owensboro, Ky., in Co. \"G\", 118th Regiment of U.S. Cold. Infty Volunteers, to serve three years, or during the war, and mustered into service as a Private on the 19th day of Sept., 1864, at Owensboro, Ky., in Co. \"G\", 118th Regiment of U.S. Cold. Infty Volunteers, to serve three years, or during the war. On the Muster October Roll of Co. \"G\" of that Regiment, dated Whites Ranche, Tx., Feb. 6th, 1866, he is reported \"Hired of disease in field Hospital Co. Nov. 6/64.\"\n\nI am, Sir, very respectfully,\nYour obedient servant,\n\nThe Commissioner of Pensions\nWashington, D.C.\n\nAssistant Adjutant General\nIn charge of Bureau of Pensions\n\nMemoranda\nName of applicant\nAddress\n\nMB 12",
+                        "images": [],
+                        "tables": [],
+                        "hyperlinks": [],
+                        "header": null,
+                        "footer": null,
+                        "dimensions": {
+                            "dpi": 200,
+                            "height": 1202,
+                            "width": 982
+                        }
+                    }
+                ],
+                "model": "mistral-ocr-latest",
+                "document_annotation": "{\n  \"blocks\": [\n    {\n      \"type\": \"headline\",\n      \"text\": \"Adjutant General's Office\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 0,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"column\",\n      \"text\": \"Washington, D.C.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 20,\n        \"width\": 100,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"column\",\n      \"text\": \"October 7th, 1867\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 30,\n        \"width\": 100,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"Sir:\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 40,\n        \"width\": 100,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"I have the honor to acknowledge the receipt from your Office of application for Pension No. 152744, and to return it herewith, with such information as is furnished by the files of this Office.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 50,\n        \"width\": 100,\n        \"height\": 30\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"It appears from the Rolls on file in this Office, that Aaron Chambers was enrolled on the 19th day of Sept., 1864, at Owensboro, Ky., in Co. \\\"G\\\", 118th Regiment of U.S. Cold. Infty Volunteers, to serve three years, or during the war, and mustered into service as a Private on the 19th day of Sept., 1864, at Owensboro, Ky., in Co. \\\"G\\\", 118th Regiment of U.S. Cold. Infty Volunteers, to serve three years, or during the war. On the Muster October Roll of Co. \\\"G\\\" of that Regiment, dated Whites Ranche, Tx., Feb. 6th, 1866, he is reported \\\"Hired of disease in field Hospital Co. Nov. 6/64.\\\"\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 80,\n        \"width\": 100,\n        \"height\": 60\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"I am, Sir, very respectfully,\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 140,\n        \"width\": 100,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"Your obedient servant,\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 150,\n        \"width\": 100,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"column\",\n      \"text\": \"The Commissioner of Pensions\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 160,\n        \"width\": 100,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"column\",\n      \"text\": \"Washington, D.C.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 170,\n        \"width\": 100,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"column\",\n      \"text\": \"Assistant Adjutant General\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 180,\n        \"width\": 100,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"column\",\n      \"text\": \"In charge of Bureau of Pensions\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 190,\n        \"width\": 100,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"headline\",\n      \"text\": \"Memoranda\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 200,\n        \"width\": 100,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"column\",\n      \"text\": \"Name of applicant\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 210,\n        \"width\": 100,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"column\",\n      \"text\": \"Address\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 220,\n        \"width\": 100,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"column\",\n      \"text\": \"MB 12\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 230,\n        \"width\": 100,\n        \"height\": 10\n      }\n    }\n  ]\n}",
+                "usage_info": {
+                    "pages_processed": 1,
+                    "doc_size_bytes": 106226
+                }
+            }
+        },
+        "annotate_handwriting": {
+            "pages": [
+                {
+                    "index": 0,
+                    "annotated_text": "Adjutant General's Office  \nWashington, D.C.  \n<hw>October 7th, 1867</hw>  \n  \nSir:  \n  \nI have the honor to acknowledge the receipt from your Office  \nof application for Pension No. <hw>152744</hw>, and to return it  \nherewith, with such information as is furnished by the files of this  \nOffice.  \n  \nIt appears from the Rolls on file in this Office, that  \n<hw>Aaron Chambers</hw> was enrolled on the <hw>19th</hw> day of <hw>Sept.</hw>, <hw>1864</hw>, at <hw>Owensboro</hw>, <hw>Ky.</hw>, in Co. \"G\", 118th Regiment of U.S. Cold. Infty Volunteers, to  \nserve three years, or during the war, and mustered into  \nservice as a Private on the <hw>19th</hw> day of <hw>Sept.</hw>, <hw>1864</hw>, at <hw>Owensboro</hw>, <hw>Ky.</hw>, in Co. \"G\", 118th  \nRegiment of U.S. Cold. Infty Volunteers, to serve three  \nyears, or during the war. On the Muster <hw>Roll</hw> of Co. \"G\" of that Regiment, <hw>dated Whites Ranche, Tx., Feb. 6th, 1866</hw>, he is reported <hw>Died of disease in field Hospital Co. Nov. 6/64</hw>.  \n  \nI am, Sir, very respectfully,  \nYour obedient servant,  \n<hw>Geo. E. Spencer</hw>  \n  \nThe Commissioner of Pensions  \nWashington, D.C.  \n  \nAssistant Adjutant General  \n<hw>Wm. Johns</hw>  \nIn charge of Bureau of Pensions  \n  \nMemoranda  \nName of applicant  \nAddress  \n  \n<hw>MB 12</hw>  "
+                }
+            ],
+            "annotated_text": "Adjutant General's Office  \nWashington, D.C.  \n<hw>October 7th, 1867</hw>  \n  \nSir:  \n  \nI have the honor to acknowledge the receipt from your Office  \nof application for Pension No. <hw>152744</hw>, and to return it  \nherewith, with such information as is furnished by the files of this  \nOffice.  \n  \nIt appears from the Rolls on file in this Office, that  \n<hw>Aaron Chambers</hw> was enrolled on the <hw>19th</hw> day of <hw>Sept.</hw>, <hw>1864</hw>, at <hw>Owensboro</hw>, <hw>Ky.</hw>, in Co. \"G\", 118th Regiment of U.S. Cold. Infty Volunteers, to  \nserve three years, or during the war, and mustered into  \nservice as a Private on the <hw>19th</hw> day of <hw>Sept.</hw>, <hw>1864</hw>, at <hw>Owensboro</hw>, <hw>Ky.</hw>, in Co. \"G\", 118th  \nRegiment of U.S. Cold. Infty Volunteers, to serve three  \nyears, or during the war. On the Muster <hw>Roll</hw> of Co. \"G\" of that Regiment, <hw>dated Whites Ranche, Tx., Feb. 6th, 1866</hw>, he is reported <hw>Died of disease in field Hospital Co. Nov. 6/64</hw>.  \n  \nI am, Sir, very respectfully,  \nYour obedient servant,  \n<hw>Geo. E. Spencer</hw>  \n  \nThe Commissioner of Pensions  \nWashington, D.C.  \n  \nAssistant Adjutant General  \n<hw>Wm. Johns</hw>  \nIn charge of Bureau of Pensions  \n  \nMemoranda  \nName of applicant  \nAddress  \n  \n<hw>MB 12</hw>  "
+        },
+        "transcribe_handwriting": {
+            "text": "Adjutant General’s Office,\nWashington, D. C.,\nOctober 7th, 1867.\n\nSir:\nI have the honor to acknowledge the receipt from your Office\nof application for Pension No. 153,794 and to return it\nherewith, with such information as is furnished by the files of this\nOffice.\n\nIt appears from the Rolls on file in this Office, that\nIsaac Lahman was enrolled on the 19th\nday of Sept. 1861, at Augusta, Indiana in Co. K,\n119th Regiment of Indiana Volunteers, to\nserve three years, or during the war, and mustered into\nservice as a Private on the 19th day of Sept\n1861, at Indianapolis, in Co. K,\nRegiment of Indiana Volunteers, to serve three\nyears, or during the war. On the Muster Roll of Co. K,\nof that Regiment, for the months of Jan & Feb, [18]64,\nhe is reported Died of disease in field Hospital\nnear Huntsville Ala.\n\nI am, Sir, very respectfully,\nYour obedient servant,\nWm. Teggard\nAssistant Adjutant General.\n\nThe Commissioner of Pensions,\nWashington D. C.\n\nMemoranda\nName of applicant\nAddress\nM. D. B.",
+            "language": "English",
+            "confidence": "high",
+            "blocks": [
+                [
+                    "Adjutant General’s Office,",
+                    "Washington, D. C.,",
+                    "October 7th, 1867."
+                ],
+                [
+                    "Sir:"
+                ],
+                [
+                    "I have the honor to acknowledge the receipt from your Office",
+                    "of application for Pension No. 153,794 and to return it",
+                    "herewith, with such information as is furnished by the files of this",
+                    "Office."
+                ],
+                [
+                    "It appears from the Rolls on file in this Office, that",
+                    "Isaac Lahman was enrolled on the 19th",
+                    "day of Sept. 1861, at Augusta, Indiana in Co. K,",
+                    "119th Regiment of Indiana Volunteers, to",
+                    "serve three years, or during the war, and mustered into",
+                    "service as a Private on the 19th day of Sept",
+                    "1861, at Indianapolis, in Co. K,",
+                    "Regiment of Indiana Volunteers, to serve three",
+                    "years, or during the war. On the Muster Roll of Co. K,",
+                    "of that Regiment, for the months of Jan & Feb, [18]64,",
+                    "he is reported Died of disease in field Hospital",
+                    "near Huntsville Ala."
+                ],
+                [
+                    "I am, Sir, very respectfully,",
+                    "Your obedient servant,",
+                    "Wm. Teggard",
+                    "Assistant Adjutant General."
+                ],
+                [
+                    "The Commissioner of Pensions,",
+                    "Washington D. C."
+                ],
+                [
+                    "Memoranda",
+                    "Name of applicant",
+                    "Address",
+                    "M. D. B."
+                ]
+            ],
+            "_tokens": {
+                "prompt": 971,
+                "completion": 596,
+                "total": 1567,
+                "cached": 0
+            }
+        }
+    }
+}

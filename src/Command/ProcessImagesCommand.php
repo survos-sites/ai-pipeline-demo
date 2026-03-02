@@ -18,21 +18,37 @@ use Symfony\Component\Process\Process;
 use Symfony\Contracts\HttpClient\HttpClientInterface;
 
 /**
- * Reads public/data/images.json, runs the configured pipeline for each entry,
- * and writes results to public/data/{sha1}.json.
+ * Processes manifests (images.json, pdfs.json) through AI pipelines.
  *
- * After processing, regenerates public/data/images.json with a `result_file`
- * field pointing at the result JSON so the static viewer can find it.
+ * For single images: runs all tasks directly against the image URL.
+ * For PDFs: splits into per-page JPGs, runs page-level tasks (ocr, annotate,
+ * transcribe) per page, then runs doc-level tasks (summarize, classify, etc.)
+ * with aggregated page text.
+ *
+ * Per-page results are stored in {sha1}-page-{nn}.json files.
+ * Doc-level results plus page references in {sha1}.json.
  *
  * Usage:
  *   bin/console app:process                    # process all entries
  *   bin/console app:process --limit=1          # process first entry only
  *   bin/console app:process --force            # re-run even if results exist
- *   bin/console app:process --manifest=other.json
+ *   bin/console app:process -m pdfs.json       # process only PDFs
+ *   bin/console app:process --tasks=ocr_mistral
  */
-#[AsCommand('app:process', 'Process images.json through configured AI pipelines')]
+#[AsCommand('app:process', 'Process manifests through configured AI pipelines')]
 final class ProcessImagesCommand extends Command
 {
+    /**
+     * Tasks that run per-page on individual page JPGs (for PDFs).
+     * Everything else runs at the document level.
+     */
+    private const PAGE_LEVEL_TASKS = [
+        'ocr_mistral',
+        'annotate_handwriting',
+        'transcribe_handwriting',
+        'layout',
+    ];
+
     public function __construct(
         private readonly AiPipelineRunner  $runner,
         private readonly AiTaskRegistry    $registry,
@@ -66,7 +82,7 @@ final class ProcessImagesCommand extends Command
         $limit    = $input->getOption('limit') !== null ? (int) $input->getOption('limit') : null;
         $taskOver = $input->getOption('tasks');
 
-        $io->title('AI Pipeline — Process Images');
+        $io->title('AI Pipeline — Process');
         $io->writeln(sprintf('Data dir : %s', $this->dataDir));
 
         $registered = array_keys($this->registry->getTaskMap());
@@ -77,11 +93,10 @@ final class ProcessImagesCommand extends Command
         $io->writeln('Registered tasks: ' . implode(', ', $registered));
         $io->newLine();
 
-        $manifests   = (array) $input->getOption('manifest');
+        $manifests      = (array) $input->getOption('manifest');
         $totalProcessed = 0;
 
         foreach ($manifests as $manifest) {
-            // ── Load manifest ─────────────────────────────────────────────────
             $manifestPath = $this->resolveManifest($manifest);
             if (!is_file($manifestPath)) {
                 $io->warning("Manifest not found: {$manifestPath} — skipping.");
@@ -96,7 +111,6 @@ final class ProcessImagesCommand extends Command
 
             $io->section(sprintf('Manifest: %s (%d entries)', basename($manifestPath), count($entries)));
 
-            // ── Process each entry ────────────────────────────────────────────
             $processed = 0;
 
             foreach ($entries as $i => &$entry) {
@@ -104,8 +118,8 @@ final class ProcessImagesCommand extends Command
                     break;
                 }
 
-                $url      = $entry['url']      ?? null;
-                $title    = $entry['title']    ?? $url;
+                $url      = $entry['url']   ?? null;
+                $title    = $entry['title'] ?? $url;
                 $pipeline = $taskOver
                     ? array_filter(array_map('trim', explode(',', $taskOver)))
                     : ($entry['pipeline'] ?? $registered);
@@ -115,64 +129,31 @@ final class ProcessImagesCommand extends Command
                     continue;
                 }
 
-                // Resolve relative paths (e.g. "images/foo.jpg") to absolute URLs
-                // so the AI tasks receive something fetchable.
                 $absoluteUrl = $this->resolveUrl($url);
 
-                // Warn and skip if the image is not accessible.
                 if (!$this->isAccessible($absoluteUrl, $io)) {
                     continue;
                 }
 
                 $io->writeln(sprintf('  [%d/%d] %s', $i + 1, count($entries), $title));
 
-                // Subject (SHA-1 key) = original manifest url (stable, even if relative).
-                // image_url input = absolute URL so tasks can actually fetch it.
-                // Extra inputs from the manifest entry (e.g. max_pages) are merged in.
-                $extraInputs = $entry['inputs'] ?? [];
-                $store     = new JsonFileResultStore($url, $this->dataDir, array_merge(['image_url' => $absoluteUrl], $extraInputs));
-                $priorKeys = array_keys($store->getAllPrior());
+                $isPdf = $this->isPdf($url);
 
-                if (!$force && $priorKeys !== []) {
-                    $pending = array_diff($pipeline, $priorKeys);
-                    if ($pending === []) {
-                        $io->comment('  All tasks already complete — skipping (use --force to rerun).');
-                        $entry['result_file'] = basename($store->getFilePath());
-                        $entry['status']      = 'complete';
-                        continue;
-                    }
-                    $io->comment(sprintf('  Resuming — %d task(s) remaining: %s', count($pending), implode(', ', $pending)));
+                if ($isPdf) {
+                    $this->processPdfEntry($entry, $url, $absoluteUrl, $pipeline, $force, $io);
+                } else {
+                    $this->processImageEntry($entry, $url, $absoluteUrl, $pipeline, $force, $io);
                 }
 
-                // Wire progress callbacks
-                $this->runner->onBeforeTask(function (string $task) use ($io): void {
-                    $io->write(sprintf('  %-28s ', $task));
-                });
-                $this->runner->onAfterTask(function (string $task, array $result, string $status) use ($io): void {
-                    $label = match ($status) {
-                        'done'    => '<info>done</info>',
-                        'skipped' => '<comment>skipped</comment>',
-                        'failed'  => '<error>FAILED: ' . ($result['error'] ?? '') . '</error>',
-                        default   => $status,
-                    };
-                    $io->writeln($label);
-                });
-
-                $queue = array_values($pipeline);
-                while ($queue !== []) {
-                    if ($this->runner->runNext($store, $queue) === null) {
-                        break;
-                    }
-                }
-
-                $entry['result_file'] = basename($store->getFilePath());
+                $sha1 = sha1($url);
+                $entry['result_file'] = $sha1 . '.json';
                 $entry['status']      = 'complete';
                 $processed++;
                 $totalProcessed++;
             }
             unset($entry);
 
-            // ── Write updated manifest ────────────────────────────────────────
+            // Write updated manifest
             file_put_contents(
                 $manifestPath,
                 json_encode($entries, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE),
@@ -181,113 +162,288 @@ final class ProcessImagesCommand extends Command
             $io->comment(sprintf('  %d entries processed in %s.', $processed, basename($manifestPath)));
         }
 
-        // ── Split PDFs into page images ──────────────────────────────────────
-        $this->splitPdfs($io);
-
         $io->newLine();
         $io->success(sprintf('Processed %d entries across %d manifest(s).', $totalProcessed, count($manifests)));
 
         return Command::SUCCESS;
     }
 
-    /**
-     * Split PDFs referenced in manifests into per-page JPGs in public/images/pages/.
-     * Uses SHA1(url) as the filename prefix to match the result file naming.
-     * Handles both local and remote PDFs (downloads remote ones to a temp file).
-     * Auto-crops whitespace from scanned pages.
-     * Skips PDFs whose pages already exist.
-     */
-    private function splitPdfs(SymfonyStyle $io): void
-    {
-        $pagesDir = $this->publicDir . '/images/pages';
+    // ── Image processing (unchanged behaviour) ──────────────────────────────
 
-        $finder   = new ExecutableFinder();
-        $pdftoppm = $finder->find('pdftoppm');
-        if (!$pdftoppm) {
-            $io->warning('pdftoppm not found — install poppler-utils to split PDFs into page images.');
+    private function processImageEntry(
+        array &$entry,
+        string $url,
+        string $absoluteUrl,
+        array $pipeline,
+        bool $force,
+        SymfonyStyle $io,
+    ): void {
+        $extraInputs = $entry['inputs'] ?? [];
+        $store = new JsonFileResultStore(
+            $url,
+            $this->dataDir,
+            array_merge(['image_url' => $absoluteUrl], $extraInputs),
+        );
+
+        $priorKeys = array_keys($store->getAllPrior());
+
+        if (!$force && $priorKeys !== []) {
+            $pending = array_diff($pipeline, $priorKeys);
+            if ($pending === []) {
+                $io->comment('    All tasks already complete — skipping (use --force to rerun).');
+                return;
+            }
+            $io->comment(sprintf('    Resuming — %d task(s) remaining: %s', count($pending), implode(', ', $pending)));
+        }
+
+        $this->wireCallbacks($io, '    ');
+        $queue = array_values($pipeline);
+        while ($queue !== []) {
+            if ($this->runner->runNext($store, $queue) === null) {
+                break;
+            }
+        }
+    }
+
+    // ── PDF processing (per-page + doc-level) ───────────────────────────────
+
+    private function processPdfEntry(
+        array &$entry,
+        string $url,
+        string $absoluteUrl,
+        array $pipeline,
+        bool $force,
+        SymfonyStyle $io,
+    ): void {
+        $sha1      = sha1($url);
+        $pagesDir  = $this->publicDir . '/images/pages';
+        $maxPages  = (int) ($entry['inputs']['max_pages'] ?? 0);
+
+        // ── Step 1: Ensure page JPGs exist ──────────────────────────────────
+        $pageFiles = $this->ensurePageImages($url, $sha1, $pagesDir, $io);
+        if ($pageFiles === []) {
+            $io->warning('    No page images — cannot process PDF per-page.');
             return;
         }
 
+        // Apply max_pages limit
+        if ($maxPages > 0 && count($pageFiles) > $maxPages) {
+            $pageFiles = array_slice($pageFiles, 0, $maxPages);
+            $io->comment(sprintf('    Limited to %d pages (max_pages=%d)', $maxPages, $maxPages));
+        }
+
+        $pageCount = count($pageFiles);
+        $io->writeln(sprintf('    %d page images ready', $pageCount));
+
+        // ── Classify tasks ──────────────────────────────────────────────────
+        $pageTasks = array_values(array_intersect($pipeline, self::PAGE_LEVEL_TASKS));
+        $docTasks  = array_values(array_diff($pipeline, self::PAGE_LEVEL_TASKS));
+
+        if ($pageTasks) {
+            $io->writeln(sprintf('    Page-level tasks: %s', implode(', ', $pageTasks)));
+        }
+        if ($docTasks) {
+            $io->writeln(sprintf('    Doc-level tasks:  %s', implode(', ', $docTasks)));
+        }
+
+        // ── Step 2: Run page-level tasks on each page JPG ───────────────────
+        $pageResultFiles = [];
+
+        if ($pageTasks) {
+            foreach ($pageFiles as $pageIndex => $pageFile) {
+                $pageNum     = $pageIndex + 1;
+                $paddedNum   = str_pad((string) $pageNum, strlen((string) $pageCount), '0', STR_PAD_LEFT);
+                $pageFileUrl  = 'file://' . $pageFile;
+                $pageStoreKey = "{$sha1}-page-{$paddedNum}";
+
+                // Create a store for this page with an explicit key so the file
+                // is named {docSha1}-page-{nn}.json (predictable, not double-hashed)
+                $pageStore = new JsonFileResultStore(
+                    $pageFileUrl,          // subject = the page image
+                    $this->dataDir,
+                    [
+                        'image_url'  => $pageFileUrl,
+                        'page_index' => $pageIndex,
+                        'document'   => $url,
+                    ],
+                    $pageStoreKey,         // explicit key for filename
+                );
+
+                // Check if all page tasks done
+                $pagePrior = array_keys($pageStore->getAllPrior());
+                if (!$force && $pagePrior !== []) {
+                    $pending = array_diff($pageTasks, $pagePrior);
+                    if ($pending === []) {
+                        $io->comment(sprintf('    Page %d/%d: all tasks complete — skipping.', $pageNum, $pageCount));
+                        $pageResultFiles[] = basename($pageStore->getFilePath());
+                        continue;
+                    }
+                }
+
+                $io->writeln(sprintf('    <info>Page %d/%d</info>', $pageNum, $pageCount));
+                $this->wireCallbacks($io, '      ');
+
+                $queue = array_values($pageTasks);
+                while ($queue !== []) {
+                    if ($this->runner->runNext($pageStore, $queue) === null) {
+                        break;
+                    }
+                }
+
+                $pageResultFiles[] = basename($pageStore->getFilePath());
+            }
+        }
+
+        // ── Step 3: Build aggregated text from page OCR results ─────────────
+        $pageTexts = [];
+        foreach ($pageFiles as $pageIndex => $pageFile) {
+            $paddedNum    = str_pad((string) ($pageIndex + 1), strlen((string) $pageCount), '0', STR_PAD_LEFT);
+            $pageStoreKey = "{$sha1}-page-{$paddedNum}";
+            $pageStore    = new JsonFileResultStore(null, $this->dataDir, [], $pageStoreKey);
+            $ocrResult    = $pageStore->getPrior('ocr_mistral');
+            $pageTexts[]  = $ocrResult['text'] ?? '';
+        }
+        $aggregatedText = implode("\n\n--- Page Break ---\n\n", array_filter($pageTexts));
+
+        // ── Step 4: Run doc-level tasks with aggregated text ────────────────
+        if ($docTasks) {
+            $docStore = new JsonFileResultStore(
+                $url,
+                $this->dataDir,
+                [
+                    'image_url'       => $absoluteUrl,
+                    'aggregated_text' => $aggregatedText,
+                    'page_count'      => $pageCount,
+                ],
+            );
+
+            // Inject page references and page_count into the doc store data
+            $docData = [
+                'page_count' => $pageCount,
+                'pages'      => $pageResultFiles,
+            ];
+            // Save this metadata so the viewer can find per-page files
+            $docStore->saveResult('_pages', $docData);
+
+            $docPrior = array_keys($docStore->getAllPrior());
+            $pendingDoc = array_diff($docTasks, $docPrior);
+
+            if (!$force && $pendingDoc === []) {
+                $io->comment('    Doc-level tasks all complete — skipping.');
+            } else {
+                $io->writeln('    <info>Document-level tasks</info>');
+                $this->wireCallbacks($io, '      ');
+
+                $queue = array_values($docTasks);
+                while ($queue !== []) {
+                    if ($this->runner->runNext($docStore, $queue) === null) {
+                        break;
+                    }
+                }
+            }
+        } elseif ($pageResultFiles) {
+            // Even if no doc tasks, write the page references
+            $docStore = new JsonFileResultStore($url, $this->dataDir);
+            $docStore->saveResult('_pages', [
+                'page_count' => $pageCount,
+                'pages'      => $pageResultFiles,
+            ]);
+        }
+    }
+
+    // ── PDF page splitting ──────────────────────────────────────────────────
+
+    /**
+     * Ensure page JPGs exist for a PDF. Returns sorted list of absolute paths.
+     * Downloads remote PDFs, splits with pdftoppm, auto-crops with mogrify.
+     */
+    private function ensurePageImages(string $url, string $sha1, string $pagesDir, SymfonyStyle $io): array
+    {
         if (!is_dir($pagesDir)) {
             mkdir($pagesDir, 0755, true);
         }
 
+        // Check if already split
+        $existing = glob("{$pagesDir}/{$sha1}-*.jpg");
+        if ($existing) {
+            sort($existing);
+            $io->comment(sprintf('    %d page images already exist.', count($existing)));
+            return $existing;
+        }
+
+        $finder   = new ExecutableFinder();
+        $pdftoppm = $finder->find('pdftoppm');
+        if (!$pdftoppm) {
+            $io->warning('pdftoppm not found — install poppler-utils to split PDFs.');
+            return [];
+        }
+
+        $io->write('    Splitting PDF... ');
+
+        $localPath = $this->resolvePdfToLocal($url);
+        if ($localPath === null) {
+            $io->writeln('<error>cannot access PDF</error>');
+            return [];
+        }
+
+        $process = new Process([$pdftoppm, '-jpeg', '-r', '200', $localPath, "{$pagesDir}/{$sha1}"]);
+        $process->setTimeout(600);
+        $process->run();
+
+        // Clean up temp file for remote PDFs
+        if (str_starts_with($url, 'http://') || str_starts_with($url, 'https://')) {
+            @unlink($localPath);
+        }
+
+        if (!$process->isSuccessful()) {
+            $io->writeln('<error>FAILED</error>');
+            $io->warning($process->getErrorOutput());
+            return [];
+        }
+
+        $pageFiles = glob("{$pagesDir}/{$sha1}-*.jpg");
+        sort($pageFiles);
+        $count = count($pageFiles);
+        $io->write(sprintf('%d pages', $count));
+
+        // Auto-crop whitespace
         $mogrify = $finder->find('mogrify');
-
-        // Collect PDF entries from all manifests
-        $pdfEntries = [];
-        foreach (['images.json', 'pdfs.json'] as $manifest) {
-            $path = $this->dataDir . '/' . $manifest;
-            if (!is_file($path)) {
-                continue;
-            }
-            $entries = json_decode(file_get_contents($path), true) ?? [];
-            foreach ($entries as $entry) {
-                $url = $entry['url'] ?? '';
-                if (preg_match('/\.pdf(\?.*)?$/i', $url)) {
-                    $pdfEntries[] = $entry;
-                }
-            }
+        if ($mogrify && $pageFiles) {
+            $cropProcess = new Process(
+                array_merge([$mogrify, '-fuzz', '10%', '-trim', '+repage'], $pageFiles)
+            );
+            $cropProcess->setTimeout(300);
+            $cropProcess->run();
+            $io->writeln($cropProcess->isSuccessful() ? ' <info>(cropped)</info>' : ' <comment>(crop failed)</comment>');
+        } else {
+            $io->writeln('');
         }
 
-        if (!$pdfEntries) {
-            return;
-        }
+        return $pageFiles;
+    }
 
-        $io->section('Splitting PDFs into page images');
+    // ── Helpers ──────────────────────────────────────────────────────────────
 
-        foreach ($pdfEntries as $entry) {
-            $url  = $entry['url'];
-            $sha1 = sha1($url);
+    private function wireCallbacks(SymfonyStyle $io, string $indent = '  '): void
+    {
+        $this->runner->onBeforeTask(function (string $task) use ($io, $indent): void {
+            $io->write(sprintf('%s%-28s ', $indent, $task));
+        });
+        $this->runner->onAfterTask(function (string $task, array $result, string $status) use ($io): void {
+            $label = match ($status) {
+                'done'    => '<info>done</info>',
+                'skipped' => '<comment>skipped</comment>',
+                'failed'  => '<error>FAILED: ' . ($result['error'] ?? '') . '</error>',
+                default   => $status,
+            };
+            $io->writeln($label);
+        });
+    }
 
-            // Skip if pages already exist
-            $existing = glob("{$pagesDir}/{$sha1}-*.jpg");
-            if ($existing) {
-                $io->comment(sprintf('  %s: %d pages exist — skipping.', $entry['title'] ?? $sha1, count($existing)));
-                continue;
-            }
-
-            $io->write(sprintf('  %s... ', $entry['title'] ?? basename($url)));
-
-            // Resolve to a local file path
-            $localPath = $this->resolvePdfToLocal($url);
-            if ($localPath === null) {
-                $io->writeln('<error>cannot access PDF</error>');
-                continue;
-            }
-
-            $process = new Process([$pdftoppm, '-jpeg', '-r', '200', $localPath, "{$pagesDir}/{$sha1}"]);
-            $process->setTimeout(600);
-            $process->run();
-
-            // Clean up temp file for remote PDFs
-            if (!str_starts_with($url, 'file://') && !is_file($this->publicDir . '/' . ltrim($url, '/'))) {
-                @unlink($localPath);
-            }
-
-            if (!$process->isSuccessful()) {
-                $io->writeln('<error>FAILED</error>');
-                $io->warning($process->getErrorOutput());
-                continue;
-            }
-
-            $pageFiles = glob("{$pagesDir}/{$sha1}-*.jpg");
-            $count     = count($pageFiles);
-            $io->write(sprintf('%d pages', $count));
-
-            // Auto-crop whitespace
-            if ($mogrify && $pageFiles) {
-                $cropProcess = new Process(
-                    array_merge([$mogrify, '-fuzz', '10%', '-trim', '+repage'], $pageFiles)
-                );
-                $cropProcess->setTimeout(300);
-                $cropProcess->run();
-
-                $io->writeln($cropProcess->isSuccessful() ? ' <info>(cropped)</info>' : ' <comment>(crop failed)</comment>');
-            } else {
-                $io->writeln($mogrify ? '' : ' <comment>(install imagemagick for auto-crop)</comment>');
-            }
-        }
+    private function isPdf(string $url): bool
+    {
+        $path = parse_url($url, PHP_URL_PATH) ?? $url;
+        return str_ends_with(strtolower($path), '.pdf');
     }
 
     /**
@@ -296,19 +452,16 @@ final class ProcessImagesCommand extends Command
      */
     private function resolvePdfToLocal(string $url): ?string
     {
-        // Local relative path (e.g. "images/foo.pdf")
         if (!str_starts_with($url, 'http://') && !str_starts_with($url, 'https://') && !str_starts_with($url, 'file://')) {
             $path = $this->publicDir . '/' . ltrim($url, '/');
             return is_readable($path) ? $path : null;
         }
 
-        // file:// URL
         if (str_starts_with($url, 'file://')) {
             $path = substr($url, 7);
             return is_readable($path) ? $path : null;
         }
 
-        // Remote URL — download to temp file
         try {
             $response = $this->httpClient->request('GET', $url, ['timeout' => 120]);
             if ($response->getStatusCode() >= 300) {
@@ -330,27 +483,15 @@ final class ProcessImagesCommand extends Command
         return $this->dataDir . '/' . ltrim($path, '/');
     }
 
-    /**
-     * Convert a manifest url to something tasks can fetch.
-     *
-     * - Absolute URLs (http/https) are returned as-is.
-     * - Relative paths (e.g. "images/foo.jpg") are resolved against public/
-     *   and converted to a file:// URL so HttpClient can read local files.
-     */
     private function resolveUrl(string $url): string
     {
         if (str_starts_with($url, 'http://') || str_starts_with($url, 'https://')) {
             return $url;
         }
-        // Relative → absolute local path
         $localPath = rtrim($this->publicDir, '/') . '/' . ltrim($url, '/');
         return 'file://' . $localPath;
     }
 
-    /**
-     * Return true if the URL is reachable (HTTP 2xx) or is a readable local file.
-     * Logs a warning and returns false otherwise.
-     */
     private function isAccessible(string $url, SymfonyStyle $io): bool
     {
         if (str_starts_with($url, 'file://')) {

@@ -1,0 +1,410 @@
+{
+    "subject": "file:///home/tac/g/sites/ai-pipeline-demo/public/images/pages/af1df721c0d61aa66a45e8e86db7f6c77e70d543-02.jpg",
+    "results": {
+        "ocr_mistral": {
+            "text": "[2-614e J. B. H. Woodward, Louisville, Ky.]\nWidow's Application for Army Pension.\n\nThis Army Pension Declaration must be executed before a Judge or Clerk of a Court of Record. In Deputy Clerk will not answer; and if before the Judge, the Clerk thereof will certify and declare official capacity and signature, and effect the same under the seal of the Court.\n\nAll of the State of Kentucky County of Henderson SS.\n\nOn this 21st day of August A.D. 1867 personally appeared before me (1) Clerk of the (2) County Court of Record, within and for the County and State aforesaid, Mrs. Rose Chambers, a resident of the (3) County of Henderson in the State of Kentucky, aged Sixty six years, who, being first duly sworn according to law, doth on her oath make the following declaration, in order to obtain the benefit of the provision made by the act of Congress, approved (4)\n\nJuly 4th 1866 That she is the widow of Aaron Chambers deceased, who was Private in Company \"F\", commanded by Captain John C. Moore in the 118th Regiment of (5) United States Colored Infantry, commanded by Colonel Moon in the war of 1861, and who died at White in the service aforesaid, in Field Hospital in the State of Virginia on or about the sixth day of November A.D. 1869, from (1) Decatur, incurred in the service aforesaid and while in the line of his duty, (3)\n\nShe further declares that she was married to the said Aaron Chambers in the (2) County of Henderson in the State of Kentucky on the 15th day of March in the year 1837, and that her name before her said marriage was Rose Black that her husband, the aforesaid Aaron Chambers died on the day above mentioned, and that she has remained a widow ever since that period, as will more fully appear by reference to the proof herewith accompanying or to be hereafter filed. She also declares that she has not, in any manner, been engaged in, or aided or abetted, the rebellion in the United States. She is commonly appointed\n\nher attorney, with full power of substitution and priscation on his part in her said behalf, and authorizes him to receive the Pension Certificate when issued. Her Post Office is at Henderson in the County of Henderson in the State of Kentucky. That her domicile or place of abode is (3) on Road Bradbury from Anderson County, East Henderson County, to Mouth of Green River by 3 miles from Armley Place.\n\nI wish all communication concerning this claim sent to myself as above. That (10) there are no children now living under the age of sixteen years born to the above mentioned soldier dead while he lived together as man &amp; wife.\n\nATTEST:\n\nTim T. Forriles\nRox her X mark Chambers\n\nAnn Burch\nApplicant.\n\nSworn to subscribed and acknowledged before me, the day and year first above written, and also personally appeared John Dixon and James S. Dixon, residents of the (3) County of Henderson in the State of Kentucky, persons whom I certify to be respectable and entitled to credit, and who, being by me duly sworn, say that they were present and saw Mrs. Rose Chambers (11) make her (12) mark to the foregoing declaration; and they further swear that they have every reason to believe, from the appearance of the applicant and their acquaintance with her, that she is the identical person she represents herself to be, and that they have no interest in the prosecution of this claim. They further state that the foregoing declaration and this affidavit were read over to fully explained and understood by them before the signing and execution hereof.\n\nATTEST:\n\nTim T. Forriles\nJohn Dixon\nMark\nJames S. Dixon\nMark\n\nSworn to and subscribed before me, this 21st day of August A.D. 1867, and I hereby\n\n(5)",
+            "language": null,
+            "confidence": "high",
+            "layout_blocks": [
+                {
+                    "page": 0,
+                    "type": "headline",
+                    "text": "[2-614e J. B. H. Woodward, Louisville, Ky.]",
+                    "bbox": {
+                        "x": 0,
+                        "y": 0,
+                        "width": 768,
+                        "height": 31
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "headline",
+                    "text": "Widow's Application for Army Pension.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 31,
+                        "width": 768,
+                        "height": 31
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "This Army Pension Declaration must be executed before a Judge or Clerk of a Court of Record. In Deputy Clerk will not answer; and if before the Judge, the Clerk thereof will certify and declare official capacity and signature, and effect the same under the seal of the Court.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 62,
+                        "width": 768,
+                        "height": 92
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "All of the State of Kentucky County of Henderson SS.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 154,
+                        "width": 768,
+                        "height": 31
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "On this 21st day of August A.D. 1867 personally appeared before me (1) Clerk of the (2) County Court of Record, within and for the County and State aforesaid, Mrs. Rose Chambers, a resident of the (3) County of Henderson in the State of Kentucky, aged Sixty six years, who, being first duly sworn according to law, doth on her oath make the following declaration, in order to obtain the benefit of the provision made by the act of Congress, approved (4) July 4th 1866 That she is the widow of Aaron Chambers deceased, who was Private in Company \"F\", commanded by Captain John C. Moore in the 118th Regiment of (5) United States Colored Infantry, commanded by Colonel Moon in the war of 1861, and who died at White in the service aforesaid, in Field Hospital in the State of Virginia on or about the sixth day of November A.D. 1869, from (1) Decatur, incurred in the service aforesaid and while in the line of his duty, (3)",
+                    "bbox": {
+                        "x": 0,
+                        "y": 185,
+                        "width": 768,
+                        "height": 185
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "She further declares that she was married to the said Aaron Chambers in the (2) County of Henderson in the State of Kentucky on the 15th day of March in the year 1837, and that her name before her said marriage was Rose Black that her husband, the aforesaid Aaron Chambers died on the day above mentioned, and that she has remained a widow ever since that period, as will more fully appear by reference to the proof herewith accompanying or to be hereafter filed. She also declares that she has not, in any manner, been engaged in, or aided or abetted, the rebellion in the United States. She is commonly appointed her attorney, with full power of substitution and priscation on his part in her said behalf, and authorizes him to receive the Pension Certificate when issued. Her Post Office is at Henderson in the County of Henderson in the State of Kentucky. That her domicile or place of abode is (3) on Road Bradbury from Anderson County, East Henderson County, to Mouth of Green River by 3 miles from Armley Place.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 370,
+                        "width": 768,
+                        "height": 185
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "I wish all communication concerning this claim sent to myself as above. That (10) there are no children now living under the age of sixteen years born to the above mentioned soldier dead while he lived together as man & wife.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 554,
+                        "width": 768,
+                        "height": 62
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "byline",
+                    "text": "ATTEST:",
+                    "bbox": {
+                        "x": 0,
+                        "y": 616,
+                        "width": 768,
+                        "height": 31
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "byline",
+                    "text": "Tim T. Forriles",
+                    "bbox": {
+                        "x": 0,
+                        "y": 647,
+                        "width": 768,
+                        "height": 31
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "byline",
+                    "text": "Rox her X mark Chambers",
+                    "bbox": {
+                        "x": 0,
+                        "y": 677,
+                        "width": 768,
+                        "height": 31
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "byline",
+                    "text": "Ann Burch",
+                    "bbox": {
+                        "x": 0,
+                        "y": 708,
+                        "width": 768,
+                        "height": 31
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "byline",
+                    "text": "Applicant.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 739,
+                        "width": 768,
+                        "height": 31
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "Sworn to subscribed and acknowledged before me, the day and year first above written, and also personally appeared John Dixon and James S. Dixon, residents of the (3) County of Henderson in the State of Kentucky, persons whom I certify to be respectable and entitled to credit, and who, being by me duly sworn, say that they were present and saw Mrs. Rose Chambers (11) make her (12) mark to the foregoing declaration; and they further swear that they have every reason to believe, from the appearance of the applicant and their acquaintance with her, that she is the identical person she represents herself to be, and that they have no interest in the prosecution of this claim. They further state that the foregoing declaration and this affidavit were read over to fully explained and understood by them before the signing and execution hereof.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 770,
+                        "width": 768,
+                        "height": 185
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "byline",
+                    "text": "ATTEST:",
+                    "bbox": {
+                        "x": 0,
+                        "y": 955,
+                        "width": 768,
+                        "height": 31
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "byline",
+                    "text": "Tim T. Forriles",
+                    "bbox": {
+                        "x": 0,
+                        "y": 985,
+                        "width": 768,
+                        "height": 31
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "byline",
+                    "text": "John Dixon",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1016,
+                        "width": 768,
+                        "height": 31
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "byline",
+                    "text": "Mark",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1047,
+                        "width": 768,
+                        "height": 31
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "byline",
+                    "text": "James S. Dixon",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1078,
+                        "width": 768,
+                        "height": 31
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "byline",
+                    "text": "Mark",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1109,
+                        "width": 768,
+                        "height": 31
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "Sworn to and subscribed before me, this 21st day of August A.D. 1867, and I hereby",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1139,
+                        "width": 768,
+                        "height": 62
+                    }
+                }
+            ],
+            "image_blocks": [],
+            "pages": [
+                {
+                    "index": 0,
+                    "markdown": "[2-614e J. B. H. Woodward, Louisville, Ky.]\nWidow's Application for Army Pension.\n\nThis Army Pension Declaration must be executed before a Judge or Clerk of a Court of Record. In Deputy Clerk will not answer; and if before the Judge, the Clerk thereof will certify and declare official capacity and signature, and effect the same under the seal of the Court.\n\nAll of the State of Kentucky County of Henderson SS.\n\nOn this 21st day of August A.D. 1867 personally appeared before me (1) Clerk of the (2) County Court of Record, within and for the County and State aforesaid, Mrs. Rose Chambers, a resident of the (3) County of Henderson in the State of Kentucky, aged Sixty six years, who, being first duly sworn according to law, doth on her oath make the following declaration, in order to obtain the benefit of the provision made by the act of Congress, approved (4)\n\nJuly 4th 1866 That she is the widow of Aaron Chambers deceased, who was Private in Company \"F\", commanded by Captain John C. Moore in the 118th Regiment of (5) United States Colored Infantry, commanded by Colonel Moon in the war of 1861, and who died at White in the service aforesaid, in Field Hospital in the State of Virginia on or about the sixth day of November A.D. 1869, from (1) Decatur, incurred in the service aforesaid and while in the line of his duty, (3)\n\nShe further declares that she was married to the said Aaron Chambers in the (2) County of Henderson in the State of Kentucky on the 15th day of March in the year 1837, and that her name before her said marriage was Rose Black that her husband, the aforesaid Aaron Chambers died on the day above mentioned, and that she has remained a widow ever since that period, as will more fully appear by reference to the proof herewith accompanying or to be hereafter filed. She also declares that she has not, in any manner, been engaged in, or aided or abetted, the rebellion in the United States. She is commonly appointed\n\nher attorney, with full power of substitution and priscation on his part in her said behalf, and authorizes him to receive the Pension Certificate when issued. Her Post Office is at Henderson in the County of Henderson in the State of Kentucky. That her domicile or place of abode is (3) on Road Bradbury from Anderson County, East Henderson County, to Mouth of Green River by 3 miles from Armley Place.\n\nI wish all communication concerning this claim sent to myself as above. That (10) there are no children now living under the age of sixteen years born to the above mentioned soldier dead while he lived together as man &amp; wife.\n\nATTEST:\n\nTim T. Forriles\nRox her X mark Chambers\n\nAnn Burch\nApplicant.\n\nSworn to subscribed and acknowledged before me, the day and year first above written, and also personally appeared John Dixon and James S. Dixon, residents of the (3) County of Henderson in the State of Kentucky, persons whom I certify to be respectable and entitled to credit, and who, being by me duly sworn, say that they were present and saw Mrs. Rose Chambers (11) make her (12) mark to the foregoing declaration; and they further swear that they have every reason to believe, from the appearance of the applicant and their acquaintance with her, that she is the identical person she represents herself to be, and that they have no interest in the prosecution of this claim. They further state that the foregoing declaration and this affidavit were read over to fully explained and understood by them before the signing and execution hereof.\n\nATTEST:\n\nTim T. Forriles\nJohn Dixon\nMark\nJames S. Dixon\nMark\n\nSworn to and subscribed before me, this 21st day of August A.D. 1867, and I hereby\n\n(5)",
+                    "dimensions": {
+                        "dpi": 200,
+                        "height": 1201,
+                        "width": 768
+                    },
+                    "tables": [],
+                    "header": null,
+                    "footer": null
+                }
+            ],
+            "raw_response": {
+                "pages": [
+                    {
+                        "index": 0,
+                        "markdown": "[2-614e J. B. H. Woodward, Louisville, Ky.]\nWidow's Application for Army Pension.\n\nThis Army Pension Declaration must be executed before a Judge or Clerk of a Court of Record. In Deputy Clerk will not answer; and if before the Judge, the Clerk thereof will certify and declare official capacity and signature, and effect the same under the seal of the Court.\n\nAll of the State of Kentucky County of Henderson SS.\n\nOn this 21st day of August A.D. 1867 personally appeared before me (1) Clerk of the (2) County Court of Record, within and for the County and State aforesaid, Mrs. Rose Chambers, a resident of the (3) County of Henderson in the State of Kentucky, aged Sixty six years, who, being first duly sworn according to law, doth on her oath make the following declaration, in order to obtain the benefit of the provision made by the act of Congress, approved (4)\n\nJuly 4th 1866 That she is the widow of Aaron Chambers deceased, who was Private in Company \"F\", commanded by Captain John C. Moore in the 118th Regiment of (5) United States Colored Infantry, commanded by Colonel Moon in the war of 1861, and who died at White in the service aforesaid, in Field Hospital in the State of Virginia on or about the sixth day of November A.D. 1869, from (1) Decatur, incurred in the service aforesaid and while in the line of his duty, (3)\n\nShe further declares that she was married to the said Aaron Chambers in the (2) County of Henderson in the State of Kentucky on the 15th day of March in the year 1837, and that her name before her said marriage was Rose Black that her husband, the aforesaid Aaron Chambers died on the day above mentioned, and that she has remained a widow ever since that period, as will more fully appear by reference to the proof herewith accompanying or to be hereafter filed. She also declares that she has not, in any manner, been engaged in, or aided or abetted, the rebellion in the United States. She is commonly appointed\n\nher attorney, with full power of substitution and priscation on his part in her said behalf, and authorizes him to receive the Pension Certificate when issued. Her Post Office is at Henderson in the County of Henderson in the State of Kentucky. That her domicile or place of abode is (3) on Road Bradbury from Anderson County, East Henderson County, to Mouth of Green River by 3 miles from Armley Place.\n\nI wish all communication concerning this claim sent to myself as above. That (10) there are no children now living under the age of sixteen years born to the above mentioned soldier dead while he lived together as man &amp; wife.\n\nATTEST:\n\nTim T. Forriles\nRox her X mark Chambers\n\nAnn Burch\nApplicant.\n\nSworn to subscribed and acknowledged before me, the day and year first above written, and also personally appeared John Dixon and James S. Dixon, residents of the (3) County of Henderson in the State of Kentucky, persons whom I certify to be respectable and entitled to credit, and who, being by me duly sworn, say that they were present and saw Mrs. Rose Chambers (11) make her (12) mark to the foregoing declaration; and they further swear that they have every reason to believe, from the appearance of the applicant and their acquaintance with her, that she is the identical person she represents herself to be, and that they have no interest in the prosecution of this claim. They further state that the foregoing declaration and this affidavit were read over to fully explained and understood by them before the signing and execution hereof.\n\nATTEST:\n\nTim T. Forriles\nJohn Dixon\nMark\nJames S. Dixon\nMark\n\nSworn to and subscribed before me, this 21st day of August A.D. 1867, and I hereby\n\n(5)",
+                        "images": [],
+                        "tables": [],
+                        "hyperlinks": [],
+                        "header": null,
+                        "footer": null,
+                        "dimensions": {
+                            "dpi": 200,
+                            "height": 1201,
+                            "width": 768
+                        }
+                    }
+                ],
+                "model": "mistral-ocr-latest",
+                "document_annotation": "{\n  \"blocks\": [\n    {\n      \"type\": \"headline\",\n      \"text\": \"[2-614e J. B. H. Woodward, Louisville, Ky.]\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 0,\n        \"width\": 100,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"headline\",\n      \"text\": \"Widow's Application for Army Pension.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 10,\n        \"width\": 100,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"This Army Pension Declaration must be executed before a Judge or Clerk of a Court of Record. In Deputy Clerk will not answer; and if before the Judge, the Clerk thereof will certify and declare official capacity and signature, and effect the same under the seal of the Court.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 20,\n        \"width\": 100,\n        \"height\": 30\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"All of the State of Kentucky County of Henderson SS.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 50,\n        \"width\": 100,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"On this 21st day of August A.D. 1867 personally appeared before me (1) Clerk of the (2) County Court of Record, within and for the County and State aforesaid, Mrs. Rose Chambers, a resident of the (3) County of Henderson in the State of Kentucky, aged Sixty six years, who, being first duly sworn according to law, doth on her oath make the following declaration, in order to obtain the benefit of the provision made by the act of Congress, approved (4) July 4th 1866 That she is the widow of Aaron Chambers deceased, who was Private in Company \\\"F\\\", commanded by Captain John C. Moore in the 118th Regiment of (5) United States Colored Infantry, commanded by Colonel Moon in the war of 1861, and who died at White in the service aforesaid, in Field Hospital in the State of Virginia on or about the sixth day of November A.D. 1869, from (1) Decatur, incurred in the service aforesaid and while in the line of his duty, (3)\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 60,\n        \"width\": 100,\n        \"height\": 60\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"She further declares that she was married to the said Aaron Chambers in the (2) County of Henderson in the State of Kentucky on the 15th day of March in the year 1837, and that her name before her said marriage was Rose Black that her husband, the aforesaid Aaron Chambers died on the day above mentioned, and that she has remained a widow ever since that period, as will more fully appear by reference to the proof herewith accompanying or to be hereafter filed. She also declares that she has not, in any manner, been engaged in, or aided or abetted, the rebellion in the United States. She is commonly appointed her attorney, with full power of substitution and priscation on his part in her said behalf, and authorizes him to receive the Pension Certificate when issued. Her Post Office is at Henderson in the County of Henderson in the State of Kentucky. That her domicile or place of abode is (3) on Road Bradbury from Anderson County, East Henderson County, to Mouth of Green River by 3 miles from Armley Place.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 120,\n        \"width\": 100,\n        \"height\": 60\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"I wish all communication concerning this claim sent to myself as above. That (10) there are no children now living under the age of sixteen years born to the above mentioned soldier dead while he lived together as man & wife.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 180,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"byline\",\n      \"text\": \"ATTEST:\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 200,\n        \"width\": 100,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"byline\",\n      \"text\": \"Tim T. Forriles\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 210,\n        \"width\": 100,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"byline\",\n      \"text\": \"Rox her X mark Chambers\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 220,\n        \"width\": 100,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"byline\",\n      \"text\": \"Ann Burch\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 230,\n        \"width\": 100,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"byline\",\n      \"text\": \"Applicant.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 240,\n        \"width\": 100,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"Sworn to subscribed and acknowledged before me, the day and year first above written, and also personally appeared John Dixon and James S. Dixon, residents of the (3) County of Henderson in the State of Kentucky, persons whom I certify to be respectable and entitled to credit, and who, being by me duly sworn, say that they were present and saw Mrs. Rose Chambers (11) make her (12) mark to the foregoing declaration; and they further swear that they have every reason to believe, from the appearance of the applicant and their acquaintance with her, that she is the identical person she represents herself to be, and that they have no interest in the prosecution of this claim. They further state that the foregoing declaration and this affidavit were read over to fully explained and understood by them before the signing and execution hereof.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 250,\n        \"width\": 100,\n        \"height\": 60\n      }\n    },\n    {\n      \"type\": \"byline\",\n      \"text\": \"ATTEST:\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 310,\n        \"width\": 100,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"byline\",\n      \"text\": \"Tim T. Forriles\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 320,\n        \"width\": 100,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"byline\",\n      \"text\": \"John Dixon\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 330,\n        \"width\": 100,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"byline\",\n      \"text\": \"Mark\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 340,\n        \"width\": 100,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"byline\",\n      \"text\": \"James S. Dixon\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 350,\n        \"width\": 100,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"byline\",\n      \"text\": \"Mark\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 360,\n        \"width\": 100,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"Sworn to and subscribed before me, this 21st day of August A.D. 1867, and I hereby\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 370,\n        \"width\": 100,\n        \"height\": 20\n      }\n    }\n  ]\n}",
+                "usage_info": {
+                    "pages_processed": 1,
+                    "doc_size_bytes": 100782
+                }
+            }
+        },
+        "annotate_handwriting": {
+            "pages": [
+                {
+                    "index": 0,
+                    "annotated_text": "```\n[2-614e J. B. H. Woodward, Louisville, Ky.]\nWidow's Application for Army Pension.\n\nThis Army Pension Declaration must be executed before a Judge or Clerk of a Court of Record. In Deputy Clerk will not answer; and if before the Judge, the Clerk thereof will certify and declare official capacity and signature, and effect the same under the seal of the Court.\n\nState of <hw>Kentucky</hw> County of <hw>Henderson</hw> SS.\n\nOn this <hw>21st</hw> day of <hw>August</hw> A.D. <hw>1867</hw> personally appeared before me <hw>J.Randle</hw> Clerk of the <hw>Henderson</hw> County Court of Record, within and for the County and State aforesaid, Mrs. <hw>Rose Chambers</hw>, a resident of the <hw>Henderson</hw> County in the State of Kentucky, aged Sixty six years, who, being first duly sworn according to law, doth on her oath make the following declaration, in order to obtain the benefit of the provision made by the act of Congress, approved <hw>July</hw> 4th <hw>1866</hw> That she is the widow of <hw>Aaron Chambers</hw> deceased, who was Private in Company &quot;F&quot;, commanded by Captain <hw>John C. Moore</hw> in the 118th Regiment of United States Colored Infantry, commanded by Colonel <hw>Moon</hw> in the war of 1861, and who died at <hw>Field Hospital</hw> in the service aforesaid, in <hw>Virginia</hw> on or about the sixth day of November A.D. <hw>1869</hw>, from <hw>Wounds</hw> incurred in the service aforesaid and while in the line of his duty, \n\nShe further declares that she was married to the said Aaron Chambers in the <hw>Henderson</hw> County in the State of Kentucky on the <hw>15th</hw> day of <hw>March</hw> in the year <hw>1837</hw>, and that her name before her said marriage was <hw>Rose Black</hw> that her husband, the aforesaid Aaron Chambers died on the day above mentioned, and that she has remained a widow ever since that period, as will more fully appear by reference to the proof herewith accompanying or to be hereafter filed. She also declares that she has not, in any manner, been engaged in, or aided or abetted, the rebellion in the United States. She is commonly appointed\n\nher attorney, with full power of substitution and priscation on his part in her said behalf, and authorizes him to receive the Pension Certificate when issued. Her Post Office is at <hw>Henderson</hw> in the County of Henderson in the State of Kentucky. That her domicile or place of abode is <hw>Riverside</hw> on <hw>Road Bradbury</hw> from <hw>Anderson county</hw>, <hw>East Henderson County</hw>, to <hw>Mouth of Green River</hw> by <hw>3 miles</hw> from <hw>Armley Place</hw>.\n\nI wish all communication concerning this claim sent to myself as above. That <hw>zero<?></hw> children now living under the age of sixteen years born to the above mentioned soldier dead while he lived together as man &amp;amp; wife.\n\nATTEST:\n\n<hw>Tim T. Forriles</hw>\nRox <hw>her</hw> X <hw>mark Chambers</hw>\n\n<hw>Ann Burch</hw>\nApplicant.\n\nSworn to subscribed and acknowledged before me, the day and year first above written, and also personally appeared <hw>John Dixon</hw> and <hw>James S. Dixon</hw>, residents of the <hw>Henderson</hw> County in the State of Kentucky, persons whom I certify to be respectable and entitled to credit, and who, being by me duly sworn, say that they were present and saw Mrs. Rose Chambers <hw>her</hw> make her <hw>mark</hw> to the foregoing declaration; and they further swear that they have every reason to believe, from the appearance of the applicant and their acquaintance with her, that she is the identical person she represents herself to be, and that they have no interest in the prosecution of this claim. They further state that the foregoing declaration and this affidavit were read over to fully explained and understood by them before the signing and execution hereof.\n\nATTEST:\n\n<hw>Tim T. Forriles</hw>\n<hw>John Dixon</hw>\n<mark>\n<hw>James S. Dixon</hw>\n<mark>\n\nSworn to and subscribed before me, this <hw>21st</hw> day of <hw>August</hw> A.D. <hw>1867</hw>, and I hereby\n```"
+                }
+            ],
+            "annotated_text": "```\n[2-614e J. B. H. Woodward, Louisville, Ky.]\nWidow's Application for Army Pension.\n\nThis Army Pension Declaration must be executed before a Judge or Clerk of a Court of Record. In Deputy Clerk will not answer; and if before the Judge, the Clerk thereof will certify and declare official capacity and signature, and effect the same under the seal of the Court.\n\nState of <hw>Kentucky</hw> County of <hw>Henderson</hw> SS.\n\nOn this <hw>21st</hw> day of <hw>August</hw> A.D. <hw>1867</hw> personally appeared before me <hw>J.Randle</hw> Clerk of the <hw>Henderson</hw> County Court of Record, within and for the County and State aforesaid, Mrs. <hw>Rose Chambers</hw>, a resident of the <hw>Henderson</hw> County in the State of Kentucky, aged Sixty six years, who, being first duly sworn according to law, doth on her oath make the following declaration, in order to obtain the benefit of the provision made by the act of Congress, approved <hw>July</hw> 4th <hw>1866</hw> That she is the widow of <hw>Aaron Chambers</hw> deceased, who was Private in Company &quot;F&quot;, commanded by Captain <hw>John C. Moore</hw> in the 118th Regiment of United States Colored Infantry, commanded by Colonel <hw>Moon</hw> in the war of 1861, and who died at <hw>Field Hospital</hw> in the service aforesaid, in <hw>Virginia</hw> on or about the sixth day of November A.D. <hw>1869</hw>, from <hw>Wounds</hw> incurred in the service aforesaid and while in the line of his duty, \n\nShe further declares that she was married to the said Aaron Chambers in the <hw>Henderson</hw> County in the State of Kentucky on the <hw>15th</hw> day of <hw>March</hw> in the year <hw>1837</hw>, and that her name before her said marriage was <hw>Rose Black</hw> that her husband, the aforesaid Aaron Chambers died on the day above mentioned, and that she has remained a widow ever since that period, as will more fully appear by reference to the proof herewith accompanying or to be hereafter filed. She also declares that she has not, in any manner, been engaged in, or aided or abetted, the rebellion in the United States. She is commonly appointed\n\nher attorney, with full power of substitution and priscation on his part in her said behalf, and authorizes him to receive the Pension Certificate when issued. Her Post Office is at <hw>Henderson</hw> in the County of Henderson in the State of Kentucky. That her domicile or place of abode is <hw>Riverside</hw> on <hw>Road Bradbury</hw> from <hw>Anderson county</hw>, <hw>East Henderson County</hw>, to <hw>Mouth of Green River</hw> by <hw>3 miles</hw> from <hw>Armley Place</hw>.\n\nI wish all communication concerning this claim sent to myself as above. That <hw>zero<?></hw> children now living under the age of sixteen years born to the above mentioned soldier dead while he lived together as man &amp;amp; wife.\n\nATTEST:\n\n<hw>Tim T. Forriles</hw>\nRox <hw>her</hw> X <hw>mark Chambers</hw>\n\n<hw>Ann Burch</hw>\nApplicant.\n\nSworn to subscribed and acknowledged before me, the day and year first above written, and also personally appeared <hw>John Dixon</hw> and <hw>James S. Dixon</hw>, residents of the <hw>Henderson</hw> County in the State of Kentucky, persons whom I certify to be respectable and entitled to credit, and who, being by me duly sworn, say that they were present and saw Mrs. Rose Chambers <hw>her</hw> make her <hw>mark</hw> to the foregoing declaration; and they further swear that they have every reason to believe, from the appearance of the applicant and their acquaintance with her, that she is the identical person she represents herself to be, and that they have no interest in the prosecution of this claim. They further state that the foregoing declaration and this affidavit were read over to fully explained and understood by them before the signing and execution hereof.\n\nATTEST:\n\n<hw>Tim T. Forriles</hw>\n<hw>John Dixon</hw>\n<mark>\n<hw>James S. Dixon</hw>\n<mark>\n\nSworn to and subscribed before me, this <hw>21st</hw> day of <hw>August</hw> A.D. <hw>1867</hw>, and I hereby\n```"
+        },
+        "transcribe_handwriting": {
+            "text": "Widow's Application for Army Pension.\n\nState of Kentucky, County of Henderson SS:\nOn this 7th day of August, A.D. 1867, personally appeared before me Jno T. Hord, \nClerk of County Court, in and for the County and State aforesaid, Mrs.\nRose Chambers, a resident of the County of Henderson in the\nState of Kentucky, aged 45 years, who, being duly sworn according to law, doth on her\noath make the following declaration, in order to obtain the pension provided by acts of Congress, approved July\n14, 1862, for the benefit of widows of deceased soldiers: That she is the widow of Capt. A. T. Chambers,\nwho was a Private in Company I, 17th Regiment of United States Colored Troops in the war of 1861,\nwho was killed at Ft. Stedman on or about the 16th day of April, A.D. 1864. That her said husband died on or\nabout the 16th day of November A.D. 1864 from pneumonia,\ncontracted in the service aforesaid while in the line of his duty. (??)\n\nThat she was married to the said Aaron Chambers 15th of March\n1853; that her name before her said marriage was Rose Roland, and that she has\nremained a widow ever since that period, as will more fully appear by reference to the proof herwith accompanying or to be hereafter\nfurnished. That the said Aaron Chambers\nwas honorably discharged as appears on the records.\n\nHer Post Office is in Henderson in the County of Henderson in the state of\nKentucky. That her residence is near Gowh Creek by Eb[enezer?]\nand near Homer. She has applied to\nJudge [unclear] for a General Cert in answer.\n\nThat [IV?] of [unclear] Henry Sutherland, O. [unclear] this Clause Se [unclear] JT Marks,\n[unclear] Henry Chambers from Placing under + by them\nthat to them Reverele as [unclear] in Place 2 soldiers to rec[eive] 3 to live three Entert as than 72 Eat together as Man + Wife.\n\nATTEST:\nJohn. T. Hord\nJohn McGhee\n\n[Below is a partially legible script regarding verification and signatures]\n\nMary H. Chambers\n(Test)\nApplicant\n\nSworn to, subscribed and acknowledged before me, the day and year first above written, and also personally appeared John\nHerbert and Zach Bailey residents of the County of C[alhoun], and State of Kentucky, persons whom I certify to be respectable and entitled to\ncredit, and who being by me duly sworn, say that they were present and saw the said Rose Chambers\nmake her mark to the foregoing declaration.\n\n[Signatures of various officials and attestants at the bottom of the page.]\n\nSworn to and subscribed before me, this 21st day of August A.D. 1867, and I hereby\n[affirmation continues]\n\n[Final signatures, not fully clear]",
+            "language": "English",
+            "confidence": "medium",
+            "blocks": [
+                [
+                    "Widow's Application for Army Pension."
+                ],
+                [
+                    "State of Kentucky, County of Henderson SS:"
+                ],
+                [
+                    "On this 7th day of August, A.D. 1867, personally appeared before me Jno T. Hord, "
+                ],
+                [
+                    "Clerk of County Court, in and for the County and State aforesaid, Mrs."
+                ],
+                [
+                    "Rose Chambers, a resident of the County of Henderson in the"
+                ],
+                [
+                    "State of Kentucky, aged 45 years, who, being duly sworn according to law, doth on her"
+                ],
+                [
+                    "oath make the following declaration, in order to obtain the pension provided by acts of Congress, approved July"
+                ],
+                [
+                    "14, 1862, for the benefit of widows of deceased soldiers: That she is the widow of Capt. A. T. Chambers,"
+                ],
+                [
+                    "who was a Private in Company I, 17th Regiment of United States Colored Troops in the war of 1861,"
+                ],
+                [
+                    "who was killed at Ft. Stedman on or about the 16th day of April, A.D. 1864. That her said husband died on or"
+                ],
+                [
+                    "about the 16th day of November A.D. 1864 from pneumonia,"
+                ],
+                [
+                    "contracted in the service aforesaid while in the line of his duty. (??)"
+                ],
+                [
+                    "That she was married to the said Aaron Chambers 15th of March"
+                ],
+                [
+                    "1853; that her name before her said marriage was Rose Roland, and that she has"
+                ],
+                [
+                    "remained a widow ever since that period, as will more fully appear by reference to the proof herwith accompanying or to be hereafter"
+                ],
+                [
+                    "furnished. That the said Aaron Chambers"
+                ],
+                [
+                    "was honorably discharged as appears on the records."
+                ],
+                [
+                    "Her Post Office is in Henderson in the County of Henderson in the state of"
+                ],
+                [
+                    "Kentucky. That her residence is near Gowh Creek by Eb[enezer?]"
+                ],
+                [
+                    "and near Homer. She has applied to"
+                ],
+                [
+                    "Judge [unclear] for a General Cert in answer."
+                ],
+                [
+                    "That [IV?] of [unclear] Henry Sutherland, O. [unclear] this Clause Se [unclear] JT Marks,"
+                ],
+                [
+                    "[unclear] Henry Chambers from Placing under + by them"
+                ],
+                [
+                    "that to them Reverele as [unclear] in Place 2 soldiers to rec[eive] 3 to live three Entert as than 72 Eat together as Man + Wife."
+                ],
+                [
+                    "ATTEST:"
+                ],
+                [
+                    "John. T. Hord"
+                ],
+                [
+                    "John McGhee"
+                ],
+                [
+                    "[Below is a partially legible script regarding verification and signatures]"
+                ],
+                [
+                    "Mary H. Chambers"
+                ],
+                [
+                    "(Test)"
+                ],
+                [
+                    "Applicant"
+                ],
+                [
+                    "Sworn to, subscribed and acknowledged before me, the day and year first above written, and also personally appeared John"
+                ],
+                [
+                    "Herbert and Zach Bailey residents of the County of C[alhoun], and State of Kentucky, persons whom I certify to be respectable and entitled to"
+                ],
+                [
+                    "credit, and who being by me duly sworn, say that they were present and saw the said Rose Chambers"
+                ],
+                [
+                    "make her mark to the foregoing declaration."
+                ],
+                [
+                    "[Signatures of various officials and attestants at the bottom of the page.]"
+                ],
+                [
+                    "Sworn to and subscribed before me, this 21st day of August A.D. 1867, and I hereby"
+                ],
+                [
+                    "[affirmation continues]"
+                ],
+                [
+                    "[Final signatures, not fully clear]"
+                ]
+            ],
+            "_tokens": {
+                "prompt": 1311,
+                "completion": 1396,
+                "total": 2707,
+                "cached": 0
+            }
+        }
+    }
+}

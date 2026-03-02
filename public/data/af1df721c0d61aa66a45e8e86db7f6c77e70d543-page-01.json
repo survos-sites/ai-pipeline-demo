@@ -1,0 +1,330 @@
+{
+    "subject": "file:///home/tac/g/sites/ai-pipeline-demo/public/images/pages/af1df721c0d61aa66a45e8e86db7f6c77e70d543-01.jpg",
+    "results": {
+        "ocr_mistral": {
+            "text": "War of 1861. Louisville\nCLAIM FOR WIDOW'S PENSION. Act of July 14, 1862.\n105072\nBrief in the case of Rose Chambers, Widow of\nAaron Chambers, Private Co G, 118th Regt. U.S.C. Troops.\nresident of Henderson County and State of Ky.\nPost Office address: Henderson, Ky.\n\nDECLARATION AND IDENTIFICATION IN DUE FORM.\nPROOF EXHIBITED.\n\nService. The soldier was enrolled Sept. 19, 1864, and is reported by\nthe Adjutant General.\n\"Died November 6, 1864, of disease in field Hospital Va.\"\n\nDeath. Testimony of the 1st Sergeant of same Co. and Regt that the soldier died\ndate as above of Diarrhea contracted in the service, and that he was a\nman of sound physical body when he entered the Army, a good soldier and\nof steady and sober habits. Two other persons testify to his sound condition at\nenlistment. Affidavit of Claimant that the officers of the Regt being northern\nmen she is unable to procure a commissioned officer certificate etc.\n\nMarriage. Proof of Cohabitation since 1837 and recognition as man and wife by the\ncommunity since that time and up to the time when he enlisted. No legal\nmarriage the State law requiring none for persons of Color.\n\nNames and dates of birth of children. None under 16 years now living.\n\nLoyalty. Shown\n\nAgent and his P.O. address. None address Claimant Henderson, Ky.\n\nAdmitted December 13, 1867, to a Pension of $ Eight per month,\ncommencing November 7, 1864.\nP.H. Berkaw, Examining Clerk.\n\nAppd. S.F.S.",
+            "language": null,
+            "confidence": "high",
+            "layout_blocks": [
+                {
+                    "page": 0,
+                    "type": "headline",
+                    "text": "War of 1861. Louisville",
+                    "bbox": {
+                        "x": 0,
+                        "y": 0,
+                        "width": 791,
+                        "height": 92
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "headline",
+                    "text": "CLAIM FOR WIDOW'S PENSION. Act of July 14, 1862.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 92,
+                        "width": 791,
+                        "height": 92
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "column",
+                    "text": "105072",
+                    "bbox": {
+                        "x": 0,
+                        "y": 185,
+                        "width": 791,
+                        "height": 92
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "column",
+                    "text": "Brief in the case of Rose Chambers, Widow of Aaron Chambers, Private Co G, 118th Regt. U.S.C. Troops. resident of Henderson County and State of Ky. Post Office address: Henderson, Ky.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 277,
+                        "width": 791,
+                        "height": 92
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "column",
+                    "text": "DECLARATION AND IDENTIFICATION IN DUE FORM. PROOF EXHIBITED.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 370,
+                        "width": 791,
+                        "height": 92
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "column",
+                    "text": "Service. The soldier was enrolled Sept. 19, 1864, and is reported by the Adjutant General. \"Died November 6, 1864, of disease in field Hospital Va.\"",
+                    "bbox": {
+                        "x": 0,
+                        "y": 462,
+                        "width": 791,
+                        "height": 92
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "column",
+                    "text": "Death. Testimony of the 1st Sergeant of same Co. and Regt that the soldier died date as above of Diarrhea contracted in the service, and that he was a man of sound physical body when he entered the Army, a good soldier and of steady and sober habits. Two other persons testify to his sound condition at enrollment. Affidavit of Claimant that the officers of the Regt being northern men she is unable to procure a commissioned officer certificate etc.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 555,
+                        "width": 791,
+                        "height": 92
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "column",
+                    "text": "Marriage. Proof of Cohabitation since 1837 and recognition as man and wife by the community since that time and up to the time when he enlisted. No legal marriage the State law requiring none for persons of Color.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 647,
+                        "width": 791,
+                        "height": 92
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "column",
+                    "text": "Names and dates of birth of children. None under 16 years now living.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 740,
+                        "width": 791,
+                        "height": 92
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "column",
+                    "text": "Loyalty. Shown",
+                    "bbox": {
+                        "x": 0,
+                        "y": 832,
+                        "width": 791,
+                        "height": 92
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "column",
+                    "text": "Agent and his P.O. address. None address Claimant Henderson, Ky.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 925,
+                        "width": 791,
+                        "height": 92
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "column",
+                    "text": "Admitted December 13, 1867, to a Pension of $ Eight per month, commencing November 7, 1864. P.H. Berkaw, Examining Clerk.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1017,
+                        "width": 791,
+                        "height": 92
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "column",
+                    "text": "Appd. S.F.S.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1110,
+                        "width": 791,
+                        "height": 92
+                    }
+                }
+            ],
+            "image_blocks": [],
+            "pages": [
+                {
+                    "index": 0,
+                    "markdown": "War of 1861. Louisville\nCLAIM FOR WIDOW'S PENSION. Act of July 14, 1862.\n105072\nBrief in the case of Rose Chambers, Widow of\nAaron Chambers, Private Co G, 118th Regt. U.S.C. Troops.\nresident of Henderson County and State of Ky.\nPost Office address: Henderson, Ky.\n\nDECLARATION AND IDENTIFICATION IN DUE FORM.\nPROOF EXHIBITED.\n\nService. The soldier was enrolled Sept. 19, 1864, and is reported by\nthe Adjutant General.\n\"Died November 6, 1864, of disease in field Hospital Va.\"\n\nDeath. Testimony of the 1st Sergeant of same Co. and Regt that the soldier died\ndate as above of Diarrhea contracted in the service, and that he was a\nman of sound physical body when he entered the Army, a good soldier and\nof steady and sober habits. Two other persons testify to his sound condition at\nenlistment. Affidavit of Claimant that the officers of the Regt being northern\nmen she is unable to procure a commissioned officer certificate etc.\n\nMarriage. Proof of Cohabitation since 1837 and recognition as man and wife by the\ncommunity since that time and up to the time when he enlisted. No legal\nmarriage the State law requiring none for persons of Color.\n\nNames and dates of birth of children. None under 16 years now living.\n\nLoyalty. Shown\n\nAgent and his P.O. address. None address Claimant Henderson, Ky.\n\nAdmitted December 13, 1867, to a Pension of $ Eight per month,\ncommencing November 7, 1864.\nP.H. Berkaw, Examining Clerk.\n\nAppd. S.F.S.",
+                    "dimensions": {
+                        "dpi": 200,
+                        "height": 1202,
+                        "width": 791
+                    },
+                    "tables": [],
+                    "header": null,
+                    "footer": null
+                }
+            ],
+            "raw_response": {
+                "pages": [
+                    {
+                        "index": 0,
+                        "markdown": "War of 1861. Louisville\nCLAIM FOR WIDOW'S PENSION. Act of July 14, 1862.\n105072\nBrief in the case of Rose Chambers, Widow of\nAaron Chambers, Private Co G, 118th Regt. U.S.C. Troops.\nresident of Henderson County and State of Ky.\nPost Office address: Henderson, Ky.\n\nDECLARATION AND IDENTIFICATION IN DUE FORM.\nPROOF EXHIBITED.\n\nService. The soldier was enrolled Sept. 19, 1864, and is reported by\nthe Adjutant General.\n\"Died November 6, 1864, of disease in field Hospital Va.\"\n\nDeath. Testimony of the 1st Sergeant of same Co. and Regt that the soldier died\ndate as above of Diarrhea contracted in the service, and that he was a\nman of sound physical body when he entered the Army, a good soldier and\nof steady and sober habits. Two other persons testify to his sound condition at\nenlistment. Affidavit of Claimant that the officers of the Regt being northern\nmen she is unable to procure a commissioned officer certificate etc.\n\nMarriage. Proof of Cohabitation since 1837 and recognition as man and wife by the\ncommunity since that time and up to the time when he enlisted. No legal\nmarriage the State law requiring none for persons of Color.\n\nNames and dates of birth of children. None under 16 years now living.\n\nLoyalty. Shown\n\nAgent and his P.O. address. None address Claimant Henderson, Ky.\n\nAdmitted December 13, 1867, to a Pension of $ Eight per month,\ncommencing November 7, 1864.\nP.H. Berkaw, Examining Clerk.\n\nAppd. S.F.S.",
+                        "images": [],
+                        "tables": [],
+                        "hyperlinks": [],
+                        "header": null,
+                        "footer": null,
+                        "dimensions": {
+                            "dpi": 200,
+                            "height": 1202,
+                            "width": 791
+                        }
+                    }
+                ],
+                "model": "mistral-ocr-latest",
+                "document_annotation": "{\n  \"blocks\": [\n    {\n      \"type\": \"headline\",\n      \"text\": \"War of 1861. Louisville\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 0,\n        \"width\": 100,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"headline\",\n      \"text\": \"CLAIM FOR WIDOW'S PENSION. Act of July 14, 1862.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 10,\n        \"width\": 100,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"column\",\n      \"text\": \"105072\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 20,\n        \"width\": 100,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"column\",\n      \"text\": \"Brief in the case of Rose Chambers, Widow of Aaron Chambers, Private Co G, 118th Regt. U.S.C. Troops. resident of Henderson County and State of Ky. Post Office address: Henderson, Ky.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 30,\n        \"width\": 100,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"column\",\n      \"text\": \"DECLARATION AND IDENTIFICATION IN DUE FORM. PROOF EXHIBITED.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 40,\n        \"width\": 100,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"column\",\n      \"text\": \"Service. The soldier was enrolled Sept. 19, 1864, and is reported by the Adjutant General. \\\"Died November 6, 1864, of disease in field Hospital Va.\\\"\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 50,\n        \"width\": 100,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"column\",\n      \"text\": \"Death. Testimony of the 1st Sergeant of same Co. and Regt that the soldier died date as above of Diarrhea contracted in the service, and that he was a man of sound physical body when he entered the Army, a good soldier and of steady and sober habits. Two other persons testify to his sound condition at enrollment. Affidavit of Claimant that the officers of the Regt being northern men she is unable to procure a commissioned officer certificate etc.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 60,\n        \"width\": 100,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"column\",\n      \"text\": \"Marriage. Proof of Cohabitation since 1837 and recognition as man and wife by the community since that time and up to the time when he enlisted. No legal marriage the State law requiring none for persons of Color.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 70,\n        \"width\": 100,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"column\",\n      \"text\": \"Names and dates of birth of children. None under 16 years now living.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 80,\n        \"width\": 100,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"column\",\n      \"text\": \"Loyalty. Shown\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 90,\n        \"width\": 100,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"column\",\n      \"text\": \"Agent and his P.O. address. None address Claimant Henderson, Ky.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 100,\n        \"width\": 100,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"column\",\n      \"text\": \"Admitted December 13, 1867, to a Pension of $ Eight per month, commencing November 7, 1864. P.H. Berkaw, Examining Clerk.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 110,\n        \"width\": 100,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"column\",\n      \"text\": \"Appd. S.F.S.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 120,\n        \"width\": 100,\n        \"height\": 10\n      }\n    }\n  ]\n}",
+                "usage_info": {
+                    "pages_processed": 1,
+                    "doc_size_bytes": 87868
+                }
+            }
+        },
+        "annotate_handwriting": {
+            "pages": [
+                {
+                    "index": 0,
+                    "annotated_text": "WAR OF 1861. <hw>Louisville</hw>\nCLAIM FOR WIDOW'S PENSION. Act of July 14, 1862.\n<hw>105072</hw>\nBrief in the case of <hw>Rose Chambers</hw>, Widow of\n<hw>Aaron Chambers</hw>, Private Co G, 118th Regt. U.S.C. Troops.\nresident of <hw>Henderson</hw> County and State of Ky.\nPost Office address: <hw>Henderson, Ky.</hw>\n\nDECLARATION AND IDENTIFICATION IN DUE FORM.\nPROOF EXHIBITED.\n\nService. <hw>The soldier was enrolled Sept. 19, 1864, and is reported by\nthe Adjutant General.</hw>\n<hw>\"Died November 6, 1864, of disease in field Hospital Va.\"</hw>\n\nDeath. <hw>Testimony of the 1st Sergeant of same Co. and Regt that the soldier died\ndate as above of Diarrhea contracted in the service, and that he was a\nman of sound physical body when he entered the Army, a good soldier and\nof steady and sober habits. Two other persons testify to his sound condition at\nenlistment. Affidavit of Claimant that the officers of the Regt being northern\nmen she is unable to procure a commissioned officer certificate etc.</hw>\n\nMarriage. <hw>Proof of Cohabitation since 1837 and recognition as man and wife by the\ncommunity since that time and up to the time when he enlisted. No legal\nmarriage the State law requiring none for persons of Color.</hw>\n\nNames and dates of birth of children. <hw>None under 16 years now living</hw>\n\nLoyalty. <hw>Shown</hw>\n\nAgent and his P.O. address. <hw>None address Claimant Henderson Ky</hw>\n\nAdmitted <hw>December 13</hw>, 1867, to a Pension of <hw>$ Eight</hw> per month,\ncommencing <hw>November 7, 1864.</hw>\n<hw>P.H. Berkaw</hw>, Examining Clerk.\n\nAppd. <hw>S.F.S.</hw>"
+                }
+            ],
+            "annotated_text": "WAR OF 1861. <hw>Louisville</hw>\nCLAIM FOR WIDOW'S PENSION. Act of July 14, 1862.\n<hw>105072</hw>\nBrief in the case of <hw>Rose Chambers</hw>, Widow of\n<hw>Aaron Chambers</hw>, Private Co G, 118th Regt. U.S.C. Troops.\nresident of <hw>Henderson</hw> County and State of Ky.\nPost Office address: <hw>Henderson, Ky.</hw>\n\nDECLARATION AND IDENTIFICATION IN DUE FORM.\nPROOF EXHIBITED.\n\nService. <hw>The soldier was enrolled Sept. 19, 1864, and is reported by\nthe Adjutant General.</hw>\n<hw>\"Died November 6, 1864, of disease in field Hospital Va.\"</hw>\n\nDeath. <hw>Testimony of the 1st Sergeant of same Co. and Regt that the soldier died\ndate as above of Diarrhea contracted in the service, and that he was a\nman of sound physical body when he entered the Army, a good soldier and\nof steady and sober habits. Two other persons testify to his sound condition at\nenlistment. Affidavit of Claimant that the officers of the Regt being northern\nmen she is unable to procure a commissioned officer certificate etc.</hw>\n\nMarriage. <hw>Proof of Cohabitation since 1837 and recognition as man and wife by the\ncommunity since that time and up to the time when he enlisted. No legal\nmarriage the State law requiring none for persons of Color.</hw>\n\nNames and dates of birth of children. <hw>None under 16 years now living</hw>\n\nLoyalty. <hw>Shown</hw>\n\nAgent and his P.O. address. <hw>None address Claimant Henderson Ky</hw>\n\nAdmitted <hw>December 13</hw>, 1867, to a Pension of <hw>$ Eight</hw> per month,\ncommencing <hw>November 7, 1864.</hw>\n<hw>P.H. Berkaw</hw>, Examining Clerk.\n\nAppd. <hw>S.F.S.</hw>"
+        },
+        "transcribe_handwriting": {
+            "text": "\nLouisville\n\nAct of July 14, 1862\n\nClaim for Widow's Pension.\n\n\nBrief in the case of \nAree Chambers\nWidow of\nNewton Chambers   \nPvt Co. H. 8th Regt W. C. Troops\nresident of Henderson County and State of Ky\nPost Office address: Henderson Ky.\n\nDeclaration and Identification in due form.\n\nProof Exhibited.\n\nService:\n\nThe soldier was mustered Sept. 19, 1865, and is reported by\n\nhis regiment commander\n\n\"Died November 16, 1864 of disease in field Hospital Va.\"\n\n\nDeath:\n\nTestimony of the 1st Sergeant of same Co. and Reg't that the soldier died \n\nDate as above, of disease contracted in the service, and that he was a\n\nman of sound & physical body when he entered the army, a good soldier and\n\nof steady and sober habits, in other years truly to be cared [unclear] in\n\nperformance of all soldiers. In support of the proof of the death, surgeon mentions\n\nname tho as unable to procure a commissioned officer, certifies to it.\n\nMarriage:\n\nProof of cohabitation since 1837 and recognition as man and wife by the\n\ncommunity since that time and up to the time when he enlisted. No legal \n\nmarriage then state law requiring some proof previous to 1900.\n\nNames and dates \nof birth of children.\n\nNone under 16 years remaining\n\nLoyalty:\n\nShown\n\nAgent\n\nRespondent: None address. Claimant Henderson Ky\n\nAdmitted December 13, 1867 to a Pension of $ Eight per month,\n\ncommencing November 7, 1864.\n\nAppd.\n\nS.G.S. P.H. Perham\n\nExamining Clerk.\n",
+            "language": "English",
+            "confidence": "high",
+            "blocks": [
+                [
+                    "Louisville"
+                ],
+                [
+                    "Act of July 14, 1862"
+                ],
+                [
+                    "Claim for Widow's Pension."
+                ],
+                [
+                    "Brief in the case of"
+                ],
+                [
+                    "Aree Chambers"
+                ],
+                [
+                    "Widow of"
+                ],
+                [
+                    "Newton Chambers"
+                ],
+                [
+                    "Pvt Co. H. 8th Regt W. C. Troops"
+                ],
+                [
+                    "resident of Henderson County and State of Ky"
+                ],
+                [
+                    "Post Office address: Henderson Ky."
+                ],
+                [
+                    "Declaration and Identification in due form."
+                ],
+                [
+                    "Proof Exhibited."
+                ],
+                [
+                    "Service:"
+                ],
+                [
+                    "The soldier was mustered Sept. 19, 1865, and is reported by"
+                ],
+                [
+                    "his regiment commander"
+                ],
+                [
+                    "\"Died November 16, 1864 of disease in field Hospital Va.\""
+                ],
+                [
+                    "Death:"
+                ],
+                [
+                    "Testimony of the 1st Sergeant of same Co. and Reg't that the soldier died"
+                ],
+                [
+                    "Date as above, of disease contracted in the service, and that he was a"
+                ],
+                [
+                    "man of sound & physical body when he entered the army, a good soldier and"
+                ],
+                [
+                    "of steady and sober habits, in other years truly to be cared [unclear] in"
+                ],
+                [
+                    "performance of all soldiers. In support of the proof of the death, surgeon mentions"
+                ],
+                [
+                    "name tho as unable to procure a commissioned officer, certifies to it."
+                ],
+                [
+                    "Marriage:"
+                ],
+                [
+                    "Proof of cohabitation since 1837 and recognition as man and wife by the"
+                ],
+                [
+                    "community since that time and up to the time when he enlisted. No legal"
+                ],
+                [
+                    "marriage then state law requiring some proof previous to 1900."
+                ],
+                [
+                    "Names and dates of birth of children."
+                ],
+                [
+                    "None under 16 years remaining"
+                ],
+                [
+                    "Loyalty:"
+                ],
+                [
+                    "Shown"
+                ],
+                [
+                    "Agent"
+                ],
+                [
+                    "Respondent: None address. Claimant Henderson Ky"
+                ],
+                [
+                    "Admitted December 13, 1867 to a Pension of $ Eight per month,"
+                ],
+                [
+                    "commencing November 7, 1864."
+                ],
+                [
+                    "Appd."
+                ],
+                [
+                    "S.G.S. P.H. Perham"
+                ],
+                [
+                    "Examining Clerk."
+                ]
+            ],
+            "_tokens": {
+                "prompt": 1311,
+                "completion": 846,
+                "total": 2157,
+                "cached": 0
+            }
+        }
+    }
+}

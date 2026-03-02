@@ -1,0 +1,313 @@
+{
+    "subject": "file:///home/tac/g/sites/ai-pipeline-demo/public/images/pages/af1df721c0d61aa66a45e8e86db7f6c77e70d543-13.jpg",
+    "results": {
+        "ocr_mistral": {
+            "text": "This Certificate should be authenticated by the Clerk.\n\n# CLERK'S CERTIFICATE.\n\nState of Kentucky County of Henderson SS.\n\nI, James P. Breckenridge, Clerk of the County Court, within and for the County and State aforesaid, do hereby certify that H. S. Park, Esq., before whom the foregoing declaration and affidavit were made, and who has thereunto signed his name, was at the time of so doing a Notary Public in and for the County and State above named, duly commissioned, qualified and sworn; that all his official acts as such are entitled to full faith and credit, and that his said signature as it appears on the reverse page hereof is genuine.\n\nGIVEN under my hand and seal of Said County Court at Office in Henderson, this 21st day of August A. D. 1867\n\nJ. F. Breckenridge, Clerk\nof Henderson County Court\n\nRemarks.—In case the Deputy administrator the Clerk's certificate, evidence may be required to show that the Deputy is duly appointed and authorized to file in sign the Clerk's name and one the seal of the Court—therefore it is better to have the Clerk's own individual authorizations, at once, and then save the trouble and expense of a general authorization certificate respecting the Deputy, which might be required if the papers were authenticated by him instead of the Clerk.\n\n\"Additional Evidence.\"\n\nAPPLICATION FOR\n\nAct of\n\nCase No.\n\nApplicant.\n\nAFFIDAVIT OF\n\nAttorney\n\nPENSION\nU APR 21 1887 S\nOFFICE",
+            "language": null,
+            "confidence": "high",
+            "layout_blocks": [
+                {
+                    "page": 0,
+                    "type": "headline",
+                    "text": "This Certificate should be authenticated by the Clerk.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 0,
+                        "width": 752,
+                        "height": 57
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "headline",
+                    "text": "CLERK'S CERTIFICATE.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 57,
+                        "width": 752,
+                        "height": 57
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "State of Kentucky County of Henderson SS.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 114,
+                        "width": 752,
+                        "height": 57
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "I, James P. Breckenridge, Clerk of the County Court, within and for the County and State aforesaid, do hereby certify that H. S. Park, Esq., before whom the foregoing declaration and affidavit were made, and who has thereunto signed his name, was at the time of so doing a Notary Public in and for the County and State above named, duly commissioned, qualified and sworn; that all his official acts as such are entitled to full faith and credit, and that his said signature as it appears on the reverse page hereof is genuine.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 172,
+                        "width": 752,
+                        "height": 172
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "GIVEN under my hand and seal of Said County Court at Office in Henderson, this 21st day of August A. D. 1867",
+                    "bbox": {
+                        "x": 0,
+                        "y": 343,
+                        "width": 752,
+                        "height": 57
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "byline",
+                    "text": "J. F. Breckenridge, Clerk of Henderson County Court",
+                    "bbox": {
+                        "x": 0,
+                        "y": 401,
+                        "width": 752,
+                        "height": 57
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "Remarks.—In case the Deputy administrator the Clerk's certificate, evidence may be required to show that the Deputy is duly appointed and authorized to file in sign the Clerk's name and one the seal of the Court—therefore it is better to have the Clerk's own individual authorizations, at once, and then save the trouble and expense of a general authorization certificate respecting the Deputy, which might be required if the papers were authenticated by him instead of the Clerk.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 458,
+                        "width": 752,
+                        "height": 172
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "headline",
+                    "text": "Additional Evidence.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 630,
+                        "width": 752,
+                        "height": 57
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "headline",
+                    "text": "APPLICATION FOR",
+                    "bbox": {
+                        "x": 0,
+                        "y": 687,
+                        "width": 752,
+                        "height": 57
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "headline",
+                    "text": "Act of",
+                    "bbox": {
+                        "x": 0,
+                        "y": 744,
+                        "width": 752,
+                        "height": 57
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "headline",
+                    "text": "Case No.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 801,
+                        "width": 752,
+                        "height": 57
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "headline",
+                    "text": "Applicant.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 859,
+                        "width": 752,
+                        "height": 57
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "headline",
+                    "text": "AFFIDAVIT OF",
+                    "bbox": {
+                        "x": 0,
+                        "y": 916,
+                        "width": 752,
+                        "height": 57
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "headline",
+                    "text": "Attorney",
+                    "bbox": {
+                        "x": 0,
+                        "y": 973,
+                        "width": 752,
+                        "height": 57
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "headline",
+                    "text": "PENSION",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1030,
+                        "width": 752,
+                        "height": 57
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "other",
+                    "text": "U APR 21 1887 S",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1088,
+                        "width": 752,
+                        "height": 57
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "other",
+                    "text": "OFFICE",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1145,
+                        "width": 752,
+                        "height": 57
+                    }
+                }
+            ],
+            "image_blocks": [],
+            "pages": [
+                {
+                    "index": 0,
+                    "markdown": "This Certificate should be authenticated by the Clerk.\n\n# CLERK'S CERTIFICATE.\n\nState of Kentucky County of Henderson SS.\n\nI, James P. Breckenridge, Clerk of the County Court, within and for the County and State aforesaid, do hereby certify that H. S. Park, Esq., before whom the foregoing declaration and affidavit were made, and who has thereunto signed his name, was at the time of so doing a Notary Public in and for the County and State above named, duly commissioned, qualified and sworn; that all his official acts as such are entitled to full faith and credit, and that his said signature as it appears on the reverse page hereof is genuine.\n\nGIVEN under my hand and seal of Said County Court at Office in Henderson, this 21st day of August A. D. 1867\n\nJ. F. Breckenridge, Clerk\nof Henderson County Court\n\nRemarks.—In case the Deputy administrator the Clerk's certificate, evidence may be required to show that the Deputy is duly appointed and authorized to file in sign the Clerk's name and one the seal of the Court—therefore it is better to have the Clerk's own individual authorizations, at once, and then save the trouble and expense of a general authorization certificate respecting the Deputy, which might be required if the papers were authenticated by him instead of the Clerk.\n\n\"Additional Evidence.\"\n\nAPPLICATION FOR\n\nAct of\n\nCase No.\n\nApplicant.\n\nAFFIDAVIT OF\n\nAttorney\n\nPENSION\nU APR 21 1887 S\nOFFICE",
+                    "dimensions": {
+                        "dpi": 200,
+                        "height": 1202,
+                        "width": 752
+                    },
+                    "tables": [],
+                    "header": null,
+                    "footer": null
+                }
+            ],
+            "raw_response": {
+                "pages": [
+                    {
+                        "index": 0,
+                        "markdown": "This Certificate should be authenticated by the Clerk.\n\n# CLERK'S CERTIFICATE.\n\nState of Kentucky County of Henderson SS.\n\nI, James P. Breckenridge, Clerk of the County Court, within and for the County and State aforesaid, do hereby certify that H. S. Park, Esq., before whom the foregoing declaration and affidavit were made, and who has thereunto signed his name, was at the time of so doing a Notary Public in and for the County and State above named, duly commissioned, qualified and sworn; that all his official acts as such are entitled to full faith and credit, and that his said signature as it appears on the reverse page hereof is genuine.\n\nGIVEN under my hand and seal of Said County Court at Office in Henderson, this 21st day of August A. D. 1867\n\nJ. F. Breckenridge, Clerk\nof Henderson County Court\n\nRemarks.—In case the Deputy administrator the Clerk's certificate, evidence may be required to show that the Deputy is duly appointed and authorized to file in sign the Clerk's name and one the seal of the Court—therefore it is better to have the Clerk's own individual authorizations, at once, and then save the trouble and expense of a general authorization certificate respecting the Deputy, which might be required if the papers were authenticated by him instead of the Clerk.\n\n\"Additional Evidence.\"\n\nAPPLICATION FOR\n\nAct of\n\nCase No.\n\nApplicant.\n\nAFFIDAVIT OF\n\nAttorney\n\nPENSION\nU APR 21 1887 S\nOFFICE",
+                        "images": [],
+                        "tables": [],
+                        "hyperlinks": [],
+                        "header": null,
+                        "footer": null,
+                        "dimensions": {
+                            "dpi": 200,
+                            "height": 1202,
+                            "width": 752
+                        }
+                    }
+                ],
+                "model": "mistral-ocr-latest",
+                "document_annotation": "{\n  \"blocks\": [\n    {\n      \"type\": \"headline\",\n      \"text\": \"This Certificate should be authenticated by the Clerk.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 0,\n        \"width\": 800,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"headline\",\n      \"text\": \"CLERK'S CERTIFICATE.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 20,\n        \"width\": 800,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"State of Kentucky County of Henderson SS.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 40,\n        \"width\": 800,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"I, James P. Breckenridge, Clerk of the County Court, within and for the County and State aforesaid, do hereby certify that H. S. Park, Esq., before whom the foregoing declaration and affidavit were made, and who has thereunto signed his name, was at the time of so doing a Notary Public in and for the County and State above named, duly commissioned, qualified and sworn; that all his official acts as such are entitled to full faith and credit, and that his said signature as it appears on the reverse page hereof is genuine.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 60,\n        \"width\": 800,\n        \"height\": 60\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"GIVEN under my hand and seal of Said County Court at Office in Henderson, this 21st day of August A. D. 1867\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 120,\n        \"width\": 800,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"byline\",\n      \"text\": \"J. F. Breckenridge, Clerk of Henderson County Court\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 140,\n        \"width\": 800,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"Remarks.—In case the Deputy administrator the Clerk's certificate, evidence may be required to show that the Deputy is duly appointed and authorized to file in sign the Clerk's name and one the seal of the Court—therefore it is better to have the Clerk's own individual authorizations, at once, and then save the trouble and expense of a general authorization certificate respecting the Deputy, which might be required if the papers were authenticated by him instead of the Clerk.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 160,\n        \"width\": 800,\n        \"height\": 60\n      }\n    },\n    {\n      \"type\": \"headline\",\n      \"text\": \"Additional Evidence.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 220,\n        \"width\": 800,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"headline\",\n      \"text\": \"APPLICATION FOR\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 240,\n        \"width\": 800,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"headline\",\n      \"text\": \"Act of\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 260,\n        \"width\": 800,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"headline\",\n      \"text\": \"Case No.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 280,\n        \"width\": 800,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"headline\",\n      \"text\": \"Applicant.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 300,\n        \"width\": 800,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"headline\",\n      \"text\": \"AFFIDAVIT OF\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 320,\n        \"width\": 800,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"headline\",\n      \"text\": \"Attorney\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 340,\n        \"width\": 800,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"headline\",\n      \"text\": \"PENSION\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 360,\n        \"width\": 800,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"other\",\n      \"text\": \"U APR 21 1887 S\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 380,\n        \"width\": 800,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"other\",\n      \"text\": \"OFFICE\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 400,\n        \"width\": 800,\n        \"height\": 20\n      }\n    }\n  ]\n}",
+                "usage_info": {
+                    "pages_processed": 1,
+                    "doc_size_bytes": 63590
+                }
+            }
+        },
+        "annotate_handwriting": {
+            "pages": [
+                {
+                    "index": 0,
+                    "annotated_text": "This Certificate should be authenticated by the Clerk.\n\n# CLERK&#039;S CERTIFICATE.\n\nState of <hw>Kentucky</hw> County of <hw>Henderson</hw> SS.\n\nI, <hw>James P. Breckenridge</hw>, Clerk of the <hw>County</hw> Court, within and for the County and State aforesaid, do hereby certify that <hw>H. S. Park</hw>, Esq., before whom the foregoing declaration and affidavit were made, and who has thereunto signed his name, was at the time of so doing a Notary Public in and for the County and State above named, duly commissioned, qualified and sworn; that all his official acts as such are entitled to full faith and credit, and that his said signature as it appears on the reverse page hereof is genuine.\n\nGIVEN under my hand and seal of <hw>Said County</hw> Court at Office in <hw>Henderson</hw>, this <hw>21st</hw> day of <hw>August</hw> A. D. 18<hw>67</hw>\n\n<hw>J. F. Breckenridge</hw>, Clerk\n<hw>of Henderson County</hw> Court\n\nRemarks.—In case the Deputy administrator the Clerk&#039;s certificate, evidence may be required to show that the Deputy is duly appointed and authorized to file in sign the Clerk&#039;s name and one the seal of the Court—therefore it is better to have the Clerk&#039;s own individual authorizations, at once, and then save the trouble and expense of a general authorization certificate respecting the Deputy, which might be required if the papers were authenticated by him instead of the Clerk.\n\n&quot;Additional Evidence.&quot;\n\nAPPLICATION FOR\n\nAct of\n\nCase No.\n\nApplicant.\n\nAFFIDAVIT OF\n\nAttorney\n\nPENSION\nU APR 21 1887 S\nOFFICE"
+                }
+            ],
+            "annotated_text": "This Certificate should be authenticated by the Clerk.\n\n# CLERK&#039;S CERTIFICATE.\n\nState of <hw>Kentucky</hw> County of <hw>Henderson</hw> SS.\n\nI, <hw>James P. Breckenridge</hw>, Clerk of the <hw>County</hw> Court, within and for the County and State aforesaid, do hereby certify that <hw>H. S. Park</hw>, Esq., before whom the foregoing declaration and affidavit were made, and who has thereunto signed his name, was at the time of so doing a Notary Public in and for the County and State above named, duly commissioned, qualified and sworn; that all his official acts as such are entitled to full faith and credit, and that his said signature as it appears on the reverse page hereof is genuine.\n\nGIVEN under my hand and seal of <hw>Said County</hw> Court at Office in <hw>Henderson</hw>, this <hw>21st</hw> day of <hw>August</hw> A. D. 18<hw>67</hw>\n\n<hw>J. F. Breckenridge</hw>, Clerk\n<hw>of Henderson County</hw> Court\n\nRemarks.—In case the Deputy administrator the Clerk&#039;s certificate, evidence may be required to show that the Deputy is duly appointed and authorized to file in sign the Clerk&#039;s name and one the seal of the Court—therefore it is better to have the Clerk&#039;s own individual authorizations, at once, and then save the trouble and expense of a general authorization certificate respecting the Deputy, which might be required if the papers were authenticated by him instead of the Clerk.\n\n&quot;Additional Evidence.&quot;\n\nAPPLICATION FOR\n\nAct of\n\nCase No.\n\nApplicant.\n\nAFFIDAVIT OF\n\nAttorney\n\nPENSION\nU APR 21 1887 S\nOFFICE"
+        },
+        "transcribe_handwriting": {
+            "text": "CLERK'S CERTIFICATE.\nState of Kentucky County of Henderson SS.\nI, James S. Worthington, Clerk of the Circuit Court, within\nand for the County and State aforesaid, do hereby certify that....Fred C. Bush.... Esq., before\nwhom the foregoing declaration and affidavit were made, and who has theretofore signed his name, was at the time of so\ndoing a Notary Public in and for the County and State above named, duly commissioned, qualified\nand sworn: that all his official acts as such are entitled to full faith and credit, and that his said signature as it appears\non the reverse page hereof is genuine.\n\nGIVEN under my hand and seal of the Circuit Court at Office\nin Henderson this 21st day of August A.D. 1897\n\nJames S. Rothenheiser Clerk.\nof Henderson County  Clerk.\n\nRemarks: It is not the papers authenticates the Clerk or not ..... authenticates be sufficient for purposes [torn] an official...suffer be that before the papers w[unclear] each......be reported if the papers were authenticated by the natural of the Clerk.\n\nAFFIDAVIT OF\n\n\"Additional Evidence\"\nAPPLICATION FOR\n\nAttorney.\n\nAct of\n\nClass No.\n\nNo.\n\nApplicant.\n\n[Seal: DEPARTMENT OF THE INTERIOR SE PENSION OFFICE]\n\nPENSION DIVISION\n",
+            "language": "English",
+            "confidence": "medium",
+            "blocks": [
+                [
+                    "CLERK'S CERTIFICATE."
+                ],
+                [
+                    "State of Kentucky County of Henderson SS."
+                ],
+                [
+                    "I, James S. Worthington, Clerk of the Circuit Court, within",
+                    "and for the County and State aforesaid, do hereby certify that....Fred C. Bush.... Esq., before",
+                    "whom the foregoing declaration and affidavit were made, and who has theretofore signed his name, was at the time of so",
+                    "doing a Notary Public in and for the County and State above named, duly commissioned, qualified",
+                    "and sworn: that all his official acts as such are entitled to full faith and credit, and that his said signature as it appears",
+                    "on the reverse page hereof is genuine."
+                ],
+                [
+                    "GIVEN under my hand and seal of the Circuit Court at Office",
+                    "in Henderson this 21st day of August A.D. 1897"
+                ],
+                [
+                    "James S. Rothenheiser Clerk.",
+                    "of Henderson County Clerk."
+                ],
+                [
+                    "Remarks: It is not the papers authenticates the Clerk or not ..... authenticates be sufficient for purposes [torn] an official...suffer be that before the papers w[unclear] each......be reported if the papers were authenticated by the natural of the Clerk."
+                ],
+                [
+                    "AFFIDAVIT OF"
+                ],
+                [
+                    "\"Additional Evidence\"",
+                    "APPLICATION FOR"
+                ],
+                [
+                    "Attorney."
+                ],
+                [
+                    "Act of"
+                ],
+                [
+                    "Class No."
+                ],
+                [
+                    "No."
+                ],
+                [
+                    "Applicant."
+                ],
+                [
+                    "[Seal: DEPARTMENT OF THE INTERIOR SE PENSION OFFICE]"
+                ],
+                [
+                    "PENSION DIVISION"
+                ]
+            ],
+            "_tokens": {
+                "prompt": 1311,
+                "completion": 632,
+                "total": 1943,
+                "cached": 0
+            }
+        }
+    }
+}

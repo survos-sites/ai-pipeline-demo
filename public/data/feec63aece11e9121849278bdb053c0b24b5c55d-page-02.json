@@ -1,0 +1,128 @@
+{
+    "subject": "file:///home/tac/g/sites/ai-pipeline-demo/public/images/pages/feec63aece11e9121849278bdb053c0b24b5c55d-02.jpg",
+    "results": {
+        "ocr_mistral": {
+            "text": "USSR\n\nILLUSTRATED MONTHLY\n1706 Eighteenth Street, N.W.\nWashington 9, D. C.\nADams 2-3426\n\nThe magazine USSR is published by reciprocal agreement between the governments of the United States and the Soviet Union. The agreement provides for the publication and circulation of the magazine USSR in the United States and the magazine Amerika in the Soviet Union.\n\nPage\nHappy New Year\nBy Anatoli Sofronov 1\nSputnik II: Cosmic Fact-Finder 4\nEarth Satellite:\nLink in Over-all Scientific and Technological Development\nby Alexander Topchiev 10\nLearning More About Our Planet\nby Mikhail Molodensky 10\nThe World's Weather\nby Alexander Obukhov 11\nThe Earth's Magnetic Field\nby S. Dolginov and N. Pushkov 12\nObservatories in Space\nby Victor Ambartosmyan 13\nTrailing Cosmic Rays\nby Sergei Vernov 14\nWorld's Hams Tracked Sputniks\nby Andrei Ivanov 15\nLoving Care for Children\nby Olga Sokolova-Ponomareva 16\nPeople Are Wonderful\nby Ilya Kotenko 20\nThe Schoolteacher\nby Lydia Cherpakova 22\nThe Next Fifty Years of Medicine\nby Alexander Bakalev 28\nSoviet Cartoon Films\nby Nikolai Abramov 30\nWinter Holiday 34\nFlying Soviet Air Lanes\nby Pavel Zhigarev 38\nFlourishing Lithuania\nby Justas Paleckis 46\nSocial Center\nin a Siberian Steel City\nby Yuri Grafsky 52\nIntercontinental Pipeline\nby Andrei Ionov 58\nAskania-Nova Preserve\nby Mikhail Alexandrov 61\nThe World's Fastest Woman Skater\nby Victor Kuprianov 64\n\nAnything in this issue may be reprinted or reproduced with due acknowledgement to the magazine USSR.\n\nSubscription Rate:\n6 Months ... $1.00\n1 Year ... 1.80\n2 Years ... 3.00\n\nPublished by the Embassy of the Union of Soviet Socialist Republics in the USA.\nSecond Class read privileges authorized at Washington, D.C., with additional entries at Milwaukee, Wis., and Chicago, Ill.\nPrinted by The Canso Press, Inc.",
+            "language": null,
+            "confidence": "high",
+            "layout_blocks": [
+                {
+                    "page": 0,
+                    "type": "headline",
+                    "text": "USSR ILLUSTRATED MONTHLY",
+                    "bbox": {
+                        "x": 0,
+                        "y": 0,
+                        "width": 1874,
+                        "height": 88
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "column",
+                    "text": "1706 Eighteenth Street, N.W.\nWashington 9, D. C.\nADams 2-3426",
+                    "bbox": {
+                        "x": 0,
+                        "y": 88,
+                        "width": 1874,
+                        "height": 132
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "The magazine USSR is published by reciprocal agreement between the governments of the United States and the Soviet Union. The agreement provides for the publication and circulation of the magazine USSR in the United States and the magazine Amerika in the Soviet Union.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 220,
+                        "width": 1874,
+                        "height": 264
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "column",
+                    "text": "Page\nHappy New Year\nBy Anatoli Sofronov 1\nSputnik II: Cosmic Fact-Finder 4\nEarth Satellite:\nLink in Over-all Scientific and Technological Development\nby Alexander Topchiev 10\nLearning More About Our Planet\nby Mikhail Molodensky 10\nThe World's Weather\nby Alexander Obukhov 11\nThe Earth's Magnetic Field\nby S. Dolginov and N. Pushkov 12\nObservatories in Space\nby Victor Ambartosmyan 13\nTrailing Cosmic Rays\nby Sergei Vernov 14\nWorld's Hams Tracked Sputniks\nby Andrei Ivanov 15\nLoving Care for Children\nby Olga Sokolova-Ponomareva 16\nPeople Are Wonderful\nby Ilya Kotenko 20\nThe Schoolteacher\nby Lydia Cherpakova 22\nThe Next Fifty Years of Medicine\nby Alexander Bakalev 28\nSoviet Cartoon Films\nby Nikolai Abramov 30\nWinter Holiday 34\nFlying Soviet Air Lanes\nby Pavel Zhigarev 38\nFlourishing Lithuania\nby Justas Paleckis 46\nSocial Center\nin a Siberian Steel City\nby Yuri Grafsky 52\nIntercontinental Pipeline\nby Andrei Ionov 58\nAskania-Nova Preserve\nby Mikhail Alexandrov 61\nThe World's Fastest Woman Skater\nby Victor Kuprianov 64",
+                    "bbox": {
+                        "x": 0,
+                        "y": 483,
+                        "width": 1874,
+                        "height": 1757
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "Anything in this issue may be reprinted or reproduced with due acknowledgement to the magazine USSR.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 2240,
+                        "width": 1874,
+                        "height": 88
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "column",
+                    "text": "Subscription Rate:\n6 Months ... $1.00\n1 Year ... 1.80\n2 Years ... 3.00",
+                    "bbox": {
+                        "x": 0,
+                        "y": 2328,
+                        "width": 1874,
+                        "height": 176
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "Published by the Embassy of the Union of Soviet Socialist Republics in the USA.\nSecond Class read privileges authorized at Washington, D.C., with additional entries at Milwaukee, Wis., and Chicago, Ill.\nPrinted by The Canso Press, Inc.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 2503,
+                        "width": 1874,
+                        "height": 176
+                    }
+                }
+            ],
+            "image_blocks": [],
+            "pages": [
+                {
+                    "index": 0,
+                    "markdown": "USSR\n\nILLUSTRATED MONTHLY\n1706 Eighteenth Street, N.W.\nWashington 9, D. C.\nADams 2-3426\n\nThe magazine USSR is published by reciprocal agreement between the governments of the United States and the Soviet Union. The agreement provides for the publication and circulation of the magazine USSR in the United States and the magazine Amerika in the Soviet Union.\n\nPage\nHappy New Year\nBy Anatoli Sofronov 1\nSputnik II: Cosmic Fact-Finder 4\nEarth Satellite:\nLink in Over-all Scientific and Technological Development\nby Alexander Topchiev 10\nLearning More About Our Planet\nby Mikhail Molodensky 10\nThe World's Weather\nby Alexander Obukhov 11\nThe Earth's Magnetic Field\nby S. Dolginov and N. Pushkov 12\nObservatories in Space\nby Victor Ambartosmyan 13\nTrailing Cosmic Rays\nby Sergei Vernov 14\nWorld's Hams Tracked Sputniks\nby Andrei Ivanov 15\nLoving Care for Children\nby Olga Sokolova-Ponomareva 16\nPeople Are Wonderful\nby Ilya Kotenko 20\nThe Schoolteacher\nby Lydia Cherpakova 22\nThe Next Fifty Years of Medicine\nby Alexander Bakalev 28\nSoviet Cartoon Films\nby Nikolai Abramov 30\nWinter Holiday 34\nFlying Soviet Air Lanes\nby Pavel Zhigarev 38\nFlourishing Lithuania\nby Justas Paleckis 46\nSocial Center\nin a Siberian Steel City\nby Yuri Grafsky 52\nIntercontinental Pipeline\nby Andrei Ionov 58\nAskania-Nova Preserve\nby Mikhail Alexandrov 61\nThe World's Fastest Woman Skater\nby Victor Kuprianov 64\n\nAnything in this issue may be reprinted or reproduced with due acknowledgement to the magazine USSR.\n\nSubscription Rate:\n6 Months ... $1.00\n1 Year ... 1.80\n2 Years ... 3.00\n\nPublished by the Embassy of the Union of Soviet Socialist Republics in the USA.\nSecond Class read privileges authorized at Washington, D.C., with additional entries at Milwaukee, Wis., and Chicago, Ill.\nPrinted by The Canso Press, Inc.",
+                    "dimensions": {
+                        "dpi": 200,
+                        "height": 2679,
+                        "width": 1874
+                    },
+                    "tables": [],
+                    "header": null,
+                    "footer": null
+                }
+            ],
+            "raw_response": {
+                "pages": [
+                    {
+                        "index": 0,
+                        "markdown": "USSR\n\nILLUSTRATED MONTHLY\n1706 Eighteenth Street, N.W.\nWashington 9, D. C.\nADams 2-3426\n\nThe magazine USSR is published by reciprocal agreement between the governments of the United States and the Soviet Union. The agreement provides for the publication and circulation of the magazine USSR in the United States and the magazine Amerika in the Soviet Union.\n\nPage\nHappy New Year\nBy Anatoli Sofronov 1\nSputnik II: Cosmic Fact-Finder 4\nEarth Satellite:\nLink in Over-all Scientific and Technological Development\nby Alexander Topchiev 10\nLearning More About Our Planet\nby Mikhail Molodensky 10\nThe World's Weather\nby Alexander Obukhov 11\nThe Earth's Magnetic Field\nby S. Dolginov and N. Pushkov 12\nObservatories in Space\nby Victor Ambartosmyan 13\nTrailing Cosmic Rays\nby Sergei Vernov 14\nWorld's Hams Tracked Sputniks\nby Andrei Ivanov 15\nLoving Care for Children\nby Olga Sokolova-Ponomareva 16\nPeople Are Wonderful\nby Ilya Kotenko 20\nThe Schoolteacher\nby Lydia Cherpakova 22\nThe Next Fifty Years of Medicine\nby Alexander Bakalev 28\nSoviet Cartoon Films\nby Nikolai Abramov 30\nWinter Holiday 34\nFlying Soviet Air Lanes\nby Pavel Zhigarev 38\nFlourishing Lithuania\nby Justas Paleckis 46\nSocial Center\nin a Siberian Steel City\nby Yuri Grafsky 52\nIntercontinental Pipeline\nby Andrei Ionov 58\nAskania-Nova Preserve\nby Mikhail Alexandrov 61\nThe World's Fastest Woman Skater\nby Victor Kuprianov 64\n\nAnything in this issue may be reprinted or reproduced with due acknowledgement to the magazine USSR.\n\nSubscription Rate:\n6 Months ... $1.00\n1 Year ... 1.80\n2 Years ... 3.00\n\nPublished by the Embassy of the Union of Soviet Socialist Republics in the USA.\nSecond Class read privileges authorized at Washington, D.C., with additional entries at Milwaukee, Wis., and Chicago, Ill.\nPrinted by The Canso Press, Inc.",
+                        "images": [],
+                        "tables": [],
+                        "hyperlinks": [],
+                        "header": null,
+                        "footer": null,
+                        "dimensions": {
+                            "dpi": 200,
+                            "height": 2679,
+                            "width": 1874
+                        }
+                    }
+                ],
+                "model": "mistral-ocr-latest",
+                "document_annotation": "{\n  \"blocks\": [\n    {\n      \"type\": \"headline\",\n      \"text\": \"USSR ILLUSTRATED MONTHLY\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 0,\n        \"width\": 100,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"column\",\n      \"text\": \"1706 Eighteenth Street, N.W.\\nWashington 9, D. C.\\nADams 2-3426\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 10,\n        \"width\": 100,\n        \"height\": 15\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"The magazine USSR is published by reciprocal agreement between the governments of the United States and the Soviet Union. The agreement provides for the publication and circulation of the magazine USSR in the United States and the magazine Amerika in the Soviet Union.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 25,\n        \"width\": 100,\n        \"height\": 30\n      }\n    },\n    {\n      \"type\": \"column\",\n      \"text\": \"Page\\nHappy New Year\\nBy Anatoli Sofronov 1\\nSputnik II: Cosmic Fact-Finder 4\\nEarth Satellite:\\nLink in Over-all Scientific and Technological Development\\nby Alexander Topchiev 10\\nLearning More About Our Planet\\nby Mikhail Molodensky 10\\nThe World's Weather\\nby Alexander Obukhov 11\\nThe Earth's Magnetic Field\\nby S. Dolginov and N. Pushkov 12\\nObservatories in Space\\nby Victor Ambartosmyan 13\\nTrailing Cosmic Rays\\nby Sergei Vernov 14\\nWorld's Hams Tracked Sputniks\\nby Andrei Ivanov 15\\nLoving Care for Children\\nby Olga Sokolova-Ponomareva 16\\nPeople Are Wonderful\\nby Ilya Kotenko 20\\nThe Schoolteacher\\nby Lydia Cherpakova 22\\nThe Next Fifty Years of Medicine\\nby Alexander Bakalev 28\\nSoviet Cartoon Films\\nby Nikolai Abramov 30\\nWinter Holiday 34\\nFlying Soviet Air Lanes\\nby Pavel Zhigarev 38\\nFlourishing Lithuania\\nby Justas Paleckis 46\\nSocial Center\\nin a Siberian Steel City\\nby Yuri Grafsky 52\\nIntercontinental Pipeline\\nby Andrei Ionov 58\\nAskania-Nova Preserve\\nby Mikhail Alexandrov 61\\nThe World's Fastest Woman Skater\\nby Victor Kuprianov 64\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 55,\n        \"width\": 100,\n        \"height\": 200\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"Anything in this issue may be reprinted or reproduced with due acknowledgement to the magazine USSR.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 255,\n        \"width\": 100,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"column\",\n      \"text\": \"Subscription Rate:\\n6 Months ... $1.00\\n1 Year ... 1.80\\n2 Years ... 3.00\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 265,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"Published by the Embassy of the Union of Soviet Socialist Republics in the USA.\\nSecond Class read privileges authorized at Washington, D.C., with additional entries at Milwaukee, Wis., and Chicago, Ill.\\nPrinted by The Canso Press, Inc.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 285,\n        \"width\": 100,\n        \"height\": 20\n      }\n    }\n  ]\n}",
+                "usage_info": {
+                    "pages_processed": 1,
+                    "doc_size_bytes": 350704
+                }
+            }
+        }
+    }
+}

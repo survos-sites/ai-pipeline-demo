@@ -1,0 +1,325 @@
+{
+    "subject": "file:///home/tac/g/sites/ai-pipeline-demo/public/images/pages/af1df721c0d61aa66a45e8e86db7f6c77e70d543-11.jpg",
+    "results": {
+        "ocr_mistral": {
+            "text": "No. 105.072\n\nKentucky\n\nRose Chambers\n\nn'd of\nAaron Chambers\nRank Pvt\nCompany G.\nRegiment 118, U.S. C. Troops\n\nLouisville Agency.\nRate per month $ 8\nCommencing 7. Nov. 1864\n\nCertificate dated 19. Dec. 1867\nand sent to Claimant\nHenderson\nKy\n\nAct 14th July, 1862.\nBook C Vol. 6 Page 21\n\nKemion Clerk.",
+            "language": null,
+            "confidence": "high",
+            "layout_blocks": [
+                {
+                    "page": 0,
+                    "type": "headline",
+                    "text": "No. 105.072",
+                    "bbox": {
+                        "x": 0,
+                        "y": 0,
+                        "width": 552,
+                        "height": 67
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "column",
+                    "text": "Kentucky",
+                    "bbox": {
+                        "x": 0,
+                        "y": 67,
+                        "width": 552,
+                        "height": 67
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "column",
+                    "text": "Rose Chambers",
+                    "bbox": {
+                        "x": 0,
+                        "y": 134,
+                        "width": 552,
+                        "height": 67
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "column",
+                    "text": "n'd of",
+                    "bbox": {
+                        "x": 0,
+                        "y": 200,
+                        "width": 552,
+                        "height": 67
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "column",
+                    "text": "Aaron Chambers",
+                    "bbox": {
+                        "x": 0,
+                        "y": 267,
+                        "width": 552,
+                        "height": 67
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "column",
+                    "text": "Rank Pvt",
+                    "bbox": {
+                        "x": 0,
+                        "y": 334,
+                        "width": 552,
+                        "height": 67
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "column",
+                    "text": "Company G.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 401,
+                        "width": 552,
+                        "height": 67
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "column",
+                    "text": "Regiment 118, U.S. C. Troops",
+                    "bbox": {
+                        "x": 0,
+                        "y": 467,
+                        "width": 552,
+                        "height": 67
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "column",
+                    "text": "Louisville Agency.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 534,
+                        "width": 552,
+                        "height": 67
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "column",
+                    "text": "Rate per month $ 8",
+                    "bbox": {
+                        "x": 0,
+                        "y": 601,
+                        "width": 552,
+                        "height": 67
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "column",
+                    "text": "Commencing 7. Nov. 1864",
+                    "bbox": {
+                        "x": 0,
+                        "y": 668,
+                        "width": 552,
+                        "height": 67
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "column",
+                    "text": "Certificate dated 19. Dec. 1867",
+                    "bbox": {
+                        "x": 0,
+                        "y": 735,
+                        "width": 552,
+                        "height": 67
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "column",
+                    "text": "and sent to Claimant",
+                    "bbox": {
+                        "x": 0,
+                        "y": 801,
+                        "width": 552,
+                        "height": 67
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "column",
+                    "text": "Henderson",
+                    "bbox": {
+                        "x": 0,
+                        "y": 868,
+                        "width": 552,
+                        "height": 67
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "column",
+                    "text": "Ky",
+                    "bbox": {
+                        "x": 0,
+                        "y": 935,
+                        "width": 552,
+                        "height": 67
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "column",
+                    "text": "Act 14th July, 1862.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1002,
+                        "width": 552,
+                        "height": 67
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "column",
+                    "text": "Book C Vol. 6 Page 21",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1068,
+                        "width": 552,
+                        "height": 67
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "column",
+                    "text": "Kemion Clerk.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1135,
+                        "width": 552,
+                        "height": 67
+                    }
+                }
+            ],
+            "image_blocks": [],
+            "pages": [
+                {
+                    "index": 0,
+                    "markdown": "No. 105.072\n\nKentucky\n\nRose Chambers\n\nn'd of\nAaron Chambers\nRank Pvt\nCompany G.\nRegiment 118, U.S. C. Troops\n\nLouisville Agency.\nRate per month $ 8\nCommencing 7. Nov. 1864\n\nCertificate dated 19. Dec. 1867\nand sent to Claimant\nHenderson\nKy\n\nAct 14th July, 1862.\nBook C Vol. 6 Page 21\n\nKemion Clerk.",
+                    "dimensions": {
+                        "dpi": 200,
+                        "height": 1202,
+                        "width": 552
+                    },
+                    "tables": [],
+                    "header": null,
+                    "footer": null
+                }
+            ],
+            "raw_response": {
+                "pages": [
+                    {
+                        "index": 0,
+                        "markdown": "No. 105.072\n\nKentucky\n\nRose Chambers\n\nn'd of\nAaron Chambers\nRank Pvt\nCompany G.\nRegiment 118, U.S. C. Troops\n\nLouisville Agency.\nRate per month $ 8\nCommencing 7. Nov. 1864\n\nCertificate dated 19. Dec. 1867\nand sent to Claimant\nHenderson\nKy\n\nAct 14th July, 1862.\nBook C Vol. 6 Page 21\n\nKemion Clerk.",
+                        "images": [],
+                        "tables": [],
+                        "hyperlinks": [],
+                        "header": null,
+                        "footer": null,
+                        "dimensions": {
+                            "dpi": 200,
+                            "height": 1202,
+                            "width": 552
+                        }
+                    }
+                ],
+                "model": "mistral-ocr-latest",
+                "document_annotation": "{\n  \"blocks\": [\n    {\n      \"type\": \"headline\",\n      \"text\": \"No. 105.072\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 0,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"column\",\n      \"text\": \"Kentucky\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 20,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"column\",\n      \"text\": \"Rose Chambers\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 40,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"column\",\n      \"text\": \"n'd of\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 60,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"column\",\n      \"text\": \"Aaron Chambers\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 80,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"column\",\n      \"text\": \"Rank Pvt\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 100,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"column\",\n      \"text\": \"Company G.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 120,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"column\",\n      \"text\": \"Regiment 118, U.S. C. Troops\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 140,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"column\",\n      \"text\": \"Louisville Agency.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 160,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"column\",\n      \"text\": \"Rate per month $ 8\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 180,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"column\",\n      \"text\": \"Commencing 7. Nov. 1864\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 200,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"column\",\n      \"text\": \"Certificate dated 19. Dec. 1867\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 220,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"column\",\n      \"text\": \"and sent to Claimant\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 240,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"column\",\n      \"text\": \"Henderson\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 260,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"column\",\n      \"text\": \"Ky\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 280,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"column\",\n      \"text\": \"Act 14th July, 1862.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 300,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"column\",\n      \"text\": \"Book C Vol. 6 Page 21\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 320,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"column\",\n      \"text\": \"Kemion Clerk.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 340,\n        \"width\": 100,\n        \"height\": 20\n      }\n    }\n  ]\n}",
+                "usage_info": {
+                    "pages_processed": 1,
+                    "doc_size_bytes": 59721
+                }
+            }
+        },
+        "annotate_handwriting": {
+            "pages": [
+                {
+                    "index": 0,
+                    "annotated_text": "No. <hw>105.072</hw>\n\n<hw>Kentucky</hw>\n\n<hw>Rose Chambers</hw>\n\n<hw>wid of</hw>\n<hw>Aaron Chambers</hw>\nRank <hw>Pvt</hw>\nCompany <hw>G.</hw>\nRegiment <hw>118, U.S. C. Troops</hw>\n\n<hw>Louisville</hw> Agency.\nRate per month $ <hw>8</hw>\nCommencing <hw>7. Nov. 1864</hw>\n\nCertificate dated <hw>19. Dec. 1867</hw>\nand sent to <hw>Claimant</hw>\n<hw>Henderson</hw>\n<hw>Ky</hw>\n\nAct 14th July, 1862.\nBook C Vol. 6 Page 21\n\n<hw>Kemion</hw> Clerk."
+                }
+            ],
+            "annotated_text": "No. <hw>105.072</hw>\n\n<hw>Kentucky</hw>\n\n<hw>Rose Chambers</hw>\n\n<hw>wid of</hw>\n<hw>Aaron Chambers</hw>\nRank <hw>Pvt</hw>\nCompany <hw>G.</hw>\nRegiment <hw>118, U.S. C. Troops</hw>\n\n<hw>Louisville</hw> Agency.\nRate per month $ <hw>8</hw>\nCommencing <hw>7. Nov. 1864</hw>\n\nCertificate dated <hw>19. Dec. 1867</hw>\nand sent to <hw>Claimant</hw>\n<hw>Henderson</hw>\n<hw>Ky</hw>\n\nAct 14th July, 1862.\nBook C Vol. 6 Page 21\n\n<hw>Kemion</hw> Clerk."
+        },
+        "transcribe_handwriting": {
+            "text": "Kentucky\n\nRose Chambers\n\nwidow\n\nof\n\nAaron Chambers\n\nRank  Pri[vate]\n\nCompany  G.\n\nRegiment  119 U.S. C. Troops\n\nLouisville  Agency.\n\nRate per month $8\n\nCommencing 7 Nov. 1864.\n\nCertificate dated 19 Decr. 1867\n\nand sent to Cincinnati\n\nHenderson\n\nKy\n\nAct 14th July, 1862.\n\nBook C  Vol. 6  Page 21\n\nKremar  Clerk.",
+            "language": "English",
+            "confidence": "high",
+            "blocks": [
+                [
+                    "Kentucky"
+                ],
+                [
+                    "Rose Chambers"
+                ],
+                [
+                    "widow"
+                ],
+                [
+                    "of"
+                ],
+                [
+                    "Aaron Chambers"
+                ],
+                [
+                    "Rank  Pri[vate]"
+                ],
+                [
+                    "Company  G."
+                ],
+                [
+                    "Regiment  119 U.S. C. Troops"
+                ],
+                [
+                    "Louisville  Agency."
+                ],
+                [
+                    "Rate per month $8"
+                ],
+                [
+                    "Commencing 7 Nov. 1864."
+                ],
+                [
+                    "Certificate dated 19 Decr. 1867"
+                ],
+                [
+                    "and sent to Cincinnati"
+                ],
+                [
+                    "Henderson"
+                ],
+                [
+                    "Ky"
+                ],
+                [
+                    "Act 14th July, 1862."
+                ],
+                [
+                    "Book C  Vol. 6  Page 21"
+                ],
+                [
+                    "Kremar  Clerk."
+                ]
+            ],
+            "_tokens": {
+                "prompt": 1311,
+                "completion": 277,
+                "total": 1588,
+                "cached": 0
+            }
+        }
+    }
+}

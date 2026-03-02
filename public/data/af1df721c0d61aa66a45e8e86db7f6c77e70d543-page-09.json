@@ -1,0 +1,254 @@
+{
+    "subject": "file:///home/tac/g/sites/ai-pipeline-demo/public/images/pages/af1df721c0d61aa66a45e8e86db7f6c77e70d543-09.jpg",
+    "results": {
+        "ocr_mistral": {
+            "text": "State of Kentucky County of Henshaw SS:\n\nI, James P. Breckenridge, Clerk of the County Court within and for the County and State aforesaid, do hereby certify that H. Y. Park Esq., before whom the foregoing affidavit, was made, and who has thereto signed his name, was, at the time of so doing, a (2) Notary Public in and for the County and State above named, duly commissioned, qualified and sworn, that all of his official acts as such are entitled to full faith and credit, and that his said signature, as it appears on the reverse page hereof is genuine\n\nGiven under my hand and seal of Said County Court at Office in Henshaw, this 16th day of September A. D. 1867\n\nJ. P. Breckenridge, Clerk\nof Henshaw County Court\n\nRemarks:—In case the Deputy authorizes the Clerk's certificate, evidence may be required to show that the Deputy is duly appointed and authorized by law to sign the Clerk's name and use the seal of the Court—therefore it is better to have the Clerk's own individual authorifications at once; and thus save the number and expense of a general authorization certificate respecting the Deputy, which might be required if the papers were authenticated by him instead of the Clerk.\n\nINSTRUCTIONS.\n\n1. \"City,\" \"Town,\" \"Corporation,\" or \"County,\" as case may be.\n2. \"Justice of the Peace,\" or \"Notary Public,\" as case may be.\n\nADDITIONAL EVIDENCE.\n\nAPPLICATION FOR\n\n(If said\n\nApproved)\n\n(If said\n\nApproved)\n\n(If said\n\nApproved)\n\n(If said\n\nApproved)",
+            "language": null,
+            "confidence": "high",
+            "layout_blocks": [
+                {
+                    "page": 0,
+                    "type": "headline",
+                    "text": "State of Kentucky County of Henshaw SS:",
+                    "bbox": {
+                        "x": 0,
+                        "y": 0,
+                        "width": 253,
+                        "height": 67
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "I, James P. Breckenridge, Clerk of the County Court within and for the County and State aforesaid, do hereby certify that H. Y. Park Esq., before whom the foregoing affidavit, was made, and who has thereto signed his name, was, at the time of so doing, a (2) Notary Public in and for the County and State above named, duly commissioned, qualified and sworn, that all of his official acts as such are entitled to full faith and credit, and that his said signature, as it appears on the reverse page hereof is genuine",
+                    "bbox": {
+                        "x": 0,
+                        "y": 67,
+                        "width": 633,
+                        "height": 200
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "Given under my hand and seal of Said County Court at Office in Henshaw, this 16th day of September A. D. 1867",
+                    "bbox": {
+                        "x": 0,
+                        "y": 267,
+                        "width": 633,
+                        "height": 67
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "byline",
+                    "text": "J. P. Breckenridge, Clerk of Henshaw County Court",
+                    "bbox": {
+                        "x": 0,
+                        "y": 334,
+                        "width": 380,
+                        "height": 67
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "Remarks:—In case the Deputy authorizes the Clerk's certificate, evidence may be required to show that the Deputy is duly appointed and authorized by law to sign the Clerk's name and use the seal of the Court—therefore it is better to have the Clerk's own individual authorifications at once; and thus save the number and expense of a general authorization certificate respecting the Deputy, which might be required if the papers were authenticated by him instead of the Clerk.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 401,
+                        "width": 760,
+                        "height": 200
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "headline",
+                    "text": "INSTRUCTIONS.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 601,
+                        "width": 253,
+                        "height": 67
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "1. \"City,\" \"Town,\" \"Corporation,\" or \"County,\" as case may be.\n2. \"Justice of the Peace,\" or \"Notary Public,\" as case may be.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 668,
+                        "width": 507,
+                        "height": 134
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "headline",
+                    "text": "ADDITIONAL EVIDENCE.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 801,
+                        "width": 253,
+                        "height": 67
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "APPLICATION FOR",
+                    "bbox": {
+                        "x": 0,
+                        "y": 868,
+                        "width": 253,
+                        "height": 67
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "(If said Approved)",
+                    "bbox": {
+                        "x": 0,
+                        "y": 935,
+                        "width": 253,
+                        "height": 67
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "(If said Approved)",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1002,
+                        "width": 253,
+                        "height": 67
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "(If said Approved)",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1068,
+                        "width": 253,
+                        "height": 67
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "(If said Approved)",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1135,
+                        "width": 253,
+                        "height": 67
+                    }
+                }
+            ],
+            "image_blocks": [],
+            "pages": [
+                {
+                    "index": 0,
+                    "markdown": "State of Kentucky County of Henshaw SS:\n\nI, James P. Breckenridge, Clerk of the County Court within and for the County and State aforesaid, do hereby certify that H. Y. Park Esq., before whom the foregoing affidavit, was made, and who has thereto signed his name, was, at the time of so doing, a (2) Notary Public in and for the County and State above named, duly commissioned, qualified and sworn, that all of his official acts as such are entitled to full faith and credit, and that his said signature, as it appears on the reverse page hereof is genuine\n\nGiven under my hand and seal of Said County Court at Office in Henshaw, this 16th day of September A. D. 1867\n\nJ. P. Breckenridge, Clerk\nof Henshaw County Court\n\nRemarks:—In case the Deputy authorizes the Clerk's certificate, evidence may be required to show that the Deputy is duly appointed and authorized by law to sign the Clerk's name and use the seal of the Court—therefore it is better to have the Clerk's own individual authorifications at once; and thus save the number and expense of a general authorization certificate respecting the Deputy, which might be required if the papers were authenticated by him instead of the Clerk.\n\nINSTRUCTIONS.\n\n1. \"City,\" \"Town,\" \"Corporation,\" or \"County,\" as case may be.\n2. \"Justice of the Peace,\" or \"Notary Public,\" as case may be.\n\nADDITIONAL EVIDENCE.\n\nAPPLICATION FOR\n\n(If said\n\nApproved)\n\n(If said\n\nApproved)\n\n(If said\n\nApproved)\n\n(If said\n\nApproved)",
+                    "dimensions": {
+                        "dpi": 200,
+                        "height": 1202,
+                        "width": 760
+                    },
+                    "tables": [],
+                    "header": null,
+                    "footer": null
+                }
+            ],
+            "raw_response": {
+                "pages": [
+                    {
+                        "index": 0,
+                        "markdown": "State of Kentucky County of Henshaw SS:\n\nI, James P. Breckenridge, Clerk of the County Court within and for the County and State aforesaid, do hereby certify that H. Y. Park Esq., before whom the foregoing affidavit, was made, and who has thereto signed his name, was, at the time of so doing, a (2) Notary Public in and for the County and State above named, duly commissioned, qualified and sworn, that all of his official acts as such are entitled to full faith and credit, and that his said signature, as it appears on the reverse page hereof is genuine\n\nGiven under my hand and seal of Said County Court at Office in Henshaw, this 16th day of September A. D. 1867\n\nJ. P. Breckenridge, Clerk\nof Henshaw County Court\n\nRemarks:—In case the Deputy authorizes the Clerk's certificate, evidence may be required to show that the Deputy is duly appointed and authorized by law to sign the Clerk's name and use the seal of the Court—therefore it is better to have the Clerk's own individual authorifications at once; and thus save the number and expense of a general authorization certificate respecting the Deputy, which might be required if the papers were authenticated by him instead of the Clerk.\n\nINSTRUCTIONS.\n\n1. \"City,\" \"Town,\" \"Corporation,\" or \"County,\" as case may be.\n2. \"Justice of the Peace,\" or \"Notary Public,\" as case may be.\n\nADDITIONAL EVIDENCE.\n\nAPPLICATION FOR\n\n(If said\n\nApproved)\n\n(If said\n\nApproved)\n\n(If said\n\nApproved)\n\n(If said\n\nApproved)",
+                        "images": [],
+                        "tables": [],
+                        "hyperlinks": [],
+                        "header": null,
+                        "footer": null,
+                        "dimensions": {
+                            "dpi": 200,
+                            "height": 1202,
+                            "width": 760
+                        }
+                    }
+                ],
+                "model": "mistral-ocr-latest",
+                "document_annotation": "{\n  \"blocks\": [\n    {\n      \"type\": \"headline\",\n      \"text\": \"State of Kentucky County of Henshaw SS:\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 0,\n        \"width\": 200,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"I, James P. Breckenridge, Clerk of the County Court within and for the County and State aforesaid, do hereby certify that H. Y. Park Esq., before whom the foregoing affidavit, was made, and who has thereto signed his name, was, at the time of so doing, a (2) Notary Public in and for the County and State above named, duly commissioned, qualified and sworn, that all of his official acts as such are entitled to full faith and credit, and that his said signature, as it appears on the reverse page hereof is genuine\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 20,\n        \"width\": 500,\n        \"height\": 60\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"Given under my hand and seal of Said County Court at Office in Henshaw, this 16th day of September A. D. 1867\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 80,\n        \"width\": 500,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"byline\",\n      \"text\": \"J. P. Breckenridge, Clerk of Henshaw County Court\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 100,\n        \"width\": 300,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"Remarks:—In case the Deputy authorizes the Clerk's certificate, evidence may be required to show that the Deputy is duly appointed and authorized by law to sign the Clerk's name and use the seal of the Court—therefore it is better to have the Clerk's own individual authorifications at once; and thus save the number and expense of a general authorization certificate respecting the Deputy, which might be required if the papers were authenticated by him instead of the Clerk.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 120,\n        \"width\": 600,\n        \"height\": 60\n      }\n    },\n    {\n      \"type\": \"headline\",\n      \"text\": \"INSTRUCTIONS.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 180,\n        \"width\": 200,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"1. \\\"City,\\\" \\\"Town,\\\" \\\"Corporation,\\\" or \\\"County,\\\" as case may be.\\n2. \\\"Justice of the Peace,\\\" or \\\"Notary Public,\\\" as case may be.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 200,\n        \"width\": 400,\n        \"height\": 40\n      }\n    },\n    {\n      \"type\": \"headline\",\n      \"text\": \"ADDITIONAL EVIDENCE.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 240,\n        \"width\": 200,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"APPLICATION FOR\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 260,\n        \"width\": 200,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"(If said Approved)\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 280,\n        \"width\": 200,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"(If said Approved)\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 300,\n        \"width\": 200,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"(If said Approved)\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 320,\n        \"width\": 200,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"(If said Approved)\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 340,\n        \"width\": 200,\n        \"height\": 20\n      }\n    }\n  ]\n}",
+                "usage_info": {
+                    "pages_processed": 1,
+                    "doc_size_bytes": 76323
+                }
+            }
+        },
+        "annotate_handwriting": {
+            "pages": [
+                {
+                    "index": 0,
+                    "annotated_text": "State of <hw>Kentucky</hw> County of <hw>Henshaw</hw> SS:\n\nI, <hw>James P. Breckenridge</hw>, Clerk of the <hw>County</hw> Court within and for the County and State aforesaid, do hereby certify that <hw>H. Y. Park</hw> Esq., before whom the foregoing affidavit, was made, and who has thereto signed his name, was, at the time of so doing, a (2) Notary Public in and for the County and State above named, duly commissioned, qualified and sworn, that all of his official acts as such are entitled to full faith and credit, and that his said signature, as it appears on the reverse page hereof is genuine\n\nGiven under my hand and seal of Said County Court at Office in <hw>Henshaw</hw>, this <hw>16th</hw> day of <hw>September</hw> A. D. <hw>1867</hw>\n\n<hw>J. P. Breckenridge</hw>, Clerk\nof <hw>Henshaw</hw> County Court\n\nRemarks:—In case the Deputy authorizes the Clerk&#039;s certificate, evidence may be required to show that the Deputy is duly appointed and authorized by law to sign the Clerk&#039;s name and use the seal of the Court—therefore it is better to have the Clerk&#039;s own individual authorifications at once; and thus save the number and expense of a general authorization certificate respecting the Deputy, which might be required if the papers were authenticated by him instead of the Clerk.\n\nINSTRUCTIONS.\n\n1. &quot;City,&quot; &quot;Town,&quot; &quot;Corporation,&quot; or &quot;County,&quot; as case may be.\n2. &quot;Justice of the Peace,&quot; or &quot;Notary Public,&quot; as case may be.\n\nADDITIONAL EVIDENCE.\n\nAPPLICATION FOR\n\n(If said\n\nApproved)\n\n(If said\n\nApproved)\n\n(If said\n\nApproved)\n\n(If said\n\nApproved)"
+                }
+            ],
+            "annotated_text": "State of <hw>Kentucky</hw> County of <hw>Henshaw</hw> SS:\n\nI, <hw>James P. Breckenridge</hw>, Clerk of the <hw>County</hw> Court within and for the County and State aforesaid, do hereby certify that <hw>H. Y. Park</hw> Esq., before whom the foregoing affidavit, was made, and who has thereto signed his name, was, at the time of so doing, a (2) Notary Public in and for the County and State above named, duly commissioned, qualified and sworn, that all of his official acts as such are entitled to full faith and credit, and that his said signature, as it appears on the reverse page hereof is genuine\n\nGiven under my hand and seal of Said County Court at Office in <hw>Henshaw</hw>, this <hw>16th</hw> day of <hw>September</hw> A. D. <hw>1867</hw>\n\n<hw>J. P. Breckenridge</hw>, Clerk\nof <hw>Henshaw</hw> County Court\n\nRemarks:—In case the Deputy authorizes the Clerk&#039;s certificate, evidence may be required to show that the Deputy is duly appointed and authorized by law to sign the Clerk&#039;s name and use the seal of the Court—therefore it is better to have the Clerk&#039;s own individual authorifications at once; and thus save the number and expense of a general authorization certificate respecting the Deputy, which might be required if the papers were authenticated by him instead of the Clerk.\n\nINSTRUCTIONS.\n\n1. &quot;City,&quot; &quot;Town,&quot; &quot;Corporation,&quot; or &quot;County,&quot; as case may be.\n2. &quot;Justice of the Peace,&quot; or &quot;Notary Public,&quot; as case may be.\n\nADDITIONAL EVIDENCE.\n\nAPPLICATION FOR\n\n(If said\n\nApproved)\n\n(If said\n\nApproved)\n\n(If said\n\nApproved)\n\n(If said\n\nApproved)"
+        },
+        "transcribe_handwriting": {
+            "text": "State of _Kentucky_} County of _Henderson_} SS:\nI, James P. G. Anthony, Clerk of the _County_ Court within and\nfor the County and State aforesaid, do hereby certify that __D. G. Park__\n__Esq.__, before\nwhom the foregoing affidavit, was made, and who has thereunto signed his name, was, at the time of so doing, a (?).\nand swearing that all of his official acts as such are entitled to full faith and credit, and that his said signature, as it\nappears on the reverse page hereof is genuine.\n\nGiven under my hand and seal of __said County__ Court at Office\nin _Henderson_ this _3rd_ day of _September_, D. 18_97_\n\n_L. F. Breckinridge_\n[seal] _Henderson County_\n\n/s/__[unclear]__\nClerk\n\n_\n[stamp: PRATHER & SMITH - OFFICIAL SEAL - NOTARIES PUBLIC]\n\nADDITIONAL EVIDENCE\nAPPLICATION FOR_\n______________________\n\n______________________\nADJUDICANT OF_\n\n______________________\n______________________\n\n______________________\n______________________\n\n______________________\n______________________\n\n______________________\n______________________",
+            "language": "English",
+            "confidence": "medium",
+            "blocks": [
+                [
+                    "State of _Kentucky_} County of _Henderson_} SS:"
+                ],
+                [
+                    "I, James P. G. Anthony, Clerk of the _County_ Court within and",
+                    "for the County and State aforesaid, do hereby certify that __D. G. Park__",
+                    "__Esq.__, before",
+                    "whom the foregoing affidavit, was made, and who has thereunto signed his name, was, at the time of so doing, a (?).",
+                    "and swearing that all of his official acts as such are entitled to full faith and credit, and that his said signature, as it",
+                    "appears on the reverse page hereof is genuine."
+                ],
+                [
+                    "Given under my hand and seal of __said County__ Court at Office",
+                    "in _Henderson_ this _3rd_ day of _September_, D. 18_97_"
+                ],
+                [
+                    "_L. F. Breckinridge_",
+                    "[seal] _Henderson County_",
+                    "/s/__[unclear]__",
+                    "Clerk"
+                ],
+                [
+                    "_",
+                    "[stamp: PRATHER & SMITH - OFFICIAL SEAL - NOTARIES PUBLIC]"
+                ],
+                [
+                    "ADDITIONAL EVIDENCE",
+                    "APPLICATION FOR_",
+                    "______________________",
+                    "______________________",
+                    "ADJUDICANT OF_",
+                    "______________________",
+                    "______________________",
+                    "______________________",
+                    "______________________",
+                    "______________________",
+                    "______________________"
+                ]
+            ],
+            "_tokens": {
+                "prompt": 1311,
+                "completion": 590,
+                "total": 1901,
+                "cached": 0
+            }
+        }
+    }
+}

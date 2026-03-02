@@ -1,0 +1,202 @@
+{
+    "subject": "file:///home/tac/g/sites/ai-pipeline-demo/public/images/pages/af1df721c0d61aa66a45e8e86db7f6c77e70d543-06.jpg",
+    "results": {
+        "ocr_mistral": {
+            "text": "[Sold by J. H. H. Woodward, Louisville, Ky.]\nProof of Cohabitation—Time, Place, and Cause of Soldier's Death—Continued Withdrawal, &amp;c.\n\n# JOINT AFFIDAVIT.\n\n## ARMY PENSION—WIDOW CLAIMANT.\n\nWe, Job Dixon of lawful age, a resident of the (1) County of H. Jefferson in the State of Kentucky and James Dixon of lawful age, a resident of the (1) County of H. Jefferson in the State of Kentucky upon our oaths, jointly declare that we are personally well acquainted with Mrs. Rose Chambers widow of (2) Aaron Chambers now deceased, and who was late a Private in Company G. commanded by Captain Moore in the 118th Regiment of (3) United States Colored Infantry commanded by Colonel Moon in the war of 1864-1867.\n\nWe further declare that we were likewise personally well acquainted with the said (2) Aaron Chambers deceased, and his said wife, the said Mrs. Rose Chambers during the lifetime of the former, and know that they lived and cohabited together as husband and wife for the period at least of (4) Twenty years prior to his death, which length of time is the longest period of cohabitation known to us. That said parties were reputed as husband and wife, and that we never heard a question raised or a doubt expressed to the contrary as to their being such. Furthermore, we have often heard the said (2) Aaron Chambers call the said Mrs. Rose Chambers \"wife,\" and always heard him speak of, and know that he ever treated and respected her as such relation. We also state that she is esteemed and known as a respectable woman in the community of her residence.\n\nWe further declare that at the time of service, we resided in the same neighborhood, County and State with the deceased soldier, and know that he, the said (2) Aaron Chambers previous to his entering the said service of the United States, was a man of good sound physical health. Our knowledge of said soldier's physical condition prior to enlistment, as above stated, is founded upon actual observation and intimate acquaintance with him and not based upon information derived from others, nor upon general repute. That he died (5) While in the service aforesaid in the (1) and Field Hospital in the State of Virginia on or about the Sixth day of November A. D. 1864, from the effects of (6) Diarrhea incurred in the service of the United States, and as we verily believe from general repute, and without the slightest doubt to the contrary, while in the line of his duty therein. That Mrs. Rose Chambers his widow aforesaid, applying for Army Pension by reason of the above named military service, is now a widow, and has remained such ever since the death of her said husband, the said (2) Aaron Chambers above mentioned. That we make this affidavit as a simple act of justice to the applicant, and for no other purpose, having no interest in so doing whatsoever. That we fully understand the import and meaning of all the facts embodied in this affidavit, and to which we freely testify.\n\nATTEST:\n\nB. C. Thornton } John his x mark Dixon\nJ. T. Weller } mark\n\nSworn to and subscribed before me on this 31st day of August in the year 1867, and I hereby certify that I know the affiants to be credible witnesses, and that they reside as stated in the foregoing joint affidavit. I also certify that said affidavit was read over to and understood by them, before they signed the same. I also certify that I am entirely disinterested in this matter.\n\nH. J. Clark\nN. P. 86602",
+            "language": null,
+            "confidence": "high",
+            "layout_blocks": [
+                {
+                    "page": 0,
+                    "type": "other",
+                    "text": "[Sold by J. H. H. Woodward, Louisville, Ky.]",
+                    "bbox": {
+                        "x": 0,
+                        "y": 0,
+                        "width": 751,
+                        "height": 52
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "other",
+                    "text": "Proof of Cohabitation—Time, Place, and Cause of Soldier's Death—Continued Withdrawal, &c.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 52,
+                        "width": 751,
+                        "height": 52
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "headline",
+                    "text": "JOINT AFFIDAVIT.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 104,
+                        "width": 751,
+                        "height": 52
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "subheadline",
+                    "text": "ARMY PENSION—WIDOW CLAIMANT.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 157,
+                        "width": 751,
+                        "height": 52
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "We, Job Dixon of lawful age, a resident of the (1) County of H. Jefferson in the State of Kentucky and James Dixon of lawful age, a resident of the (1) County of H. Jefferson in the State of Kentucky upon our oaths, jointly declare that we are personally well acquainted with Mrs. Rose Chambers widow of (2) Aaron Chambers now deceased, and who was late a Private in Company G. commanded by Captain Moore in the 118th Regiment of (3) United States Colored Infantry commanded by Colonel Moon in the war of 1864-1867.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 209,
+                        "width": 751,
+                        "height": 157
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "We further declare that we were likewise personally well acquainted with the said (2) Aaron Chambers deceased, and his said wife, the said Mrs. Rose Chambers during the lifetime of the former, and know that they lived and cohabited together as husband and wife for the period at least of (4) Twenty years prior to his death, which length of time is the longest period of cohabitation known to us. That said parties were reputed as husband and wife, and that we never heard a question raised or a doubt expressed to the contrary as to their being such. Furthermore, we have often heard the said (2) Aaron Chambers call the said Mrs. Rose Chambers \"wife,\" and always heard him speak of, and know that he ever treated and respected her as such relation. We also state that she is esteemed and known as a respectable woman in the community of her residence.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 366,
+                        "width": 751,
+                        "height": 209
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "We further declare that at the time of service, we resided in the same neighborhood, County and State with the deceased soldier, and know that he, the said (2) Aaron Chambers previous to his entering the said service of the United States, was a man of good sound physical health. Our knowledge of said soldier's physical condition prior to enlistment, as above stated, is founded upon actual observation and intimate acquaintance with him and not based upon information derived from others, nor upon general repute. That he died (5) While in the service aforesaid in the (1) and Field Hospital in the State of Virginia on or about the Sixth day of November A. D. 1864, from the effects of (6) Diarrhea incurred in the service of the United States, and as we verily believe from general repute, and without the slightest doubt to the contrary, while in the line of his duty therein. That Mrs. Rose Chambers his widow aforesaid, applying for Army Pension by reason of the above named military service, is now a widow, and has remained such ever since the death of her said husband, the said (2) Aaron Chambers above mentioned. That we make this affidavit as a simple act of justice to the applicant, and for no other purpose, having no interest in so doing whatsoever. That we fully understand the import and meaning of all the facts embodied in this affidavit, and to which we freely testify.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 574,
+                        "width": 751,
+                        "height": 261
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "other",
+                    "text": "ATTEST:",
+                    "bbox": {
+                        "x": 0,
+                        "y": 835,
+                        "width": 751,
+                        "height": 52
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "other",
+                    "text": "B. C. Thornton } John his x mark Dixon",
+                    "bbox": {
+                        "x": 0,
+                        "y": 888,
+                        "width": 751,
+                        "height": 52
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "other",
+                    "text": "J. T. Weller } mark",
+                    "bbox": {
+                        "x": 0,
+                        "y": 940,
+                        "width": 751,
+                        "height": 52
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "other",
+                    "text": "Sworn to and subscribed before me on this 31st day of August in the year 1867, and I hereby certify that I know the affiants to be credible witnesses, and that they reside as stated in the foregoing joint affidavit. I also certify that said affidavit was read over to and understood by them, before they signed the same. I also certify that I am entirely disinterested in this matter.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 992,
+                        "width": 751,
+                        "height": 104
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "other",
+                    "text": "H. J. Clark",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1097,
+                        "width": 751,
+                        "height": 52
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "other",
+                    "text": "N. P. 86602",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1149,
+                        "width": 751,
+                        "height": 52
+                    }
+                }
+            ],
+            "image_blocks": [],
+            "pages": [
+                {
+                    "index": 0,
+                    "markdown": "[Sold by J. H. H. Woodward, Louisville, Ky.]\nProof of Cohabitation—Time, Place, and Cause of Soldier's Death—Continued Withdrawal, &amp;c.\n\n# JOINT AFFIDAVIT.\n\n## ARMY PENSION—WIDOW CLAIMANT.\n\nWe, Job Dixon of lawful age, a resident of the (1) County of H. Jefferson in the State of Kentucky and James Dixon of lawful age, a resident of the (1) County of H. Jefferson in the State of Kentucky upon our oaths, jointly declare that we are personally well acquainted with Mrs. Rose Chambers widow of (2) Aaron Chambers now deceased, and who was late a Private in Company G. commanded by Captain Moore in the 118th Regiment of (3) United States Colored Infantry commanded by Colonel Moon in the war of 1864-1867.\n\nWe further declare that we were likewise personally well acquainted with the said (2) Aaron Chambers deceased, and his said wife, the said Mrs. Rose Chambers during the lifetime of the former, and know that they lived and cohabited together as husband and wife for the period at least of (4) Twenty years prior to his death, which length of time is the longest period of cohabitation known to us. That said parties were reputed as husband and wife, and that we never heard a question raised or a doubt expressed to the contrary as to their being such. Furthermore, we have often heard the said (2) Aaron Chambers call the said Mrs. Rose Chambers \"wife,\" and always heard him speak of, and know that he ever treated and respected her as such relation. We also state that she is esteemed and known as a respectable woman in the community of her residence.\n\nWe further declare that at the time of service, we resided in the same neighborhood, County and State with the deceased soldier, and know that he, the said (2) Aaron Chambers previous to his entering the said service of the United States, was a man of good sound physical health. Our knowledge of said soldier's physical condition prior to enlistment, as above stated, is founded upon actual observation and intimate acquaintance with him and not based upon information derived from others, nor upon general repute. That he died (5) While in the service aforesaid in the (1) and Field Hospital in the State of Virginia on or about the Sixth day of November A. D. 1864, from the effects of (6) Diarrhea incurred in the service of the United States, and as we verily believe from general repute, and without the slightest doubt to the contrary, while in the line of his duty therein. That Mrs. Rose Chambers his widow aforesaid, applying for Army Pension by reason of the above named military service, is now a widow, and has remained such ever since the death of her said husband, the said (2) Aaron Chambers above mentioned. That we make this affidavit as a simple act of justice to the applicant, and for no other purpose, having no interest in so doing whatsoever. That we fully understand the import and meaning of all the facts embodied in this affidavit, and to which we freely testify.\n\nATTEST:\n\nB. C. Thornton } John his x mark Dixon\nJ. T. Weller } mark\n\nSworn to and subscribed before me on this 31st day of August in the year 1867, and I hereby certify that I know the affiants to be credible witnesses, and that they reside as stated in the foregoing joint affidavit. I also certify that said affidavit was read over to and understood by them, before they signed the same. I also certify that I am entirely disinterested in this matter.\n\nH. J. Clark\nN. P. 86602",
+                    "dimensions": {
+                        "dpi": 200,
+                        "height": 1201,
+                        "width": 751
+                    },
+                    "tables": [],
+                    "header": null,
+                    "footer": null
+                }
+            ],
+            "raw_response": {
+                "pages": [
+                    {
+                        "index": 0,
+                        "markdown": "[Sold by J. H. H. Woodward, Louisville, Ky.]\nProof of Cohabitation—Time, Place, and Cause of Soldier's Death—Continued Withdrawal, &amp;c.\n\n# JOINT AFFIDAVIT.\n\n## ARMY PENSION—WIDOW CLAIMANT.\n\nWe, Job Dixon of lawful age, a resident of the (1) County of H. Jefferson in the State of Kentucky and James Dixon of lawful age, a resident of the (1) County of H. Jefferson in the State of Kentucky upon our oaths, jointly declare that we are personally well acquainted with Mrs. Rose Chambers widow of (2) Aaron Chambers now deceased, and who was late a Private in Company G. commanded by Captain Moore in the 118th Regiment of (3) United States Colored Infantry commanded by Colonel Moon in the war of 1864-1867.\n\nWe further declare that we were likewise personally well acquainted with the said (2) Aaron Chambers deceased, and his said wife, the said Mrs. Rose Chambers during the lifetime of the former, and know that they lived and cohabited together as husband and wife for the period at least of (4) Twenty years prior to his death, which length of time is the longest period of cohabitation known to us. That said parties were reputed as husband and wife, and that we never heard a question raised or a doubt expressed to the contrary as to their being such. Furthermore, we have often heard the said (2) Aaron Chambers call the said Mrs. Rose Chambers \"wife,\" and always heard him speak of, and know that he ever treated and respected her as such relation. We also state that she is esteemed and known as a respectable woman in the community of her residence.\n\nWe further declare that at the time of service, we resided in the same neighborhood, County and State with the deceased soldier, and know that he, the said (2) Aaron Chambers previous to his entering the said service of the United States, was a man of good sound physical health. Our knowledge of said soldier's physical condition prior to enlistment, as above stated, is founded upon actual observation and intimate acquaintance with him and not based upon information derived from others, nor upon general repute. That he died (5) While in the service aforesaid in the (1) and Field Hospital in the State of Virginia on or about the Sixth day of November A. D. 1864, from the effects of (6) Diarrhea incurred in the service of the United States, and as we verily believe from general repute, and without the slightest doubt to the contrary, while in the line of his duty therein. That Mrs. Rose Chambers his widow aforesaid, applying for Army Pension by reason of the above named military service, is now a widow, and has remained such ever since the death of her said husband, the said (2) Aaron Chambers above mentioned. That we make this affidavit as a simple act of justice to the applicant, and for no other purpose, having no interest in so doing whatsoever. That we fully understand the import and meaning of all the facts embodied in this affidavit, and to which we freely testify.\n\nATTEST:\n\nB. C. Thornton } John his x mark Dixon\nJ. T. Weller } mark\n\nSworn to and subscribed before me on this 31st day of August in the year 1867, and I hereby certify that I know the affiants to be credible witnesses, and that they reside as stated in the foregoing joint affidavit. I also certify that said affidavit was read over to and understood by them, before they signed the same. I also certify that I am entirely disinterested in this matter.\n\nH. J. Clark\nN. P. 86602",
+                        "images": [],
+                        "tables": [],
+                        "hyperlinks": [],
+                        "header": null,
+                        "footer": null,
+                        "dimensions": {
+                            "dpi": 200,
+                            "height": 1201,
+                            "width": 751
+                        }
+                    }
+                ],
+                "model": "mistral-ocr-latest",
+                "document_annotation": "{\n  \"blocks\": [\n    {\n      \"type\": \"other\",\n      \"text\": \"[Sold by J. H. H. Woodward, Louisville, Ky.]\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 0,\n        \"width\": 100,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"other\",\n      \"text\": \"Proof of Cohabitation—Time, Place, and Cause of Soldier's Death—Continued Withdrawal, &c.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 10,\n        \"width\": 100,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"headline\",\n      \"text\": \"JOINT AFFIDAVIT.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 20,\n        \"width\": 100,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"subheadline\",\n      \"text\": \"ARMY PENSION—WIDOW CLAIMANT.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 30,\n        \"width\": 100,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"We, Job Dixon of lawful age, a resident of the (1) County of H. Jefferson in the State of Kentucky and James Dixon of lawful age, a resident of the (1) County of H. Jefferson in the State of Kentucky upon our oaths, jointly declare that we are personally well acquainted with Mrs. Rose Chambers widow of (2) Aaron Chambers now deceased, and who was late a Private in Company G. commanded by Captain Moore in the 118th Regiment of (3) United States Colored Infantry commanded by Colonel Moon in the war of 1864-1867.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 40,\n        \"width\": 100,\n        \"height\": 30\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"We further declare that we were likewise personally well acquainted with the said (2) Aaron Chambers deceased, and his said wife, the said Mrs. Rose Chambers during the lifetime of the former, and know that they lived and cohabited together as husband and wife for the period at least of (4) Twenty years prior to his death, which length of time is the longest period of cohabitation known to us. That said parties were reputed as husband and wife, and that we never heard a question raised or a doubt expressed to the contrary as to their being such. Furthermore, we have often heard the said (2) Aaron Chambers call the said Mrs. Rose Chambers \\\"wife,\\\" and always heard him speak of, and know that he ever treated and respected her as such relation. We also state that she is esteemed and known as a respectable woman in the community of her residence.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 70,\n        \"width\": 100,\n        \"height\": 40\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"We further declare that at the time of service, we resided in the same neighborhood, County and State with the deceased soldier, and know that he, the said (2) Aaron Chambers previous to his entering the said service of the United States, was a man of good sound physical health. Our knowledge of said soldier's physical condition prior to enlistment, as above stated, is founded upon actual observation and intimate acquaintance with him and not based upon information derived from others, nor upon general repute. That he died (5) While in the service aforesaid in the (1) and Field Hospital in the State of Virginia on or about the Sixth day of November A. D. 1864, from the effects of (6) Diarrhea incurred in the service of the United States, and as we verily believe from general repute, and without the slightest doubt to the contrary, while in the line of his duty therein. That Mrs. Rose Chambers his widow aforesaid, applying for Army Pension by reason of the above named military service, is now a widow, and has remained such ever since the death of her said husband, the said (2) Aaron Chambers above mentioned. That we make this affidavit as a simple act of justice to the applicant, and for no other purpose, having no interest in so doing whatsoever. That we fully understand the import and meaning of all the facts embodied in this affidavit, and to which we freely testify.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 110,\n        \"width\": 100,\n        \"height\": 50\n      }\n    },\n    {\n      \"type\": \"other\",\n      \"text\": \"ATTEST:\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 160,\n        \"width\": 100,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"other\",\n      \"text\": \"B. C. Thornton } John his x mark Dixon\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 170,\n        \"width\": 100,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"other\",\n      \"text\": \"J. T. Weller } mark\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 180,\n        \"width\": 100,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"other\",\n      \"text\": \"Sworn to and subscribed before me on this 31st day of August in the year 1867, and I hereby certify that I know the affiants to be credible witnesses, and that they reside as stated in the foregoing joint affidavit. I also certify that said affidavit was read over to and understood by them, before they signed the same. I also certify that I am entirely disinterested in this matter.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 190,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"other\",\n      \"text\": \"H. J. Clark\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 210,\n        \"width\": 100,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"other\",\n      \"text\": \"N. P. 86602\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 220,\n        \"width\": 100,\n        \"height\": 10\n      }\n    }\n  ]\n}",
+                "usage_info": {
+                    "pages_processed": 1,
+                    "doc_size_bytes": 109007
+                }
+            }
+        },
+        "annotate_handwriting": {
+            "failed": true,
+            "error": "Idle timeout reached for \"https://api.openai.com/v1/responses\"."
+        },
+        "transcribe_handwriting": {
+            "failed": true,
+            "error": "Idle timeout reached for \"https://api.openai.com/v1/responses\"."
+        }
+    }
+}

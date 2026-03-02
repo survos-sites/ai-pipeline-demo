@@ -1,0 +1,391 @@
+{
+    "subject": "file:///home/tac/g/sites/ai-pipeline-demo/public/images/pages/af1df721c0d61aa66a45e8e86db7f6c77e70d543-08.jpg",
+    "results": {
+        "ocr_mistral": {
+            "text": "Point Affidavit.\n\nFOR GENERAL PURPOSES IN UNITED STATES CLAIM BUSINESS.\n\nA NEW RULE.\n\nThe Department at Washington have made a new rule, requiring where witnesses sign their names to an affidavit by making their mark (x) that two persons who can write, must attest such signatures by signing to the left side of the names of the affiants making a mark. The officer administering the rule cannot be used for obtaining parties. Thus, his example.\n\nAttest\nJOHN BROWN,\nJOSEPH SMITH.\n\nSworn to, subscribed, &amp;c.\nAMOS HIPLEY,\nJustice Peace\n\nAs the parties making oath to this paper sign their names by mark (x) wherever such mark is made there must be two persons who write their names to attend the same. This requirement is now inflexible and cannot be departed from, as the Government Offices will reject any affidavit or other paper offered as evidence wherein marks are made for signatures of the marks are not properly attested as herein named. The agent of these Directives does not add precise proprietor knowledge.\n\nWe, A. J. Hicks Jr. and W. D. Chambers, each of lawful age, and residents of the (1) County of Henderson, in the State of Kentucky, upon our oaths declare that we were personally and well acquainted with Aaron Chambers, Dec'd., late a private in Co. \"F\" 18th Regt. U. S. C. I. Infty., who died, as we verily believe, while in the U. S. service on or about the 6th day of November 1864. We also state that we are well acquainted with Rose Chambers, who is making application for army pension, as widow of aforesaid Aaron Chambers, and know that she is the true and lawful widow of said soldier, Dec'd. That they were never formally married for the reason that the laws of Kentucky did not require a license and record or formal marriage for persons of color, but recognized them as man and wife from the act of co'dition. That the aforesaid Rose and Aaron Chambers commenced living together as man and wife on or about 15th day of March AD 1837, and continued to live together as such until the decease of aforesaid Aaron, according to custom of persons of color in the State of Kentucky. That we have often heard said Aaron Chambers call her (Rose Chambers) \"wife,\" and always treated and respected her in such relation. That they were considered as man and wife by all their neighbors and acquaintances, and considered respectable in the community in which they lived. That there are now living none of their (said Aaron and Rose Chambers) under the age of sixteen years. And that she has been a widow since the death of above named soldier (Aaron Chambers), Dec'd.\n\nThat we have no interest in this matter.\n\nA. J. Hicks Jr. (1)\nW. D. Chambers (2)\n\nSworn to and subscribed before me, this Sixteenth day of September in the year 1867, and I hereby certify that the affiants are respectable and credible persons and reside as stated; that I believe their statements are correct and worthy of full faith and credit; and that I have no interest in this matter. I further certify that the foregoing affidavit was read over, fully explained to, and understood by the affiants before the signing and direction thereof.\n\nA. J. Hicks (3)\nN. P. H. Co. Ky.",
+            "language": null,
+            "confidence": "high",
+            "layout_blocks": [
+                {
+                    "page": 0,
+                    "type": "headline",
+                    "text": "Point Affidavit.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 0,
+                        "width": 762,
+                        "height": 34
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "subheadline",
+                    "text": "FOR GENERAL PURPOSES IN UNITED STATES CLAIM BUSINESS.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 34,
+                        "width": 762,
+                        "height": 34
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "A NEW RULE.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 69,
+                        "width": 762,
+                        "height": 34
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "The Department at Washington have made a new rule, requiring where witnesses sign their names to an affidavit by making their mark (x) that two persons who can write, must attest such signatures by signing to the left side of the names of the affiants making a mark. The officer administering the rule cannot be used for obtaining parties. Thus, his example.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 103,
+                        "width": 762,
+                        "height": 103
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "Attest",
+                    "bbox": {
+                        "x": 0,
+                        "y": 206,
+                        "width": 762,
+                        "height": 34
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "JOHN BROWN,",
+                    "bbox": {
+                        "x": 0,
+                        "y": 240,
+                        "width": 762,
+                        "height": 34
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "JOSEPH SMITH.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 275,
+                        "width": 762,
+                        "height": 34
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "Sworn to, subscribed, &c.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 309,
+                        "width": 762,
+                        "height": 34
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "AMOS HIPLEY,",
+                    "bbox": {
+                        "x": 0,
+                        "y": 343,
+                        "width": 762,
+                        "height": 34
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "Justice Peace",
+                    "bbox": {
+                        "x": 0,
+                        "y": 378,
+                        "width": 762,
+                        "height": 34
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "As the parties making oath to this paper sign their names by mark (x) wherever such mark is made there must be two persons who write their names to attend the same. This requirement is now inflexible and cannot be departed from, as the Government Offices will reject any affidavit or other paper offered as evidence wherein marks are made for signatures of the marks are not properly attested as herein named. The agent of these Directives does not add precise proprietor knowledge.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 412,
+                        "width": 762,
+                        "height": 137
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "We, A. J. Hicks Jr. and W. D. Chambers, each of lawful age, and residents of the (1) County of Henderson, in the State of Kentucky, upon our oaths declare that we were personally and well acquainted with Aaron Chambers, Dec'd., late a private in Co. \"F\" 18th Regt. U. S. C. I. Infty., who died, as we verily believe, while in the U. S. service on or about the 6th day of November 1864. We also state that we are well acquainted with Rose Chambers, who is making application for army pension, as widow of aforesaid Aaron Chambers, and know that she is the true and lawful widow of said soldier, Dec'd. That they were never formally married for the reason that the laws of Kentucky did not require a license and record or formal marriage for persons of color, but recognized them as man and wife from the act of co'dition. That the aforesaid Rose and Aaron Chambers commenced living together as man and wife on or about 15th day of March AD 1837, and continued to live together as such until the decease of aforesaid Aaron, according to custom of persons of color in the State of Kentucky. That we have often heard said Aaron Chambers call her (Rose Chambers) \"wife,\" and always treated and respected her in such relation. That they were considered as man and wife by all their neighbors and acquaintances, and considered respectable in the community in which they lived. That there are now living none of their (said Aaron and Rose Chambers) under the age of sixteen years. And that she has been a widow since the death of above named soldier (Aaron Chambers), Dec'd.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 549,
+                        "width": 762,
+                        "height": 343
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "That we have no interest in this matter.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 893,
+                        "width": 762,
+                        "height": 34
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "A. J. Hicks Jr. (1)",
+                    "bbox": {
+                        "x": 0,
+                        "y": 927,
+                        "width": 762,
+                        "height": 34
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "W. D. Chambers (2)",
+                    "bbox": {
+                        "x": 0,
+                        "y": 962,
+                        "width": 762,
+                        "height": 34
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "Sworn to and subscribed before me, this Sixteenth day of September in the year 1867, and I hereby certify that the affiants are respectable and credible persons and reside as stated; that I believe their statements are correct and worthy of full faith and credit; and that I have no interest in this matter. I further certify that the foregoing affidavit was read over, fully explained to, and understood by the affiants before the signing and direction thereof.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 996,
+                        "width": 762,
+                        "height": 137
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "A. J. Hicks (3)",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1133,
+                        "width": 762,
+                        "height": 34
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "N. P. H. Co. Ky.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1168,
+                        "width": 762,
+                        "height": 34
+                    }
+                }
+            ],
+            "image_blocks": [],
+            "pages": [
+                {
+                    "index": 0,
+                    "markdown": "Point Affidavit.\n\nFOR GENERAL PURPOSES IN UNITED STATES CLAIM BUSINESS.\n\nA NEW RULE.\n\nThe Department at Washington have made a new rule, requiring where witnesses sign their names to an affidavit by making their mark (x) that two persons who can write, must attest such signatures by signing to the left side of the names of the affiants making a mark. The officer administering the rule cannot be used for obtaining parties. Thus, his example.\n\nAttest\nJOHN BROWN,\nJOSEPH SMITH.\n\nSworn to, subscribed, &amp;c.\nAMOS HIPLEY,\nJustice Peace\n\nAs the parties making oath to this paper sign their names by mark (x) wherever such mark is made there must be two persons who write their names to attend the same. This requirement is now inflexible and cannot be departed from, as the Government Offices will reject any affidavit or other paper offered as evidence wherein marks are made for signatures of the marks are not properly attested as herein named. The agent of these Directives does not add precise proprietor knowledge.\n\nWe, A. J. Hicks Jr. and W. D. Chambers, each of lawful age, and residents of the (1) County of Henderson, in the State of Kentucky, upon our oaths declare that we were personally and well acquainted with Aaron Chambers, Dec'd., late a private in Co. \"F\" 18th Regt. U. S. C. I. Infty., who died, as we verily believe, while in the U. S. service on or about the 6th day of November 1864. We also state that we are well acquainted with Rose Chambers, who is making application for army pension, as widow of aforesaid Aaron Chambers, and know that she is the true and lawful widow of said soldier, Dec'd. That they were never formally married for the reason that the laws of Kentucky did not require a license and record or formal marriage for persons of color, but recognized them as man and wife from the act of co'dition. That the aforesaid Rose and Aaron Chambers commenced living together as man and wife on or about 15th day of March AD 1837, and continued to live together as such until the decease of aforesaid Aaron, according to custom of persons of color in the State of Kentucky. That we have often heard said Aaron Chambers call her (Rose Chambers) \"wife,\" and always treated and respected her in such relation. That they were considered as man and wife by all their neighbors and acquaintances, and considered respectable in the community in which they lived. That there are now living none of their (said Aaron and Rose Chambers) under the age of sixteen years. And that she has been a widow since the death of above named soldier (Aaron Chambers), Dec'd.\n\nThat we have no interest in this matter.\n\nA. J. Hicks Jr. (1)\nW. D. Chambers (2)\n\nSworn to and subscribed before me, this Sixteenth day of September in the year 1867, and I hereby certify that the affiants are respectable and credible persons and reside as stated; that I believe their statements are correct and worthy of full faith and credit; and that I have no interest in this matter. I further certify that the foregoing affidavit was read over, fully explained to, and understood by the affiants before the signing and direction thereof.\n\nA. J. Hicks (3)\nN. P. H. Co. Ky.",
+                    "dimensions": {
+                        "dpi": 200,
+                        "height": 1202,
+                        "width": 762
+                    },
+                    "tables": [],
+                    "header": null,
+                    "footer": null
+                }
+            ],
+            "raw_response": {
+                "pages": [
+                    {
+                        "index": 0,
+                        "markdown": "Point Affidavit.\n\nFOR GENERAL PURPOSES IN UNITED STATES CLAIM BUSINESS.\n\nA NEW RULE.\n\nThe Department at Washington have made a new rule, requiring where witnesses sign their names to an affidavit by making their mark (x) that two persons who can write, must attest such signatures by signing to the left side of the names of the affiants making a mark. The officer administering the rule cannot be used for obtaining parties. Thus, his example.\n\nAttest\nJOHN BROWN,\nJOSEPH SMITH.\n\nSworn to, subscribed, &amp;c.\nAMOS HIPLEY,\nJustice Peace\n\nAs the parties making oath to this paper sign their names by mark (x) wherever such mark is made there must be two persons who write their names to attend the same. This requirement is now inflexible and cannot be departed from, as the Government Offices will reject any affidavit or other paper offered as evidence wherein marks are made for signatures of the marks are not properly attested as herein named. The agent of these Directives does not add precise proprietor knowledge.\n\nWe, A. J. Hicks Jr. and W. D. Chambers, each of lawful age, and residents of the (1) County of Henderson, in the State of Kentucky, upon our oaths declare that we were personally and well acquainted with Aaron Chambers, Dec'd., late a private in Co. \"F\" 18th Regt. U. S. C. I. Infty., who died, as we verily believe, while in the U. S. service on or about the 6th day of November 1864. We also state that we are well acquainted with Rose Chambers, who is making application for army pension, as widow of aforesaid Aaron Chambers, and know that she is the true and lawful widow of said soldier, Dec'd. That they were never formally married for the reason that the laws of Kentucky did not require a license and record or formal marriage for persons of color, but recognized them as man and wife from the act of co'dition. That the aforesaid Rose and Aaron Chambers commenced living together as man and wife on or about 15th day of March AD 1837, and continued to live together as such until the decease of aforesaid Aaron, according to custom of persons of color in the State of Kentucky. That we have often heard said Aaron Chambers call her (Rose Chambers) \"wife,\" and always treated and respected her in such relation. That they were considered as man and wife by all their neighbors and acquaintances, and considered respectable in the community in which they lived. That there are now living none of their (said Aaron and Rose Chambers) under the age of sixteen years. And that she has been a widow since the death of above named soldier (Aaron Chambers), Dec'd.\n\nThat we have no interest in this matter.\n\nA. J. Hicks Jr. (1)\nW. D. Chambers (2)\n\nSworn to and subscribed before me, this Sixteenth day of September in the year 1867, and I hereby certify that the affiants are respectable and credible persons and reside as stated; that I believe their statements are correct and worthy of full faith and credit; and that I have no interest in this matter. I further certify that the foregoing affidavit was read over, fully explained to, and understood by the affiants before the signing and direction thereof.\n\nA. J. Hicks (3)\nN. P. H. Co. Ky.",
+                        "images": [],
+                        "tables": [],
+                        "hyperlinks": [],
+                        "header": null,
+                        "footer": null,
+                        "dimensions": {
+                            "dpi": 200,
+                            "height": 1202,
+                            "width": 762
+                        }
+                    }
+                ],
+                "model": "mistral-ocr-latest",
+                "document_annotation": "{\n  \"blocks\": [\n    {\n      \"type\": \"headline\",\n      \"text\": \"Point Affidavit.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 0,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"subheadline\",\n      \"text\": \"FOR GENERAL PURPOSES IN UNITED STATES CLAIM BUSINESS.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 20,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"A NEW RULE.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 40,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"The Department at Washington have made a new rule, requiring where witnesses sign their names to an affidavit by making their mark (x) that two persons who can write, must attest such signatures by signing to the left side of the names of the affiants making a mark. The officer administering the rule cannot be used for obtaining parties. Thus, his example.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 60,\n        \"width\": 100,\n        \"height\": 60\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"Attest\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 120,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"JOHN BROWN,\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 140,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"JOSEPH SMITH.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 160,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"Sworn to, subscribed, &c.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 180,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"AMOS HIPLEY,\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 200,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"Justice Peace\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 220,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"As the parties making oath to this paper sign their names by mark (x) wherever such mark is made there must be two persons who write their names to attend the same. This requirement is now inflexible and cannot be departed from, as the Government Offices will reject any affidavit or other paper offered as evidence wherein marks are made for signatures of the marks are not properly attested as herein named. The agent of these Directives does not add precise proprietor knowledge.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 240,\n        \"width\": 100,\n        \"height\": 80\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"We, A. J. Hicks Jr. and W. D. Chambers, each of lawful age, and residents of the (1) County of Henderson, in the State of Kentucky, upon our oaths declare that we were personally and well acquainted with Aaron Chambers, Dec'd., late a private in Co. \\\"F\\\" 18th Regt. U. S. C. I. Infty., who died, as we verily believe, while in the U. S. service on or about the 6th day of November 1864. We also state that we are well acquainted with Rose Chambers, who is making application for army pension, as widow of aforesaid Aaron Chambers, and know that she is the true and lawful widow of said soldier, Dec'd. That they were never formally married for the reason that the laws of Kentucky did not require a license and record or formal marriage for persons of color, but recognized them as man and wife from the act of co'dition. That the aforesaid Rose and Aaron Chambers commenced living together as man and wife on or about 15th day of March AD 1837, and continued to live together as such until the decease of aforesaid Aaron, according to custom of persons of color in the State of Kentucky. That we have often heard said Aaron Chambers call her (Rose Chambers) \\\"wife,\\\" and always treated and respected her in such relation. That they were considered as man and wife by all their neighbors and acquaintances, and considered respectable in the community in which they lived. That there are now living none of their (said Aaron and Rose Chambers) under the age of sixteen years. And that she has been a widow since the death of above named soldier (Aaron Chambers), Dec'd.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 320,\n        \"width\": 100,\n        \"height\": 200\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"That we have no interest in this matter.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 520,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"A. J. Hicks Jr. (1)\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 540,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"W. D. Chambers (2)\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 560,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"Sworn to and subscribed before me, this Sixteenth day of September in the year 1867, and I hereby certify that the affiants are respectable and credible persons and reside as stated; that I believe their statements are correct and worthy of full faith and credit; and that I have no interest in this matter. I further certify that the foregoing affidavit was read over, fully explained to, and understood by the affiants before the signing and direction thereof.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 580,\n        \"width\": 100,\n        \"height\": 80\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"A. J. Hicks (3)\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 660,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"N. P. H. Co. Ky.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 680,\n        \"width\": 100,\n        \"height\": 20\n      }\n    }\n  ]\n}",
+                "usage_info": {
+                    "pages_processed": 1,
+                    "doc_size_bytes": 132727
+                }
+            }
+        },
+        "annotate_handwriting": {
+            "pages": [
+                {
+                    "index": 0,
+                    "annotated_text": "Point Affidavit.\n\nFOR GENERAL PURPOSES IN UNITED STATES CLAIM BUSINESS.\n\nA NEW RULE.\n\nThe Department at Washington have made a new rule, requiring where witnesses sign their names to an affidavit by making their mark (x) that two persons who can write, must attest such signatures by signing to the left side of the names of the affiants making a mark. The officer administering the rule cannot be used for obtaining parties. Thus, his example.\n\nAttest\nJOHN BROWN,\nJOSEPH SMITH.\n\nSworn to, subscribed, &amp;amp;c.\nAMOS HIPLEY,\nJustice Peace\n\n<hw>We, A. J. Hicks Jr. and W. D. Chambers, each of lawful age, and residents of the (1) County of Henderson, in the State of Kentucky, upon our oaths declare that we were personally and well acquainted with Aaron Chambers, Dec&#039;d., late a private in Co. &quot;F&quot; 18th Regt. U. S. C. I. Infty., who died, as we verily believe, while in the U. S. service on or about the 6th day of November 1864. We also state that we are well acquainted with Rose Chambers, who is making application for army pension, as widow of aforesaid Aaron Chambers, and know that she is the true and lawful widow of said soldier, Dec&#039;d. That they were never formally married for the reason that the laws of Kentucky did not require a license and record or formal marriage for persons of color, but recognized them as man and wife from the act of co&#039;dition. That the aforesaid Rose and Aaron Chambers commenced living together as man and wife on or about 15th day of March AD 1837, and continued to live together as such until the decease of aforesaid Aaron, according to custom of persons of color in the State of Kentucky. That we have often heard said Aaron Chambers call her (Rose Chambers) &quot;wife,&quot; and always treated and respected her in such relation. That they were considered as man and wife by all their neighbors and acquaintances, and considered respectable in the community in which they lived. That there are now living none of their (said Aaron and Rose Chambers) under the age of sixteen years. And that she has been a widow since the death of above named soldier (Aaron Chambers), Dec&#039;d.</hw>\n\nThat we have no interest in this matter.\n\nA. J. Hicks Jr. (1)\nW. D. Chambers (2)\n\nSworn to and subscribed before me, this <hw>Sixteenth</hw> day of <hw>September</hw> in the year 18<hw>67</hw>, and I hereby certify that the affiants are respectable and credible persons and reside as stated; that I believe their statements are correct and worthy of full faith and credit; and that I have no interest in this matter. I further certify that the foregoing affidavit was read over, fully explained to, and understood by the affiants before the signing and direction thereof.\n\nA. J. Hicks (3)\nN. P. H. Co. Ky."
+                }
+            ],
+            "annotated_text": "Point Affidavit.\n\nFOR GENERAL PURPOSES IN UNITED STATES CLAIM BUSINESS.\n\nA NEW RULE.\n\nThe Department at Washington have made a new rule, requiring where witnesses sign their names to an affidavit by making their mark (x) that two persons who can write, must attest such signatures by signing to the left side of the names of the affiants making a mark. The officer administering the rule cannot be used for obtaining parties. Thus, his example.\n\nAttest\nJOHN BROWN,\nJOSEPH SMITH.\n\nSworn to, subscribed, &amp;amp;c.\nAMOS HIPLEY,\nJustice Peace\n\n<hw>We, A. J. Hicks Jr. and W. D. Chambers, each of lawful age, and residents of the (1) County of Henderson, in the State of Kentucky, upon our oaths declare that we were personally and well acquainted with Aaron Chambers, Dec&#039;d., late a private in Co. &quot;F&quot; 18th Regt. U. S. C. I. Infty., who died, as we verily believe, while in the U. S. service on or about the 6th day of November 1864. We also state that we are well acquainted with Rose Chambers, who is making application for army pension, as widow of aforesaid Aaron Chambers, and know that she is the true and lawful widow of said soldier, Dec&#039;d. That they were never formally married for the reason that the laws of Kentucky did not require a license and record or formal marriage for persons of color, but recognized them as man and wife from the act of co&#039;dition. That the aforesaid Rose and Aaron Chambers commenced living together as man and wife on or about 15th day of March AD 1837, and continued to live together as such until the decease of aforesaid Aaron, according to custom of persons of color in the State of Kentucky. That we have often heard said Aaron Chambers call her (Rose Chambers) &quot;wife,&quot; and always treated and respected her in such relation. That they were considered as man and wife by all their neighbors and acquaintances, and considered respectable in the community in which they lived. That there are now living none of their (said Aaron and Rose Chambers) under the age of sixteen years. And that she has been a widow since the death of above named soldier (Aaron Chambers), Dec&#039;d.</hw>\n\nThat we have no interest in this matter.\n\nA. J. Hicks Jr. (1)\nW. D. Chambers (2)\n\nSworn to and subscribed before me, this <hw>Sixteenth</hw> day of <hw>September</hw> in the year 18<hw>67</hw>, and I hereby certify that the affiants are respectable and credible persons and reside as stated; that I believe their statements are correct and worthy of full faith and credit; and that I have no interest in this matter. I further certify that the foregoing affidavit was read over, fully explained to, and understood by the affiants before the signing and direction thereof.\n\nA. J. Hicks (3)\nN. P. H. Co. Ky."
+        },
+        "transcribe_handwriting": {
+            "text": "We A.J. Foster (1) and W.D. Chambers (2) each of lawful age,\n\nand residing in Ohio County of Daviess in the State of Kentucky\n\nupon our oaths declare that we were personally and well acquain-\n\nted with Aaron Chambers, Dec'd, late a private in Co E 12th Reg't Ky Vol Cavy who died on the on the battle field\n\nwhile in the U.S. service on or about the 6th day of November\n\nA.D. 1864. And we also state that we are personally\n\nwell acquainted with Rena Chambers, who was married as\n\nRena Anderson prior to her said husband's death.\n\nWe are further able to state that the said Rena has always borne the character\n\nof a virtuous and reputable woman, and that she has not married\n\nsince the death of her said husband. We remember the\n\nsaid soldier's enlisting in said service in our neighborhood, going to Green\n\nRiver under Col Brisbin in the said Reg't Co. & that he was always regarded\n\nwith high esteem. That the aforesaid Rena and Aaron\n\nor Aaron were regarded as husband and wife, and while so living were the\n\nparents of Sarah, Joshua, Polly, Lizzie &amp; Major Chambers, as referenced\n\nin statement of the declaring regarding Rena's application for pension.\n\nWe further say that the marriage of the aforesaid Aaron and Rena\n\nwas lawful and that their children as already named\n\nare the lawful children of both aforesaid parties.\n\nAnd we state that we have known Rena Chambers, said widow\n\nfor about 8 years before the death of her said husband\n\nthat she is a respectable woman, and has always carried\n\nherself in a circumspect and womanly manner. And that the\n\naforesaid Aaron was during his lifetime always regarded as a law-\n\nabiding, honest and reliable citizen.\n\nAnd W.D. Chambers knew the Enlistment Act the said Aaron\n\nwell and intimately, and knew him prior to his enlistment\n\nabout 12 or 18 months. And\n\nThat to the best of our knowledge and belief the said Rena\n\n(as above stated)\n\nhas been a widow since the death of above noticed\n\nsoldier (Aaron Chambers) died.\n\nSworn to be known. In this matter (3)\n\n\nA.J. Foster (1)\nW.D. Chambers (2)\n\nSworn to and subscribed before me, this Seventeenth day of September, in the year 1867\n\nand I hereby certify that the affiants are reputable and credible persons and reside as stated; that I believe their statements are\n\ncorrect and worthy of full faith and credit and that I have no interest in this matter. I further certify that the foregoing affida-\n\nvit was read over, fully explained to, and understood by the affiants before their signing and acknowledg[e]ment thereof.",
+            "language": "English",
+            "confidence": "medium",
+            "blocks": [
+                [
+                    "We A.J. Foster (1) and W.D. Chambers (2) each of lawful age,"
+                ],
+                [
+                    "and residing in Ohio County of Daviess in the State of Kentucky"
+                ],
+                [
+                    "upon our oaths declare that we were personally and well acquain-"
+                ],
+                [
+                    "ted with Aaron Chambers, Dec'd, late a private in Co E 12th Reg't Ky Vol Cavy who died on the on the battle field"
+                ],
+                [
+                    "while in the U.S. service on or about the 6th day of November"
+                ],
+                [
+                    "A.D. 1864. And we also state that we are personally"
+                ],
+                [
+                    "well acquainted with Rena Chambers, who was married as"
+                ],
+                [
+                    "Rena Anderson prior to her said husband's death."
+                ],
+                [
+                    "We are further able to state that the said Rena has always borne the character"
+                ],
+                [
+                    "of a virtuous and reputable woman, and that she has not married"
+                ],
+                [
+                    "since the death of her said husband. We remember the"
+                ],
+                [
+                    "said soldier's enlisting in said service in our neighborhood, going to Green"
+                ],
+                [
+                    "River under Col Brisbin in the said Reg't Co. & that he was always regarded"
+                ],
+                [
+                    "with high esteem. That the aforesaid Rena and Aaron"
+                ],
+                [
+                    "or Aaron were regarded as husband and wife, and while so living were the"
+                ],
+                [
+                    "parents of Sarah, Joshua, Polly, Lizzie &amp; Major Chambers, as referenced"
+                ],
+                [
+                    "in statement of the declaring regarding Rena's application for pension."
+                ],
+                [
+                    "We further say that the marriage of the aforesaid Aaron and Rena"
+                ],
+                [
+                    "was lawful and that their children as already named"
+                ],
+                [
+                    "are the lawful children of both aforesaid parties."
+                ],
+                [
+                    "And we state that we have known Rena Chambers, said widow"
+                ],
+                [
+                    "for about 8 years before the death of her said husband"
+                ],
+                [
+                    "that she is a respectable woman, and has always carried"
+                ],
+                [
+                    "herself in a circumspect and womanly manner. And that the"
+                ],
+                [
+                    "aforesaid Aaron was during his lifetime always regarded as a law-"
+                ],
+                [
+                    "abiding, honest and reliable citizen."
+                ],
+                [
+                    "And W.D. Chambers knew the Enlistment Act the said Aaron"
+                ],
+                [
+                    "well and intimately, and knew him prior to his enlistment"
+                ],
+                [
+                    "about 12 or 18 months. And"
+                ],
+                [
+                    "That to the best of our knowledge and belief the said Rena"
+                ],
+                [
+                    "(as above stated)"
+                ],
+                [
+                    "has been a widow since the death of above noticed"
+                ],
+                [
+                    "soldier (Aaron Chambers) died."
+                ],
+                [
+                    "Sworn to be known. In this matter (3)"
+                ],
+                [
+                    "A.J. Foster (1)"
+                ],
+                [
+                    "W.D. Chambers (2)"
+                ],
+                [
+                    "Sworn to and subscribed before me, this Seventeenth day of September, in the year 1867"
+                ],
+                [
+                    "and I hereby certify that the affiants are reputable and credible persons and reside as stated; that I believe their statements are"
+                ],
+                [
+                    "correct and worthy of full faith and credit and that I have no interest in this matter. I further certify that the foregoing affida-"
+                ],
+                [
+                    "vit was read over, fully explained to, and understood by the affiants before their signing and acknowledg[e]ment thereof."
+                ]
+            ],
+            "_tokens": {
+                "prompt": 1311,
+                "completion": 1321,
+                "total": 2632,
+                "cached": 0
+            }
+        }
+    }
+}
