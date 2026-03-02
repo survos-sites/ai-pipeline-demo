@@ -129,6 +129,15 @@
     }
     .pdf-page-summary strong { color:#a0aec0; }
 
+    /* Source fallback badge in page heading */
+    .page-src-badge {
+      font-size:10px; font-family:monospace; padding:1px 7px; border-radius:4px;
+      margin-left:4px; cursor:default;
+    }
+    .page-src-badge.ocr-only    { background:#2d2200; color:#d69e2e; border:1px solid #744210; }
+    .page-src-badge.transcribed { background:#1a2a1a; color:#68d391; border:1px solid #276749; }
+    .page-src-badge.failed      { background:#3b1515; color:#fed7d7; border:1px solid #742a2a; }
+
     /* Toggle button for proportional scaling */
     .scale-toggle {
       margin-left:auto;
@@ -460,7 +469,15 @@ function renderPdfPages(pdfUrl, sha1, ocrResult, annotateResult, allResults) {
     heading.className = 'pdf-page-heading';
     heading.style.gridColumn = '1 / -1';
     const dim = page.dimensions ? `${page.dimensions.width}x${page.dimensions.height}` : '';
-    heading.innerHTML = `<span class="pdf-page-num">Page ${pi + 1}</span>${dim ? `<span class="pdf-page-dim">${esc(dim)}</span>` : ''}`;
+    const src = page._text_source ?? '';
+    const srcBadge = src === 'ocr_only'
+      ? `<span class="page-src-badge ocr-only" title="Handwriting annotation timed out — showing raw OCR text">OCR only</span>`
+      : src === 'transcribed'
+      ? `<span class="page-src-badge transcribed" title="Annotation timed out — showing transcription">transcribed</span>`
+      : src === 'ocr_failed'
+      ? `<span class="page-src-badge failed" title="OCR failed for this page">OCR failed</span>`
+      : '';
+    heading.innerHTML = `<span class="pdf-page-num">Page ${pi + 1}</span>${dim ? `<span class="pdf-page-dim">${esc(dim)}</span>` : ''}${srcBadge}`;
 
     // Page-level summary from AI results if available
     const summary = allResults?.['summarize']?.pages?.[pi]?.summary
@@ -853,11 +870,82 @@ async function main() {
 
   // -- Render viewer based on type --
   if (isPdfItem) {
-    // PDF: render page images + OCR side by side
-    const ocrResult = results['ocr_mistral'];
-    const annotateResult = results['annotate_handwriting'];
-    if (ocrResult && !ocrResult.error) {
-      renderPdfPages(subject, hash, ocrResult, annotateResult, results);
+    const pagesMeta = results['_pages'];
+    if (pagesMeta?.pages?.length) {
+      // Per-page format: fetch each page file, assemble into renderPdfPages-compatible structure
+      const pageFiles  = pagesMeta.pages;
+      const totalPages = pageFiles.length;
+
+      const pageDataList = await Promise.all(pageFiles.map(async filename => {
+        try {
+          const r = await fetch(`${dataDir}/${filename}`);
+          return r.ok ? await r.json() : null;
+        } catch(_) { return null; }
+      }));
+
+      const syntheticPages = [];
+      const annotatedByPage = {};
+
+      for (let i = 0; i < pageDataList.length; i++) {
+        const pageResults = pageDataList[i]?.results ?? {};
+        const ocr = pageResults['ocr_mistral'] ?? {};
+        const ann = pageResults['annotate_handwriting'] ?? {};
+        const tra = pageResults['transcribe_handwriting'] ?? {};
+
+        const annOk = !ann.failed && !ann.error && ann.annotated_text;
+        const traOk = !tra.failed && !tra.error && tra.text;
+
+        // Track what text source we're using for the badge
+        let textSource;
+        let annotatedText;
+        if (annOk) {
+          annotatedText = ann.annotated_text;
+          textSource = 'annotated';
+        } else if (traOk) {
+          annotatedText = tra.text;
+          textSource = 'transcribed';
+        } else {
+          annotatedText = '';
+          textSource = (ocr.failed || ocr.error) ? 'ocr_failed' : 'ocr_only';
+        }
+
+        if (annotatedText) annotatedByPage[i] = annotatedText;
+
+        syntheticPages.push({
+          index: i,
+          markdown: ocr.text ?? '',
+          dimensions: ocr.dimensions ?? null,
+          tables: ocr.tables ?? [],
+          _layout_blocks: (ocr.layout_blocks ?? []).map(b => ({...b, page: i})),
+          _text_source: textSource,   // passed through to renderer for badge
+        });
+      }
+
+      const syntheticOcr = {
+        pages: syntheticPages,
+        layout_blocks: syntheticPages.flatMap(p => p._layout_blocks ?? []),
+        image_blocks: [],
+      };
+      const syntheticAnnotate = {
+        pages: syntheticPages.map(p => ({
+          index: p.index,
+          annotated_text: annotatedByPage[p.index] ?? '',
+        }))
+      };
+
+      renderPdfPages(subject, hash, syntheticOcr, syntheticAnnotate, results);
+
+    } else {
+      // Legacy format: single-file ocr_mistral.pages[]
+      const ocrResult     = results['ocr_mistral'];
+      const annotateResult = results['annotate_handwriting'];
+      if (ocrResult && !ocrResult.error && !ocrResult.failed) {
+        renderPdfPages(subject, hash, ocrResult, annotateResult, results);
+      } else {
+        document.getElementById('pdfPages').style.display = 'block';
+        document.getElementById('pdfPages').innerHTML =
+          '<p style="color:#fc8181;padding:20px">OCR failed. Run <code>bin/console app:process --force</code> to retry.</p>';
+      }
     }
   } else if (isImg(subject)) {
     // Image: magnifier viewer
@@ -871,30 +959,38 @@ async function main() {
     hero.onload = () => initMagnifier(wrap, hero, lens, lensImg, 4);
   }
 
-  // Pipeline track
+  // Pipeline track — skip internal _pages key
   const track = document.getElementById('pipelineTrack');
-  pipeline.forEach((taskName, i) => {
+  const SKIP_KEYS = new Set(['_pages']);
+  pipeline.filter(t => !SKIP_KEYS.has(t)).forEach((taskName, i, arr) => {
     const r   = results[taskName];
     const cls = !r ? '' : (r.error||r.failed) ? 'failed' : 'done';
     const btn = document.createElement('span');
     btn.className = 'track-step';
     btn.innerHTML = `<span class="track-label ${cls}" id="track-${taskName}"
         onclick="document.getElementById('task-${taskName}')?.scrollIntoView({behavior:'smooth'})"
-      >${esc(taskName)}</span>${i<pipeline.length-1?`<span class="track-arrow ${cls}">&rarr;</span>`:''}`;
+      >${esc(taskName)}</span>${i<arr.length-1?`<span class="track-arrow ${cls}">&rarr;</span>`:''}`;
     track.appendChild(btn);
   });
 
-  // Task sections in pipeline order
+  // Task sections in pipeline order — skip internal keys and page-level tasks
+  // (page-level results are shown inline in the PDF page viewer)
+  const PAGE_LEVEL = new Set(['ocr_mistral','annotate_handwriting','transcribe_handwriting','layout']);
   const sectionsEl = document.getElementById('taskSections');
   const rendered   = new Set();
+  const hasPerPage = !!(results['_pages']?.pages?.length);
+
   for (const taskName of pipeline) {
+    if (SKIP_KEYS.has(taskName)) continue;
+    if (hasPerPage && PAGE_LEVEL.has(taskName)) continue; // shown per-page above
     if (!results[taskName]) continue;
     sectionsEl.appendChild(renderTaskResult(taskName, results[taskName], subject, isPdfItem));
     rendered.add(taskName);
   }
-  for (const [taskName,result] of Object.entries(results)) {
-    if (!rendered.has(taskName))
-      sectionsEl.appendChild(renderTaskResult(taskName, result, subject, isPdfItem));
+  for (const [taskName, result] of Object.entries(results)) {
+    if (rendered.has(taskName) || SKIP_KEYS.has(taskName)) continue;
+    if (hasPerPage && PAGE_LEVEL.has(taskName)) continue;
+    sectionsEl.appendChild(renderTaskResult(taskName, result, subject, isPdfItem));
   }
 }
 
