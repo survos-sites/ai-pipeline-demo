@@ -284,17 +284,18 @@ const isPdf = url => /\.pdf(\?.*)?$/i.test(url);
 
 /** Minimal markdown -> HTML (headings, bold, italic, line breaks). */
 function mdToHtml(md) {
-  return esc(md)
+  return md
     .split('\n')
     .map(line => {
-      // Headings
-      if (line.startsWith('### ')) return `<h3>${line.slice(4)}</h3>`;
-      if (line.startsWith('## '))  return `<h2>${line.slice(3)}</h2>`;
-      if (line.startsWith('# '))   return `<h1>${line.slice(2)}</h1>`;
-      // Bold and italic
+      // Headings — escape the content, not the tag
+      if (line.startsWith('### ')) return `<h3>${esc(line.slice(4))}</h3>`;
+      if (line.startsWith('## '))  return `<h2>${esc(line.slice(3))}</h2>`;
+      if (line.startsWith('# '))   return `<h1>${esc(line.slice(2))}</h1>`;
+      // Escape first, then restore inline markdown spans
+      line = esc(line);
       line = line.replace(/\*\*\*(.+?)\*\*\*/g, '<strong><em>$1</em></strong>');
-      line = line.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
-      line = line.replace(/\*(.+?)\*/g, '<em>$1</em>');
+      line = line.replace(/\*\*(.+?)\*\*/g,      '<strong>$1</strong>');
+      line = line.replace(/\*(.+?)\*/g,           '<em>$1</em>');
       return line;
     })
     .join('\n');

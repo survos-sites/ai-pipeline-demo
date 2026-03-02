@@ -106,7 +106,7 @@ jobs:
         id: pdf-cache
         with:
           path: public/images/pages/
-          key: pdf-pages-${{ hashFiles('public/data/pdfs.json') }}
+          key: pdf-pages-v2-${{ hashFiles('public/data/pdfs.json') }}
 
       - name: Split PDFs into page images
         if: steps.pdf-cache.outputs.cache-hit != 'true'
