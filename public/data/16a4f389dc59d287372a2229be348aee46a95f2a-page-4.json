@@ -1,0 +1,352 @@
+{
+    "subject": "file:///home/tac/g/sites/ai-pipeline-demo/public/images/pages/16a4f389dc59d287372a2229be348aee46a95f2a-4.jpg",
+    "results": {
+        "ocr_mistral": {
+            "text": "Bible record of Green Hill Norman, Sr.\n\n# FAMILY RECORD.\n\n|  DEATHS. | DEATHS.  |\n| --- | --- |\n|  Martha Elizabeth Norman\nDied February the 1st 1903 in Searey County Arkansas | William M. Norman\nDied October 27 1903 in Stone Co. Ark  |\n|  Green H. Norman Son of G.H. & E.H. Norman\nDeparted this life Sept 15th 1872 in Searey County Ark | Albert Norman\nDied April 20th 1910\nBaxter Co  |\n|  Henry Clay Norman died February the 15 1886 in Stone County Ark. | Thomas H. Norman\nDied Feb 14, 1916 at Calico Rock Ark.\n2 yard Co.  |\n|  Eliza H. Norman\nWife of G.H. Norman\nDeported this life August the 27 1901 in Baxter County Ark | M.A. Norman\nDied June 15, 1929\nBaxter Co. Ark  |\n|  Green H. Norman\nDied June 12 1903 Searey Co. Ark | Annah Norman wife of Mary died May 25 1930\nMarion Co.  |\n|   | John F. Norman died Sept 7, 1935  |\n|   | F.M. Norman died April 18 1936  |",
+            "language": null,
+            "confidence": "high",
+            "layout_blocks": [
+                {
+                    "page": 0,
+                    "type": "headline",
+                    "text": "Bible record of Green Hill Norman, Sr.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 0,
+                        "width": 1622,
+                        "height": 141
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "headline",
+                    "text": "FAMILY RECORD.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 141,
+                        "width": 1622,
+                        "height": 141
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "column",
+                    "text": "DEATHS.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 281,
+                        "width": 811,
+                        "height": 141
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "column",
+                    "text": "DEATHS.",
+                    "bbox": {
+                        "x": 811,
+                        "y": 281,
+                        "width": 811,
+                        "height": 141
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "Martha Elizabeth Norman\nDied February the 1st 1903 in Searey County Arkansas",
+                    "bbox": {
+                        "x": 0,
+                        "y": 422,
+                        "width": 811,
+                        "height": 281
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "William M. Norman\nDied October 27 1903 in Stone Co. Ark",
+                    "bbox": {
+                        "x": 811,
+                        "y": 422,
+                        "width": 811,
+                        "height": 281
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "Green H. Norman Son of G.H. & E.H. Norman\nDeparted this life Sept 15th 1872 in Searey County Ark",
+                    "bbox": {
+                        "x": 0,
+                        "y": 703,
+                        "width": 811,
+                        "height": 281
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "Albert Norman\nDied April 20th 1910\nBaxter Co",
+                    "bbox": {
+                        "x": 811,
+                        "y": 703,
+                        "width": 811,
+                        "height": 281
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "Henry Clay Norman died February the 15 1886 in Stone County Ark.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 984,
+                        "width": 811,
+                        "height": 281
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "Thomas H. Norman\nDied Feb 14, 1916 at Calico Rock Ark.\n2 yard Co.",
+                    "bbox": {
+                        "x": 811,
+                        "y": 984,
+                        "width": 811,
+                        "height": 281
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "Eliza H. Norman\nWife of G.H. Norman\nDeported this life August the 27 1901 in Baxter County Ark",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1265,
+                        "width": 811,
+                        "height": 422
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "M.A. Norman\nDied June 15, 1929\nBaxter Co. Ark",
+                    "bbox": {
+                        "x": 811,
+                        "y": 1265,
+                        "width": 811,
+                        "height": 281
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "Green H. Norman\nDied June 12 1903 Searey Co. Ark",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1547,
+                        "width": 811,
+                        "height": 281
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "Annah Norman wife of Mary died May 25 1930\nMarion Co.",
+                    "bbox": {
+                        "x": 811,
+                        "y": 1547,
+                        "width": 811,
+                        "height": 281
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "John F. Norman died Sept 7, 1935",
+                    "bbox": {
+                        "x": 811,
+                        "y": 1828,
+                        "width": 811,
+                        "height": 141
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "F.M. Norman died April 18 1936",
+                    "bbox": {
+                        "x": 811,
+                        "y": 1968,
+                        "width": 811,
+                        "height": 141
+                    }
+                }
+            ],
+            "image_blocks": [],
+            "pages": [
+                {
+                    "index": 0,
+                    "markdown": "Bible record of Green Hill Norman, Sr.\n\n# FAMILY RECORD.\n\n|  DEATHS. | DEATHS.  |\n| --- | --- |\n|  Martha Elizabeth Norman\nDied February the 1st 1903 in Searey County Arkansas | William M. Norman\nDied October 27 1903 in Stone Co. Ark  |\n|  Green H. Norman Son of G.H. & E.H. Norman\nDeparted this life Sept 15th 1872 in Searey County Ark | Albert Norman\nDied April 20th 1910\nBaxter Co  |\n|  Henry Clay Norman died February the 15 1886 in Stone County Ark. | Thomas H. Norman\nDied Feb 14, 1916 at Calico Rock Ark.\n2 yard Co.  |\n|  Eliza H. Norman\nWife of G.H. Norman\nDeported this life August the 27 1901 in Baxter County Ark | M.A. Norman\nDied June 15, 1929\nBaxter Co. Ark  |\n|  Green H. Norman\nDied June 12 1903 Searey Co. Ark | Annah Norman wife of Mary died May 25 1930\nMarion Co.  |\n|   | John F. Norman died Sept 7, 1935  |\n|   | F.M. Norman died April 18 1936  |",
+                    "dimensions": {
+                        "dpi": 200,
+                        "height": 2109,
+                        "width": 1622
+                    },
+                    "tables": [],
+                    "header": null,
+                    "footer": null
+                }
+            ],
+            "raw_response": {
+                "pages": [
+                    {
+                        "index": 0,
+                        "markdown": "Bible record of Green Hill Norman, Sr.\n\n# FAMILY RECORD.\n\n|  DEATHS. | DEATHS.  |\n| --- | --- |\n|  Martha Elizabeth Norman\nDied February the 1st 1903 in Searey County Arkansas | William M. Norman\nDied October 27 1903 in Stone Co. Ark  |\n|  Green H. Norman Son of G.H. & E.H. Norman\nDeparted this life Sept 15th 1872 in Searey County Ark | Albert Norman\nDied April 20th 1910\nBaxter Co  |\n|  Henry Clay Norman died February the 15 1886 in Stone County Ark. | Thomas H. Norman\nDied Feb 14, 1916 at Calico Rock Ark.\n2 yard Co.  |\n|  Eliza H. Norman\nWife of G.H. Norman\nDeported this life August the 27 1901 in Baxter County Ark | M.A. Norman\nDied June 15, 1929\nBaxter Co. Ark  |\n|  Green H. Norman\nDied June 12 1903 Searey Co. Ark | Annah Norman wife of Mary died May 25 1930\nMarion Co.  |\n|   | John F. Norman died Sept 7, 1935  |\n|   | F.M. Norman died April 18 1936  |",
+                        "images": [],
+                        "tables": [],
+                        "hyperlinks": [],
+                        "header": null,
+                        "footer": null,
+                        "dimensions": {
+                            "dpi": 200,
+                            "height": 2109,
+                            "width": 1622
+                        }
+                    }
+                ],
+                "model": "mistral-ocr-latest",
+                "document_annotation": "{\n  \"blocks\": [\n    {\n      \"type\": \"headline\",\n      \"text\": \"Bible record of Green Hill Norman, Sr.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 0,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"headline\",\n      \"text\": \"FAMILY RECORD.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 20,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"column\",\n      \"text\": \"DEATHS.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 40,\n        \"width\": 50,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"column\",\n      \"text\": \"DEATHS.\",\n      \"bbox\": {\n        \"x\": 50,\n        \"y\": 40,\n        \"width\": 50,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"Martha Elizabeth Norman\\nDied February the 1st 1903 in Searey County Arkansas\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 60,\n        \"width\": 50,\n        \"height\": 40\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"William M. Norman\\nDied October 27 1903 in Stone Co. Ark\",\n      \"bbox\": {\n        \"x\": 50,\n        \"y\": 60,\n        \"width\": 50,\n        \"height\": 40\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"Green H. Norman Son of G.H. & E.H. Norman\\nDeparted this life Sept 15th 1872 in Searey County Ark\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 100,\n        \"width\": 50,\n        \"height\": 40\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"Albert Norman\\nDied April 20th 1910\\nBaxter Co\",\n      \"bbox\": {\n        \"x\": 50,\n        \"y\": 100,\n        \"width\": 50,\n        \"height\": 40\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"Henry Clay Norman died February the 15 1886 in Stone County Ark.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 140,\n        \"width\": 50,\n        \"height\": 40\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"Thomas H. Norman\\nDied Feb 14, 1916 at Calico Rock Ark.\\n2 yard Co.\",\n      \"bbox\": {\n        \"x\": 50,\n        \"y\": 140,\n        \"width\": 50,\n        \"height\": 40\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"Eliza H. Norman\\nWife of G.H. Norman\\nDeported this life August the 27 1901 in Baxter County Ark\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 180,\n        \"width\": 50,\n        \"height\": 60\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"M.A. Norman\\nDied June 15, 1929\\nBaxter Co. Ark\",\n      \"bbox\": {\n        \"x\": 50,\n        \"y\": 180,\n        \"width\": 50,\n        \"height\": 40\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"Green H. Norman\\nDied June 12 1903 Searey Co. Ark\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 220,\n        \"width\": 50,\n        \"height\": 40\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"Annah Norman wife of Mary died May 25 1930\\nMarion Co.\",\n      \"bbox\": {\n        \"x\": 50,\n        \"y\": 220,\n        \"width\": 50,\n        \"height\": 40\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"John F. Norman died Sept 7, 1935\",\n      \"bbox\": {\n        \"x\": 50,\n        \"y\": 260,\n        \"width\": 50,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"F.M. Norman died April 18 1936\",\n      \"bbox\": {\n        \"x\": 50,\n        \"y\": 280,\n        \"width\": 50,\n        \"height\": 20\n      }\n    }\n  ]\n}",
+                "usage_info": {
+                    "pages_processed": 1,
+                    "doc_size_bytes": 501245
+                }
+            }
+        },
+        "annotate_handwriting": {
+            "pages": [
+                {
+                    "index": 0,
+                    "annotated_text": "Bible record of <hw>Green Hill Norman, Sr.</hw>\n\n# FAMILY RECORD.\n\n|  DEATHS. | DEATHS.  |\n| --- | --- |\n|  <hw>Martha Elizabeth Norman\nDied February the 1st 1903 in Searey County Arkansas</hw> | <hw>William M. Norman\nDied October 27 1903 in Stone Co. Ark</hw>  |\n|  <hw>Green H. Norman Son of G.H. &amp; E.H. Norman\nDeparted this life Sept 15th 1872 in Searey County Ark</hw> | <hw>Albert Norman\nDied April 20th 1910\nBaxter Co</hw>  |\n|  <hw>Henry Clay Norman died February the 15 1886 in Stone County Ark.</hw> | <hw>Thomas H. Norman\nDied Feb 14, 1916 at Calico Rock Ark.\n2 yard Co.</hw>  |\n|  <hw>Eliza H. Norman\nWife of G.H. Norman\nDeported this life August the 27 1901 in Baxter County Ark</hw> | <hw>M.A. Norman\nDied June 15, 1929\nBaxter Co. Ark</hw>  |\n|  <hw>Green H. Norman\nDied June 12 1903 Searey Co.</hw> Ark | <hw>Annah Norman wife of Mary died May 25 1930\nMarion Co.</hw>  |\n|   | <hw>John F. Norman died Sept 7, 1935</hw>  |\n|   | <hw>F.M. Norman died April 18 1936</hw>  |"
+                }
+            ],
+            "annotated_text": "Bible record of <hw>Green Hill Norman, Sr.</hw>\n\n# FAMILY RECORD.\n\n|  DEATHS. | DEATHS.  |\n| --- | --- |\n|  <hw>Martha Elizabeth Norman\nDied February the 1st 1903 in Searey County Arkansas</hw> | <hw>William M. Norman\nDied October 27 1903 in Stone Co. Ark</hw>  |\n|  <hw>Green H. Norman Son of G.H. &amp; E.H. Norman\nDeparted this life Sept 15th 1872 in Searey County Ark</hw> | <hw>Albert Norman\nDied April 20th 1910\nBaxter Co</hw>  |\n|  <hw>Henry Clay Norman died February the 15 1886 in Stone County Ark.</hw> | <hw>Thomas H. Norman\nDied Feb 14, 1916 at Calico Rock Ark.\n2 yard Co.</hw>  |\n|  <hw>Eliza H. Norman\nWife of G.H. Norman\nDeported this life August the 27 1901 in Baxter County Ark</hw> | <hw>M.A. Norman\nDied June 15, 1929\nBaxter Co. Ark</hw>  |\n|  <hw>Green H. Norman\nDied June 12 1903 Searey Co.</hw> Ark | <hw>Annah Norman wife of Mary died May 25 1930\nMarion Co.</hw>  |\n|   | <hw>John F. Norman died Sept 7, 1935</hw>  |\n|   | <hw>F.M. Norman died April 18 1936</hw>  |"
+        },
+        "transcribe_handwriting": {
+            "text": "Bible record of Green Hill Norman, Sr.\n\nFAMILY RECORD.\n\n \n\nDEATHS.                      DEATHS.\n\nMartha Elizabeth Norman         William M Norman\nDied February th 10th           died October 27th 1903\n1870 in Searcy county           in Stone Co ark\nArkan[s]as\n                               Albert Norman\nGreen M Norman son             Died April 20th 1910\nof G.H. & E.H. Norman          Baxter Co\nDeparted this life Sept[ember] \n4th 1872 in Searcy county       Thomas H. Norman\nArkan[s]as                      Died Feb. 14, 1916 at\n                                Calico Rock, Ark.\nNancy Clay Norman died         Izard Co.\n February the 15 - 1886 in\n Stone county Arkie[sas]       M. A. Norman\n                                died Jan. 15, 1929\nCollier W. Norman               Baxter Co ark\nwife of G.H. Norman\nDeparted this life             Annah Norman wife of Mose\nAugust the 29th 1901           died May 26th - 1930\nin Baxter county Ark.          Marion Co.\n\nGreen H. Norman                John F. Norman died\nDied June the 12               Sept 7, 1935\n1902 Searcy Co.                \nark.                           F. M. Norman died\n                               april 18 - 1936",
+            "language": "english",
+            "confidence": "medium",
+            "blocks": [
+                [
+                    "Bible record of Green Hill Norman, Sr."
+                ],
+                [
+                    "FAMILY RECORD."
+                ],
+                [],
+                [
+                    "DEATHS.",
+                    "DEATHS."
+                ],
+                [],
+                [
+                    "Martha Elizabeth Norman",
+                    "William M Norman"
+                ],
+                [
+                    "Died February th 10th",
+                    "died October 27th 1903"
+                ],
+                [
+                    "1870 in Searcy county",
+                    "in Stone Co ark"
+                ],
+                [
+                    "Arkan[s]as"
+                ],
+                [],
+                [
+                    "Green M Norman son",
+                    "Albert Norman"
+                ],
+                [
+                    "of G.H. & E.H. Norman",
+                    "Died April 20th 1910"
+                ],
+                [
+                    "Departed this life Sept[ember]",
+                    "Baxter Co"
+                ],
+                [
+                    "4th 1872 in Searcy county"
+                ],
+                [
+                    "Arkan[s]as",
+                    "Thomas H. Norman"
+                ],
+                [
+                    "Died Feb. 14, 1916 at"
+                ],
+                [
+                    "Nancy Clay Norman died",
+                    "Calico Rock, Ark."
+                ],
+                [
+                    "February the 15 - 1886 in",
+                    "Izard Co."
+                ],
+                [
+                    "Stone county Arkie[sas]"
+                ],
+                [
+                    "M. A. Norman"
+                ],
+                [
+                    "Collier W. Norman",
+                    "died Jan. 15, 1929"
+                ],
+                [
+                    "wife of G.H. Norman",
+                    "Baxter Co ark"
+                ],
+                [
+                    "Departed this life",
+                    "Annah Norman wife of Mose"
+                ],
+                [
+                    "August the 29th 1901",
+                    "died May 26th - 1930"
+                ],
+                [
+                    "in Baxter county Ark.",
+                    "Marion Co."
+                ],
+                [],
+                [
+                    "Green H. Norman",
+                    "John F. Norman died"
+                ],
+                [
+                    "Died June the 12",
+                    "Sept 7, 1935"
+                ],
+                [
+                    "1902 Searcy Co."
+                ],
+                [
+                    "ark.",
+                    "F. M. Norman died"
+                ],
+                [
+                    "april 18 - 1936"
+                ]
+            ],
+            "_tokens": {
+                "prompt": 971,
+                "completion": 676,
+                "total": 1647,
+                "cached": 0
+            }
+        }
+    }
+}

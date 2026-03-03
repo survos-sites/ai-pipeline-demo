@@ -108,5 +108,17 @@
         ],
         "result_file": "e4a8887a9d90f6069cadbcc0efb7b0e87dc0c8d9.json",
         "status": "complete"
+    },
+    {
+        "url": "https://omeka-iaamcfh.s3.amazonaws.com/original/37fec8f573f18938ce02bad2a3f4d2cd6303c02e.jpg",
+        "title": "37fec8f573f18938ce02bad2a3f4d2cd6303c02e.jpg",
+        "pipeline": [
+            "ocr_mistral",
+            "classify",
+            "basic_description",
+            "keywords"
+        ],
+        "result_file": "bd192b123669a94591898e45b88caa6bfd2b9bed.json",
+        "status": "complete"
     }
 ]

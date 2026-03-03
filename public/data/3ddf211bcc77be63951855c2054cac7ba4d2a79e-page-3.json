@@ -1,0 +1,436 @@
+{
+    "subject": "file:///home/tac/g/sites/ai-pipeline-demo/public/images/pages/3ddf211bcc77be63951855c2054cac7ba4d2a79e-3.jpg",
+    "results": {
+        "ocr_mistral": {
+            "text": "as those in the Town of Warrenton, in Upperville, and many near Markham have already been briefly surveyed in past years.\n\nAt the end of the project, MacLeod estimates that about 1000 buildings will have been inventoried. They include all pre-Civil War structures and any of noteworthyities built since that time. As many as possible will be included in a book they hope to compile.\n\n## Can You Help?\n\nNews and Notes will contain a list each month of as many persons as possible who are conducting historical or genealogical research on persons or places related to Fauquier County. To be included in this column contact Ava Lee at the Fauquier County Library, Courthouse Square, Warrenton, Virginia 22186, 347-3401.\n\n**FLETCHER FAMILY.** Gary Fletcher, 1602 E. Third St., Wichita, Kansas 67214 is seeking information on Gibson Fletcher who was born in Virginia in 1775. He married Rhoda Heflin on May 11, 1799 in Fleming County, Kentucky.\n\n**PROUDFOOT FAMILY.** Dorsey A. Proudfoot, 2812 Jackson Avenue, El Paso, Texas 79930 needs information on the early life of John Proudfoot. He married Leanor Hitt, of German descent, and they lived in Fauquier County prior to 1803. Seven children were born to them here. They moved in 1803 to Harrison County, Virginia which is now part of West Virginia.\n\n**LANDSTREET.** David McCandlish, 181 Burlington Avenue, Rochester, New York 14619 would like any information on the Rev. John Landstreet who resided in Warrenton around 1855. Information on his birth, death, marriage(s) or where he was a minister would be appreciated.\n\n**WALLER FAMILY.** Thelma R. Waller, c/o Red Bird Hospital, Beverly, Kentucky 40913 is tracing the genealogy of the Waller family. Her great grandfather Aldridge Waller was born in Virginia on October 10, 1822. He moved to Kentucky from near Warrenton. His parents may have been Charles and Elizabeth Waller.\n\n**SKINKER FAMILY.** Rosanne Berkenstock, P.O. Box 117, Haymarket, Virginia 22069 is researching the Skinker family of Fauquier County with specific interest in the Spring Farm branch and those who owned land at Haymarket in the 18th and 19th centuries. Would like to review old letters, diaries, farm account books, etc.\n\n## Museum Now Open\n\nThe Old Gaol Museum opened for the 1979 season in April, and will continue to be open two days a week through October. Mrs. Frances Ritter will be overseeing the museum and she will open it for visitors each Wednesday and Saturday from 1 to 5 p.m.\n\nThe museum opened in 1976 through the dedicated efforts of William Parkinson and a host of other volunteers. It houses many items of interest that have been donated, and special exhibits are on display several times a year. If you have any items that you would like to donate to the museum, call one of the following: William Parkinson, 347-7650; Alex Beverley, 364-2072; or John Adams, 253-5273.\n\n## Committees Forming\n\nThe Board of Directors of the Fauquier Historical Society decided at a special meeting July 18 to hold directors' meetings regularly on the second Wednesday of each month at 4:30 p.m. at the Old Gaol or other designated location.\n\nVolunteers are still needed for some of the committees that were appointed at the meeting. If you are interested in helping, or have suggestions to make, contact the chairman of the committee you prefer.\n\n- Program: Edward Cooper, 347-2511, or 347-2620.\n- Publications (such as annual bulletin): William Parkinson, 347-7650.\n- Youth and Schools: Ava Lee, 347-7805 or 347-3401.\n- Newsletter: Rosanne Berkenstock, 347-4222 or 754-7385.\n- Museum: William Parkinson, 347-7650.\n- Museum Docents: Frances Ritter, 347-3699.\n- Publicity: Rosanne Berkenstock, 347-4222 or 754-7385.\n- Membership: Leah Cooper, 347-2511 or 347-2620.\n- Special Exhibits: Barbara Stinson, 347-2476.\n- County Historic Landmarks: Meade Palmer, 347-1685 or 347-1273.\n\n## Encampment, Open House\n\nMembers of the Fredericksburg Artillery held a reenactment of a Confederate encampment June 23 at Auburn (Neavil's) Mill near Casanova as part of an open house celebration hosted by Earth Design Associates.\n\nThe mill, renovated during the past few years by Earth Design, was open to visitors throughout the day. Barry W. Starke hosted the event.\n\n## Join Us\n\nMembership categories in the Fauquier Historical Society are listed on the form below. Present members are encouraged to renew their financial participation if they haven't already done so, while new friends are invited to join the Society. Membership dues are tax deductible.\n\nPlease Return To:\n\nThe Fauquier Historical Society\nP.O. Box 675\nWarrenton, Virginia 22186\n\nName: _________________________________ Telephone: _________________________________\n\nAddress: ___________________________________________________________\n\nCheck appropriate membership category:\n( )—Individual or family—$7.50\n( )—Contributing—$15\n( )—Sustaining—$25 and over\n( )—Student—$3\n( )—Business—$25",
+            "language": null,
+            "confidence": "high",
+            "layout_blocks": [
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "as those in the Town of Warrenton, in Upperville, and many near Markham have already been briefly surveyed in past years.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 0,
+                        "width": 1686,
+                        "height": 65
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "At the end of the project, MacLeod estimates that about 1000 buildings will have been inventoried. They include all pre-Civil War structures and any of noteworthyities built since that time. As many as possible will be included in a book they hope to compile.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 65,
+                        "width": 1686,
+                        "height": 105
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "headline",
+                    "text": "Can You Help?",
+                    "bbox": {
+                        "x": 0,
+                        "y": 170,
+                        "width": 1686,
+                        "height": 39
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "News and Notes will contain a list each month of as many persons as possible who are conducting historical or genealogical research on persons or places related to Fauquier County. To be included in this column contact Ava Lee at the Fauquier County Library, Courthouse Square, Warrenton, Virginia 22186, 347-3401.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 209,
+                        "width": 1686,
+                        "height": 105
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "**FLETCHER FAMILY.** Gary Fletcher, 1602 E. Third St., Wichita, Kansas 67214 is seeking information on Gibson Fletcher who was born in Virginia in 1775. He married Rhoda Heflin on May 11, 1799 in Fleming County, Kentucky.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 314,
+                        "width": 1686,
+                        "height": 79
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "**PROUDFOOT FAMILY.** Dorsey A. Proudfoot, 2812 Jackson Avenue, El Paso, Texas 79930 needs information on the early life of John Proudfoot. He married Leanor Hitt, of German descent, and they lived in Fauquier County prior to 1803. Seven children were born to them here. They moved in 1803 to Harrison County, Virginia which is now part of West Virginia.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 393,
+                        "width": 1686,
+                        "height": 105
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "**LANDSTREET.** David McCandlish, 181 Burlington Avenue, Rochester, New York 14619 would like any information on the Rev. John Landstreet who resided in Warrenton around 1855. Information on his birth, death, marriage(s) or where he was a minister would be appreciated.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 497,
+                        "width": 1686,
+                        "height": 79
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "**WALLER FAMILY.** Thelma R. Waller, c/o Red Bird Hospital, Beverly, Kentucky 40913 is tracing the genealogy of the Waller family. Her great grandfather Aldridge Waller was born in Virginia on October 10, 1822. He moved to Kentucky from near Warrenton. His parents may have been Charles and Elizabeth Waller.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 576,
+                        "width": 1686,
+                        "height": 105
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "**SKINKER FAMILY.** Rosanne Berkenstock, P.O. Box 117, Haymarket, Virginia 22069 is researching the Skinker family of Fauquier County with specific interest in the Spring Farm branch and those who owned land at Haymarket in the 18th and 19th centuries. Would like to review old letters, diaries, farm account books, etc.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 680,
+                        "width": 1686,
+                        "height": 105
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "headline",
+                    "text": "Museum Now Open",
+                    "bbox": {
+                        "x": 0,
+                        "y": 785,
+                        "width": 1686,
+                        "height": 39
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "The Old Gaol Museum opened for the 1979 season in April, and will continue to be open two days a week through October. Mrs. Frances Ritter will be overseeing the museum and she will open it for visitors each Wednesday and Saturday from 1 to 5 p.m.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 824,
+                        "width": 1686,
+                        "height": 79
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "The museum opened in 1976 through the dedicated efforts of William Parkinson and a host of other volunteers. It houses many items of interest that have been donated, and special exhibits are on display several times a year. If you have any items that you would like to donate to the museum, call one of the following: William Parkinson, 347-7650; Alex Beverley, 364-2072; or John Adams, 253-5273.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 903,
+                        "width": 1686,
+                        "height": 105
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "headline",
+                    "text": "Committees Forming",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1007,
+                        "width": 1686,
+                        "height": 39
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "The Board of Directors of the Fauquier Historical Society decided at a special meeting July 18 to hold directors' meetings regularly on the second Wednesday of each month at 4:30 p.m. at the Old Gaol or other designated location.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1047,
+                        "width": 1686,
+                        "height": 79
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "Volunteers are still needed for some of the committees that were appointed at the meeting. If you are interested in helping, or have suggestions to make, contact the chairman of the committee you prefer.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1125,
+                        "width": 1686,
+                        "height": 79
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "- Program: Edward Cooper, 347-2511, or 347-2620.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1204,
+                        "width": 1686,
+                        "height": 39
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "- Publications (such as annual bulletin): William Parkinson, 347-7650.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1243,
+                        "width": 1686,
+                        "height": 39
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "- Youth and Schools: Ava Lee, 347-7805 or 347-3401.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1282,
+                        "width": 1686,
+                        "height": 39
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "- Newsletter: Rosanne Berkenstock, 347-4222 or 754-7385.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1321,
+                        "width": 1686,
+                        "height": 39
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "- Museum: William Parkinson, 347-7650.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1361,
+                        "width": 1686,
+                        "height": 39
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "- Museum Docents: Frances Ritter, 347-3699.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1400,
+                        "width": 1686,
+                        "height": 39
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "- Publicity: Rosanne Berkenstock, 347-4222 or 754-7385.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1439,
+                        "width": 1686,
+                        "height": 39
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "- Membership: Leah Cooper, 347-2511 or 347-2620.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1478,
+                        "width": 1686,
+                        "height": 39
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "- Special Exhibits: Barbara Stinson, 347-2476.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1518,
+                        "width": 1686,
+                        "height": 39
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "- County Historic Landmarks: Meade Palmer, 347-1685 or 347-1273.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1557,
+                        "width": 1686,
+                        "height": 39
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "headline",
+                    "text": "Encampment, Open House",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1596,
+                        "width": 1686,
+                        "height": 39
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "Members of the Fredericksburg Artillery held a reenactment of a Confederate encampment June 23 at Auburn (Neavil's) Mill near Casanova as part of an open house celebration hosted by Earth Design Associates.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1635,
+                        "width": 1686,
+                        "height": 79
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "The mill, renovated during the past few years by Earth Design, was open to visitors throughout the day. Barry W. Starke hosted the event.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1714,
+                        "width": 1686,
+                        "height": 65
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "headline",
+                    "text": "Join Us",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1779,
+                        "width": 1686,
+                        "height": 39
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "Membership categories in the Fauquier Historical Society are listed on the form below. Present members are encouraged to renew their financial participation if they haven't already done so, while new friends are invited to join the Society. Membership dues are tax deductible.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1819,
+                        "width": 1686,
+                        "height": 79
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "Please Return To:",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1897,
+                        "width": 1686,
+                        "height": 39
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "The Fauquier Historical Society\nP.O. Box 675\nWarrenton, Virginia 22186",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1936,
+                        "width": 1686,
+                        "height": 79
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "Name: _________________________________ Telephone: _________________________________",
+                    "bbox": {
+                        "x": 0,
+                        "y": 2015,
+                        "width": 1686,
+                        "height": 39
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "Address: ___________________________________________________________",
+                    "bbox": {
+                        "x": 0,
+                        "y": 2054,
+                        "width": 1686,
+                        "height": 39
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "Check appropriate membership category:\n( )—Individual or family—$7.50\n( )—Contributing—$15\n( )—Sustaining—$25 and over\n( )—Student—$3\n( )—Business—$25",
+                    "bbox": {
+                        "x": 0,
+                        "y": 2093,
+                        "width": 1686,
+                        "height": 105
+                    }
+                }
+            ],
+            "image_blocks": [],
+            "pages": [
+                {
+                    "index": 0,
+                    "markdown": "as those in the Town of Warrenton, in Upperville, and many near Markham have already been briefly surveyed in past years.\n\nAt the end of the project, MacLeod estimates that about 1000 buildings will have been inventoried. They include all pre-Civil War structures and any of noteworthyities built since that time. As many as possible will be included in a book they hope to compile.\n\n## Can You Help?\n\nNews and Notes will contain a list each month of as many persons as possible who are conducting historical or genealogical research on persons or places related to Fauquier County. To be included in this column contact Ava Lee at the Fauquier County Library, Courthouse Square, Warrenton, Virginia 22186, 347-3401.\n\n**FLETCHER FAMILY.** Gary Fletcher, 1602 E. Third St., Wichita, Kansas 67214 is seeking information on Gibson Fletcher who was born in Virginia in 1775. He married Rhoda Heflin on May 11, 1799 in Fleming County, Kentucky.\n\n**PROUDFOOT FAMILY.** Dorsey A. Proudfoot, 2812 Jackson Avenue, El Paso, Texas 79930 needs information on the early life of John Proudfoot. He married Leanor Hitt, of German descent, and they lived in Fauquier County prior to 1803. Seven children were born to them here. They moved in 1803 to Harrison County, Virginia which is now part of West Virginia.\n\n**LANDSTREET.** David McCandlish, 181 Burlington Avenue, Rochester, New York 14619 would like any information on the Rev. John Landstreet who resided in Warrenton around 1855. Information on his birth, death, marriage(s) or where he was a minister would be appreciated.\n\n**WALLER FAMILY.** Thelma R. Waller, c/o Red Bird Hospital, Beverly, Kentucky 40913 is tracing the genealogy of the Waller family. Her great grandfather Aldridge Waller was born in Virginia on October 10, 1822. He moved to Kentucky from near Warrenton. His parents may have been Charles and Elizabeth Waller.\n\n**SKINKER FAMILY.** Rosanne Berkenstock, P.O. Box 117, Haymarket, Virginia 22069 is researching the Skinker family of Fauquier County with specific interest in the Spring Farm branch and those who owned land at Haymarket in the 18th and 19th centuries. Would like to review old letters, diaries, farm account books, etc.\n\n## Museum Now Open\n\nThe Old Gaol Museum opened for the 1979 season in April, and will continue to be open two days a week through October. Mrs. Frances Ritter will be overseeing the museum and she will open it for visitors each Wednesday and Saturday from 1 to 5 p.m.\n\nThe museum opened in 1976 through the dedicated efforts of William Parkinson and a host of other volunteers. It houses many items of interest that have been donated, and special exhibits are on display several times a year. If you have any items that you would like to donate to the museum, call one of the following: William Parkinson, 347-7650; Alex Beverley, 364-2072; or John Adams, 253-5273.\n\n## Committees Forming\n\nThe Board of Directors of the Fauquier Historical Society decided at a special meeting July 18 to hold directors' meetings regularly on the second Wednesday of each month at 4:30 p.m. at the Old Gaol or other designated location.\n\nVolunteers are still needed for some of the committees that were appointed at the meeting. If you are interested in helping, or have suggestions to make, contact the chairman of the committee you prefer.\n\n- Program: Edward Cooper, 347-2511, or 347-2620.\n- Publications (such as annual bulletin): William Parkinson, 347-7650.\n- Youth and Schools: Ava Lee, 347-7805 or 347-3401.\n- Newsletter: Rosanne Berkenstock, 347-4222 or 754-7385.\n- Museum: William Parkinson, 347-7650.\n- Museum Docents: Frances Ritter, 347-3699.\n- Publicity: Rosanne Berkenstock, 347-4222 or 754-7385.\n- Membership: Leah Cooper, 347-2511 or 347-2620.\n- Special Exhibits: Barbara Stinson, 347-2476.\n- County Historic Landmarks: Meade Palmer, 347-1685 or 347-1273.\n\n## Encampment, Open House\n\nMembers of the Fredericksburg Artillery held a reenactment of a Confederate encampment June 23 at Auburn (Neavil's) Mill near Casanova as part of an open house celebration hosted by Earth Design Associates.\n\nThe mill, renovated during the past few years by Earth Design, was open to visitors throughout the day. Barry W. Starke hosted the event.\n\n## Join Us\n\nMembership categories in the Fauquier Historical Society are listed on the form below. Present members are encouraged to renew their financial participation if they haven't already done so, while new friends are invited to join the Society. Membership dues are tax deductible.\n\nPlease Return To:\n\nThe Fauquier Historical Society\nP.O. Box 675\nWarrenton, Virginia 22186\n\nName: _________________________________ Telephone: _________________________________\n\nAddress: ___________________________________________________________\n\nCheck appropriate membership category:\n( )—Individual or family—$7.50\n( )—Contributing—$15\n( )—Sustaining—$25 and over\n( )—Student—$3\n( )—Business—$25",
+                    "dimensions": {
+                        "dpi": 200,
+                        "height": 2198,
+                        "width": 1686
+                    },
+                    "tables": [],
+                    "header": null,
+                    "footer": null
+                }
+            ],
+            "raw_response": {
+                "pages": [
+                    {
+                        "index": 0,
+                        "markdown": "as those in the Town of Warrenton, in Upperville, and many near Markham have already been briefly surveyed in past years.\n\nAt the end of the project, MacLeod estimates that about 1000 buildings will have been inventoried. They include all pre-Civil War structures and any of noteworthyities built since that time. As many as possible will be included in a book they hope to compile.\n\n## Can You Help?\n\nNews and Notes will contain a list each month of as many persons as possible who are conducting historical or genealogical research on persons or places related to Fauquier County. To be included in this column contact Ava Lee at the Fauquier County Library, Courthouse Square, Warrenton, Virginia 22186, 347-3401.\n\n**FLETCHER FAMILY.** Gary Fletcher, 1602 E. Third St., Wichita, Kansas 67214 is seeking information on Gibson Fletcher who was born in Virginia in 1775. He married Rhoda Heflin on May 11, 1799 in Fleming County, Kentucky.\n\n**PROUDFOOT FAMILY.** Dorsey A. Proudfoot, 2812 Jackson Avenue, El Paso, Texas 79930 needs information on the early life of John Proudfoot. He married Leanor Hitt, of German descent, and they lived in Fauquier County prior to 1803. Seven children were born to them here. They moved in 1803 to Harrison County, Virginia which is now part of West Virginia.\n\n**LANDSTREET.** David McCandlish, 181 Burlington Avenue, Rochester, New York 14619 would like any information on the Rev. John Landstreet who resided in Warrenton around 1855. Information on his birth, death, marriage(s) or where he was a minister would be appreciated.\n\n**WALLER FAMILY.** Thelma R. Waller, c/o Red Bird Hospital, Beverly, Kentucky 40913 is tracing the genealogy of the Waller family. Her great grandfather Aldridge Waller was born in Virginia on October 10, 1822. He moved to Kentucky from near Warrenton. His parents may have been Charles and Elizabeth Waller.\n\n**SKINKER FAMILY.** Rosanne Berkenstock, P.O. Box 117, Haymarket, Virginia 22069 is researching the Skinker family of Fauquier County with specific interest in the Spring Farm branch and those who owned land at Haymarket in the 18th and 19th centuries. Would like to review old letters, diaries, farm account books, etc.\n\n## Museum Now Open\n\nThe Old Gaol Museum opened for the 1979 season in April, and will continue to be open two days a week through October. Mrs. Frances Ritter will be overseeing the museum and she will open it for visitors each Wednesday and Saturday from 1 to 5 p.m.\n\nThe museum opened in 1976 through the dedicated efforts of William Parkinson and a host of other volunteers. It houses many items of interest that have been donated, and special exhibits are on display several times a year. If you have any items that you would like to donate to the museum, call one of the following: William Parkinson, 347-7650; Alex Beverley, 364-2072; or John Adams, 253-5273.\n\n## Committees Forming\n\nThe Board of Directors of the Fauquier Historical Society decided at a special meeting July 18 to hold directors' meetings regularly on the second Wednesday of each month at 4:30 p.m. at the Old Gaol or other designated location.\n\nVolunteers are still needed for some of the committees that were appointed at the meeting. If you are interested in helping, or have suggestions to make, contact the chairman of the committee you prefer.\n\n- Program: Edward Cooper, 347-2511, or 347-2620.\n- Publications (such as annual bulletin): William Parkinson, 347-7650.\n- Youth and Schools: Ava Lee, 347-7805 or 347-3401.\n- Newsletter: Rosanne Berkenstock, 347-4222 or 754-7385.\n- Museum: William Parkinson, 347-7650.\n- Museum Docents: Frances Ritter, 347-3699.\n- Publicity: Rosanne Berkenstock, 347-4222 or 754-7385.\n- Membership: Leah Cooper, 347-2511 or 347-2620.\n- Special Exhibits: Barbara Stinson, 347-2476.\n- County Historic Landmarks: Meade Palmer, 347-1685 or 347-1273.\n\n## Encampment, Open House\n\nMembers of the Fredericksburg Artillery held a reenactment of a Confederate encampment June 23 at Auburn (Neavil's) Mill near Casanova as part of an open house celebration hosted by Earth Design Associates.\n\nThe mill, renovated during the past few years by Earth Design, was open to visitors throughout the day. Barry W. Starke hosted the event.\n\n## Join Us\n\nMembership categories in the Fauquier Historical Society are listed on the form below. Present members are encouraged to renew their financial participation if they haven't already done so, while new friends are invited to join the Society. Membership dues are tax deductible.\n\nPlease Return To:\n\nThe Fauquier Historical Society\nP.O. Box 675\nWarrenton, Virginia 22186\n\nName: _________________________________ Telephone: _________________________________\n\nAddress: ___________________________________________________________\n\nCheck appropriate membership category:\n( )—Individual or family—$7.50\n( )—Contributing—$15\n( )—Sustaining—$25 and over\n( )—Student—$3\n( )—Business—$25",
+                        "images": [],
+                        "tables": [],
+                        "hyperlinks": [],
+                        "header": null,
+                        "footer": null,
+                        "dimensions": {
+                            "dpi": 200,
+                            "height": 2198,
+                            "width": 1686
+                        }
+                    }
+                ],
+                "model": "mistral-ocr-latest",
+                "document_annotation": "{\n  \"blocks\": [\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"as those in the Town of Warrenton, in Upperville, and many near Markham have already been briefly surveyed in past years.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 0,\n        \"width\": 500,\n        \"height\": 50\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"At the end of the project, MacLeod estimates that about 1000 buildings will have been inventoried. They include all pre-Civil War structures and any of noteworthyities built since that time. As many as possible will be included in a book they hope to compile.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 50,\n        \"width\": 500,\n        \"height\": 80\n      }\n    },\n    {\n      \"type\": \"headline\",\n      \"text\": \"Can You Help?\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 130,\n        \"width\": 500,\n        \"height\": 30\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"News and Notes will contain a list each month of as many persons as possible who are conducting historical or genealogical research on persons or places related to Fauquier County. To be included in this column contact Ava Lee at the Fauquier County Library, Courthouse Square, Warrenton, Virginia 22186, 347-3401.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 160,\n        \"width\": 500,\n        \"height\": 80\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"**FLETCHER FAMILY.** Gary Fletcher, 1602 E. Third St., Wichita, Kansas 67214 is seeking information on Gibson Fletcher who was born in Virginia in 1775. He married Rhoda Heflin on May 11, 1799 in Fleming County, Kentucky.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 240,\n        \"width\": 500,\n        \"height\": 60\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"**PROUDFOOT FAMILY.** Dorsey A. Proudfoot, 2812 Jackson Avenue, El Paso, Texas 79930 needs information on the early life of John Proudfoot. He married Leanor Hitt, of German descent, and they lived in Fauquier County prior to 1803. Seven children were born to them here. They moved in 1803 to Harrison County, Virginia which is now part of West Virginia.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 300,\n        \"width\": 500,\n        \"height\": 80\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"**LANDSTREET.** David McCandlish, 181 Burlington Avenue, Rochester, New York 14619 would like any information on the Rev. John Landstreet who resided in Warrenton around 1855. Information on his birth, death, marriage(s) or where he was a minister would be appreciated.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 380,\n        \"width\": 500,\n        \"height\": 60\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"**WALLER FAMILY.** Thelma R. Waller, c/o Red Bird Hospital, Beverly, Kentucky 40913 is tracing the genealogy of the Waller family. Her great grandfather Aldridge Waller was born in Virginia on October 10, 1822. He moved to Kentucky from near Warrenton. His parents may have been Charles and Elizabeth Waller.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 440,\n        \"width\": 500,\n        \"height\": 80\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"**SKINKER FAMILY.** Rosanne Berkenstock, P.O. Box 117, Haymarket, Virginia 22069 is researching the Skinker family of Fauquier County with specific interest in the Spring Farm branch and those who owned land at Haymarket in the 18th and 19th centuries. Would like to review old letters, diaries, farm account books, etc.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 520,\n        \"width\": 500,\n        \"height\": 80\n      }\n    },\n    {\n      \"type\": \"headline\",\n      \"text\": \"Museum Now Open\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 600,\n        \"width\": 500,\n        \"height\": 30\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"The Old Gaol Museum opened for the 1979 season in April, and will continue to be open two days a week through October. Mrs. Frances Ritter will be overseeing the museum and she will open it for visitors each Wednesday and Saturday from 1 to 5 p.m.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 630,\n        \"width\": 500,\n        \"height\": 60\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"The museum opened in 1976 through the dedicated efforts of William Parkinson and a host of other volunteers. It houses many items of interest that have been donated, and special exhibits are on display several times a year. If you have any items that you would like to donate to the museum, call one of the following: William Parkinson, 347-7650; Alex Beverley, 364-2072; or John Adams, 253-5273.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 690,\n        \"width\": 500,\n        \"height\": 80\n      }\n    },\n    {\n      \"type\": \"headline\",\n      \"text\": \"Committees Forming\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 770,\n        \"width\": 500,\n        \"height\": 30\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"The Board of Directors of the Fauquier Historical Society decided at a special meeting July 18 to hold directors' meetings regularly on the second Wednesday of each month at 4:30 p.m. at the Old Gaol or other designated location.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 800,\n        \"width\": 500,\n        \"height\": 60\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"Volunteers are still needed for some of the committees that were appointed at the meeting. If you are interested in helping, or have suggestions to make, contact the chairman of the committee you prefer.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 860,\n        \"width\": 500,\n        \"height\": 60\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"- Program: Edward Cooper, 347-2511, or 347-2620.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 920,\n        \"width\": 500,\n        \"height\": 30\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"- Publications (such as annual bulletin): William Parkinson, 347-7650.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 950,\n        \"width\": 500,\n        \"height\": 30\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"- Youth and Schools: Ava Lee, 347-7805 or 347-3401.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 980,\n        \"width\": 500,\n        \"height\": 30\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"- Newsletter: Rosanne Berkenstock, 347-4222 or 754-7385.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 1010,\n        \"width\": 500,\n        \"height\": 30\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"- Museum: William Parkinson, 347-7650.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 1040,\n        \"width\": 500,\n        \"height\": 30\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"- Museum Docents: Frances Ritter, 347-3699.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 1070,\n        \"width\": 500,\n        \"height\": 30\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"- Publicity: Rosanne Berkenstock, 347-4222 or 754-7385.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 1100,\n        \"width\": 500,\n        \"height\": 30\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"- Membership: Leah Cooper, 347-2511 or 347-2620.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 1130,\n        \"width\": 500,\n        \"height\": 30\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"- Special Exhibits: Barbara Stinson, 347-2476.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 1160,\n        \"width\": 500,\n        \"height\": 30\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"- County Historic Landmarks: Meade Palmer, 347-1685 or 347-1273.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 1190,\n        \"width\": 500,\n        \"height\": 30\n      }\n    },\n    {\n      \"type\": \"headline\",\n      \"text\": \"Encampment, Open House\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 1220,\n        \"width\": 500,\n        \"height\": 30\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"Members of the Fredericksburg Artillery held a reenactment of a Confederate encampment June 23 at Auburn (Neavil's) Mill near Casanova as part of an open house celebration hosted by Earth Design Associates.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 1250,\n        \"width\": 500,\n        \"height\": 60\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"The mill, renovated during the past few years by Earth Design, was open to visitors throughout the day. Barry W. Starke hosted the event.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 1310,\n        \"width\": 500,\n        \"height\": 50\n      }\n    },\n    {\n      \"type\": \"headline\",\n      \"text\": \"Join Us\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 1360,\n        \"width\": 500,\n        \"height\": 30\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"Membership categories in the Fauquier Historical Society are listed on the form below. Present members are encouraged to renew their financial participation if they haven't already done so, while new friends are invited to join the Society. Membership dues are tax deductible.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 1390,\n        \"width\": 500,\n        \"height\": 60\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"Please Return To:\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 1450,\n        \"width\": 500,\n        \"height\": 30\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"The Fauquier Historical Society\\nP.O. Box 675\\nWarrenton, Virginia 22186\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 1480,\n        \"width\": 500,\n        \"height\": 60\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"Name: _________________________________ Telephone: _________________________________\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 1540,\n        \"width\": 500,\n        \"height\": 30\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"Address: ___________________________________________________________\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 1570,\n        \"width\": 500,\n        \"height\": 30\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"Check appropriate membership category:\\n( )—Individual or family—$7.50\\n( )—Contributing—$15\\n( )—Sustaining—$25 and over\\n( )—Student—$3\\n( )—Business—$25\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 1600,\n        \"width\": 500,\n        \"height\": 80\n      }\n    }\n  ]\n}",
+                "usage_info": {
+                    "pages_processed": 1,
+                    "doc_size_bytes": 670984
+                }
+            }
+        }
+    }
+}

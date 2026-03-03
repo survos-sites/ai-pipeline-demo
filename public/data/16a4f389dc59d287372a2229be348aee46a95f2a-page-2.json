@@ -1,0 +1,143 @@
+{
+    "subject": "file:///home/tac/g/sites/ai-pipeline-demo/public/images/pages/16a4f389dc59d287372a2229be348aee46a95f2a-2.jpg",
+    "results": {
+        "ocr_mistral": {
+            "text": "Babbles record of Green Hill Norman, Sr.\n\nFAMILY RECORD.\n\n|  BIRTHS. | BIRTHS.  |\n| --- | --- |\n|  Green Hill Norman son of G. H. & Eliza H. Norman was born Feb 17th 1871 in Derivay County AR |   |",
+            "language": null,
+            "confidence": "high",
+            "layout_blocks": [
+                {
+                    "page": 0,
+                    "type": "headline",
+                    "text": "Babbles record of Green Hill Norman, Sr.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 0,
+                        "width": 1592,
+                        "height": 417
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "subheadline",
+                    "text": "FAMILY RECORD.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 417,
+                        "width": 531,
+                        "height": 417
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "column",
+                    "text": "BIRTHS.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 834,
+                        "width": 531,
+                        "height": 417
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "column",
+                    "text": "BIRTHS.",
+                    "bbox": {
+                        "x": 796,
+                        "y": 834,
+                        "width": 531,
+                        "height": 417
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "Green Hill Norman son of G. H. & Eliza H. Norman was born Feb 17th 1871 in Derivay County AR",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1250,
+                        "width": 1592,
+                        "height": 834
+                    }
+                }
+            ],
+            "image_blocks": [],
+            "pages": [
+                {
+                    "index": 0,
+                    "markdown": "Babbles record of Green Hill Norman, Sr.\n\nFAMILY RECORD.\n\n|  BIRTHS. | BIRTHS.  |\n| --- | --- |\n|  Green Hill Norman son of G. H. & Eliza H. Norman was born Feb 17th 1871 in Derivay County AR |   |",
+                    "dimensions": {
+                        "dpi": 200,
+                        "height": 2084,
+                        "width": 1592
+                    },
+                    "tables": [],
+                    "header": null,
+                    "footer": null
+                }
+            ],
+            "raw_response": {
+                "pages": [
+                    {
+                        "index": 0,
+                        "markdown": "Babbles record of Green Hill Norman, Sr.\n\nFAMILY RECORD.\n\n|  BIRTHS. | BIRTHS.  |\n| --- | --- |\n|  Green Hill Norman son of G. H. & Eliza H. Norman was born Feb 17th 1871 in Derivay County AR |   |",
+                        "images": [],
+                        "tables": [],
+                        "hyperlinks": [],
+                        "header": null,
+                        "footer": null,
+                        "dimensions": {
+                            "dpi": 200,
+                            "height": 2084,
+                            "width": 1592
+                        }
+                    }
+                ],
+                "model": "mistral-ocr-latest",
+                "document_annotation": "{\n  \"blocks\": [\n    {\n      \"type\": \"headline\",\n      \"text\": \"Babbles record of Green Hill Norman, Sr.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 0,\n        \"width\": 300,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"subheadline\",\n      \"text\": \"FAMILY RECORD.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 20,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"column\",\n      \"text\": \"BIRTHS.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 40,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"column\",\n      \"text\": \"BIRTHS.\",\n      \"bbox\": {\n        \"x\": 150,\n        \"y\": 40,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"Green Hill Norman son of G. H. & Eliza H. Norman was born Feb 17th 1871 in Derivay County AR\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 60,\n        \"width\": 300,\n        \"height\": 40\n      }\n    }\n  ]\n}",
+                "usage_info": {
+                    "pages_processed": 1,
+                    "doc_size_bytes": 201374
+                }
+            }
+        },
+        "annotate_handwriting": {
+            "pages": [
+                {
+                    "index": 0,
+                    "annotated_text": "Babbles <hw>record</hw> of <hw>Green Hill Norman Sr.</hw>\n\nFAMILY RECORD.\n\n|  BIRTHS. | BIRTHS.  |\n| --- | --- |\n|  <hw>Green Hill Norman son of G. H. & Eliza H. Norman was born Feb 17th 1871 in Derivay County AR</hw> |   |"
+                }
+            ],
+            "annotated_text": "Babbles <hw>record</hw> of <hw>Green Hill Norman Sr.</hw>\n\nFAMILY RECORD.\n\n|  BIRTHS. | BIRTHS.  |\n| --- | --- |\n|  <hw>Green Hill Norman son of G. H. & Eliza H. Norman was born Feb 17th 1871 in Derivay County AR</hw> |   |"
+        },
+        "transcribe_handwriting": {
+            "text": "Bible record of Green Hill Norman Sr.\n\nFAMILY RECORD.\n\nBIRTHS.\n\nGreen Hill Norman son\nof E. W. & Eliza H. Norman\nwas born Sept. 17th 1877\nin Boyle County, C.A. [Kentucky]",
+            "language": "English",
+            "confidence": "high",
+            "blocks": [
+                [
+                    "Bible record of Green Hill Norman Sr."
+                ],
+                [
+                    "FAMILY RECORD."
+                ],
+                [
+                    "BIRTHS."
+                ],
+                [
+                    "Green Hill Norman son",
+                    "of E. W. & Eliza H. Norman",
+                    "was born Sept. 17th 1877",
+                    "in Boyle County, C.A. [Kentucky]"
+                ]
+            ],
+            "_tokens": {
+                "prompt": 971,
+                "completion": 140,
+                "total": 1111,
+                "cached": 0
+            }
+        }
+    }
+}

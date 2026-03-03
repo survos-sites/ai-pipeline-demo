@@ -1,0 +1,53 @@
+{
+    "subject": "https://omeka-iaamcfh.s3.amazonaws.com/original/46394498cdb8cc609c466b578845c0ac83b804df.pdf",
+    "results": {
+        "_pages": {
+            "page_count": 4,
+            "pages": [
+                "16a4f389dc59d287372a2229be348aee46a95f2a-page-1.json",
+                "16a4f389dc59d287372a2229be348aee46a95f2a-page-2.json",
+                "16a4f389dc59d287372a2229be348aee46a95f2a-page-3.json",
+                "16a4f389dc59d287372a2229be348aee46a95f2a-page-4.json"
+            ]
+        },
+        "people_and_places": {
+            "people": [],
+            "places": [],
+            "organisations": [],
+            "_tokens": {
+                "prompt": 213,
+                "completion": 12,
+                "total": 225,
+                "cached": 0
+            }
+        },
+        "extract_metadata": {
+            "dateRange": null,
+            "people": [],
+            "places": [],
+            "subjects": [],
+            "language": null,
+            "organisations": [],
+            "_tokens": {
+                "prompt": 268,
+                "completion": 24,
+                "total": 292,
+                "cached": 0
+            }
+        },
+        "generate_title": {
+            "title": "Smith Family Portrait, 1920s",
+            "alternativeTitles": [
+                "Portrait of the Smith Family, 1920s",
+                "1920s Smith Family Group Photo"
+            ],
+            "confidence": "high",
+            "_tokens": {
+                "prompt": 157,
+                "completion": 40,
+                "total": 197,
+                "cached": 0
+            }
+        }
+    }
+}

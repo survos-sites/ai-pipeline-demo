@@ -1,0 +1,318 @@
+{
+    "subject": "file:///home/tac/g/sites/ai-pipeline-demo/public/images/pages/16a4f389dc59d287372a2229be348aee46a95f2a-3.jpg",
+    "results": {
+        "ocr_mistral": {
+            "text": "Bible record of Green Hill Norman, Sr.\nEliza H. Rosson, Norman\nDAU. OF HENRY ROSSON, &amp; WIFE, REBECCA, OF TENN.\nFAMILY RECORD.\n\n|  MARRIAGES. | MARRIAGES.  |\n| --- | --- |\n|  Green H. Norman\nand Eliza H. Norman\nwas married October\nthe 31st 1847\nin Texas | Morgan A. Norman\nand Roxannah Looson\nwas married July the\n29th 1869  |\n|  Louisa M. Baker\ndied Feb 10 1939\nmtn Home Baxter Co Ark. | Asa Baker and Lou\nNorman was married\nSept 19th 1872  |\n|  Mary J. Ticer\ndied Mch 11, 1942\nFlippin, Marion Co. Ark. | William M. Norman\nand Sofia Baker\nwas married January the\n11th 1874  |\n|  Louisa M. Baker\ndied Feb 10 1937\nat Mtn Home Ark. | John F. Norman and\nMarg A. Alexander was\nmarried July the 24th\n1874  |\n|  Sarah Emaline\n\"Dollie\" Lee\nDied Jan 6th 1951\nFlippin\nMarion County\nArk. | F. M. Norman\nMarried April 5\n1885 to\nAmanda Baker  |",
+            "language": null,
+            "confidence": "high",
+            "layout_blocks": [
+                {
+                    "page": 0,
+                    "type": "headline",
+                    "text": "Bible record of Green Hill Norman, Sr.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 0,
+                        "width": 1638,
+                        "height": 129
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "byline",
+                    "text": "Eliza H. Rosson, Norman",
+                    "bbox": {
+                        "x": 0,
+                        "y": 129,
+                        "width": 1638,
+                        "height": 129
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "byline",
+                    "text": "DAU. OF HENRY ROSSON, & WIFE, REBECCA, OF TENN.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 259,
+                        "width": 1638,
+                        "height": 129
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "headline",
+                    "text": "FAMILY RECORD.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 388,
+                        "width": 1638,
+                        "height": 129
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "column",
+                    "text": "MARRIAGES.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 518,
+                        "width": 819,
+                        "height": 129
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "column",
+                    "text": "MARRIAGES.",
+                    "bbox": {
+                        "x": 819,
+                        "y": 518,
+                        "width": 819,
+                        "height": 129
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "Green H. Norman and Eliza H. Norman was married October the 31st 1847 in Texas",
+                    "bbox": {
+                        "x": 0,
+                        "y": 647,
+                        "width": 819,
+                        "height": 388
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "Morgan A. Norman and Roxannah Looson was married July the 29th 1869",
+                    "bbox": {
+                        "x": 819,
+                        "y": 647,
+                        "width": 819,
+                        "height": 388
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "Louisa M. Baker died Feb 10 1939 mtn Home Baxter Co Ark.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1035,
+                        "width": 819,
+                        "height": 259
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "Asa Baker and Lou Norman was married Sept 19th 1872",
+                    "bbox": {
+                        "x": 819,
+                        "y": 1035,
+                        "width": 819,
+                        "height": 259
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "Mary J. Ticer died Mch 11, 1942 Flippin, Marion Co. Ark.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1294,
+                        "width": 819,
+                        "height": 259
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "William M. Norman and Sofia Baker was married January the 11th 1874",
+                    "bbox": {
+                        "x": 819,
+                        "y": 1294,
+                        "width": 819,
+                        "height": 259
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "Louisa M. Baker died Feb 10 1937 at Mtn Home Ark.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1553,
+                        "width": 819,
+                        "height": 259
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "John F. Norman and Marg A. Alexander was married July the 24th 1874",
+                    "bbox": {
+                        "x": 819,
+                        "y": 1553,
+                        "width": 819,
+                        "height": 259
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "Sarah Emaline \"Dollie\" Lee Died Jan 6th 1951 Flippin Marion County Ark.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1811,
+                        "width": 819,
+                        "height": 259
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "F. M. Norman Married April 5 1885 to Amanda Baker",
+                    "bbox": {
+                        "x": 819,
+                        "y": 1811,
+                        "width": 819,
+                        "height": 259
+                    }
+                }
+            ],
+            "image_blocks": [],
+            "pages": [
+                {
+                    "index": 0,
+                    "markdown": "Bible record of Green Hill Norman, Sr.\nEliza H. Rosson, Norman\nDAU. OF HENRY ROSSON, &amp; WIFE, REBECCA, OF TENN.\nFAMILY RECORD.\n\n|  MARRIAGES. | MARRIAGES.  |\n| --- | --- |\n|  Green H. Norman\nand Eliza H. Norman\nwas married October\nthe 31st 1847\nin Texas | Morgan A. Norman\nand Roxannah Looson\nwas married July the\n29th 1869  |\n|  Louisa M. Baker\ndied Feb 10 1939\nmtn Home Baxter Co Ark. | Asa Baker and Lou\nNorman was married\nSept 19th 1872  |\n|  Mary J. Ticer\ndied Mch 11, 1942\nFlippin, Marion Co. Ark. | William M. Norman\nand Sofia Baker\nwas married January the\n11th 1874  |\n|  Louisa M. Baker\ndied Feb 10 1937\nat Mtn Home Ark. | John F. Norman and\nMarg A. Alexander was\nmarried July the 24th\n1874  |\n|  Sarah Emaline\n\"Dollie\" Lee\nDied Jan 6th 1951\nFlippin\nMarion County\nArk. | F. M. Norman\nMarried April 5\n1885 to\nAmanda Baker  |",
+                    "dimensions": {
+                        "dpi": 200,
+                        "height": 2070,
+                        "width": 1638
+                    },
+                    "tables": [],
+                    "header": null,
+                    "footer": null
+                }
+            ],
+            "raw_response": {
+                "pages": [
+                    {
+                        "index": 0,
+                        "markdown": "Bible record of Green Hill Norman, Sr.\nEliza H. Rosson, Norman\nDAU. OF HENRY ROSSON, &amp; WIFE, REBECCA, OF TENN.\nFAMILY RECORD.\n\n|  MARRIAGES. | MARRIAGES.  |\n| --- | --- |\n|  Green H. Norman\nand Eliza H. Norman\nwas married October\nthe 31st 1847\nin Texas | Morgan A. Norman\nand Roxannah Looson\nwas married July the\n29th 1869  |\n|  Louisa M. Baker\ndied Feb 10 1939\nmtn Home Baxter Co Ark. | Asa Baker and Lou\nNorman was married\nSept 19th 1872  |\n|  Mary J. Ticer\ndied Mch 11, 1942\nFlippin, Marion Co. Ark. | William M. Norman\nand Sofia Baker\nwas married January the\n11th 1874  |\n|  Louisa M. Baker\ndied Feb 10 1937\nat Mtn Home Ark. | John F. Norman and\nMarg A. Alexander was\nmarried July the 24th\n1874  |\n|  Sarah Emaline\n\"Dollie\" Lee\nDied Jan 6th 1951\nFlippin\nMarion County\nArk. | F. M. Norman\nMarried April 5\n1885 to\nAmanda Baker  |",
+                        "images": [],
+                        "tables": [],
+                        "hyperlinks": [],
+                        "header": null,
+                        "footer": null,
+                        "dimensions": {
+                            "dpi": 200,
+                            "height": 2070,
+                            "width": 1638
+                        }
+                    }
+                ],
+                "model": "mistral-ocr-latest",
+                "document_annotation": "{\n  \"blocks\": [\n    {\n      \"type\": \"headline\",\n      \"text\": \"Bible record of Green Hill Norman, Sr.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 0,\n        \"width\": 300,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"byline\",\n      \"text\": \"Eliza H. Rosson, Norman\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 20,\n        \"width\": 300,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"byline\",\n      \"text\": \"DAU. OF HENRY ROSSON, & WIFE, REBECCA, OF TENN.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 40,\n        \"width\": 300,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"headline\",\n      \"text\": \"FAMILY RECORD.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 60,\n        \"width\": 300,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"column\",\n      \"text\": \"MARRIAGES.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 80,\n        \"width\": 150,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"column\",\n      \"text\": \"MARRIAGES.\",\n      \"bbox\": {\n        \"x\": 150,\n        \"y\": 80,\n        \"width\": 150,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"Green H. Norman and Eliza H. Norman was married October the 31st 1847 in Texas\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 100,\n        \"width\": 150,\n        \"height\": 60\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"Morgan A. Norman and Roxannah Looson was married July the 29th 1869\",\n      \"bbox\": {\n        \"x\": 150,\n        \"y\": 100,\n        \"width\": 150,\n        \"height\": 60\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"Louisa M. Baker died Feb 10 1939 mtn Home Baxter Co Ark.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 160,\n        \"width\": 150,\n        \"height\": 40\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"Asa Baker and Lou Norman was married Sept 19th 1872\",\n      \"bbox\": {\n        \"x\": 150,\n        \"y\": 160,\n        \"width\": 150,\n        \"height\": 40\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"Mary J. Ticer died Mch 11, 1942 Flippin, Marion Co. Ark.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 200,\n        \"width\": 150,\n        \"height\": 40\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"William M. Norman and Sofia Baker was married January the 11th 1874\",\n      \"bbox\": {\n        \"x\": 150,\n        \"y\": 200,\n        \"width\": 150,\n        \"height\": 40\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"Louisa M. Baker died Feb 10 1937 at Mtn Home Ark.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 240,\n        \"width\": 150,\n        \"height\": 40\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"John F. Norman and Marg A. Alexander was married July the 24th 1874\",\n      \"bbox\": {\n        \"x\": 150,\n        \"y\": 240,\n        \"width\": 150,\n        \"height\": 40\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"Sarah Emaline \\\"Dollie\\\" Lee Died Jan 6th 1951 Flippin Marion County Ark.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 280,\n        \"width\": 150,\n        \"height\": 40\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"F. M. Norman Married April 5 1885 to Amanda Baker\",\n      \"bbox\": {\n        \"x\": 150,\n        \"y\": 280,\n        \"width\": 150,\n        \"height\": 40\n      }\n    }\n  ]\n}",
+                "usage_info": {
+                    "pages_processed": 1,
+                    "doc_size_bytes": 506542
+                }
+            }
+        },
+        "annotate_handwriting": {
+            "pages": [
+                {
+                    "index": 0,
+                    "annotated_text": "Bible record of <hw>Green Hill Norman, Sr.</hw>\n<hw>Eliza H. Rosson, Norman</hw>\nDAU. OF HENRY ROSSON, &amp;amp; WIFE, REBECCA, OF TENN.\nFAMILY RECORD.\n\n|  MARRIAGES. | MARRIAGES.  |\n| --- | --- |\n|  <hw>Green H. Norman</hw>\n<hw>and Eliza H. Norman</hw>\n<hw>was married October</hw>\n<hw>the 31st 1847</hw>\n<hw>in Texas</hw> | <hw>Morgan A. Norman</hw>\n<hw>and Roxannah Looson</hw>\n<hw>was married July the</hw>\n<hw>29th 1869</hw>  |\n|  <hw>Louisa M. Baker</hw>\n<hw>died Feb 10 1939</hw>\n<hw>mtn Home Baxter Co Ark.</hw> | <hw>Asa Baker and Lou</hw>\n<hw>Norman was married</hw>\n<hw>Sept 19th 1872</hw>  |\n|  <hw>Mary J. Ticer</hw>\n<hw>died Mch 11, 1942</hw>\n<hw>Flippin, Marion Co. Ark.</hw> | <hw>William M. Norman</hw>\n<hw>and Sofia Baker</hw>\n<hw>was married January the</hw>\n<hw>11th 1874</hw>  |\n|  <hw>Louisa M. Baker</hw>\n<hw>died Feb 10 1937</hw>\n<hw>at Mtn Home Ark.</hw> | <hw>John F. Norman and</hw>\n<hw>Marg A. Alexander was</hw>\n<hw>married July the 24th</hw>\n<hw>1874</hw>  |\n|  <hw>Sarah Emaline</hw>\n<hw>\"Dollie\" Lee</hw>\n<hw>Died Jan 6th 1951</hw>\n<hw>Flippin</hw>\n<hw>Marion County</hw>\n<hw>Ark.</hw> | <hw>F. M. Norman</hw>\n<hw>Married April 5</hw>\n<hw>1885 to</hw>\n<hw>Amanda Baker</hw>  |"
+                }
+            ],
+            "annotated_text": "Bible record of <hw>Green Hill Norman, Sr.</hw>\n<hw>Eliza H. Rosson, Norman</hw>\nDAU. OF HENRY ROSSON, &amp;amp; WIFE, REBECCA, OF TENN.\nFAMILY RECORD.\n\n|  MARRIAGES. | MARRIAGES.  |\n| --- | --- |\n|  <hw>Green H. Norman</hw>\n<hw>and Eliza H. Norman</hw>\n<hw>was married October</hw>\n<hw>the 31st 1847</hw>\n<hw>in Texas</hw> | <hw>Morgan A. Norman</hw>\n<hw>and Roxannah Looson</hw>\n<hw>was married July the</hw>\n<hw>29th 1869</hw>  |\n|  <hw>Louisa M. Baker</hw>\n<hw>died Feb 10 1939</hw>\n<hw>mtn Home Baxter Co Ark.</hw> | <hw>Asa Baker and Lou</hw>\n<hw>Norman was married</hw>\n<hw>Sept 19th 1872</hw>  |\n|  <hw>Mary J. Ticer</hw>\n<hw>died Mch 11, 1942</hw>\n<hw>Flippin, Marion Co. Ark.</hw> | <hw>William M. Norman</hw>\n<hw>and Sofia Baker</hw>\n<hw>was married January the</hw>\n<hw>11th 1874</hw>  |\n|  <hw>Louisa M. Baker</hw>\n<hw>died Feb 10 1937</hw>\n<hw>at Mtn Home Ark.</hw> | <hw>John F. Norman and</hw>\n<hw>Marg A. Alexander was</hw>\n<hw>married July the 24th</hw>\n<hw>1874</hw>  |\n|  <hw>Sarah Emaline</hw>\n<hw>\"Dollie\" Lee</hw>\n<hw>Died Jan 6th 1951</hw>\n<hw>Flippin</hw>\n<hw>Marion County</hw>\n<hw>Ark.</hw> | <hw>F. M. Norman</hw>\n<hw>Married April 5</hw>\n<hw>1885 to</hw>\n<hw>Amanda Baker</hw>  |"
+        },
+        "transcribe_handwriting": {
+            "text": "\nBible record of Green Hill Norman & Edgar H. Rosson, & Norman\nDau. of Henry Rosson, & wife, Rebecca, of Tenn.\nFAMILY RECORD.\n\nMARRIAGES.\n\nGreen H. Norman\n  and Elizabeth Norman\nwas married October †\nthe 31st 1847\n        in Texas\n\nLouisa M Baker\ndied Feb 10-1937\n          at Mt. Home Baxter Co. Ark.\n\nMary J Greer\ndied March 11, 1942\nat Flippin, Marion Co. Ark.\n\nLouisa M. Baker\ndied Feb 10 - 1937\n    at Mtin Home Ark\n\nSarah Emaline\n              Wllie Lee\n              died June 6th 1951\n          Flippin\nMarion County\n            Ark\n\nMARRIAGES.\n\nMorgan A. Norman\nand Savannah Loper\nwas married July the\n29th 1869\n\nAsa Baker and Lizzie Norman was married\nSept 19th 1872\n\nWilliam H. Norman\nand Sofie Baker\nday married Jany the\n11th 1874\n\nJohn F. Norman and\nMarga A. Alexander was\nmarried July the 2nd\n1874\n\nF. M. Norman\nMarried April\n1868 to\nAmanda Baker",
+            "language": "English",
+            "confidence": "high",
+            "blocks": [
+                [
+                    "Bible record of Green Hill Norman & Edgar H. Rosson, & Norman",
+                    "Dau. of Henry Rosson, & wife, Rebecca, of Tenn.",
+                    "FAMILY RECORD."
+                ],
+                [
+                    "MARRIAGES."
+                ],
+                [
+                    "Green H. Norman",
+                    "  and Elizabeth Norman",
+                    "was married October †",
+                    "the 31st 1847",
+                    "        in Texas"
+                ],
+                [
+                    "Louisa M Baker",
+                    "died Feb 10-1937",
+                    "          at Mt. Home Baxter Co. Ark."
+                ],
+                [
+                    "Mary J Greer",
+                    "died March 11, 1942",
+                    "at Flippin, Marion Co. Ark."
+                ],
+                [
+                    "Louisa M. Baker",
+                    "died Feb 10 - 1937",
+                    "    at Mtin Home Ark"
+                ],
+                [
+                    "Sarah Emaline",
+                    "              Wllie Lee",
+                    "              died June 6th 1951",
+                    "          Flippin",
+                    "Marion County",
+                    "            Ark"
+                ],
+                [
+                    "MARRIAGES."
+                ],
+                [
+                    "Morgan A. Norman",
+                    "and Savannah Loper",
+                    "was married July the",
+                    "29th 1869"
+                ],
+                [
+                    "Asa Baker and Lizzie Norman was married",
+                    "Sept 19th 1872"
+                ],
+                [
+                    "William H. Norman",
+                    "and Sofie Baker",
+                    "day married Jany the",
+                    "11th 1874"
+                ],
+                [
+                    "John F. Norman and",
+                    "Marga A. Alexander was",
+                    "married July the 2nd",
+                    "1874"
+                ],
+                [
+                    "F. M. Norman",
+                    "Married April",
+                    "1868 to",
+                    "Amanda Baker"
+                ]
+            ],
+            "_tokens": {
+                "prompt": 971,
+                "completion": 613,
+                "total": 1584,
+                "cached": 0
+            }
+        }
+    }
+}

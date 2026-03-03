@@ -31,5 +31,37 @@
         ],
         "result_file": "af1df721c0d61aa66a45e8e86db7f6c77e70d543.json",
         "status": "complete"
+    },
+    {
+        "url": "https://static1.squarespace.com/static/65a1d6a4f76bc11cf021c8da/t/65b3df38048ed4016d292387/1706286906882/Vol.1No.1.pdf",
+        "title": "Vol.1No.1.pdf",
+        "pipeline": [
+            "ocr_mistral",
+            "classify",
+            "extract_metadata",
+            "summarize",
+            "keywords"
+        ],
+        "result_file": "3ddf211bcc77be63951855c2054cac7ba4d2a79e.json",
+        "status": "complete"
+    },
+    {
+        "url": "https://omeka-iaamcfh.s3.amazonaws.com/original/46394498cdb8cc609c466b578845c0ac83b804df.pdf",
+        "provenance": "https://iaamcfh.omeka.net/s/IAAM_CFH/item/167",
+        "title": "Green Hill Norman, Sr. Family Bible",
+        "collection": "Family Bible Records",
+        "pipeline": [
+            "ocr_mistral",
+            "annotate_handwriting",
+            "transcribe_handwriting",
+            "people_and_places",
+            "extract_metadata",
+            "generate_title"
+        ],
+        "metadata": {
+            "description": "Green Hill Norman, Sr. was my great-great-great grandfather. The town his family lived in - Big Flat - was originally located in Searcy County, Arkansas, United States. In 1873, Baxter County was formed, and the town of Big Flat was a part of that county. He and his wife (along with a good portion of their children and their families) are all buried in the Big Flat Cemetery."
+        },
+        "result_file": "16a4f389dc59d287372a2229be348aee46a95f2a.json",
+        "status": "complete"
     }
 ]

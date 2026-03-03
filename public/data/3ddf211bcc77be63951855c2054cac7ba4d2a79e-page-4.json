@@ -1,0 +1,414 @@
+{
+    "subject": "file:///home/tac/g/sites/ai-pipeline-demo/public/images/pages/3ddf211bcc77be63951855c2054cac7ba4d2a79e-4.jpg",
+    "results": {
+        "ocr_mistral": {
+            "text": "# READER'S CORNER\n\n## Like To Read?\n## Start With Local History\n\nBy Ava Lee\n\nDo you have some youngsters in the house who are getting bored with summer activities? Perhaps your grandchildren are visiting for a few weeks. For a change of pace, now might be a good time to introduce them to a little local history.\n\nAn excellent way to start off is a trip to the Old Gaol Museum. After spending some time browsing there, walk across the street to the Fauquier County Public Library. The library has in its Virginiana Room a very good collection of Fauquier County histories, maps, pictures and other items to tempt a youngster's interest in history.\n\nDownstairs, in the children's section, are several good biographies on some famous Fauquier Countians. John Marshall by Teri Martini and John Marshall: Boy of Young America by Helen Albee Monsell are just two about our famous Chief Justice of the United States, John Marshall.\n\nThe Violent Years by Patricia Kahn is the story of Simon Kenton, a little known hero of frontier settlement, who was born near The Plains. He left Fauquier County at the age of 15. It was not long before he became a scout and aide to a very famous American frontiersman, Daniel Boone.\n\nA well known person from the Civil War era was Colonel John S. Mosby. Although he was not born in Fauquier County, many of his escapades during the War were on Fauquier soil. After the end of the War he settled in Warrenton and opened a law practice. One particularly good juvenile biography of his life is by Anne Welsh Guy entitled John Mosby.\n\n## History Journal\n## Makes Debut\n\nThrough the efforts of Dr. Peter Henriques, assistant professor of state and local history at George Mason University, a new journal focusing on the historical richness of the Northern Virginia area has recently made its debut.\n\nNorthern Virginia Heritage will appear three times a year—February, June and October.\n\nAmong the articles in the June issue is one on Edward Carter Turner of Kinloch at The Plains. The article contains many excerpts from Turner's Civil War diary, as well as an overview by Henriques which ties Turner's passages together.\n\nSubscriptions are $5 for one year. For information, or the journal's guidelines for potential authors, contact Peter Henriques in the history department at George Mason University, 4400 University Drive, Fairfax, Virginia 22030.\n\n## Special Program!\n\nGold Mining in Fauquier, Sun., Sept. 23, 2:30 p.m. Rain date: Sept. 30. We will meet at Monroe's store at Goldvein and later visit the Franklin Mine near Morrisville. Wear old clothes, bring a pan, small pick or shovel to search for gold. Bring the family! Info: Ed Cooper, 347-2511 or 347-2620.\n\n## Donation\n\nEarly this year, H. M. Pearson, retired educator from Remington, donated a canal boat anchor to the Fauquier Historical Society. The anchor, which Mr. Pearson believes to be at least 130 years old, was given to the Society to be displayed at the Old Gaol Museum.\n\n## Calendar of Events\n\nNow to August 19 - Renwick Gallery, Washington, D.C. Exhibit of photos and text showing recycling of old buildings and historic places.\n\nAugust 11 - 19th Annual Jousting Tournament. Leeds Ruritan Club grounds, Hume, 3 p.m. Information: 364-1347.\n\nAugust 11-12 - Ft. Ward Park, Alexandria, Civil War Living History Day, Civil War re-enactment. Information: 703-750-6425.\n\nAugust 12 - Native Basketry and Straw Dolly Workshop, Belle Grove, Middletown, Virginia. Information: 703-869-2028.\n\nAugust 18-19 - August Court Days. Crafts exhibitions, entertainment, old fashioned fun and events. Leesburg. Information: entertainment committee - 777-4428, crafts committee - 777-2947.\n\nAugust 25 - Wine Festival and Vineyard Tour. Grape stomping, wine films, crafts bazaar, wine growing seminar. Middleburg area. Information: Vinifera Wine Growers Assoc., The Plains, Virginia 22171, 703-754-8564 or 703-687-5327.\n\nAugust 25-26 - Lucketts Fair. Crafts exhibits, tour of local churches, country music. At old Lucketts School. Information: 777-3533.\n\nAugust 27-September 1 - Fredericksburg Agricultural Fair, Fredericksburg Fairgrounds. Information: 703-373-1776.\n\nSeptember 8 - Upstairs &amp; Downstairs In The Victorian House. An introductory workshop for the homeowner and restorer. Philadelphia, Pa. Experts will discuss the practical aspects of reviving Victorian buildings. Information: The Victorian Society, East Washington Square, Philadelphia, Pa. 19106.\n\nSeptember 8 - Militia Muster Day. Marching and firing demonstrations. Carlyle House, Alexandria. Information: 549-2997.\n\nSeptember 8-9 - 18th Century Encampment of the First Virginia Regiment of the Continental Line. Sully Plantation near Centreville, Va. Information: 703-437-1794 or 703-471-7382.\n\nOctober 3-7 - 33rd Annual Meeting of the National Trust for Historic Preservation. San Francisco, Calif. Information: National Trust, 748 Jackson Place, N.W., Washington, D.C. 20006.\n\n## The Fauquier Historical Society\n\nP.O. Box 675, Warrenton, VA 22186\n\nNonprofit Org.\nU.S. Postage\nPAID\nWarrenton, Va.\nPermit No. 109",
+            "language": null,
+            "confidence": "high",
+            "layout_blocks": [
+                {
+                    "page": 0,
+                    "type": "headline",
+                    "text": "READER'S CORNER",
+                    "bbox": {
+                        "x": 0,
+                        "y": 0,
+                        "width": 1685,
+                        "height": 98
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "subheadline",
+                    "text": "Like To Read?",
+                    "bbox": {
+                        "x": 0,
+                        "y": 98,
+                        "width": 1685,
+                        "height": 49
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "subheadline",
+                    "text": "Start With Local History",
+                    "bbox": {
+                        "x": 0,
+                        "y": 147,
+                        "width": 1685,
+                        "height": 49
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "byline",
+                    "text": "By Ava Lee",
+                    "bbox": {
+                        "x": 0,
+                        "y": 196,
+                        "width": 1685,
+                        "height": 49
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "Do you have some youngsters in the house who are getting bored with summer activities? Perhaps your grandchildren are visiting for a few weeks. For a change of pace, now might be a good time to introduce them to a little local history.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 244,
+                        "width": 1685,
+                        "height": 98
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "An excellent way to start off is a trip to the Old Gaol Museum. After spending some time browsing there, walk across the street to the Fauquier County Public Library. The library has in its Virginiana Room a very good collection of Fauquier County histories, maps, pictures and other items to tempt a youngster's interest in history.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 342,
+                        "width": 1685,
+                        "height": 98
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "Downstairs, in the children's section, are several good biographies on some famous Fauquier Countians. John Marshall by Teri Martini and John Marshall: Boy of Young America by Helen Albee Monsell are just two about our famous Chief Justice of the United States, John Marshall.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 440,
+                        "width": 1685,
+                        "height": 98
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "The Violent Years by Patricia Kahn is the story of Simon Kenton, a little known hero of frontier settlement, who was born near The Plains. He left Fauquier County at the age of 15. It was not long before he became a scout and aide to a very famous American frontiersman, Daniel Boone.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 538,
+                        "width": 1685,
+                        "height": 98
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "A well known person from the Civil War era was Colonel John S. Mosby. Although he was not born in Fauquier County, many of his escapades during the War were on Fauquier soil. After the end of the War he settled in Warrenton and opened a law practice. One particularly good juvenile biography of his life is by Anne Welsh Guy entitled John Mosby.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 636,
+                        "width": 1685,
+                        "height": 98
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "subheadline",
+                    "text": "History Journal",
+                    "bbox": {
+                        "x": 0,
+                        "y": 733,
+                        "width": 1685,
+                        "height": 49
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "subheadline",
+                    "text": "Makes Debut",
+                    "bbox": {
+                        "x": 0,
+                        "y": 782,
+                        "width": 1685,
+                        "height": 49
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "Through the efforts of Dr. Peter Henriques, assistant professor of state and local history at George Mason University, a new journal focusing on the historical richness of the Northern Virginia area has recently made its debut.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 831,
+                        "width": 1685,
+                        "height": 98
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "Northern Virginia Heritage will appear three times a year—February, June and October.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 929,
+                        "width": 1685,
+                        "height": 49
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "Among the articles in the June issue is one on Edward Carter Turner of Kinloch at The Plains. The article contains many excerpts from Turner's Civil War diary, as well as an overview by Henriques which ties Turner's passages together.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 978,
+                        "width": 1685,
+                        "height": 98
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "Subscriptions are $5 for one year. For information, or the journal's guidelines for potential authors, contact Peter Henriques in the history department at George Mason University, 4400 University Drive, Fairfax, Virginia 22030.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1076,
+                        "width": 1685,
+                        "height": 98
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "subheadline",
+                    "text": "Special Program!",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1173,
+                        "width": 1685,
+                        "height": 49
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "Gold Mining in Fauquier, Sun., Sept. 23, 2:30 p.m. Rain date: Sept. 30. We will meet at Monroe's store at Goldvein and later visit the Franklin Mine near Morrisville. Wear old clothes, bring a pan, small pick or shovel to search for gold. Bring the family! Info: Ed Cooper, 347-2511 or 347-2620.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1222,
+                        "width": 1685,
+                        "height": 98
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "subheadline",
+                    "text": "Donation",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1320,
+                        "width": 1685,
+                        "height": 49
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "Early this year, H. M. Pearson, retired educator from Remington, donated a canal boat anchor to the Fauquier Historical Society. The anchor, which Mr. Pearson believes to be at least 130 years old, was given to the Society to be displayed at the Old Gaol Museum.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1369,
+                        "width": 1685,
+                        "height": 98
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "subheadline",
+                    "text": "Calendar of Events",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1467,
+                        "width": 1685,
+                        "height": 49
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "Now to August 19 - Renwick Gallery, Washington, D.C. Exhibit of photos and text showing recycling of old buildings and historic places.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1516,
+                        "width": 1685,
+                        "height": 49
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "August 11 - 19th Annual Jousting Tournament. Leeds Ruritan Club grounds, Hume, 3 p.m. Information: 364-1347.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1564,
+                        "width": 1685,
+                        "height": 49
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "August 11-12 - Ft. Ward Park, Alexandria, Civil War Living History Day, Civil War re-enactment. Information: 703-750-6425.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1613,
+                        "width": 1685,
+                        "height": 49
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "August 12 - Native Basketry and Straw Dolly Workshop, Belle Grove, Middletown, Virginia. Information: 703-869-2028.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1662,
+                        "width": 1685,
+                        "height": 49
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "August 18-19 - August Court Days. Crafts exhibitions, entertainment, old fashioned fun and events. Leesburg. Information: entertainment committee - 777-4428, crafts committee - 777-2947.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1711,
+                        "width": 1685,
+                        "height": 49
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "August 25 - Wine Festival and Vineyard Tour. Grape stomping, wine films, crafts bazaar, wine growing seminar. Middleburg area. Information: Vinifera Wine Growers Assoc., The Plains, Virginia 22171, 703-754-8564 or 703-687-5327.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1760,
+                        "width": 1685,
+                        "height": 49
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "August 25-26 - Lucketts Fair. Crafts exhibits, tour of local churches, country music. At old Lucketts School. Information: 777-3533.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1809,
+                        "width": 1685,
+                        "height": 49
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "August 27-September 1 - Fredericksburg Agricultural Fair, Fredericksburg Fairgrounds. Information: 703-373-1776.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1858,
+                        "width": 1685,
+                        "height": 49
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "September 8 - Upstairs & Downstairs In The Victorian House. An introductory workshop for the homeowner and restorer. Philadelphia, Pa. Experts will discuss the practical aspects of reviving Victorian buildings. Information: The Victorian Society, East Washington Square, Philadelphia, Pa. 19106.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1907,
+                        "width": 1685,
+                        "height": 49
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "September 8 - Militia Muster Day. Marching and firing demonstrations. Carlyle House, Alexandria. Information: 549-2997.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1956,
+                        "width": 1685,
+                        "height": 49
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "September 8-9 - 18th Century Encampment of the First Virginia Regiment of the Continental Line. Sully Plantation near Centreville, Va. Information: 703-437-1794 or 703-471-7382.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 2004,
+                        "width": 1685,
+                        "height": 49
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "October 3-7 - 33rd Annual Meeting of the National Trust for Historic Preservation. San Francisco, Calif. Information: National Trust, 748 Jackson Place, N.W., Washington, D.C. 20006.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 2053,
+                        "width": 1685,
+                        "height": 49
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "The Fauquier Historical Society\nP.O. Box 675, Warrenton, VA 22186\nNonprofit Org.\nU.S. Postage\nPAID\nWarrenton, Va.\nPermit No. 109",
+                    "bbox": {
+                        "x": 0,
+                        "y": 2102,
+                        "width": 1685,
+                        "height": 98
+                    }
+                }
+            ],
+            "image_blocks": [],
+            "pages": [
+                {
+                    "index": 0,
+                    "markdown": "# READER'S CORNER\n\n## Like To Read?\n## Start With Local History\n\nBy Ava Lee\n\nDo you have some youngsters in the house who are getting bored with summer activities? Perhaps your grandchildren are visiting for a few weeks. For a change of pace, now might be a good time to introduce them to a little local history.\n\nAn excellent way to start off is a trip to the Old Gaol Museum. After spending some time browsing there, walk across the street to the Fauquier County Public Library. The library has in its Virginiana Room a very good collection of Fauquier County histories, maps, pictures and other items to tempt a youngster's interest in history.\n\nDownstairs, in the children's section, are several good biographies on some famous Fauquier Countians. John Marshall by Teri Martini and John Marshall: Boy of Young America by Helen Albee Monsell are just two about our famous Chief Justice of the United States, John Marshall.\n\nThe Violent Years by Patricia Kahn is the story of Simon Kenton, a little known hero of frontier settlement, who was born near The Plains. He left Fauquier County at the age of 15. It was not long before he became a scout and aide to a very famous American frontiersman, Daniel Boone.\n\nA well known person from the Civil War era was Colonel John S. Mosby. Although he was not born in Fauquier County, many of his escapades during the War were on Fauquier soil. After the end of the War he settled in Warrenton and opened a law practice. One particularly good juvenile biography of his life is by Anne Welsh Guy entitled John Mosby.\n\n## History Journal\n## Makes Debut\n\nThrough the efforts of Dr. Peter Henriques, assistant professor of state and local history at George Mason University, a new journal focusing on the historical richness of the Northern Virginia area has recently made its debut.\n\nNorthern Virginia Heritage will appear three times a year—February, June and October.\n\nAmong the articles in the June issue is one on Edward Carter Turner of Kinloch at The Plains. The article contains many excerpts from Turner's Civil War diary, as well as an overview by Henriques which ties Turner's passages together.\n\nSubscriptions are $5 for one year. For information, or the journal's guidelines for potential authors, contact Peter Henriques in the history department at George Mason University, 4400 University Drive, Fairfax, Virginia 22030.\n\n## Special Program!\n\nGold Mining in Fauquier, Sun., Sept. 23, 2:30 p.m. Rain date: Sept. 30. We will meet at Monroe's store at Goldvein and later visit the Franklin Mine near Morrisville. Wear old clothes, bring a pan, small pick or shovel to search for gold. Bring the family! Info: Ed Cooper, 347-2511 or 347-2620.\n\n## Donation\n\nEarly this year, H. M. Pearson, retired educator from Remington, donated a canal boat anchor to the Fauquier Historical Society. The anchor, which Mr. Pearson believes to be at least 130 years old, was given to the Society to be displayed at the Old Gaol Museum.\n\n## Calendar of Events\n\nNow to August 19 - Renwick Gallery, Washington, D.C. Exhibit of photos and text showing recycling of old buildings and historic places.\n\nAugust 11 - 19th Annual Jousting Tournament. Leeds Ruritan Club grounds, Hume, 3 p.m. Information: 364-1347.\n\nAugust 11-12 - Ft. Ward Park, Alexandria, Civil War Living History Day, Civil War re-enactment. Information: 703-750-6425.\n\nAugust 12 - Native Basketry and Straw Dolly Workshop, Belle Grove, Middletown, Virginia. Information: 703-869-2028.\n\nAugust 18-19 - August Court Days. Crafts exhibitions, entertainment, old fashioned fun and events. Leesburg. Information: entertainment committee - 777-4428, crafts committee - 777-2947.\n\nAugust 25 - Wine Festival and Vineyard Tour. Grape stomping, wine films, crafts bazaar, wine growing seminar. Middleburg area. Information: Vinifera Wine Growers Assoc., The Plains, Virginia 22171, 703-754-8564 or 703-687-5327.\n\nAugust 25-26 - Lucketts Fair. Crafts exhibits, tour of local churches, country music. At old Lucketts School. Information: 777-3533.\n\nAugust 27-September 1 - Fredericksburg Agricultural Fair, Fredericksburg Fairgrounds. Information: 703-373-1776.\n\nSeptember 8 - Upstairs &amp; Downstairs In The Victorian House. An introductory workshop for the homeowner and restorer. Philadelphia, Pa. Experts will discuss the practical aspects of reviving Victorian buildings. Information: The Victorian Society, East Washington Square, Philadelphia, Pa. 19106.\n\nSeptember 8 - Militia Muster Day. Marching and firing demonstrations. Carlyle House, Alexandria. Information: 549-2997.\n\nSeptember 8-9 - 18th Century Encampment of the First Virginia Regiment of the Continental Line. Sully Plantation near Centreville, Va. Information: 703-437-1794 or 703-471-7382.\n\nOctober 3-7 - 33rd Annual Meeting of the National Trust for Historic Preservation. San Francisco, Calif. Information: National Trust, 748 Jackson Place, N.W., Washington, D.C. 20006.\n\n## The Fauquier Historical Society\n\nP.O. Box 675, Warrenton, VA 22186\n\nNonprofit Org.\nU.S. Postage\nPAID\nWarrenton, Va.\nPermit No. 109",
+                    "dimensions": {
+                        "dpi": 200,
+                        "height": 2200,
+                        "width": 1685
+                    },
+                    "tables": [],
+                    "header": null,
+                    "footer": null
+                }
+            ],
+            "raw_response": {
+                "pages": [
+                    {
+                        "index": 0,
+                        "markdown": "# READER'S CORNER\n\n## Like To Read?\n## Start With Local History\n\nBy Ava Lee\n\nDo you have some youngsters in the house who are getting bored with summer activities? Perhaps your grandchildren are visiting for a few weeks. For a change of pace, now might be a good time to introduce them to a little local history.\n\nAn excellent way to start off is a trip to the Old Gaol Museum. After spending some time browsing there, walk across the street to the Fauquier County Public Library. The library has in its Virginiana Room a very good collection of Fauquier County histories, maps, pictures and other items to tempt a youngster's interest in history.\n\nDownstairs, in the children's section, are several good biographies on some famous Fauquier Countians. John Marshall by Teri Martini and John Marshall: Boy of Young America by Helen Albee Monsell are just two about our famous Chief Justice of the United States, John Marshall.\n\nThe Violent Years by Patricia Kahn is the story of Simon Kenton, a little known hero of frontier settlement, who was born near The Plains. He left Fauquier County at the age of 15. It was not long before he became a scout and aide to a very famous American frontiersman, Daniel Boone.\n\nA well known person from the Civil War era was Colonel John S. Mosby. Although he was not born in Fauquier County, many of his escapades during the War were on Fauquier soil. After the end of the War he settled in Warrenton and opened a law practice. One particularly good juvenile biography of his life is by Anne Welsh Guy entitled John Mosby.\n\n## History Journal\n## Makes Debut\n\nThrough the efforts of Dr. Peter Henriques, assistant professor of state and local history at George Mason University, a new journal focusing on the historical richness of the Northern Virginia area has recently made its debut.\n\nNorthern Virginia Heritage will appear three times a year—February, June and October.\n\nAmong the articles in the June issue is one on Edward Carter Turner of Kinloch at The Plains. The article contains many excerpts from Turner's Civil War diary, as well as an overview by Henriques which ties Turner's passages together.\n\nSubscriptions are $5 for one year. For information, or the journal's guidelines for potential authors, contact Peter Henriques in the history department at George Mason University, 4400 University Drive, Fairfax, Virginia 22030.\n\n## Special Program!\n\nGold Mining in Fauquier, Sun., Sept. 23, 2:30 p.m. Rain date: Sept. 30. We will meet at Monroe's store at Goldvein and later visit the Franklin Mine near Morrisville. Wear old clothes, bring a pan, small pick or shovel to search for gold. Bring the family! Info: Ed Cooper, 347-2511 or 347-2620.\n\n## Donation\n\nEarly this year, H. M. Pearson, retired educator from Remington, donated a canal boat anchor to the Fauquier Historical Society. The anchor, which Mr. Pearson believes to be at least 130 years old, was given to the Society to be displayed at the Old Gaol Museum.\n\n## Calendar of Events\n\nNow to August 19 - Renwick Gallery, Washington, D.C. Exhibit of photos and text showing recycling of old buildings and historic places.\n\nAugust 11 - 19th Annual Jousting Tournament. Leeds Ruritan Club grounds, Hume, 3 p.m. Information: 364-1347.\n\nAugust 11-12 - Ft. Ward Park, Alexandria, Civil War Living History Day, Civil War re-enactment. Information: 703-750-6425.\n\nAugust 12 - Native Basketry and Straw Dolly Workshop, Belle Grove, Middletown, Virginia. Information: 703-869-2028.\n\nAugust 18-19 - August Court Days. Crafts exhibitions, entertainment, old fashioned fun and events. Leesburg. Information: entertainment committee - 777-4428, crafts committee - 777-2947.\n\nAugust 25 - Wine Festival and Vineyard Tour. Grape stomping, wine films, crafts bazaar, wine growing seminar. Middleburg area. Information: Vinifera Wine Growers Assoc., The Plains, Virginia 22171, 703-754-8564 or 703-687-5327.\n\nAugust 25-26 - Lucketts Fair. Crafts exhibits, tour of local churches, country music. At old Lucketts School. Information: 777-3533.\n\nAugust 27-September 1 - Fredericksburg Agricultural Fair, Fredericksburg Fairgrounds. Information: 703-373-1776.\n\nSeptember 8 - Upstairs &amp; Downstairs In The Victorian House. An introductory workshop for the homeowner and restorer. Philadelphia, Pa. Experts will discuss the practical aspects of reviving Victorian buildings. Information: The Victorian Society, East Washington Square, Philadelphia, Pa. 19106.\n\nSeptember 8 - Militia Muster Day. Marching and firing demonstrations. Carlyle House, Alexandria. Information: 549-2997.\n\nSeptember 8-9 - 18th Century Encampment of the First Virginia Regiment of the Continental Line. Sully Plantation near Centreville, Va. Information: 703-437-1794 or 703-471-7382.\n\nOctober 3-7 - 33rd Annual Meeting of the National Trust for Historic Preservation. San Francisco, Calif. Information: National Trust, 748 Jackson Place, N.W., Washington, D.C. 20006.\n\n## The Fauquier Historical Society\n\nP.O. Box 675, Warrenton, VA 22186\n\nNonprofit Org.\nU.S. Postage\nPAID\nWarrenton, Va.\nPermit No. 109",
+                        "images": [],
+                        "tables": [],
+                        "hyperlinks": [],
+                        "header": null,
+                        "footer": null,
+                        "dimensions": {
+                            "dpi": 200,
+                            "height": 2200,
+                            "width": 1685
+                        }
+                    }
+                ],
+                "model": "mistral-ocr-latest",
+                "document_annotation": "{\n  \"blocks\": [\n    {\n      \"type\": \"headline\",\n      \"text\": \"READER'S CORNER\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 0,\n        \"width\": 100,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"subheadline\",\n      \"text\": \"Like To Read?\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 10,\n        \"width\": 100,\n        \"height\": 5\n      }\n    },\n    {\n      \"type\": \"subheadline\",\n      \"text\": \"Start With Local History\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 15,\n        \"width\": 100,\n        \"height\": 5\n      }\n    },\n    {\n      \"type\": \"byline\",\n      \"text\": \"By Ava Lee\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 20,\n        \"width\": 100,\n        \"height\": 5\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"Do you have some youngsters in the house who are getting bored with summer activities? Perhaps your grandchildren are visiting for a few weeks. For a change of pace, now might be a good time to introduce them to a little local history.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 25,\n        \"width\": 100,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"An excellent way to start off is a trip to the Old Gaol Museum. After spending some time browsing there, walk across the street to the Fauquier County Public Library. The library has in its Virginiana Room a very good collection of Fauquier County histories, maps, pictures and other items to tempt a youngster's interest in history.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 35,\n        \"width\": 100,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"Downstairs, in the children's section, are several good biographies on some famous Fauquier Countians. John Marshall by Teri Martini and John Marshall: Boy of Young America by Helen Albee Monsell are just two about our famous Chief Justice of the United States, John Marshall.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 45,\n        \"width\": 100,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"The Violent Years by Patricia Kahn is the story of Simon Kenton, a little known hero of frontier settlement, who was born near The Plains. He left Fauquier County at the age of 15. It was not long before he became a scout and aide to a very famous American frontiersman, Daniel Boone.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 55,\n        \"width\": 100,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"A well known person from the Civil War era was Colonel John S. Mosby. Although he was not born in Fauquier County, many of his escapades during the War were on Fauquier soil. After the end of the War he settled in Warrenton and opened a law practice. One particularly good juvenile biography of his life is by Anne Welsh Guy entitled John Mosby.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 65,\n        \"width\": 100,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"subheadline\",\n      \"text\": \"History Journal\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 75,\n        \"width\": 100,\n        \"height\": 5\n      }\n    },\n    {\n      \"type\": \"subheadline\",\n      \"text\": \"Makes Debut\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 80,\n        \"width\": 100,\n        \"height\": 5\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"Through the efforts of Dr. Peter Henriques, assistant professor of state and local history at George Mason University, a new journal focusing on the historical richness of the Northern Virginia area has recently made its debut.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 85,\n        \"width\": 100,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"Northern Virginia Heritage will appear three times a year—February, June and October.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 95,\n        \"width\": 100,\n        \"height\": 5\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"Among the articles in the June issue is one on Edward Carter Turner of Kinloch at The Plains. The article contains many excerpts from Turner's Civil War diary, as well as an overview by Henriques which ties Turner's passages together.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 100,\n        \"width\": 100,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"Subscriptions are $5 for one year. For information, or the journal's guidelines for potential authors, contact Peter Henriques in the history department at George Mason University, 4400 University Drive, Fairfax, Virginia 22030.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 110,\n        \"width\": 100,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"subheadline\",\n      \"text\": \"Special Program!\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 120,\n        \"width\": 100,\n        \"height\": 5\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"Gold Mining in Fauquier, Sun., Sept. 23, 2:30 p.m. Rain date: Sept. 30. We will meet at Monroe's store at Goldvein and later visit the Franklin Mine near Morrisville. Wear old clothes, bring a pan, small pick or shovel to search for gold. Bring the family! Info: Ed Cooper, 347-2511 or 347-2620.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 125,\n        \"width\": 100,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"subheadline\",\n      \"text\": \"Donation\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 135,\n        \"width\": 100,\n        \"height\": 5\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"Early this year, H. M. Pearson, retired educator from Remington, donated a canal boat anchor to the Fauquier Historical Society. The anchor, which Mr. Pearson believes to be at least 130 years old, was given to the Society to be displayed at the Old Gaol Museum.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 140,\n        \"width\": 100,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"subheadline\",\n      \"text\": \"Calendar of Events\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 150,\n        \"width\": 100,\n        \"height\": 5\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"Now to August 19 - Renwick Gallery, Washington, D.C. Exhibit of photos and text showing recycling of old buildings and historic places.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 155,\n        \"width\": 100,\n        \"height\": 5\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"August 11 - 19th Annual Jousting Tournament. Leeds Ruritan Club grounds, Hume, 3 p.m. Information: 364-1347.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 160,\n        \"width\": 100,\n        \"height\": 5\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"August 11-12 - Ft. Ward Park, Alexandria, Civil War Living History Day, Civil War re-enactment. Information: 703-750-6425.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 165,\n        \"width\": 100,\n        \"height\": 5\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"August 12 - Native Basketry and Straw Dolly Workshop, Belle Grove, Middletown, Virginia. Information: 703-869-2028.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 170,\n        \"width\": 100,\n        \"height\": 5\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"August 18-19 - August Court Days. Crafts exhibitions, entertainment, old fashioned fun and events. Leesburg. Information: entertainment committee - 777-4428, crafts committee - 777-2947.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 175,\n        \"width\": 100,\n        \"height\": 5\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"August 25 - Wine Festival and Vineyard Tour. Grape stomping, wine films, crafts bazaar, wine growing seminar. Middleburg area. Information: Vinifera Wine Growers Assoc., The Plains, Virginia 22171, 703-754-8564 or 703-687-5327.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 180,\n        \"width\": 100,\n        \"height\": 5\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"August 25-26 - Lucketts Fair. Crafts exhibits, tour of local churches, country music. At old Lucketts School. Information: 777-3533.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 185,\n        \"width\": 100,\n        \"height\": 5\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"August 27-September 1 - Fredericksburg Agricultural Fair, Fredericksburg Fairgrounds. Information: 703-373-1776.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 190,\n        \"width\": 100,\n        \"height\": 5\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"September 8 - Upstairs & Downstairs In The Victorian House. An introductory workshop for the homeowner and restorer. Philadelphia, Pa. Experts will discuss the practical aspects of reviving Victorian buildings. Information: The Victorian Society, East Washington Square, Philadelphia, Pa. 19106.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 195,\n        \"width\": 100,\n        \"height\": 5\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"September 8 - Militia Muster Day. Marching and firing demonstrations. Carlyle House, Alexandria. Information: 549-2997.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 200,\n        \"width\": 100,\n        \"height\": 5\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"September 8-9 - 18th Century Encampment of the First Virginia Regiment of the Continental Line. Sully Plantation near Centreville, Va. Information: 703-437-1794 or 703-471-7382.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 205,\n        \"width\": 100,\n        \"height\": 5\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"October 3-7 - 33rd Annual Meeting of the National Trust for Historic Preservation. San Francisco, Calif. Information: National Trust, 748 Jackson Place, N.W., Washington, D.C. 20006.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 210,\n        \"width\": 100,\n        \"height\": 5\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"The Fauquier Historical Society\\nP.O. Box 675, Warrenton, VA 22186\\nNonprofit Org.\\nU.S. Postage\\nPAID\\nWarrenton, Va.\\nPermit No. 109\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 215,\n        \"width\": 100,\n        \"height\": 10\n      }\n    }\n  ]\n}",
+                "usage_info": {
+                    "pages_processed": 1,
+                    "doc_size_bytes": 587721
+                }
+            }
+        }
+    }
+}

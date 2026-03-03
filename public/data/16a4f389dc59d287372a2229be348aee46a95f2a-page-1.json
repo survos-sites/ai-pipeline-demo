@@ -1,0 +1,362 @@
+{
+    "subject": "file:///home/tac/g/sites/ai-pipeline-demo/public/images/pages/16a4f389dc59d287372a2229be348aee46a95f2a-1.jpg",
+    "results": {
+        "ocr_mistral": {
+            "text": "Bible Record of Green Hill Norman, Se.\n\n# FAMILY RECORD.\n\n|  BIRTHS. | BIRTHS.  |\n| --- | --- |\n|  Green Hill Norman\nwas born March the\nthird AD 1825 in Monroe\nCounty Mississippi | Albert Norman\nwas born April the\n2nd AD 1858 in Hardin\nCounty Tenn  |\n|  Eliza H. Norman\nwas born February the\ntenth AD 1830 in Anarchee\nCounty Tenn | Martha Elizabeth Norman\nwas born June the 22 1860 in\nHardin County Tenn  |\n|  Morgan A. Norman\nwas born November\nthe 25th AD 1848 in\nLawrence County Tenn | Mary Jane and Thomas\nHill Norman\nwas born October the\n20th 1862 in Searcy\nCounty Arkansas  |\n|  William Martin Norman\nwas born January\nthe 4th AD 1850 in\nLawrence County Tenn | Francis M and\nGeorge W. Norman\nwas born June the\n30th 1866 in Searcy\nCounty Arkansas  |\n|  John A. Norman\nwas born January\nthe 25th AD 1853 in\nLawrence County Tenn | Sarah Emeline and\nHenry Clay Norman\nwas born December\nthe 28th 1868 in\nSearcy County Arkansas  |\n|  Denisa M. Norman\nwas born July the 31st\nAD 1853 in Hardin\nCounty Tenn |   |",
+            "language": null,
+            "confidence": "high",
+            "layout_blocks": [
+                {
+                    "page": 0,
+                    "type": "headline",
+                    "text": "Bible Record of Green Hill Norman, Se.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 0,
+                        "width": 1643,
+                        "height": 101
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "headline",
+                    "text": "FAMILY RECORD.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 101,
+                        "width": 1643,
+                        "height": 101
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "column",
+                    "text": "BIRTHS.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 202,
+                        "width": 822,
+                        "height": 101
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "column",
+                    "text": "BIRTHS.",
+                    "bbox": {
+                        "x": 822,
+                        "y": 202,
+                        "width": 822,
+                        "height": 101
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "Green Hill Norman was born March the third AD 1825 in Monroe County Mississippi",
+                    "bbox": {
+                        "x": 0,
+                        "y": 303,
+                        "width": 822,
+                        "height": 303
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "Albert Norman was born April the 2nd AD 1858 in Hardin County Tenn",
+                    "bbox": {
+                        "x": 822,
+                        "y": 303,
+                        "width": 822,
+                        "height": 202
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "Eliza H. Norman was born February the tenth AD 1830 in Anarchee County Tenn",
+                    "bbox": {
+                        "x": 0,
+                        "y": 605,
+                        "width": 822,
+                        "height": 303
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "Martha Elizabeth Norman was born June the 22 1860 in Hardin County Tenn",
+                    "bbox": {
+                        "x": 822,
+                        "y": 504,
+                        "width": 822,
+                        "height": 202
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "Morgan A. Norman was born November the 25th AD 1848 in Lawrence County Tenn",
+                    "bbox": {
+                        "x": 0,
+                        "y": 908,
+                        "width": 822,
+                        "height": 303
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "Mary Jane and Thomas Hill Norman was born October the 20th 1862 in Searcy County Arkansas",
+                    "bbox": {
+                        "x": 822,
+                        "y": 706,
+                        "width": 822,
+                        "height": 303
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "William Martin Norman was born January the 4th AD 1850 in Lawrence County Tenn",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1210,
+                        "width": 822,
+                        "height": 303
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "Francis M and George W. Norman was born June the 30th 1866 in Searcy County Arkansas",
+                    "bbox": {
+                        "x": 822,
+                        "y": 1009,
+                        "width": 822,
+                        "height": 303
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "John A. Norman was born January the 25th AD 1853 in Lawrence County Tenn",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1513,
+                        "width": 822,
+                        "height": 303
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "Sarah Emeline and Henry Clay Norman was born December the 28th 1868 in Searcy County Arkansas",
+                    "bbox": {
+                        "x": 822,
+                        "y": 1311,
+                        "width": 822,
+                        "height": 303
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "Denisa M. Norman was born July the 31st AD 1853 in Hardin County Tenn",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1815,
+                        "width": 822,
+                        "height": 303
+                    }
+                }
+            ],
+            "image_blocks": [],
+            "pages": [
+                {
+                    "index": 0,
+                    "markdown": "Bible Record of Green Hill Norman, Se.\n\n# FAMILY RECORD.\n\n|  BIRTHS. | BIRTHS.  |\n| --- | --- |\n|  Green Hill Norman\nwas born March the\nthird AD 1825 in Monroe\nCounty Mississippi | Albert Norman\nwas born April the\n2nd AD 1858 in Hardin\nCounty Tenn  |\n|  Eliza H. Norman\nwas born February the\ntenth AD 1830 in Anarchee\nCounty Tenn | Martha Elizabeth Norman\nwas born June the 22 1860 in\nHardin County Tenn  |\n|  Morgan A. Norman\nwas born November\nthe 25th AD 1848 in\nLawrence County Tenn | Mary Jane and Thomas\nHill Norman\nwas born October the\n20th 1862 in Searcy\nCounty Arkansas  |\n|  William Martin Norman\nwas born January\nthe 4th AD 1850 in\nLawrence County Tenn | Francis M and\nGeorge W. Norman\nwas born June the\n30th 1866 in Searcy\nCounty Arkansas  |\n|  John A. Norman\nwas born January\nthe 25th AD 1853 in\nLawrence County Tenn | Sarah Emeline and\nHenry Clay Norman\nwas born December\nthe 28th 1868 in\nSearcy County Arkansas  |\n|  Denisa M. Norman\nwas born July the 31st\nAD 1853 in Hardin\nCounty Tenn |   |",
+                    "dimensions": {
+                        "dpi": 200,
+                        "height": 2118,
+                        "width": 1643
+                    },
+                    "tables": [],
+                    "header": null,
+                    "footer": null
+                }
+            ],
+            "raw_response": {
+                "pages": [
+                    {
+                        "index": 0,
+                        "markdown": "Bible Record of Green Hill Norman, Se.\n\n# FAMILY RECORD.\n\n|  BIRTHS. | BIRTHS.  |\n| --- | --- |\n|  Green Hill Norman\nwas born March the\nthird AD 1825 in Monroe\nCounty Mississippi | Albert Norman\nwas born April the\n2nd AD 1858 in Hardin\nCounty Tenn  |\n|  Eliza H. Norman\nwas born February the\ntenth AD 1830 in Anarchee\nCounty Tenn | Martha Elizabeth Norman\nwas born June the 22 1860 in\nHardin County Tenn  |\n|  Morgan A. Norman\nwas born November\nthe 25th AD 1848 in\nLawrence County Tenn | Mary Jane and Thomas\nHill Norman\nwas born October the\n20th 1862 in Searcy\nCounty Arkansas  |\n|  William Martin Norman\nwas born January\nthe 4th AD 1850 in\nLawrence County Tenn | Francis M and\nGeorge W. Norman\nwas born June the\n30th 1866 in Searcy\nCounty Arkansas  |\n|  John A. Norman\nwas born January\nthe 25th AD 1853 in\nLawrence County Tenn | Sarah Emeline and\nHenry Clay Norman\nwas born December\nthe 28th 1868 in\nSearcy County Arkansas  |\n|  Denisa M. Norman\nwas born July the 31st\nAD 1853 in Hardin\nCounty Tenn |   |",
+                        "images": [],
+                        "tables": [],
+                        "hyperlinks": [],
+                        "header": null,
+                        "footer": null,
+                        "dimensions": {
+                            "dpi": 200,
+                            "height": 2118,
+                            "width": 1643
+                        }
+                    }
+                ],
+                "model": "mistral-ocr-latest",
+                "document_annotation": "{\n  \"blocks\": [\n    {\n      \"type\": \"headline\",\n      \"text\": \"Bible Record of Green Hill Norman, Se.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 0,\n        \"width\": 300,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"headline\",\n      \"text\": \"FAMILY RECORD.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 20,\n        \"width\": 300,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"column\",\n      \"text\": \"BIRTHS.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 40,\n        \"width\": 150,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"column\",\n      \"text\": \"BIRTHS.\",\n      \"bbox\": {\n        \"x\": 150,\n        \"y\": 40,\n        \"width\": 150,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"Green Hill Norman was born March the third AD 1825 in Monroe County Mississippi\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 60,\n        \"width\": 150,\n        \"height\": 60\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"Albert Norman was born April the 2nd AD 1858 in Hardin County Tenn\",\n      \"bbox\": {\n        \"x\": 150,\n        \"y\": 60,\n        \"width\": 150,\n        \"height\": 40\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"Eliza H. Norman was born February the tenth AD 1830 in Anarchee County Tenn\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 120,\n        \"width\": 150,\n        \"height\": 60\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"Martha Elizabeth Norman was born June the 22 1860 in Hardin County Tenn\",\n      \"bbox\": {\n        \"x\": 150,\n        \"y\": 100,\n        \"width\": 150,\n        \"height\": 40\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"Morgan A. Norman was born November the 25th AD 1848 in Lawrence County Tenn\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 180,\n        \"width\": 150,\n        \"height\": 60\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"Mary Jane and Thomas Hill Norman was born October the 20th 1862 in Searcy County Arkansas\",\n      \"bbox\": {\n        \"x\": 150,\n        \"y\": 140,\n        \"width\": 150,\n        \"height\": 60\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"William Martin Norman was born January the 4th AD 1850 in Lawrence County Tenn\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 240,\n        \"width\": 150,\n        \"height\": 60\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"Francis M and George W. Norman was born June the 30th 1866 in Searcy County Arkansas\",\n      \"bbox\": {\n        \"x\": 150,\n        \"y\": 200,\n        \"width\": 150,\n        \"height\": 60\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"John A. Norman was born January the 25th AD 1853 in Lawrence County Tenn\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 300,\n        \"width\": 150,\n        \"height\": 60\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"Sarah Emeline and Henry Clay Norman was born December the 28th 1868 in Searcy County Arkansas\",\n      \"bbox\": {\n        \"x\": 150,\n        \"y\": 260,\n        \"width\": 150,\n        \"height\": 60\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"Denisa M. Norman was born July the 31st AD 1853 in Hardin County Tenn\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 360,\n        \"width\": 150,\n        \"height\": 60\n      }\n    }\n  ]\n}",
+                "usage_info": {
+                    "pages_processed": 1,
+                    "doc_size_bytes": 630701
+                }
+            }
+        },
+        "annotate_handwriting": {
+            "pages": [
+                {
+                    "index": 0,
+                    "annotated_text": "Bible Record of <hw>Green Hill Norman</hw>, <hw>Se.</hw>\n\n# FAMILY RECORD.\n\n|  BIRTHS. | BIRTHS.  |\n| --- | --- |\n|  <hw>Green Hill Norman</hw>\n<hw>was born March the</hw>\n<hw>third AD 1825 in Monroe</hw>\n<hw>County Mississippi</hw> | <hw>Albert Norman</hw>\n<hw>was born April the</hw>\n<hw>2nd AD 1858 in Hardin</hw>\n<hw>County Tenn</hw>  |\n|  <hw>Eliza H. Norman</hw>\n<hw>was born February the</hw>\n<hw>tenth AD 1830 in Anarchee</hw>\n<hw>County Tenn</hw> | <hw>Martha Elizabeth Norman</hw>\n<hw>was born June the 22 1860 in</hw>\n<hw>Hardin County Tenn</hw>  |\n|  <hw>Morgan A. Norman</hw>\n<hw>was born November</hw>\n<hw>the 25th AD 1848 in</hw>\n<hw>Lawrence County Tenn</hw> | <hw>Mary Jane and Thomas</hw>\n<hw>Hill Norman</hw>\n<hw>was born October the</hw>\n<hw>20th 1862 in Searcy</hw>\n<hw>County Arkansas</hw>  |\n|  <hw>William Martin Norman</hw>\n<hw>was born January</hw>\n<hw>the 4th AD 1850 in</hw>\n<hw>Lawrence County Tenn</hw> | <hw>Francis M and</hw>\n<hw>George W. Norman</hw>\n<hw>was born June the</hw>\n<hw>30th 1866 in Searcy</hw>\n<hw>County Arkansas</hw>  |\n|  <hw>John A. Norman</hw>\n<hw>was born January</hw>\n<hw>the 25th AD 1853 in</hw>\n<hw>Lawrence County Tenn</hw> | <hw>Sarah Emeline and</hw>\n<hw>Henry Clay Norman</hw>\n<hw>was born December</hw>\n<hw>the 28th 1868 in</hw>\n<hw>Searcy County Arkansas</hw>  |\n|  <hw>Denisa M. Norman</hw>\n<hw>was born July the 31st</hw>\n<hw>AD 1853 in Hardin</hw>\n<hw>County Tenn</hw> |   |"
+                }
+            ],
+            "annotated_text": "Bible Record of <hw>Green Hill Norman</hw>, <hw>Se.</hw>\n\n# FAMILY RECORD.\n\n|  BIRTHS. | BIRTHS.  |\n| --- | --- |\n|  <hw>Green Hill Norman</hw>\n<hw>was born March the</hw>\n<hw>third AD 1825 in Monroe</hw>\n<hw>County Mississippi</hw> | <hw>Albert Norman</hw>\n<hw>was born April the</hw>\n<hw>2nd AD 1858 in Hardin</hw>\n<hw>County Tenn</hw>  |\n|  <hw>Eliza H. Norman</hw>\n<hw>was born February the</hw>\n<hw>tenth AD 1830 in Anarchee</hw>\n<hw>County Tenn</hw> | <hw>Martha Elizabeth Norman</hw>\n<hw>was born June the 22 1860 in</hw>\n<hw>Hardin County Tenn</hw>  |\n|  <hw>Morgan A. Norman</hw>\n<hw>was born November</hw>\n<hw>the 25th AD 1848 in</hw>\n<hw>Lawrence County Tenn</hw> | <hw>Mary Jane and Thomas</hw>\n<hw>Hill Norman</hw>\n<hw>was born October the</hw>\n<hw>20th 1862 in Searcy</hw>\n<hw>County Arkansas</hw>  |\n|  <hw>William Martin Norman</hw>\n<hw>was born January</hw>\n<hw>the 4th AD 1850 in</hw>\n<hw>Lawrence County Tenn</hw> | <hw>Francis M and</hw>\n<hw>George W. Norman</hw>\n<hw>was born June the</hw>\n<hw>30th 1866 in Searcy</hw>\n<hw>County Arkansas</hw>  |\n|  <hw>John A. Norman</hw>\n<hw>was born January</hw>\n<hw>the 25th AD 1853 in</hw>\n<hw>Lawrence County Tenn</hw> | <hw>Sarah Emeline and</hw>\n<hw>Henry Clay Norman</hw>\n<hw>was born December</hw>\n<hw>the 28th 1868 in</hw>\n<hw>Searcy County Arkansas</hw>  |\n|  <hw>Denisa M. Norman</hw>\n<hw>was born July the 31st</hw>\n<hw>AD 1853 in Hardin</hw>\n<hw>County Tenn</hw> |   |"
+        },
+        "transcribe_handwriting": {
+            "text": "Bible Record of Green Hill Norman Sr.\n\nFAMILY RECORD.\n\nBIRTHS.                                                           BIRTHS.\n\nGreen Hill Norman                                       Albert Norman\nwas born March the                                      was born April the\nthird A D 1825 in Monroe                              2 nd A D 1859 in Hardin\nCounty Mississippi !                                        County Tenn\n\nEliza H [or K] Norman                                  Martha Elizabeth Nor\nwas born Followay the                                  man was born\n10th A D 1850 in Hanosh                               June the 23 1860 in\nCounty Tenn                                                      Hardin County Tenn\n\nMorgan A. Norman                                        Mary Jane and Idoma\nwas born November                                     or Idora Norman\n25th A D 1848 in                                          was born October the\nLawrence County Tenn                               20th 1862 in Seary\n                                                                        (County) Arkansas\n\nWilliam Martin Norman\nwas born January                                         Frances M and\n17th A D 1852 in                                          George W Norman\nLawrence County Tenn                               was born June the\n                                                                    30th 1866 in Searcy\nJ. Smith Norman                                           County Arkansas ?\nwas born January\nThird A D 1853 in                                       Sarah Emaline and\nLawrence County Tenn                             Henry Clay Norman\n                                                                      was born December\nEuga M. Norman                                        the 25th 1868 in\nwas born July the                                            Searcy County Arkansas\n5th 1854 in Hardin\nCounty Tenn                                                      (TWINS)\n                                                                        \"LUDOLIE\"\n\n                                                                       \"TWINS\"\n\n                                                                       \"PENEE\"\n\n                                                                       (TWINS)",
+            "language": "en",
+            "confidence": "medium",
+            "blocks": [
+                [
+                    "Bible Record of Green Hill Norman Sr."
+                ],
+                [
+                    "FAMILY RECORD."
+                ],
+                [
+                    "BIRTHS.",
+                    "BIRTHS."
+                ],
+                [
+                    "Green Hill Norman",
+                    "Albert Norman"
+                ],
+                [
+                    "was born March the",
+                    "was born April the"
+                ],
+                [
+                    "third A D 1825 in Monroe",
+                    "2 nd A D 1859 in Hardin"
+                ],
+                [
+                    "County Mississippi !",
+                    "County Tenn"
+                ],
+                [
+                    "Eliza H [or K] Norman",
+                    "Martha Elizabeth Nor"
+                ],
+                [
+                    "was born Followay the",
+                    "man was born"
+                ],
+                [
+                    "10th A D 1850 in Hanosh",
+                    "June the 23 1860 in"
+                ],
+                [
+                    "County Tenn",
+                    "Hardin County Tenn"
+                ],
+                [
+                    "Morgan A. Norman",
+                    "Mary Jane and Idoma"
+                ],
+                [
+                    "was born November",
+                    "or Idora Norman"
+                ],
+                [
+                    "25th A D 1848 in",
+                    "was born October the"
+                ],
+                [
+                    "Lawrence County Tenn",
+                    "20th 1862 in Seary"
+                ],
+                [
+                    "County Arkansas"
+                ],
+                [
+                    "William Martin Norman"
+                ],
+                [
+                    "was born January",
+                    "Frances M and"
+                ],
+                [
+                    "17th A D 1852 in",
+                    "George W Norman"
+                ],
+                [
+                    "Lawrence County Tenn",
+                    "was born June the"
+                ],
+                [
+                    "30th 1866 in Searcy"
+                ],
+                [
+                    "J. Smith Norman",
+                    "County Arkansas ?"
+                ],
+                [
+                    "was born January"
+                ],
+                [
+                    "Third A D 1853 in",
+                    "Sarah Emaline and"
+                ],
+                [
+                    "Lawrence County Tenn",
+                    "Henry Clay Norman"
+                ],
+                [
+                    "was born December"
+                ],
+                [
+                    "Euga M. Norman",
+                    "the 25th 1868 in"
+                ],
+                [
+                    "was born July the",
+                    "Searcy County Arkansas"
+                ],
+                [
+                    "5th 1854 in Hardin"
+                ],
+                [
+                    "County Tenn",
+                    "(TWINS)"
+                ],
+                [
+                    "\"LUDOLIE\""
+                ],
+                [
+                    "\"TWINS\""
+                ],
+                [
+                    "\"PENEE\""
+                ],
+                [
+                    "(TWINS)"
+                ]
+            ],
+            "_tokens": {
+                "prompt": 971,
+                "completion": 733,
+                "total": 1704,
+                "cached": 0
+            }
+        }
+    }
+}

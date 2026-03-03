@@ -1,0 +1,568 @@
+{
+    "subject": "file:///home/tac/g/sites/ai-pipeline-demo/public/images/pages/3ddf211bcc77be63951855c2054cac7ba4d2a79e-2.jpg",
+    "results": {
+        "ocr_mistral": {
+            "text": "The Fauquier Historical Society, Inc. is a non-profit organization incorporated under the laws of the Commonwealth of Virginia. Dues and contributions are tax deductible. Newsletter published bi-monthly beginning August 1979.\n\n|  Dues are as follows: |   | OFFICERS:  |   |\n| --- | --- | --- | --- |\n|  Individual or Family Membership | $ 7.50 per year | President, John B. Adams, The Plains, |   |\n|  Contributing Membership | $15.00 per year | Vice President, Marshall Wallach, Warrenton, |   |\n|  Sustaining Membership | $25.00 and over per year | Secretary, Mrs. John Lainhart, Warrenton, |   |\n|  Business Membership | $25.00 per year | Treasurer, Mrs. Meade Palmer, Warrenton. |   |\n|  Student Membership | $ 5.00 per year |  |   |\n\n## BOARD OF DIRECTORS:\n\n|  John B. Adams, The Plains. | H. P. Monroe, Goldvein.  |\n| --- | --- |\n|  Dr. A. R. Anderson, Jr., Warrenton. | Mrs. Robert K. Neilson, Warrenton.  |\n|  Mrs. Ronald Berkenstock, Haymarket. | Mrs. Meade Palmer, Warrenton.  |\n|  Alex C. Beverley, Marshall. | H. M. Pearson, Remington.  |\n|  Mann Brown, Upperville. | Mrs. Frances Ritter, Warrenton.  |\n|  Edward Cooper, Warrenton. | Col. David Rumbaugh, Warrenton.  |\n|  Mrs. Richard M. Cutts, The Plains. | Mrs. Alyce Russell, Catlett.  |\n|  Hunter deButts, Jr., Upperville. | Douglas Smith, Warrenton.  |\n|  Jennings H. Flathees, Gainesville. | Mrs. H. Wade Stinson, Warrenton.  |\n|  Charles Harris, Warrenton. | Mrs. James Timberlake, Jr., Warrenton.  |\n|  Thomas D. Jones, Warrenton. | Mrs. Charles G. Turner, The Plains.  |\n|  Mrs. John Lainhart, Warrenton. | Col. Marshall Wallach, Warrenton.  |\n\nCorrespondence regarding membership should be directed to:\n\nThe Fauquier Historical Society\nP. O. Box 675\nWarrenton, Virginia 22186\n\nNewsletter Editor: Rosanne Berkenstock, Green Hill, Haymarket, Va. 22069.\nDirect material for newsletter to the Editor, 347-1222, 754-7385.\nNewsletter committee: Rosanne Berkenstock, Bob A. Barron, Ava Lee, Mary Stuart Banks.\n\n## Annual Meeting\n\nMembers of the Fauquier Historical Society met June 20 at St. James Parish Hall, Warrenton, for the society's annual membership meeting.\n\nCommittee reports and the election of a new treasurer and eight members of the board of directors provided the bulk of the business at the meeting. New or reelected directors are: Mrs. Robert K. Neilson, Col. David Rumbaugh, Douglas Smith, Mrs. Wade Stinson, Mrs. Charles Turner, Dr. Robert Anderson, Mrs. Ronald Berkenstock, and H. P. Monroe.\n\nJohn Adams will continue as president of the society, with Marshall Wallach as vice president, and Mrs. John Lainhart as secretary. Mrs. Meade Palmer was elected treasurer.\n\nWilliam Parkinson, who guided the restoration of the Old Gaol into the present museum, gave background information on the restoration. He explained the changes made and restorations done, and mentioned some of the fine articles that are on exhibition there.\n\nMembers learned of plans for a bi-monthly newsletter from Rosanne Berkenstock. She briefly explained some of the types of material the newsletter would contain, and its expected format.\n\nAlex Beverley told the society that he and his son-in-law have recently prepared a slide show with sound narrative which has been installed upstairs in the Old Gaol Museum.\n\nParkinson told the group of a recent meeting he had attended at which officers at Vint Hill Farms had expressed an interest in the history of their Army post. Vint Hill has already prepared a historic study of the post, and the Society decided to offer its assistance in their work.\n\nArchitectural historian Cynthia MacLeod and county historian Bob Barron told the society a little about the work they are doing surveying the buildings of Fauquier County. After their research is finished, they hope to publish a book which will provide information on many of the buildings they have visited.\n\n## Survey Provides Clues To Fauquier's Past\n\n(Continued from Page-1)\n\nis actually paid by a grant administered by the Rappahannock-Rapidan Planning District Commission. While most of her time is spent in Fauquier County, she also occasionally researches and surveys buildings in other areas of the planning district.\n\nBarron, on the other hand, is a native of Fauquier County. He delights in pointing out that he was \"born right on the main street\" of Warrenton at the old Physician's Hospital, now the District Nursing Home. He grew up with a love of local history, and eventually earned a degree in history from Mary Washington College. Research on the old gold mines of Fauquier led to his publication of a booklet on gold mining.\n\nFunds for Barron's current position were obtained from a special donor in Fauquier County. He is employed by the county as part of the Parks and Recreation Department, and began his work in January. In his job as county historian, Barron assists MacLeod with her surveys and researches many of the old buildings using tax records, deeds, wills, and any other factual information he can find.\n\nCindy and Bob keep track of all the houses surveyed so far by marking them on topographical maps. Sometimes they survey a house together, or more frequently she does the actual on-site work while he spends his time researching at the record room or library.\n\nMacLeod will first ask the owner or residents of each house what they know of its history. She photographs the outside from several vantage points, and also takes pictures of any distinctive features on the inside. She measures its dimensions and sketches a floor plan, as well as examining the construction. The type and make of nails, saw marks, construction of rafters, framing methods, style and construction of doors and paneling all provide clues to the age of a particular building. She also looks for evidence of fine craftsmanship such as beading on paneling or carved mantels, but also does not overlook houses of more simple construction that are equally as old.\n\nCindy will note the additions and changes made in each house, and any outbuildings or cemeteries on the property. When her survey is finished, she will complete an inventory form, identify the photos, and mark the negatives which will be filed at the Virginia State Library in Richmond.\n\nNot all of the buildings she visits will be researched by Barron. Only those they consider especially important or those that they have questions on will warrant having extra time spent on more extensive research.\n\nMacLeod estimates that she has surveyed 450 buildings since she began her job. Other buildings, such",
+            "language": null,
+            "confidence": "high",
+            "layout_blocks": [
+                {
+                    "page": 0,
+                    "type": "headline",
+                    "text": "The Fauquier Historical Society, Inc.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 0,
+                        "width": 1688,
+                        "height": 39
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "The Fauquier Historical Society, Inc. is a non-profit organization incorporated under the laws of the Commonwealth of Virginia. Dues and contributions are tax deductible. Newsletter published bi-monthly beginning August 1979.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 39,
+                        "width": 1688,
+                        "height": 78
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "column",
+                    "text": "Dues are as follows:",
+                    "bbox": {
+                        "x": 0,
+                        "y": 118,
+                        "width": 506,
+                        "height": 39
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "column",
+                    "text": "Individual or Family Membership $ 7.50 per year",
+                    "bbox": {
+                        "x": 0,
+                        "y": 157,
+                        "width": 506,
+                        "height": 39
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "column",
+                    "text": "Contributing Membership $15.00 per year",
+                    "bbox": {
+                        "x": 0,
+                        "y": 196,
+                        "width": 506,
+                        "height": 39
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "column",
+                    "text": "Sustaining Membership $25.00 and over per year",
+                    "bbox": {
+                        "x": 0,
+                        "y": 235,
+                        "width": 506,
+                        "height": 39
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "column",
+                    "text": "Business Membership $25.00 per year",
+                    "bbox": {
+                        "x": 0,
+                        "y": 275,
+                        "width": 506,
+                        "height": 39
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "column",
+                    "text": "Student Membership $ 5.00 per year",
+                    "bbox": {
+                        "x": 0,
+                        "y": 314,
+                        "width": 506,
+                        "height": 39
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "column",
+                    "text": "OFFICERS:",
+                    "bbox": {
+                        "x": 1182,
+                        "y": 118,
+                        "width": 506,
+                        "height": 39
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "column",
+                    "text": "President, John B. Adams, The Plains,",
+                    "bbox": {
+                        "x": 1182,
+                        "y": 157,
+                        "width": 506,
+                        "height": 39
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "column",
+                    "text": "Vice President, Marshall Wallach, Warrenton,",
+                    "bbox": {
+                        "x": 1182,
+                        "y": 196,
+                        "width": 506,
+                        "height": 39
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "column",
+                    "text": "Secretary, Mrs. John Lainhart, Warrenton,",
+                    "bbox": {
+                        "x": 1182,
+                        "y": 235,
+                        "width": 506,
+                        "height": 39
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "column",
+                    "text": "Treasurer, Mrs. Meade Palmer, Warrenton.",
+                    "bbox": {
+                        "x": 1182,
+                        "y": 275,
+                        "width": 506,
+                        "height": 39
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "headline",
+                    "text": "BOARD OF DIRECTORS:",
+                    "bbox": {
+                        "x": 0,
+                        "y": 353,
+                        "width": 1688,
+                        "height": 39
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "column",
+                    "text": "John B. Adams, The Plains. H. P. Monroe, Goldvein.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 392,
+                        "width": 844,
+                        "height": 39
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "column",
+                    "text": "Dr. A. R. Anderson, Jr., Warrenton. Mrs. Robert K. Neilson, Warrenton.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 432,
+                        "width": 844,
+                        "height": 39
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "column",
+                    "text": "Mrs. Ronald Berkenstock, Haymarket. Mrs. Meade Palmer, Warrenton.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 471,
+                        "width": 844,
+                        "height": 39
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "column",
+                    "text": "Alex C. Beverley, Marshall. H. M. Pearson, Remington.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 510,
+                        "width": 844,
+                        "height": 39
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "column",
+                    "text": "Mann Brown, Upperville. Mrs. Frances Ritter, Warrenton.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 549,
+                        "width": 844,
+                        "height": 39
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "column",
+                    "text": "Edward Cooper, Warrenton. Col. David Rumbaugh, Warrenton.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 588,
+                        "width": 844,
+                        "height": 39
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "column",
+                    "text": "Mrs. Richard M. Cutts, The Plains. Mrs. Alyce Russell, Catlett.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 628,
+                        "width": 844,
+                        "height": 39
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "column",
+                    "text": "Hunter deButts, Jr., Upperville. Douglas Smith, Warrenton.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 667,
+                        "width": 844,
+                        "height": 39
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "column",
+                    "text": "Jennings H. Flathees, Gainesville. Mrs. H. Wade Stinson, Warrenton.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 706,
+                        "width": 844,
+                        "height": 39
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "column",
+                    "text": "Charles Harris, Warrenton. Mrs. James Timberlake, Jr., Warrenton.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 745,
+                        "width": 844,
+                        "height": 39
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "column",
+                    "text": "Thomas D. Jones, Warrenton. Mrs. Charles G. Turner, The Plains.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 785,
+                        "width": 844,
+                        "height": 39
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "column",
+                    "text": "Mrs. John Lainhart, Warrenton. Col. Marshall Wallach, Warrenton.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 824,
+                        "width": 844,
+                        "height": 39
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "Correspondence regarding membership should be directed to: The Fauquier Historical Society P. O. Box 675 Warrenton, Virginia 22186",
+                    "bbox": {
+                        "x": 0,
+                        "y": 863,
+                        "width": 1688,
+                        "height": 78
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "Newsletter Editor: Rosanne Berkenstock, Green Hill, Haymarket, Va. 22069. Direct material for newsletter to the Editor, 347-1222, 754-7385. Newsletter committee: Rosanne Berkenstock, Bob A. Barron, Ava Lee, Mary Stuart Banks.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 942,
+                        "width": 1688,
+                        "height": 78
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "headline",
+                    "text": "Annual Meeting",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1020,
+                        "width": 1688,
+                        "height": 39
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "Members of the Fauquier Historical Society met June 20 at St. James Parish Hall, Warrenton, for the society's annual membership meeting.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1059,
+                        "width": 1688,
+                        "height": 39
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "Committee reports and the election of a new treasurer and eight members of the board of directors provided the bulk of the business at the meeting. New or reelected directors are: Mrs. Robert K. Neilson, Col. David Rumbaugh, Douglas Smith, Mrs. Wade Stinson, Mrs. Charles Turner, Dr. Robert Anderson, Mrs. Ronald Berkenstock, and H. P. Monroe.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1099,
+                        "width": 1688,
+                        "height": 78
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "John Adams will continue as president of the society, with Marshall Wallach as vice president, and Mrs. John Lainhart as secretary. Mrs. Meade Palmer was elected treasurer.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1177,
+                        "width": 1688,
+                        "height": 39
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "William Parkinson, who guided the restoration of the Old Gaol into the present museum, gave background information on the restoration. He explained the changes made and restorations done, and mentioned some of the fine articles that are on exhibition there.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1216,
+                        "width": 1688,
+                        "height": 78
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "Members learned of plans for a bi-monthly newsletter from Rosanne Berkenstock. She briefly explained some of the types of material the newsletter would contain, and its expected format.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1295,
+                        "width": 1688,
+                        "height": 39
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "Alex Beverley told the society that he and his son-in-law have recently prepared a slide show with sound narrative which has been installed upstairs in the Old Gaol Museum.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1334,
+                        "width": 1688,
+                        "height": 39
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "Parkinson told the group of a recent meeting he had attended at which officers at Vint Hill Farms had expressed an interest in the history of their Army post. Vint Hill has already prepared a historic study of the post, and the Society decided to offer its assistance in their work.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1373,
+                        "width": 1688,
+                        "height": 78
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "Architectural historian Cynthia MacLeod and county historian Bob Barron told the society a little about the work they are doing surveying the buildings of Fauquier County. After their research is finished, they hope to publish a book which will provide information on many of the buildings they have visited.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1452,
+                        "width": 1688,
+                        "height": 78
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "headline",
+                    "text": "Survey Provides Clues To Fauquier's Past",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1530,
+                        "width": 1688,
+                        "height": 39
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "(Continued from Page-1)",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1569,
+                        "width": 1688,
+                        "height": 39
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "is actually paid by a grant administered by the Rappahannock-Rapidan Planning District Commission. While most of her time is spent in Fauquier County, she also occasionally researches and surveys buildings in other areas of the planning district.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1609,
+                        "width": 1688,
+                        "height": 78
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "Barron, on the other hand, is a native of Fauquier County. He delights in pointing out that he was \"born right on the main street\" of Warrenton at the old Physician's Hospital, now the District Nursing Home. He grew up with a love of local history, and eventually earned a degree in history from Mary Washington College. Research on the old gold mines of Fauquier led to his publication of a booklet on gold mining.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1687,
+                        "width": 1688,
+                        "height": 78
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "Funds for Barron's current position were obtained from a special donor in Fauquier County. He is employed by the county as part of the Parks and Recreation Department, and began his work in January. In his job as county historian, Barron assists MacLeod with her surveys and researches many of the old buildings using tax records, deeds, wills, and any other factual information he can find.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1765,
+                        "width": 1688,
+                        "height": 78
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "Cindy and Bob keep track of all the houses surveyed so far by marking them on topographical maps. Sometimes they survey a house together, or more frequently she does the actual on-site work while he spends his time researching at the record room or library.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1844,
+                        "width": 1688,
+                        "height": 78
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "MacLeod will first ask the owner or residents of each house what they know of its history. She photographs the outside from several vantage points, and also takes pictures of any distinctive features on the inside. She measures its dimensions and sketches a floor plan, as well as examining the construction. The type and make of nails, saw marks, construction of rafters, framing methods, style and construction of doors and paneling all provide clues to the age of a particular building. She also looks for evidence of fine craftsmanship such as beading on paneling or carved mantels, but also does not overlook houses of more simple construction that are equally as old.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1922,
+                        "width": 1688,
+                        "height": 78
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "Cindy will note the additions and changes made in each house, and any outbuildings or cemeteries on the property. When her survey is finished, she will complete an inventory form, identify the photos, and mark the negatives which will be filed at the Virginia State Library in Richmond.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 2001,
+                        "width": 1688,
+                        "height": 78
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "Not all of the buildings she visits will be researched by Barron. Only those they consider especially important or those that they have questions on will warrant having extra time spent on more extensive research.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 2079,
+                        "width": 1688,
+                        "height": 78
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "MacLeod estimates that she has surveyed 450 buildings since she began her job. Other buildings, such",
+                    "bbox": {
+                        "x": 0,
+                        "y": 2158,
+                        "width": 1688,
+                        "height": 39
+                    }
+                }
+            ],
+            "image_blocks": [],
+            "pages": [
+                {
+                    "index": 0,
+                    "markdown": "The Fauquier Historical Society, Inc. is a non-profit organization incorporated under the laws of the Commonwealth of Virginia. Dues and contributions are tax deductible. Newsletter published bi-monthly beginning August 1979.\n\n|  Dues are as follows: |   | OFFICERS:  |   |\n| --- | --- | --- | --- |\n|  Individual or Family Membership | $ 7.50 per year | President, John B. Adams, The Plains, |   |\n|  Contributing Membership | $15.00 per year | Vice President, Marshall Wallach, Warrenton, |   |\n|  Sustaining Membership | $25.00 and over per year | Secretary, Mrs. John Lainhart, Warrenton, |   |\n|  Business Membership | $25.00 per year | Treasurer, Mrs. Meade Palmer, Warrenton. |   |\n|  Student Membership | $ 5.00 per year |  |   |\n\n## BOARD OF DIRECTORS:\n\n|  John B. Adams, The Plains. | H. P. Monroe, Goldvein.  |\n| --- | --- |\n|  Dr. A. R. Anderson, Jr., Warrenton. | Mrs. Robert K. Neilson, Warrenton.  |\n|  Mrs. Ronald Berkenstock, Haymarket. | Mrs. Meade Palmer, Warrenton.  |\n|  Alex C. Beverley, Marshall. | H. M. Pearson, Remington.  |\n|  Mann Brown, Upperville. | Mrs. Frances Ritter, Warrenton.  |\n|  Edward Cooper, Warrenton. | Col. David Rumbaugh, Warrenton.  |\n|  Mrs. Richard M. Cutts, The Plains. | Mrs. Alyce Russell, Catlett.  |\n|  Hunter deButts, Jr., Upperville. | Douglas Smith, Warrenton.  |\n|  Jennings H. Flathees, Gainesville. | Mrs. H. Wade Stinson, Warrenton.  |\n|  Charles Harris, Warrenton. | Mrs. James Timberlake, Jr., Warrenton.  |\n|  Thomas D. Jones, Warrenton. | Mrs. Charles G. Turner, The Plains.  |\n|  Mrs. John Lainhart, Warrenton. | Col. Marshall Wallach, Warrenton.  |\n\nCorrespondence regarding membership should be directed to:\n\nThe Fauquier Historical Society\nP. O. Box 675\nWarrenton, Virginia 22186\n\nNewsletter Editor: Rosanne Berkenstock, Green Hill, Haymarket, Va. 22069.\nDirect material for newsletter to the Editor, 347-1222, 754-7385.\nNewsletter committee: Rosanne Berkenstock, Bob A. Barron, Ava Lee, Mary Stuart Banks.\n\n## Annual Meeting\n\nMembers of the Fauquier Historical Society met June 20 at St. James Parish Hall, Warrenton, for the society's annual membership meeting.\n\nCommittee reports and the election of a new treasurer and eight members of the board of directors provided the bulk of the business at the meeting. New or reelected directors are: Mrs. Robert K. Neilson, Col. David Rumbaugh, Douglas Smith, Mrs. Wade Stinson, Mrs. Charles Turner, Dr. Robert Anderson, Mrs. Ronald Berkenstock, and H. P. Monroe.\n\nJohn Adams will continue as president of the society, with Marshall Wallach as vice president, and Mrs. John Lainhart as secretary. Mrs. Meade Palmer was elected treasurer.\n\nWilliam Parkinson, who guided the restoration of the Old Gaol into the present museum, gave background information on the restoration. He explained the changes made and restorations done, and mentioned some of the fine articles that are on exhibition there.\n\nMembers learned of plans for a bi-monthly newsletter from Rosanne Berkenstock. She briefly explained some of the types of material the newsletter would contain, and its expected format.\n\nAlex Beverley told the society that he and his son-in-law have recently prepared a slide show with sound narrative which has been installed upstairs in the Old Gaol Museum.\n\nParkinson told the group of a recent meeting he had attended at which officers at Vint Hill Farms had expressed an interest in the history of their Army post. Vint Hill has already prepared a historic study of the post, and the Society decided to offer its assistance in their work.\n\nArchitectural historian Cynthia MacLeod and county historian Bob Barron told the society a little about the work they are doing surveying the buildings of Fauquier County. After their research is finished, they hope to publish a book which will provide information on many of the buildings they have visited.\n\n## Survey Provides Clues To Fauquier's Past\n\n(Continued from Page-1)\n\nis actually paid by a grant administered by the Rappahannock-Rapidan Planning District Commission. While most of her time is spent in Fauquier County, she also occasionally researches and surveys buildings in other areas of the planning district.\n\nBarron, on the other hand, is a native of Fauquier County. He delights in pointing out that he was \"born right on the main street\" of Warrenton at the old Physician's Hospital, now the District Nursing Home. He grew up with a love of local history, and eventually earned a degree in history from Mary Washington College. Research on the old gold mines of Fauquier led to his publication of a booklet on gold mining.\n\nFunds for Barron's current position were obtained from a special donor in Fauquier County. He is employed by the county as part of the Parks and Recreation Department, and began his work in January. In his job as county historian, Barron assists MacLeod with her surveys and researches many of the old buildings using tax records, deeds, wills, and any other factual information he can find.\n\nCindy and Bob keep track of all the houses surveyed so far by marking them on topographical maps. Sometimes they survey a house together, or more frequently she does the actual on-site work while he spends his time researching at the record room or library.\n\nMacLeod will first ask the owner or residents of each house what they know of its history. She photographs the outside from several vantage points, and also takes pictures of any distinctive features on the inside. She measures its dimensions and sketches a floor plan, as well as examining the construction. The type and make of nails, saw marks, construction of rafters, framing methods, style and construction of doors and paneling all provide clues to the age of a particular building. She also looks for evidence of fine craftsmanship such as beading on paneling or carved mantels, but also does not overlook houses of more simple construction that are equally as old.\n\nCindy will note the additions and changes made in each house, and any outbuildings or cemeteries on the property. When her survey is finished, she will complete an inventory form, identify the photos, and mark the negatives which will be filed at the Virginia State Library in Richmond.\n\nNot all of the buildings she visits will be researched by Barron. Only those they consider especially important or those that they have questions on will warrant having extra time spent on more extensive research.\n\nMacLeod estimates that she has surveyed 450 buildings since she began her job. Other buildings, such",
+                    "dimensions": {
+                        "dpi": 200,
+                        "height": 2197,
+                        "width": 1688
+                    },
+                    "tables": [],
+                    "header": null,
+                    "footer": null
+                }
+            ],
+            "raw_response": {
+                "pages": [
+                    {
+                        "index": 0,
+                        "markdown": "The Fauquier Historical Society, Inc. is a non-profit organization incorporated under the laws of the Commonwealth of Virginia. Dues and contributions are tax deductible. Newsletter published bi-monthly beginning August 1979.\n\n|  Dues are as follows: |   | OFFICERS:  |   |\n| --- | --- | --- | --- |\n|  Individual or Family Membership | $ 7.50 per year | President, John B. Adams, The Plains, |   |\n|  Contributing Membership | $15.00 per year | Vice President, Marshall Wallach, Warrenton, |   |\n|  Sustaining Membership | $25.00 and over per year | Secretary, Mrs. John Lainhart, Warrenton, |   |\n|  Business Membership | $25.00 per year | Treasurer, Mrs. Meade Palmer, Warrenton. |   |\n|  Student Membership | $ 5.00 per year |  |   |\n\n## BOARD OF DIRECTORS:\n\n|  John B. Adams, The Plains. | H. P. Monroe, Goldvein.  |\n| --- | --- |\n|  Dr. A. R. Anderson, Jr., Warrenton. | Mrs. Robert K. Neilson, Warrenton.  |\n|  Mrs. Ronald Berkenstock, Haymarket. | Mrs. Meade Palmer, Warrenton.  |\n|  Alex C. Beverley, Marshall. | H. M. Pearson, Remington.  |\n|  Mann Brown, Upperville. | Mrs. Frances Ritter, Warrenton.  |\n|  Edward Cooper, Warrenton. | Col. David Rumbaugh, Warrenton.  |\n|  Mrs. Richard M. Cutts, The Plains. | Mrs. Alyce Russell, Catlett.  |\n|  Hunter deButts, Jr., Upperville. | Douglas Smith, Warrenton.  |\n|  Jennings H. Flathees, Gainesville. | Mrs. H. Wade Stinson, Warrenton.  |\n|  Charles Harris, Warrenton. | Mrs. James Timberlake, Jr., Warrenton.  |\n|  Thomas D. Jones, Warrenton. | Mrs. Charles G. Turner, The Plains.  |\n|  Mrs. John Lainhart, Warrenton. | Col. Marshall Wallach, Warrenton.  |\n\nCorrespondence regarding membership should be directed to:\n\nThe Fauquier Historical Society\nP. O. Box 675\nWarrenton, Virginia 22186\n\nNewsletter Editor: Rosanne Berkenstock, Green Hill, Haymarket, Va. 22069.\nDirect material for newsletter to the Editor, 347-1222, 754-7385.\nNewsletter committee: Rosanne Berkenstock, Bob A. Barron, Ava Lee, Mary Stuart Banks.\n\n## Annual Meeting\n\nMembers of the Fauquier Historical Society met June 20 at St. James Parish Hall, Warrenton, for the society's annual membership meeting.\n\nCommittee reports and the election of a new treasurer and eight members of the board of directors provided the bulk of the business at the meeting. New or reelected directors are: Mrs. Robert K. Neilson, Col. David Rumbaugh, Douglas Smith, Mrs. Wade Stinson, Mrs. Charles Turner, Dr. Robert Anderson, Mrs. Ronald Berkenstock, and H. P. Monroe.\n\nJohn Adams will continue as president of the society, with Marshall Wallach as vice president, and Mrs. John Lainhart as secretary. Mrs. Meade Palmer was elected treasurer.\n\nWilliam Parkinson, who guided the restoration of the Old Gaol into the present museum, gave background information on the restoration. He explained the changes made and restorations done, and mentioned some of the fine articles that are on exhibition there.\n\nMembers learned of plans for a bi-monthly newsletter from Rosanne Berkenstock. She briefly explained some of the types of material the newsletter would contain, and its expected format.\n\nAlex Beverley told the society that he and his son-in-law have recently prepared a slide show with sound narrative which has been installed upstairs in the Old Gaol Museum.\n\nParkinson told the group of a recent meeting he had attended at which officers at Vint Hill Farms had expressed an interest in the history of their Army post. Vint Hill has already prepared a historic study of the post, and the Society decided to offer its assistance in their work.\n\nArchitectural historian Cynthia MacLeod and county historian Bob Barron told the society a little about the work they are doing surveying the buildings of Fauquier County. After their research is finished, they hope to publish a book which will provide information on many of the buildings they have visited.\n\n## Survey Provides Clues To Fauquier's Past\n\n(Continued from Page-1)\n\nis actually paid by a grant administered by the Rappahannock-Rapidan Planning District Commission. While most of her time is spent in Fauquier County, she also occasionally researches and surveys buildings in other areas of the planning district.\n\nBarron, on the other hand, is a native of Fauquier County. He delights in pointing out that he was \"born right on the main street\" of Warrenton at the old Physician's Hospital, now the District Nursing Home. He grew up with a love of local history, and eventually earned a degree in history from Mary Washington College. Research on the old gold mines of Fauquier led to his publication of a booklet on gold mining.\n\nFunds for Barron's current position were obtained from a special donor in Fauquier County. He is employed by the county as part of the Parks and Recreation Department, and began his work in January. In his job as county historian, Barron assists MacLeod with her surveys and researches many of the old buildings using tax records, deeds, wills, and any other factual information he can find.\n\nCindy and Bob keep track of all the houses surveyed so far by marking them on topographical maps. Sometimes they survey a house together, or more frequently she does the actual on-site work while he spends his time researching at the record room or library.\n\nMacLeod will first ask the owner or residents of each house what they know of its history. She photographs the outside from several vantage points, and also takes pictures of any distinctive features on the inside. She measures its dimensions and sketches a floor plan, as well as examining the construction. The type and make of nails, saw marks, construction of rafters, framing methods, style and construction of doors and paneling all provide clues to the age of a particular building. She also looks for evidence of fine craftsmanship such as beading on paneling or carved mantels, but also does not overlook houses of more simple construction that are equally as old.\n\nCindy will note the additions and changes made in each house, and any outbuildings or cemeteries on the property. When her survey is finished, she will complete an inventory form, identify the photos, and mark the negatives which will be filed at the Virginia State Library in Richmond.\n\nNot all of the buildings she visits will be researched by Barron. Only those they consider especially important or those that they have questions on will warrant having extra time spent on more extensive research.\n\nMacLeod estimates that she has surveyed 450 buildings since she began her job. Other buildings, such",
+                        "images": [],
+                        "tables": [],
+                        "hyperlinks": [],
+                        "header": null,
+                        "footer": null,
+                        "dimensions": {
+                            "dpi": 200,
+                            "height": 2197,
+                            "width": 1688
+                        }
+                    }
+                ],
+                "model": "mistral-ocr-latest",
+                "document_annotation": "{\n  \"blocks\": [\n    {\n      \"type\": \"headline\",\n      \"text\": \"The Fauquier Historical Society, Inc.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 0,\n        \"width\": 100,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"The Fauquier Historical Society, Inc. is a non-profit organization incorporated under the laws of the Commonwealth of Virginia. Dues and contributions are tax deductible. Newsletter published bi-monthly beginning August 1979.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 10,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"column\",\n      \"text\": \"Dues are as follows:\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 30,\n        \"width\": 30,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"column\",\n      \"text\": \"Individual or Family Membership $ 7.50 per year\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 40,\n        \"width\": 30,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"column\",\n      \"text\": \"Contributing Membership $15.00 per year\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 50,\n        \"width\": 30,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"column\",\n      \"text\": \"Sustaining Membership $25.00 and over per year\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 60,\n        \"width\": 30,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"column\",\n      \"text\": \"Business Membership $25.00 per year\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 70,\n        \"width\": 30,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"column\",\n      \"text\": \"Student Membership $ 5.00 per year\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 80,\n        \"width\": 30,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"column\",\n      \"text\": \"OFFICERS:\",\n      \"bbox\": {\n        \"x\": 70,\n        \"y\": 30,\n        \"width\": 30,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"column\",\n      \"text\": \"President, John B. Adams, The Plains,\",\n      \"bbox\": {\n        \"x\": 70,\n        \"y\": 40,\n        \"width\": 30,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"column\",\n      \"text\": \"Vice President, Marshall Wallach, Warrenton,\",\n      \"bbox\": {\n        \"x\": 70,\n        \"y\": 50,\n        \"width\": 30,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"column\",\n      \"text\": \"Secretary, Mrs. John Lainhart, Warrenton,\",\n      \"bbox\": {\n        \"x\": 70,\n        \"y\": 60,\n        \"width\": 30,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"column\",\n      \"text\": \"Treasurer, Mrs. Meade Palmer, Warrenton.\",\n      \"bbox\": {\n        \"x\": 70,\n        \"y\": 70,\n        \"width\": 30,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"headline\",\n      \"text\": \"BOARD OF DIRECTORS:\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 90,\n        \"width\": 100,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"column\",\n      \"text\": \"John B. Adams, The Plains. H. P. Monroe, Goldvein.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 100,\n        \"width\": 50,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"column\",\n      \"text\": \"Dr. A. R. Anderson, Jr., Warrenton. Mrs. Robert K. Neilson, Warrenton.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 110,\n        \"width\": 50,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"column\",\n      \"text\": \"Mrs. Ronald Berkenstock, Haymarket. Mrs. Meade Palmer, Warrenton.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 120,\n        \"width\": 50,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"column\",\n      \"text\": \"Alex C. Beverley, Marshall. H. M. Pearson, Remington.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 130,\n        \"width\": 50,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"column\",\n      \"text\": \"Mann Brown, Upperville. Mrs. Frances Ritter, Warrenton.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 140,\n        \"width\": 50,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"column\",\n      \"text\": \"Edward Cooper, Warrenton. Col. David Rumbaugh, Warrenton.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 150,\n        \"width\": 50,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"column\",\n      \"text\": \"Mrs. Richard M. Cutts, The Plains. Mrs. Alyce Russell, Catlett.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 160,\n        \"width\": 50,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"column\",\n      \"text\": \"Hunter deButts, Jr., Upperville. Douglas Smith, Warrenton.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 170,\n        \"width\": 50,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"column\",\n      \"text\": \"Jennings H. Flathees, Gainesville. Mrs. H. Wade Stinson, Warrenton.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 180,\n        \"width\": 50,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"column\",\n      \"text\": \"Charles Harris, Warrenton. Mrs. James Timberlake, Jr., Warrenton.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 190,\n        \"width\": 50,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"column\",\n      \"text\": \"Thomas D. Jones, Warrenton. Mrs. Charles G. Turner, The Plains.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 200,\n        \"width\": 50,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"column\",\n      \"text\": \"Mrs. John Lainhart, Warrenton. Col. Marshall Wallach, Warrenton.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 210,\n        \"width\": 50,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"Correspondence regarding membership should be directed to: The Fauquier Historical Society P. O. Box 675 Warrenton, Virginia 22186\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 220,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"Newsletter Editor: Rosanne Berkenstock, Green Hill, Haymarket, Va. 22069. Direct material for newsletter to the Editor, 347-1222, 754-7385. Newsletter committee: Rosanne Berkenstock, Bob A. Barron, Ava Lee, Mary Stuart Banks.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 240,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"headline\",\n      \"text\": \"Annual Meeting\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 260,\n        \"width\": 100,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"Members of the Fauquier Historical Society met June 20 at St. James Parish Hall, Warrenton, for the society's annual membership meeting.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 270,\n        \"width\": 100,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"Committee reports and the election of a new treasurer and eight members of the board of directors provided the bulk of the business at the meeting. New or reelected directors are: Mrs. Robert K. Neilson, Col. David Rumbaugh, Douglas Smith, Mrs. Wade Stinson, Mrs. Charles Turner, Dr. Robert Anderson, Mrs. Ronald Berkenstock, and H. P. Monroe.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 280,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"John Adams will continue as president of the society, with Marshall Wallach as vice president, and Mrs. John Lainhart as secretary. Mrs. Meade Palmer was elected treasurer.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 300,\n        \"width\": 100,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"William Parkinson, who guided the restoration of the Old Gaol into the present museum, gave background information on the restoration. He explained the changes made and restorations done, and mentioned some of the fine articles that are on exhibition there.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 310,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"Members learned of plans for a bi-monthly newsletter from Rosanne Berkenstock. She briefly explained some of the types of material the newsletter would contain, and its expected format.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 330,\n        \"width\": 100,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"Alex Beverley told the society that he and his son-in-law have recently prepared a slide show with sound narrative which has been installed upstairs in the Old Gaol Museum.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 340,\n        \"width\": 100,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"Parkinson told the group of a recent meeting he had attended at which officers at Vint Hill Farms had expressed an interest in the history of their Army post. Vint Hill has already prepared a historic study of the post, and the Society decided to offer its assistance in their work.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 350,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"Architectural historian Cynthia MacLeod and county historian Bob Barron told the society a little about the work they are doing surveying the buildings of Fauquier County. After their research is finished, they hope to publish a book which will provide information on many of the buildings they have visited.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 370,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"headline\",\n      \"text\": \"Survey Provides Clues To Fauquier's Past\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 390,\n        \"width\": 100,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"(Continued from Page-1)\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 400,\n        \"width\": 100,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"is actually paid by a grant administered by the Rappahannock-Rapidan Planning District Commission. While most of her time is spent in Fauquier County, she also occasionally researches and surveys buildings in other areas of the planning district.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 410,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"Barron, on the other hand, is a native of Fauquier County. He delights in pointing out that he was \\\"born right on the main street\\\" of Warrenton at the old Physician's Hospital, now the District Nursing Home. He grew up with a love of local history, and eventually earned a degree in history from Mary Washington College. Research on the old gold mines of Fauquier led to his publication of a booklet on gold mining.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 430,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"Funds for Barron's current position were obtained from a special donor in Fauquier County. He is employed by the county as part of the Parks and Recreation Department, and began his work in January. In his job as county historian, Barron assists MacLeod with her surveys and researches many of the old buildings using tax records, deeds, wills, and any other factual information he can find.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 450,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"Cindy and Bob keep track of all the houses surveyed so far by marking them on topographical maps. Sometimes they survey a house together, or more frequently she does the actual on-site work while he spends his time researching at the record room or library.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 470,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"MacLeod will first ask the owner or residents of each house what they know of its history. She photographs the outside from several vantage points, and also takes pictures of any distinctive features on the inside. She measures its dimensions and sketches a floor plan, as well as examining the construction. The type and make of nails, saw marks, construction of rafters, framing methods, style and construction of doors and paneling all provide clues to the age of a particular building. She also looks for evidence of fine craftsmanship such as beading on paneling or carved mantels, but also does not overlook houses of more simple construction that are equally as old.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 490,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"Cindy will note the additions and changes made in each house, and any outbuildings or cemeteries on the property. When her survey is finished, she will complete an inventory form, identify the photos, and mark the negatives which will be filed at the Virginia State Library in Richmond.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 510,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"Not all of the buildings she visits will be researched by Barron. Only those they consider especially important or those that they have questions on will warrant having extra time spent on more extensive research.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 530,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"MacLeod estimates that she has surveyed 450 buildings since she began her job. Other buildings, such\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 550,\n        \"width\": 100,\n        \"height\": 10\n      }\n    }\n  ]\n}",
+                "usage_info": {
+                    "pages_processed": 1,
+                    "doc_size_bytes": 667417
+                }
+            }
+        }
+    }
+}

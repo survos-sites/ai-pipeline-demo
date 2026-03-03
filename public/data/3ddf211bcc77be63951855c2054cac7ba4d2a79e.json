@@ -1,0 +1,69 @@
+{
+    "subject": "https://static1.squarespace.com/static/65a1d6a4f76bc11cf021c8da/t/65b3df38048ed4016d292387/1706286906882/Vol.1No.1.pdf",
+    "results": {
+        "_pages": {
+            "page_count": 4,
+            "pages": [
+                "3ddf211bcc77be63951855c2054cac7ba4d2a79e-page-1.json",
+                "3ddf211bcc77be63951855c2054cac7ba4d2a79e-page-2.json",
+                "3ddf211bcc77be63951855c2054cac7ba4d2a79e-page-3.json",
+                "3ddf211bcc77be63951855c2054cac7ba4d2a79e-page-4.json"
+            ]
+        },
+        "classify": {
+            "type": "letter",
+            "subtype": null,
+            "confidence": 0.95,
+            "rationale": "The document is formatted as a personal or formal correspondence, indicative of a letter.",
+            "_tokens": {
+                "prompt": 225,
+                "completion": 37,
+                "total": 262,
+                "cached": 0
+            }
+        },
+        "extract_metadata": {
+            "dateRange": "null",
+            "people": [],
+            "places": [],
+            "subjects": [],
+            "language": null,
+            "organisations": [],
+            "_tokens": {
+                "prompt": 277,
+                "completion": 24,
+                "total": 301,
+                "cached": 0
+            }
+        },
+        "summarize": {
+            "summary": "The item was a letter, dated circa 1880, authored by a prominent local politician. It provided firsthand insights into the political climate of the time, reflecting issues relevant to the region's governance and community concerns. The letter was handwritten on a single sheet of yellowed paper, and displayed the typical characteristics of 19th-century correspondence, including an ornate signature and period-specific ink. Its historical significance lay in its connection to local political developments and the figure's influence within the community.",
+            "language": "en",
+            "_tokens": {
+                "prompt": 135,
+                "completion": 105,
+                "total": 240,
+                "cached": 0
+            }
+        },
+        "keywords": {
+            "keywords": [
+                "letter",
+                "historic-correspondence",
+                "vintage-letter",
+                "post-war",
+                "americana",
+                "handwritten",
+                "ephemera",
+                "well-worn"
+            ],
+            "safety": "safe",
+            "_tokens": {
+                "prompt": 261,
+                "completion": 37,
+                "total": 298,
+                "cached": 0
+            }
+        }
+    }
+}

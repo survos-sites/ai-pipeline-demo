@@ -1,0 +1,260 @@
+{
+    "subject": "file:///home/tac/g/sites/ai-pipeline-demo/public/images/pages/3ddf211bcc77be63951855c2054cac7ba4d2a79e-1.jpg",
+    "results": {
+        "ocr_mistral": {
+            "text": "Vol. 1, No. 1\nWARRENTON, VIRGINIA\nAugust, 1979\n\n# News and Notes\n\nfrom\n\n## The Fauquier Historical Society\n\n### A Beginning...\n\nThis month marks the beginning of a new publication offering “News and Notes” from The Fauquier Historical Society. This bi-monthly newsletter is one of the first of many changes and activities being initiated by the Society this year.\n\nIn it you will find features on people and places in Fauquier County—both stories relating to the past and those providing information on things being done in the present. The newsletter will try to keep the Society membership informed on activities of the Old Gaol museum, new donations or special exhibits, persons doing research in Fauquier history or genealogy, new books of local interest, special northern Virginia activities of interest to local residents, and any other activities of the Fauquier Historical Society. A calendar of events will be a regular part of each issue.\n\nWhile the newsletter will help keep Fauquier residents advised of what’s going on in their own county, it will also serve as a source of information to those Society members who no longer live in this geographical area, but who wish to retain their ties with Fauquier. Although this first issue is being mailed to everyone on the Society’s mailing list, only members will receive the next issues.\n\nWhile the newsletter committee already has many suggestions for possible feature stories for future issues, contributions from other writers are also welcomed and encouraged. Anyone with news items or features to be included in the newsletter should contact the editor or mail their articles or information to The Fauquier Historical Society, P. O. Box 675, Warrenton, Virginia 22186.\n\nPhoto By Rosanne Berkenstock\nCounty historian Bob Barron and architectural surveyor Cynthia MacLeod on Culpeper Street.\n\n## Survey Provides Clues To Fauquier’s Past\n\nBy Rosanne Berkenstock\n\nHow many times have you driven over Fauquier County’s roads and found yourself asking, “I wonder what that old building over there used to be?” Or driven by a well-kept but obviously old house and wondered who built it and when?\n\nAfter the research currently being conducted by Cynthia MacLeod and Bob Barron is completed, the answers to many of these vague questions may well be readily available. They are conducting an architectural survey of the old and unique buildings of Fauquier County.\n\nMacLeod, a graduate of Duke University, says she has always been interested in architectural history. After a year away from school, which included time spent working as a carpenter to discover how buildings were put together, she entered graduate school at the University of Virginia to pursue a master’s degree in architectural history. She completed her course work last year, and in September began working in Fauquier County.\n\nAlthough she was hired by the Virginia Historic Landmarks Commission in Richmond, MacLeod\n\n(Continued on Page -2)",
+            "language": null,
+            "confidence": "high",
+            "layout_blocks": [
+                {
+                    "page": 0,
+                    "type": "headline",
+                    "text": "Vol. 1, No. 1",
+                    "bbox": {
+                        "x": 0,
+                        "y": 0,
+                        "width": 1688,
+                        "height": 36
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "column",
+                    "text": "WARRENTON, VIRGINIA\nAugust, 1979",
+                    "bbox": {
+                        "x": 0,
+                        "y": 36,
+                        "width": 1688,
+                        "height": 72
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "headline",
+                    "text": "News and Notes",
+                    "bbox": {
+                        "x": 0,
+                        "y": 108,
+                        "width": 1688,
+                        "height": 144
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "subheadline",
+                    "text": "from",
+                    "bbox": {
+                        "x": 0,
+                        "y": 144,
+                        "width": 1688,
+                        "height": 181
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "column",
+                    "text": "The Fauquier Historical Society",
+                    "bbox": {
+                        "x": 0,
+                        "y": 181,
+                        "width": 1688,
+                        "height": 217
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "subheadline",
+                    "text": "A Beginning...",
+                    "bbox": {
+                        "x": 0,
+                        "y": 217,
+                        "width": 1688,
+                        "height": 253
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "This month marks the beginning of a new publication offering “News and Notes” from The Fauquier Historical Society. This bi-monthly newsletter is one of the first of many changes and activities being initiated by the Society this year.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 253,
+                        "width": 1688,
+                        "height": 325
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "In it you will find features on people and places in Fauquier County—both stories relating to the past and those providing information on things being done in the present. The newsletter will try to keep the Society membership informed on activities of the Old Gaol museum, new donations or special exhibits, persons doing research in Fauquier history or genealogy, new books of local interest, special northern Virginia activities of interest to local residents, and any other activities of the Fauquier Historical Society. A calendar of events will be a regular part of each issue.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 325,
+                        "width": 1688,
+                        "height": 433
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "While the newsletter will help keep Fauquier residents advised of what’s going on in their own county, it will also serve as a source of information to those Society members who no longer live in this geographical area, but who wish to retain their ties with Fauquier. Although this first issue is being mailed to everyone on the Society’s mailing list, only members will receive the next issues.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 433,
+                        "width": 1688,
+                        "height": 542
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "While the newsletter committee already has many suggestions for possible feature stories for future issues, contributions from other writers are also welcomed and encouraged. Anyone with news items or features to be included in the newsletter should contact the editor or mail their articles or information to The Fauquier Historical Society, P. O. Box 675, Warrenton, Virginia 22186.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 542,
+                        "width": 1688,
+                        "height": 650
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "caption",
+                    "text": "Photo By Rosanne Berkenstock",
+                    "bbox": {
+                        "x": 0,
+                        "y": 650,
+                        "width": 1688,
+                        "height": 686
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "County historian Bob Barron and architectural surveyor Cynthia MacLeod on Culpeper Street.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 686,
+                        "width": 1688,
+                        "height": 722
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "headline",
+                    "text": "Survey Provides Clues To Fauquier’s Past",
+                    "bbox": {
+                        "x": 0,
+                        "y": 722,
+                        "width": 1688,
+                        "height": 758
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "byline",
+                    "text": "By Rosanne Berkenstock",
+                    "bbox": {
+                        "x": 0,
+                        "y": 758,
+                        "width": 1688,
+                        "height": 795
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "How many times have you driven over Fauquier County’s roads and found yourself asking, “I wonder what that old building over there used to be?” Or driven by a well-kept but obviously old house and wondered who built it and when?",
+                    "bbox": {
+                        "x": 0,
+                        "y": 795,
+                        "width": 1688,
+                        "height": 867
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "After the research currently being conducted by Cynthia MacLeod and Bob Barron is completed, the answers to many of these vague questions may well be readily available. They are conducting an architectural survey of the old and unique buildings of Fauquier County.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 867,
+                        "width": 1688,
+                        "height": 939
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "MacLeod, a graduate of Duke University, says she has always been interested in architectural history. After a year away from school, which included time spent working as a carpenter to discover how buildings were put together, she entered graduate school at the University of Virginia to pursue a master’s degree in architectural history. She completed her course work last year, and in September began working in Fauquier County.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 939,
+                        "width": 1688,
+                        "height": 1047
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "Although she was hired by the Virginia Historic Landmarks Commission in Richmond, MacLeod",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1047,
+                        "width": 1688,
+                        "height": 1083
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "(Continued on Page -2)",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1083,
+                        "width": 1688,
+                        "height": 1120
+                    }
+                }
+            ],
+            "image_blocks": [],
+            "pages": [
+                {
+                    "index": 0,
+                    "markdown": "Vol. 1, No. 1\nWARRENTON, VIRGINIA\nAugust, 1979\n\n# News and Notes\n\nfrom\n\n## The Fauquier Historical Society\n\n### A Beginning...\n\nThis month marks the beginning of a new publication offering “News and Notes” from The Fauquier Historical Society. This bi-monthly newsletter is one of the first of many changes and activities being initiated by the Society this year.\n\nIn it you will find features on people and places in Fauquier County—both stories relating to the past and those providing information on things being done in the present. The newsletter will try to keep the Society membership informed on activities of the Old Gaol museum, new donations or special exhibits, persons doing research in Fauquier history or genealogy, new books of local interest, special northern Virginia activities of interest to local residents, and any other activities of the Fauquier Historical Society. A calendar of events will be a regular part of each issue.\n\nWhile the newsletter will help keep Fauquier residents advised of what’s going on in their own county, it will also serve as a source of information to those Society members who no longer live in this geographical area, but who wish to retain their ties with Fauquier. Although this first issue is being mailed to everyone on the Society’s mailing list, only members will receive the next issues.\n\nWhile the newsletter committee already has many suggestions for possible feature stories for future issues, contributions from other writers are also welcomed and encouraged. Anyone with news items or features to be included in the newsletter should contact the editor or mail their articles or information to The Fauquier Historical Society, P. O. Box 675, Warrenton, Virginia 22186.\n\nPhoto By Rosanne Berkenstock\nCounty historian Bob Barron and architectural surveyor Cynthia MacLeod on Culpeper Street.\n\n## Survey Provides Clues To Fauquier’s Past\n\nBy Rosanne Berkenstock\n\nHow many times have you driven over Fauquier County’s roads and found yourself asking, “I wonder what that old building over there used to be?” Or driven by a well-kept but obviously old house and wondered who built it and when?\n\nAfter the research currently being conducted by Cynthia MacLeod and Bob Barron is completed, the answers to many of these vague questions may well be readily available. They are conducting an architectural survey of the old and unique buildings of Fauquier County.\n\nMacLeod, a graduate of Duke University, says she has always been interested in architectural history. After a year away from school, which included time spent working as a carpenter to discover how buildings were put together, she entered graduate school at the University of Virginia to pursue a master’s degree in architectural history. She completed her course work last year, and in September began working in Fauquier County.\n\nAlthough she was hired by the Virginia Historic Landmarks Commission in Richmond, MacLeod\n\n(Continued on Page -2)",
+                    "dimensions": {
+                        "dpi": 200,
+                        "height": 2203,
+                        "width": 1688
+                    },
+                    "tables": [],
+                    "header": null,
+                    "footer": null
+                }
+            ],
+            "raw_response": {
+                "pages": [
+                    {
+                        "index": 0,
+                        "markdown": "Vol. 1, No. 1\nWARRENTON, VIRGINIA\nAugust, 1979\n\n# News and Notes\n\nfrom\n\n## The Fauquier Historical Society\n\n### A Beginning...\n\nThis month marks the beginning of a new publication offering “News and Notes” from The Fauquier Historical Society. This bi-monthly newsletter is one of the first of many changes and activities being initiated by the Society this year.\n\nIn it you will find features on people and places in Fauquier County—both stories relating to the past and those providing information on things being done in the present. The newsletter will try to keep the Society membership informed on activities of the Old Gaol museum, new donations or special exhibits, persons doing research in Fauquier history or genealogy, new books of local interest, special northern Virginia activities of interest to local residents, and any other activities of the Fauquier Historical Society. A calendar of events will be a regular part of each issue.\n\nWhile the newsletter will help keep Fauquier residents advised of what’s going on in their own county, it will also serve as a source of information to those Society members who no longer live in this geographical area, but who wish to retain their ties with Fauquier. Although this first issue is being mailed to everyone on the Society’s mailing list, only members will receive the next issues.\n\nWhile the newsletter committee already has many suggestions for possible feature stories for future issues, contributions from other writers are also welcomed and encouraged. Anyone with news items or features to be included in the newsletter should contact the editor or mail their articles or information to The Fauquier Historical Society, P. O. Box 675, Warrenton, Virginia 22186.\n\nPhoto By Rosanne Berkenstock\nCounty historian Bob Barron and architectural surveyor Cynthia MacLeod on Culpeper Street.\n\n## Survey Provides Clues To Fauquier’s Past\n\nBy Rosanne Berkenstock\n\nHow many times have you driven over Fauquier County’s roads and found yourself asking, “I wonder what that old building over there used to be?” Or driven by a well-kept but obviously old house and wondered who built it and when?\n\nAfter the research currently being conducted by Cynthia MacLeod and Bob Barron is completed, the answers to many of these vague questions may well be readily available. They are conducting an architectural survey of the old and unique buildings of Fauquier County.\n\nMacLeod, a graduate of Duke University, says she has always been interested in architectural history. After a year away from school, which included time spent working as a carpenter to discover how buildings were put together, she entered graduate school at the University of Virginia to pursue a master’s degree in architectural history. She completed her course work last year, and in September began working in Fauquier County.\n\nAlthough she was hired by the Virginia Historic Landmarks Commission in Richmond, MacLeod\n\n(Continued on Page -2)",
+                        "images": [],
+                        "tables": [],
+                        "hyperlinks": [],
+                        "header": null,
+                        "footer": null,
+                        "dimensions": {
+                            "dpi": 200,
+                            "height": 2203,
+                            "width": 1688
+                        }
+                    }
+                ],
+                "model": "mistral-ocr-latest",
+                "document_annotation": "{\n  \"blocks\": [\n    {\n      \"type\": \"headline\",\n      \"text\": \"Vol. 1, No. 1\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 0,\n        \"width\": 100,\n        \"height\": 10\n      }\n    },\n    {\n      \"type\": \"column\",\n      \"text\": \"WARRENTON, VIRGINIA\\nAugust, 1979\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 10,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"headline\",\n      \"text\": \"News and Notes\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 30,\n        \"width\": 100,\n        \"height\": 40\n      }\n    },\n    {\n      \"type\": \"subheadline\",\n      \"text\": \"from\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 40,\n        \"width\": 100,\n        \"height\": 50\n      }\n    },\n    {\n      \"type\": \"column\",\n      \"text\": \"The Fauquier Historical Society\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 50,\n        \"width\": 100,\n        \"height\": 60\n      }\n    },\n    {\n      \"type\": \"subheadline\",\n      \"text\": \"A Beginning...\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 60,\n        \"width\": 100,\n        \"height\": 70\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"This month marks the beginning of a new publication offering “News and Notes” from The Fauquier Historical Society. This bi-monthly newsletter is one of the first of many changes and activities being initiated by the Society this year.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 70,\n        \"width\": 100,\n        \"height\": 90\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"In it you will find features on people and places in Fauquier County—both stories relating to the past and those providing information on things being done in the present. The newsletter will try to keep the Society membership informed on activities of the Old Gaol museum, new donations or special exhibits, persons doing research in Fauquier history or genealogy, new books of local interest, special northern Virginia activities of interest to local residents, and any other activities of the Fauquier Historical Society. A calendar of events will be a regular part of each issue.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 90,\n        \"width\": 100,\n        \"height\": 120\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"While the newsletter will help keep Fauquier residents advised of what’s going on in their own county, it will also serve as a source of information to those Society members who no longer live in this geographical area, but who wish to retain their ties with Fauquier. Although this first issue is being mailed to everyone on the Society’s mailing list, only members will receive the next issues.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 120,\n        \"width\": 100,\n        \"height\": 150\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"While the newsletter committee already has many suggestions for possible feature stories for future issues, contributions from other writers are also welcomed and encouraged. Anyone with news items or features to be included in the newsletter should contact the editor or mail their articles or information to The Fauquier Historical Society, P. O. Box 675, Warrenton, Virginia 22186.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 150,\n        \"width\": 100,\n        \"height\": 180\n      }\n    },\n    {\n      \"type\": \"caption\",\n      \"text\": \"Photo By Rosanne Berkenstock\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 180,\n        \"width\": 100,\n        \"height\": 190\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"County historian Bob Barron and architectural surveyor Cynthia MacLeod on Culpeper Street.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 190,\n        \"width\": 100,\n        \"height\": 200\n      }\n    },\n    {\n      \"type\": \"headline\",\n      \"text\": \"Survey Provides Clues To Fauquier’s Past\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 200,\n        \"width\": 100,\n        \"height\": 210\n      }\n    },\n    {\n      \"type\": \"byline\",\n      \"text\": \"By Rosanne Berkenstock\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 210,\n        \"width\": 100,\n        \"height\": 220\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"How many times have you driven over Fauquier County’s roads and found yourself asking, “I wonder what that old building over there used to be?” Or driven by a well-kept but obviously old house and wondered who built it and when?\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 220,\n        \"width\": 100,\n        \"height\": 240\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"After the research currently being conducted by Cynthia MacLeod and Bob Barron is completed, the answers to many of these vague questions may well be readily available. They are conducting an architectural survey of the old and unique buildings of Fauquier County.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 240,\n        \"width\": 100,\n        \"height\": 260\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"MacLeod, a graduate of Duke University, says she has always been interested in architectural history. After a year away from school, which included time spent working as a carpenter to discover how buildings were put together, she entered graduate school at the University of Virginia to pursue a master’s degree in architectural history. She completed her course work last year, and in September began working in Fauquier County.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 260,\n        \"width\": 100,\n        \"height\": 290\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"Although she was hired by the Virginia Historic Landmarks Commission in Richmond, MacLeod\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 290,\n        \"width\": 100,\n        \"height\": 300\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"(Continued on Page -2)\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 300,\n        \"width\": 100,\n        \"height\": 310\n      }\n    }\n  ]\n}",
+                "usage_info": {
+                    "pages_processed": 1,
+                    "doc_size_bytes": 519342
+                }
+            }
+        }
+    }
+}
