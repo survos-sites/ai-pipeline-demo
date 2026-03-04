@@ -158,6 +158,41 @@
       white-space:pre-wrap; word-break:break-word;
     }
     .ocr-text h1,.ocr-text h2,.ocr-text h3 { color:#e2e8f0; margin:0 0 6px; }
+    .ocr-text p { margin:0 0 10px; }
+    .ocr-md-table { margin:10px 0 14px; overflow-x:auto; border:1px solid #2d3748; border-radius:8px; }
+    .ocr-md-table table { width:100%; border-collapse:collapse; background:#111827; font-size:13px; line-height:1.45; }
+    .ocr-md-table th, .ocr-md-table td {
+      border:1px solid #2d3748;
+      padding:6px 8px;
+      text-align:left;
+      vertical-align:top;
+      white-space:normal;
+      word-break:break-word;
+    }
+    .ocr-md-table th { background:#1a2332; color:#cfe7ff; font-weight:700; position:sticky; top:0; }
+    .ocr-md-table tr:nth-child(even) td { background:#141b28; }
+    .ocr-tabs { border:1px solid #2d3748; border-radius:8px; overflow:hidden; }
+    .ocr-tab-bar { display:flex; flex-wrap:wrap; gap:0; background:#141720; border-bottom:1px solid #2d3748; }
+    .ocr-tab-btn {
+      border:0; border-right:1px solid #2d3748; background:transparent; color:#90cdf4;
+      padding:8px 12px; font-size:12px; cursor:pointer;
+    }
+    .ocr-tab-btn:last-child { border-right:0; }
+    .ocr-tab-btn.active { background:#1a2332; color:#e2e8f0; }
+    .ocr-tab-pane { display:none; padding:14px; }
+    .ocr-tab-pane.active { display:block; }
+    .ocr-tab-pane .muted { color:#718096; font-size:11px; margin-bottom:8px; }
+    .ocr-side-grid { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+    .ocr-side-grid pre { max-height:70vh; margin-top:0; white-space:pre; }
+    .ocr-tab-image { width:100%; height:auto; border:1px solid #2d3748; border-radius:6px; display:block; }
+    .copy-btn {
+      border:1px solid #2d3748; background:#1a1f2e; color:#90cdf4; border-radius:6px;
+      padding:4px 9px; font-size:11px; cursor:pointer; margin-bottom:8px;
+    }
+    .copy-btn:hover { border-color:#4299e1; color:#e2e8f0; }
+    @media (max-width: 980px) {
+      .ocr-side-grid { grid-template-columns:1fr; }
+    }
 
     /* Handwritten text annotation */
     .hw {
@@ -282,23 +317,242 @@ const esc = s => String(s??'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replac
 const isImg = url => /\.(jpe?g|png|gif|webp|avif)(\?.*)?$/i.test(url) || url.includes('/iiif/');
 const isPdf = url => /\.pdf(\?.*)?$/i.test(url);
 
-/** Minimal markdown -> HTML (headings, bold, italic, line breaks). */
+function getEntryCssList(entry) {
+  const raw = entry?.custom_css ?? entry?.css ?? [];
+  const list = Array.isArray(raw) ? raw : (typeof raw === 'string' ? [raw] : []);
+  return list
+    .map(v => String(v ?? '').trim())
+    .filter(v => v.length > 0)
+    .filter(v => /\.css(\?.*)?$/i.test(v))
+    .filter(v => !/^javascript:/i.test(v));
+}
+
+function applyEntryCss(entry) {
+  const cssList = getEntryCssList(entry);
+  for (const href of cssList) {
+    if ([...document.querySelectorAll('link[data-entry-css]')].some(el => el.dataset.entryCss === href)) continue;
+    const link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.href = href;
+    link.dataset.entryCss = href;
+    document.head.appendChild(link);
+  }
+}
+
+/** Markdown-ish -> HTML (headings, emphasis, and pipe tables). */
 function mdToHtml(md) {
-  return md
-    .split('\n')
-    .map(line => {
-      // Headings — escape the content, not the tag
-      if (line.startsWith('### ')) return `<h3>${esc(line.slice(4))}</h3>`;
-      if (line.startsWith('## '))  return `<h2>${esc(line.slice(3))}</h2>`;
-      if (line.startsWith('# '))   return `<h1>${esc(line.slice(2))}</h1>`;
-      // Escape first, then restore inline markdown spans
-      line = esc(line);
-      line = line.replace(/\*\*\*(.+?)\*\*\*/g, '<strong><em>$1</em></strong>');
-      line = line.replace(/\*\*(.+?)\*\*/g,      '<strong>$1</strong>');
-      line = line.replace(/\*(.+?)\*/g,           '<em>$1</em>');
-      return line;
-    })
-    .join('\n');
+  const lines = String(md ?? '').replace(/\r\n/g, '\n').split('\n');
+  const out = [];
+
+  const inline = (line) => {
+    let s = esc(line);
+    s = s.replace(/\*\*\*(.+?)\*\*\*/g, '<strong><em>$1</em></strong>');
+    s = s.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+    s = s.replace(/\*(.+?)\*/g, '<em>$1</em>');
+    return s;
+  };
+
+  const isTableSep = (line) => /^\s*\|?(\s*:?-{3,}:?\s*\|)+\s*:?-{3,}:?\s*\|?\s*$/.test(line);
+  const parseRow = (line) => {
+    let s = String(line ?? '').trim();
+    if (s.startsWith('|')) s = s.slice(1);
+    if (s.endsWith('|')) s = s.slice(0, -1);
+    return s.split('|').map(c => c.trim());
+  };
+
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i];
+    const next = lines[i + 1] ?? '';
+
+    if (line.startsWith('### ')) { out.push(`<h3>${inline(line.slice(4))}</h3>`); continue; }
+    if (line.startsWith('## '))  { out.push(`<h2>${inline(line.slice(3))}</h2>`); continue; }
+    if (line.startsWith('# '))   { out.push(`<h1>${inline(line.slice(2))}</h1>`); continue; }
+
+    if (line.includes('|') && isTableSep(next)) {
+      const header = parseRow(line);
+      const rows = [];
+      i += 2; // skip header + separator
+      while (i < lines.length) {
+        const rowLine = lines[i];
+        if (!rowLine.trim() || !rowLine.includes('|')) { i--; break; }
+        rows.push(parseRow(rowLine));
+        i++;
+      }
+
+      const headHtml = `<tr>${header.map(c => `<th>${inline(c)}</th>`).join('')}</tr>`;
+      const bodyHtml = rows.map(r => `<tr>${r.map(c => `<td>${inline(c)}</td>`).join('')}</tr>`).join('');
+      out.push(`<div class="ocr-md-table"><table><thead>${headHtml}</thead><tbody>${bodyHtml}</tbody></table></div>`);
+      continue;
+    }
+
+    if (!line.trim()) {
+      out.push('<br>');
+      continue;
+    }
+
+    out.push(`<p>${inline(line)}</p>`);
+  }
+
+  return out.join('\n');
+}
+
+function extractMarkdownTables(md) {
+  const lines = String(md ?? '').replace(/\r\n/g, '\n').split('\n');
+  const tables = [];
+  const isSep = (line) => /^\s*\|?(\s*:?-{3,}:?\s*\|)+\s*:?-{3,}:?\s*\|?\s*$/.test(line);
+  const parseRow = (line) => {
+    let s = String(line ?? '').trim();
+    if (s.startsWith('|')) s = s.slice(1);
+    if (s.endsWith('|')) s = s.slice(0, -1);
+    return s.split('|').map(c => c.trim());
+  };
+
+  for (let i = 0; i < lines.length - 1; i++) {
+    if (!(lines[i].includes('|') && isSep(lines[i + 1]))) continue;
+    const rows = [parseRow(lines[i])];
+    i += 2;
+    while (i < lines.length) {
+      const line = lines[i];
+      if (!line.trim() || !line.includes('|')) { i--; break; }
+      rows.push(parseRow(line));
+      i++;
+    }
+    if (rows.length > 1) tables.push(rows);
+  }
+  return tables;
+}
+
+function tableRowsToCsv(rows) {
+  const quote = (cell) => {
+    const v = String(cell ?? '');
+    if (/[",\n]/.test(v)) return `"${v.replace(/"/g, '""')}"`;
+    return v;
+  };
+  return rows.map(r => r.map(quote).join(',')).join('\n');
+}
+
+async function copyText(text) {
+  if (!text) return false;
+  try {
+    await navigator.clipboard.writeText(text);
+    return true;
+  } catch (_) {
+    return false;
+  }
+}
+
+function renderSingleImageOcrTabs(result, imageUrl, allResults) {
+  const wrap = document.createElement('div');
+  wrap.className = 'ocr-tabs';
+
+  const bar = document.createElement('div');
+  bar.className = 'ocr-tab-bar';
+
+  const panes = document.createElement('div');
+  const tabId = `ocrtabs-${Math.random().toString(36).slice(2, 9)}`;
+
+  const ocrMd = String(result.text ?? result.pages?.[0]?.markdown ?? '').trim();
+  const annotate = String(allResults?.annotate_handwriting?.annotated_text ?? '').trim();
+  const transcribe = String(allResults?.transcribe_handwriting?.text ?? '').trim();
+
+  const tables = extractMarkdownTables(ocrMd);
+  const csv = tables.map(tableRowsToCsv).join('\n\n');
+  const heroId = `${tabId}-hero`;
+  const lensId = `${tabId}-lens`;
+  const lensImgId = `${tabId}-lens-img`;
+
+  const defs = [
+    { key: 'text', label: 'Text' },
+    { key: 'image', label: 'Image' },
+    { key: 'side', label: 'Side-by-side' },
+    { key: 'debug', label: 'Debug/Layout' },
+  ];
+
+  const makePane = (key, html) => {
+    const pane = document.createElement('div');
+    pane.className = 'ocr-tab-pane';
+    pane.dataset.tab = `${tabId}-${key}`;
+    pane.innerHTML = html;
+    return pane;
+  };
+
+  const textHtml = [
+    '<div class="muted">OCR + handwriting-friendly view</div>',
+    `<div class="ocr-text">${mdToHtml(ocrMd || transcribe || annotate)}</div>`,
+    annotate ? `<details style="margin-top:12px"><summary>Handwriting annotations</summary><div class="ocr-text" style="margin-top:8px">${renderAnnotatedText(annotate)}</div></details>` : '',
+  ].join('');
+
+  const imageHtml = `
+    <div class="magnifier-wrap" id="${heroId}-wrap" style="margin-bottom:0;max-height:none">
+      <img id="${heroId}" class="hero" src="${esc(imageUrl)}" alt="Document image" loading="lazy">
+      <div class="mag-lens" id="${lensId}"><img id="${lensImgId}" src="${esc(imageUrl)}" alt=""></div>
+      <span class="mag-hint">Hover to magnify</span>
+    </div>`;
+
+  const sideHtml = [
+    '<div class="muted">CSV-friendly table export for Excel / Sheets</div>',
+    '<div class="ocr-side-grid">',
+      `<div><img class="ocr-tab-image" src="${esc(imageUrl)}" alt="Document image" loading="lazy"></div>`,
+      `<div>${csv ? '<button class="copy-btn" data-copy-csv="1">Copy CSV</button>' : ''}<pre>${esc(csv || 'No markdown table detected in OCR text.')}</pre></div>`,
+    '</div>',
+  ].join('');
+
+  const debugHtml = [
+    '<div class="muted">Layout/debug blocks + raw OCR markdown</div>',
+    `<div id="${tabId}-debug-host"></div>`,
+    `<details style="margin-top:12px"><summary>Raw OCR markdown</summary><pre>${esc(ocrMd || '(empty)')}</pre></details>`,
+  ].join('');
+
+  const paneMap = {
+    text: makePane('text', textHtml),
+    image: makePane('image', imageHtml),
+    side: makePane('side', sideHtml),
+    debug: makePane('debug', debugHtml),
+  };
+
+  for (const { key, label } of defs) {
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'ocr-tab-btn';
+    btn.dataset.tab = `${tabId}-${key}`;
+    btn.textContent = label;
+    btn.addEventListener('click', () => {
+      bar.querySelectorAll('.ocr-tab-btn').forEach(b => b.classList.toggle('active', b === btn));
+      panes.querySelectorAll('.ocr-tab-pane').forEach(p => p.classList.toggle('active', p.dataset.tab === btn.dataset.tab));
+    });
+    bar.appendChild(btn);
+  }
+
+  Object.values(paneMap).forEach(p => panes.appendChild(p));
+  wrap.appendChild(bar);
+  wrap.appendChild(panes);
+
+  const debugHost = paneMap.debug.querySelector(`#${tabId}-debug-host`);
+  if (debugHost) {
+    debugHost.appendChild(renderBlocksForPage(result.layout_blocks, result.image_blocks, 0));
+  }
+
+  const hero = paneMap.image.querySelector(`#${heroId}`);
+  const lens = paneMap.image.querySelector(`#${lensId}`);
+  const lensImg = paneMap.image.querySelector(`#${lensImgId}`);
+  const imgWrap = paneMap.image.querySelector(`#${heroId}-wrap`);
+  if (hero && lens && lensImg && imgWrap) {
+    const init = () => initMagnifier(imgWrap, hero, lens, lensImg, 2);
+    hero.addEventListener('load', init, { once: true });
+    if (hero.complete && hero.naturalWidth > 0) init();
+  }
+
+  const copyBtn = paneMap.side.querySelector('[data-copy-csv]');
+  if (copyBtn) {
+    copyBtn.addEventListener('click', async () => {
+      const ok = await copyText(csv);
+      copyBtn.textContent = ok ? 'Copied' : 'Copy failed';
+      setTimeout(() => { copyBtn.textContent = 'Copy CSV'; }, 1200);
+    });
+  }
+
+  bar.querySelector('.ocr-tab-btn')?.click();
+  return wrap;
 }
 
 // -- Magnifier ---------------------------------------------------------------
@@ -631,7 +885,7 @@ function renderBlocksForPage(layoutBlocks, imageBlocks, pageIndex) {
   return frag;
 }
 
-function renderLayoutBlocks(layoutBlocks, imageBlocks, pages) {
+function renderLayoutBlocks(layoutBlocks, imageBlocks, pages, fallbackMarkdown='') {
   const wrap = document.createElement('div');
 
   if (pages?.length > 1) {
@@ -694,7 +948,61 @@ function renderLayoutBlocks(layoutBlocks, imageBlocks, pages) {
     return wrap;
   }
 
-  wrap.appendChild(renderBlocksForPage(layoutBlocks, imageBlocks, 0));
+  const singleMd = (pages?.[0]?.markdown ?? fallbackMarkdown ?? '').trim();
+  const pageBlocks = (layoutBlocks ?? []).filter(b => (b.page ?? 0) === 0 && b.type !== 'image' && b.text?.trim());
+  const hasBlocks = pageBlocks.length > 0;
+  const hasText = singleMd.length > 10;
+
+  if (hasBlocks || hasText) {
+    const section = document.createElement('div');
+    section.className = 'page-section';
+    section.style.cssText = 'margin-bottom:28px;border:1px solid #2d3748;border-radius:8px;overflow:hidden';
+
+    const heading = document.createElement('div');
+    heading.style.cssText = 'display:flex;align-items:center;gap:12px;padding:8px 14px;background:#141720;border-bottom:1px solid #2d3748';
+    heading.innerHTML = '<span style="font-weight:700;font-size:13px;color:#90cdf4;font-family:monospace">OCR view</span>';
+    section.appendChild(heading);
+
+    const body = document.createElement('div');
+    body.style.cssText = `display:grid;grid-template-columns:${hasBlocks && hasText ? '1fr 1fr' : '1fr'};gap:0`;
+
+    if (hasBlocks) {
+      const leftCol = document.createElement('div');
+      leftCol.style.cssText = 'padding:14px';
+      leftCol.innerHTML = '<div style="font-size:10px;text-transform:uppercase;letter-spacing:.07em;color:#4a5568;margin-bottom:10px">Layout blocks</div>';
+
+      const blocksEl = document.createElement('div');
+      blocksEl.className = 'ocr-blocks';
+      const sorted = [...pageBlocks].sort((a,b) => (a.bbox?.y??0) - (b.bbox?.y??0));
+      for (const block of sorted) {
+        const card = document.createElement('div');
+        card.className = `block-card ${block.type}`;
+        let textHtml;
+        if (block.type === 'headline')         textHtml = `<div class="block-headline-text">${esc(block.text)}</div>`;
+        else if (block.type === 'subheadline') textHtml = `<div class="block-sub-text">${esc(block.text)}</div>`;
+        else                                   textHtml = `<div class="block-body-text">${esc(block.text)}</div>`;
+        card.innerHTML = textHtml;
+        blocksEl.appendChild(card);
+      }
+      leftCol.appendChild(blocksEl);
+      body.appendChild(leftCol);
+    }
+
+    if (hasText) {
+      const rightCol = document.createElement('div');
+      rightCol.style.cssText = `padding:14px;${hasBlocks ? 'border-left:1px solid #2d3748' : ''}`;
+      rightCol.innerHTML = '<div style="font-size:10px;text-transform:uppercase;letter-spacing:.07em;color:#4a5568;margin-bottom:10px">Markdown (OCR text)</div>'
+        + `<div class="ocr-text">${mdToHtml(singleMd)}</div>`;
+      body.appendChild(rightCol);
+    }
+
+    section.appendChild(body);
+    wrap.appendChild(section);
+  }
+
+  if (!hasBlocks && !hasText) {
+    wrap.appendChild(renderBlocksForPage(layoutBlocks, imageBlocks, 0));
+  }
   return wrap;
 }
 
@@ -717,7 +1025,7 @@ function renderField(key, val) {
   return `<div>${label}<div class="field-value">${esc(String(val))}</div></div>`;
 }
 
-function renderTaskResult(taskName, result, imageUrl, isPdfItem) {
+function renderTaskResult(taskName, result, imageUrl, isPdfItem, allResults = null) {
   const el = document.createElement('div');
   el.className = 'task-section';
   el.id = `task-${taskName}`;
@@ -774,7 +1082,7 @@ function renderTaskResult(taskName, result, imageUrl, isPdfItem) {
     summary.textContent = `${pageCount} page(s) processed. See page-by-page view above.`;
     el.appendChild(summary);
   } else if (taskName === 'ocr_mistral') {
-    el.appendChild(renderLayoutBlocks(result.layout_blocks, result.image_blocks, result.pages));
+    el.appendChild(renderSingleImageOcrTabs(result, imageUrl, allResults));
   } else {
     const fields = document.createElement('div');
     fields.className = 'fields';
@@ -827,6 +1135,9 @@ async function main() {
       }
     } catch(_) {}
   }
+
+  // Optional per-entry CSS overrides from manifest (custom_css or css)
+  applyEntryCss(entry);
 
   // Load result file
   const hash = await sha1hex(subject);
@@ -957,7 +1268,7 @@ async function main() {
     hero.src      = subject;
     lensImg.src   = subject;
     wrap.style.display = 'block';
-    hero.onload = () => initMagnifier(wrap, hero, lens, lensImg, 4);
+    hero.onload = () => initMagnifier(wrap, hero, lens, lensImg, 2);
   }
 
   // Pipeline track — skip internal _pages key
@@ -985,13 +1296,13 @@ async function main() {
     if (SKIP_KEYS.has(taskName)) continue;
     if (hasPerPage && PAGE_LEVEL.has(taskName)) continue; // shown per-page above
     if (!results[taskName]) continue;
-    sectionsEl.appendChild(renderTaskResult(taskName, results[taskName], subject, isPdfItem));
+    sectionsEl.appendChild(renderTaskResult(taskName, results[taskName], subject, isPdfItem, results));
     rendered.add(taskName);
   }
   for (const [taskName, result] of Object.entries(results)) {
     if (rendered.has(taskName) || SKIP_KEYS.has(taskName)) continue;
     if (hasPerPage && PAGE_LEVEL.has(taskName)) continue;
-    sectionsEl.appendChild(renderTaskResult(taskName, result, subject, isPdfItem));
+    sectionsEl.appendChild(renderTaskResult(taskName, result, subject, isPdfItem, results));
   }
 }
 

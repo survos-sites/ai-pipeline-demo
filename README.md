@@ -83,7 +83,7 @@ bin/console app:add --dry-run https://iaamcfh.omeka.net/s/IAAM_CFH/item/3940
 ```
 
 The command:
-- Detects the URL type (Omeka-S, NARA, direct file)
+- Detects the URL type (Omeka-S, NARA, Library of Virginia Chancery, direct file)
 - Fetches metadata from the source API (title, description, dates, etc.)
 - Detects video items and rejects them with a message
 - Presents pipeline presets to choose from:
@@ -93,6 +93,47 @@ The command:
   - `full_analysis` — everything
 - Appends to `images.json` or `pdfs.json` based on media type
 - Checks for duplicates
+
+### Castor helpers
+
+```bash
+# Build missing merged LVA range PDFs referenced by public/data/pdfs.json
+castor build-lva
+
+# CI-like local prep: build LVA merged PDFs + verify local PDF manifest paths
+castor pipeline-ci-prep
+
+# Generate page JPGs for PDF cover/page viewer cards
+castor warm-pages
+
+# One-shot local preview prep (build LVA PDFs + verify + split pages)
+castor pipeline-preview-prep
+
+# Preview what would be generated
+castor build-lva --dry-run
+
+# Apply/update recommended Git LFS tracking rules for image/PDF assets
+castor lfs-setup
+```
+
+Recommended local workflow for new LVA ranges:
+
+```bash
+# 1) Add a ranged LVA case as a local merged PDF reference
+bin/console app:add --page-range=1-4 "https://old.lva.virginia.gov/chancery/case_detail.asp?CFN=061-1902-001"
+
+# 2) Build local inputs and page JPGs so index/item previews work immediately
+castor pipeline-preview-prep
+
+# 3) Run pipeline tasks for that entry
+bin/console app:process -m pdfs.json --prompt
+```
+
+Local prerequisites for Castor PDF helpers:
+
+```bash
+sudo apt-get install -y poppler-utils imagemagick python3
+```
 
 ### `app:process` — Run the AI pipeline
 
@@ -166,6 +207,7 @@ php -S localhost:8080 -t public/
         "url": "https://example.com/scan.jpg",
         "title": "My document",
         "collection": "My archive",
+        "custom_css": ["styles/census-ledger.css"],
         "provenance": "https://example.com/item/123",
         "pipeline": ["ocr_mistral", "classify", "extract_metadata", "generate_title"],
         "result_file": "abc123...json",
@@ -183,6 +225,7 @@ php -S localhost:8080 -t public/
         "provenance": "https://example.com/item/456",
         "title": "Historical document",
         "collection": "Archive Name",
+        "custom_css": ["styles/census-ledger.css"],
         "pipeline": ["ocr_mistral", "annotate_handwriting", "transcribe_handwriting"],
         "metadata": { ... },
         "transcript_file": "abc123...-transcript.txt",
@@ -198,10 +241,13 @@ Fields:
 - `title` — display title
 - `collection` — collection name for grouping
 - `pipeline` — ordered list of task names to run
+- `custom_css` — optional CSS file(s) to inject on `item.html` for this entry (e.g. `styles/census-ledger.css`)
 - `metadata` — structured metadata from the source (Omeka dcterms, NARA fields, etc.)
 - `transcript_file` — path to human transcript sidecar (for comparison with AI OCR)
 - `result_file` — auto-populated by `app:process` (SHA1 of URL + `.json`)
 - `status` — auto-populated (`complete` or `pending`)
+
+Tip: `public/styles/census-ledger.css` is included as a ready-made table theme for census/ledger-like records.
 
 ---
 

@@ -7,6 +7,9 @@ on:
       - 'public/data/images.json'   # re-run when image manifest changes
       - 'public/data/pdfs.json'     # re-run when PDF manifest changes
       - 'public/**/*.html'          # re-deploy when viewer/gallery changes
+      - 'public/**/*.css'           # re-deploy when styles change
+      - 'bin/**'
+      - 'castor.php'
       - 'src/**'
       - 'config/**'
       - '.github/workflows/**'
@@ -65,74 +68,7 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y poppler-utils
           mkdir -p public/images/lva
-          python3 <<'PY'
-          import json, os, re, subprocess, tempfile, urllib.request
-
-          manifest = 'public/data/pdfs.json'
-          if not os.path.isfile(manifest):
-              raise SystemExit(0)
-
-          with open(manifest, 'r', encoding='utf-8') as f:
-              entries = json.load(f)
-
-          for entry in entries:
-              md = entry.get('metadata') or {}
-              if md.get('source') != 'library_of_virginia_chancery':
-                  continue
-
-              rel_out = (entry.get('url') or '').strip()
-              if not (rel_out.startswith('images/lva/') and rel_out.lower().endswith('.pdf')):
-                  continue
-
-              out_path = os.path.join('public', rel_out)
-              if os.path.isfile(out_path):
-                  print(f'exists: {out_path}')
-                  continue
-
-              case_images_url = (md.get('case_images_url') or '').strip()
-              pages = md.get('selected_pages') or [1]
-              if not case_images_url:
-                  print(f'skip (missing case_images_url): {rel_out}')
-                  continue
-
-              html = urllib.request.urlopen(case_images_url, timeout=45).read().decode('utf-8', 'ignore')
-              media = re.findall(r'myImages\[\d+\]\s*=\s*"([^"]+)"\s*;', html)
-              pdfs = [u for u in media if re.search(r'\.pdf($|\?)', u, flags=re.I)]
-              if not pdfs:
-                  print(f'skip (no page PDFs found): {rel_out}')
-                  continue
-
-              selected = []
-              for p in pages:
-                  try:
-                      p = int(p)
-                  except Exception:
-                      continue
-                  if 1 <= p <= len(pdfs):
-                      selected.append(pdfs[p - 1])
-
-              if not selected:
-                  print(f'skip (selected_pages out of range): {rel_out}')
-                  continue
-
-              os.makedirs(os.path.dirname(out_path), exist_ok=True)
-              with tempfile.TemporaryDirectory(prefix='lva_pdf_') as td:
-                  parts = []
-                  for i, u in enumerate(selected, start=1):
-                      part = os.path.join(td, f'{i:04d}.pdf')
-                      urllib.request.urlretrieve(u, part)
-                      parts.append(part)
-
-                  if len(parts) == 1:
-                      os.replace(parts[0], out_path)
-                  else:
-                      cmd = ['pdfunite', *parts, out_path]
-                      proc = subprocess.run(cmd, capture_output=True, text=True)
-                      if proc.returncode != 0:
-                          raise RuntimeError(f'pdfunite failed for {rel_out}: {proc.stderr.strip()}')
-
-              print(f'generated: {out_path} ({len(selected)} pages)')
-          PY
+          python3 bin/build_lva_pdfs.py --manifest public/data/pdfs.json --public-dir public
 
       # Entries with local-only files (file:// would resolve to missing paths in CI)
       # are skipped automatically by ProcessImagesCommand's accessibility check.
@@ -180,7 +116,7 @@ jobs:
         id: pdf-cache
         with:
           path: public/images/pages/
-          key: pdf-pages-v2-${{ hashFiles('public/data/pdfs.json') }}
+          key: pdf-pages-v3-${{ hashFiles('public/data/pdfs.json') }}
 
       - name: Split PDFs into page images
         if: steps.pdf-cache.outputs.cache-hit != 'true'
@@ -188,65 +124,7 @@ jobs:
           sudo apt-get install -y poppler-utils imagemagick jq
           mkdir -p public/images/lva
           mkdir -p public/images/pages
-
-          # Build any missing merged LVA range PDFs referenced by manifest entries.
-          python3 <<'PY'
-          import json, os, re, subprocess, tempfile, urllib.request
-
-          manifest = 'public/data/pdfs.json'
-          if not os.path.isfile(manifest):
-              raise SystemExit(0)
-
-          with open(manifest, 'r', encoding='utf-8') as f:
-              entries = json.load(f)
-
-          for entry in entries:
-              md = entry.get('metadata') or {}
-              if md.get('source') != 'library_of_virginia_chancery':
-                  continue
-
-              rel_out = (entry.get('url') or '').strip()
-              if not (rel_out.startswith('images/lva/') and rel_out.lower().endswith('.pdf')):
-                  continue
-
-              out_path = os.path.join('public', rel_out)
-              if os.path.isfile(out_path):
-                  continue
-
-              case_images_url = (md.get('case_images_url') or '').strip()
-              pages = md.get('selected_pages') or [1]
-              if not case_images_url:
-                  continue
-
-              html = urllib.request.urlopen(case_images_url, timeout=45).read().decode('utf-8', 'ignore')
-              media = re.findall(r'myImages\[\d+\]\s*=\s*"([^"]+)"\s*;', html)
-              pdfs = [u for u in media if re.search(r'\.pdf($|\?)', u, flags=re.I)]
-              selected = []
-              for p in pages:
-                  try:
-                      p = int(p)
-                  except Exception:
-                      continue
-                  if 1 <= p <= len(pdfs):
-                      selected.append(pdfs[p - 1])
-              if not selected:
-                  continue
-
-              os.makedirs(os.path.dirname(out_path), exist_ok=True)
-              with tempfile.TemporaryDirectory(prefix='lva_pdf_') as td:
-                  parts = []
-                  for i, u in enumerate(selected, start=1):
-                      part = os.path.join(td, f'{i:04d}.pdf')
-                      urllib.request.urlretrieve(u, part)
-                      parts.append(part)
-                  if len(parts) == 1:
-                      os.replace(parts[0], out_path)
-                  else:
-                      cmd = ['pdfunite', *parts, out_path]
-                      proc = subprocess.run(cmd, capture_output=True, text=True)
-                      if proc.returncode != 0:
-                          raise RuntimeError(proc.stderr.strip())
-          PY
+          python3 bin/build_lva_pdfs.py --manifest public/data/pdfs.json --public-dir public
 
           # Read each PDF entry from the manifest and split using SHA1(url) prefix
           jq -r '.[].url' public/data/pdfs.json | while read -r url; do

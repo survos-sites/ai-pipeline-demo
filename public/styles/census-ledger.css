@@ -1,0 +1,30 @@
+.ocr-md-table {
+  border-color: #7c5e3d;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.28);
+}
+
+.ocr-md-table table {
+  background: #16110d;
+  font-family: "IBM Plex Sans", ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif;
+}
+
+.ocr-md-table th,
+.ocr-md-table td {
+  border-color: #4a3825;
+}
+
+.ocr-md-table th {
+  background: #2a1f16;
+  color: #f4e6cf;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-size: 11px;
+}
+
+.ocr-md-table tr:nth-child(even) td {
+  background: #1d1611;
+}
+
+.ocr-md-table td {
+  color: #f3ece2;
+}
