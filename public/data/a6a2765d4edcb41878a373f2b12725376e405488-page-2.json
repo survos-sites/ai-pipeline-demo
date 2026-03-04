@@ -1,0 +1,154 @@
+{
+    "subject": "file:///home/tac/sites/ai-pipeline-demo/public/images/pages/a6a2765d4edcb41878a373f2b12725376e405488-2.jpg",
+    "results": {
+        "ocr_mistral": {
+            "text": "1902-001\n1/58\n1443\nCHANCERY Tackett + als. v. Fox's Admrs.\nBill",
+            "language": null,
+            "confidence": "high",
+            "layout_blocks": [
+                {
+                    "page": 0,
+                    "type": "headline",
+                    "text": "1902-001",
+                    "bbox": {
+                        "x": 0,
+                        "y": 0,
+                        "width": 2782,
+                        "height": 304
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "subheadline",
+                    "text": "1/58",
+                    "bbox": {
+                        "x": 0,
+                        "y": 304,
+                        "width": 2782,
+                        "height": 304
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "subheadline",
+                    "text": "1443",
+                    "bbox": {
+                        "x": 0,
+                        "y": 609,
+                        "width": 2782,
+                        "height": 304
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "headline",
+                    "text": "CHANCERY",
+                    "bbox": {
+                        "x": 0,
+                        "y": 913,
+                        "width": 2782,
+                        "height": 304
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "column",
+                    "text": "Tackett + als. v. Fox's Admrs.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1217,
+                        "width": 2782,
+                        "height": 304
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "column",
+                    "text": "Bill",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1522,
+                        "width": 2782,
+                        "height": 304
+                    }
+                }
+            ],
+            "image_blocks": [],
+            "pages": [
+                {
+                    "index": 0,
+                    "markdown": "1902-001\n1/58\n1443\nCHANCERY Tackett + als. v. Fox's Admrs.\nBill",
+                    "dimensions": {
+                        "dpi": 200,
+                        "height": 1826,
+                        "width": 2782
+                    },
+                    "tables": [],
+                    "header": null,
+                    "footer": null
+                }
+            ],
+            "raw_response": {
+                "pages": [
+                    {
+                        "index": 0,
+                        "markdown": "1902-001\n1/58\n1443\nCHANCERY Tackett + als. v. Fox's Admrs.\nBill",
+                        "images": [],
+                        "tables": [],
+                        "hyperlinks": [],
+                        "header": null,
+                        "footer": null,
+                        "dimensions": {
+                            "dpi": 200,
+                            "height": 1826,
+                            "width": 2782
+                        }
+                    }
+                ],
+                "model": "mistral-ocr-latest",
+                "document_annotation": "{\n  \"blocks\": [\n    {\n      \"type\": \"headline\",\n      \"text\": \"1902-001\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 0,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"subheadline\",\n      \"text\": \"1/58\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 20,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"subheadline\",\n      \"text\": \"1443\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 40,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"headline\",\n      \"text\": \"CHANCERY\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 60,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"column\",\n      \"text\": \"Tackett + als. v. Fox's Admrs.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 80,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"column\",\n      \"text\": \"Bill\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 100,\n        \"width\": 100,\n        \"height\": 20\n      }\n    }\n  ]\n}",
+                "usage_info": {
+                    "pages_processed": 1,
+                    "doc_size_bytes": 52082
+                }
+            }
+        },
+        "annotate_handwriting": {
+            "pages": [
+                {
+                    "index": 0,
+                    "annotated_text": "1902-001\n1/58\n1443\nCHANCERY <hw>Tackett</hw> + <hw>als.</hw> v. <hw>Fox's</hw> <hw>Admrs.</hw>\n<hw>Bill</hw>"
+                }
+            ],
+            "annotated_text": "1902-001\n1/58\n1443\nCHANCERY <hw>Tackett</hw> + <hw>als.</hw> v. <hw>Fox's</hw> <hw>Admrs.</hw>\n<hw>Bill</hw>"
+        },
+        "transcribe_handwriting": {
+            "text": "1902-001\n1/58\n1443\nCHANCERY Tackett + als. v. Fox's Admrs.\nBill",
+            "language": "en",
+            "confidence": "high",
+            "blocks": [
+                [
+                    "1902-001"
+                ],
+                [
+                    "1/58"
+                ],
+                [
+                    "1443"
+                ],
+                [
+                    "CHANCERY Tackett + als. v. Fox's Admrs."
+                ],
+                [
+                    "Bill"
+                ]
+            ],
+            "_tokens": {
+                "prompt": 1309,
+                "completion": 80,
+                "total": 1389,
+                "cached": 0
+            }
+        }
+    }
+}

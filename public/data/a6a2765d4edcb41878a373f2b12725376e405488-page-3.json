@@ -1,0 +1,216 @@
+{
+    "subject": "file:///home/tac/sites/ai-pipeline-demo/public/images/pages/a6a2765d4edcb41878a373f2b12725376e405488-3.jpg",
+    "results": {
+        "ocr_mistral": {
+            "text": "To the Hon. H. W. Thomas Judge of the Circuit Court of Fauquier County\n\nHumbly complaining your Orators Eli Tackett Washington Baldwin, Willis Jennings &amp; Thomas Dowdy who sue for themselves and the other legatees of John Tarr and respectfully represent that the said John Tarr departed this life on the day of 1859 then being a resident of the County of Fauquier, having first made &amp; published his last will &amp; testament which was admitted to probate &amp; record in the circuit court of Fauquier on the 5th day of April 1859 and on the 21st day of April 1859 the Executrix Elizabeth P. Blackwell having refused to act, Jno P. Phillips and Charles P. Chilton were appointed by said court adms with the will annexed of said accident.\n\nA certified copy of said will is herewith filed marked (A.) and prayed to the letter as a part of this bill.\n\nBy this will the testator emancipates all his slaves, and directs that all debts due him be collected that all his personal &amp; real estate shall be sold, and the whole of the proceeds of such collections &amp; sales shall be appropriated for the benefit of his said slaves in the following manner",
+            "language": null,
+            "confidence": "high",
+            "layout_blocks": [
+                {
+                    "page": 0,
+                    "type": "headline",
+                    "text": "To the Hon. H. W. Thomas Judge of the Circuit Court of Fauquier County",
+                    "bbox": {
+                        "x": 0,
+                        "y": 0,
+                        "width": 1462,
+                        "height": 272
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "Humbly complaining your Orators Eli Tackett Washington Baldwin, Willis Jennings & Thomas Dowdy who sue for themselves and the other legatees of John Tarr and respectfully represent that the said John Tarr departed this life on the day of 1859 then being a resident of the County of Fauquier, having first made & published his last will & testament which was admitted to probate & record in the circuit court of Fauquier on the 5th day of April 1859 and on the 21st day of April 1859 the Executrix Elizabeth P. Blackwell having refused to act, Jno P. Phillips and Charles P. Chilton were appointed by said court adms with the will annexed of said accident.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 272,
+                        "width": 1462,
+                        "height": 1088
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "A certified copy of said will is herewith filed marked (A.) and prayed to the letter as a part of this bill.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1359,
+                        "width": 1462,
+                        "height": 272
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "By this will the testator emancipates all his slaves, and directs that all debts due him be collected that all his personal & real estate shall be sold, and the whole of the proceeds of such collections & sales shall be appropriated for the benefit of his said slaves in the following manner",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1631,
+                        "width": 1462,
+                        "height": 816
+                    }
+                }
+            ],
+            "image_blocks": [],
+            "pages": [
+                {
+                    "index": 0,
+                    "markdown": "To the Hon. H. W. Thomas Judge of the Circuit Court of Fauquier County\n\nHumbly complaining your Orators Eli Tackett Washington Baldwin, Willis Jennings &amp; Thomas Dowdy who sue for themselves and the other legatees of John Tarr and respectfully represent that the said John Tarr departed this life on the day of 1859 then being a resident of the County of Fauquier, having first made &amp; published his last will &amp; testament which was admitted to probate &amp; record in the circuit court of Fauquier on the 5th day of April 1859 and on the 21st day of April 1859 the Executrix Elizabeth P. Blackwell having refused to act, Jno P. Phillips and Charles P. Chilton were appointed by said court adms with the will annexed of said accident.\n\nA certified copy of said will is herewith filed marked (A.) and prayed to the letter as a part of this bill.\n\nBy this will the testator emancipates all his slaves, and directs that all debts due him be collected that all his personal &amp; real estate shall be sold, and the whole of the proceeds of such collections &amp; sales shall be appropriated for the benefit of his said slaves in the following manner",
+                    "dimensions": {
+                        "dpi": 200,
+                        "height": 2447,
+                        "width": 1462
+                    },
+                    "tables": [],
+                    "header": null,
+                    "footer": null
+                }
+            ],
+            "raw_response": {
+                "pages": [
+                    {
+                        "index": 0,
+                        "markdown": "To the Hon. H. W. Thomas Judge of the Circuit Court of Fauquier County\n\nHumbly complaining your Orators Eli Tackett Washington Baldwin, Willis Jennings &amp; Thomas Dowdy who sue for themselves and the other legatees of John Tarr and respectfully represent that the said John Tarr departed this life on the day of 1859 then being a resident of the County of Fauquier, having first made &amp; published his last will &amp; testament which was admitted to probate &amp; record in the circuit court of Fauquier on the 5th day of April 1859 and on the 21st day of April 1859 the Executrix Elizabeth P. Blackwell having refused to act, Jno P. Phillips and Charles P. Chilton were appointed by said court adms with the will annexed of said accident.\n\nA certified copy of said will is herewith filed marked (A.) and prayed to the letter as a part of this bill.\n\nBy this will the testator emancipates all his slaves, and directs that all debts due him be collected that all his personal &amp; real estate shall be sold, and the whole of the proceeds of such collections &amp; sales shall be appropriated for the benefit of his said slaves in the following manner",
+                        "images": [],
+                        "tables": [],
+                        "hyperlinks": [],
+                        "header": null,
+                        "footer": null,
+                        "dimensions": {
+                            "dpi": 200,
+                            "height": 2447,
+                            "width": 1462
+                        }
+                    }
+                ],
+                "model": "mistral-ocr-latest",
+                "document_annotation": "{\n  \"blocks\": [\n    {\n      \"type\": \"headline\",\n      \"text\": \"To the Hon. H. W. Thomas Judge of the Circuit Court of Fauquier County\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 0,\n        \"width\": 500,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"Humbly complaining your Orators Eli Tackett Washington Baldwin, Willis Jennings & Thomas Dowdy who sue for themselves and the other legatees of John Tarr and respectfully represent that the said John Tarr departed this life on the day of 1859 then being a resident of the County of Fauquier, having first made & published his last will & testament which was admitted to probate & record in the circuit court of Fauquier on the 5th day of April 1859 and on the 21st day of April 1859 the Executrix Elizabeth P. Blackwell having refused to act, Jno P. Phillips and Charles P. Chilton were appointed by said court adms with the will annexed of said accident.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 20,\n        \"width\": 500,\n        \"height\": 80\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"A certified copy of said will is herewith filed marked (A.) and prayed to the letter as a part of this bill.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 100,\n        \"width\": 500,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"By this will the testator emancipates all his slaves, and directs that all debts due him be collected that all his personal & real estate shall be sold, and the whole of the proceeds of such collections & sales shall be appropriated for the benefit of his said slaves in the following manner\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 120,\n        \"width\": 500,\n        \"height\": 60\n      }\n    }\n  ]\n}",
+                "usage_info": {
+                    "pages_processed": 1,
+                    "doc_size_bytes": 403747
+                }
+            }
+        },
+        "annotate_handwriting": {
+            "pages": [
+                {
+                    "index": 0,
+                    "annotated_text": "To the Hon. <hw>H. W. Thomas</hw> Judge of the Circuit Court of <hw>Fauquier</hw> County\n\nHumbly complaining your <hw>Orators Eli Tackett Washington Baldwin, Willis Jennings &amp;amp; Thomas Dowdy</hw> who sue for themselves and the other legatees of <hw>John Tarr</hw> and respectfully represent that the said <hw>John Tarr</hw> departed this life on the <hw>day</hw> of <hw>1859</hw> then being a resident of the County of <hw>Fauquier</hw>, having first made &amp;amp; published his last will &amp;amp; testament which was admitted to probate &amp;amp; record in the circuit court of <hw>Fauquier</hw> on the <hw>5th day of April 1859</hw> and on the <hw>21st day of April 1859</hw> the Executrix <hw>Elizabeth P. Blackwell</hw> having refused to act, <hw>Jno P. Phillips</hw> and <hw>Charles P. Chilton</hw> were appointed by said court adms with the will annexed of said accident.\n\nA certified copy of said will is herewith filed marked (A.) and prayed to the letter as a part of this bill.\n\nBy this will the testator emancipates all his slaves, and directs that all debts due him be collected that all his personal &amp;amp; real estate shall be sold, and the whole of the proceeds of such collections &amp;amp; sales shall be appropriated for the benefit of his said slaves in the following manner"
+                }
+            ],
+            "annotated_text": "To the Hon. <hw>H. W. Thomas</hw> Judge of the Circuit Court of <hw>Fauquier</hw> County\n\nHumbly complaining your <hw>Orators Eli Tackett Washington Baldwin, Willis Jennings &amp;amp; Thomas Dowdy</hw> who sue for themselves and the other legatees of <hw>John Tarr</hw> and respectfully represent that the said <hw>John Tarr</hw> departed this life on the <hw>day</hw> of <hw>1859</hw> then being a resident of the County of <hw>Fauquier</hw>, having first made &amp;amp; published his last will &amp;amp; testament which was admitted to probate &amp;amp; record in the circuit court of <hw>Fauquier</hw> on the <hw>5th day of April 1859</hw> and on the <hw>21st day of April 1859</hw> the Executrix <hw>Elizabeth P. Blackwell</hw> having refused to act, <hw>Jno P. Phillips</hw> and <hw>Charles P. Chilton</hw> were appointed by said court adms with the will annexed of said accident.\n\nA certified copy of said will is herewith filed marked (A.) and prayed to the letter as a part of this bill.\n\nBy this will the testator emancipates all his slaves, and directs that all debts due him be collected that all his personal &amp;amp; real estate shall be sold, and the whole of the proceeds of such collections &amp;amp; sales shall be appropriated for the benefit of his said slaves in the following manner"
+        },
+        "transcribe_handwriting": {
+            "text": "To the Hon. H. W. Thomas Judge of the\ncircuit court of Fauquier county\n\nHumbly complaining your\nOrators Eli Tackett Washington Bald-\nwin Willis Jennings & Thomas Dowdy\nwho sue for themselves and the other\nlegatees of John Tarr decd respectfully\nrepresent that the said John Tarr\ndeparted this life on the     day of\n1859 then being a resident of the County\nof Fauquier, having first made &\npublished his last will & testament\nwhich was admitted to probi &\nrecord in the circuit court of\nFauquier on the 5th day of April 1859\nand on the 21st day of April 1859\nthe Executrix Elizabeth P. Blackwell\nhaving refused to act. Jno P. Phillips\nand Charles P. Chilton were appointed\nby said court adms with the will\nannexed of said decedents.\n\nA certified copy of said will\nis herewith filed marked (A.) and\nprayed to be taken as a part of this\nbill.\n\nBy this will the testator emancipates\nall his slaves, and directs that all\ndebts due him be collected that all\nhis personal & real estate shall be\nsold, and the whole of the proceeds\nof such collections & sales shall be\nappropriated for the benefit of his\nsaid slaves in the following manner",
+            "language": "en",
+            "confidence": "high",
+            "blocks": [
+                [
+                    "To the Hon. H. W. Thomas Judge of the"
+                ],
+                [
+                    "circuit court of Fauquier county"
+                ],
+                [
+                    "Humbly complaining your"
+                ],
+                [
+                    "Orators Eli Tackett Washington Bald-"
+                ],
+                [
+                    "win Willis Jennings & Thomas Dowdy"
+                ],
+                [
+                    "who sue for themselves and the other"
+                ],
+                [
+                    "legatees of John Tarr decd respectfully"
+                ],
+                [
+                    "represent that the said John Tarr"
+                ],
+                [
+                    "departed this life on the     day of"
+                ],
+                [
+                    "1859 then being a resident of the County"
+                ],
+                [
+                    "of Fauquier, having first made &"
+                ],
+                [
+                    "published his last will & testament"
+                ],
+                [
+                    "which was admitted to probi &"
+                ],
+                [
+                    "record in the circuit court of"
+                ],
+                [
+                    "Fauquier on the 5th day of April 1859"
+                ],
+                [
+                    "and on the 21st day of April 1859"
+                ],
+                [
+                    "the Executrix Elizabeth P. Blackwell"
+                ],
+                [
+                    "having refused to act. Jno P. Phillips"
+                ],
+                [
+                    "and Charles P. Chilton were appointed"
+                ],
+                [
+                    "by said court adms with the will"
+                ],
+                [
+                    "annexed of said decedents."
+                ],
+                [
+                    "A certified copy of said will"
+                ],
+                [
+                    "is herewith filed marked (A.) and"
+                ],
+                [
+                    "prayed to be taken as a part of this"
+                ],
+                [
+                    "bill."
+                ],
+                [
+                    "By this will the testator emancipates"
+                ],
+                [
+                    "all his slaves, and directs that all"
+                ],
+                [
+                    "debts due him be collected that all"
+                ],
+                [
+                    "his personal & real estate shall be"
+                ],
+                [
+                    "sold, and the whole of the proceeds"
+                ],
+                [
+                    "of such collections & sales shall be"
+                ],
+                [
+                    "appropriated for the benefit of his"
+                ],
+                [
+                    "said slaves in the following manner"
+                ]
+            ],
+            "_tokens": {
+                "prompt": 1548,
+                "completion": 643,
+                "total": 2191,
+                "cached": 0
+            }
+        }
+    }
+}

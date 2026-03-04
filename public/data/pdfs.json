@@ -63,5 +63,36 @@
         },
         "result_file": "16a4f389dc59d287372a2229be348aee46a95f2a.json",
         "status": "complete"
+    },
+    {
+        "url": "images/lva/061_1902_001_1-4.pdf",
+        "provenance": "https://old.lva.virginia.gov/chancery/case_detail.asp?CFN=061-1902-001",
+        "title": "061-1902-001",
+        "collection": "Library of Virginia — Chancery Records",
+        "pipeline": [
+            "ocr_mistral",
+            "annotate_handwriting",
+            "transcribe_handwriting",
+            "people_and_places",
+            "extract_metadata",
+            "generate_title"
+        ],
+        "metadata": {
+            "source": "library_of_virginia_chancery",
+            "cfn": "061-1902-001",
+            "locality": "FAUQUIER CO",
+            "index_number": "1902-001",
+            "page_count": 1117,
+            "selected_pages": [
+                1,
+                2,
+                3,
+                4
+            ],
+            "case_images_url": "https://old.lva.virginia.gov/chancery/case_images.asp?CFN=061-1902-001",
+            "first_page_url": "images/lva/061_1902_001_1-4.pdf"
+        },
+        "result_file": "a6a2765d4edcb41878a373f2b12725376e405488.json",
+        "status": "complete"
     }
 ]

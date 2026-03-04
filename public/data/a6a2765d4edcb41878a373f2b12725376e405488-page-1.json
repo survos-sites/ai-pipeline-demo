@@ -1,0 +1,826 @@
+{
+    "subject": "file:///home/tac/sites/ai-pipeline-demo/public/images/pages/a6a2765d4edcb41878a373f2b12725376e405488-1.jpg",
+    "results": {
+        "ocr_mistral": {
+            "text": "#229\n\n1902-001 (1)\nFauguer Co.\n\n(1902-001\nSF# 229 + 443\n8 Plats - Harris Holder, Great Run, Home Truck, Marsh Farm, etc.\nFaug. Co. John Fox, 4/5/1859\n\nNOTE: Sints #229 + #443 were hopelessly\nintermingled at time of processing. Thus,\nwe have gained the 3 suits since parties\nare the same in both suits.\n6 BROWN FOLDERS\nWhite folders 1-58\nBROWN FOLDER #1/6\nWhite folders 1-8/58\n1/58 Bill\n2/58 Answer\n3/58 ) Relations\n4/58 )\n6/58\n7/58\n8/58\n} Decrees, etc\n\nNOTE: Plaintiff's List is taken from\n1) 1859 John Fox Inv. of Slaves\n2) 1877 Comr. Report of Legatne List\nSEE ALSO FAUQ CO. PROBATE RECORDS\nFROM CLERKS LOOSE PAPER\nEX 42 1860-001 TO 1872-001\nBlackwell + Fox Est Papers\n\nTACKETT, BALDWIN, JENNINGS, DOWDY, FREMAN, CRAWFORD,\nBURNS, MORPIE V, CARPENTER, MUDD, THOMAS, NEALE,\nCORBIN, LONG, FOX, THOMSON, BARBER, BATTER,\nDUNCAN, MOORE, LONG, STE WART, WALDEN,\nHANIDAN, RALLEN, BLINK, CHAPMAN, BRANSON,\nMOZERS, WHITMORE, SNOWDEN, PARKER, WREN,\nPOLLARD, MENIFEE, MORSON, RATCLIFFE,\nTHOMPSON, YOUNT, HOUCK, NEWBY, BAILEY,\nWEST, NEALE, WILLIAMS, WOOD, WASHINGTON,\nFISHER, JAMES, DUNKIN, JOHN, EDMOND, ISAAC,\nMORGAN, CLAYN, THORNTON, CLINTON, OBEIDAH,\nREDECCAN, TOM'S, RACHOLN, JAMES, WILLIAMS,\nDELIAN, HENRIETTA, CYRENE, LUCIDAN,\nAMYN, MARY ELLIAN, SABAN AMAN, ANTHONYN,\nGEORGEN, PAREN, SAMUEL MARY FRANCESN\n\nAWA Fox's Decrees v. Fox Admr.\nTackett, Eli\nBaldwin, Washington\nJennings, Willis\nDowdy, Thos.\n+ als. *\nv.\nPhilips, John P.\nClifton, Charles P.\nAdmrs. w.w.a. of\nJohn Fox, deed.\nWm M. Hume (decd)\nJ.W. James\nJohn A Seaton\nAdmrs. of John Fox,\ndecd\n* See Pltfs. on inside of brown folder #1.",
+            "language": null,
+            "confidence": "high",
+            "layout_blocks": [
+                {
+                    "page": 0,
+                    "type": "headline",
+                    "text": "#229",
+                    "bbox": {
+                        "x": 0,
+                        "y": 0,
+                        "width": 2954,
+                        "height": 31
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "1902-001 (1)",
+                    "bbox": {
+                        "x": 0,
+                        "y": 31,
+                        "width": 2954,
+                        "height": 31
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "Fauguer Co.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 62,
+                        "width": 2954,
+                        "height": 31
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "(1902-001",
+                    "bbox": {
+                        "x": 0,
+                        "y": 93,
+                        "width": 2954,
+                        "height": 31
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "SF# 229 + 443",
+                    "bbox": {
+                        "x": 0,
+                        "y": 124,
+                        "width": 2954,
+                        "height": 31
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "8 Plats - Harris Holder, Great Run, Home Truck, Marsh Farm, etc.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 155,
+                        "width": 2954,
+                        "height": 31
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "Faug. Co. John Fox, 4/5/1859",
+                    "bbox": {
+                        "x": 0,
+                        "y": 186,
+                        "width": 2954,
+                        "height": 31
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "NOTE: Sints #229 + #443 were hopelessly",
+                    "bbox": {
+                        "x": 0,
+                        "y": 216,
+                        "width": 2954,
+                        "height": 31
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "intermingled at time of processing. Thus,",
+                    "bbox": {
+                        "x": 0,
+                        "y": 247,
+                        "width": 2954,
+                        "height": 31
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "we have gained the 3 suits since parties",
+                    "bbox": {
+                        "x": 0,
+                        "y": 278,
+                        "width": 2954,
+                        "height": 31
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "are the same in both suits.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 309,
+                        "width": 2954,
+                        "height": 31
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "6 BROWN FOLDERS",
+                    "bbox": {
+                        "x": 0,
+                        "y": 340,
+                        "width": 2954,
+                        "height": 31
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "White folders 1-58",
+                    "bbox": {
+                        "x": 0,
+                        "y": 371,
+                        "width": 2954,
+                        "height": 31
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "BROWN FOLDER #1/6",
+                    "bbox": {
+                        "x": 0,
+                        "y": 402,
+                        "width": 2954,
+                        "height": 31
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "White folders 1-8/58",
+                    "bbox": {
+                        "x": 0,
+                        "y": 433,
+                        "width": 2954,
+                        "height": 31
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "1/58 Bill",
+                    "bbox": {
+                        "x": 0,
+                        "y": 464,
+                        "width": 2954,
+                        "height": 31
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "2/58 Answer",
+                    "bbox": {
+                        "x": 0,
+                        "y": 495,
+                        "width": 2954,
+                        "height": 31
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "3/58 ) Relations",
+                    "bbox": {
+                        "x": 0,
+                        "y": 526,
+                        "width": 2954,
+                        "height": 31
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "4/58 )",
+                    "bbox": {
+                        "x": 0,
+                        "y": 557,
+                        "width": 2954,
+                        "height": 31
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "6/58",
+                    "bbox": {
+                        "x": 0,
+                        "y": 587,
+                        "width": 2954,
+                        "height": 31
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "7/58",
+                    "bbox": {
+                        "x": 0,
+                        "y": 618,
+                        "width": 2954,
+                        "height": 31
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "8/58",
+                    "bbox": {
+                        "x": 0,
+                        "y": 649,
+                        "width": 2954,
+                        "height": 31
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "} Decrees, etc",
+                    "bbox": {
+                        "x": 0,
+                        "y": 680,
+                        "width": 2954,
+                        "height": 31
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "NOTE: Plaintiff's List is taken from",
+                    "bbox": {
+                        "x": 0,
+                        "y": 711,
+                        "width": 2954,
+                        "height": 31
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "1) 1859 John Fox Inv. of Slaves",
+                    "bbox": {
+                        "x": 0,
+                        "y": 742,
+                        "width": 2954,
+                        "height": 31
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "2) 1877 Comr. Report of Legatne List",
+                    "bbox": {
+                        "x": 0,
+                        "y": 773,
+                        "width": 2954,
+                        "height": 31
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "SEE ALSO FAUQ CO. PROBATE RECORDS",
+                    "bbox": {
+                        "x": 0,
+                        "y": 804,
+                        "width": 2954,
+                        "height": 31
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "FROM CLERKS LOOSE PAPER",
+                    "bbox": {
+                        "x": 0,
+                        "y": 835,
+                        "width": 2954,
+                        "height": 31
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "EX 42 1860-001 TO 1872-001",
+                    "bbox": {
+                        "x": 0,
+                        "y": 866,
+                        "width": 2954,
+                        "height": 31
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "Blackwell + Fox Est Papers",
+                    "bbox": {
+                        "x": 0,
+                        "y": 897,
+                        "width": 2954,
+                        "height": 31
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "TACKETT, BALDWIN, JENNINGS, DOWDY, FREMAN, CRAWFORD,",
+                    "bbox": {
+                        "x": 0,
+                        "y": 928,
+                        "width": 2954,
+                        "height": 31
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "BURNS, MORPIE V, CARPENTER, MUDD, THOMAS, NEALE,",
+                    "bbox": {
+                        "x": 0,
+                        "y": 959,
+                        "width": 2954,
+                        "height": 31
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "CORBIN, LONG, FOX, THOMSON, BARBER, BATTER,",
+                    "bbox": {
+                        "x": 0,
+                        "y": 989,
+                        "width": 2954,
+                        "height": 31
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "DUNCAN, MOORE, LONG, STE WART, WALDEN,",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1020,
+                        "width": 2954,
+                        "height": 31
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "HANIDAN, RALLEN, BLINK, CHAPMAN, BRANSON,",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1051,
+                        "width": 2954,
+                        "height": 31
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "MOZERS, WHITMORE, SNOWDEN, PARKER, WREN,",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1082,
+                        "width": 2954,
+                        "height": 31
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "POLLARD, MENIFEE, MORSON, RATCLIFFE,",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1113,
+                        "width": 2954,
+                        "height": 31
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "THOMPSON, YOUNT, HOUCK, NEWBY, BAILEY,",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1144,
+                        "width": 2954,
+                        "height": 31
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "WEST, NEALE, WILLIAMS, WOOD, WASHINGTON,",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1175,
+                        "width": 2954,
+                        "height": 31
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "FISHER, JAMES, DUNKIN, JOHN, EDMOND, ISAAC,",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1206,
+                        "width": 2954,
+                        "height": 31
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "MORGAN, CLAYN, THORNTON, CLINTON, OBEIDAH,",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1237,
+                        "width": 2954,
+                        "height": 31
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "REDECCAN, TOM'S, RACHOLN, JAMES, WILLIAMS,",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1268,
+                        "width": 2954,
+                        "height": 31
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "DELIAN, HENRIETTA, CYRENE, LUCIDAN,",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1299,
+                        "width": 2954,
+                        "height": 31
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "AMYN, MARY ELLIAN, SABAN AMAN, ANTHONYN,",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1330,
+                        "width": 2954,
+                        "height": 31
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "GEORGEN, PAREN, SAMUEL MARY FRANCESN",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1360,
+                        "width": 2954,
+                        "height": 31
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "AWA Fox's Decrees v. Fox Admr.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1391,
+                        "width": 2954,
+                        "height": 31
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "Tackett, Eli",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1422,
+                        "width": 2954,
+                        "height": 31
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "Baldwin, Washington",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1453,
+                        "width": 2954,
+                        "height": 31
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "Jennings, Willis",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1484,
+                        "width": 2954,
+                        "height": 31
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "Dowdy, Thos.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1515,
+                        "width": 2954,
+                        "height": 31
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "+ als. *",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1546,
+                        "width": 2954,
+                        "height": 31
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "v.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1577,
+                        "width": 2954,
+                        "height": 31
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "Philips, John P.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1608,
+                        "width": 2954,
+                        "height": 31
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "Clifton, Charles P.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1639,
+                        "width": 2954,
+                        "height": 31
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "Admrs. w.w.a. of",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1670,
+                        "width": 2954,
+                        "height": 31
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "John Fox, deed.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1701,
+                        "width": 2954,
+                        "height": 31
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "Wm M. Hume (decd)",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1731,
+                        "width": 2954,
+                        "height": 31
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "J.W. James",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1762,
+                        "width": 2954,
+                        "height": 31
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "John A Seaton",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1793,
+                        "width": 2954,
+                        "height": 31
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "Admrs. of John Fox,",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1824,
+                        "width": 2954,
+                        "height": 31
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "decd",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1855,
+                        "width": 2954,
+                        "height": 31
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "* See Pltfs. on inside of brown folder #1.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1886,
+                        "width": 2954,
+                        "height": 31
+                    }
+                }
+            ],
+            "image_blocks": [],
+            "pages": [
+                {
+                    "index": 0,
+                    "markdown": "#229\n\n1902-001 (1)\nFauguer Co.\n\n(1902-001\nSF# 229 + 443\n8 Plats - Harris Holder, Great Run, Home Truck, Marsh Farm, etc.\nFaug. Co. John Fox, 4/5/1859\n\nNOTE: Sints #229 + #443 were hopelessly\nintermingled at time of processing. Thus,\nwe have gained the 3 suits since parties\nare the same in both suits.\n6 BROWN FOLDERS\nWhite folders 1-58\nBROWN FOLDER #1/6\nWhite folders 1-8/58\n1/58 Bill\n2/58 Answer\n3/58 ) Relations\n4/58 )\n6/58\n7/58\n8/58\n} Decrees, etc\n\nNOTE: Plaintiff's List is taken from\n1) 1859 John Fox Inv. of Slaves\n2) 1877 Comr. Report of Legatne List\nSEE ALSO FAUQ CO. PROBATE RECORDS\nFROM CLERKS LOOSE PAPER\nEX 42 1860-001 TO 1872-001\nBlackwell + Fox Est Papers\n\nTACKETT, BALDWIN, JENNINGS, DOWDY, FREMAN, CRAWFORD,\nBURNS, MORPIE V, CARPENTER, MUDD, THOMAS, NEALE,\nCORBIN, LONG, FOX, THOMSON, BARBER, BATTER,\nDUNCAN, MOORE, LONG, STE WART, WALDEN,\nHANIDAN, RALLEN, BLINK, CHAPMAN, BRANSON,\nMOZERS, WHITMORE, SNOWDEN, PARKER, WREN,\nPOLLARD, MENIFEE, MORSON, RATCLIFFE,\nTHOMPSON, YOUNT, HOUCK, NEWBY, BAILEY,\nWEST, NEALE, WILLIAMS, WOOD, WASHINGTON,\nFISHER, JAMES, DUNKIN, JOHN, EDMOND, ISAAC,\nMORGAN, CLAYN, THORNTON, CLINTON, OBEIDAH,\nREDECCAN, TOM'S, RACHOLN, JAMES, WILLIAMS,\nDELIAN, HENRIETTA, CYRENE, LUCIDAN,\nAMYN, MARY ELLIAN, SABAN AMAN, ANTHONYN,\nGEORGEN, PAREN, SAMUEL MARY FRANCESN\n\nAWA Fox's Decrees v. Fox Admr.\nTackett, Eli\nBaldwin, Washington\nJennings, Willis\nDowdy, Thos.\n+ als. *\nv.\nPhilips, John P.\nClifton, Charles P.\nAdmrs. w.w.a. of\nJohn Fox, deed.\nWm M. Hume (decd)\nJ.W. James\nJohn A Seaton\nAdmrs. of John Fox,\ndecd\n* See Pltfs. on inside of brown folder #1.",
+                    "dimensions": {
+                        "dpi": 200,
+                        "height": 1917,
+                        "width": 2954
+                    },
+                    "tables": [],
+                    "header": null,
+                    "footer": null
+                }
+            ],
+            "raw_response": {
+                "pages": [
+                    {
+                        "index": 0,
+                        "markdown": "#229\n\n1902-001 (1)\nFauguer Co.\n\n(1902-001\nSF# 229 + 443\n8 Plats - Harris Holder, Great Run, Home Truck, Marsh Farm, etc.\nFaug. Co. John Fox, 4/5/1859\n\nNOTE: Sints #229 + #443 were hopelessly\nintermingled at time of processing. Thus,\nwe have gained the 3 suits since parties\nare the same in both suits.\n6 BROWN FOLDERS\nWhite folders 1-58\nBROWN FOLDER #1/6\nWhite folders 1-8/58\n1/58 Bill\n2/58 Answer\n3/58 ) Relations\n4/58 )\n6/58\n7/58\n8/58\n} Decrees, etc\n\nNOTE: Plaintiff's List is taken from\n1) 1859 John Fox Inv. of Slaves\n2) 1877 Comr. Report of Legatne List\nSEE ALSO FAUQ CO. PROBATE RECORDS\nFROM CLERKS LOOSE PAPER\nEX 42 1860-001 TO 1872-001\nBlackwell + Fox Est Papers\n\nTACKETT, BALDWIN, JENNINGS, DOWDY, FREMAN, CRAWFORD,\nBURNS, MORPIE V, CARPENTER, MUDD, THOMAS, NEALE,\nCORBIN, LONG, FOX, THOMSON, BARBER, BATTER,\nDUNCAN, MOORE, LONG, STE WART, WALDEN,\nHANIDAN, RALLEN, BLINK, CHAPMAN, BRANSON,\nMOZERS, WHITMORE, SNOWDEN, PARKER, WREN,\nPOLLARD, MENIFEE, MORSON, RATCLIFFE,\nTHOMPSON, YOUNT, HOUCK, NEWBY, BAILEY,\nWEST, NEALE, WILLIAMS, WOOD, WASHINGTON,\nFISHER, JAMES, DUNKIN, JOHN, EDMOND, ISAAC,\nMORGAN, CLAYN, THORNTON, CLINTON, OBEIDAH,\nREDECCAN, TOM'S, RACHOLN, JAMES, WILLIAMS,\nDELIAN, HENRIETTA, CYRENE, LUCIDAN,\nAMYN, MARY ELLIAN, SABAN AMAN, ANTHONYN,\nGEORGEN, PAREN, SAMUEL MARY FRANCESN\n\nAWA Fox's Decrees v. Fox Admr.\nTackett, Eli\nBaldwin, Washington\nJennings, Willis\nDowdy, Thos.\n+ als. *\nv.\nPhilips, John P.\nClifton, Charles P.\nAdmrs. w.w.a. of\nJohn Fox, deed.\nWm M. Hume (decd)\nJ.W. James\nJohn A Seaton\nAdmrs. of John Fox,\ndecd\n* See Pltfs. on inside of brown folder #1.",
+                        "images": [],
+                        "tables": [],
+                        "hyperlinks": [],
+                        "header": null,
+                        "footer": null,
+                        "dimensions": {
+                            "dpi": 200,
+                            "height": 1917,
+                            "width": 2954
+                        }
+                    }
+                ],
+                "model": "mistral-ocr-latest",
+                "document_annotation": "{\n  \"blocks\": [\n    {\n      \"type\": \"headline\",\n      \"text\": \"#229\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 0,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"1902-001 (1)\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 20,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"Fauguer Co.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 40,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"(1902-001\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 60,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"SF# 229 + 443\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 80,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"8 Plats - Harris Holder, Great Run, Home Truck, Marsh Farm, etc.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 100,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"Faug. Co. John Fox, 4/5/1859\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 120,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"NOTE: Sints #229 + #443 were hopelessly\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 140,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"intermingled at time of processing. Thus,\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 160,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"we have gained the 3 suits since parties\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 180,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"are the same in both suits.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 200,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"6 BROWN FOLDERS\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 220,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"White folders 1-58\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 240,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"BROWN FOLDER #1/6\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 260,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"White folders 1-8/58\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 280,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"1/58 Bill\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 300,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"2/58 Answer\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 320,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"3/58 ) Relations\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 340,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"4/58 )\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 360,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"6/58\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 380,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"7/58\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 400,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"8/58\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 420,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"} Decrees, etc\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 440,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"NOTE: Plaintiff's List is taken from\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 460,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"1) 1859 John Fox Inv. of Slaves\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 480,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"2) 1877 Comr. Report of Legatne List\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 500,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"SEE ALSO FAUQ CO. PROBATE RECORDS\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 520,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"FROM CLERKS LOOSE PAPER\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 540,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"EX 42 1860-001 TO 1872-001\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 560,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"Blackwell + Fox Est Papers\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 580,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"TACKETT, BALDWIN, JENNINGS, DOWDY, FREMAN, CRAWFORD,\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 600,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"BURNS, MORPIE V, CARPENTER, MUDD, THOMAS, NEALE,\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 620,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"CORBIN, LONG, FOX, THOMSON, BARBER, BATTER,\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 640,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"DUNCAN, MOORE, LONG, STE WART, WALDEN,\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 660,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"HANIDAN, RALLEN, BLINK, CHAPMAN, BRANSON,\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 680,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"MOZERS, WHITMORE, SNOWDEN, PARKER, WREN,\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 700,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"POLLARD, MENIFEE, MORSON, RATCLIFFE,\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 720,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"THOMPSON, YOUNT, HOUCK, NEWBY, BAILEY,\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 740,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"WEST, NEALE, WILLIAMS, WOOD, WASHINGTON,\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 760,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"FISHER, JAMES, DUNKIN, JOHN, EDMOND, ISAAC,\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 780,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"MORGAN, CLAYN, THORNTON, CLINTON, OBEIDAH,\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 800,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"REDECCAN, TOM'S, RACHOLN, JAMES, WILLIAMS,\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 820,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"DELIAN, HENRIETTA, CYRENE, LUCIDAN,\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 840,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"AMYN, MARY ELLIAN, SABAN AMAN, ANTHONYN,\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 860,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"GEORGEN, PAREN, SAMUEL MARY FRANCESN\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 880,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"AWA Fox's Decrees v. Fox Admr.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 900,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"Tackett, Eli\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 920,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"Baldwin, Washington\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 940,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"Jennings, Willis\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 960,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"Dowdy, Thos.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 980,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"+ als. *\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 1000,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"v.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 1020,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"Philips, John P.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 1040,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"Clifton, Charles P.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 1060,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"Admrs. w.w.a. of\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 1080,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"John Fox, deed.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 1100,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"Wm M. Hume (decd)\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 1120,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"J.W. James\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 1140,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"John A Seaton\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 1160,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"Admrs. of John Fox,\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 1180,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"decd\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 1200,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"* See Pltfs. on inside of brown folder #1.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 1220,\n        \"width\": 100,\n        \"height\": 20\n      }\n    }\n  ]\n}",
+                "usage_info": {
+                    "pages_processed": 1,
+                    "doc_size_bytes": 326894
+                }
+            }
+        },
+        "annotate_handwriting": {
+            "pages": [
+                {
+                    "index": 0,
+                    "annotated_text": "```plaintext\n#229\n\n1902-001 (1)\n<hw>Fauquier Co.</hw>\n\n(1902-001\n<hw>SF# 229 + 443</hw>\n8 Plats - <hw>Harris Holder, Great Run, Home Tract, Marsh Farm, etc.</hw>\n<hw>Fauq. Co. John Fox, 4/5/1859</hw>\n\n<hw>NOTE:</hw> <hw>Suits #229 + #443 were hopelessly</hw>\n<hw>intermingled at time of processing. Thus,</hw>\n<hw>we have joined the 2 suits since parties</hw>\n<hw>are the same in both suits.</hw>\n<hw>6 BROWN FOLDERS</hw>\n<hw>White folders 1-58</hw>\n<hw>BROWN FOLDER #1/6</hw>\n<hw>White folders 1-8/58</hw>\n<hw>1/58 Bill</hw>\n<hw>2/58 Answer</hw>\n<hw>3/58 ) Reh#ions</hw>\n<hw>4/58 )</hw>\n<hw>6/58</hw>\n<hw>7/58</hw>\n<hw>8/58</hw>\n<hw>} Decrees, &c</hw>\n\n<hw>NOTE: Plaintiff&#039;s List is taken from</hw>\n1) 1859 John Fox Inv. of Slaves\n2) 1877 Comr. Report of Legatee List\n<hw>SEE ALSO FAUQ CO. PROBATE RECORDS</hw>\n<hw>FROM CLERKS LOOSE PAPER</hw>\n<hw>EX 42 1860-001 TO 1872-001</hw>\n<hw>Blackwell + Fox Est Papers</hw>\n\n<hw>TACKETT, BALDWIN, JENNINGS, DOWDY, FREEMAN, CRAWFORD,</hw>\n<hw>BURNS, MORPIE V, CARPENTER, MUDD, THOMAS, NEALE,</hw>\n<hw>CORBIN, LONG, FOX, THOMSON, BARBER, BATTER,</hw>\n<hw>DUNCAN, MOORE, LONG, STE WART, WALDEN,</hw>\n<hw>HANIDAN, RALLEN, BLINK, CHAPMAN, BRANSON,</hw>\n<hw>MOZERS, WHITMORE, SNOWDEN, PARKER, WREN,</hw>\n<hw>POLLARD, MENIFEE, MORSON, RATCLIFFE,</hw>\n<hw>THOMPSON, YOUNT, HOUCK, NEWBY, BAILEY,</hw>\n<hw>WEST, NEALE, WILLIAMS, WOOD, WASHINGTON,</hw>\n<hw>FISHER, JAMES, DUNKIN, JOHN, EDMOND, ISAAC,</hw>\n<hw>MORGAN, CLAYN, THORNTON, CLINTON, OBEIDAH,</hw>\n<hw>REDECCAN, TOM&#039;S, RACHOLN, JAMES, WILLIAMS,</hw>\n<hw>DELIAN, HENRIETTA, CYRENE, LUCIDAN,</hw>\n<hw>AMYN, MARY ELLIAN, SABAN AMAN, ANTHONYN,</hw>\n<hw>GEORGEN, PAREN, SAMUEL MARY FRANCESN</hw>\n\n<hw>AKA Fox&#039;s Decrees v. Fox Admr.</hw>\n<hw>Tackett, Eli</hw>\n<hw>Baldwin, Washington</hw>\n<hw>Jennings, Willis</hw>\n<hw>Dowdy, Thos.</hw>\n+ <hw>als.</hw> *\nv.\n<hw>Philips, John P.</hw>\n<hw>Clifton, Charles P.</hw>\nAdmrs. <hw>w.w.a. of</hw>\n<hw>John Fox, decd.</hw>\n<hw>Wm M. Hume (decd)</hw>\n<hw>J.W. James</hw>\n<hw>John A Seaton</hw>\n<hw>Admrs. of John Fox,</hw>\n<hw>decd</hw>\n* See <hw>Pltfs. on inside of brown folder #1.</hw>\n```"
+                }
+            ],
+            "annotated_text": "```plaintext\n#229\n\n1902-001 (1)\n<hw>Fauquier Co.</hw>\n\n(1902-001\n<hw>SF# 229 + 443</hw>\n8 Plats - <hw>Harris Holder, Great Run, Home Tract, Marsh Farm, etc.</hw>\n<hw>Fauq. Co. John Fox, 4/5/1859</hw>\n\n<hw>NOTE:</hw> <hw>Suits #229 + #443 were hopelessly</hw>\n<hw>intermingled at time of processing. Thus,</hw>\n<hw>we have joined the 2 suits since parties</hw>\n<hw>are the same in both suits.</hw>\n<hw>6 BROWN FOLDERS</hw>\n<hw>White folders 1-58</hw>\n<hw>BROWN FOLDER #1/6</hw>\n<hw>White folders 1-8/58</hw>\n<hw>1/58 Bill</hw>\n<hw>2/58 Answer</hw>\n<hw>3/58 ) Reh#ions</hw>\n<hw>4/58 )</hw>\n<hw>6/58</hw>\n<hw>7/58</hw>\n<hw>8/58</hw>\n<hw>} Decrees, &c</hw>\n\n<hw>NOTE: Plaintiff&#039;s List is taken from</hw>\n1) 1859 John Fox Inv. of Slaves\n2) 1877 Comr. Report of Legatee List\n<hw>SEE ALSO FAUQ CO. PROBATE RECORDS</hw>\n<hw>FROM CLERKS LOOSE PAPER</hw>\n<hw>EX 42 1860-001 TO 1872-001</hw>\n<hw>Blackwell + Fox Est Papers</hw>\n\n<hw>TACKETT, BALDWIN, JENNINGS, DOWDY, FREEMAN, CRAWFORD,</hw>\n<hw>BURNS, MORPIE V, CARPENTER, MUDD, THOMAS, NEALE,</hw>\n<hw>CORBIN, LONG, FOX, THOMSON, BARBER, BATTER,</hw>\n<hw>DUNCAN, MOORE, LONG, STE WART, WALDEN,</hw>\n<hw>HANIDAN, RALLEN, BLINK, CHAPMAN, BRANSON,</hw>\n<hw>MOZERS, WHITMORE, SNOWDEN, PARKER, WREN,</hw>\n<hw>POLLARD, MENIFEE, MORSON, RATCLIFFE,</hw>\n<hw>THOMPSON, YOUNT, HOUCK, NEWBY, BAILEY,</hw>\n<hw>WEST, NEALE, WILLIAMS, WOOD, WASHINGTON,</hw>\n<hw>FISHER, JAMES, DUNKIN, JOHN, EDMOND, ISAAC,</hw>\n<hw>MORGAN, CLAYN, THORNTON, CLINTON, OBEIDAH,</hw>\n<hw>REDECCAN, TOM&#039;S, RACHOLN, JAMES, WILLIAMS,</hw>\n<hw>DELIAN, HENRIETTA, CYRENE, LUCIDAN,</hw>\n<hw>AMYN, MARY ELLIAN, SABAN AMAN, ANTHONYN,</hw>\n<hw>GEORGEN, PAREN, SAMUEL MARY FRANCESN</hw>\n\n<hw>AKA Fox&#039;s Decrees v. Fox Admr.</hw>\n<hw>Tackett, Eli</hw>\n<hw>Baldwin, Washington</hw>\n<hw>Jennings, Willis</hw>\n<hw>Dowdy, Thos.</hw>\n+ <hw>als.</hw> *\nv.\n<hw>Philips, John P.</hw>\n<hw>Clifton, Charles P.</hw>\nAdmrs. <hw>w.w.a. of</hw>\n<hw>John Fox, decd.</hw>\n<hw>Wm M. Hume (decd)</hw>\n<hw>J.W. James</hw>\n<hw>John A Seaton</hw>\n<hw>Admrs. of John Fox,</hw>\n<hw>decd</hw>\n* See <hw>Pltfs. on inside of brown folder #1.</hw>\n```"
+        },
+        "transcribe_handwriting": {
+            "text": "1902-001 (1)  \nFauguer Co.\n\n(1902-001  \nSF# 229 + 443  \nSlaves  \n8 Plats - Harris Holder, Great Run, Home Tract, Marsh Farm, &c.\nFaug. Co. John Fox, 4/5/1859\n\nNOTE: Suits #229 + #443 were hopelessly intermingled at time of processing. Thus, we have joined the 2 suits since parties are the same in both suits.  \n6 Brown Folders  \nWhite folders 1-58  \n\nBROWN FOLDER #1/6  \nWhite folders 1-8/58  \n1/58 Bill  \n2/58 Answer  \n3/58 P. Relations  \n4/58 R.F. Relations  \n6/58  \n7/58  \n8/58 Decrees, &c\n\nNOTE: Plntf's List is taken from  \n1) 1859 John Fox Inv. of Slaves  \n2) 1877 Comr. Report of Legatee List  \nSEE ALSO FAUQ CO. PROBATE RECORDS  \nFROM CLERKS LOOSE PAPER  \nBK #2 1860-001 TO 1872-001  \nBlackwell & Fox Est Papers\n\nTackett, Baldwin, Jennings, Dowdy, Freman, Crawford  \nBurns, Murphy, Carpenter, Mudd, Thomas, Neale,  \nCorbin, Long, Fox, Thomson, Barber, Ratler,  \nDuncan, Moore, Long, Stewart, Walden,  \nHamidan, Rallen, Blink, Chapman, Branson,  \nMozers, Whitmore, Snowden, Parker, Wren,  \nPollard, Menifee, Morson, Ratcliffe,  \nThompson, Yount, Houck, Newby, Bailey,  \nWest, Neale, Williams, Wood, Washington,  \nFisher, James, Dunkin, John, Edmond, Isaac,  \nMorgan, Clayn, Thornton, Clinton, Obediah,  \nRedeccan, Tom's, Racholn, James, Williams,  \nDelilan, Henrietta, Cyrene, Lucindan,  \nAmyn, Mary Ellen, Sarah Ann, Anthoryn,  \nGeorgen, Paten, Samuel Mary Francesn\n\nAKA Fox's Devices v. Fox's Admr.  \nTackett, Eli  \nBaldawin, Washington  \nJennings, Willis  \nDowdy, Thos.  \n+ als. *  \nv.\nPhilips, John P.  \nClifton, Charles P.  \nAdmrs. w.w.a. of   \n  John Fox, decd.\nWm M. Hume (decd)  \nJ.W. James  \nJohn A Seaton  \nAdmrs. of John Fox, decd.  \n* see plntfs on inside of brown folder #1.",
+            "language": null,
+            "confidence": "N/A",
+            "blocks": [
+                [
+                    "1902-001 (1)",
+                    "Fauguer Co."
+                ],
+                [
+                    "(1902-001",
+                    "SF# 229 + 443",
+                    "Slaves",
+                    "8 Plats - Harris Holder, Great Run, Home Tract, Marsh Farm, &c.",
+                    "Faug. Co. John Fox, 4/5/1859"
+                ],
+                [
+                    "NOTE: Suits #229 + #443 were hopelessly intermingled at time of processing. Thus, we have joined the 2 suits since parties are the same in both suits.",
+                    "6 Brown Folders",
+                    "White folders 1-58"
+                ],
+                [
+                    "BROWN FOLDER #1/6",
+                    "White folders 1-8/58",
+                    "1/58 Bill",
+                    "2/58 Answer",
+                    "3/58 P. Relations",
+                    "4/58 R.F. Relations",
+                    "6/58",
+                    "7/58",
+                    "8/58 Decrees, &c"
+                ],
+                [
+                    "NOTE: Plntf's List is taken from",
+                    "1) 1859 John Fox Inv. of Slaves",
+                    "2) 1877 Comr. Report of Legatee List",
+                    "SEE ALSO FAUQ CO. PROBATE RECORDS",
+                    "FROM CLERKS LOOSE PAPER",
+                    "BK #2 1860-001 TO 1872-001",
+                    "Blackwell & Fox Est Papers"
+                ],
+                [
+                    "Tackett, Baldwin, Jennings, Dowdy, Freman, Crawford",
+                    "Burns, Murphy, Carpenter, Mudd, Thomas, Neale,",
+                    "Corbin, Long, Fox, Thomson, Barber, Ratler,",
+                    "Duncan, Moore, Long, Stewart, Walden,",
+                    "Hamidan, Rallen, Blink, Chapman, Branson,",
+                    "Mozers, Whitmore, Snowden, Parker, Wren,",
+                    "Pollard, Menifee, Morson, Ratcliffe,",
+                    "Thompson, Yount, Houck, Newby, Bailey,",
+                    "West, Neale, Williams, Wood, Washington,",
+                    "Fisher, James, Dunkin, John, Edmond, Isaac,",
+                    "Morgan, Clayn, Thornton, Clinton, Obediah,",
+                    "Redeccan, Tom's, Racholn, James, Williams,",
+                    "Delilan, Henrietta, Cyrene, Lucindan,",
+                    "Amyn, Mary Ellen, Sarah Ann, Anthoryn,",
+                    "Georgen, Paten, Samuel Mary Francesn"
+                ],
+                [
+                    "AKA Fox's Devices v. Fox's Admr.",
+                    "Tackett, Eli",
+                    "Baldawin, Washington",
+                    "Jennings, Willis",
+                    "Dowdy, Thos.",
+                    "+ als. *",
+                    "v.",
+                    "Philips, John P.",
+                    "Clifton, Charles P.",
+                    "Admrs. w.w.a. of",
+                    "John Fox, decd.",
+                    "Wm M. Hume (decd)",
+                    "J.W. James",
+                    "John A Seaton",
+                    "Admrs. of John Fox, decd.",
+                    "* see plntfs on inside of brown folder #1."
+                ]
+            ],
+            "_tokens": {
+                "prompt": 1927,
+                "completion": 1305,
+                "total": 3232,
+                "cached": 0
+            }
+        }
+    }
+}

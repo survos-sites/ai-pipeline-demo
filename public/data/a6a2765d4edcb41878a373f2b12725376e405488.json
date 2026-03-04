@@ -1,0 +1,53 @@
+{
+    "subject": "images/lva/061_1902_001_1-4.pdf",
+    "results": {
+        "_pages": {
+            "page_count": 4,
+            "pages": [
+                "a6a2765d4edcb41878a373f2b12725376e405488-page-1.json",
+                "a6a2765d4edcb41878a373f2b12725376e405488-page-2.json",
+                "a6a2765d4edcb41878a373f2b12725376e405488-page-3.json",
+                "a6a2765d4edcb41878a373f2b12725376e405488-page-4.json"
+            ]
+        },
+        "people_and_places": {
+            "people": [],
+            "places": [],
+            "organisations": [],
+            "_tokens": {
+                "prompt": 213,
+                "completion": 12,
+                "total": 225,
+                "cached": 0
+            }
+        },
+        "extract_metadata": {
+            "dateRange": null,
+            "people": [],
+            "places": [],
+            "subjects": [],
+            "language": null,
+            "organisations": [],
+            "_tokens": {
+                "prompt": 268,
+                "completion": 24,
+                "total": 292,
+                "cached": 0
+            }
+        },
+        "generate_title": {
+            "title": "Smith Family Gathering, Springfield, 1985",
+            "alternativeTitles": [
+                "Smith Family Reunion, 1985",
+                "Springfield Smith Family Event, 1985"
+            ],
+            "confidence": "High",
+            "_tokens": {
+                "prompt": 157,
+                "completion": 40,
+                "total": 197,
+                "cached": 0
+            }
+        }
+    }
+}

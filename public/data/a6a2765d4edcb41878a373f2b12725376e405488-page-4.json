@@ -1,0 +1,158 @@
+{
+    "subject": "file:///home/tac/sites/ai-pipeline-demo/public/images/pages/a6a2765d4edcb41878a373f2b12725376e405488-4.jpg",
+    "results": {
+        "ocr_mistral": {
+            "text": "He directs that the sum of $30,000 shall be laid out in the purchase of land in the State of Ohio for the use of the Compt's his said slaves and that the said land should be allotted equally among them giving them their lots equally together according to their families. The residue of the fund he directed to be laid out in providing for the removal of his said slaves to Ohio and then in equal portions among them in fixing them up for housekeeping such as putting up houses where necessary for them purchasing horses stock furniture plantation utensils &amp; clothing and if any sureties should remain, the same should be equally divided in cash among them, paying to the parents, where the children are under 21 yrs of age the share of such children.\n\nThis will was made in 1839 and the testator and till 1859 at which time the number of his slaves and the value of his real &amp; personal property particularly the latter had very much increased.\n\nYour compts, and those for whom they sue were the slaves of the said John Fox, were emancipated by his will, and are the sole beneficiaries and devises under the will of the whole estate which was to be disposed of for their benefit as therein set out.\n\nThe estate was appraised, and",
+            "language": null,
+            "confidence": "high",
+            "layout_blocks": [
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "He directs that the sum of $30,000 shall be laid out in the purchase of land in the State of Ohio for the use of the Compt's his said slaves and that the said land should be allotted equally among them giving them their lots equally together according to their families. The residue of the fund he directed to be laid out in providing for the removal of his said slaves to Ohio and then in equal portions among them in fixing them up for housekeeping such as putting up houses where necessary for them purchasing horses stock furniture plantation utensils & clothing and if any sureties should remain, the same should be equally divided in cash among them, paying to the parents, where the children are under 21 yrs of age the share of such children.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 0,
+                        "width": 1469,
+                        "height": 815
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "This will was made in 1839 and the testator and till 1859 at which time the number of his slaves and the value of his real & personal property particularly the latter had very much increased.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 815,
+                        "width": 1469,
+                        "height": 612
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "Your compts, and those for whom they sue were the slaves of the said John Fox, were emancipated by his will, and are the sole beneficiaries and devises under the will of the whole estate which was to be disposed of for their benefit as therein set out.",
+                    "bbox": {
+                        "x": 0,
+                        "y": 1427,
+                        "width": 1469,
+                        "height": 612
+                    }
+                },
+                {
+                    "page": 0,
+                    "type": "paragraph",
+                    "text": "The estate was appraised, and",
+                    "bbox": {
+                        "x": 0,
+                        "y": 2038,
+                        "width": 1469,
+                        "height": 408
+                    }
+                }
+            ],
+            "image_blocks": [],
+            "pages": [
+                {
+                    "index": 0,
+                    "markdown": "He directs that the sum of $30,000 shall be laid out in the purchase of land in the State of Ohio for the use of the Compt's his said slaves and that the said land should be allotted equally among them giving them their lots equally together according to their families. The residue of the fund he directed to be laid out in providing for the removal of his said slaves to Ohio and then in equal portions among them in fixing them up for housekeeping such as putting up houses where necessary for them purchasing horses stock furniture plantation utensils &amp; clothing and if any sureties should remain, the same should be equally divided in cash among them, paying to the parents, where the children are under 21 yrs of age the share of such children.\n\nThis will was made in 1839 and the testator and till 1859 at which time the number of his slaves and the value of his real &amp; personal property particularly the latter had very much increased.\n\nYour compts, and those for whom they sue were the slaves of the said John Fox, were emancipated by his will, and are the sole beneficiaries and devises under the will of the whole estate which was to be disposed of for their benefit as therein set out.\n\nThe estate was appraised, and",
+                    "dimensions": {
+                        "dpi": 200,
+                        "height": 2446,
+                        "width": 1469
+                    },
+                    "tables": [],
+                    "header": null,
+                    "footer": null
+                }
+            ],
+            "raw_response": {
+                "pages": [
+                    {
+                        "index": 0,
+                        "markdown": "He directs that the sum of $30,000 shall be laid out in the purchase of land in the State of Ohio for the use of the Compt's his said slaves and that the said land should be allotted equally among them giving them their lots equally together according to their families. The residue of the fund he directed to be laid out in providing for the removal of his said slaves to Ohio and then in equal portions among them in fixing them up for housekeeping such as putting up houses where necessary for them purchasing horses stock furniture plantation utensils &amp; clothing and if any sureties should remain, the same should be equally divided in cash among them, paying to the parents, where the children are under 21 yrs of age the share of such children.\n\nThis will was made in 1839 and the testator and till 1859 at which time the number of his slaves and the value of his real &amp; personal property particularly the latter had very much increased.\n\nYour compts, and those for whom they sue were the slaves of the said John Fox, were emancipated by his will, and are the sole beneficiaries and devises under the will of the whole estate which was to be disposed of for their benefit as therein set out.\n\nThe estate was appraised, and",
+                        "images": [],
+                        "tables": [],
+                        "hyperlinks": [],
+                        "header": null,
+                        "footer": null,
+                        "dimensions": {
+                            "dpi": 200,
+                            "height": 2446,
+                            "width": 1469
+                        }
+                    }
+                ],
+                "model": "mistral-ocr-latest",
+                "document_annotation": "{\n  \"blocks\": [\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"He directs that the sum of $30,000 shall be laid out in the purchase of land in the State of Ohio for the use of the Compt's his said slaves and that the said land should be allotted equally among them giving them their lots equally together according to their families. The residue of the fund he directed to be laid out in providing for the removal of his said slaves to Ohio and then in equal portions among them in fixing them up for housekeeping such as putting up houses where necessary for them purchasing horses stock furniture plantation utensils & clothing and if any sureties should remain, the same should be equally divided in cash among them, paying to the parents, where the children are under 21 yrs of age the share of such children.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 0,\n        \"width\": 100,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"This will was made in 1839 and the testator and till 1859 at which time the number of his slaves and the value of his real & personal property particularly the latter had very much increased.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 20,\n        \"width\": 100,\n        \"height\": 15\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"Your compts, and those for whom they sue were the slaves of the said John Fox, were emancipated by his will, and are the sole beneficiaries and devises under the will of the whole estate which was to be disposed of for their benefit as therein set out.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 35,\n        \"width\": 100,\n        \"height\": 15\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"The estate was appraised, and\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 50,\n        \"width\": 100,\n        \"height\": 10\n      }\n    }\n  ]\n}",
+                "usage_info": {
+                    "pages_processed": 1,
+                    "doc_size_bytes": 410457
+                }
+            }
+        },
+        "annotate_handwriting": {
+            "pages": [
+                {
+                    "index": 0,
+                    "annotated_text": "```plaintext\n<hw>He directs that the sum of $30,000 shall be</hw> \n<hw>laid out in the purchase of land in the</hw> \n<hw>State of Ohio for the use of the Compt's his</hw> \n<hw>said slaves and that the said land should</hw> \n<hw>be allotted equally among them giving</hw> \n<hw>them their lots equally together according</hw> \n<hw>to their families. The residue of the</hw> \n<hw>fund he directed to be laid out in</hw> \n<hw>providing for the removal of his said slaves</hw> \n<hw>to Ohio and then in equal portions</hw> \n<hw>among them in fixing them up</hw> \n<hw>for housekeeping such as putting</hw> \n<hw>up houses where necessary for them</hw> \n<hw>purchasing horses stock furniture</hw> \n<hw>plantation utensils &amp; clothing and</hw> \n<hw>if any sureties should remain, the</hw> \n<hw>same should be equally divided</hw> \n<hw>in cash among them, paying to the</hw> \n<hw>parents, where the children are under</hw> \n<hw>21 yrs of age the share of such children.</hw>\n\n<hw>This will was made in 1839 and the testator</hw> \n<hw>lived till 1859 at which time the number</hw> \n<hw>of his slaves and the value of his real</hw> \n<hw>&amp; personal property particularly the</hw> \n<hw>latter had very much increased.</hw>\n\n<hw>Your compts, and those for whom</hw> \n<hw>they sue were the slaves of the said</hw> \n<hw>John Fox, were emancipated by his</hw> \n<hw>will, and are the sole beneficiaries</hw> \n<hw>and devises under the will of the</hw> \n<hw>whole estate which was to be disposed</hw> \n<hw>of for their benefit as therein set out.</hw>\n\n<hw>The estate was appraised, and</hw>\n```"
+                }
+            ],
+            "annotated_text": "```plaintext\n<hw>He directs that the sum of $30,000 shall be</hw> \n<hw>laid out in the purchase of land in the</hw> \n<hw>State of Ohio for the use of the Compt's his</hw> \n<hw>said slaves and that the said land should</hw> \n<hw>be allotted equally among them giving</hw> \n<hw>them their lots equally together according</hw> \n<hw>to their families. The residue of the</hw> \n<hw>fund he directed to be laid out in</hw> \n<hw>providing for the removal of his said slaves</hw> \n<hw>to Ohio and then in equal portions</hw> \n<hw>among them in fixing them up</hw> \n<hw>for housekeeping such as putting</hw> \n<hw>up houses where necessary for them</hw> \n<hw>purchasing horses stock furniture</hw> \n<hw>plantation utensils &amp; clothing and</hw> \n<hw>if any sureties should remain, the</hw> \n<hw>same should be equally divided</hw> \n<hw>in cash among them, paying to the</hw> \n<hw>parents, where the children are under</hw> \n<hw>21 yrs of age the share of such children.</hw>\n\n<hw>This will was made in 1839 and the testator</hw> \n<hw>lived till 1859 at which time the number</hw> \n<hw>of his slaves and the value of his real</hw> \n<hw>&amp; personal property particularly the</hw> \n<hw>latter had very much increased.</hw>\n\n<hw>Your compts, and those for whom</hw> \n<hw>they sue were the slaves of the said</hw> \n<hw>John Fox, were emancipated by his</hw> \n<hw>will, and are the sole beneficiaries</hw> \n<hw>and devises under the will of the</hw> \n<hw>whole estate which was to be disposed</hw> \n<hw>of for their benefit as therein set out.</hw>\n\n<hw>The estate was appraised, and</hw>\n```"
+        },
+        "transcribe_handwriting": {
+            "text": "He directs that the sum of $30,000 shall be\nlaid out in the purchase of land in the\nstate of Ohio, for the use of the Compt's his\nsaid slaves and that the said land should\nbe allotted equally among them giving\nthem their lots equally together according\nto their families. The residue of the\nfunds he directed to be laid out in\nproviding for the removal of his said slaves\nto Ohio and then in equal portions\namong them in fitting them up\nfor housekeeping such as putting\nup houses, where necessary for them\npurchasing horses stock furniture\nplantation utensils & clothing and\nif any surplus should remain, the\nsame should be equally divided\nin cash among them, paying, to the\nparents, where the children are under\n21 yrs age, the share of such children.\n\nThis will was made in 1839 and the testator\nlived till 1859 at which time the number\nof his slaves and the value of his real\n& personal property particularly the\nlatter had very much increased.\n\nYour compts, and those for whom\nthey sue, were the slaves of the said\nJohn Fox, were emancipated by his\nwill, and are the sole beneficiaries\nand devises, under the will of the\nwhole estate which was to be disposed\nof for their benefit as therein set out.\n\nThe estate was appraised, and",
+            "language": "en",
+            "confidence": "high",
+            "blocks": [
+                [
+                    "He directs that the sum of $30,000 shall be",
+                    "laid out in the purchase of land in the",
+                    "state of Ohio, for the use of the Compt's his",
+                    "said slaves and that the said land should",
+                    "be allotted equally among them giving",
+                    "them their lots equally together according",
+                    "to their families. The residue of the",
+                    "funds he directed to be laid out in",
+                    "providing for the removal of his said slaves",
+                    "to Ohio and then in equal portions",
+                    "among them in fitting them up",
+                    "for housekeeping such as putting",
+                    "up houses, where necessary for them",
+                    "purchasing horses stock furniture",
+                    "plantation utensils & clothing and",
+                    "if any surplus should remain, the",
+                    "same should be equally divided",
+                    "in cash among them, paying, to the",
+                    "parents, where the children are under",
+                    "21 yrs age, the share of such children."
+                ],
+                [
+                    "This will was made in 1839 and the testator",
+                    "lived till 1859 at which time the number",
+                    "of his slaves and the value of his real",
+                    "& personal property particularly the",
+                    "latter had very much increased."
+                ],
+                [
+                    "Your compts, and those for whom",
+                    "they sue, were the slaves of the said",
+                    "John Fox, were emancipated by his",
+                    "will, and are the sole beneficiaries",
+                    "and devises, under the will of the",
+                    "whole estate which was to be disposed",
+                    "of for their benefit as therein set out."
+                ],
+                [
+                    "The estate was appraised, and"
+                ]
+            ],
+            "_tokens": {
+                "prompt": 1539,
+                "completion": 616,
+                "total": 2155,
+                "cached": 0
+            }
+        }
+    }
+}
