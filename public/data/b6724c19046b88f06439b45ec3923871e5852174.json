@@ -2,161 +2,28 @@
     "subject": "https://fsn1.your-objectstorage.com/dev-scanstation/cheztac/scans/2026-03/browser-1772563875823-63e64d45-p014.jpg",
     "results": {
         "ocr_mistral": {
-            "text": "Page No. 601\n\nSCHEDULE 1.\u2014Inhabitants in Scott Township, in the County of Virginia, State of Virginia, enumerated by me on the 30 day of July, 1870.\n\nPost Office: Uppersville, B. F. Fletcher, Asst. Marshal\n\n|  No. of Enclosures | No. of Cases | No. of Deaths | No. of Deaths | No. of Deaths | No. of Deaths | No. of Deaths | No. of Deaths | No. of Deaths | No. of Deaths | No. of Deaths | No.  |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n|  No. of Deaths | No. of Deaths | No. of Deaths | No. of Deaths | No. of Deaths | No. of Deaths | No. of Deaths | No. of Deaths | No. of Deaths | No. | No. | No.  |\n|  1 | 8 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12  |\n|  1 | Lillip Hannah | 64 | F W | At Home |  |  |  |  | Va |  |   |\n|  2 | Rector Rebecca W | 58 | F W | \" | 500 |  |  |  | \" |  |   |\n|  3 | Doris John W | 38 | M W | Merchant Rev | 800 | 2500 |  |  | \" |  |   |\n|  4 | David A | 30 | F W | Attys |  |  |  |  | \" |  |   |\n|  5 | LeRoy | 8 | M W | \" |  |  |  |  | \" |  |   |\n|  6 | William | 3 | M W | \" |  |  |  |  | \" |  |   |\n|  7 | Sally Henry E | 22 | M W | Clerk store |  |  |  |  | \" |  |   |\n|  8 | Lorisa John W | 37 | M W | \" | 2000 | 190 |  |  | \" |  |   |\n|  9 | Monica Amanda | 35 | F B | Domestic |  |  |  |  | \" | 11 |   |\n|  10 | Moyley Gilbert | 14 | M B | \" |  |  |  |  | \" | 11 |   |\n|  11 | Thompson West | 21 | M B | \" |  |  |  |  | \" | 11 |   |\n|  12 | Green Patsy | 13 | F B | \" |  |  |  |  | \" | 11 |   |\n|  105 | Smith James | 25 | M M | Laborer |  |  |  |  | \" | 11 |   |\n|  14 | Mary E | 22 | 7 M | Keeping Home |  |  |  |  | \" | 11 |   |\n|  15 | Edward | 6 | M M | Attys |  |  |  |  | \" |  |   |\n|  16 | Jackie | 3 | M M | \" |  |  |  |  | \" |  |   |\n|  106 | Gaines Richard | 34 | M W | Farmer | 1010 |  |  |  | \" |  |   |\n|  18 | David | 32 | M W | \" |  |  |  |  | Mich |  |   |\n|  19 | Lucy E | 25 | F W | Keeping Home |  |  |  |  | Mich |  |   |\n|  20 | Rich Henry | 60 | M B | Laborer |  |  |  |  | \" | 11 |   |\n|  21 | Sarah | 45 | F M | Domestic |  |  |  |  | \" | 11 |   |\n|  22 | Moses Marshall | 15 | M B | Work on farm |  |  |  |  | \" | 11 |   |\n|  23 | Ward James | 65 | M W | Shepherd |  |  |  |  | Notland | 11 |   |\n|  24 | Logan Myra | 12 | M W | At Home |  |  |  |  | Va |  |   |\n|  107 | Lewis Eliza E | 40 | F W | Keeping Home |  |  |  |  | \" |  |   |\n|  25 | Paul E | 9 | M W | At Home |  |  |  |  | \" |  |   |\n|  26 | Lilled | 6 | F W | \" |  |  |  |  | \" |  |   |\n|  108 | Ford Alice | 45 | F B | Keeping Home |  |  |  |  | \" | 11 |   |\n|  29 | Riccia | 18 | F M | Washbomaw |  |  |  |  | \" |  |   |\n|  30 | Thomas | 13 | M B | \" |  |  |  |  | \" | 11 |   |\n|  31 | Ridman West | 40 | M B | Laborer |  |  |  |  | \" | 11 |   |\n|  32 | Evelene | 36 | F B | Keeping Home |  |  |  |  | \" | 11 |   |\n|  33 | Ford Julie | 65 | F B | At Home |  |  |  |  | \" | 11 |   |\n|  34 | Dutton Elmira | 60 | F W | Keeping Home | 3500 | 615 |  |  | \" |  |   |\n|  35 | James J | 26 | M W | Farmer |  |  |  |  | \" |  |   |\n|  36 | Kate E | 19 | F W | At Home |  |  |  |  | \" |  |   |\n|  37 | Green Rebecca T | 32 | F W | \" |  |  |  |  | \" |  |   |\n|  38 | Glasgow Susan | 68 | F B | Domestic |  |  |  |  | \" | 11 |   |\n|  39 | Bellin Ann | 11 | F B | \" |  |  |  |  | \" | 11 |   |\n|  40 | Monroe Albert | 12 | M B | \" |  |  |  |  | \" | 11 |   |\n\nNo. of Enclosures: No. of white females: 9 No. of males, foreign born: 1\n= families, = colored males, 10 = females, =\n= white males, 11 = females, = black,",
-            "language": null,
-            "confidence": "high",
-            "layout_blocks": [
-                {
-                    "page": 0,
-                    "type": "headline",
-                    "text": "SCHEDULE 1.\u2014Inhabitants in Scott Township, in the County of Virginia, State of Virginia, enumerated by me on the 30 day of July, 1870.",
-                    "bbox": {
-                        "x": 0,
-                        "y": 0,
-                        "width": 1928,
-                        "height": 76
-                    }
-                },
-                {
-                    "page": 0,
-                    "type": "subheadline",
-                    "text": "Post Office: Uppersville, B. F. Fletcher, Asst. Marshal",
-                    "bbox": {
-                        "x": 0,
-                        "y": 76,
-                        "width": 1928,
-                        "height": 57
-                    }
-                },
-                {
-                    "page": 0,
-                    "type": "table",
-                    "text": "Table content as described",
-                    "bbox": {
-                        "x": 0,
-                        "y": 133,
-                        "width": 1928,
-                        "height": 1897
-                    }
-                },
-                {
-                    "page": 0,
-                    "type": "paragraph",
-                    "text": "No. of Enclosures: No. of white females: 9 No. of males, foreign born: 1",
-                    "bbox": {
-                        "x": 0,
-                        "y": 2030,
-                        "width": 1928,
-                        "height": 57
-                    }
-                },
-                {
-                    "page": 0,
-                    "type": "paragraph",
-                    "text": "= families, = colored males, 10 = females, = white males, 11 = females, = black",
-                    "bbox": {
-                        "x": 0,
-                        "y": 2087,
-                        "width": 1928,
-                        "height": 57
-                    }
-                }
-            ],
-            "image_blocks": [],
-            "pages": [
-                {
-                    "index": 0,
-                    "markdown": "Page No. 601\n\nSCHEDULE 1.\u2014Inhabitants in Scott Township, in the County of Virginia, State of Virginia, enumerated by me on the 30 day of July, 1870.\n\nPost Office: Uppersville, B. F. Fletcher, Asst. Marshal\n\n|  No. of Enclosures | No. of Cases | No. of Deaths | No. of Deaths | No. of Deaths | No. of Deaths | No. of Deaths | No. of Deaths | No. of Deaths | No. of Deaths | No. of Deaths | No.  |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n|  No. of Deaths | No. of Deaths | No. of Deaths | No. of Deaths | No. of Deaths | No. of Deaths | No. of Deaths | No. of Deaths | No. of Deaths | No. | No. | No.  |\n|  1 | 8 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12  |\n|  1 | Lillip Hannah | 64 | F W | At Home |  |  |  |  | Va |  |   |\n|  2 | Rector Rebecca W | 58 | F W | \" | 500 |  |  |  | \" |  |   |\n|  3 | Doris John W | 38 | M W | Merchant Rev | 800 | 2500 |  |  | \" |  |   |\n|  4 | David A | 30 | F W | Attys |  |  |  |  | \" |  |   |\n|  5 | LeRoy | 8 | M W | \" |  |  |  |  | \" |  |   |\n|  6 | William | 3 | M W | \" |  |  |  |  | \" |  |   |\n|  7 | Sally Henry E | 22 | M W | Clerk store |  |  |  |  | \" |  |   |\n|  8 | Lorisa John W | 37 | M W | \" | 2000 | 190 |  |  | \" |  |   |\n|  9 | Monica Amanda | 35 | F B | Domestic |  |  |  |  | \" | 11 |   |\n|  10 | Moyley Gilbert | 14 | M B | \" |  |  |  |  | \" | 11 |   |\n|  11 | Thompson West | 21 | M B | \" |  |  |  |  | \" | 11 |   |\n|  12 | Green Patsy | 13 | F B | \" |  |  |  |  | \" | 11 |   |\n|  105 | Smith James | 25 | M M | Laborer |  |  |  |  | \" | 11 |   |\n|  14 | Mary E | 22 | 7 M | Keeping Home |  |  |  |  | \" | 11 |   |\n|  15 | Edward | 6 | M M | Attys |  |  |  |  | \" |  |   |\n|  16 | Jackie | 3 | M M | \" |  |  |  |  | \" |  |   |\n|  106 | Gaines Richard | 34 | M W | Farmer | 1010 |  |  |  | \" |  |   |\n|  18 | David | 32 | M W | \" |  |  |  |  | Mich |  |   |\n|  19 | Lucy E | 25 | F W | Keeping Home |  |  |  |  | Mich |  |   |\n|  20 | Rich Henry | 60 | M B | Laborer |  |  |  |  | \" | 11 |   |\n|  21 | Sarah | 45 | F M | Domestic |  |  |  |  | \" | 11 |   |\n|  22 | Moses Marshall | 15 | M B | Work on farm |  |  |  |  | \" | 11 |   |\n|  23 | Ward James | 65 | M W | Shepherd |  |  |  |  | Notland | 11 |   |\n|  24 | Logan Myra | 12 | M W | At Home |  |  |  |  | Va |  |   |\n|  107 | Lewis Eliza E | 40 | F W | Keeping Home |  |  |  |  | \" |  |   |\n|  25 | Paul E | 9 | M W | At Home |  |  |  |  | \" |  |   |\n|  26 | Lilled | 6 | F W | \" |  |  |  |  | \" |  |   |\n|  108 | Ford Alice | 45 | F B | Keeping Home |  |  |  |  | \" | 11 |   |\n|  29 | Riccia | 18 | F M | Washbomaw |  |  |  |  | \" |  |   |\n|  30 | Thomas | 13 | M B | \" |  |  |  |  | \" | 11 |   |\n|  31 | Ridman West | 40 | M B | Laborer |  |  |  |  | \" | 11 |   |\n|  32 | Evelene | 36 | F B | Keeping Home |  |  |  |  | \" | 11 |   |\n|  33 | Ford Julie | 65 | F B | At Home |  |  |  |  | \" | 11 |   |\n|  34 | Dutton Elmira | 60 | F W | Keeping Home | 3500 | 615 |  |  | \" |  |   |\n|  35 | James J | 26 | M W | Farmer |  |  |  |  | \" |  |   |\n|  36 | Kate E | 19 | F W | At Home |  |  |  |  | \" |  |   |\n|  37 | Green Rebecca T | 32 | F W | \" |  |  |  |  | \" |  |   |\n|  38 | Glasgow Susan | 68 | F B | Domestic |  |  |  |  | \" | 11 |   |\n|  39 | Bellin Ann | 11 | F B | \" |  |  |  |  | \" | 11 |   |\n|  40 | Monroe Albert | 12 | M B | \" |  |  |  |  | \" | 11 |   |\n\nNo. of Enclosures: No. of white females: 9 No. of males, foreign born: 1\n= families, = colored males, 10 = females, =\n= white males, 11 = females, = black,",
-                    "dimensions": {
-                        "dpi": 200,
-                        "height": 2144,
-                        "width": 1928
-                    },
-                    "tables": [],
-                    "header": null,
-                    "footer": null
-                }
-            ],
-            "raw_response": {
-                "pages": [
-                    {
-                        "index": 0,
-                        "markdown": "Page No. 601\n\nSCHEDULE 1.\u2014Inhabitants in Scott Township, in the County of Virginia, State of Virginia, enumerated by me on the 30 day of July, 1870.\n\nPost Office: Uppersville, B. F. Fletcher, Asst. Marshal\n\n|  No. of Enclosures | No. of Cases | No. of Deaths | No. of Deaths | No. of Deaths | No. of Deaths | No. of Deaths | No. of Deaths | No. of Deaths | No. of Deaths | No. of Deaths | No.  |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n|  No. of Deaths | No. of Deaths | No. of Deaths | No. of Deaths | No. of Deaths | No. of Deaths | No. of Deaths | No. of Deaths | No. of Deaths | No. | No. | No.  |\n|  1 | 8 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12  |\n|  1 | Lillip Hannah | 64 | F W | At Home |  |  |  |  | Va |  |   |\n|  2 | Rector Rebecca W | 58 | F W | \" | 500 |  |  |  | \" |  |   |\n|  3 | Doris John W | 38 | M W | Merchant Rev | 800 | 2500 |  |  | \" |  |   |\n|  4 | David A | 30 | F W | Attys |  |  |  |  | \" |  |   |\n|  5 | LeRoy | 8 | M W | \" |  |  |  |  | \" |  |   |\n|  6 | William | 3 | M W | \" |  |  |  |  | \" |  |   |\n|  7 | Sally Henry E | 22 | M W | Clerk store |  |  |  |  | \" |  |   |\n|  8 | Lorisa John W | 37 | M W | \" | 2000 | 190 |  |  | \" |  |   |\n|  9 | Monica Amanda | 35 | F B | Domestic |  |  |  |  | \" | 11 |   |\n|  10 | Moyley Gilbert | 14 | M B | \" |  |  |  |  | \" | 11 |   |\n|  11 | Thompson West | 21 | M B | \" |  |  |  |  | \" | 11 |   |\n|  12 | Green Patsy | 13 | F B | \" |  |  |  |  | \" | 11 |   |\n|  105 | Smith James | 25 | M M | Laborer |  |  |  |  | \" | 11 |   |\n|  14 | Mary E | 22 | 7 M | Keeping Home |  |  |  |  | \" | 11 |   |\n|  15 | Edward | 6 | M M | Attys |  |  |  |  | \" |  |   |\n|  16 | Jackie | 3 | M M | \" |  |  |  |  | \" |  |   |\n|  106 | Gaines Richard | 34 | M W | Farmer | 1010 |  |  |  | \" |  |   |\n|  18 | David | 32 | M W | \" |  |  |  |  | Mich |  |   |\n|  19 | Lucy E | 25 | F W | Keeping Home |  |  |  |  | Mich |  |   |\n|  20 | Rich Henry | 60 | M B | Laborer |  |  |  |  | \" | 11 |   |\n|  21 | Sarah | 45 | F M | Domestic |  |  |  |  | \" | 11 |   |\n|  22 | Moses Marshall | 15 | M B | Work on farm |  |  |  |  | \" | 11 |   |\n|  23 | Ward James | 65 | M W | Shepherd |  |  |  |  | Notland | 11 |   |\n|  24 | Logan Myra | 12 | M W | At Home |  |  |  |  | Va |  |   |\n|  107 | Lewis Eliza E | 40 | F W | Keeping Home |  |  |  |  | \" |  |   |\n|  25 | Paul E | 9 | M W | At Home |  |  |  |  | \" |  |   |\n|  26 | Lilled | 6 | F W | \" |  |  |  |  | \" |  |   |\n|  108 | Ford Alice | 45 | F B | Keeping Home |  |  |  |  | \" | 11 |   |\n|  29 | Riccia | 18 | F M | Washbomaw |  |  |  |  | \" |  |   |\n|  30 | Thomas | 13 | M B | \" |  |  |  |  | \" | 11 |   |\n|  31 | Ridman West | 40 | M B | Laborer |  |  |  |  | \" | 11 |   |\n|  32 | Evelene | 36 | F B | Keeping Home |  |  |  |  | \" | 11 |   |\n|  33 | Ford Julie | 65 | F B | At Home |  |  |  |  | \" | 11 |   |\n|  34 | Dutton Elmira | 60 | F W | Keeping Home | 3500 | 615 |  |  | \" |  |   |\n|  35 | James J | 26 | M W | Farmer |  |  |  |  | \" |  |   |\n|  36 | Kate E | 19 | F W | At Home |  |  |  |  | \" |  |   |\n|  37 | Green Rebecca T | 32 | F W | \" |  |  |  |  | \" |  |   |\n|  38 | Glasgow Susan | 68 | F B | Domestic |  |  |  |  | \" | 11 |   |\n|  39 | Bellin Ann | 11 | F B | \" |  |  |  |  | \" | 11 |   |\n|  40 | Monroe Albert | 12 | M B | \" |  |  |  |  | \" | 11 |   |\n\nNo. of Enclosures: No. of white females: 9 No. of males, foreign born: 1\n= families, = colored males, 10 = females, =\n= white males, 11 = females, = black,",
-                        "images": [],
-                        "tables": [],
-                        "hyperlinks": [],
-                        "header": null,
-                        "footer": null,
-                        "dimensions": {
-                            "dpi": 200,
-                            "height": 2144,
-                            "width": 1928
-                        }
-                    }
-                ],
-                "model": "mistral-ocr-latest",
-                "document_annotation": "{\n  \"blocks\": [\n    {\n      \"type\": \"headline\",\n      \"text\": \"SCHEDULE 1.\u2014Inhabitants in Scott Township, in the County of Virginia, State of Virginia, enumerated by me on the 30 day of July, 1870.\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 0,\n        \"width\": 800,\n        \"height\": 20\n      }\n    },\n    {\n      \"type\": \"subheadline\",\n      \"text\": \"Post Office: Uppersville, B. F. Fletcher, Asst. Marshal\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 20,\n        \"width\": 800,\n        \"height\": 15\n      }\n    },\n    {\n      \"type\": \"table\",\n      \"text\": \"Table content as described\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 35,\n        \"width\": 800,\n        \"height\": 500\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"No. of Enclosures: No. of white females: 9 No. of males, foreign born: 1\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 535,\n        \"width\": 800,\n        \"height\": 15\n      }\n    },\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"= families, = colored males, 10 = females, = white males, 11 = females, = black\",\n      \"bbox\": {\n        \"x\": 0,\n        \"y\": 550,\n        \"width\": 800,\n        \"height\": 15\n      }\n    }\n  ]\n}",
-                "usage_info": {
-                    "pages_processed": 1,
-                    "doc_size_bytes": 920092
-                }
-            }
+            "failed": true,
+            "error": "HTTP/1.1 401 Unauthorized returned for \"https://api.mistral.ai/v1/ocr\"."
         },
         "people_and_places": {
-            "people": [
-                "B. F. Fletcher, Asst. Marshal"
-            ],
-            "places": [
-                "Scott Township, Virginia",
-                "Uppersville, Virginia"
-            ],
-            "organisations": [],
-            "_tokens": {
-                "prompt": 25927,
-                "completion": 34,
-                "total": 25961,
-                "cached": 0
-            }
+            "failed": true,
+            "error": "The API key must not be empty."
         },
         "extract_metadata": {
-            "dateRange": "1870",
-            "people": [
-                "B. F. Fletcher, Asst. Marshal",
-                "Lillip Hannah",
-                "Rector Rebecca W"
-            ],
-            "places": [
-                "Scott Township",
-                "Virginia",
-                "Uppersville"
-            ],
-            "subjects": [
-                "Census",
-                "Inhabitants",
-                "Deaths"
-            ],
-            "language": "en",
-            "organisations": [],
-            "_tokens": {
-                "prompt": 26090,
-                "completion": 64,
-                "total": 26154,
-                "cached": 0
-            }
+            "failed": true,
+            "error": "The API key must not be empty."
         },
         "generate_title": {
-            "title": "Scott Township, Virginia Census, 1870 - B. F. Fletcher, Asst. Marshal",
-            "alternativeTitles": [
-                "Census Enumerated by B. F. Fletcher, 1870",
-                "Residents of Uppersville, Virginia, 1870"
-            ],
-            "confidence": "high",
-            "_tokens": {
-                "prompt": 25694,
-                "completion": 60,
-                "total": 25754,
-                "cached": 0
-            }
+            "failed": true,
+            "error": "The API key must not be empty."
+        },
+        "annotate_handwriting": {
+            "failed": true,
+            "error": "The API key must not be empty."
+        },
+        "transcribe_handwriting": {
+            "failed": true,
+            "error": "The API key must not be empty."
         }
     }
 }
