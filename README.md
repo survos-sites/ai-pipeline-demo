@@ -4,14 +4,12 @@ A Symfony application that demonstrates [`survos/ai-pipeline-bundle`](https://pa
 
 **Live demo:** https://survos-sites.github.io/ai-pipeline-demo/
 
-@todo: https://old.lva.virginia.gov/chancery/case_detail.asp?CFN=061-1902-001
-
 ---
 
 ## What it does
 
 1. You maintain manifests (`public/data/images.json` and `public/data/pdfs.json`) listing document URLs, titles, and which pipeline tasks to run.
-2. `bin/console app:add <URL>` fetches metadata from Omeka-S, NARA, or direct URLs and appends to the appropriate manifest.
+2. `bin/console app:add <URL>` fetches metadata from Omeka-S, NARA, Library of Virginia Chancery, or direct URLs and appends to the appropriate manifest.
 3. `bin/console app:process` runs each entry through the pipeline and writes `public/data/{sha1}.json` result files.
 4. GitHub Actions runs the command on push, commits results, splits PDFs into page images, and deploys `public/` to GitHub Pages.
 5. The static site (`index.html` + `item.html`) reads the JSON files via `fetch()` — no server needed.
@@ -70,6 +68,12 @@ bin/console app:add https://iaamcfh.omeka.net/s/IAAM_CFH/item/3940
 
 # National Archives catalog → fetches via proxy API, finds page images
 bin/console app:add https://catalog.archives.gov/id/5939992
+
+# Library of Virginia Chancery case
+bin/console app:add "https://old.lva.virginia.gov/chancery/case_detail.asp?CFN=061-1902-001"
+
+# Library of Virginia Chancery case, only pages 1-4 (merged into local PDF)
+bin/console app:add --page-range=1-4 "https://old.lva.virginia.gov/chancery/case_detail.asp?CFN=061-1902-001"
 
 # Direct PDF or image URL
 bin/console app:add https://example.com/document.pdf
