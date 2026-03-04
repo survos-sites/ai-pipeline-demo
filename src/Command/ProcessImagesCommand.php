@@ -34,10 +34,21 @@ use Symfony\Contracts\HttpClient\HttpClientInterface;
  *   bin/console app:process --force            # re-run even if results exist
  *   bin/console app:process -m pdfs.json       # process only PDFs
  *   bin/console app:process --tasks=ocr_mistral
+ *   bin/console app:process --tasks=annotate_handwriting --failed-only
+ *   bin/console app:process -m images.json --prompt
  */
 #[AsCommand('app:process', 'Process manifests through configured AI pipelines')]
 final class ProcessImagesCommand extends Command
 {
+    private const REFUSAL_PHRASES = [
+        "i'm sorry",
+        'i am sorry',
+        "can't assist",
+        'cannot assist',
+        "can't help with",
+        'cannot help with',
+    ];
+
     /**
      * Tasks that run per-page on individual page JPGs (for PDFs).
      * Everything else runs at the document level.
@@ -72,7 +83,11 @@ final class ProcessImagesCommand extends Command
             ->addOption('force', 'f', InputOption::VALUE_NONE,
                 'Re-run tasks even if a result file already exists')
             ->addOption('tasks', 't', InputOption::VALUE_REQUIRED,
-                'Override the pipeline for all entries (comma-separated task names)');
+                'Override the pipeline for all entries (comma-separated task names)')
+            ->addOption('failed-only', null, InputOption::VALUE_NONE,
+                'Only process entries with failed selected tasks; implies --force')
+            ->addOption('prompt', 'p', InputOption::VALUE_NONE,
+                'Interactively pick one entry URL from the manifest to process');
     }
 
     protected function execute(InputInterface $input, OutputInterface $output): int
@@ -81,6 +96,18 @@ final class ProcessImagesCommand extends Command
         $force    = (bool) $input->getOption('force');
         $limit    = $input->getOption('limit') !== null ? (int) $input->getOption('limit') : null;
         $taskOver = $input->getOption('tasks');
+        $failedOnly = (bool) $input->getOption('failed-only');
+        $promptOne = (bool) $input->getOption('prompt');
+
+        if ($promptOne && !$input->isInteractive()) {
+            $io->error('--prompt requires an interactive terminal.');
+            return Command::FAILURE;
+        }
+
+        if ($failedOnly && !$force) {
+            $force = true;
+            $io->comment('failed-only enabled: forcing selected failed tasks to rerun.');
+        }
 
         $io->title('AI Pipeline — Process');
         $io->writeln(sprintf('Data dir : %s', $this->dataDir));
@@ -111,9 +138,22 @@ final class ProcessImagesCommand extends Command
 
             $io->section(sprintf('Manifest: %s (%d entries)', basename($manifestPath), count($entries)));
 
+            $selectedIndex = null;
+            if ($promptOne) {
+                $selectedIndex = $this->promptForEntryIndex($entries, basename($manifestPath), $io);
+                if ($selectedIndex === null) {
+                    $io->warning('No selectable entries in manifest — skipping.');
+                    continue;
+                }
+            }
+
             $processed = 0;
 
             foreach ($entries as $i => &$entry) {
+                if ($selectedIndex !== null && $i !== $selectedIndex) {
+                    continue;
+                }
+
                 if ($limit !== null && $totalProcessed >= $limit) {
                     break;
                 }
@@ -127,6 +167,21 @@ final class ProcessImagesCommand extends Command
                 if ($url === null) {
                     $io->warning("Entry {$i} has no 'url' — skipping.");
                     continue;
+                }
+
+                if ($failedOnly) {
+                    $failedTasks = $this->getFailedTasksForEntry($url, $pipeline);
+                    if ($failedTasks === []) {
+                        if ($selectedIndex !== null && $i === $selectedIndex) {
+                            $io->comment('  Selected entry has no failed tasks for current filters — skipping.');
+                        }
+                        continue;
+                    }
+
+                    // If no explicit task override was given, rerun only failed tasks.
+                    if (!$taskOver) {
+                        $pipeline = $failedTasks;
+                    }
                 }
 
                 $absoluteUrl = $this->resolveUrl($url);
@@ -168,6 +223,40 @@ final class ProcessImagesCommand extends Command
         return Command::SUCCESS;
     }
 
+    private function promptForEntryIndex(array $entries, string $manifestName, SymfonyStyle $io): ?int
+    {
+        $choices = [];
+        $choiceToIndex = [];
+        foreach ($entries as $i => $entry) {
+            $url = $entry['url'] ?? null;
+            if (!is_string($url) || $url === '') {
+                continue;
+            }
+
+            $title = trim((string) ($entry['title'] ?? ''));
+            $title = $title !== '' ? $title : '(untitled)';
+            if (mb_strlen($title) > 70) {
+                $title = mb_substr($title, 0, 67) . '...';
+            }
+
+            $label = sprintf('%s — %s', $title, $url);
+            $choices[] = $label;
+            $choiceToIndex[$label] = $i;
+        }
+
+        if ($choices === []) {
+            return null;
+        }
+
+        $selected = $io->choice(
+            sprintf('Choose one entry to process from %s', $manifestName),
+            $choices,
+            $choices[0],
+        );
+
+        return $choiceToIndex[$selected] ?? null;
+    }
+
     // ── Image processing (unchanged behaviour) ──────────────────────────────
 
     private function processImageEntry(
@@ -203,6 +292,8 @@ final class ProcessImagesCommand extends Command
                 break;
             }
         }
+
+        $this->flagRefusalOutputs($store, $pipeline, $io, '    ');
     }
 
     // ── PDF processing (per-page + doc-level) ───────────────────────────────
@@ -290,6 +381,8 @@ final class ProcessImagesCommand extends Command
                     }
                 }
 
+                $this->flagRefusalOutputs($pageStore, $pageTasks, $io, '      ');
+
                 $pageResultFiles[] = basename($pageStore->getFilePath());
             }
         }
@@ -340,6 +433,8 @@ final class ProcessImagesCommand extends Command
                         break;
                     }
                 }
+
+                $this->flagRefusalOutputs($docStore, $docTasks, $io, '      ');
             }
         } elseif ($pageResultFiles) {
             // Even if no doc tasks, write the page references
@@ -515,5 +610,108 @@ final class ProcessImagesCommand extends Command
             $io->warning("Image not accessible ({$e->getMessage()}): {$url} — skipping.");
             return false;
         }
+    }
+
+    /**
+     * Return the subset of candidate tasks that are marked failed for this entry.
+     */
+    private function getFailedTasksForEntry(string $url, array $candidateTasks): array
+    {
+        $resultPath = rtrim($this->dataDir, '/') . '/' . sha1($url) . '.json';
+        if (!is_file($resultPath)) {
+            return [];
+        }
+
+        $data = json_decode((string) file_get_contents($resultPath), true);
+        if (!is_array($data)) {
+            return [];
+        }
+
+        $results = $data['results'] ?? null;
+        if (!is_array($results)) {
+            return [];
+        }
+
+        $failed = [];
+        foreach ($candidateTasks as $taskName) {
+            $taskResult = $results[$taskName] ?? null;
+            if (!is_array($taskResult)) {
+                continue;
+            }
+
+            if (($taskResult['failed'] ?? false) === true || isset($taskResult['error'])) {
+                $failed[] = $taskName;
+                continue;
+            }
+
+            if (in_array($taskName, ['annotate_handwriting', 'transcribe_handwriting'], true)) {
+                $text = $this->extractTaskText($taskName, $taskResult);
+                if ($this->looksLikeRefusal($text)) {
+                    $failed[] = $taskName;
+                }
+            }
+        }
+
+        return $failed;
+    }
+
+    /**
+     * Convert non-empty model refusal payloads into failed task results.
+     */
+    private function flagRefusalOutputs(JsonFileResultStore $store, array $taskNames, SymfonyStyle $io, string $indent): void
+    {
+        foreach (array_intersect($taskNames, ['annotate_handwriting', 'transcribe_handwriting']) as $taskName) {
+            $result = $store->getPrior($taskName);
+            if (!is_array($result) || ($result['failed'] ?? false) === true || isset($result['error'])) {
+                continue;
+            }
+
+            $text = $this->extractTaskText($taskName, $result);
+            if (!$this->looksLikeRefusal($text)) {
+                continue;
+            }
+
+            $store->saveResult($taskName, [
+                'failed' => true,
+                'error' => 'Model refusal returned instead of task output.',
+                'raw_response' => $text,
+            ]);
+
+            $io->writeln(sprintf('%s<error>%s flagged as failed: refusal payload</error>', $indent, $taskName));
+        }
+    }
+
+    private function extractTaskText(string $taskName, array $result): ?string
+    {
+        if ($taskName === 'annotate_handwriting') {
+            if (isset($result['annotated_text']) && is_string($result['annotated_text'])) {
+                return trim($result['annotated_text']);
+            }
+
+            $firstPage = $result['pages'][0]['annotated_text'] ?? null;
+            return is_string($firstPage) ? trim($firstPage) : null;
+        }
+
+        if (isset($result['text']) && is_string($result['text'])) {
+            return trim($result['text']);
+        }
+
+        return null;
+    }
+
+    private function looksLikeRefusal(?string $text): bool
+    {
+        if ($text === null || $text === '') {
+            return false;
+        }
+
+        $normalized = strtolower(trim($text));
+        foreach (self::REFUSAL_PHRASES as $phrase) {
+            if (str_contains($normalized, $phrase)) {
+                return true;
+            }
+        }
+
+        return false;
     }
 }

@@ -1,0 +1,10 @@
+Annotate the document transcription for handwriting markers.
+
+{% set source_text = ocr_text|default(text|default(aggregated_text|default(''))) %}
+{% if source_text %}
+Use this OCR text as the base, preserving table rows and delimiters exactly:
+
+{{ source_text|slice(0, 30000) }}
+{% endif %}
+
+Output only annotated text.

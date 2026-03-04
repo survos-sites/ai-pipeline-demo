@@ -1,0 +1,10 @@
+Transcribe this document exactly.
+
+{% set source_text = ocr_text|default(text|default(aggregated_text|default(''))) %}
+{% if source_text %}
+Reference OCR text (do not shorten; keep table structure and row order):
+
+{{ source_text|slice(0, 30000) }}
+{% endif %}
+
+Output only the transcription.

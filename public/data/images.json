@@ -120,5 +120,19 @@
         ],
         "result_file": "bd192b123669a94591898e45b88caa6bfd2b9bed.json",
         "status": "complete"
+    },
+    {
+        "url": "https://fsn1.your-objectstorage.com/dev-scanstation/cheztac/scans/2026-03/browser-1772563875823-63e64d45-p014.jpg",
+        "title": "browser-1772563875823-63e64d45-p014.jpg",
+        "pipeline": [
+            "ocr_mistral",
+            "annotate_handwriting",
+            "transcribe_handwriting",
+            "people_and_places",
+            "extract_metadata",
+            "generate_title"
+        ],
+        "result_file": "b6724c19046b88f06439b45ec3923871e5852174.json",
+        "status": "complete"
     }
 ]
