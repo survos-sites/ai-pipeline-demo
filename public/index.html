@@ -246,8 +246,11 @@ function makeCard(entry, results, type) {
   const status     = entry.status ?? 'pending';
   const resultFile = entry.result_file ?? null;
 
+  const code = entry.code ?? null;
   const viewerUrl = resultFile
-    ? `item.html?url=${encodeURIComponent(url)}&data=data&type=${type}`
+    ? (code
+        ? `item.html?code=${code}`
+        : `item.html?url=${encodeURIComponent(url)}`)
     : null;
 
   let thumb;

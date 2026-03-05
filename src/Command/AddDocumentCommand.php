@@ -176,6 +176,7 @@ final class AddDocumentCommand extends Command
         // ── Build manifest entry ────────────────────────────────────────
         $entry = [
             'url'        => $mediaUrl,
+            'code'       => substr(hash('xxh3', $mediaUrl), 0, 8),
             'provenance' => $resolved['provenance'] ?? null,
             'title'      => $resolved['title'] ?? basename($mediaUrl),
             'collection' => $resolved['collection'] ?? null,

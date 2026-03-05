@@ -1107,34 +1107,40 @@ function renderTaskResult(taskName, result, imageUrl, isPdfItem, allResults = nu
 
 // -- Main --------------------------------------------------------------------
 async function main() {
-  const params   = new URL(location.href).searchParams;
-  const subject  = params.get('url');
-  const dataDir  = params.get('data') ?? 'data';
-  const itemType = params.get('type') ?? (isPdf(subject??'') ? 'pdf' : 'image');
+  const params  = new URL(location.href).searchParams;
+  const dataDir = params.get('data') ?? 'data';
+  const code    = params.get('code');
+  let   subject = params.get('url');
 
-  if (!subject) {
+  // Always load all manifests (needed for code lookup and/or entry metadata)
+  const allManifests = ['images.json', 'pdfs.json'];
+  const allEntries   = [];
+  for (const mf of allManifests) {
+    try {
+      const r = await fetch(`${dataDir}/${mf}`);
+      if (r.ok) allEntries.push(...(await r.json()));
+    } catch(_) {}
+  }
+
+  // Resolve ?code= to a URL
+  let entry = null;
+  if (code) {
+    entry = allEntries.find(e => e.code === code) ?? null;
+    if (!entry) {
+      document.getElementById('loading').innerHTML =
+        `<p>No item found with code <code>${esc(code)}</code>. <a href="index.html">&larr; Gallery</a></p>`;
+      return;
+    }
+    subject = entry.url;
+  } else if (subject) {
+    entry = allEntries.find(e => e.url === subject) ?? null;
+  } else {
     document.getElementById('loading').innerHTML =
-      '<p>No <code>?url=</code> parameter. <a href="index.html">&larr; Gallery</a></p>';
+      '<p>No <code>?code=</code> or <code>?url=</code> parameter. <a href="index.html">&larr; Gallery</a></p>';
     return;
   }
 
-  // Load manifest for title + pipeline order
-  // Try the type-specific manifest first, then fall back
-  const manifestFiles = itemType === 'pdf'
-    ? ['pdfs.json', 'images.json']
-    : ['images.json', 'pdfs.json'];
-
-  let entry = null;
-  for (const mf of manifestFiles) {
-    try {
-      const r = await fetch(`${dataDir}/${mf}`);
-      if (r.ok) {
-        const all = await r.json();
-        entry = all.find(e => e.url === subject) ?? null;
-        if (entry) break;
-      }
-    } catch(_) {}
-  }
+  const itemType = params.get('type') ?? (isPdf(subject) ? 'pdf' : 'image');
 
   // Optional per-entry CSS overrides from manifest (custom_css or css)
   applyEntryCss(entry);

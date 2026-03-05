@@ -10,7 +10,8 @@
             "keywords"
         ],
         "result_file": "e3fac887c1195d4dc268db7696df1d1282b9ea8b.json",
-        "status": "complete"
+        "status": "complete",
+        "code": "7b08f38b"
     },
     {
         "url": "https://upload.wikimedia.org/wikipedia/commons/0/04/William_Burnett_Letter_May_24%2C_1726_-_NARA_-_193049.jpg",
@@ -23,7 +24,8 @@
             "generate_title"
         ],
         "result_file": "e908eec95286143bdb63b761d6c31134ab0ef0d7.json",
-        "status": "complete"
+        "status": "complete",
+        "code": "c17846c2"
     },
     {
         "url": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Broadside_of_Revolutionary_War_period-_%28Proclamation_by_Gen._Howe_against_assisting_Rebels._Boston%2C_Mar_10%2C_1776%29_LCCN2005696233.jpg",
@@ -37,7 +39,8 @@
             "keywords"
         ],
         "result_file": "017934c64c997fed8e1ab3ed636f5f91eebff71a.json",
-        "status": "complete"
+        "status": "complete",
+        "code": "475778a9"
     },
     {
         "url": "images/nytimes-cover.jpg",
@@ -51,7 +54,8 @@
             "keywords"
         ],
         "result_file": "1b2fa25f160366e3c3e76a72fdeabcfa5ec06f6a.json",
-        "status": "complete"
+        "status": "complete",
+        "code": "f6067fa7"
     },
     {
         "url": "images/nytimes-cover-2.jpg",
@@ -65,7 +69,8 @@
             "keywords"
         ],
         "result_file": "6969c9478a7133e0ae80f7aea1fd3010c8bfe565.json",
-        "status": "complete"
+        "status": "complete",
+        "code": "8114d726"
     },
     {
         "url": "images/deed.jpg",
@@ -79,7 +84,8 @@
             "generate_title"
         ],
         "result_file": "0faead996c4c5471cb45919cc6f8413abedfbc3b.json",
-        "status": "complete"
+        "status": "complete",
+        "code": "9ffe0911"
     },
     {
         "url": "images/moc-postcard.jpg",
@@ -92,7 +98,8 @@
             "keywords"
         ],
         "result_file": "f8feef484956a451044ef5f07898d928690deafa.json",
-        "status": "complete"
+        "status": "complete",
+        "code": "ff5b7544"
     },
     {
         "url": "images/tubman-pension.jpg",
@@ -107,7 +114,8 @@
             "generate_title"
         ],
         "result_file": "e4a8887a9d90f6069cadbcc0efb7b0e87dc0c8d9.json",
-        "status": "complete"
+        "status": "complete",
+        "code": "a412d9a7"
     },
     {
         "url": "https://omeka-iaamcfh.s3.amazonaws.com/original/37fec8f573f18938ce02bad2a3f4d2cd6303c02e.jpg",
@@ -119,7 +127,8 @@
             "keywords"
         ],
         "result_file": "bd192b123669a94591898e45b88caa6bfd2b9bed.json",
-        "status": "complete"
+        "status": "complete",
+        "code": "12531bb7"
     },
     {
         "url": "https://fsn1.your-objectstorage.com/dev-scanstation/cheztac/scans/2026-03/browser-1772563875823-63e64d45-p014.jpg",
@@ -133,6 +142,7 @@
             "generate_title"
         ],
         "result_file": "b6724c19046b88f06439b45ec3923871e5852174.json",
-        "status": "complete"
+        "status": "complete",
+        "code": "51fbc9ae"
     }
 ]
